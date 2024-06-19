@@ -1,10 +1,6 @@
 # Lights:  MAKE IT LIGHT UP different COLORS using a button !
 
-![Mkt_Light-Up_Diff_Color_Button-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/2_Lights/Lights3/Mkt_Light-Up_Diff_Color_Button-EN.png?raw=true "Mkt_Light-Up_Diff_Color_Button-EN!")
-
-![Mkt_Light-Up_Diff_Color_Button-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/2_Lights/Lights3/Mkt_Light-Up_Diff_Color_Button-EN?raw=true "Mkt_Light-Up_Diff_Color_Button-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Light-Up_Diff_Color_Button-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights3/Mkt_Light-Up_Diff_Color_Button-EN.png?raw=true "Mkt_Light-Up_Diff_Color_Button-EN!")
 
 ## Code Example
 

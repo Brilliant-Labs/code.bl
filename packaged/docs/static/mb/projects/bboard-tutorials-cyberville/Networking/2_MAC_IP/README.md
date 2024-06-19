@@ -18,19 +18,19 @@ Student ID card
 https://drive.google.com/file/d/1A03JHkK8quWrVk7ve4wsLASVxFN5EdCK/view?usp=drive_link
 
 Example:
-![ID]("docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/ID.png?raw=true "ID")
+![ID](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/ID.png?raw=true "ID")
 
 Let's start
 1) Go to https://code-alpha.brilliantlabs.ca/ and create a new project or use the Cyber_Network project created in activity A).
 2) Within the project, use the on button A pressed block.
 3) Replace the "Hello!" text in the show string block with the Get the b.Board´s MAC Address block. it is located under b.Board blocks in CyberSecurity 
 
-![Step3]("docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step3.png?raw=true "Step3")
+![Step3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step3.png?raw=true "Step3")
 
 4) Add a new block on button A pressed, but this time select on button B pressed.
 5) Replace the "Hello!" text in the show string block with the Get the b.Board´s IP Address block. It is located under b.Board blocks in CyberSecurity.
 
-![Step4]("docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step4.png?raw=true "Step4")
+![Step4](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step4.png?raw=true "Step4")
 
 6) Turn on the b.Board and establish communication between the PC, micro:bit and b.Board.
 7) Download the code to micro:bit.
@@ -42,4 +42,4 @@ And the IP address will be displayed on Micro:bit display, similar to this:
 My IP: “192.168.4.2”
 Students can also see the MAC and IP address on the Consola Device
 
-![Step5]("docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step5.png?raw=true "Step5")
+![Step5](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step5.png?raw=true "Step5")

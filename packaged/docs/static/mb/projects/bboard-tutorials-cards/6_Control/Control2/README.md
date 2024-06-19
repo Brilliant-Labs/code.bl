@@ -1,10 +1,6 @@
 # Control:  PUMP UP AND DEFLATE A BALLON
 
-![Pump_a_balloon-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/6_Control/Control2/Pump_a_balloon-EN.png?raw=true "Pump_a_balloon-EN")
-
-![Pump_a_balloon-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/6_Control/Control2/UPump_a_balloon-EN.png?raw=true "Pump_a_balloon-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Pump_a_balloon-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/6_Control/Control2/Pump_a_balloon-EN.png?raw=true "Pump_a_balloon-EN")
 
 ## Code Example
 

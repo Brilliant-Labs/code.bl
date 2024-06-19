@@ -1,10 +1,6 @@
 # Move:  MAKE IT ROLL USING A BUTTON REMOTE CONTROL remote code
 
-![Mkt_Button_RC-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move4/Mkt_Button_RC-EN.png?raw=true "Mkt_Button_RC-EN")
-
-![Mkt_Button_RC-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/5_Move/Move4/Mkt_Button_RC-EN.png?raw=true "Mkt_Button_RC-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Button_RC-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/5_Move/Move4/Mkt_Button_RC-EN.png?raw=true "Mkt_Button_RC-EN")
 
 ## Code Example
 

@@ -1,10 +1,6 @@
 # Control:  MAKE IT A STOPWATCH
 
-![Mkt_Stopwatch-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/6_Control/Control6/Mkt_Stopwatch-EN.png?raw=true "Mkt_Stopwatch-ENN")
-
-![Mkt_Stopwatch-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/6_Control/Control6/Mkt_Stopwatch-EN.png?raw=true "Mkt_Stopwatch-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Stopwatch-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/6_Control/Control6/Mkt_Stopwatch-EN.png?raw=true "Mkt_Stopwatch-ENN")
 
 ## Code Example
 

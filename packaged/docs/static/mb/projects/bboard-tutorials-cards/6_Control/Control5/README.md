@@ -1,10 +1,6 @@
 # Control MAKE IT A TIMER
 
-![Mkt_Timer-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/6_Control/Control5/Mkt_Timer-EN.png?raw=true "Mkt_Timer-EN")
-
-![Mkt_Timer-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/6_Control/Control5/Mkt_Timer-EN.png?raw=true "Mkt_Timer-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Timer-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/6_Control/Control5/Mkt_Timer-EN.png?raw=true "Mkt_Timer-EN")
 
 ## Code Example
 

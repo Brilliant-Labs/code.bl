@@ -1,10 +1,6 @@
 # Lights:  ADD YOUR NAME TO THE LED SCREEN!
 
-![Add_Your_Name_Screen-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/2_Lights/Lights4/Add_Your_Name_Screen-EN.png?raw=true "Add_Your_Name_Screen-EN!")
-
-![Add_Your_Name_Screen-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/2_Lights/Lights4/Add_Your_Name_Screen-EN.png?raw=true "Add_Your_Name_Screen-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Add_Your_Name_Screen-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights4/Add_Your_Name_Screen-EN.png?raw=true "Add_Your_Name_Screen-EN!")
 
 ## Code Example
 

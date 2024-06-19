@@ -1,10 +1,6 @@
 # Lights:  MAKE IT LIGHT UP different COLORS !
 
-![Mkt_Light-Up_Diff_Color-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/2_Lights/Lights2/Mkt_Light_UP-EN.png?raw=true "Mkt_Light-Up_Diff_Color-EN!")
-
-![Mkt_Light-Up_Diff_Color-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/2_Lights/Lights2/Mkt_Light_UP-EN.png?raw=true "Mkt_Light-Up_Diff_Color-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Light-Up_Diff_Color-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights2/Mkt_Light-Up_Diff_Color-EN.png?raw=true "Mkt_Light-Up_Diff_Color-EN!")
 
 ## Code Example
 

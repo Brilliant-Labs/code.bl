@@ -1,10 +1,6 @@
 # Sound:  MAKE IT TALK
 
-![Mkt_Talk-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/7_Sound/Sound3/Mkt_Talk-EN.png?raw=true "Mkt_Talk-EN")
-
-![Mkt_Talk-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/7_Sound/Sound3/Mkt_Talk-EN.png?raw=true "Mkt_Talk-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Talk-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/7_Sound/Sound3/Mkt_Talk-EN.png?raw=true "Mkt_Talk-EN")
 
 ## Code Example
 

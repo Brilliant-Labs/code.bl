@@ -1,10 +1,6 @@
 # Sound:  MAKE IT PLAY MUSIC
 
-![Mkt_Play_Music-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/7_Sound/Sound2/Mkt_Play_Music-EN.png?raw=true "Mkt_Play_Music-EN")
-
-![Mkt_Play_Music-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/7_Sound/Sound2/Mkt_Play_Music-EN.png?raw=true "Mkt_Play_Music-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Play_Music-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/7_Sound/Sound2/Mkt_Play_Music-EN.png?raw=true "Mkt_Play_Music-EN")
 
 ## Code Example
 

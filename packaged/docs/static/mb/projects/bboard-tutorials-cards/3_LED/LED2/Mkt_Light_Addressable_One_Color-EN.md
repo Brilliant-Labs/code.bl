@@ -1,10 +1,6 @@
 # LED:  MAKE IT LIGHT UP ADDRESSABLE LIGHTS ONE COLOR
 
-![Mkt_Light_Addressable_One_Color-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/3_LED/LED2/Mkt_Light_Addressable_One_Color-EN.png?raw=true "Mkt_Light_Addressable_One_Color-EN")
-
-![Mkt_Light_Addressable_One_Color-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/3_LED/LED2/Mkt_Light_Addressable_One_Color-EN.png?raw=true "Mkt_Light_Addressable_One_Color-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Light_Addressable_One_Color-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/3_LED/LED2/Mkt_Light_Addressable_One_Color-EN.png?raw=true "Mkt_Light_Addressable_One_Color-EN")
 
 ## Code Example
 

@@ -1,10 +1,6 @@
 # LED:  MAKE YOUR LIGHTS ROTATE
 
-![Mk_Your_Lights_Rotate-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/3_LED/LED3/Mk_Your_Lights_Rotate-EN.png?raw=true "Mk_Your_Lights_Rotate-EN")
-
-![Mk_Your_Lights_Rotate-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/3_LED/LED3/Mk_Your_Lights_Rotate-EN?raw=true "Mk_Your_Lights_Rotate-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mk_Your_Lights_Rotate-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/3_LED/LED3/Mk_Rotate_Your_Lights-EN.png?raw=true "Mk_Your_Lights_Rotate-EN")
 
 ## Code Example
 

@@ -1,10 +1,6 @@
 # Move:  MAKE AN INTRUDER ALERT
 
-![Mk_Intruder_Alert-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move7/Mk_Intruder_Alert-EN.png?raw=true "Mk_Intruder_Alert-EN")
-
-![Mk_Intruder_Alert-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/5_Move/Move7/Mk_Intruder_Alert-EN.png?raw=true "Mk_Intruder_Alert-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mk_Intruder_Alert-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/5_Move/Move7/Mk_Intruder_Alert-EN.png?raw=true "Mk_Intruder_Alert-EN")
 
 ## Code Example
 

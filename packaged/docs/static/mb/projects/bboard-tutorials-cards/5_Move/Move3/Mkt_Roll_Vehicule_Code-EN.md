@@ -1,10 +1,6 @@
 # Move:  MAKE IT ROLL USING A REMOTE vehicule code
 
-![Mkt_Roll_Vehicule_Code-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move3/Mkt_Roll_Vehicule_Code-EN.png?raw=true "AMkt_Roll_Vehicule_Code-EN")
-
-![Mkt_Roll_Vehicule_Code-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/5_Move/Move3/Mkt_Roll_Vehicule_Code-EN?raw=true "Mkt_Roll_Vehicule_Code-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Roll_Vehicule_Code-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/5_Move/Move3/Mkt_Roll_Vehicule_Code-EN.png?raw=true "AMkt_Roll_Vehicule_Code-EN")
 
 ## Code Example
 

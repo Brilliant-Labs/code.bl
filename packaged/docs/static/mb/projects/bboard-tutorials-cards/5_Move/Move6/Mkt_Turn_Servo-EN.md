@@ -1,10 +1,6 @@
 # Move:  MAKE IT TURN!
 
-![Mkt_Turn_Servo-EN](https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true "Mkt_Turn_Servo-EN")
-
-![Adding_motors-EN](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true "Mkt_Turn_Servo-EN")
-
-![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
+![Mkt_Turn_Servo-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true "Mkt_Turn_Servo-EN")
 
 ## Code Example
  
