@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,15 +1680,23 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="move-ir-turn">Move:   Ir Turn</h1><p>
-</p>
-<p>Under Construction!</p>
-<h2 id="description">Description</h2><p>
-</p>
-<h2 id="code-example">Code Example</h2><p>
-</p>
-<h2 id="project-idea">Project Idea</h2><p>
-</p>
+        <h1 id="move-make-it-turn-">Move:  MAKE IT TURN!</h1><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-cards/blob/master/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true" alt="Mkt_Turn_Servo-EN" title="Mkt_Turn_Servo-EN" loading="lazy"></p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/bboard-tutorials-cards/5_Move/Move6/Mkt_Turn_Servo-EN.png?raw=true" alt="Adding_motors-EN" title="Mkt_Turn_Servo-EN" loading="lazy"></p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true" alt="Magic" title="A magician&#39;s assistant" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>ExampleMAKE IT TURN! using the b.Board</p>
+<pre><code class="lang-blocks">
+let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
+basic.forever(function () {
+for (let index = 0; index &lt; 4; index++) {
+pins.servoWritePin(AnalogPin.P0, 0)
+basic.pause(1000)
+pins.servoWritePin(AnalogPin.P0, 45)
+basic.pause(1000)
+pins.servoWritePin(AnalogPin.P0, 0)
+basic.pause(1000)
+}
+})
+</code></pre>
 
     </div>
 
