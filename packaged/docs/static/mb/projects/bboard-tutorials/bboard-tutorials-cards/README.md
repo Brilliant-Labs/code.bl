@@ -8,6 +8,8 @@ Under Construction!
 
 ![Magic](https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true "A magician's assistant")
 
+<img src ="/Users/user/Git/BL_IDE_V3/pxt-microbit/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/Image_Bank-EN.png" alt="" />
+
 ## Description
 
 <!-- Write here -->

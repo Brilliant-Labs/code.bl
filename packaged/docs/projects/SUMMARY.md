@@ -106,7 +106,7 @@
   * [1_Connecting](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/README)
   * [2_MAC & IP Address](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/README)
   * [3_Roles](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Mission1_Role/README)
-* [           ](/projects/bboard-cyberville2)
+* [            ](/projects/bboard-cyberville2)
   * [Passwords - Mission 1](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/README)
   * [1_Setting_Pws](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/README)
   * [2_Sequence to access](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/README)

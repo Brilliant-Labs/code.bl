@@ -84,7 +84,7 @@
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png"
     },
     {
-        "name": "           ",
+        "name": "            ",
         "url": "/projects/bboard-cyberville2",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif"
     },
@@ -188,7 +188,7 @@
 [  ](/projects/bboard3),
 [   ](/projects/bboard4),
 [CyberSecutity #2 and Cyberville](/projects/bboard-cyberville),
-[           ](/projects/bboard-cyberville2),
+[            ](/projects/bboard-cyberville2),
 [Live Coding](/live-coding),
 [Games](/projects/games),
 [Radio Games](/projects/radio-games),
