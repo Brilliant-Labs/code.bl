@@ -1680,17 +1680,39 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="take-a-role-in-cyberville">Take a role in Cyberville</h1><p>To complete this activity “Take a role in Cyberville”, you need to belong to Cyberville to protect it from cyber attacks adquiring a role.</p>
-<h2 id="description">Description</h2><p>Let’s start 
-1) Fill out your Cyberville ID Card with names, MAC addresses, and IP addresses.
-2) Acquire an identity by choosing a role within Cyberville.
-3) Develop a code where your icon is always displayed on the micro:bit screen to indicate that you are connected to Wi-Fi in Cyberville.
-4) Program the micro:bit to play sound or  start melody (You can find it in music blocks) if you are not connected in Cyberville.</p>
+        <h1 id="3_roles-take-a-role-in-cyberville">3_Roles. <em>Take a role in Cyberville</em></h1><p>To complete this activity “Take a role in Cyberville”, you need to belong to Cyberville to protect it from cyber attacks adquiring a role.</p>
+<h2 id="activity">Activity</h2><p>Let’s start!</p>
+<p><strong>1.</strong> Fill out your Cyberville ID Card with names, MAC addresses, and IP addresses.</p>
+<p><strong>2.</strong> Acquire an identity by choosing a role within Cyberville.</p>
+<p><strong>3.</strong> Develop a code where your icon is always displayed on the micro:bit screen to indicate that you are connected to Wi-Fi in Cyberville.</p>
+<p><strong>4.</strong> Program the micro:bit to play sound or  start melody (You can find it in music blocks) if you are not connected in Cyberville.</p>
 <p>Remember, your role in Cyberville could be one of those important entities. 
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Mission1_Role/Rol.png?raw=true" alt="Rol" title="Rol" loading="lazy"></p>
 <p>It should look like this for someone who chooses WATER, and it is connected..</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Mission1_Role/Step6.png?raw=true" alt="Step6" title="Step6" loading="lazy"></p>
-<p>This activity concludes when each b.Board in the classroom is successfully linked to Cyberville and assigned a role. At this point, the teacher should simulate a cyber attack!!!  by disabling the M5 module, a WiFi provider for Cyberville. This action will result in the disconnection of all devices in Cyberville.</p>
+<p>Once you’ve successfully linked each b.Board in the classroom to Cyberville and assigned it a role, it’s time for the fun part! Your teacher will simulate a <strong>Cyber Attack</strong> by disabling the M5 module, which is the WiFi provider for Cyberville. This will disconnect all the devices in Cyberville, creating a situation of chaos and general fall in the Cyberville network!</p>
+<h2 id="code-example">Code Example</h2><p>You can <strong>download</strong> the code for this activity here:
+<a target="_blank" rel="nofollow noopener" href="https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7C.hex">https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7C.hex</a></p>
+<p>Or use this code example to set up your role.</p>
+<pre><code class="lang-blocks">Cybersec.WifiConnect(&quot;Cyberville&quot;, &quot;&quot;)
+basic.forever(function () {
+    if (Cybersec.WiFi_Connected()) {
+        basic.showIcon(IconNames.Square)
+    } else {
+        soundExpression.sad.play()
+        basic.showIcon(IconNames.Sad)
+    }
+})
+input.onButtonPressed(Button.A, function () {
+    basic.showString(Cybersec.getMACaddressbBoard())
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString(Cybersec.getIPaddressbBoard())
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    Cybersec.Disconnect()
+    basic.showIcon(IconNames.Sad)
+})</code></pre>
 
     </div>
 
