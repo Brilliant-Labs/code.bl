@@ -5,6 +5,6 @@ Penetration testing is an important part of keeping your organization in this ca
 
 According to your activity, we're so happy to share this basic format with you! We really hope it could be useful for your Cybersecurity Assessment Report.
 
-![PenTest](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/PT.jpg?raw=true "Penetration Test")
+![PenTest](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration_Test.png?raw=true "Penetration Test")
 
 [Download in PDF](https://drive.google.com/file/d/1tIT-iOKw0nhaX8NAA69QI6NEha_lB3Cx/view?usp=drive_link)

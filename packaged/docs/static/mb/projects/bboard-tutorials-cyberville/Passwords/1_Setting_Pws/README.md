@@ -35,7 +35,6 @@ There are three differents ways to setup passwords on M5Core2 to start with the 
 They should do the steps made in 1_Connectig for __Networking__ in the previos activity, but adding the __Password__ defined in class.
 
 I just wanted to let you know that you should do the steps made in 1_Connecting for __Networking__ in the previous activity, but adding the __Password__ defined in class.
-
 ![Set_Psw](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/SetPswbB.png?raw=true "Setting Password in the b.Board.").
 
 Just a quick note to ask that you please make sure that b.Board is connected. Thanks so much!

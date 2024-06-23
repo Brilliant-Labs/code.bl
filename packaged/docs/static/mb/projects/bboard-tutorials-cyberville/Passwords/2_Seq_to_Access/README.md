@@ -5,7 +5,7 @@ To develop this activity, the __teacher__ will choose a __*code protection seque
 
 ![M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1.jpg?raw=true "Mission 1, Weird Lights - School Under Attack!")
 
-They must obtain it to succeed in this mission! You'll go through four basic cybersecurity concepts.
+They must obtain it to succeed in this mission! You'll go through four basic cybersecurity concepts. [Download the attacks methods in PDF](https://drive.google.com/file/d/1M231EeiGcf75h3MSr_YlbbA7O-EI5kKj/view?usp=drive_link)
 
 - ### Brute Force
 ![Brute_Force](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Brute_Force.png?raw=true "Brute Force")
