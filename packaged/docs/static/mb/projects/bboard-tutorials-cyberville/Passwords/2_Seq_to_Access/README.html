@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1.jpg?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1.jpg?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,7 +1680,37 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="pents">PENTS</h1>
+        <h1 id="2_sequence-to-access">2_Sequence to Access</h1><p>Guess what! Our Cyberville school is under cyber attack.
+To develop this activity, the <strong>teacher</strong> will choose a <strong><em>code protection sequence</em></strong>, which will display the M5Core2 for Mission 1 as A, B, C, or D. This sequence will be secret to the students! </p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1.jpg?raw=true" alt="M1" title="Mission 1, Weird Lights - School Under Attack!" loading="lazy"></p>
+<p>They must obtain it to succeed in this mission! You’ll go through four basic cybersecurity concepts.</p>
+<ul>
+<li><h3 id="brute-force">Brute Force</h3><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Brute_Force.png?raw=true" alt="Brute_Force" title="Brute Force" loading="lazy"></p>
+</li>
+<li><h3 id="dictionary">Dictionary</h3><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Dictionary.png?raw=true" alt="Dictionary" title="Dictionary" loading="lazy"></p>
+</li>
+<li><h3 id="rainbow-table">Rainbow Table</h3><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Rainbow_Table.png?raw=true" alt="Rainbow_Table" title="Rainbow Table" loading="lazy"></p>
+</li>
+<li><h3 id="rainbow-table">Rainbow Table</h3><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Shoulder_Surfing.png?raw=true" alt="Shoulder_Surfing" title="Shoulder Surfing" loading="lazy"></p>
+</li>
+</ul>
+<h2 id="teachers">Teachers</h2><p>Teachers this is Mission 1:
+<img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1.png?raw=true" alt="Mission1" title="Mission 1" loading="lazy"></p>
+<h2 id="students">Students</h2><p>You can <strong>download</strong> an exaple code for this activity here:
+<a target="_blank" rel="nofollow noopener" href="https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-8.hex">https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-8.hex</a></p>
+<p>Or use this code example for a possible <strong><em>code protection sequence</em></strong></p>
+<pre><code class="lang-blocks">Cybersec.WifiConnect(&quot;Cyberville&quot;, &quot;BL_Cyb1&quot;)
+basic.forever(function () {
+})
+input.onButtonPressed(Button.A, function () {
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
+    Cybersec.sendprot()
+})</code></pre>
+
     </div>
 
 					<div class="hideprint"></div>

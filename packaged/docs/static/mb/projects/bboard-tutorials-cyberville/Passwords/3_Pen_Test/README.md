@@ -1,23 +1,10 @@
-# Networking
-![Cyberville]("docs/static/mb/projects/bboard-tutorials-cyberville/Cyberville.png?raw=true "Cyberville")
+# Penetration Test
 
-Is a network is a large system consisting of many similar parts that are connected together to allow movement or communication between or along the parts, or between the parts and a control center.
+Hi there! Have you ever wondered what a penetration test is? It's a way of testing the security of a computer system, network, or web application by simulating a cyber attack. The goal is to identify and exploit vulnerabilities to determine whether someone could gain unauthorized access or cause other problems.
+Penetration testing is an important part of keeping your organization in this case our Cyberville School safe from cyber threats. It helps us make sure that our systems are strong and can handle any potential attacks.
 
-## Description
-This activity aims to enhance understanding of how computer networks operate and the roles electronic devices play within a network. Teachers and students will collaboratively create their own WiFi network in the classroom, assuming roles in Cyberville a futuristic city concept developed by Brilliant Labs for academic representation.
+According to your activity, we're so happy to share this basic format with you! We really hope it could be useful for your Cybersecurity Assessment Report.
 
-![Cyberville]("docs/static/mb/projects/bboard-tutorials-cyberville/Cyberville.png?raw=true "Cybereville")
+![PenTest](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/PT.jpg?raw=true "Penetration Test")
 
-This activity uses the b.Boards and the M5Stack Core2 microcontroller module.
-
-![bboard&M5]("docs/static/mb/projects/bboard-tutorials-cyberville/bboard&M5.png?raw=true "bboard&M5")
-
-Teacher shoould to select Activity 7 - Networking on M5core
-
-How to chose an activity in M5
-https://drive.google.com/file/d/1jSbtlbDg91NHKuTSPJmdVajOFBOBQCj2/view?usp=drive_link
-
-Students create the Cyberville community doing this steps:
-1) Connecting to the Cyberville WiFi.
-2) Find bBoard MAC and IP Address.
-3) Mission 1:Take a role in Cyberville.
+[Download in PDF](https://drive.google.com/file/d/1tIT-iOKw0nhaX8NAA69QI6NEha_lB3Cx/view?usp=drive_link)

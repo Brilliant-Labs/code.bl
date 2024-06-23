@@ -25,7 +25,7 @@ __4.__ Create another block to disconnect from the network. You can use On logo 
 
 __5.__ Turn on the b.Board and establish communication between the PC, micro:bit and b.Board.
 
-![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.png?raw=true "Connected_gif")
+![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Connected_gif")
 
 __6.__ Download the code and check the connection and disconnection code with the M5Core2 module WiFi access point.
 
