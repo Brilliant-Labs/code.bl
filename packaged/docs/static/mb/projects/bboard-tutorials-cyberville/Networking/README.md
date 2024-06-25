@@ -17,8 +17,9 @@ Teacher should to select Activity 7 - Networking on M5core
 ![M5core2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true "M5core2")
 
 
-__To select any activity within M5Core, see this video:__
+__To select any activity within M5Core2, see this video:__
 https://drive.google.com/file/d/1jSbtlbDg91NHKuTSPJmdVajOFBOBQCj2/view?usp=drive_link
+
 
 ### __*Students*__
 Students create the Cyberville community doing this steps:  
