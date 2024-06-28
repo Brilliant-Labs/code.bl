@@ -1,12 +1,13 @@
-# Do Ping Tutorial for Phyton
-
-## Lett
+# Do Ping Tutorial for blocks
+## Let´s start
 
 Let's do a quick Ping to the Access Point, the M5Core2 Module. It has a default IP address of 192.168.4.1, which is great for getting started!
 
-Tell everyone who you are, your role, as well your MAC and IP address. Show Cyberville ID Card
+Tell everyone who you are, your role, as well your MAC and IP address, show them your Cyberville ID Card. JS
 
-![ID](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/ID.png?raw=true "ID")
+![Role](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "Role")
+
+![Pressing the A and B buttons](/static/mb/projects/smiley-buttons/sim.gif)
 
 ## Step 1
 
