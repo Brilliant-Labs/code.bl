@@ -7,4 +7,4 @@ According to your activity, we're so happy to share this basic format with you! 
 
 ![PenTest](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration_Test.png?raw=true "Penetration Test")
 
-[Download in PDF](https://drive.google.com/file/d/1tIT-iOKw0nhaX8NAA69QI6NEha_lB3Cx/view?usp=drive_link)
+[Download to Print](https://www.canva.com/design/DAGJh-kTWV8/M0R29ErBVEWD_UMnfMTG1w/view?utm_content=DAGJh-kTWV8&utm_campaign=designshare&utm_medium=link&utm_source=editor)

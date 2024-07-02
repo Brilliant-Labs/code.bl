@@ -45,13 +45,23 @@ __7.__ Download the code to micro:bit.
 __8.__ The student's will now display their unique MAC Address on micro:bit screen pressing button A, and the IP Address pressing button B.
 
 The MAC address will be displayed on Micro:bit display, similar to this:
-My MAC: 34:ab:95:98:d1:f8
+__My MAC: 34:ab:95:98:d1:f8__.
 And the IP address will be displayed on Micro:bit display, similar to this:
-My IP: “192.168.4.2”
-Students can also see the MAC and IP address on the Consola Device
+__My IP: “192.168.4.2”__.
+
+#
+### __*Another Option to see your information*__
+
+You can also see the MAC and IP address on the Consola Device.
+
+__Once you download your code...__
+
+1. Click on the refresh button (circular arrow icon) in the simulator window.
+2. Wait until __*Show console Device*__ button apears on console output window.
+3. Click on it.
 
 ![Step5](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step5.png?raw=true "Step5")
-
+#
 
 ## Code Example
 
