@@ -26,23 +26,23 @@ Please follow the next steps:
 
 ## Students
 
-1. Connect to the WiFi access point. The teacher should have provided the correct name. Use the *Connect to WiFi* block. Remember, it should look like this:
-![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Connected_gif")
+1. Connect to the WiFi access point 📳. The teacher should have provided the correct name. Use the *Connect to WiFi* block. Remember, it should look like this:
+![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Connected_gif")  
 
-2. Choose your role 👤 in Cyberville:
 
-    1 School 🏫  
-    2 Hospital 🏥  
-    3 Water ☔  
-    4 WiFi-BL 📳  
-    5 Government 🏢  
-    6 Brilliant Labs 🏩   
-    7 Bank 🏦  
-    8 Factory 🏭  
-    9 Industry 🏪  
-    10 Art Center 🎨  
-    11 Cyber Security 👽  
-    12 Citizens 😎  
+2. Choose your role 👤 in Cyberville:  
+    1 School          🏫  
+    2 Hospital        🏥  
+    3 Water           ☔  
+    4 WiFi-BL         📳  (Not available as role)  
+    5 Government      🏢  
+    6 Brilliant Labs  🏩   
+    7 Bank            🏦  
+    8 Factory         🏭  
+    9 Industry        🏪  
+    10 Art Center     🎨  
+    11 Cyber Security 👽  (Not available as role)  
+    12 Citizens       😎  
 
     For b.Board screen use these:
 
@@ -51,20 +51,20 @@ Please follow the next steps:
     In code environment looks like:  
     ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole.png?raw=true "Choose a Role")    
 
-4. Select a device to be protected: 
+3. Select a device to be protected:   
     1 Heat Control ❄️  
-    2 Air Control 🌀  
-    3 Lamp Cafe 💡🍮  
-    4 Lamps Gym 💡🏃    
-    5 Internet 📶  
+    2 Air Control  🌀  
+    3 Lamps Cafe 💡🍮  
+    4 Lamps Gym  💡🏃    
+    5 Internet     📶  
  
 In code environment looks like:  
     ![ChooseDevice](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseDevice.png?raw=true "Choose a Role")
 
 
-5. Code the b.Board to do sequence to turn on the devices affected by the hacked, remembering that it is secret from your teacher and you have to get it.
+4. Code the b.Board to do sequence to turn on the devices affected by the hacked, remembering that it is secret from your teacher and you have to get it.
 
-6. Use a block *Send protection sequence* at the end to check if it is the right sequence defined by the teacher, have fan!
+5. Use a block *Send protection sequence* at the end to check if it is the right sequence defined by the teacher, have fan!
 
 ***
 
@@ -83,7 +83,10 @@ In code environment looks like:
 🙁 Or maybe a sad face if not. No worries! You've just got to start again.
 
 
-*Just a quick note to remind you to stay connected. If you're not connected* ✅, *your code protection sequence will be disqualified* ❎ *and won't be sent. We want to make sure you're always protected!*
+ *Just a quick note to remind you to stay connected*
+ (✅ on screen b.Board). *If you're not connected* (❎ on screen b.Board)*, your code protection sequence will be disqualified* *and won't be sent.*      
+ We want to make sure you're always protected!.  
+ You can send your new code, when you see a triangle 🔺 on screen b.Board.
 
 ╚═══════════════════════════════════╝
 ***
@@ -107,9 +110,9 @@ input.onButtonPressed(Button.A, function () {
     } else {
         basic.showLeds(`
             . . . . .
-            . # . # .
             . . # . .
-            . # . # .
+            . # # # .
+            # # # # #
             . . . . .
             `)
     }
