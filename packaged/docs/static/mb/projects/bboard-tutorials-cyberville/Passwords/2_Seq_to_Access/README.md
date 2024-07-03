@@ -29,9 +29,42 @@ Please follow the next steps:
 1. Connect to the WiFi access point. The teacher should have provided the correct name. Use the *Connect to WiFi* block. Remember, it should look like this:
 ![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Connected_gif")
 
-2. Code the b.Board to do sequence to turn on the devices affected by the hacked, remembering that it is secret from your teacher and you have to get it.
+2. Choose your role 👤 in Cyberville:
 
-3. Use a block *Send protection sequence* at the end to check if it is the right sequence defined by the teacher, have fan!
+    1 School 🏫  
+    2 Hospital 🏥  
+    3 Water ☔  
+    4 WiFi-BL 📳  
+    5 Government 🏢  
+    6 Brilliant Labs 🏩   
+    7 Bank 🏦  
+    8 Factory 🏭  
+    9 Industry 🏪  
+    10 Art Center 🎨  
+    11 Cyber Security 👽  
+    12 Citizens 😎  
+
+    For b.Board screen use these:
+
+    ![Rol](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "Rol")
+    
+    In code environment looks like:  
+    ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole.png?raw=true "Choose a Role")    
+
+4. Select a device to be protected: 
+    1 Heat Control ❄️  
+    2 Air Control 🌀  
+    3 Lamp Cafe 💡🍮  
+    4 Lamps Gym 💡🏃    
+    5 Internet 📶  
+ 
+In code environment looks like:  
+    ![ChooseDevice](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseDevice.png?raw=true "Choose a Role")
+
+
+5. Code the b.Board to do sequence to turn on the devices affected by the hacked, remembering that it is secret from your teacher and you have to get it.
+
+6. Use a block *Send protection sequence* at the end to check if it is the right sequence defined by the teacher, have fan!
 
 ***
 
@@ -39,9 +72,7 @@ Please follow the next steps:
 
 ╔═══════════════════════════════════╗
 
-🏫 The entire classroom role for Mission 1 is "__School__".
-
-🔊 When you send your *protection sequence code*, you will hear the song Giggle.
+🎶 When you send your *protection sequence code*, you will hear the song Giggle.
 
 🌟 You will shortly see the BLiXel device turn on according to your code.
 
@@ -50,6 +81,9 @@ Please follow the next steps:
 🙂 At the end of your sequence you will get a smiley face if you were successful in this Mission 1.
 
 🙁 Or maybe a sad face if not. No worries! You've just got to start again.
+
+
+*Just a quick note to remind you to stay connected. If you're not connected* ✅, *your code protection sequence will be disqualified* ❎ *and won't be sent. We want to make sure you're always protected!*
 
 ╚═══════════════════════════════════╝
 ***
@@ -61,15 +95,23 @@ Or use this code example for a possible __*code protection sequence*__ to obtain
 Allways be sure that you are connected in the right Cyberville network, before you try a new code.
 
 ```blocks
-Cybersec.WifiConnect("Cyberville", "BL_Cyb1")
-basic.forever(function () {
-})
 input.onButtonPressed(Button.A, function () {
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
-    Cybersec.sendprot()
+    Cybersec.WifiConnect("Cyberville #1", "")
+    if (Cybersec.WiFi_Connected()) {
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
+        Cybersec.sendprot()
+    } else {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . # . .
+            . # . # .
+            . . . . .
+            `)
+    }
 })
 ```

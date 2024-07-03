@@ -1,4 +1,5 @@
-# 2_MAC and IP Address. *Find b.Board MAC and IP Address*
+# 2_MAC and IP Address
+## *Find b.Board MAC and IP Address*
 
 The Media Access Control Address or MAC Address is a 12-digit hexadecimal number assigned to each device connected to the network. The MAC Address is unique. Each b.Board and M5 module in Cyber Security Kit has one.
 
@@ -7,17 +8,17 @@ The M5 module will assign an IP address to each b.board on Cyberville because it
 
 As well as the MAC and IP addresses working together in the network, one is identifying while the other is locating.
 
+***
 ## Activity
 
 This activity consists of finding the MAC and IP address in each bBoard connected to Cyberville. Students will publish it on a label or Cyberville ID card. Therefore, students can identify these addresses as unique and owned in Cyberville when they make comparisons with each other, and it is useful to recognize them in the network.
 
 Additionally, the teachers and students should publish the MAC and IP addresses on the Cyberville ID  card:
 
-Teacher ID card
-https://drive.google.com/file/d/1Z4jSVrQQ4GE0WAjxjNaPhLPh601Iy6dM/view?usp=drive_link
+Teacher ID card. [Download Here](https://www.canva.com/design/DAGJ47YAKtA/2BVp4-fH0NbH9OvPOHU-Jg/view?utm_content=DAGJ47YAKtA&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-Student ID card
-https://drive.google.com/file/d/1A03JHkK8quWrVk7ve4wsLASVxFN5EdCK/view?usp=drive_link
+Student ID card. [Download Here](
+https://www.canva.com/design/DAGJ4uZJCmI/VMkcSyZzPpSwA5wGthh2gQ/view?utm_content=DAGJ4uZJCmI&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 Example:
 ![ID](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/ID.png?raw=true "ID")
@@ -44,24 +45,31 @@ __7.__ Download the code to micro:bit.
 
 __8.__ The student's will now display their unique MAC Address on micro:bit screen pressing button A, and the IP Address pressing button B.
 
-The MAC address will be displayed on Micro:bit display, similar to this:
-__My MAC: 34:ab:95:98:d1:f8__.
-And the IP address will be displayed on Micro:bit display, similar to this:
-__My IP: “192.168.4.2”__.
+The MAC address will be displayed on Micro:bit display, similar to this (Scrolling ⏪):
 
-#
-### __*Another Option to see your information*__
+       My MAC: 34:ab:95:98:d1:f8
 
-You can also see the MAC and IP address on the Consola Device.
+And the IP address will be displayed on Micro:bit display, similar to this (Scrolling ⏪):
 
-__Once you download your code...__
+       My IP: “192.168.4.2”
 
-1. Click on the refresh button (circular arrow icon) in the simulator window.
-2. Wait until __*Show console Device*__ button apears on console output window.
+
+***
+
+📌 __*Notes:*__
+
+__*Another Option to see your information:*__
+You can also see the MAC and IP address on the __*Consola Device*__.
+╔═══════════════════════════════════╗
+
+*Once you download your code...*
+1. Click on the refresh button 	🔄 (circular arrow icon) in the simulator window.
+2. __Wait__ until *Show console Device* button apears on console output window.
 3. Click on it.
 
 ![Step5](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step5.png?raw=true "Step5")
-#
+╚═══════════════════════════════════╝
+***
 
 ## Code Example
 

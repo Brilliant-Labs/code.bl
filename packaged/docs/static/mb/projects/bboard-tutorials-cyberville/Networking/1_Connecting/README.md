@@ -2,6 +2,7 @@
 
   It's time to connect to the WiFi Cyberville. Cyberville is a cool representation of a futuristicville developed by the awesome folks at Brilliant Labs. In this Cyberville, all clients or b.Boards are connected to the WiFi Cyberville network. The WiFi service on Cyberville is provided by the M5Core2 module, which will create the WiFi Access Point called Cyberville #?. Let´s connect us to belong to Cyberville!
 
+***
 ## Activity
 
 Let's start 
@@ -36,6 +37,7 @@ or a sad face if they are not.
 Students will see smile face if they are connected.
 ![Disconnected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Disconnected.png?raw=true "Disconnected")
 
+***
 ## Code Example
 
 You can __download__ the code for this activity here:

@@ -22,6 +22,7 @@ It should look like this for someone who chooses WATER, and it is connected..
 
 Once you've successfully linked each b.Board in the classroom to Cyberville and assigned it a role, it's time for the fun part! Your teacher will simulate a __Cyber Attack__ by disabling the M5 module, which is the WiFi provider for Cyberville. This will disconnect all the devices in Cyberville, creating a situation of chaos and general fall in the Cyberville network!
 
+***
 ## Code Example
 
 You can __download__ the code for this activity here:
