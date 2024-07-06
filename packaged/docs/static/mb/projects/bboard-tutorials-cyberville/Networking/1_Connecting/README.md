@@ -7,7 +7,7 @@
 
 Let's start 
 
-__1.__ Go to https://code-alpha.brilliantlabs.ca/ and create a new project using micro:bit V2,  naming it Cyber_Network.
+__1.__ Go to `https://code-alpha.brilliantlabs.ca/` and create a new project using micro:bit V2,  naming it Cyber_Network.
 
 ![Step1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1.png?raw=true "Step1")
 

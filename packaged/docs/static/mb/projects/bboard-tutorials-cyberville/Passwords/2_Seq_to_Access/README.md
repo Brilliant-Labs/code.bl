@@ -9,26 +9,23 @@ To develop this activity, the __teacher__ will choose a __*code protection seque
 The __*Students*__ will need to obtain the right *sequence* to turn on the devices that have been attacked.
 
 ## Teachers
-Teachers this is Mission 1 that you will find on M5Core2 module:
-
-![Mission1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1.png?raw=true "Mission 1")
-
-Please follow the next steps:
+For __Mission 1- Weird Light__ Please follow the next steps that you will find on M5Core2 module::
 
 1. Load __Mission_1: Weird Lights__ into M5Core2. You can see this [video](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
-2. Press the first button __Go!!__, then select the __code protection sequence__ you want to use as a challenge for your students. 
+2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
 
-3. Share the current __Access Point__ name created by the M5Core2 with the classroom. For example:
-                Cyberville #1
+3. Share the current __Access Point name__ created by the M5Core2 with the classroom and the password if it is the case. For example:  
+        AP name  📳: `Cyberville #1  `
+        Password🔑: `BL_Cybr1` (if you are using default one)
 
-4. Finally, press on the screen between options A, B, C or D. Your selection will turn on in yellow color. That is all!  Help the students with the [file attack methods](https://www.canva.com/design/DAGHlrBxBfU/6qFptClpEV4OzdJmi5frkQ/view?utm_content=DAGHlrBxBfU&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+4. Finally, press on the screen between options A, B, C or D. Your choice will be highlighted in yellow. That is all!  Help the students with the [File Attack Methods](https://www.canva.com/design/DAGHlrBxBfU/6qFptClpEV4OzdJmi5frkQ/view?utm_content=DAGHlrBxBfU&utm_campaign=designshare&utm_medium=link&utm_source=editor) to succeed in this activity.
 
 ## Students
 
-1. Connect to the WiFi access point 📳. The teacher should have provided the correct name. Use the *Connect to WiFi* block. Remember, it should look like this:
+1. Connect to the WiFi access point M5Core2 📳. The teacher should have provided the name and password. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen b.Board):
 ![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Connected_gif")  
-
+If you got a small __x__ (❎ on screen b.Board), you are NOT connected. 
 
 2. Choose your role 👤 in Cyberville:  
     1 School          🏫  
@@ -43,10 +40,6 @@ Please follow the next steps:
     10 Art Center     🎨  
     11 Cyber Security 👽  (Not available as role)  
     12 Citizens       😎  
-
-    For b.Board screen use these:
-
-    ![Rol](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "Rol")
     
     In code environment looks like:  
     ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole.png?raw=true "Choose a Role")    
@@ -70,8 +63,6 @@ In code environment looks like:
 
 📌 __*Notes:*__
 
-╔═══════════════════════════════════╗
-
 🎶 When you send your *protection sequence code*, you will hear the song Giggle.
 
 🌟 You will shortly see the BLiXel device turn on according to your code.
@@ -80,9 +71,9 @@ In code environment looks like:
 
 🙂 At the end of your sequence you will get a smiley face if you were successful in this Mission 1.
 
-🙁 Or maybe a sad face if not. No worries! You've just got to start again.
+🙁 Or maybe a sad face if not. No worries! You've just got to start again. 
 
-
+╔═══════════════════════════════════╗
  *Just a quick note to remind you to stay connected*
  (✅ on screen b.Board). *If you're not connected* (❎ on screen b.Board)*, your code protection sequence will be disqualified* *and won't be sent.*      
  We want to make sure you're always protected!.  
@@ -100,21 +91,11 @@ Allways be sure that you are connected in the right Cyberville network, before y
 ```blocks
 input.onButtonPressed(Button.A, function () {
     Cybersec.WifiConnect("Cyberville #1", "")
-    if (Cybersec.WiFi_Connected()) {
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
-        Cybersec.sendprot()
-    } else {
-        basic.showLeds(`
-            . . . . .
-            . . # . .
-            . # # # .
-            # # # # #
-            . . . . .
-            `)
-    }
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
+    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
+    Cybersec.sendprot()
 })
 ```
