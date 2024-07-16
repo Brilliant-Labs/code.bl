@@ -79,12 +79,12 @@
         "largeImageUrl": "docs/static/mb/projects/bboard-tutorials/wifi-ble/wifi-click-gif.gif"
     },
     {
-        "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
+        "name": "CyberSecutity #2 and Cyberville",
         "url": "/projects/bboard-cyberville",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png"
     },
     {
-        "name": "            ",
+        "name": "           ",
         "url": "/projects/bboard-cyberville2",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif"
     },
@@ -187,8 +187,8 @@
 [ ](/projects/bboard2),
 [  ](/projects/bboard3),
 [   ](/projects/bboard4),
-[CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville),
-[            ](/projects/bboard-cyberville2),
+[CyberSecutity #2 and Cyberville](/projects/bboard-cyberville),
+[           ](/projects/bboard-cyberville2),
 [Live Coding](/live-coding),
 [Games](/projects/games),
 [Radio Games](/projects/radio-games),
