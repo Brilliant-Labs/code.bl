@@ -14,10 +14,10 @@ Mission 1 Lights Weird !! @boardname@.
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
   "cardType": "side",
   "label": "Passwords",
-  "labelClass": "indigo ribbon large"
+  "labelClass": "indigo ribbon small"
 },
 {
-  "name": "1_Setting_Pws",
+  "name": "1_Setting Passwords",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/README",
   "description": "Set passwords.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Set_Psw_Icon-EN.png",
@@ -35,7 +35,7 @@ Mission 1 Lights Weird !! @boardname@.
   "labelClass": ""
 },
 {
-  "name": "3_Penetration_Test",
+  "name": "3_Penetration Test",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/README",
   "description": "Perform a penetration test to prevent future attacks.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/PenTest_Icon-EN.png",
