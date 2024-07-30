@@ -12,6 +12,7 @@ Mission 2 Polluted Water !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/README",
   "description": "Polluted Water. Water Treatment Plant Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif",
   "cardType": "side",
   "label": "Valuable Data",
   "labelClass": "indigo ribbon small"
