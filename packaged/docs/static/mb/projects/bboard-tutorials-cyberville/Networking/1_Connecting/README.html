@@ -1680,29 +1680,26 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="1_connecting">1_Connecting</h1><p>  It’s time to connect to the WiFi Cyberville. Cyberville is a cool representation of a futuristicville developed by the awesome folks at Brilliant Labs. In this Cyberville, all clients or b.Boards are connected to the WiFi Cyberville network. The WiFi service on Cyberville is provided by the M5Core2 module, which will create the WiFi Access Point called Cyberville #?. Let´s connect us to belong to Cyberville!</p>
-<hr>
-<h2 id="activity">Activity</h2><p>Let’s start </p>
-<p><strong>1.</strong> Go to <code>https://code-alpha.brilliantlabs.ca/</code> and create a new project using micro:bit V2,  naming it Cyber_Network.</p>
-<p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1.png?raw=true" alt="Step1" title="Step1" loading="lazy"></p>
+        <h1 id="1_connecting">1_Connecting</h1><p>  It’s time to connect to the WiFi Cyberville. Cyberville is a cool representation of a futuristicville developed by the awesome folks at Brilliant Labs. In this Cyberville, all clients or b.Boards are connected to the WiFi Cyberville network. The WiFi service on Cyberville is provided by the M5Core2 module, which will create the WiFi Access Point called Cyberville #?. Let´s connect us to belong to Cyberville!.  </p>
+<h2 id="activity">Activity</h2><p>Let’s start!<br><strong>1.</strong> Go to <code>https://code-alpha.brilliantlabs.ca/</code> and create a new project using micro:bit V2,  naming it Cyber_Network.</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1.png?raw=true" alt="Step1" title="Step1" loading="lazy">  </p>
 <p><strong>2.</strong> Within the project, use the On Start block and place it inside the Connect to WiFi: ( ) with Password ( ) block.</p>
 <p><strong>3.</strong> Set up the right WiFi name. For example: Cyberville. Don’t use a password for this activity.</p>
-<h4 id="access-point-name-cyberville-number">Access Point Name - Cyberville Number</h4><p>Note that <strong>we will not use a password</strong> for this activity, as the Cyberville number will change each time you restart the M5Core2.</p>
-<p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb.png?raw=true" alt="CybervilleNumb" title="Cyberville Number for Access Point" loading="lazy"></p>
+<h4 id="access-point-name-cyberville-number">Access Point Name - Cyberville Number</h4><p>Note that <strong>we will not use a password</strong> for this activity, as the Cyberville number will change each time you restart the M5Core2.
+<img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb.png?raw=true" alt="CybervilleNumb" title="Cyberville Number for Access Point" loading="lazy"></p>
 <p><strong>4.</strong> Create another block to disconnect from the network. You can use On logo Presed</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step2.png?raw=true" alt="Step2" title="Step2" loading="lazy"></p>
 <p><strong>5.</strong> Turn on the b.Board and establish communication between the PC, micro:bit and b.Board.</p>
-<p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected_gif" loading="lazy"></p>
+<p>If you get a ✅, you are connected to Access Point.  </p>
+<p></p>
 <p><strong>6.</strong> Download the code and check the connection and disconnection code with the M5Core2 module WiFi access point.</p>
 <p>Students will see smile face if they are connected.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected.png?raw=true" alt="Connected" title="Connected" loading="lazy"></p>
 <p>or a sad face if they are not.
 Students will see smile face if they are connected.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Disconnected.png?raw=true" alt="Disconnected" title="Disconnected" loading="lazy"></p>
-<hr>
-<h2 id="code-example">Code Example</h2><p>You can <strong>download</strong> the code for this activity here:
-<a target="_blank" rel="nofollow noopener" href="https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7A.hex">https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7A.hex</a></p>
-<p>Or use this code example is to connect the b.Board to M5Core2</p>
+<h2 id="code-example">Code Example</h2><p>You can <strong>download</strong> the code for this activity <a target="_blank" rel="nofollow noopener" href="https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7A.hex">here</a>.</p>
+<p>Or use this code example is to connect the b.Board to M5Core2.</p>
 <pre><code class="lang-blocks">Cybersec.WifiConnect(&quot;Cyberville&quot;, &quot;&quot;)
 basic.forever(function () {
 })
@@ -1754,7 +1751,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
             <span class="item">Powered by</span>
             <a class="middle aligned" href="https://makecode.com/" title="Microsoft MakeCode"
                 target="_blank" rel="noopener">
-                <img width="100" src="/docs/static/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
+                <img width="100" src="/static/logo/Microsoft-logo_rgb_c-gray.png" alt="Microsoft">
             </a>
         </div>
     </div>

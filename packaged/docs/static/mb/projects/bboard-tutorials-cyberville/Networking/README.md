@@ -15,7 +15,7 @@ This activity uses the b.Boards as clients, and the M5Core2 microcontroller modu
 ---
 
 ### 🧑‍🏫  __*Teachers*__
-Teachers will need to select the __Networking__ activity call on the M5Core2.
+Teachers must select the __Networking__ activity on the M5Core2, and follow the steps according to the activity.
 
 To select any activity within M5Core2, see this [video](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor).
 
