@@ -15,9 +15,11 @@ We've made it really easy for you to recreate the awesome environment from Missi
 
 __1.__ [Download](https://www.canva.com/design/DAGJhxRPFpY/D54nS2FDqO65RD4bMEKsbQ/view?utm_content=DAGJhxRPFpY&utm_campaign=designshare&utm_medium=link&utm_source=editor), print and cover the b.board for Mission 1.
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/M1_Cover.png?raw=true" alt="M1_Cover" title="Cover for Mission 1." width="300" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/M1_Cover.png?raw=true" alt="M1_Cover" title="Cover for Mission 1." width="450" />
 
-![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Coverb_Gif_M1.gif?raw=true "Cover for M1.")
+![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Cover_Gif_M1.gif?raw=true "Cover for M1.")
+
+
 
 __2.__ Students and teachers, we just wanted to remind you that it's important to choose a password to set up the Cyberville network. It should be eight characters long, so that it is easy for you to remember, but difficult for intruders to guess.
 teachers will setup the password on M5Core2 Module, students will do it on their code for b.Board.

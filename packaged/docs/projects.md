@@ -82,19 +82,19 @@
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
         "url": "/projects/bboard-cyberville",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
     },
     {
         "name": "            ",
         "url": "/projects/bboard-cyberville2",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
     },
     {
         "name": "             ",
         "url": "/projects/bboard-cyberville3",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
     },
     {
         "name": "Live Coding",

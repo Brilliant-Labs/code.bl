@@ -12,7 +12,7 @@ Mission 1 Lights Weird !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/README",
   "description": "Weird Lights. School Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif",
   "cardType": "side",
   "label": "Passwords",
   "labelClass": "indigo ribbon small"
