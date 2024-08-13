@@ -3,13 +3,13 @@
   It's time to __connect__ to the WiFi Cyberville. Cyberville is a cool representation of a futuristicville developed by the awesome folks at Brilliant Labs. In this Cyberville, all clients or b.Boards are connected to the WiFi Cyberville network. The WiFi service on Cyberville is provided by the M5Core2 module, which will create the WiFi Access Point called Cyberville #?. Let´s connect us to belong to Cyberville!.  
 ## Activity
 Let's start!   
-__1.__ Go to `https://code-alpha.brilliantlabs.ca/` and create a new project using micro:bit V2,  naming it Cyber_Network.
+__1.__ Create a new project using micro:bit V2,  naming it Cyber_Network.
 
 ![Step1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1.png?raw=true "Step1")  
 
-__2.__ Within the project, use the On Start block and place it inside the Connect to WiFi: ( ) with Password ( ) block.
+__2.__ Use the Connect to WiFi:( ) with Password:( ) block and plase it inside the On Start block.
 
-__3.__ Set up the right WiFi name. For example: Cyberville. Don't use a password for this activity.
+__3.__ Make sure you use the exact WiFi name as what appears on the M5Core2.
 
 ####  Access Point Name - Cyberville Number
 Note that __we will not use a password__ for this activity, as the Cyberville number will change each time you restart the M5Core2.

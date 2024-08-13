@@ -59,7 +59,7 @@ And the IP address will be displayed on Micro:bit display, similar to this (Scro
 📌 __*Notes:*__
 
 __*Another Option to see your information:*__
-You can also see the MAC and IP address on the __*Consola Device*__.
+You can also see the MAC and IP address on the __*Show Console Device*__.
 ╔═══════════════════════════════════╗
 
 *Once you download your code...*
@@ -75,7 +75,7 @@ You can also see the MAC and IP address on the __*Consola Device*__.
 You can __download__ the code for this activity here:
 https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7B.hex
 
-Or use this code example to obtein the MAC and IP addresses
+Or use this code example to obtain the MAC and IP addresses
 
 ```blocks
 Cybersec.WifiConnect("Cyberville", "")
