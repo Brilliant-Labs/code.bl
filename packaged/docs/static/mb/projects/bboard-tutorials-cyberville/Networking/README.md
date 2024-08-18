@@ -16,14 +16,15 @@ This activity uses the b.Boards as clients, and the M5Core2 microcontroller modu
 ### 🧑‍🏫  __*Teachers*__
 Teachers must select the __Networking__ activity on the M5Core2, and follow the steps according to the activity.
 
-To select any activity within M5Core2, see this [video](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor).
+To select any activity within M5Core2, see this [**_Video_**](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor).
 
 This is a basic spec sheet for the M5Core2:  
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true" alt="M5core2" title="Spec sheet M5Core2" width="200" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true" alt="M5core2" title="Spec sheet M5Core2" width="400" />
 
 ### 🧑‍🎓 __*Students*__
 Students get to create their very own Cyberville community! Here's how it works:   
   __1.__ Connect to b.Board to the Cyberville WiFi 📳.  
   __2.__ Find b.Board MAC 🆔, and IP 📮 Addresses.  
   __3.__ Take a role in Cyberville 👤.  
-Return to the main page and begining the Cybercille Networking activities as listed:  __1_Connecting__, __2_MAC & IP Addresses__, __3_Roles__, __4_Pinging__. Have fun! 
+Return to the main page and begining the Cybercille Networking activities as listed:  __1_Connecting__, __2_MAC & IP Addresses__, __3_Roles__, __4_Pinging__.  
+Have fun! 

@@ -34,10 +34,14 @@ Remember that there are three differents ways to setup passwords on M5Core2 for 
 
 __1.__ Be sure that you are connected to the Cyberville  📳 Access Point, according to the infornmation agree with the teacher.
 If you get a ✅, you are connected.  
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />
-__2.__ Get some information in the web page provided by the Access Point 📳. Remember that you computer needs to be in the same Cyberville network.
-__3.__ Use your Water Plant Calibration developed in the previous activity as base of your new code.
-__4.__ Modify the code to provied the right ratio for __🧪 Chlorine__ and __🧪 Fluoride__ on the water treatment plant, you can see the example code below.
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
+
+__2.__ Get some information in the web page provided by the Access Point 📳. Remember that you computer needs to be in the same Cyberville network.  
+
+__3.__ Use your Water Plant Calibration developed in the previous activity as base of your new code.  
+
+__4.__ Modify the code to provide the correct ratio of __🧪 Chlorine__ and __🧪 Fluoride__ at the water treatment plant, and send the new ratio to the access point to save the Cyberville water treatment plant!!.  See the sample code below. 
+
 __5.__ Obtain some clues on the webpage to get your ratio answer and send it to the Access Point 📳 to know if you fail or success for this activity.
 
 ## Code Example
