@@ -1,13 +1,14 @@
 # 2_MAC and IP Address
 
-The Media Access Control Address or MAC Address 🆔 is a 12-digit hexadecimal number assigned to each device connected to the network. The MAC Address is unique. Each b.Board and M5 module in Cyber Security Kit has one.
+The Media Access Control Address or MAC Address 🆔 is a 12-digit hexadecimal number assigned to each device connected to the network. The MAC Addres 🆔 is unique. Each b.Board and M5 module in Cyber Security Kit has one.
 
 The IP address is an Internet Protocol 📮 number used in networks for devices to share their locations, it is 32 bits long. It can be private or public.
-The M5 module will assign an IP address to each b.board on Cyberville because it will be our access point.
+The M5 module will assign an IP address 📮 to each b.board on __Cyberville__ because it will be our access point.
 
-As well as the MAC and IP addresses working together in the network, one is identifying while the other is locating.
+As well as the MAC 🆔 and IP 📮 addresses working together in the network, one is identifying while the other is locating.
 
-## Activity *Find b.Board MAC and IP Address*
+## Activity: 
+### Find b.Board MAC 🆔 and IP 📮 Address
 
 This activity consists of finding the MAC and IP address in each b.Board connected to __Cyberville__. Students will publish it on a label or __Cyberville__ ID card. Therefore, students 🧑‍🎓 can identify these addresses as unique and owned in __Cyberville__ when they make comparisons with each other, and it is useful to recognize them in the network.
 
@@ -21,7 +22,7 @@ Download the ID Card for Students 🧑‍🎓 [Here](https://www.canva.com/desig
 
 This is an example what to expect for this activity:  
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/ID.png?raw=true" alt="ID" title="ID Example." width="300" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/IDbig.png?raw=true" alt="ID" title="ID Example." width="300" />
   
 
 *Let's start!*
@@ -70,14 +71,14 @@ You can also see the MAC and IP address on the __*Show Console Device*__.
 2. __Wait__ until *Show console Device* button apears on console output window.
 3. Click on it.
 
-![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Consolo.png?raw=true "Console Device")
+![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console.png?raw=true "Console Device")
 ╚═══════════════════════════════════╝
 
 ## Code Example
 
-You can download the code for this activity from `https://alpha.brilliantlabs.ca/documents/cybersec/Networking_B.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
-Or use this code example to obtain the MAC 🆔 and IP 📮 addresses
+Or use this code example to obtain the MAC 🆔 and IP 📮 addresses.
 
 __*Please do not forget to set up the correct name for the access point.*__
 

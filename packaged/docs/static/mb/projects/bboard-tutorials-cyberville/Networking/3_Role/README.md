@@ -2,11 +2,12 @@
 
 To complete this activity you must acquire a role in Cyberville so that you can protect it from Cyber Attacks.
 
-## Activity *Take a role in The Cyberville*
+## Activity:
+### Take a role in The Cyberville
 
 *Let's start!*
 
-__1.__ Fill out your __Cyberville ID__ Card with names, MAC addresses, and IP addresses.
+__1.__ Fill out your __Cyberville ID__ Card with names, MAC addresses 🆔, and IP addresses 📮.
 
 __2.__ Acquire an identity by choosing a role within __Cyberville__.
 
@@ -17,15 +18,15 @@ __4.__ Program the micro:bit to play sound or  start melody (You can find it in 
 Remember, your role in __Cyberville__ could be one of those important entities. 
 ![Rol](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "Rol")
 
-It should look like this for someone who chooses WATER, and it is connected.
+It should look like this for someone who chooses __WATER__, and it is connected.
 
 ![Step10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Step10.png?raw=true "Step10")
 
-Once you've successfully linked each b.Board in the classroom to Cyberville and assigned it a role, it's time for the fun part! Your teacher will simulate a __Cyber Attack__ by disabling the M5 module, which is the WiFi provider for Cyberville. This will disconnect all the devices in Cyberville, creating a situation of chaos and general fall in the __Cyberville__ network!
+Once you've successfully linked each b.Board in the classroom to __Cyberville__ and assigned it a role, it's time for the fun part! Your teacher will simulate a __Cyber Attack__ by disabling the M5 module, which is the WiFi provider for __Cyberville__. This will disconnect all the devices in __Cyberville__, creating a situation of chaos and general fall in the __Cyberville__ network!
 
 ## Code Example
 
-You can download the code for this activity from `https://alpha.brilliantlabs.ca/documents/cybersec/Networking_C.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
 Or use this code example to obtain the MAC 🆔 and IP 📮 addresses
 

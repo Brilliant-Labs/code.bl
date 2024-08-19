@@ -1680,24 +1680,23 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="do-ping-tutorial-for-blocks">Do Ping Tutorial for Blocks</h1><h2 id="let-s-start">Let´s start</h2><p>Let’s do a quick <strong><em>Ping</em></strong> to the Access Point, the M5Core2 Module. It has a default IP address of <strong>192.168.4.1</strong>, which is great for getting started!</p>
-<p>In your particular case, let’s make sure everyone knows who you are, what your role is, and your MAC and IP address. Show them your Cyberville ID card from the previous activities.</p>
+        <h1 id="do-ping-tutorial-for-blocks">Do Ping Tutorial for Blocks</h1><h2 id="let-s-start">Let´s start</h2><p>Let’s do a quick <strong><em>Ping</em></strong> to the Access Point 📳, the M5Core2 Module. It has a default IP address 📮 of <strong>192.168.4.1</strong>, which is great for getting started!</p>
+<p>In your particular case, let’s make sure everyone knows who you are, what your role is, and your MAC 🆔 and IP 📮 address. Show them your Cyberville ID card from the previous activities. Here is an example:</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/IDcard.png?raw=true" alt="IDCard" title="IDCard" loading="lazy"></p>
-<h2 id="step-1">Step 1</h2><h3 id="connect-to-cyberville-wifi-network">Connect to Cyberville wifi Network</h3><p>Place a <code>||Cybersecurity:connect to wifi||</code> block to stablish conection with the <strong>Access Point</strong> M5Core2.</p>
-<pre><code class="lang-blocks">Cybersec.WifiConnect(&quot;Cyberville #1&quot;, &quot;&quot;)
-});</code></pre>
+<h2 id="step-1">Step 1</h2><h3 id="connect-to-cyberville-wifi-network">Connect to Cyberville WiFi Network</h3><p>Place a <code>||CyberSecurity:Connect to WiFi||</code> block into <strong>on start</strong> block to stablish conection with the <strong>Access Point</strong> 📳 M5Core2.</p>
+<pre><code class="lang-blocks">    Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;);</code></pre>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/CntCyberville.gif?raw=true" alt="CntCyberville" title="Connection to Cyberville" loading="lazy"></p>
 <h2 id="step-2">Step 2</h2><p>Place a <code>||input:on button pressed||</code> block to run code when button <strong>A</strong> is pressed.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; { 
 });</code></pre>
-<h2 id="step-3">Step 3</h2><p>Add <code>||Cybersecurity:Do PING to IP||</code> block to display if IP address <strong>192.168.4.1</strong> is currently connected in the Cyberville network.</p>
-<pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; { 
+<h2 id="step-3">Step 3</h2><p>Add <code>||Cybersecurity:Do PING to IP||</code> block to display if IP address <strong>192.168.4.1</strong> is currently connected in the <strong>Cyberville</strong> network.</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function() {
     Cybersec.PingbBfrend(&quot;192.168.4.1&quot;);
 });</code></pre>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/DoPing.gif?raw=true" alt="Do_Ping" title="Do Ping to 192.168.4.1" loading="lazy"></p>
-<h2 id="step-4">Step 4</h2><p>If you have a <strong>b.Board</strong>, just connect it to USB and click “|Download|” to transfer your code. Then, press button <strong>A</strong> on your microbit-b.Board. You’ll hear a <em>hello play song</em>, which is really cool, when the command <strong>ping</strong> is executed, you’ll also see a smiley face if the IP 192.168.4.1 is connected in the Cyberville network. If you see an X on your Microbit screen with a sad play song, don’t worry it means that your friend is not in the network!
+<h2 id="step-4">Step 4</h2><p>If you have a <strong>b.Board</strong>, just connect it to USB and click “|Download|” to transfer your code. Then, press button <strong>A</strong> on your microbit-b.Board. You’ll hear a <em>hello play song</em>, which is really cool, when the command <strong>ping</strong> is executed, you’ll also see a smile face 😃 if the IP 192.168.4.1 is connected in the <strong>Cyberville</strong> network. If you see an ❎ on your Microbit screen with a sad play song, don’t worry it means that your friend is not in the network!
 Check your code and have fun!</p>
-<h2 id="step-6">Step 6</h2><p>Nice! Now go and check if your friends are connected in the Cyberville network!</p>
+<h2 id="step-6">Step 6</h2><p>Nice! Now go and check if your friends are connected in the <strong>Cyberville</strong> network!</p>
 
     </div>
 

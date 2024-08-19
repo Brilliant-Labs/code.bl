@@ -58,17 +58,20 @@ Welcome to CYBERVILLE!! @boardname@.
   "url": "/projects/bboard-tutorials-codes/PingBLK",
   "editor": "",
   "cardType": "tutorial"
-  },
-  {
-  "url": "/projects/bboard-tutorials-codes/PingPY",
-  "editor": "py",
-  "cardType": "tutorial"
-  }, 
-  {
-  "url": "/projects/bboard-tutorials-codes/PingJS",
-    "editor": "js",
-    "cardType": "tutorial"
-  }]
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
 }
 ]
 ```
