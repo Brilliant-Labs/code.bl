@@ -1,9 +1,12 @@
-# Do Ping Tutorial for blocks
-## Let´s start
+# Pinging Tutorial for Blocks
 
-Let's do a quick Ping to the Access Point, the M5Core2 Module. It has a default IP address of 192.168.4.1, which is great for getting started!
+*Let´s start*
 
-Tell everyone who you are, your role, as well your MAC and IP address, show them your Cyberville ID Card. Blocks
+Let's do a quick __ping__ to the Access Point 📳, the M5Core2 Module. It has a default IP address 📮 of 192.168.4.1, which is great for getting started!
+
+Tell everyone who you are, your role, as well your MAC and IP address, show them your Cyberville ID Card. 
+
+Blocks
 
 ![Role](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "ID")
 

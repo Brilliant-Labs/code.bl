@@ -45,7 +45,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "labelClass": ""
 },
 {
-  "name": "4_Do Ping",
+  "name": "4_Pinging",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/README",
   "description": "Do a ping on the Cyberville network. See who is available.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/Do_Ping_Icon-EN.png",
