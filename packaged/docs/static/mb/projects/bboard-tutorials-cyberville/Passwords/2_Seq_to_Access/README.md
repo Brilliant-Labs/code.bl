@@ -15,13 +15,17 @@ For __Mission 1- Weird Light__ Please follow the next steps that you will find o
 
 2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
 
+![Act8_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Act8_M1.png?raw=true "Activity 8 Mission 1")  
+
 3. Share the current __Access Point name__ created by the M5Core2 with the classroom and the password if it is the case. For example:  
         AP name  📳: __Cyberville #1__  
         Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 
 4. Finally, press on the screen between options A, B, C or D. Your choice will be highlighted in yellow. That is all!.  
+
+![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected.png?raw=true "Mission Selected")  
   
-  Help the students 🧑‍🎓 with the [__File Attack Methods__](https://www.canva.com/design/DAGHlrBxBfU/6qFptClpEV4OzdJmi5frkQ/view?utm_content=DAGHlrBxBfU&utm_campaign=designshare&utm_medium=link&utm_source=editor) to succeed in this activity.
+Help the students 🧑‍🎓 with the [__File Attack Methods__](https://www.canva.com/design/DAGHlrBxBfU/6qFptClpEV4OzdJmi5frkQ/view?utm_content=DAGHlrBxBfU&utm_campaign=designshare&utm_medium=link&utm_source=editor) to succeed in this activity.
 
 ### 🧑‍🎓 __Students__
 
