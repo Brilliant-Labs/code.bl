@@ -1,17 +1,17 @@
 # 2_Sequence to Access
 
-Guess what! Our Cyberville school is under a cyber attack.
+Guess what! Our __Cyberville__ school is under a cyber attack.
 
 To develop this activity, the __🧑‍🏫 teacher__ will choose a __*code protection sequence*__, which will display the M5Core2 for Mission 1 as A, B, C, or D. This sequence will be secret to the 🧑‍🎓 students! 
 
-The __*🧑‍🎓 Students*__ will need to obtain the right *sequence* to turn on the devices that have been attacked.  
+The __🧑‍🎓 Students__ will need to obtain the right *sequence* to turn on the devices that have been attacked.  
 
 ---  
 
-### 🧑‍🏫  __*Teachers*__
+### 🧑‍🏫  __Teachers__
 For __Mission 1- Weird Light__ Please follow the next steps that you will find on M5Core2 module::
 
-1. Load __Mission_1: Weird Lights__ into M5Core2. You can see this [video](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+1. Load __Mission_1: Weird Lights__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
 2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
 
@@ -21,44 +21,45 @@ For __Mission 1- Weird Light__ Please follow the next steps that you will find o
 
 4. Finally, press on the screen between options A, B, C or D. Your choice will be highlighted in yellow. That is all!.  
   
-  Help the students with the [File Attack Methods](https://www.canva.com/design/DAGHlrBxBfU/6qFptClpEV4OzdJmi5frkQ/view?utm_content=DAGHlrBxBfU&utm_campaign=designshare&utm_medium=link&utm_source=editor) to succeed in this activity.
+  Help the students 🧑‍🎓 with the [__File Attack Methods__](https://www.canva.com/design/DAGHlrBxBfU/6qFptClpEV4OzdJmi5frkQ/view?utm_content=DAGHlrBxBfU&utm_campaign=designshare&utm_medium=link&utm_source=editor) to succeed in this activity.
 
-### 🧑‍🎓 __*Students*__
+### 🧑‍🎓 __Students__
 
-1. Connect to the WiFi access point M5Core2 📳. The teacher must provide the AP name and password. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen b.Board):
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />
+__1.__ Connect to the WiFi access point M5Core2 📳. The teacher must provide the AP name and __password__. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen b.Board):
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
+
 If you got a small __x__ (❎ on screen b.Board), you are __*NOT*__ connected.   
   
-2. Choose your role 👤 in Cyberville:  
-    1 School          🏫  
-    2 Hospital        🏥  
-    3 Water           💧  
-    4 WiFi-BL         📳  (Not available as role)  
-    5 Government      🏢  
-    6 Brilliant Labs  🏩   
-    7 Bank            🏦  
-    8 Factory         🏭  
-    9 Industry        🏪  
-    10 Art Center     🎨  
-    11 Cyber Security 🕵️‍♂️  (Not available as role)  
-    12 Citizens       😎  
+__2.__ Choose your role 👤 in __Cyberville__:  
+    1 School          🏫  ........... Lincoln School  
+    2 Hospital        🏥  ......... Hospital Cyberville  
+    3 Water           💧  ............ AquaPure  
+    4 WiFi-BL         📳  (Not available as role)    
+    5 Government      🏢  ... Cyberville Gov.Services   
+    6 Brilliant Labs  🏩  .. Brilliant Labs    
+    7 Bank            🏦  .............. Pacific Bank    
+    8 Factory         🏭  ........... Volt Motors  
+    9 Industry        🏪  ......... Techmach Industries  
+    10 Art Center     🎨  ..... Harmony Art Center   
+    11 Cyber Security 🕵️‍♂️  (Not available as role)    
+    12 Citizens       😎  ........ The Cyberville community  
     
-In code environment looks like:  
+In IDE code environment looks like:  
 ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole.png?raw=true "Choose a Role")    
 
-3. Select a device to be protected:   
+__3.__ Select a device to be protected:   
     1 Heat Control ❄️  
     2 Air Control  🌀  
     3 Lamps Cafe 💡☕  
     4 Lamps Gym  💡🏃    
     5 Internet     🛜  
  
-In code environment looks like:  
+In IDE code environment looks like:  
     ![ChooseDevice](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseDevice.png?raw=true "Choose a Role")
 
-4. Code the b.Board to do sequence to turn on the devices affected by the hacked, remembering that it is secret from your teacher and you have to get it.
+__4.__ Code the b.Board to do sequence to turn on the devices affected by the hacked, remembering that it is secret from your teacher 🧑‍🏫 and you have to get it.
 
-5. Use a block *Send protection sequence* at the end to check if it is the right sequence defined by the teacher, have fan!
+__5.__ Use a block *Send protection sequence* at the end to check if it is the right sequence defined by the teacher, have fan!
   
 ***
 
@@ -83,11 +84,11 @@ In code environment looks like:
 
 ## Code Example
 
-You can __download__ an example code for this activity in this web site: `https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-8.hex`
+You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-access.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
-Or use this code example for a possible __*code protection sequence*__ to obtain the right sequense to turn on the devices affected by the hacked.
+Or use this code example to evaluate your code sequence and test it.
 
-Allways be sure that you are connected in the right Cyberville network, before you try a new code.
+__*Please do not forget to set up the correct name and password for the access point.*__
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

@@ -6,4 +6,20 @@ A __"ping"__ is a simple Internet program that lets you test and verify if a par
 Let's use the __"ping"__ command to find out if other roles are in the __Cyberville__ network! 
 
 ## Activity
-Let's quickly check if the Access Point 📳 M5Core2 Module is available doing __Ping__. It has a handy default IP address 📮 of 192.168.4.1, which is perfect for getting started! Now, let's dive back into the tutorials and choose the code language that speaks to you: __*Blocks*__.
+Let's quickly check if the Access Point 📳 M5Core2 Module is available doing __Ping__. It has a handy default IP address 📮 of 192.168.4.1, which is perfect for getting started! 
+
+
+## Code Example
+
+You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/Networking_D.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+
+Or use this code example to __pinging__ your friends.
+
+__*Please do not forget to set up the correct name for the access point.*__
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    Cybersec.PingbBfrend("192.168.4.1")
+})
+Cybersec.WifiConnect("Cyberville #?", "")
+```

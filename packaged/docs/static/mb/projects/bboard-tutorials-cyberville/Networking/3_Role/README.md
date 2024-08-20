@@ -28,11 +28,11 @@ Once you've successfully linked each b.Board in the classroom to __Cyberville__ 
 
 You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
-Or use this code example to obtain the MAC 🆔 and IP 📮 addresses
+Or use this code example to know if you have and __active role 👤__ in __Cyberville__.
 
 __*Please do not forget to set up the correct name for the access point.*__
 
-Or use this code example to set up your role.
+Or use this code example to set up your role 👤.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

@@ -12,10 +12,9 @@ Welcome to CYBERVILLE!! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/README",
   "description": "Learn about Cybersecurity NETWORKING in Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif",
   "cardType": "side",
   "label": "Networking",
-  "labelClass": "indigo ribbon small"
+  "labelClass": "indigo ribbon large"
 },
 {
   "name": "1_Connecting",
@@ -29,7 +28,7 @@ Welcome to CYBERVILLE!! @boardname@.
 {
   "name": "2_MAC & IP Address",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/README",
-  "description": "Find out MAC and IP address of the bBoard that you are going to use in the Cyberville.",
+  "description": "Find your MAC and IP address in Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/MAC_IP_Icon-EN.png",
   "cardType": "side",
   "label": "",
@@ -48,30 +47,13 @@ Welcome to CYBERVILLE!! @boardname@.
   "name": "4_Pinging",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/README",
   "description": "Do a ping on the Cyberville network. See who is available.",
+  
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/Do_Ping_Icon-EN.png",
   "cardType": "side",
   "label": "",
-  "labelClass": "",
-  
-  "otherActions": [
-  {
-  "url": "/projects/bboard-tutorials-codes/PingBLK",
-  "editor": "",
-  "cardType": "tutorial"
-  }
+  "labelClass": ""
 
 
-
-
-
-
-
-
-
-
-
-
-  ]
 }
 ]
 ```
