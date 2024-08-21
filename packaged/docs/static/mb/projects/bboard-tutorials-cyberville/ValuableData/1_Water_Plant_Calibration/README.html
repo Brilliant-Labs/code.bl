@@ -1680,18 +1680,18 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="1_valuable-data">1_VALUABLE DATA</h1><p><strong>Valuable Data</strong> is a really important topic in Cybersecurity. It’s all about keeping and obtaining information safe and secure on a network. It’s not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your Cyberville. It’s so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We’re here to help you with all of that!</p>
+        <h1 id="1_valuable-data">1_VALUABLE DATA</h1><p><strong>Valuable Data</strong> is a really important topic in Cybersecurity. It’s all about keeping and obtaining information safe and secure on a network. It’s not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your <strong>Cyberville</strong>. It’s so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We’re here to help you with all of that!</p>
 <p>Let’s learn together about some of the most common attacks on our <strong><em>Valuable Data</em></strong>. Once we’ve done that, we’ll solve the Second Mission, “Polluted Water - Water Treatment Plant Under Attack!”</p>
-<h2 id="activity">Activity</h2><p>Let’s start!   </p>
+<h2 id="activity">Activity</h2><p><strong>Let’s start!</strong>   </p>
 <p>We’ve made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:</p>
 <p><strong>1.</strong> <a target="_blank" rel="nofollow noopener" href="https://www.canva.com/design/DAGJhxRPFpY/D54nS2FDqO65RD4bMEKsbQ/view?utm_content=DAGJhxRPFpY&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=editor">Download</a>, print and cover the b.board for Mission 2.  </p>
 <p></p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true" alt="Cover" title="Cover for M2." loading="lazy"></p>
-<h2 id="-teachers-">🧑‍🏫 <strong>Teachers:</strong></h2><p>Teachers will guide the proccess to obtain the neopixel level bar from the students.</p>
-<h2 id="-students-">🧑‍🎓 <strong>Students:</strong></h2><p>In this example, you’ll find a suggested Water Plant Calibration environment for this activity. But don’t be afraid to get creative! You can easily recreate two bars of neopixels for 10 BLixels each, in whatever way you like. <em>Have fun!</em></p>
+<h2 id="-teachers-">🧑‍🏫 <strong>Teachers:</strong></h2><p>Teachers will guide the proccess to obtain the neopixel level bar from the students 🧑‍🎓.</p>
+<h2 id="-students-">🧑‍🎓 <strong>Students:</strong></h2><p>In this example, you’ll find a suggested Water Plant Calibration environment for this activity. But don’t be afraid to get creative! You can easily recreate two bars of neopixels for 10 BLixels each, in whatever way you like. <strong>Have fun!</strong></p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/LevelBar.gif?raw=true" alt="Level_Bar" title="Level Bar." loading="lazy"></p>
-<h2 id="code-example">Code Example</h2><p>You can <strong>download</strong> the code for this activity <a target="_blank" rel="nofollow noopener" href="https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7A.hex">here</a>, or you can go to download from: <code>https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-7A.hex</code>.</p>
-<p>Or use this code as example. Please pay attention that strip is connected to P2, and the levels are <strong>0 for 🧪 Chlorine</strong> and <strong>0 for 🧪 Fluoride</strong>. You should change this values according to the next activity <strong><em>“Get Reliable Information”</em></strong>.</p>
+<h2 id="code-example">Code Example</h2><p>You can download the code for this activity from <code>https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex</code> the file will be in Recent Download History, just drag and drop it into a new project.  </p>
+<p>Or use this code as example. Please pay attention that strip is connected to <strong>P2</strong>, and the levels are <strong>5 for 🧪 Chlorine</strong> and <strong>5 for 🧪 Fluoride</strong>. You should change this values according to the next activity <strong><em>“Get Reliable Information”</em></strong>.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     for (let Count = 0; Count &lt;= 9; Count++) {
         FL_Strip.setPixelColor(Count + (-10 + Flouride), neopixel.colors(NeoPixelColors.Green))
@@ -1707,8 +1707,8 @@ let Full_Strip: neopixel.Strip = null
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
-Flouride = 0
-Chloride = 0</code></pre>
+Flouride = 5
+Chloride = 5</code></pre>
 
     </div>
 

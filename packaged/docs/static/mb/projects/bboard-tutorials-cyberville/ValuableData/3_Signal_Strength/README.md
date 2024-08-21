@@ -1,4 +1,4 @@
-# 2_Signal_Strength
+# 3_SIGNAL STRENGTH
 
 Hey there! We're sure you'll be really interested to know that the location of your Wi-Fi Access Point 📳 in your house is super important for cybersecurity!
 
@@ -24,7 +24,7 @@ __5.__ Secure guest network management 🔧🐒 by placing your access point in 
 It is the responsibility of the teaching staff to provide students with an Access Point 📳 using the M5Core2 module for this activity. The Networking activity is the most appropriate choice as it requires only the creation of an Access Point 📳.
 It is also necessary to share with the students the following information regarding __RSSI__ and signal strength.
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/RSSI.png?raw=true" alt="RSSI" title="RSSI" width="450" /> 
-To determine the strength of the signal in Cyberville, the teacher 🧑‍🏫 should walk out of the classroom or away from the b.boards.
+To determine the strength of the signal in __Cyberville__, the teacher 🧑‍🏫 should walk out of the classroom or away from the b.boards.
 Students 🧑‍🎓 will read the signal strength based on their code, and Teacher's location with the M5Core2.
 
 ### 🧑‍🎓 __*Students*__
@@ -47,11 +47,11 @@ __5.__ Let's say this is your house... Where will you place your Access Point �
 
 ## Code Example
 
-You can __download__ an example code for this activity in this web site: `https://alpha.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-8.hex`
+You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/RSSI.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
-Or use this code example to get the __RSSI__ power.
+Or use this code as example to get the __RSSI__ power.
 
-Allways be sure that you are connected in the right Cyberville network, before you try a new code.
+Allways be sure that you are connected in the right __Cyberville__ network, before you try a new code.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

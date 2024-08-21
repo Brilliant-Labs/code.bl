@@ -1,4 +1,4 @@
-# 2_Sequence to Access
+# 2_SEQUENCE TO ACCESS
 
 Guess what! Our __Cyberville__ school is under a cyber attack.
 
@@ -88,7 +88,7 @@ __5.__ Use a block *Send protection sequence* at the end to check if it is the r
 
 ## Code Example
 
-You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-access.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M1.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
 Or use this code example to evaluate your code sequence and test it.
 
@@ -96,12 +96,23 @@ __*Please do not forget to set up the correct name and password for the access p
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    Cybersec.WifiConnect("Cyberville #1", "")
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
-    Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
-    Cybersec.sendprot()
+    Cybersec.WifiConnect("Cyberville #7", "")
+    if (Cybersec.WiFi_Connected()) {
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
+        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
+        Cybersec.sendprot()
+    } else {
+        basic.showLeds(`
+            # . . . #
+            . # . # .
+            . . # . .
+            . # . # .
+            # . . . #
+            `)
+    }
 })
+
 ```
