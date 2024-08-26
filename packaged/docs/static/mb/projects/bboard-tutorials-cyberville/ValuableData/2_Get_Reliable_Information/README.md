@@ -22,7 +22,7 @@ __1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__vide
 
 __2.__ Press the first button __GO!!!__, then select one frend hat that you want to use as a challenge for your students 🧑‍🎓. 
 
-![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M2.png?raw=true "Mission 2")  
+![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
 __3.__ Share the current __Access Point name__ created by the M5Core2 with the classroom and the password if it is the case. For example:  
         AP name  📳: __Cyberville #1__  
@@ -42,9 +42,7 @@ __4.__ The __🧑‍🏫 Teacher__ will choose between four diferent sources of 
 
 ## __🧑‍🎓 Students:__
 
-__1.__ Be sure that you are connected to the __Cyberville__  📳 Access Point, according to the infornmation agree with the teacher.
-If you get a ✅, you are connected.  
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
+__1.__ Be sure that your __PC__ are connected to the __Cyberville__  📳 Access Point, according to the information agree with the teacher.
 
 __2.__ Get some information in the web page provided by the Access Point 📳. Remember that you computer needs to be in the same __Cyberville__ network.  
 
@@ -52,7 +50,7 @@ __3.__ Use your Water Plant Calibration developed in the previous activity as ba
 
 __4.__ Modify the code to provide the correct ratio of __🧪 Chlorine__ and __🧪 Fluoride__ at the water treatment plant, and send the new ratio to the access point to save the __Cyberville__ water treatment plant!!.  See the sample code below. 
 
-__5.__ Obtain some clues on the webpage to get your ratio answer and send it to the Access Point 📳 to know if you fail or success for this activity.
+__5.__ Obtain some clues on the __webpages__ to get your ratio answer and send it to the Access Point 📳 to know if you fail or success for this activity.
 
 ## Code Example
 
@@ -65,18 +63,16 @@ __*Please do not forget to set up the correct name for the access point.*__
 ```blocks
 input.onButtonPressed(Button.A, function () {
     for (let Count = 0; Count <= 9; Count++) {
-        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.one)), neopixel.colors(NeoPixelColors.Green))
-        CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.one)), neopixel.colors(NeoPixelColors.Blue))
+        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.zero)), neopixel.colors(NeoPixelColors.Green))
+        CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.zero)), neopixel.colors(NeoPixelColors.Blue))
     }
     Full_Strip.show()
-    Cybersec.MissionWater(Cybersec.blixel_indexR(BLiXelIndexR.one))
+    Cybersec.MissionWater(Cybersec.indexhat(Index_H.one))
 })
 let CL_Strip: neopixel.Strip = null
 let FL_Strip: neopixel.Strip = null
 let Full_Strip: neopixel.Strip = null
-Cybersec.WifiConnect("Cyberville #1", "")
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
-
 ```
