@@ -14,7 +14,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
   "cardType": "side",
   "label": "Networking",
-  "labelClass": "indigo ribbon large"
+  "labelClass": "indigo ribbon small"
 },
 {
   "name": "1_Connecting",

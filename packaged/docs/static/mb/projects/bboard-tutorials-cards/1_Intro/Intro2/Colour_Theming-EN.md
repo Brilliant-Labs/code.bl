@@ -4,6 +4,9 @@
 
 ![Colour_Theming-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/Colour_Theming-EN.png?raw=true "Colour_Theming-EN")
 
+![Colour_Theming-EN_A](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/Colour_Theming-EN_A.png?raw=true "Colour_Theming-E_A")
+
+![Colour_Theming-EN_B](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/Colour_Theming-EN_B.png?raw=true "Colour_Theming-E_B")
 
 ## Description
 

@@ -4,6 +4,10 @@
 
 ![Image_Bank-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/Image_Bank-EN.png?raw=true "Image_Bank-EN")
 
+![Image_Bank-EN-A](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/Image_Bank-EN_A.png?raw=true "Image_Bank-EN_A")
+
+![Image_Bank-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/Image_Bank-EN_B.png?raw=true "Image_Bank-EN-A")
+
 
 ## Description
 
