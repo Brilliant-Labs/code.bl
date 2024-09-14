@@ -276,8 +276,9 @@
         "  ": "projects/bboard3",
         "   ": "projects/bboard4",
         "CyberSecurity #2, Cyberville and b.Board 1.4": "projects/bboard-cyberville",
+        "CyberSecurity #2, Cyberville and b.Board 1.4 FR": "projects/bboard-cyberville_FR",
         "            ": "projects/bboard-cyberville2",
-        "             ": "projects/bboard-cyberville3",
+        "              ": "projects/bboard-cyberville3",
         "Live Coding": {
             "url": "live-coding",
             "shuffle": "daily",

@@ -12,7 +12,6 @@ Learn to use Boards using Card your @boardname@!
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/README",
   "description": "Image Bank b.Board",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/IMAGE_BANK_Icon-EN.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/ImgBank.gif",
   "cardType": "side",
   "label": "1_Intro",
   "labelClass": "orange ribbon med"
@@ -27,9 +26,9 @@ Learn to use Boards using Card your @boardname@!
   "labelClass": ""
 },
 {
-  "name": "Hello bBoard",
+  "name": "Hello b.Board",
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README",
-  "description": "Hello bBoard",
+  "description": "Hello b.Board",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/Hello_bBoard_Icon-EN.png",
   "cardType": "side",
   "label": "",

@@ -11,15 +11,13 @@
 ## Description
 
 <!-- Write here -->
-This is a basic list of components for bBoard kits:
+Il s'agit d'une liste de base des composants pour les kits bBoard :
 
 - Micro:bit
-- Motors
-- Sensores
-- Click Boards
+- Moteurs
+- Capteurs
+- Cartes à cliquer
 - Leds
 - Alligators
 - Servos
 - etc,etc.
-
-

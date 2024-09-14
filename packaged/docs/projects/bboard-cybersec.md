@@ -14,7 +14,13 @@ Learn to use Clickboards with your @boardname@.
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/connect-microbit.gif",
   "cardType": "side",
   "label": "CyberSecurity",
-  "labelClass": "red ribbon med"
+  "labelClass": "red ribbon med",
+
+  "otherActions": [{
+    "url": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/README_FR.md",
+    "editor": "py",
+    "cardType": "side"
+  }] 
 },
 {
   "name": "Activity 2",
