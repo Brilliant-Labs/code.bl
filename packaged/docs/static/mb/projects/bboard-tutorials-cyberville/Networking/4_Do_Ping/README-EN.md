@@ -7,6 +7,7 @@ Let's use the __"ping"__ command to find out if other roles are in the __Cybervi
 
 ## Activity
 Let's quickly check if the Access Point 📳 M5Core2 Module is available doing __Ping__. It has a handy default IP address 📮 of 192.168.4.1, which is perfect for getting started! 
+It would be fun to share our ID cards and find out who our classmates are connected to. 
 
 
 ## Code Example

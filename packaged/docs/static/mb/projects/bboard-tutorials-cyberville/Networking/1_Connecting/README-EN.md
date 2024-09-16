@@ -26,7 +26,7 @@ __3.__ Make sure you use the exact WiFi name as it appears on the M5Core2. Ask t
 
 __4.__ Create a logic conditional block __if__ to know when you are conected. Use a smale face to display in the microbit.
 
-__5.__ Create another block to disconnect from the network. You can use *On logo Pressed*
+__5.__ Create another block to disconnect from the network. You can use *On logo Pressed*.
 
 ![Step3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step3.png?raw=true "Step3")
 
@@ -57,7 +57,7 @@ You can download the code for this activity from `https://www.brilliantlabs.ca/d
  
 Or use this code example is to connect the b.Board to M5Core2 module Access Point 📳.
 
-__*Please do not forget to set up the correct name for the access point.*__
+__*Please do not forget to set up the correct name for the access point. Mute the PC sound to listen the b.Board sound.*__
 
 ```blocks
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {

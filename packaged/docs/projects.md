@@ -83,8 +83,8 @@
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png"
     },
     {
-        "name": "CyberSecurity #2, Cyberville and b.Board 1.4 FR",
-        "url": "/projects/bboard-cyberville_FR",
+        "name": "Cybersécurité #2, Cyberville and b.Board 1.4 FRENCH",
+        "url": "/projects/bboard-cyberville-FR",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png"
     },
     {
@@ -199,7 +199,7 @@
 [  ](/projects/bboard3),
 [   ](/projects/bboard4),
 [CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville),
-[CyberSecurity #2, Cyberville and b.Board 1.4 FR](/projects/bboard-cyberville_FR),
+[Cybersécurité #2, Cyberville and b.Board 1.4 FRENCH](/projects/bboard-cyberville-FR),
 [            ](/projects/bboard-cyberville2),
 [              ](/projects/bboard-cyberville3),
 [Live Coding](/live-coding),
