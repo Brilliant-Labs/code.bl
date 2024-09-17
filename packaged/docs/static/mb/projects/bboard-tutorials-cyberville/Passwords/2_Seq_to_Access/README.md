@@ -88,7 +88,7 @@ __5.__ Use a block *Send protection sequence* at the end to check if it is the r
 
 ## Code Example
 
-You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M1.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
 Or use this code example to evaluate your code sequence and test it.
 
