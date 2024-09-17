@@ -12,7 +12,7 @@ Learn to use Boards using Card your @boardname@!
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights1/README",
   "description": "Make it Light Up!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights1/Mkt_Light_UP_Icon-EN.png",
-  "cardType": "large",
+  "cardType": "side",
   "label": "2_Lights",
   "labelClass": "orange ribbon med"
 },
