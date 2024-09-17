@@ -108,7 +108,7 @@
   * [3_Roles](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/README-EN)
   * [4_Pinging](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/README-EN)
 * [Cybersécurité #2, Cyberville and b.Board 1.4 FRENCH](/projects/bboard-cyberville-FR)
-  * [Mise en réseau - Cyberville](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/README-FR)
+  * [Networking - Cyberville](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/README-FR)
   * [1_Connexion](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/README-FR)
   * [2_Adresse MAC et IP](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/README-FR)
   * [3_Rôles](/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/README-FR)

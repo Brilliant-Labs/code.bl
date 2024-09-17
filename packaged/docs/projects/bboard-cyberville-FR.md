@@ -8,12 +8,12 @@ Bienvenue à CYBERVILLE !!! @boardname@.
 
 ```codecard
 [{
-  "name": "Mise en réseau - Cyberville",
+  "name": "Networking - Cyberville",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/README-FR",
   "description": "Découvrez les réseaux de cybersécurité à Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png",
   "cardType": "side",
-  "label": "Mise en réseau",
+  "label": "Networking - Cyberville",
   "labelClass": "indigo ribbon small"
 },
 {

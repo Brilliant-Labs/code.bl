@@ -16,10 +16,10 @@ De plus, les enseignants 🧑‍🏫 et les élèves 🧑‍🎓 doivent publier
 
 ### 🧑‍🏫 __*Carte d'identité des enseignants*__
 Téléchargez la carte d'identité pour les enseignants 🧑‍🏫 
-[Ici](https://www.canva.com/design/DAGJ41w9H6M/fsVEC0Imkq71Z9phzugwLQ/view?utm_content=DAGJ41w9H6M&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[Ici](https://drive.google.com/file/d/14gh8mT6u4rgxHwiSSV6rtSel3Gz4WwM_/view?usp=drive_link)
 
 ### 🧑‍🎓 __*Carte d'identité des élèves*___
-Téléchargez la carte d'identité pour les élèves 🧑‍🎓 [Ici](https://www.canva.com/design/DAGJ41w9H6M/fsVEC0Imkq71Z9phzugwLQ/view?utm_content=DAGJ41w9H6M&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+Téléchargez la carte d'identité pour les élèves 🧑‍🎓 [Ici](https://drive.google.com/file/d/1uYi49zPMzKYuliF4TlS2NQBoPTkMTcoD/view?usp=drive_link)
 
 Voici un exemple de ce à quoi s'attendre pour cette activité :
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/IDbig.png?raw=true" alt="Exemple de carte d'identité" title="Exemple de carte d'identité" width="300" />

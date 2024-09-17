@@ -9,7 +9,7 @@ __Let's start!__
 
 We've made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:
 
-__1.__ [Download](https://www.canva.com/design/DAGJhxRPFpY/D54nS2FDqO65RD4bMEKsbQ/view?utm_content=DAGJhxRPFpY&utm_campaign=designshare&utm_medium=link&utm_source=editor), print and cover the b.board for Mission 2.  
+__1.__ [Download](https://drive.google.com/file/d/1ldS8fqcVLhBBQ_IIyVCmBPPUuvGLlPEw/view?usp=drive_link), print and cover the b.board for Mission 2.  
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
 

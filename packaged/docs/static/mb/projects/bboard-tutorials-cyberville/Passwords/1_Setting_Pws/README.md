@@ -13,7 +13,7 @@ __*Let's start!*__
 
 We've made it really easy for you to recreate the awesome environment from Mission 1 while learning about cybersecurity. All you have to do is:
 
-__1.__ [Download](https://www.canva.com/design/DAGJhxRPFpY/D54nS2FDqO65RD4bMEKsbQ/view?utm_content=DAGJhxRPFpY&utm_campaign=designshare&utm_medium=link&utm_source=editor), print and cover the b.board for Mission 1.
+__1.__ [Download](https://drive.google.com/file/d/1u48lccLm7I4rxf287-CPFnYVhJqHE8gb/view?usp=drive_link), print and cover the b.board for Mission 1.
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/M1_Cover.png?raw=true" alt="M1_Cover" title="Cover for Mission 1." width="450" />
 

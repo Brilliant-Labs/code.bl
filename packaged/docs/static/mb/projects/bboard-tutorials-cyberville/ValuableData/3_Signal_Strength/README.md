@@ -39,7 +39,7 @@ __3.__ Find the *Get the signal Strength* block in Cybersecurity blocks, and use
 
 __4.__ Get the __RSSI__ level and check how strong is the signal according to the Access Point 📳 location, get your own conclusion about the better plase to get a strong signal.
 
-__5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [Download](https://www.canva.com/design/DAGNuhZm2tc/EVbHU526nmgqkNacx0i0iQ/view?utm_content=DAGNuhZm2tc&utm_campaign=designshare&utm_medium=link&utm_source=editor), and print the planes.
+__5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [Download](https://drive.google.com/file/d/1LNoaNRcknDB6Oy8KqP0S8L2PaEW8EaEH/view?usp=sharing), and print the planes.
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/House1.png?raw=true" alt="House1" title="House1" width="450" />
 

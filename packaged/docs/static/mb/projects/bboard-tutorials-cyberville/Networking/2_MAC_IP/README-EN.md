@@ -15,10 +15,10 @@ This activity consists of finding the MAC and IP address in each b.Board connect
 Additionally, the teachers 🧑‍🏫 and students 🧑‍🎓 should publish the MAC and IP addresses on the __Cyberville__ ID  card:
 
 ### 🧑‍🏫  __*Teachers ID Card*__
-Download the ID Card for Teachers 🧑‍🏫 [Here](https://www.canva.com/design/DAGJ41w9H6M/fsVEC0Imkq71Z9phzugwLQ/view?utm_content=DAGJ41w9H6M&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+Download the ID Card for Teachers 🧑‍🏫 [Here](https://drive.google.com/file/d/14gh8mT6u4rgxHwiSSV6rtSel3Gz4WwM_/view?usp=drive_link)
 
 ### 🧑‍🎓 __*Students ID Card*__
-Download the ID Card for Students 🧑‍🎓 [Here](https://www.canva.com/design/DAGJ41w9H6M/fsVEC0Imkq71Z9phzugwLQ/view?utm_content=DAGJ41w9H6M&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+Download the ID Card for Students 🧑‍🎓 [Here](https://drive.google.com/file/d/1uYi49zPMzKYuliF4TlS2NQBoPTkMTcoD/view?usp=drive_link)
 
 This is an example what to expect for this activity:  
 
