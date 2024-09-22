@@ -1,6 +1,11 @@
 # NETWORKING 
 
-Hey there! We know that cybersecurity can be a pretty technical topic, but we're here to make it as easy as pie! Cybersecurity __NETWORKING__ is all about keeping your data and systems safe from prying eyes and malicious attacks. Computers that access, use, and share network resources are called clients. In __Cyberville__, we're going to use b.Boards instead of computers as clients to join the __Cyberville__ network and develop different activities to learn about cybersecurity. This is going to be really fun! As you connect and identify with a role, you'll learn about networking concepts like access points, hostnames, "pinging", MAC addresses 🆔, IP addresses 📮, and more. Don't worry if it seems a bit confusing at first! We're here to help! Welcome to the __Cyberville__, have fun and enjoy coding and learning!
+## ~avatar avatar
+Intro video about Internet and Networking
+https://www.youtube.com/watch?v=T-YrekltWW8
+## ~
+
+Hey there! We know that __Cybersecurity__ can be a pretty technical topic, but we're here to make it as easy as pie! Cybersecurity __NETWORKING__ is all about keeping your data and systems safe from prying eyes and malicious attacks. Computers that access, use, and share network resources are called clients. In __Cyberville__, we're going to use b.Boards instead of computers as clients to join the __Cyberville__ network and develop different activities to learn about cybersecurity. This is going to be really fun! As you connect and identify with a role, you'll learn about networking concepts like access points, hostnames, "pinging", MAC addresses 🆔, IP addresses 📮, and more. Don't worry if it seems a bit confusing at first! We're here to help! Welcome to the __Cyberville__, have fun and enjoy coding and learning!
 
 # Activity Description
 This activity aims to enhance understanding of how computer networks operate and the roles electronic devices play within a network. Teachers and students will collaboratively create their own WiFi network in the classroom, assuming roles in __Cyberville__, a futuristic city concept developed by Brilliant Labs for academic representation.

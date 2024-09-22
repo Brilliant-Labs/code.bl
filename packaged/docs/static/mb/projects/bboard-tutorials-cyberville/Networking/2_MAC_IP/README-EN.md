@@ -64,7 +64,8 @@ And the IP address 📮 will be displayed on Microbit display, similar to this (
 
 __*Another Option to see your information:*__
 You can also see the MAC and IP address on the __*Show Console Device*__.
-╔═══════════════════════════════════╗
+
+### ~ hint
 
 *Once you download your code...*
 1. Click on the refresh button 	🔄 (circular arrow icon) in the simulator window.
@@ -72,7 +73,9 @@ You can also see the MAC and IP address on the __*Show Console Device*__.
 3. Click on it.
 
 ![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console.png?raw=true "Console Device")
-╚═══════════════════════════════════╝
+
+### ~
+
 
 ## Code Example
 
