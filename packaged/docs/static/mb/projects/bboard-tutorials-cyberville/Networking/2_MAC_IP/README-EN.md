@@ -57,6 +57,7 @@ And the IP address 📮 will be displayed on Microbit display, similar to this (
 
        My IP: “192.168.4.2”
 
+__9.__ Ultimately, 🧑‍🏫 teachers should inquire of their 🧑‍🎓 students why the 🆔 MAC and 📮 IP addresses are crucial for cybersecurity and the development of __Cyberville__.
 
 ***
 
@@ -65,15 +66,13 @@ And the IP address 📮 will be displayed on Microbit display, similar to this (
 __*Another Option to see your information:*__
 You can also see the MAC and IP address on the __*Show Console Device*__.
 
-### ~ hint
-
+### ~ avatar
 *Once you download your code...*
 1. Click on the refresh button 	🔄 (circular arrow icon) in the simulator window.
 2. __Wait__ until *Show console Device* button apears on console output window.
 3. Click on it.
 
 ![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console.png?raw=true "Console Device")
-
 ### ~
 
 

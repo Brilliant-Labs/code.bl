@@ -2,20 +2,18 @@
 
 Guess what! Our __Cyberville__ school is under a cyber attack.
 
-To develop this activity, the __🧑‍🏫 teacher__ will choose a __*code protection sequence*__, which will display the M5Core2 for Mission 1 as A, B, C, or D. This sequence will be secret to the 🧑‍🎓 students! 
+To develop this activity, the __🧑‍🏫 teacher__ will choose a __*code protection sequence*__, which will display the 📳 M5 Module for Mission 1 as A, B, C, or D. This sequence will be secret to the 🧑‍🎓 students! 
 
 The __🧑‍🎓 Students__ will need to obtain the right *sequence* to turn on the devices that have been attacked.  
 
 ---  
 
 ### 🧑‍🏫  __Teachers__
-For __Mission 1- Weird Light__ Please follow the next steps that you will find on M5Core2 module::
+For __Mission 1- Weird Light__ Please follow the next steps that you will find on M5Core2 module:
 
 1. Load __Mission_1: Weird Lights__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
-2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
-
-![Act8_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Act8_M1.png?raw=true "Activity 8 Mission 1")  
+2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. ![Act8_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Act8_M1.png?raw=true "Activity 8 Mission 1")
 
 3. Share the current __Access Point name__ created by the M5Core2 with the classroom and the password if it is the case. For example:  
         AP name  📳: __Cyberville #1__  
@@ -29,24 +27,24 @@ Help the students 🧑‍🎓 with the [__File Attack Methods__](https://drive.g
 
 ### 🧑‍🎓 __Students__
 
-__1.__ Connect to the WiFi access point M5Core2 📳. The teacher must provide the AP name and __password__. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen b.Board):
+__1.__ Connect to the WiFi access point 📳 M5 Module. The 🧑‍🏫 teacher must provide the AP name and __password__. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen b.Board):
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
 
 If you got a small __x__ (❎ on screen b.Board), you are __*NOT*__ connected.   
   
 __2.__ Choose your role 👤 in __Cyberville__:  
-    1 School          🏫  ........... Lincoln School  
-    2 Hospital        🏥  ......... Hospital Cyberville  
-    3 Water           💧  ............ AquaPure  
+    1 School          🏫  `Lincoln School`  
+    2 Hospital        🏥  `Hospital Cyberville`  
+    3 Water           💧  `AquaPure`  
     4 WiFi-BL         📳  (Not available as role)    
-    5 Government      🏢  ... Cyberville Gov.Services   
-    6 Brilliant Labs  🏩  .. Brilliant Labs    
-    7 Bank            🏦  .............. Pacific Bank    
-    8 Factory         🏭  ........... Volt Motors  
-    9 Industry        🏪  ......... Techmach Industries  
-    10 Art Center     🎨  ..... Harmony Art Center   
+    5 Government      🏢  `Cyberville Gov.Services`   
+    6 Brilliant Labs  🏩  `Brilliant Labs`    
+    7 Bank            🏦  `Pacific Bank`    
+    8 Factory         🏭  `Volt Motors`  
+    9 Industry        🏪  `Techmach Industries`  
+    10 Art Center     🎨  `Harmony Art Center`   
     11 Cyber Security 🕵️‍♂️  (Not available as role)    
-    12 Citizens       😎  ........ The Cyberville community  
+    12 Citizens       😎  `The Cyberville community`  
     
 In IDE code environment looks like:  
 ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole.png?raw=true "Choose a Role")    
@@ -67,6 +65,7 @@ __5.__ Use a block *Send protection sequence* at the end to check if it is the r
   
 ***
 
+##### ~avatar
 📌 __*Notes:*__
 
 🎶 When you send your *protection sequence code*, you will hear the song Giggle.
@@ -77,14 +76,30 @@ __5.__ Use a block *Send protection sequence* at the end to check if it is the r
 
 🙂 At the end of your sequence you will get a smiley face if you were successful in this Mission 1.
 
-🙁 Or maybe a sad face if not. No worries! You've just got to start again. 
+🙁 Or maybe a sad face if not. No worries! You've just got to start again.
 
-╔═══════════════════════════════════╗
+---
+
+__*At the end of the Challenge...*__
+
+The first one to obtain the right sequence __Wins__.
+
+The 📳 M5 module will display the winner's __Role__ name.
+
+The 📳 access point will be reset to start a new challenge.
+
+Remember to setup a new password and select a new sequence on the 📳 M5 module.
+##### ~
+
+
+
+---
+
  *Just a quick note to remind you to stay connected*
  (✅ on screen b.Board). *If you're not connected* (❎ on screen b.Board)*, your code protection sequence will be disqualified* *and won't be sent.       
  You can send your new code, when you see a triangle* (🔺 on screen b.Board).*
 
-╚═══════════════════════════════════╝
+---
 
 ## Code Example
 
@@ -96,7 +111,7 @@ __*Please do not forget to set up the correct name and password for the access p
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    Cybersec.WifiConnect("Cyberville #7", "")
+    Cybersec.WifiConnect("Cyberville #?", "")
     if (Cybersec.WiFi_Connected()) {
         Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
         Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))

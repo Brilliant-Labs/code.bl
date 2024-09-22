@@ -59,7 +59,9 @@ comme ceci (défilement ⏪) :
 
    Mon IP : “192.168.4.2”
 
- ***  
+__9.__ En fin de compte, les enseignants de 🧑‍🏫 devraient demander à leurs élèves de 🧑‍🎓 pourquoi les 🆔 adresses MAC et 📮 adresses IP sont cruciales pour la cybersécurité et le développement de __Cyberville__.
+
+***  
 
 📌 __*Remarques:*__
 

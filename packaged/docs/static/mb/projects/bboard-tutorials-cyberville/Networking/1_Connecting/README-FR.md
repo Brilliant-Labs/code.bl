@@ -10,7 +10,11 @@ Les __*🧑‍🎓 élèves*__ doivent être capables de se connecter au point d
 
 ## __🧑‍🏫 Enseignants :__
 Pour établir le point d'accès 📳 nécessaire, il est essentiel d'utiliser le module M5Core2, car cela facilitera la configuration requise. L'activité __Networking_BL_FR__, qui se trouve dans le module M5Core2, doit être sélectionnée et chargée.
+
+##### ~avatar
 Il est important de fournir aux élèves le nom et le numéro du point d'accès qui a été créé.
+##### ~
+
 Il peut être utile de partager votre adresse MAC 🆔 et votre adresse IP 📮 générées par le module M5Core2 avec les élèves, car cela leur donnera une représentation visuelle du format.
 
 ### Nom du point d'accès - Numéro de Cyberville
@@ -58,7 +62,7 @@ En appuyant sur le logo du Microbit les élèves se déconnecteront du système.
 Pour se reconnecter, il est nécessaire de modifier le code - soyez ingénieux - ou de redémarrer la b.Board.
 
 ## Exemple de code
-Vous pouvez télécharger le code pour cette activité depuis `https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex`, le fichier sera dans l'historique de téléchargement récent, il suffit de le glisser-déposer dans un nouveau projet.
+Vous pouvez télécharger le code pour cette activité depuis `https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex` le fichier sera dans l'historique de téléchargement récent, il suffit de le glisser-déposer dans un nouveau projet.
 
 Ou utilisez cet exemple de code pour connecter la b.Board au point d'accès du module M5Core2 📳.
 

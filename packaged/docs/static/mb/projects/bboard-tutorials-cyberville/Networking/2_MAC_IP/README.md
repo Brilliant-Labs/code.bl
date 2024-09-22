@@ -57,6 +57,7 @@ And the IP address 📮 will be displayed on Microbit display, similar to this (
 
        My IP: “192.168.4.2”
 
+__9.__ Ultimately, 🧑‍🏫 teachers should inquire of their 🧑‍🎓 students why the 🆔 MAC and 📮 IP addresses are crucial for cybersecurity and the development of __Cyberville__.
 
 ***
 

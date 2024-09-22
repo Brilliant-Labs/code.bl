@@ -29,11 +29,15 @@ teachers will setup the password on M5Core2 Module, students will do it on their
 
 There are three differents ways to setup passwords on M5Core2 to start with the activity __Mission 1__. 
 
-- [__No Password__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). Just a friendly reminder: don't press any buttons! Thanks!
+##### ~avatar
+Options to setup __Passwords__:
 
-- [__Default Password__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button to set the default password. 
+__No Password__ Don't press any buttons on the initializing screen. [Video Here](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-- [__Custom Password__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). We highly recommend this option to involve the students, just press middle button on M5Core2, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. That is all!
+__Default Password__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [Video Here](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+
+__Custom Password__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [Video Here](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+##### ~
 
 
 ## 🧑‍🎓 __Students:__

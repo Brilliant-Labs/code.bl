@@ -1,4 +1,12 @@
 # NETWORKING
+---
+##### ~avatar
+Vidéo d'introduction à l'Internet et aux réseaux
+https://www.youtube.com/watch?v=PhfTUV57xko
+##### ~
+---
+
+
 Salut à tous ! Nous savons que la cybersécurité peut être un sujet assez technique, mais nous sommes là pour le rendre aussi facile qu'une part de gâteau ! Le __RÉSEAUTAGE__ en cybersécurité consiste à protéger vos données et systèmes contre les regards indiscrets et les attaques malveillantes. Les ordinateurs qui accèdent, utilisent et partagent les ressources réseau sont appelés clients. Dans __Cyberville__, nous allons utiliser des b.Boards au lieu d'ordinateurs comme clients pour rejoindre le réseau __Cyberville__ et développer différentes activités pour apprendre la cybersécurité. Ça va être super amusant ! En vous connectant et en vous identifiant à un rôle, vous apprendrez des concepts de réseautage comme les points d'accès, les noms d'hôte, les « pings », les adresses MAC 🆔, les adresses IP 📮, et bien plus encore. Ne vous inquiétez pas si cela semble un peu confus au début ! Nous sommes là pour vous aider ! Bienvenue à __Cyberville__, amusez-vous et profitez de l'apprentissage et du codage !
 
 # Description de l'activité

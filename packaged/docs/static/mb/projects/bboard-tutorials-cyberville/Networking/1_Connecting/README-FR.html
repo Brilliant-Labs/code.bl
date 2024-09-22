@@ -1684,9 +1684,16 @@
 <p>Il est temps de se connecter au Wi-Fi de <strong>Cyberville</strong>. <strong>Cyberville</strong> est une représentation futuriste vraiment cool développée par les incroyables équipes de Brilliant Labs. Dans cette Cyberville, tous les clients ou b.Boards sont connectés au réseau Wi-Fi de Cyberville. Le service Wi-Fi de <strong>Cyberville</strong> est fourni par le module M5Core2, qui créera le point d’accès Wi-Fi 📳 appelé <strong>Cyberville #?</strong>. Connectons-nous pour appartenir à <strong>Cyberville!</strong>.</p>
 <h2 id="description-de-l-activit-">Description de l’activité</h2><p>Les <strong><em>🧑‍🎓 élèves</em></strong> doivent être capables de se connecter au point d’accès Wi-Fi de Cyberville créé par l’enseignant 🧑‍🏫 <strong><em>professeur</em></strong>.</p>
 <p><em>Commençons !</em></p>
-<h2 id="-enseignants-"><strong>🧑‍🏫 Enseignants :</strong></h2><p>Pour établir le point d’accès 📳 nécessaire, il est essentiel d’utiliser le module M5Core2, car cela facilitera la configuration requise. L’activité <strong>Networking_BL_FR</strong>, qui se trouve dans le module M5Core2, doit être sélectionnée et chargée.
-Il est important de fournir aux élèves le nom et le numéro du point d’accès qui a été créé.
-Il peut être utile de partager votre adresse MAC 🆔 et votre adresse IP 📮 générées par le module M5Core2 avec les élèves, car cela leur donnera une représentation visuelle du format.</p>
+<h2 id="-enseignants-"><strong>🧑‍🏫 Enseignants :</strong></h2><p>Pour établir le point d’accès 📳 nécessaire, il est essentiel d’utiliser le module M5Core2, car cela facilitera la configuration requise. L’activité <strong>Networking_BL_FR</strong>, qui se trouve dans le module M5Core2, doit être sélectionnée et chargée.</p>
+
+    <div class='avatar '>
+        <div class='avatar-image'></div>
+        <div class='ui compact message'>
+            <p>Il est important de fournir aux élèves le nom et le numéro du point d’accès qui a été créé.</p>
+
+        </div>
+    </div>
+<p>Il peut être utile de partager votre adresse MAC 🆔 et votre adresse IP 📮 générées par le module M5Core2 avec les élèves, car cela leur donnera une représentation visuelle du format.</p>
 <h3 id="nom-du-point-d-acc-s-num-ro-de-cyberville">Nom du point d’accès - Numéro de Cyberville</h3><p>Notez que <strong>nous n’utiliserons pas de mot de passe</strong> pour cette activité, car le numéro de Cyberville changera à chaque redémarrage du M5Core2.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb.png?raw=true" alt="CybervilleNumb" title="Cyberville Number for Access Point" loading="lazy"></p>
 <h2 id="-l-ves-"><strong>🧑‍🎓 Élèves :</strong></h2><p><strong>1.</strong> Créez un nouveau projet en utilisant le Microbit
@@ -1711,7 +1718,7 @@ Students will see smile face if they are connected.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Disconnected.png?raw=true" alt="Disconnected" title="Disconnected" loading="lazy"></p>
 <p>En appuyant sur le logo du Microbit les élèves se déconnecteront du système.
 Pour se reconnecter, il est nécessaire de modifier le code - soyez ingénieux - ou de redémarrer la b.Board.</p>
-<h2 id="exemple-de-code">Exemple de code</h2><p>Vous pouvez télécharger le code pour cette activité depuis <code>https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex</code>, le fichier sera dans l’historique de téléchargement récent, il suffit de le glisser-déposer dans un nouveau projet.</p>
+<h2 id="exemple-de-code">Exemple de code</h2><p>Vous pouvez télécharger le code pour cette activité depuis <code>https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex</code> le fichier sera dans l’historique de téléchargement récent, il suffit de le glisser-déposer dans un nouveau projet.</p>
 <p>Ou utilisez cet exemple de code pour connecter la b.Board au point d’accès du module M5Core2 📳.</p>
 <p><strong><em>N’oubliez pas de configurer le nom correct du point d’accès. Coupe le son du PC pour écouter le son du b.Board.</em></strong></p>
 <pre><code class="lang-blocks">input.onLogoEvent(TouchButtonEvent.Pressed, function () {
