@@ -1,5 +1,13 @@
 # PASSWORDS 
 
+---
+##### ~avatar
+Intro video about Cybersecurity Level 2 and __Cyberville__
+https://www.youtube.com/watch?v=aapUlOM0EAo
+##### ~
+---
+
+
 Welcome to __Mission 1!__ In this mission, you'll learn some basic concepts and methods used in cybersecurity. These include passwords, brute force, dictionary, rainbow table, shoulder surfing, and more. In __"Mission 1: Weird Lights,"__ you'll have to solve a dare and get the right sequence to protect the school from a new cyber attack. Good luck!
 
 ## Activity Description

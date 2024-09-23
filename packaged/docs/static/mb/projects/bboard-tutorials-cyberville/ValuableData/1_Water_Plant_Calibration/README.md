@@ -8,11 +8,11 @@ As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonl
 
 __🧪 Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪 Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
 
-The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed ratio. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
+The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed __ratio__. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
 
 The ratio of __🧪Chlorine__ to __🧪Fluoride__ in treated water can vary depending on several factors including the specific requirements of the water treatment facility, local regulations, and the source water quality.
 
-Students 🧑‍🎓 and teachers 🧑‍🏫, we just wanted to remind you that it's important to choose a __*reliable, secure, safe, and protected source of information*__ on the __Cyberville__ network, to avoid exposing your __Valuable Data__. 
+🧑‍🎓 Students and 🧑‍🏫 teachers, we just wanted to remind you that it's important to choose a __*reliable, secure, safe, and protected source of information*__ on the __Cyberville__ network, to avoid exposing your __Valuable Data__. 
 
 To develop the next activities:
 * Reliable information.   Red Hat - Phishing 🎣
@@ -20,11 +20,11 @@ To develop the next activities:
 * Safe information.     White Hat - Ransomware  💸
 * Protected information. Blue Hat - Encription 🗝️
 
-The  📳 M5 Module will provide different __Websites__ selected by the teacher, which are based on hacker challenges with different __Color 🎩 Hats__ for this activity. It's up to you to choose the most reliable, secure, logical, and intuitive data to get the correct results. Be aware that not all information is credible; it could be infected or may require analysis. But don't worry! It should always be protected. You may fail in the attempt, but that's part of the fun! __*Have fun!*__
+The 📳 M5 Module will provide different __Websites__ selected by the 🧑‍🏫 teacher, which are based on hacker challenges with different __Color 🎩 Hats__ for each activity. It's up to you to choose the most reliable, secure, logical, and intuitive data to get the correct results. Be aware that not all information is credible; it could be infected or may require analysis. But don't worry! It should always be protected. You may fail in the attempt, but that's part of the fun! __*Have fun!*__
 
 
 ## Activity
-__All right, let's get started calibrating our levels bar on our plant!__
+__All right, let's get started *Calibrating* our levels bar on our plant!__
 
 We've made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:
 
@@ -49,7 +49,15 @@ In this example, you'll find a suggested Water Plant Calibration environment for
 
 You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
 
-Or use this code as example. Please pay attention that strip is connected to __P2__, and the levels are __5 for 🧪 Chlorine__ and __5 for 🧪 Fluoride__. You should change this values according to the next activity __*"Get Reliable Information"*__.
+Or use this code as example. Please pay attention that strip is connected to __P2__, and the levels are __5 for 🧪Chlorine__ and __5 for 🧪 Fluoride__, also notice that we created a variable name as `Chloride` and other as `Floride` for this example.
+
+##### ~avatar
+You should change the values for __🧪Chloride__ and __🧪Flouride__ according to each activity, that means you need to modify this code using the __Level of Choride__ and __Level of Flouride__ Blocks in to section `... more` under CyberSecurity button from __b.Board__. 
+* Reliable information.   Red Hat - Phishing 🎣
+* Secure information.   Black Hat - Malware  🦠 
+* Safe information.     White Hat - Ransomware  💸
+* Protected information. Blue Hat - Encription 🗝️
+##### ~
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
