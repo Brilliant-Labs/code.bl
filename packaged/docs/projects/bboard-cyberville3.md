@@ -39,7 +39,7 @@ Mission 2 Polluted Water !! @boardname@.
   "name": "3_Get Secure Info",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/README",
   "description": "Be careful out there and make sure you're getting secure information from the web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Reliable_Info_BlackHat-EN.png",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Secure_Info_BlackHat-EN.png",
   "cardType": "side",
   "label": "",
   "labelClass": ""
@@ -48,7 +48,7 @@ Mission 2 Polluted Water !! @boardname@.
   "name": "4_Get Safe Info",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/README",
   "description": "Be careful out there and make sure you're getting safe information from the web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Reliable_Info_WhiteHat-EN.png",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Safe_Info_WhiteHat-EN.png",
   "cardType": "side",
   "label": "",
   "labelClass": ""
@@ -57,7 +57,7 @@ Mission 2 Polluted Water !! @boardname@.
   "name": "5_Get Protected Info",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README",
   "description": "Be careful out there and make sure you're getting reliable information from the web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Reliable_Info_BlueHat-EN.png",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-EN.png",
   "cardType": "side",
   "label": "",
   "labelClass": ""
