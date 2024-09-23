@@ -30,16 +30,43 @@ Mission 2 Polluted Water !! @boardname@.
   "name": "2_Get Reliable Info",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/README",
   "description": "Be careful out there and make sure you're getting reliable information from the web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info-EN.png",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info_RedHat-EN.png",
   "cardType": "side",
   "label": "",
   "labelClass": ""
 },
 {
-  "name": "3_Signal Strenght",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/README",
+  "name": "3_Get Secure Info",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/README",
+  "description": "Be careful out there and make sure you're getting secure information from the web.",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Reliable_Info_BlackHat-EN.png",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
+},
+{
+  "name": "4_Get Safe Info",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/README",
+  "description": "Be careful out there and make sure you're getting safe information from the web.",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Reliable_Info_WhiteHat-EN.png",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
+},
+{
+  "name": "5_Get Protected Info",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README",
+  "description": "Be careful out there and make sure you're getting reliable information from the web.",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Reliable_Info_BlueHat-EN.png",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
+},
+{
+  "name": "6_Signal Strenght",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/README",
   "description": "Just a friendly reminder to check in on your AP lotated.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/Signal_Strength-EN.png",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/Signal_Strength-EN.png",
   "cardType": "side",
   "label": "",
   "labelClass": ""

@@ -1,18 +1,16 @@
 # 2_GET RELIABLE INFORMATION
 
-Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪 Chloride and 🧪 Floride__ proportions.
+Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
+This activity is related to __Phising 🎣__, and our source of information is privided by __The Red Hat Frend__.
 
-__🧪 Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪 Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
+![RedHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true "RedHat")  
 
-The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed ratio. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
+## Activity
+__Let's start!!!__
 
-The ratio of __🧪Chlorine__ to __🧪Fluoride__ in treated water can vary depending on several factors including the specific requirements of the water treatment facility, local regulations, and the source water quality.
-
-Students 🧑‍🎓 and teachers 🧑‍🏫, we just wanted to remind you that it's important to choose a __*reliable, secure, safe, and protected source of information*__ on the __Cyberville__ network, to avoid exposing your __Valuable Data__. The websites provided by the M5 Module based on hacker challenges with different color hats for this activity are not real, but students should choose the most reliable, secure, logical, and intuitive data to get the correct results. Be aware that not all information is credible—it could be infected or may require analysis—but it should always be protected. You may fail in the attempt, but that's part of the fun! __Have fun!!__
-
-To develop this activity follow the next steps. 
+Run the exaple code to ensure the levels bar on our plant are working correctly. Then 
+follow the next steps.  
 
 ## __🧑‍🏫 Teachers:__
 
@@ -30,15 +28,21 @@ __3.__ Share the current __Access Point name__ created by the M5Core2 with the c
 
 Remember that there are three differents ways to setup passwords on M5Core2 for Cyberville network. Agree with student which password are you going to use for this activity. 
 
-- [__No Password__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). Just a friendly reminder: don't press any buttons! Thanks!
+##### ~avatar
+Options to setup __Passwords__:
 
-- [__Default Password__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button to set the default password. 
+__No Password__ Don't press any buttons on the initializing screen. [Video Here](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-- [__Custom Password__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). We highly recommend this option to involve the students, just press middle button on M5Core2, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. That is all!
+__Default Password__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [Video Here](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__4.__ The __🧑‍🏫 Teacher__ will choose between four diferent sources of information on the M5Core2 screen, which will display the M5Core2 for Mission 2 as __Red Hat for Phising__, __Black Hat for Malware__, __White Hat for Ransomware__, or __Blue Hat for Encription__. This selection will be secret to the 🧑‍🎓 students, but they can find information on the webpages generated by the Access Point 📳.
+__Custom Password__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [Video Here](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+##### ~
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2_Selected.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
+__4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the 📳 M5 module screen, which will display the M5 module for Mission 2 as __Red Hat for Phising__. The 🧑‍🎓 students can find information on the __Webpage__ generated by the 📳 Access Point with 📮 IP address is: 192.168.4.1.
+
+, __Black Hat for Malware__, __White Hat for Ransomware__, or __Blue Hat for Encription__. 
+
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="450" />
 
 ## __🧑‍🎓 Students:__
 
@@ -50,22 +54,17 @@ __3.__ Use your Water Plant Calibration developed in the previous activity as ba
 
 __4.__ Modify the code to provide the correct ratio of __🧪 Chlorine__ and __🧪 Fluoride__ at the water treatment plant, and send the new ratio to the access point to save the __Cyberville__ water treatment plant!!.  See the sample code below. 
 
-__5.__ Obtain some clues on the __Webpages__ to get your ratio answer and send it to the Access Point 📳 to know if you fail or success for this activity.
+__5.__ Obtain some clues on the __Webpage__ to get your ratio answer and send it to the Access Point 📳 to know if you fail or success for this activity.
 
+##### ~avatar
 __It's really important to understand the challenges related to the use of blocks for the 'Level of Chloride' and 'Level of Fluoride.' This should be reflected in the bar levels displayed on the Neopixel strip, so we can all be on the same page!__
+##### ~
 
-## Base Code Sources
+## Code Source for the challenge
 We really think you'll enjoy these challenges! To make it even more fun, we suggest you download the files so you can run them according to your teacher's selection.
 
 - __Red Hat:__  
 `https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex`  
-- __Black Hat:__  
-`https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Black-Hat.hex`  
-- __White Hat:__  
-`https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-White-Hat.hex`  
-- __Blue Hat:__  
-`https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex`  
-
 
 ## Code Example
 

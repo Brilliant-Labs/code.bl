@@ -2,10 +2,29 @@
 
 __Valuable Data__ is a really important topic in Cybersecurity. It's all about keeping and obtaining information safe and secure on a network. It's not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your __Cyberville__. It's so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We're here to help you with all of that!
 
-Let's learn together about some of the most common attacks on our __*Valuable Data*__. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
+Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phising__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
+
+As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
+
+__🧪 Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪 Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
+
+The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed ratio. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
+
+The ratio of __🧪Chlorine__ to __🧪Fluoride__ in treated water can vary depending on several factors including the specific requirements of the water treatment facility, local regulations, and the source water quality.
+
+Students 🧑‍🎓 and teachers 🧑‍🏫, we just wanted to remind you that it's important to choose a __*reliable, secure, safe, and protected source of information*__ on the __Cyberville__ network, to avoid exposing your __Valuable Data__. 
+
+To develop the next activities:
+* Reliable information.   Red Hat - Phishing 🎣
+* Secure information.   Black Hat - Malware  🦠 
+* Safe information.     White Hat - Ransomware  💸
+* Protected information. Blue Hat - Encription 🗝️
+
+The  📳 M5 Module will provide different __Websites__ selected by the teacher, which are based on hacker challenges with different __Color 🎩 Hats__ for this activity. It's up to you to choose the most reliable, secure, logical, and intuitive data to get the correct results. Be aware that not all information is credible; it could be infected or may require analysis. But don't worry! It should always be protected. You may fail in the attempt, but that's part of the fun! __*Have fun!*__
+
 
 ## Activity
-__Let's start!__   
+__All right, let's get started calibrating our levels bar on our plant!__
 
 We've made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:
 
