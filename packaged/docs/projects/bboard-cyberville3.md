@@ -56,7 +56,7 @@ Mission 2 Polluted Water !! @boardname@.
 {
   "name": "5_Get Protected Info",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README",
-  "description": "Be careful out there and make sure you're getting reliable information from the web.",
+  "description": "Be careful out there and make sure you're getting Protected information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-EN.png",
   "cardType": "side",
   "label": "",

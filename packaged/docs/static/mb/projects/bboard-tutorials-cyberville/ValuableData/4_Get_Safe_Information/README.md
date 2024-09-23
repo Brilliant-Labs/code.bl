@@ -4,7 +4,7 @@ Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, 
 
 This activity is related to __Ransomware  💸__, and our source of information is privided by __The White Hat Frend__.
 
-![WhiteHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/WhiteHat.png?raw=true "WhiteHat")  
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/WhitekHat.png?raw=true" alt="WhiteHat" title="WhiteHat" width="200" />
 
 ## Activity
 __Let's start!!!__

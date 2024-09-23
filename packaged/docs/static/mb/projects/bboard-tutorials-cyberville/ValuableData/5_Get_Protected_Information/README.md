@@ -4,7 +4,7 @@ Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, 
 
 This activity is related to __Encription 🗝️__, and our source of information is privided by __The Blue Hat Frend__.
 
-![BlueHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true "BlueHat")  
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true" alt="BlueHat" title="BluekHat" width="200" />
 
 ## Activity
 __Let's start!!!__

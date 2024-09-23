@@ -2,12 +2,9 @@
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Phising 🎣__, and our source of information is privided by __The Red Hat Frend__.
-
-![RedHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true "RedHat")  
-
+This activity is related to __Phising 🎣__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50" /> __The Red Hat Frend__.
 ## Activity
-__Let's start!!!__
+__*Let's start!!!*__
 
 Run the exaple code to ensure the levels bar on our plant are working correctly. Then 
 follow the next steps.  
