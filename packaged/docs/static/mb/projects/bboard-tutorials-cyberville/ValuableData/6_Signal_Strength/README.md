@@ -23,7 +23,7 @@ __5.__ Secure guest network management 🔧🐒 by placing your access point in 
 ### 🧑‍🏫  __*Teachers*__
 It is the responsibility of the teaching staff to provide students with an Access Point 📳 using the M5Core2 module for this activity. The Networking activity is the most appropriate choice as it requires only the creation of an Access Point 📳.
 It is also necessary to share with the students the following information regarding __RSSI__ and signal strength.
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/RSSI.png?raw=true" alt="RSSI" title="RSSI" width="450" /> 
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true" alt="RSSI" title="RSSI" width="450" /> 
 To determine the strength of the signal in __Cyberville__, the teacher 🧑‍🏫 should walk out of the classroom or away from the b.boards.
 Students 🧑‍🎓 will read the signal strength based on their code, and Teacher's location with the M5Core2.
 
@@ -41,9 +41,9 @@ __4.__ Get the __RSSI__ level and check how strong is the signal according to th
 
 __5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [Download](https://drive.google.com/file/d/1LNoaNRcknDB6Oy8KqP0S8L2PaEW8EaEH/view?usp=sharing), and print the planes.
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/House1.png?raw=true" alt="House1" title="House1" width="450" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true" alt="House1" title="House1" width="450" />
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Signal_Strength/House2.png?raw=true" alt="House2" title="House2" width="450" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2.png?raw=true" alt="House2" title="House2" width="450" />
 
 ## Code Example
 
