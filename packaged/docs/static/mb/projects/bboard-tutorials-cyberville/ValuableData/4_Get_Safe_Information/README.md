@@ -40,6 +40,10 @@ __4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="200" />
 
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/arrow.png?raw=true" alt="Hats" title="Hats" width="200" />
+
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/M2C.png?raw=true" alt="Hats" title="Hats" width="200" />
+
 ## __🧑‍🎓 Students:__
 
 __1.__ Be sure that your __PC__ are connected to the __Cyberville__  📳 Access Point, according to the information agree with the teacher.
