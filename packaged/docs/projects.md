@@ -80,7 +80,8 @@
     {
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
         "url": "/projects/bboard-cyberville",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif"
     },
     {
         "name": "            ",
