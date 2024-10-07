@@ -23,7 +23,7 @@ Mission 2 Eau polluée !! @boardname@.
   "description": "Prenez vos outils et commencez à personnaliser votre propre usine de traitement des eaux.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Water_Calibration-FR.png",
   "cardType": "side",
-  "label": "",
+  "label": "FR",
   "labelClass": ""
 },
 {
@@ -32,7 +32,7 @@ Mission 2 Eau polluée !! @boardname@.
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations fiables sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info_RedHat-FR.png",
   "cardType": "side",
-  "label": "",
+  "label": "FR",
   "labelClass": ""
 },
 {
@@ -41,7 +41,7 @@ Mission 2 Eau polluée !! @boardname@.
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Secure_Info_BlackHat-FR.png",
   "cardType": "side",
-  "label": "",
+  "label": "FR",
   "labelClass": ""
 },
 {
@@ -50,7 +50,7 @@ Mission 2 Eau polluée !! @boardname@.
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Safe_Info_WhiteHat-FR.png",
   "cardType": "side",
-  "label": "",
+  "label": "FR",
   "labelClass": ""
 },
 {
@@ -59,7 +59,7 @@ Mission 2 Eau polluée !! @boardname@.
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-FR.png",
   "cardType": "side",
-  "label": "",
+  "label": "FR",
   "labelClass": ""
 },
 {
@@ -68,7 +68,7 @@ Mission 2 Eau polluée !! @boardname@.
   "description": "Just a friendly reminder to check in on your AP lotated.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/Signal_Strength-FR.png",
   "cardType": "side",
-  "label": "",
+  "label": "FR",
   "labelClass": ""
 }
 ]
