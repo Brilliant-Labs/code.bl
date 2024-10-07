@@ -129,7 +129,7 @@
 * [             ](/projects/bboard-cyberville2-FR)
   * [Mots de passe - Mission 1](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/README-FR)
   * [1_Paramétrage des mots de passe](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/README-FR)
-  * [2_Sequence to access](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/README-FR)
+  * [2_Séquence d'accès](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/README-FR)
   * [3_Test de pénétration](/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/README-FR)
 * [               ](/projects/bboard-cyberville3-FR)
   * [Données précieuses - Mission 2](/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/README-FR)

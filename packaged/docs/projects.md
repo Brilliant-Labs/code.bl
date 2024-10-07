@@ -86,7 +86,7 @@
         "name": "            ",
         "url": "/projects/bboard-cyberville2",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
     },
     {
         "name": "              ",
@@ -103,7 +103,7 @@
         "name": "             ",
         "url": "/projects/bboard-cyberville2-FR",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif"
     },
     {
         "name": "               ",

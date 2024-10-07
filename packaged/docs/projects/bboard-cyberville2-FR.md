@@ -10,9 +10,9 @@ Mission 1 Lumières Étranges !! @boardname@.
 [{
   "name": "Mots de passe - Mission 1",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/README-FR",
-  "description": "Weird Lights. School Under Cyber Attack!",
+  "description": "Lumières Étranges. École Sous Cyberattaque !",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "Mots de passe",
   "labelClass": "indigo ribbon small"
@@ -27,7 +27,7 @@ Mission 1 Lumières Étranges !! @boardname@.
   "labelClass": ""
 },
 {
-  "name": "2_Sequence to access",
+  "name": "2_Séquence d'accès",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/README-FR",
   "description": "Trouvez la bonne séquence pour accéder à l'école et la protéger.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Seq_to_Access_Icon-FR.png",

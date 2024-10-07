@@ -1,28 +1,28 @@
-# PASSWORDS 
+# MOTS DE PASSE 
 
 ---
 ##### ~avatar
-Intro video about Cybersecurity Level 2 and __Cyberville__
+Vidéo d'introduction sur le niveau 2 de la cybersécurité et __Cyberville__
 https://www.youtube.com/watch?v=aapUlOM0EAo
 ##### ~
 ---
 
 
-Welcome to __Mission 1!__ In this mission, you'll learn some basic concepts and methods used in cybersecurity. These include passwords, brute force, dictionary, rainbow table, shoulder surfing, and more. In __"Mission 1: Weird Lights,"__ you'll have to solve a dare and get the right sequence to protect the school from a new cyber attack. Good luck!
+Bienvenue à __Mission 1!__ Dans cette mission, vous apprendrez quelques concepts et méthodes de base utilisés en cybersécurité. Ceux-ci incluent les mots de passe, la force brute, le dictionnaire, la table arc-en-ciel, l'observation par-dessus l'épaule, et bien plus encore. Dans  __"Mission 1: Weird Lights,"__ vous devrez résoudre un défi et trouver la bonne séquence pour protéger l'école d'une nouvelle cyberattaque. Bonne chance !
 
-## Activity Description
-### __Mission 1__ Weird Lights.  School Under Cyber Attack!
+## Description de l'activité
+### __Mission 1__ Lumières Étranges. L'école est sous cyberattaque !
 
 ![Mission_1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif?raw=true "Mission 1")
 
-__Cyberville__ has a traditional K to 12 school with a student population of 350 students.  The building is standard and uses some components of the Internet of Things (IoT) like heat control and automatic lighting to work during normal school hours and to be closed at night.  These lights can also be controlled remotely by a supervisor working at the government building.  To save money, the school also controls heat and conditioning air with a remote-controlled thermostat from the government building (5).
+__Cyberville__ possède une école traditionnelle de la maternelle à la terminale avec une population de 350 élèves. Le bâtiment est standard et utilise certains composants de l'Internet des Objets (IoT) comme le contrôle de la chaleur et l'éclairage automatique, qui fonctionnent pendant les heures normales d'école et se ferment la nuit. Ces lumières peuvent également être contrôlées à distance par un superviseur travaillant dans un bâtiment gouvernemental. Pour économiser de l'argent, l'école contrôle également le chauffage et la climatisation via un thermostat télécommandé depuis le bâtiment gouvernemental (5).
 
-Recently, some reports have been sent to the supervisor about heat and light-related problems.  For example, one day the temperature in some classrooms went up without notice and was so uncomfortable that students and teachers had to leave the classroom.  Some events included lights flashing in the gymnasium and intermittent blinking in the school cafeteria.  Also, the number of phishing emails and spamming mail has increased.  Last week, Internet access was interrupted for a day.  Students and teachers couldn’t go on the Web for that period.
+Récemment, des rapports ont été envoyés au superviseur concernant des problèmes liés à la chaleur et à l'éclairage. Par exemple, un jour, la température dans certaines salles de classe a augmenté sans avertissement, et elle est devenue si inconfortable que les élèves et les enseignants ont dû quitter la salle. Certains événements incluaient des lumières clignotantes dans le gymnase et des clignotements intermittents dans la cafétéria de l'école. De plus, le nombre d'e-mails de phishing et de spams a augmenté. La semaine dernière, l'accès à Internet a été interrompu pendant une journée. Les élèves et les enseignants n'ont pas pu accéder au Web pendant cette période.
 
-I just wanted to let you know that there is a proper way -*a sequence*- to turn on the devices affected by this situation to protect and save the school from the cyber attack. I know it can be tricky, but I'm sure you can find it!
+Je voulais juste vous informer qu'il existe une méthode appropriée — une séquence — pour allumer les appareils touchés par cette situation et protéger l'école contre l'attaque cybernétique. Je sais que cela peut être délicat, mais je suis sûr que vous pouvez y arriver !
 
-In summary, the five affected devices are listed as __Heat Center, Air Conditioning, Lamps Cafe, Lamps Gym, and Internet__, which have a corresponding BLiXel number in the b.board. Provide the __Cyberville__ community with the right sequence using your b.Board and get success in this mission, save the school! Thank you so much for your help!
+En résumé, les cinq appareils affectés sont répertoriés comme __HCentre de Chaleur, Climatisation, Lampes Café, Lampes Gymnase et Internet__, qui ont chacun un numéro BLiXel correspondant sur la b.board. Fournissez à la communauté de __Cyberville__ a bonne séquence en utilisant votre b.Board et réussissez cette mission pour sauver l'école ! Merci beaucoup pour votre aide !
 
 ![BliXels](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/BliXels.png?raw=true "BliXels")
 
-Ready to level up your cybersecurity skills? as a complementary activity Let's dive into the world of penetration testing! This is a great way to identify potential problems and find any malware that might have been installed on the school's web infrastructure. Once you find something, you get to be the detective and figure out where it came from, how to fix it, and how to make sure it doesn't happen again. The best part? You get to create a Cybersecurity Assessment Report, where you'll document all the problems you find, your solutions, and your recommendations to fix them. It's a great way to show off your skills and help keep the school's digital space safe and secure! __*Have fun!*__
+Prêt à améliorer vos compétences en cybersécurité ? En tant qu'activité complémentaire, plongeons dans le monde du test de pénétration ! C'est un excellent moyen d'identifier les problèmes potentiels et de détecter tout malware qui pourrait avoir été installé sur l'infrastructure web de l'école. Une fois que vous avez trouvé quelque chose, vous devenez le détective et devez découvrir d'où cela vient, comment le réparer et comment faire en sorte que cela ne se reproduise plus. Le meilleur dans tout ça ? Vous allez créer un Rapport d'Évaluation de la Cybersécurité, où vous documenterez tous les problèmes trouvés, vos solutions et vos recommandations pour les corriger. C’est une belle opportunité de montrer vos compétences et de contribuer à la sécurité de l’espace numérique de l'école ! __*Amusez-vous bien !*__
