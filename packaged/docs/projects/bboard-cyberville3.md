@@ -9,7 +9,7 @@ Mission 2 Polluted Water !! @boardname@.
 ```codecard
 [{
   "name": "Valuable Data - Mission 2",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/README-EN",
   "description": "Polluted Water. Water Treatment Plant Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
@@ -19,7 +19,7 @@ Mission 2 Polluted Water !! @boardname@.
 },
 {
   "name": "1_Water Plant Calibration",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/README-EN",
   "description": "Grab your tools and start customizing your own water treatment plant.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Water_Calibration.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
@@ -29,7 +29,7 @@ Mission 2 Polluted Water !! @boardname@.
 },
 {
   "name": "2_Get Reliable Info",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/README-EN",
   "description": "Be careful out there and make sure you're getting reliable information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info_RedHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
@@ -39,7 +39,7 @@ Mission 2 Polluted Water !! @boardname@.
 },
 {
   "name": "3_Get Secure Info",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/README-EN",
   "description": "Be careful out there and make sure you're getting secure information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Secure_Info_BlackHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
@@ -49,7 +49,7 @@ Mission 2 Polluted Water !! @boardname@.
 },
 {
   "name": "4_Get Safe Info",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/README-EN",
   "description": "Be careful out there and make sure you're getting safe information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Safe_Info_WhiteHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
@@ -59,7 +59,7 @@ Mission 2 Polluted Water !! @boardname@.
 },
 {
   "name": "5_Get Protected Info",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README-EN",
   "description": "Be careful out there and make sure you're getting Protected information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
@@ -69,11 +69,10 @@ Mission 2 Polluted Water !! @boardname@.
 },
 {
   "name": "6_Signal Strenght",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/README-EN",
   "description": "Just a friendly reminder to check in on your AP lotated.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/Signal_Strength-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  Signal_Strength-EN.png",
   "cardType": "side",
   "label": "",
   "labelClass": ""
