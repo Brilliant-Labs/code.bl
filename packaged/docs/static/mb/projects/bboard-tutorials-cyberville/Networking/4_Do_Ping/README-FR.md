@@ -1,4 +1,4 @@
-# 4_Pinguer
+# 4_PINGUER
 
 Maintenant que le réseau __Cyberville__ est opérationnel et que tout le monde a un rôle, il est temps de découvrir s'il y a quelqu'un de spécial sur le réseau. Pour cela, nous allons utiliser la commande "__ping__."
 

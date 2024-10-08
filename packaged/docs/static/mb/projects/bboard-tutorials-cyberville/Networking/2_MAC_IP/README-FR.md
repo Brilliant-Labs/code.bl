@@ -22,7 +22,8 @@ Téléchargez la carte d'identité pour les enseignants 🧑‍🏫
 Téléchargez la carte d'identité pour les élèves 🧑‍🎓 [Ici](https://drive.google.com/file/d/1uYi49zPMzKYuliF4TlS2NQBoPTkMTcoD/view?usp=drive_link)
 
 Voici un exemple de ce à quoi s'attendre pour cette activité :
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/IDbig.png?raw=true" alt="Exemple de carte d'identité" title="Exemple de carte d'identité" width="300" />
+
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Example_FR.png?raw=true" alt="Exemple de carte d'identité" title="Exemple de carte d'identité" width="300" />
 
 *Commençons !*
 
@@ -32,18 +33,18 @@ __2.__ Dans le projet, utilisez le bloc on button A pressed.
 
 __3.__ Remplacez le texte "Hello!" dans le bloc show string par le bloc Get the b.Board's MAC Address. Il est situé dans les blocs de b.Board en CyberSecurity.
 
-![Step5](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step5.png?raw=true "Step 3")
+![Step5](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step5_FR.png?raw=true "Step 3")
 
 __4.__ Ajoutez un nouveau bloc on button A pressed, mais cette fois sélectionnez on button B pressed.
 
 __5.__ Remplacez le texte "Hello!" dans le bloc show string par le bloc Get the b.Board's IP Address. Il est situé dans les blocs de b.Board en CyberSecurity.
 
-![Step6](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step6.png?raw=true "Step 5")
+![Step6](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step6_FR.png?raw=true "Step 5")
 
 __6.__ Allumez la b.Board et établissez la communication entre le PC, le micro
 et la b.Board.
 
-![Step7](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step7.png?raw=true "Download to microbit")
+![Step7](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step7_FR.png?raw=true "Download to microbit")
 
 __7.__ Téléchargez le code sur le Microbit.
 
@@ -74,7 +75,7 @@ Vous pouvez également voir l'adresse MAC et l'adresse IP sur le __*Show Console
 2. __Attendez__ jusqu'à ce que le bouton *Show Console Appareil* apparaisse dans la fenêtre de sortie de la console.
 3. Cliquez dessus.
 
-![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console.png?raw=true "Console Device")
+![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console_FR.png?raw=true "Console Device")
 ╚═══════════════════════════════════╝
 
 ## Exemple de code

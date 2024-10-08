@@ -1,4 +1,4 @@
-# 4_Pinging
+# 4_PINGING
 
 Now that the __Cyberville__ network is up and running and everyone's roles are filled, it's time to find out if there's someone special in the network. To do that, we're going to use the command "__ping__."
 

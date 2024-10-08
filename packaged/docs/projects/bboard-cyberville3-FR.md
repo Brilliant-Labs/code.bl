@@ -14,6 +14,7 @@ Mission 2 Eau polluée !! @boardname@.
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif",
   "cardType": "side",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "label": "Données précieuses",
   "labelClass": "indigo ribbon small"
 },
@@ -22,6 +23,7 @@ Mission 2 Eau polluée !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/README-FR",
   "description": "Prenez vos outils et commencez à personnaliser votre propre usine de traitement des eaux.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Water_Calibration-FR.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "FR",
   "labelClass": ""
@@ -31,6 +33,7 @@ Mission 2 Eau polluée !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/README-FR",
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations fiables sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info_RedHat-FR.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "FR",
   "labelClass": ""
@@ -40,6 +43,7 @@ Mission 2 Eau polluée !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/README-FR",
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Secure_Info_BlackHat-FR.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "FR",
   "labelClass": ""
@@ -49,6 +53,7 @@ Mission 2 Eau polluée !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/README-FR",
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Safe_Info_WhiteHat-FR.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "FR",
   "labelClass": ""
@@ -58,6 +63,7 @@ Mission 2 Eau polluée !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README-FR",
   "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-FR.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "FR",
   "labelClass": ""
@@ -67,6 +73,7 @@ Mission 2 Eau polluée !! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/README-FR",
   "description": "Just a friendly reminder to check in on your AP lotated.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/Signal_Strength-FR.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "side",
   "label": "FR",
   "labelClass": ""

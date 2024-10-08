@@ -91,14 +91,13 @@
     },
     {
         "name": "              ",
-        "url": "/projects/bboard-cyberville3",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
+        "url": "/projects/bboard-cyberville3"
     },
     {
         "name": "Cybersécurité #2, Cyberville and b.Board 1.4 >>> F R E N C H <<<",
         "url": "/projects/bboard-cyberville-FR",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png",
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif"
     },
     {
         "name": "             ",
@@ -110,7 +109,7 @@
         "name": "               ",
         "url": "/projects/bboard-cyberville3-FR",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif"
     },
     {
         "name": "Live Coding",

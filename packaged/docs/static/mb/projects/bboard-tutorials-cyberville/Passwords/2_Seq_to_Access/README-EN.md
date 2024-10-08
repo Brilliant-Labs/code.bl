@@ -95,9 +95,8 @@ Remember to setup a new password and select a new sequence on the 📳 M5 module
 
 ---
 
- *Just a quick note to remind you to stay connected*
- (✅ on screen b.Board). *If you're not connected* (❎ on screen b.Board)*, your code protection sequence will be disqualified* *and won't be sent.       
- You can send your new code, when you see a triangle* (🔺 on screen b.Board).*
+ *Just a quick note to remind you to stay connected (✅ on screen b.Board). If you're not connected (❎ on screen b.Board), your code protection sequence will be disqualified and won't be sent.       
+ You can send your new code, when you see a triangle (🔺 on screen b.Board).*
 
 ---
 

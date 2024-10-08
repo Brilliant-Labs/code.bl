@@ -1,4 +1,4 @@
-# 3_Rôles.
+# 3_Rôles
 
 Pour compléter cette activité, tu dois acquérir un rôle dans Cyberville afin de la protéger contre les cyberattaques.
 
@@ -16,11 +16,11 @@ __3.__ Développe un code où ton icône est toujours affichée sur l'écran du 
 __4.__ Programme le Microbit pour jouer un son ou démarrer une mélodie (tu peux la trouver dans les blocs musique) si tu n'es pas connecté à __Cyberville__.
 
 Rappelle-toi, ton rôle dans __Cyberville__ peut être l'une des entités importantes suivantes :
-![Rol](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "Rol")
+![Rol](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol_FR.png?raw=true "Rol")
 
 Voici à quoi cela pourrait ressembler pour quelqu'un qui choisit __WATER__ et est connecté.
 
-![Step10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Step10.png?raw=true "Step10")
+![Step10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Step10_FR.png?raw=true "Step10")
 
 Une fois que chaque b.Board dans la classe est reliée à __Cyberville__ et qu'un rôle lui est attribué, c'est le moment amusant ! Ton enseignant va simuler une __Cyberattaque__ en désactivant le module M5, qui est le fournisseur Wi-Fi de __Cyberville__. Cela déconnectera tous les appareils dans __Cyberville__, créant une situation de chaos et une chute générale du réseau de __Cyberville__ !
 

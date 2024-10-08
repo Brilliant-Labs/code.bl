@@ -51,8 +51,8 @@ Welcome to CYBERVILLE!! @boardname@.
   "name": "4_Pinging",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/README-EN",
   "description": "Do a ping on the Cyberville network. See who is available.",
-  
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/Do_Ping_Icon-EN.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif",
   "cardType": "side",
   "label": "",
   "labelClass": ""

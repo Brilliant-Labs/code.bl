@@ -28,7 +28,7 @@ __Très bien, commençons à calibrer notre barre de niveaux dans notre usine!__
 
 Nous avons rendu cela très facile pour vous de recréer l'incroyable environnement de la Mission 2 tout en apprenant sur la cybersécurité. Tout ce que vous avez à faire est de :
 
-__1.__ [Téléchargez](https://drive.google.com/file/d/1ldS8fqcVLhBBQ_IIyVCmBPPUuvGLlPEw/view?usp=drive_link),  imprimez et recouvrez le b.board pour la Mission 2.  
+__1.__ [Téléchargez](https://drive.google.com/file/d/17spLZf_iIgcOw3t3dSWAFbFN8hODKeYu/view?usp=sharing),  imprimez et recouvrez le b.board pour la Mission 2.  
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover_FR.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
 

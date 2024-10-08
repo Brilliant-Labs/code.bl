@@ -1,5 +1,4 @@
-
-#1_CONNEXION
+# 1_CONNEXION
 
 Il est temps de se connecter au Wi-Fi de __Cyberville__. __Cyberville__ est une représentation futuriste vraiment cool développée par les incroyables équipes de Brilliant Labs. Dans cette Cyberville, tous les clients ou b.Boards sont connectés au réseau Wi-Fi de Cyberville. Le service Wi-Fi de __Cyberville__ est fourni par le module M5Core2, qui créera le point d'accès Wi-Fi 📳 appelé __Cyberville #?__. Connectons-nous pour appartenir à __Cyberville!__.
 
@@ -19,30 +18,30 @@ Il peut être utile de partager votre adresse MAC 🆔 et votre adresse IP 📮 
 
 ### Nom du point d'accès - Numéro de Cyberville
 Notez que __nous n'utiliserons pas de mot de passe__ pour cette activité, car le numéro de Cyberville changera à chaque redémarrage du M5Core2.
-![CybervilleNumb](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb.png?raw=true "Cyberville Number for Access Point")
+![CybervilleNumb](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb_FR.png?raw=true "Cyberville Number for Access Point")
 
 ## __🧑‍🎓 Élèves :__
 __1.__ Créez un nouveau projet en utilisant le Microbit
 V2, en vous assurant d'utiliser une __b.Board V.1.4__, et nommez-le Networking_A.
 
-![Step1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1.png?raw=true "Step1") 
+![Step1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1_FR.png?raw=true "Step1") 
 
 __2.__ Utilisez le bloc Connect to WiFi:( ) with Password:( ) et placez-le à l'intérieur du bloc On Start.
 
 __3.__ Assurez-vous d'utiliser exactement le même nom de Wi-Fi tel qu'il apparaît sur le M5Core2. Demandez les bonnes informations à l'enseignant 🧑‍🏫.
 
-![Step2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step2.png?raw=true "Step2")  
+![Step2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step2_FR.png?raw=true "Step2")  
 
 __4.__ Créez un bloc conditionnel logique __si__ pour savoir quand vous êtes connecté. Utilisez une petite face souriante pour l'afficher sur le Microbit.
 
 __5.__ Créez un autre bloc pour vous déconnecter du réseau. Vous pouvez utiliser *sur le logo appuyé*.
 
-![Step3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step3.png?raw=true "Step3")
+![Step3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step3_FR.png?raw=true "Step3")
 
 __6.__ Allumez la b.Board et établissez la communication entre le PC, le Microbit
 et la b.Board.
 
-![Step4](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step4.png?raw=true "Step4")
+![Step4](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step4_FR.png?raw=true "Step4")
 
 __7.__ Téléchargez le code et vérifiez le code de connexion et de déconnexion avec le point d'accès Wi-Fi du module M5Core2.
 
@@ -52,11 +51,11 @@ Si vous obtenez un ✅, vous êtes connecté au point d'accès 📳.
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Si vous obtenez un ✅, vous êtes connecté au point d'accès" width="300" />
 
 Les élèves 🧑‍🎓 verront une face souriante 😃 s'ils sont connectés.
-![Connected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected.png?raw=true "Connected")
+![Connected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_FR.png?raw=true "Connected")
 
 ou une face triste 🙁 s'ils ne le sont pas.
 Students will see smile face if they are connected.
-![Disconnected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Disconnected.png?raw=true "Disconnected")
+![Disconnected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Disconnected_FR.png?raw=true "Disconnected")
 
 En appuyant sur le logo du Microbit les élèves se déconnecteront du système.
 Pour se reconnecter, il est nécessaire de modifier le code - soyez ingénieux - ou de redémarrer la b.Board.

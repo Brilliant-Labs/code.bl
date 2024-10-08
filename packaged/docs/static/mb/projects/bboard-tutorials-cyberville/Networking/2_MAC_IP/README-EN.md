@@ -22,7 +22,7 @@ Download the ID Card for Students 🧑‍🎓 [Here](https://drive.google.com/fi
 
 This is an example what to expect for this activity:  
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/IDbig.png?raw=true" alt="ID" title="ID Example." width="300" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Example_EN.png?raw=true" alt="ID" title="ID Example." width="300" />
   
 
 *Let's start!*

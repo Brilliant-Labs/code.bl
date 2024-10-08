@@ -12,7 +12,7 @@ Salut à tous ! Nous savons que la cybersécurité peut être un sujet assez tec
 # Description de l'activité
 Cette activité vise à améliorer la compréhension du fonctionnement des réseaux informatiques et des rôles des appareils électroniques dans un réseau. Enseignants et élèves vont collaborer pour créer leur propre réseau Wi-Fi en classe, en assumant des rôles dans __Cyberville__, un concept de ville futuriste développé par Brilliant Labs à des fins éducatives.
 
-![Cyberville_MAP](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville-EN.png?raw=true "Cyberville MAP")
+![Cyberville_MAP](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville-FR.png?raw=true "Cyberville MAP")
 
 Cette activité utilise les b.Boards comme clients, et le module microcontrôleur M5Core2 comme point d'accès Wi-Fi.
 
