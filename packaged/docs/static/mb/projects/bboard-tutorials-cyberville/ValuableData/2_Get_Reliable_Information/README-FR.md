@@ -2,7 +2,7 @@
 
 Devinez quoi ! Notre usine de traitement de l'eau de __Cyberville__ st sous cyberattaque ! L'eau a été polluée parce que nous avons reçu des informations erronées concernant le bon ratio entre les proportions de __🧪Chlore__ et de __🧪Florure__.
 
-Cette activité est liée au __Phishing 🎣__, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> __Le Compagnon Red Hat__.
+Cette activité est liée au __Phishing 🎣__, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> __L'Ami au Chapeau Rouge__.
 ## Activité
 __*Commençons !!!*__
 

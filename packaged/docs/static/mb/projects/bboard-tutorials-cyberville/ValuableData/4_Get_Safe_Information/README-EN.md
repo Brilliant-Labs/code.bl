@@ -3,7 +3,7 @@
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
 This activity is related to __Ransomware  💸__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/WhiteHat.png?raw=true" alt="WhiteHat" title="WhiteHat" width="50"/>
-__The White Hat Frend__.
+__The White Hat Friend__.
 ## Activity
 __*Let's start!!!*__
 
@@ -21,6 +21,7 @@ __2.__ Press the first button __GO!!!__, then select the frend with __White Hat_
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
 __3.__ Share the current __Access Point name__ created by the M5Core2 with the classroom and the password if it is the case. For example:  
+
         AP name  📳: __Cyberville #1__  
         Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 

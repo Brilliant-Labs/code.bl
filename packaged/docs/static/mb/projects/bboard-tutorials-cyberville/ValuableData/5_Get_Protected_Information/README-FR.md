@@ -2,7 +2,7 @@
 
 Devinez quoi ! Notre usine de traitement de l'eau de __Cyberville__ est sous une cyberattaque !! L'eau a été polluée car nous avons reçu des informations erronées sur le bon ratio entre les proportions de __🧪Chlore__ et de __🧪Florure__.
 
-Cette activité est liée à __Encription 🗝️__, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="Chapeau Bleu" width="50"/> __Le Frère Chapeau Bleu__.
+Cette activité est liée à __Encription 🗝️__, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true" alt="BlueHat" title="BlueHat" width="50"/> __L'Ami au Chapeau Bleu__.
 ## Activité
 __*Commençons!!!*__
 
@@ -19,6 +19,7 @@ __2.__ Appuyez sur le premier bouton __Allons-y!__, puis sélectionnez l'ami  __
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2_FR.png?raw=true "Mission 2")  
 
 __3.__ Partagez le nom actuel du __point d'accès__ réé par le module 📳 M5 avec la classe, ainsi que le mot de passe si nécessaire. Par exemple :  
+
         Nom AP 📳: __Cyberville #1__  
         Mot de passe 🔑: __BL_Cybr1__ *(si vous utilisez le mot de passe par défaut)*
 
@@ -34,7 +35,7 @@ __Default Password__ IDans ce cas, le mot de passe par défaut est __BL_Cybr1__.
 __Mot de passe personnalisé__ Nous recommandons fortement cette option pour impliquer les étudiants. Il suffit d'appuyer sur le bouton du milieu sur le M5Core2 à l'écran d'initialisation, puis d'entrer les 8 caractères convenus du mot de passe entre l'étudiant et l'enseignant, par exemple __BL_cyb24__, À la fin, veuillez appuyer à nouveau sur le bouton du milieu pendant trois secondes pour le définir. [Vidéo ici](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 ##### ~
 
-__4.__  L' __🧑‍🏫 Enseignant__ choisira les sources d'information sur l'écran du module 📳 M5, qui affichera le module M5 pour la Mission 2 comme __Chapeau Noir pour Malware__.  Les 🧑‍🎓 étudiants pourront trouver des informations sur la __page Web__ générée par le 📳 Point d'accès avec l'adresse 📮 IP suivante : 192.168.4.1.
+__4.__  L' __🧑‍🏫 Enseignant__ choisira les sources d'information sur l'écran du module 📳 M5, qui affichera le module M5 pour la Mission 2 comme __Chapeau Bleu pour le Cryptage__.  Les 🧑‍🎓 étudiants pourront trouver des informations sur la __page Web__ générée par le 📳 Point d'accès avec l'adresse 📮 IP suivante : 192.168.4.1.
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="200" />
 

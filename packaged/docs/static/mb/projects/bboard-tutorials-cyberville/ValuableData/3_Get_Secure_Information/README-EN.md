@@ -2,7 +2,7 @@
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Malware 🦠 __, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __The Black Hat Frend__.
+This activity is related to __Malware 🦠 __, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __The Black Hat Friend__.
 ## Activity
 __*Let's start!!!*__
 
@@ -18,7 +18,8 @@ __2.__ Press the first button __GO!!!__, then select the frend __Black Hat__ tha
 
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
-__3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example:  
+__3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example:
+  
         AP name  📳: __Cyberville #1__  
         Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 

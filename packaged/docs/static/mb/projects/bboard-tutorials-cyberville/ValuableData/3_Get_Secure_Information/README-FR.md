@@ -2,7 +2,7 @@
 
 Devinez quoi ! Notre usine de traitement de l'eau de __Cyberville__ est sous une cyberattaque !! L'eau a été polluée car nous avons reçu des informations erronées sur le bon ratio entre les proportions de __🧪Chlore__ et de __🧪Florure__.
 
-Cette activité est liée à __Malware 🦠 __, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __Le Copain Chapeau Noir__.
+Cette activité est liée à __Malware 🦠 __, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __L'Ami au Chapeau Noir.__.
 ## Activité
 __*Commençons!!!*__
 
@@ -19,6 +19,7 @@ __2.__ Appuyez sur le premier bouton __Allons-y!__, puis sélectionnez l'ami  __
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2_FR.png?raw=true "Mission 2")  
 
 __3.__ Partagez le nom actuel du __point d'accès__ réé par le module 📳 M5 avec la classe, ainsi que le mot de passe si nécessaire. Par exemple :  
+
         Nom AP 📳: __Cyberville #1__  
         Mot de passe 🔑: __BL_Cybr1__ *(si vous utilisez le mot de passe par défaut)*
 
