@@ -41,7 +41,7 @@ __4.__  L' __🧑‍🏫 Enseignant__ choisira les sources d'information sur l'�
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/arrow.png?raw=true" alt="Hats" title="Hats" width="200" />
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M2D.png?raw=true" alt="Hats" title="Hats" width="200" />
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/M2D.png?raw=true" alt="Hats" title="Hats" width="200" />
 
 ## __🧑‍🎓 Étudiants:__
 
