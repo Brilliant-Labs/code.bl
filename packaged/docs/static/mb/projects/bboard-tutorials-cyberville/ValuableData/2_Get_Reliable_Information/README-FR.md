@@ -12,13 +12,14 @@ Exécutez le code d'exemple pour vous assurer que la barre de niveaux de notre u
 
 Pour la __Mission 2- Eau Polluée__ euillez suivre les étapes suivantes que vous trouverez dans le module M5Core2 :
 
-__1.__ Chargez  __Mission_2: Eau Polluée__ into M5Core2. Vous pouvez voir cette [__vidéo__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) si vous souhaitez vous rappeler comment le faire.
+__1.__ Chargez  __Mission_2: Eau Polluée__ into M5Core2. Vous pouvez voir cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous souhaitez vous rappeler comment le faire.
 
 __2.__ Appuyez sur le premier bouton __Allezy!__, Appuyez sur le premier bouton __Chapeau Rouge__ que vous souhaitez utiliser comme défi pour vos 🧑‍🎓 étudiants.
 
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2_FR.png?raw=true "Mission 2")  
 
 __3.__ Partagez le nom du __Point d'accès__ actuel créé par le 📳 Module M5 avec la classe ainsi que le mot de passe, le cas échéant. Par exemple :  
+
         Nom AP  📳: __Cyberville #1__  
         Mot de passe 🔑: __BL_Cybr1__ *(si vous utilisez celui par défaut)*
 

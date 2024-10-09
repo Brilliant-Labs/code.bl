@@ -27,6 +27,6 @@ Pour obtenir le bon ratio de __🧪Chlore à 🧪Fluorure__ pour l'usine de trai
 
 Il y a 10 niveaux différents pour le __🧪Chlore__, affichés par des Neopixels bleus, et 10 niveaux pour le __🧪Fluorure__, montrés en vert, tous sur la même bande Neopixel. Chaque niveau est représenté par un Neopixel. Le __Ratio Chlore:Fluorure__ doit être visualisé selon les niveaux. La figure ci-dessous représente 5 niveaux de __🧪Chlore__ et 10 niveaux de __🧪Fluorure__. Le Kit de cybersécurité #2 comprend une bande Neopixel avec 30 Neopixels.
 
-![LevelBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/LevelBar.jpg?raw=true "LevelBar")
+![LevelBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/LevelBar_FR.jpg?raw=true "LevelBar")
 
 C'est une excellente façon de montrer vos compétences tout en aidant à sécuriser l'espace numérique de l'usine de traitement des eaux ! __Amusez-vous bien!__

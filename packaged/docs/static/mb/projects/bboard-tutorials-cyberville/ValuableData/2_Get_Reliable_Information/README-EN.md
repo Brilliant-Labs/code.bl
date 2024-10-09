@@ -2,7 +2,7 @@
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Phising 🎣__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> __The Red Hat Frend__.
+This activity is related to __Phising 🎣__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> __The Red Hat Friend__.
 ## Activity
 __*Let's start!!!*__
 
@@ -12,13 +12,14 @@ Run the exaple code to ensure the levels bar on our plant are working correctly.
 
 For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
 
-__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://drive.google.com/file/d/1Ra37Ctwg_KHiViCR3XP2hXUteJ2BQ-y6/view?usp=sharing) if you want to remember how to do it.
 
 __2.__ Press the first button __GO!!!__, then select the frend with __Red Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
-__3.__ Share the current __Access Point name__ created by the 📳 M5 Module with the classroom and the password if it is the case. For example:  
+__3.__ Share the current __Access Point name__ created by the 📳 M5 Module with the classroom and the password if it is the case. For example:
+  
         AP name  📳: __Cyberville #1__  
         Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 

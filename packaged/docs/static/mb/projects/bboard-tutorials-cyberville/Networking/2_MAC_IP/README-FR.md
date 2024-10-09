@@ -16,10 +16,10 @@ De plus, les enseignants 🧑‍🏫 et les élèves 🧑‍🎓 doivent publier
 
 ### 🧑‍🏫 __*Carte d'identité des enseignants*__
 Téléchargez la carte d'identité pour les enseignants 🧑‍🏫 
-[Ici](https://drive.google.com/file/d/14gh8mT6u4rgxHwiSSV6rtSel3Gz4WwM_/view?usp=drive_link)
+[Ici](https://drive.google.com/file/d/1EnfeuJK2KT-1-K8Pp-kZ2VPfwaLjvDFZ/view?usp=sharing)
 
 ### 🧑‍🎓 __*Carte d'identité des élèves*___
-Téléchargez la carte d'identité pour les élèves 🧑‍🎓 [Ici](https://drive.google.com/file/d/1uYi49zPMzKYuliF4TlS2NQBoPTkMTcoD/view?usp=drive_link)
+Téléchargez la carte d'identité pour les élèves 🧑‍🎓 [Ici](https://drive.google.com/file/d/1L_Q3F4pbEFy0FwHtw97My_tA7F-5hCj-/view?usp=sharing)
 
 Voici un exemple de ce à quoi s'attendre pour cette activité :
 
@@ -53,12 +53,12 @@ en appuyant sur le bouton A, et l'adresse IP 📮 en appuyant sur le bouton B.
 
 L'adresse MAC 🆔 sera affichée sur l'écran du Microbit comme ceci (défilement ⏪) :
 
-   Mon MAC : 34:ab:95:98:d1:f8
+        Mon MAC : 34:ab:95:98:d1:f8
 
 Et l'adresse IP 📮 sera affichée sur l'écran du Microbit
 comme ceci (défilement ⏪) :
 
-   Mon IP : “192.168.4.2”
+        Mon IP : “192.168.4.2”
 
 __9.__ En fin de compte, les enseignants de 🧑‍🏫 devraient demander à leurs élèves de 🧑‍🎓 pourquoi les 🆔 adresses MAC et 📮 adresses IP sont cruciales pour la cybersécurité et le développement de __Cyberville__.
 
@@ -67,18 +67,20 @@ __9.__ En fin de compte, les enseignants de 🧑‍🏫 devraient demander à le
 📌 __*Remarques:*__
 
 __*Une autre option pour voir vos informations :*__ 
-Vous pouvez également voir l'adresse MAC et l'adresse IP sur le __*Show Console Appareil*__. ╔═══════════════════════════════════╗
+Vous pouvez également voir l'adresse MAC et l'adresse IP sur le __*Show Console Appareil*__. 
 
+### ~ avatar
 *Une fois que vous avez téléchargé votre code...*
-
 1. Cliquez sur le bouton de rafraîchissement 🔄 (icône de flèche circulaire) dans la fenêtre du simulateur.
 2. __Attendez__ jusqu'à ce que le bouton *Show Console Appareil* apparaisse dans la fenêtre de sortie de la console.
 3. Cliquez dessus.
 
 ![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console_FR.png?raw=true "Console Device")
-╚═══════════════════════════════════╝
+### ~
+
 
 ## Exemple de code
+
 Vous pouvez télécharger le code pour cette activité depuis `https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex`. Le fichier sera dans l'historique des téléchargements récents, il suffit de le glisser-déposer dans un nouveau projet.
 
 Ou utilisez cet exemple de code pour obtenir les adresses MAC 🆔 et IP 📮.

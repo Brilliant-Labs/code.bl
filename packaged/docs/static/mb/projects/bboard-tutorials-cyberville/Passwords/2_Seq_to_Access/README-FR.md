@@ -11,7 +11,7 @@ Les __🧑‍🎓 élèves__ devront obtenir la bonne séquence pour allumer les
 ### 🧑‍🏫  __Enseignants:__
 Pour la __Mission 1 - Lumières étranges__ euillez suivre les étapes suivantes que vous trouverez sur le module M5Core2 :
 
-1. Chargez __Mission_1: Lumières étranges__ dans le M5Core2. Vous pouvez visionner cette [__vidéo__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) isi vous souhaitez vous souvenir de la façon de le faire.
+1. Chargez __Mission_1: Lumières étranges__ dans le M5Core2. Vous pouvez visionner cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) isi vous souhaitez vous souvenir de la façon de le faire.
 
 2. Appuyez sur le premier bouton __ALLER!__, puis sélectionnez la __équence de protection par code A, B, C ou D__ que vous souhaitez utiliser comme défi pour vos élèves. ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Act_M1_FR.png?raw=true "Activité Mission 1")
 

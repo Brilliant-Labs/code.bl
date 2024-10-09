@@ -15,10 +15,10 @@ Le ratio de __🧪Chlore__ à __🧪Fluorude__ dans l'eau traitée peut varier e
 🧑‍🎓 Étudiants et 🧑‍🏫 enseignants, nous tenions à vous rappeler qu'il est important de choisir une __*rsource d'information fiable, sécurisée, sûre et protégée*__ sur le réseau de __Cyberville__,afin d'éviter d'exposer vos __Données Précieuses__. 
 
 Pour développer les prochaines activités :
-* Informations fiables. Red Hat - Phishing 🎣
-* Informations sécurisées. Black Hat - Malware 🦠 
-* Informations sûres. White Hat - Ransomware 💸
-* Informations protégées. Blue Hat - Chiffrement 🗝️
+* Informations fiables. Chapeau Rouge - Phishing 🎣
+* Informations sécurisées. Chapeau Noir - Malware 🦠 
+* Informations sûres. Chapeau Blanc - Ransomware 💸
+* Informations protégées. Chapeau Bleu - Chiffrement 🗝️
 
 Le 📳 Module M5 fournira différents __Sites Web__ sélectionnés par le 🧑‍🏫 enseignant, qui sont basés sur des défis de hackers avec différents __Chapeaux 🎩 de Couleur__ pour chaque activité. C'est à vous de choisir les données les plus fiables, sécurisées, logiques et intuitives pour obtenir les bons résultats. Soyez conscient que toutes les informations ne sont pas crédibles ; elles pourraient être infectées ou nécessiter une analyse. Mais ne vous inquiétez pas ! Elles doivent toujours être protégées. Vous pouvez échouer dans votre tentative, mais c'est une partie du plaisir __*Amusez-vous bien!*__
 
@@ -39,7 +39,7 @@ __1.__ [Téléchargez](https://drive.google.com/file/d/17spLZf_iIgcOw3t3dSWAFbFN
 Les enseignants guideront le processus pour obtenir la barre de niveaux Neopixel des étudiants 🧑‍🎓.
 
 
-## 🧑‍🎓 Étudiants :__
+## 🧑‍🎓 Étudiants :
 
 Dans cet exemple, vous trouverez un environnement de calibration pour l'usine d'eau suggéré pour cette activité. Mais n'hésitez pas à faire preuve de créativité ! Vous pouvez facilement recréer deux barres de Neopixels avec 10 BLixels chacune, de la manière qui vous plaît. __Amusez-vous bien!__
 
@@ -54,10 +54,10 @@ Ou utilisez ce code comme exemple. Veuillez noter que la bande est connectée à
 ##### ~avatar
 Vous devez modifier les valeurs pour __🧪Chlore__ et __🧪Flourure__ en fonction de chaque activité, ce qui signifie que vous devez modifier ce code en utilisant les blocs __Niveau de Chloride__ et __Niveau de Fluorure__ dans la section `... plus` sous le bouton Cybersécurité de __b.Board__. 
 
-* Informations fiables. Red Hat - Phishing  🎣
-* Informations sécurisées. Black Hat - Malware  🦠 
-* Informations sûres. White Hat - Ransomware  💸
-* Informations protégées. Blue Hat - Chiffrement  🗝️
+* Informations fiables. Chapeau Rouge - Phishing  🎣
+* Informations sécurisées. Chapeau Noir - Malware  🦠 
+* Informations sûres. Chapeau Blanc - Ransomware  💸
+* Informations protégées. Chapeau Bleu - Chiffrement  🗝️
 ##### ~
 
 ```blocks

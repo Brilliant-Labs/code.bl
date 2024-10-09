@@ -14,7 +14,7 @@ follow the next steps.
 
 For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
 
-__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://drive.google.com/file/d/1Ra37Ctwg_KHiViCR3XP2hXUteJ2BQ-y6/view?usp=sharing) if you want to remember how to do it.
 
 __2.__ Press the first button __GO!!!__, then select the frend with __White Hat__ that you want to use as a challenge for your students 🧑‍🎓. 
 

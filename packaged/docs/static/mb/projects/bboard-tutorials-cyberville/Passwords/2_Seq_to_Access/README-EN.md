@@ -11,7 +11,7 @@ The __🧑‍🎓 Students__ will need to obtain the right *sequence* to turn on
 ### 🧑‍🏫  __Teachers__
 For __Mission 1- Weird Light__ Please follow the next steps that you will find on M5Core2 module:
 
-1. Load __Mission_1: Weird Lights__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+1. Load __Mission_1: Weird Lights__ into M5Core2. You can see this [__video__](https://drive.google.com/file/d/1Ra37Ctwg_KHiViCR3XP2hXUteJ2BQ-y6/view?usp=sharing) if you want to remember how to do it.
 
 2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Act_M1.png?raw=true "Activity Mission 1")
 

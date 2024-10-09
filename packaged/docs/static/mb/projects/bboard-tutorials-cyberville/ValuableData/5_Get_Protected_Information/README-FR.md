@@ -12,7 +12,7 @@ Exécutez le code d'exemple pour vous assurer que la barre de niveaux de notre u
 
 Pour la __Mission 2- Eau Polluée__ Pveuillez suivre les étapes suivantes que vous trouverez sur le module M5Core2 :
 
-__1.__ Chargez __Mission_2: Eau Polluée__ dans le M5Core2. Vous pouvez visionner cette [__vidéo__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) si vous souhaitez vous souvenir de la manière de le faire.
+__1.__ Chargez __Mission_2: Eau Polluée__ dans le M5Core2. Vous pouvez visionner cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous souhaitez vous souvenir de la manière de le faire.
 
 __2.__ Appuyez sur le premier bouton __Allons-y!__, puis sélectionnez l'ami  __Chapeau Noir__ tque vous souhaitez utiliser comme défi pour vos 🧑‍🎓 étudiants. 
 

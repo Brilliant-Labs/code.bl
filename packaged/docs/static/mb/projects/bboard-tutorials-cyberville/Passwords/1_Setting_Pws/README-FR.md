@@ -31,7 +31,7 @@ Les enseignants configureront le mot de passe sur le module M5Core2, tandis que 
 Il existe trois façons différentes de configurer les mots de passe sur le M5Core2 pour commencer l'activité __Mission 1__. 
 
 ##### ~avatar
-HOptions pour configurer les __mots de passe__:
+Options pour configurer les __mots de passe__:
 
 __Aucun mot de passe__ Ne pressez aucun bouton sur l'écran d'initialisation. [Vidéo ici](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 

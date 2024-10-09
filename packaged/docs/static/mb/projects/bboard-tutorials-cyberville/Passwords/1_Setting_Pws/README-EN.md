@@ -44,7 +44,7 @@ __Custom Password__ We highly recommend this option to involve the students, jus
 
 Students should do the steps made in 1_Connectig for __Networking__ in the previos activity, but adding the __Password__ defined in class.
 
-![Set_Psw](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/SetPsw.png?raw=true "Setting Password in the b.Board.")
+![Set_Psw](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/SetPsw_EN.png?raw=true "Setting Password in the b.Board.")
 
 Just a quick note to ask that you please __make sure that b.Board is connected__. Thanks so much!
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected_gif" width="300" />  

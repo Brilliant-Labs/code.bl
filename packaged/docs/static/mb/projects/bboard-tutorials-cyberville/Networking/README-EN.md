@@ -23,7 +23,7 @@ This activity uses the b.Boards as clients, and the M5Core2 microcontroller modu
 ### 🧑‍🏫  __Teachers__
 Teachers must select the __Networking__ activity on the M5Core2, and follow the steps according to the activity.
 
-To select any activity within M5Core2, see this [**_Video_**](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor).
+To select any activity within M5Core2, see this [**_Video_**](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing).
 
 This is a basic spec sheet for the M5Core2:  
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true" alt="M5core2" title="Spec sheet M5Core2" width="400" />
@@ -37,6 +37,6 @@ Return to the main page and begining the __Cyberville__ Networking activities as
 * __1_Connecting__
 * __2_MAC & IP Addresses__
 * __3_Roles__
-* __4_Pinging__.
+* __4_Pinging__
 
 Have fun! 
