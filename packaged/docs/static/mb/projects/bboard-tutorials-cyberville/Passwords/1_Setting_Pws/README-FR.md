@@ -49,6 +49,8 @@ Nous recommandons vivement cette option pour impliquer les élèves : appuyez si
 
 ![Set_Psw](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/SetPsw_FR.png?raw=true "Définir le mot de passe sur le b.Board.")
 
-Petite note : Veuillez vous assurer que la __b.Board est connectée__. Merci !
+Petite note : Veuillez vous assurer que la __*b.Board est connectée*__. Merci !
+        
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected_gif" width="300" />  
+
 Si vous obtenez un ✅, vous êtes connecté au point d'accès 📳.

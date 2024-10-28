@@ -47,6 +47,8 @@ __Custom Password:__ We highly recommend this option to involve the students, ju
 
 ![Set_Psw](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/SetPsw.png?raw=true "Setting Password in the b.Board.")
 
-Quick note: Please make sure that __b.Board is connected__. Thanks!
+Quick note: Please make sure that __*b.Board is connected*__. Thanks!
+
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected_gif" width="300" />  
+
 If you get a ✅, you are connected to Access Point 📳.
