@@ -100,3 +100,15 @@ FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
 
 ```
+
+
+
+
+
+
+---
+---
+### Main Website preview from M5 Webserver - Activities Valuable Data
+
+![Blue1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Blue1_EN.png?raw=true "Blue1")
+![Blue2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Blue2_EN.png?raw=true "Blue2")
