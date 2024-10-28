@@ -84,3 +84,8 @@ FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
 
 ```
+
+
+### Main Website preview from M5 Webserver - Activities Valuable Data
+
+![Main](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Distribution_WEBS/WEB_EN/Web Main_EN.png?raw=true "Main")

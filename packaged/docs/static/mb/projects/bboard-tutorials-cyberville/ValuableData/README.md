@@ -31,3 +31,9 @@ There are 10 different levels for __🧪Chlorine__, displayed as blue neopixels,
 ![LevelBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/LevelBar.jpg?raw=true "LevelBar")
 
 It's a great way to show off your skills and help keep the water treatment plant's digital space safe and secure! __Have fun!__
+
+
+
+### Main Website preview from M5 Webserver - Activities Valuable Data
+
+![Main](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Distribution_WEBS/Web Main_EN.png?raw=true "Main")
