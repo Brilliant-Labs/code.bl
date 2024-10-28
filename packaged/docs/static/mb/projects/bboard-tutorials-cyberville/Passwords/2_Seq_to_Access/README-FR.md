@@ -2,7 +2,7 @@
 
 Devinez quoi ! Notre école __Cyberville__ est sous une cyberattaque.
 
-Pour développer cette activité, l'__🧑‍🏫 enseignant__ choisira une __*séquence de protection par code*__, qui affichera le 📳 module M5 pour la Mission 1 comme A, B, C ou D. Cette séquence sera secrète pour les 🧑‍🎓 élèves !
+Pour commencer cette activité, l'__🧑‍🏫 enseignant__ choisira une séquence prédéfinie, qui affichera le 📳 module M5 pour la Mission 1 sous forme de A, B, C ou D. Cette séquence restera secrète pour les 🧑‍🎓 élèves !
 
 Les __🧑‍🎓 élèves__ devront obtenir la bonne séquence pour allumer les appareils qui ont été attaqués.  
 
@@ -11,15 +11,17 @@ Les __🧑‍🎓 élèves__ devront obtenir la bonne séquence pour allumer les
 ### 🧑‍🏫  __Enseignants:__
 Pour la __Mission 1 - Lumières étranges__ euillez suivre les étapes suivantes que vous trouverez sur le module M5Core2 :
 
-1. Chargez __Mission_1: Lumières étranges__ dans le M5Core2. Vous pouvez visionner cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) isi vous souhaitez vous souvenir de la façon de le faire.
+1. Chargez __Mission_1 : Lumières étranges__ sur le M5Core2. Vous pouvez regarder cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) isi vous ne vous souvenez pas comment faire.
 
-2. Appuyez sur le premier bouton __ALLER!__, puis sélectionnez la __équence de protection par code A, B, C ou D__ que vous souhaitez utiliser comme défi pour vos élèves. ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Act_M1_FR.png?raw=true "Activité Mission 1")
 
-3. Partagez le nom __du point d'accès__ actuel créé par le M5Core2 avec la classe ainsi que le mot de passe, le cas échéant. Par exemple :  
+2. Appuyez sur le premier bouton __ALLER!__, puis sélectionnez la __équence de protection par code A, B, C ou D__ que vous souhaitez utiliser comme défi pour vos élèves. ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_FR.png?raw=true "Activité Mission 1")
+
+3. Partagez le nom __du point d'accès__ actuel créé par le M5Core2 avec la classe ainsi que le mot de passe, 
+s'il a été défini. Par exemple :  
         Nom AP 📳: __Cyberville #1__  
         Mot de passe 🔑: __BL_Cybr1__ *(si vous utilisez le mot de passe par défaut)*
 
-4. Enfin, appuyez sur l'écran entre les options A, B, C ou D. Votre choix sera mis en surbrillance en jaune. C'est tout !. 
+4. Enfin, sélectionnez l'une des quatre options (A, B, C ou D) sur l'écran. Votre choix sera mis en surbrillance en jaune. C'est tout !. 
 
 ![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected.png?raw=true "Mission Selected")  
   
@@ -27,24 +29,24 @@ Aidez les élèves 🧑‍🎓 avec les [__Méthodes d'Attaque de Fichiers__](ht
 
 ### 🧑‍🎓 __Élèves__
 
-__1.__ Connectez-vous au point d'accès Wi-Fi 📳 M5 Module. L'enseignant 🧑‍🏫 doit fournir le nom du point d'accès et le __password__. Utilisez le bloc Connecter au Wi-Fi. N'oubliez pas que cela devrait ressembler à ceci (✅ à l'écran du b.Board) :       
+__1.__ Connectez-vous au point d'accès WiFi sur le 📳 M5 Module. L'enseignant 🧑‍🏫 doit fournir le nom du point d'accès et le __password__. Utilisez le 🧩 bloc *Connecter au Wi-Fi*. N'oubliez pas que cela devrait ressembler à ceci (✅ à l'écran du b.Board) :       
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
 
 Si vous obtenez un petit __x__ (❎ à l'écran du b.Board), vous __N'ÊTES PAS__ connecté.   
   
 __2.__ Choisissez votre rôle 👤 dans __Cyberville__:  
-    1 École             🏫  `École Lincoln`     
-    2 Hôpital           🏥  `Hôpital Cyberville`        
-    3 Eau               💧  `AquaPure`             
-    4 WiFi-BL           📳  (Non disponible en tant que rôle)               
-    5 Gouvernement      🏢  `Services gouvernementaux de Cyberville`             
-    6 Brilliant Labs    🏩  `Brilliant Labs`             
-    7 Banque            🏦  `Banque du Pacifique`               
-    8 Usine             🏭  `Volt Motors`        
-    9 Industrie         🏪  `Techmach Industries`        
-    10 Centre d'art     🎨  `Centre d'art Harmony`       
-    11 Cybersécurité    🕵️‍♂️  (Non disponible en tant que rôle)        
-    12 Citoyens         😎  `La communauté de Cyberville`        
+    1️⃣ École             🏫  `École Lincoln`     
+    2️⃣ Hôpital           🏥  `Hôpital Cyberville`        
+    3️⃣ Eau               💧  `AquaPure`             
+    4️⃣ WiFi-BL           📳  (Non disponible en tant que rôle)               
+    5️⃣ Gouvernement      🏢  `Services gouvernementaux de Cyberville`             
+    6️⃣ Brilliant Labs    🏩  `Brilliant Labs`             
+    7️⃣ Banque            🏦  `Banque du Pacifique`               
+    8️⃣ Usine             🏭  `Volt Motors`        
+    9️⃣ Industrie         🏪  `Techmach Industries`        
+    1️⃣0️⃣ Centre d'art    🎨  `Centre d'art Harmony`       
+    1️⃣1️⃣ Cybersécurité   🕵️‍♂️  (Non disponible en tant que rôle)        
+    1️⃣2️⃣ Citoyens        😎  `La communauté de Cyberville`        
     
 In IDE code environment looks like:  
 ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-FR.png?raw=true "Choose a Role")    
@@ -58,24 +60,25 @@ __3.__ Sélectionnez un appareil à protéger:
  
 Dans l'environnement de code IDE, cela ressemble à :
     ![ChooseDevice](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseDevice-FR.png?raw=true "Choose a Role")
-__4.__ Codez le b.Board pour exécuter la séquence qui allume les appareils affectés par le piratage, en vous souvenant que c'est secret de votre enseignant 🧑‍🏫 et que vous devez l'obtenir.
 
-__5.__ Utilisez un bloc *S Envoyer la séquence de protection* aà la fin pour vérifier si c'est la bonne séquence définie par l'enseignant. Amusez-vous bien !
+__4.__ Codez le b.Board pour compléter la séquence afin d'allumer les dispositifs affectés par le piratage. N'oubliez pas que cette séquence est secrète et que vous devez trouver comment l'obtenir.
+
+__5.__ Utilisez le bloc Envoyer la *Séquence de Protection* 🧩 à la fin pour vérifier si vous avez la bonne séquence définie par votre 🧑‍🏫 enseignant, et n'oubliez pas de vous amuser !
   
 ***
 
 ##### ~avatar
 📌 __*Notes:*__
 
-🎶 Lorsque vous envoyez votre code de séquence de protection, vous entendrez la chanson "Giggle".
+🎶 Lorsque vous envoyez votre *code de séquence de protection*, vous entendrez l'effet sonore Giggle.
 
-🌟 Vous verrez bientôt le dispositif BLiXel s'allumer selon votre code.
+🌟 Vous verrez le BLiXel s'allumer avec l'affichage correspondant à votre code.
 
 ⭐️ Si cela correspond à la séquence de l'enseignant, votre appareil restera allumé. Sinon, il s'éteindra.
 
-🙂 À la fin de votre séquence, vous obtiendrez un visage souriant si vous avez réussi cette Mission 1.
+🙂 À la fin de votre séquence, vous obtiendrez un visage souriant si vous avez réussi cette Mission.
 
-🙁 Ou peut-être un visage triste si ce n'est pas le cas. Pas de souci ! Il vous suffit de recommencer.
+🙁 Si vous n'avez pas réussi, un visage triste apparaîtra. Pas de souci ! Il vous suffit de recommencer et d'essayer une nouvelle séquence.
 
 ---
 
@@ -94,8 +97,8 @@ N'oubliez pas de configurer un nouveau mot de passe et de sélectionner une nouv
 
 ---
 
- *Juste un petit rappel pour vous souvenir de rester connecté (✅ à l'écran du b.Board). Si vous n'êtes pas connecté (❎ à l'écran du b.Board), votre séquence de protection par code sera disqualifiée et ne sera pas envoyée.
- Vous pouvez envoyer votre nouveau code lorsque vous voyez un triangle (🔺 à l'écran du b.Board).*
+ *Juste un petit rappel pour vous souvenir de rester connecté (✅ sur l'écran du b.Board). Si vous n'êtes pas connecté (❎ sur l'écran du b.Board), votre séquence de protection par code sera disqualifiée et ne sera pas envoyée.
+ Vous pouvez envoyer votre nouveau code lorsque vous voyez un triangle (🔺 sur l'écran du b.Board).*
 
 ---
 

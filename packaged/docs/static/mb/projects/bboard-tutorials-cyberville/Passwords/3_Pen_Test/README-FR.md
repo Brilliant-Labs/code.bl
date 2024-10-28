@@ -2,9 +2,9 @@
 
 Bonjour ! Vous êtes-vous déjà demandé ce qu'est un __Test d'Intrusion__ ? C'est une méthode qui consiste à tester la sécurité d'un système informatique, d'un réseau ou d'une application web en simulant une cyberattaque. L'objectif est d'identifier et d'exploiter des vulnérabilités afin de déterminer si quelqu'un pourrait obtenir un accès non autorisé ou causer d'autres problèmes.
 
-Les tests d'intrusion sont essentiels pour assurer la sécurité de votre organisation, dans ce cas notre école __Cyberville__, contre les menaces cybernétiques. Cela nous aide à vérifier que nos systèmes sont robustes et capables de faire face à d'éventuelles attaques.
+Les tests de pénétration sont une partie importante pour assurer la sécurité de votre organisation, dans ce cas, notre école __Cyberville__, contre les menaces informatiques.
 
-Selon votre activité, nous sommes ravis de partager avec vous ce format de base ! Nous espérons vraiment qu'il vous sera utile pour votre rapport d'évaluation de la cybersécurité.
+Pour vous aider dans cette activité, vous utiliserez ce modèle simplifié d'évaluation de la cybersécurité. Nous espérons qu'il vous sera utile pour rédiger votre rapport !
 
 ![PenTest](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration_Test_FR.png?raw=true "Penetration Test")
 
