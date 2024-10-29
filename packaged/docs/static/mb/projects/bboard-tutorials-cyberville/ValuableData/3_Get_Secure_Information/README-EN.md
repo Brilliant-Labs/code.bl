@@ -2,7 +2,7 @@
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Malware 🦠 __, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __The Black Hat Friend__.
+This activity is related to __Malware 🦠 __, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __The Black Hat Frend__.
 ## Activity
 __*Let's start!!!*__
 
@@ -12,14 +12,13 @@ Run the exaple code to ensure the levels bar on our plant are working correctly.
 
 For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
 
-__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://drive.google.com/file/d/1Ra37Ctwg_KHiViCR3XP2hXUteJ2BQ-y6/view?usp=sharing) if you want to remember how to do it.
+__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
 __2.__ Press the first button __GO!!!__, then select the frend __Black Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
-__3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example:
-  
+__3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example:  
         AP name  📳: __Cyberville #1__  
         Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 
@@ -28,11 +27,11 @@ Remember that there are three differents ways to setup passwords on 📳 M5 Modu
 ##### ~avatar
 Options to setup __Passwords__:
 
-__No Password__ Don't press any buttons on the initializing screen. [Video Here](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__No Password:__ Don't press any buttons on the initializing screen. [Video Here](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__Default Password__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [Video Here](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__Default Password:__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [Video Here](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__Custom Password__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [Video Here](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__Custom Password:__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [Video Here](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 ##### ~
 
 __4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the 📳 M5 module screen, which will display the M5 module for Mission 2 as __Black Hat for Malware__. The 🧑‍🎓 students can find information on the __Webpage__ generated by the 📳 Access Point with 📮 IP address is: 192.168.4.1.
@@ -55,7 +54,12 @@ __4.__ Modify the code to provide the correct __ratio__ of __🧪 Chlorine__ and
 
 __5.__ Obtain some clues on the __Webpage__ to get your __ratio__ answer and send it to the 📳 Access Point to know if you fail or success for this activity.
 
-__6.__ We really need your help with this activity! It's super important that we complete the Penetration Test. You can download it from [here](https://drive.google.com/file/d/1olnFYjDaeksdrgLxqsAW_SRAgxP1kfgX/view?usp=sharing).
+__6.__ We really need your help with this activity! It's super important that we complete the Attack-Tree Analysis. You can download it from [here](https://drive.google.com/file/d/1AxxZ7OnsMydw9o44Xaw0NdP3r-IiTJ4z/view?usp=sharing).
+
+##### ~avatar
+__You can get a copy of the __*Attack-Tree Analysis*__ page from your teacher.__
+__Once you have it, you can use the terminal at https://cyberville.brilliantlabs.ca/terminal.html to introduce the commands that will give you thr right antivirus number values. I hope this helps!!__
+##### ~
 
 ##### ~avatar
 __It's really important to understand the challenges related to the use of blocks for the 'Level of Chloride' and 'Level of Fluoride.' This should be reflected in the bar levels displayed on the Neopixel strip, so we can all be on the same page!__
@@ -96,5 +100,6 @@ CL_Strip = Full_Strip.range(20, 10)
 ---
 ### Main Website preview from M5 Webserver - Activities Valuable Data
 
-![Black1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_B1ack1_EN.png?raw=true "Black1")
+![Black1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Black1_EN.png?raw=true "Black1")
 ![Black2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Black2_EN.png?raw=true "Black2")
+![Black3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Black3_EN.png?raw=true "Black3")
