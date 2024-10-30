@@ -20283,38 +20283,66 @@ function showFirmwareDialogAsync() {
     let input;
     const shareUrl = pxt.appTarget.appTheme.shareUrl || "https://makecode.com/";
     return core.confirmAsync({
-        header: lf("b.Board Firmware Update 💟 heart chip"),
+        header: lf("b.Board Firmware Update dsPIC 💟 & ESP32 🛜 microchips"),
         hasCloseIcon: true,
         jsx: React.createElement("div", { className: "ui form" },
-            React.createElement("div", { className: "ui icon purple message" },
-                React.createElement("i", { className: "user icon", "aria-hidden": true }),
-                React.createElement("div", { className: "content" },
-                    React.createElement("h3", { className: "header" }, lf("Instructions")),
-                    React.createElement("p", null,
-                        lf("Place your micro:bit into your b.Board and connect to the PC with a USB Cable"),
-                        React.createElement("br", null),
-                        lf("Download the firmware below"),
-                        React.createElement("br", null),
-                        lf("Drag firmware file onto micro:bit drive"),
-                        React.createElement("br", null),
-                        lf("Turn the b.Board OFF"),
-                        React.createElement("br", null),
-                        lf("Turn the b.Board ON"),
-                        React.createElement("br", null),
-                        lf("Press A on the micro:bit"),
-                        React.createElement("br", null),
-                        lf("When you see the smiley face, your b.Board now has the latest firmware")))),
-            React.createElement("div", null,
-                React.createElement("button", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank"), className: "ui button icon icon-and-text primary purple attached" }, "Click to Download b.Board 💟 Firmware 2_17.hex")),
-            
-            React.createElement("br", null),
-            React.createElement("div", null,
-                React.createElement("a", { href: "https://drive.google.com/file/d/1AARfV7n93anYoS3TX-Kze76aIgO-t_zy/view?usp=sharing" }, "How to know my b.Board Version?")),
-                React.createElement("div", null),
-                React.createElement("div", null,
-                React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Checkversions-.hex" }, "Download the code to read 💟 and 🛜 firmware.")),
-                    React.createElement("div", null),
-        ),
+                React.createElement("div", { className: "ui icon purple message" },
+                    React.createElement("div", { className: "content" },
+                        React.createElement("h3", { className: "header" }, 
+                            lf("Instructions for dsPIC 💟 microchip")),
+                            React.createElement("p", null,
+                                lf("1️⃣ Place your micro:bit into your b.Board and connect to the PC with a USB Cable"),
+                                React.createElement("br", null),
+                                lf("2️⃣ Download the firmware below and drag firmware file onto micro:bit drive"),
+                                React.createElement("br", null),
+                                lf("3️⃣ Turn the b.Board OFF, and then turn the b.Board ON"),
+                                React.createElement("br", null),
+                                lf("4️⃣ Press A on the micro:bit"),
+                                React.createElement("br", null),
+                                lf("When you see the smiley face, your b.Board now has the latest firmware"),    
+                                React.createElement("br", null),
+                                React.createElement("a", { href: "bBoardFirmware2_17.hex" }, "Click to Download b.Board dsPIC 💟 firmware Version 2_17.hex"),
+                            ),
+//                        React.createElement("div", null,
+//                        React.createElement("button", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank"), className: "ui button icon icon-and-text primary purple attached" }, "Click to Download b.Board dsPIC 💟 firmware Ver.2_17.hex"),                 
+                    ),
+                ),
+
+        React.createElement("div", { className: "ui icon purple message" },
+            React.createElement("div", { className: "content" },
+                React.createElement("h3", { className: "header" }, 
+                    lf("Instructions for ESP32 🛜 WiFi microchip")),
+                    lf("The latest version,"),
+                        React.createElement("strong", null, lf(" b.Board V_1.4, ")),
+                    lf("includes important updates and enhancements, so you"),
+                    React.createElement("strong", null, React.createElement("em", null, lf(" don't need to update it."))),
+                    React.createElement("br", null), 
+                    lf("However, if you are using a b.Board V_1.2 or 1.3 it is essential to update their firmware"),
+                    React.createElement("br", null), 
+                    lf("1️⃣ Please refer to this instructional "),
+                    React.createElement("a", { href: "https://drive.google.com/file/d/10UbWf1mTLcZp3QmNKP051TtrHH1BhQpI/view?usp=sharing" }, 
+                        React.createElement("strong", null, lf(">VIDEO_EN<"))),
+                    lf(" or "),
+                    React.createElement("a", { href: "https://drive.google.com/file/d/1VoEDCUQ6QCjIIYM18tA5eZ-srgsEahMf/view?usp=sharing" }, 
+                        React.createElement("strong", null, lf(">VIDEO_FR<"))),
+                        lf(" and follow the steps."), 
+                    React.createElement("br", null), 
+                    
+                    React.createElement("div", null,
+                        React.createElement("div", null,
+                            React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/ESP32_V3.2.zip" }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2")),
+                        React.createElement("div", null,
+                            React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Flash_Tool.zip" }, "3️⃣ Click to Download the Flash Tool software")),              
+                    ),
+                ),
+            ),
+
+        React.createElement("a", { href: "https://drive.google.com/file/d/1Yf3ph6eAy5jDiJ2Sj-vBPN1d53BGP2JX/view?usp=sharing" }, "How to know my b.Board Version?                    |"),
+        React.createElement("a", { href: "https://drive.google.com/file/d/1x4i70Cgo4YSZyNU_6team5vGUEuXsFcw/view?usp=sharing" }, "|                    Comment connaître mon b.Board Version?"),
+        React.createElement("div", null),
+        React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Checkversions-.hex" }, "Download .hex file to read dsPIC 💟 and ESP32 🛜 firmware"),
+    ),
+                    
     }).then(res => {
         if (res) {
             pxt.tickEvent("app.open.url");
@@ -20337,79 +20365,7 @@ function showCloudDialogAsync() {
 }
 exports.showCybervilleDialogAsync = showCybervilleDialogAsync;
 function showCybervilleDialogAsync() {
-//__________
-let input;
-const shareUrl = pxt.appTarget.appTheme.shareUrl || "https://makecode.com/";
-return core.confirmAsync({
-    header: lf("⚠️ Update the firmware on your b.Board to the latest version!"),
-    hasCloseIcon: true,
-    jsx: React.createElement("div", { className: "ui form" },
-        React.createElement("div", { className: "ui icon purple message" },
-            React.createElement("div", { className: "user icon", "aria-hidden": true }),
-            React.createElement("div", { className: "content" },
-                React.createElement("h3", { className: "header" }, lf("Is your b.Board Version 1.4?")),
-                React.createElement("p", null,
-                    lf("The latest version,"),
-                    React.createElement("strong", null, lf(" b.Board REV 1.4, ")),
-                    lf("includes important updates and enhancements, so you"),
-                    React.createElement("strong", null, React.createElement("em", null, lf(" don't need to update it."))),
-                    React.createElement("br", null), 
-                    lf("However, if you are using a b.Board REV 1.1, 1.2 or 1.3 it is essential to update their firmware."),
-                    React.createElement("br", null),
-                    React.createElement("strong", null, 
-                        React.createElement("h3", { className: "header" },
-                        lf("The latest firmware are: 2_17 for 💟 heart chip and 3.2 for 🛜 WiFi chip."))), 
-                    lf("Updating will allow the use of Cybersecurity blocks in "),
-                    React.createElement("strong", null, lf("Cyberville")),
-                    lf(" activities and ensure that your "),
-                    React.createElement("strong", null, lf("b.Board")),
-                    lf(" remains up to date."),
-                    React.createElement("br", null),
-                    lf("Please refer to this instructional "),
-                    React.createElement("a", { href: "https://drive.google.com/file/d/10UbWf1mTLcZp3QmNKP051TtrHH1BhQpI/view?usp=sharing" }, 
-                        React.createElement("strong", null, lf(">VIDEO_EN<"))),
-                    lf(" or "),
-                    React.createElement("a", { href: "https://drive.google.com/file/d/1VoEDCUQ6QCjIIYM18tA5eZ-srgsEahMf/view?usp=sharing" }, 
-                        React.createElement("strong", null, lf(">VIDEO_FR<"))),
-                        lf(" and follow the steps to complete the update process for 🛜 WiFi chip."),    
-                    React.createElement("br", null),
-                    React.createElement("em", null,
-                        lf("Make sure that your b.Board is running the latest versions! ")),
-                        lf("😉👍"),
-                ),
-            ),
-        ),
-        React.createElement("div", null,
-            React.createElement("button", { onClick: () => window.open("https://cyberville.brilliantlabs.ca", "_blank"), className: "ui button icon icon-and-text primary purple attached" }, "Go to Cyberville!")),
-        React.createElement("br", null),// Space
-        React.createElement("div", null,
-            React.createElement("a", { href: "https://drive.google.com/file/d/1Yf3ph6eAy5jDiJ2Sj-vBPN1d53BGP2JX/view?usp=sharing" }, "How to know my b.Board Version?          |"),
-            React.createElement("a", { href: "https://drive.google.com/file/d/1x4i70Cgo4YSZyNU_6team5vGUEuXsFcw/view?usp=sharing" }, "|          Comment connaître mon b.Board Version?")),
-        React.createElement("div", null,
-            React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/ESP32_V3.2.zip" }, "Download Firmware V.3.2")),
-        React.createElement("div", null,
-            React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Flash_Tool.zip" }, "Download Flash Tool")),
-        React.createElement("div", null,
-            React.createElement("a", { href: "https://brilliantlabs.ca/documents/cybersec/Read-ESP32-version.hex" }, "Download the code to read 🛜 firmware")),        
-    ),
-}).then(res => {
-    if (res) {
-        pxt.tickEvent("app.open.url");
-        const url = input.value;
-        let projectId = pxt.github.normalizeRepoId(url);
-        if (!projectId)
-            projectId = pxt.Cloud.parseScriptId(url);
-        if (!projectId) {
-            return Promise.reject(new Error(lf("Sorry, the project url looks invalid.")));
-        }
-        return Promise.resolve(projectId);
-    }
-    // Cancelled
-    return Promise.resolve(undefined);
-});
-
-//__________
-
+    window.open("https://cyberville.brilliantlabs.ca", "_blank");
 }
 exports.showCloudDialogAsync = showCloudDialogAsync;
 function showSupportDialogAsync() {
@@ -21205,7 +21161,7 @@ class EditorToolbar extends data.Component {
                         showGithub && React.createElement(githubbutton.GithubButton, { parent: this.props.parent, key: `githubbtn${computer}` }),
                         showCloudButton && cloudButton)),
             React.createElement("div", { id: "editorToolbarArea", role: "menu", className: "ui column items" },
-                React.createElement("div", { className: "ui button icon primary left", onClick: this.showFirmwareDialog }, "b.Board 💟 Firmware"),
+                React.createElement("div", { className: "ui button icon primary left", onClick: this.showFirmwareDialog }, "b.Board firmware dsPIC & ESP32"),
                 React.createElement("div", { className: "ui button icon primary left", onClick: this.showCloudDialog }, "Cloud"),
                 React.createElement("div", { className: "ui button icon primary left", onClick: this.showCybervilleDialog }, "Cyberville"),
                 React.createElement("div", { className: "ui button icon primary left", onClick: this.showSupportDialog }, "Support"),
@@ -32321,7 +32277,7 @@ class NewProjectDialog extends data.Component {
         ];
         const classes = this.props.parent.createModalClasses("newproject");
         const prompt = lf("Give your project a name.");
-        return React.createElement(sui.Modal, { isOpen: visible, className: classes, size: "tiny", onClose: this.hide, dimmer: true, buttons: actions, closeIcon: true, header: lf("Create a Project {0}", emoji), header2: lf("Remember to upgrade your b.Board Firmware 💟 and 🛜"), closeOnDimmerClick: true, closeOnDocumentClick: true, closeOnEscape: true },
+        return React.createElement(sui.Modal, { isOpen: visible, className: classes, size: "tiny", onClose: this.hide, dimmer: true, buttons: actions, closeIcon: true, header: lf("Create a Project {0}", emoji), header2: lf("Remember to upgrade your b.Board dsPIC 💟 & ESP32 🛜 firmware"), closeOnDimmerClick: true, closeOnDocumentClick: true, closeOnEscape: true },
             React.createElement("div", null,
                 React.createElement("p", null, prompt),
                 React.createElement("div", { className: "ui form" },
