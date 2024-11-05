@@ -2,13 +2,13 @@
 
 Now that the __Cyberville__ network is up and running and everyone's roles are filled, it's time to find out if there's someone special in the network. To do that, we're going to use the command "__ping__."
 
-A __"ping"__ is a simple Internet program that lets you test and verify if a particular destination __IP__ address exists and can accept requests in the __Cyberville__ network. It's really easy to use! Another great thing about __ping__ is that it lets you know if another board is trying to reach you and that it's working properly.
+A __"ping"__ is a simple Internet program that lets you test and verify if a particular destination __IP__ address exists and can accept requests in the __Cyberville__ network. It's really easy to use! Another great thing about __ping__ is that it lets you know if another b.Board is trying to reach you and that it's working properly.
 Let's use the __"ping"__ command to find out if other roles are in the __Cyberville__ network! 
 
 ## Activity
-Let's quickly check if the Access Point 📳 M5Core2 Module is available doing __Ping__. It has a handy default IP address 📮 of 192.168.4.1, which is perfect for getting started! 
-It would be fun to share our ID cards and find out who our classmates are connected to. 
-
+Let's quickly check if the access point 📳 M5Core2 Module is available. Just do a __Ping__, and we'll know in no time! It has a handy default IP address of 192.168.4.1, which is perfect for getting started using the command PING! 
+It would be really fun to share our ID cards and find out who our classmates are connected to! Don't forget to set up your friends' IP addresses in the block 🧩 [Do PING to IP:___], and make sure you're connected to the right access point 📳.
+You'll get a 😊 smiley face if your request role is available in the network, and a 😔 sad face if it's not.
 
 ## Code Example
 

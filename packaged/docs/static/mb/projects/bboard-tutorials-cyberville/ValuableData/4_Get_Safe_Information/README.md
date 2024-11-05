@@ -1,4 +1,4 @@
-# 4_GET SAFE INFORMATION
+# 4_GET SAFE INFORMATION - White Hat
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 

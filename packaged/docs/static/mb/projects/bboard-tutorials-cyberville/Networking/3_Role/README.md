@@ -1,6 +1,6 @@
 # 3_Roles. 
 
-To complete this activity you must acquire a role in Cyberville so that you can protect it from Cyber Attacks.
+In this activity you will take on a role in Cyberville so that you can protect it from Cyber Attacks.
 
 ## Activity:
 ### Take a role in The Cyberville
