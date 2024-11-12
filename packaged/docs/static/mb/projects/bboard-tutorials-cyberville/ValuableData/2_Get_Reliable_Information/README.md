@@ -1,40 +1,100 @@
-# 1_Get Reliable Information ... Under construction!
+# 2_GET RELIABLE INFORMATION - Red Hat
 
-Guess what! Our Cyberville Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the Chloride and Floride proportions.
+Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-As a Cyberville's citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
+This activity is related to __Phising 🎣__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> __The Red Hat Frend__.
+## Activity
+__*Let's start!!!*__
 
-__🧪 Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪 Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
-
-The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed ratio. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
-
-The ratio of __🧪Chlorine__ to __🧪Fluoride__ in treated water can vary depending on several factors including the specific requirements of the water treatment facility, local regulations, and the source water quality.
-
-Students and teachers, we just wanted to remind you that it's important to choose a true and reliable source of information on Cyberville network. The web sites provided for this activity are not real, but student should be choose the best and reliable information to obtain the right ratio according to the information, Not all the information is reliable and you can fail in the try!! Be careful with the information that you select. Have fun!!
-
-To develop this activity follow the next steps. 
+Run the exaple code to ensure the levels bar on our plant are working correctly. Then follow the next steps.  
 
 ## __🧑‍🏫 Teachers:__
 
-The __🧑‍🏫 Teacher__ will choose between four diferent proportions on the M5Core2 screen, which will display the M5Core2 for Mission 2 as A, B, C, or D. This ratio will be secret to the 🧑‍🎓 students, but they can find information reliable or fake on the web site provided by the Access Point! 
+For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2_M5core2.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="300" />
+__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
-Remember that there are three differents ways to setup passwords on M5Core2 for Cyberville network. Agree with student which password are you going to use for this activity. 
+__2.__ Press the first button __GO!!!__, then select the frend with __Red Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
-- [__No Password__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). Just a friendly reminder: don't press any buttons! Thanks!
+![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
-- [__Default Password__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button to set the default password. 
+__3.__ Share the current __Access Point name__ created by the 📳 M5 Module with the classroom and the password if it is the case. For example:  
+        AP name  📳: __Cyberville #1__  
+        Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 
-- [__Custom Password__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). We highly recommend this option to involve the students, just press middle button on M5Core2, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. That is all!
+Remember that there are three differents ways to setup passwords on 📳 M5 module for __Cyberville__ network. Agree with 🧑‍🎓 students which password are you going to use for this activity. 
+
+##### ~avatar
+Options to setup __Passwords__:
+
+__No Password__ Don't press any buttons on the initializing screen. [Video Here](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+
+__Default Password__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [Video Here](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+
+__Custom Password__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [Video Here](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+##### ~
+
+__4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the 📳 M5 module screen, which will display the M5 module for Mission 2 as __Red Hat for Phising__. The 🧑‍🎓 students can find information on the __Webpage__ generated by the 📳 Access Point with 📮 IP address is: 192.168.4.1.
+
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="200" />
+
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/arrow.png?raw=true" alt="Hats" title="Hats" width="200" />
+
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2A.png?raw=true" alt="Hats" title="Hats" width="200" />
 
 
 ## __🧑‍🎓 Students:__
 
-1. Be sure that you are connected to the Cyberville  📳 Access Point, according to the infornmation agree with the teacher.
-If you get a ✅, you are connected.  
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />
-2. Get some information in the web page privided by the  📳 Access Point. remember that you computer needs to be in the same Cyberville network  which it IP address is 192.168.4.1.
-3. Use your Water Plant Calibration developed in the previous activity as base of your new code.
-4. Modify the code to provied the right ratio for __🧪 Chlorine__ and __🧪 Fluoride__ on the water treatment plant.
-5. Obtain some clues on the webpage to get your ratio answer and send it to the  📳 Access Point to know if you fail or success for this activity.
+__1.__ Be sure that your __PC__ are connected to the __Cyberville__  📳 Access Point, according to the information agree with the 🧑‍🏫 teacher.
+
+__2.__ Get some information in the web page provided by the Access Point 📳. Remember that you computer needs to be in the same __Cyberville__ network.  
+
+__3.__ Use the attached sample code and the end as the basis for your new code. Make modifications according to the challenge.
+
+__4.__ Modify the code to provide the correct __ratio__ of __🧪 Chlorine__ and __🧪 Fluoride__ at the water treatment plant, and send the new ratio to the access point to save the __Cyberville__ water treatment plant!!.  See the sample code below. 
+
+__5.__ Obtain some clues on the __Webpage__ to get your __ratio__ answer and send it to the 📳 Access Point to know if you fail or success for this activity.
+
+##### ~avatar
+__It's really important to understand the challenges related to the use of blocks for the 'Level of Chloride' and 'Level of Fluoride.' This should be reflected in the bar levels displayed on the Neopixel strip, so we can all be on the same page!__
+##### ~  
+
+## Code Example
+
+You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+
+Or use this code base as example to test the right __ratio__ and save the Water Treatment Plant!.
+
+__*Please do not forget to set up the correct name for the access point in your PC, and go to 192.168.4.1*__
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    for (let Count = 0; Count <= 9; Count++) {
+        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.zero)), neopixel.colors(NeoPixelColors.Green))
+        CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.zero)), neopixel.colors(NeoPixelColors.Blue))
+    }
+    Full_Strip.show()
+    Cybersec.MissionWater(Cybersec.indexhat(Index_H.one))
+})
+let CL_Strip: neopixel.Strip = null
+let FL_Strip: neopixel.Strip = null
+let Full_Strip: neopixel.Strip = null
+Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
+FL_Strip = Full_Strip.range(0, 10)
+CL_Strip = Full_Strip.range(20, 10)
+
+```
+
+
+
+
+
+
+---
+---
+### Main Website preview from M5 Webserver - Activities Valuable Data
+
+![Red1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red1_EN.png?raw=true "Red1")
+![Red2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red2_EN.png?raw=true "Red2")
+![Red3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red3_EN.png?raw=true "Red3")
+![Red4](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red4_EN.png?raw=true "Red4")
