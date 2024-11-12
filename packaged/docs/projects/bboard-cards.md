@@ -8,85 +8,59 @@ Learn to use Boards using Card your @boardname@!
 
 ```codecard
 [{
-  "name": "Image Bank | Banque d'images",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/README-EN",
-  "description": "Image Bank b.Board | Banque d'images b.Board",
+  "name": "Image Bank",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/README",
+  "description": "Image Bank b.Board",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/IMAGE_BANK_Icon-EN.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/ImgBank.gif",
   "cardType": "side",
   "label": "1_Intro",
-    "labelClass": "orange ribbon med",
-
-  "otherActions": [{
-    "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/README-FR",
-    "cardType": "side"
-  }]
+  "labelClass": "orange ribbon med"
 },
 {
-  "name": "Colour Theming | Palette de Couleurs",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/README-EN",
-  "description": "Colour Theming | Palette de Couleurs",
+  "name": "Colour Theming",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/README",
+  "description": "Colour Theming",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/COLOUR_THEMING-Icon-EN.png",
   "cardType": "side",
   "label": "",
-  "labelClass": "",
-
-  "otherActions": [{
-  "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro2/README-FR",
-  "cardType": "side"
-  }]
+  "labelClass": ""
 },
 {
-  "name": "Hello b.Board | Bonjour b.Board",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README-EN",
-  "description": "Hello b.Board | Bonjour b.Board",
+  "name": "Hello bBoard",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README",
+  "description": "Hello bBoard",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/Hello_bBoard_Icon-EN.png",
   "cardType": "side",
   "label": "",
-  "labelClass": "",
-
-  "otherActions": [{
-  "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README-FR",
-  "cardType": "side"
-  }]
+  "labelClass": ""
 },
 {
-  "name": "Let´s Code | Codons",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/README-EN",
-  "description": "Let´s Code | Codons",
+  "name": "Let´s Code",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/README",
+  "description": "Let´s Code",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/Lets_Code_Icon-EN.png",
   "cardType": "side",
   "label": "",
-  "labelClass": "",
-  "otherActions": [{
-  "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/README-FR",
-  "cardType": "side"
-  }]
+  "labelClass": ""
 },
 {
-  "name": "Your Code Guide | Votre guide du code",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/README-EN",
-  "description": "Your Code Guide | Votre guide du code",
+  "name": "Your Code Guide",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/README",
+  "description": "Your Code Guide",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/Your_Code_Guide_Icon-EN.png",
   "cardType": "side",
   "label": "",
-  "labelClass": "",
-  "otherActions": [{
-  "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/README-FR",
-  "cardType": "side"
-  }]
+  "labelClass": ""
 },
 {
-  "name": "Download your Code | Téléchargez votre code",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/README-EN",
-  "description": "Download your Code | Téléchargez votre code",
+  "name": "Download your Code",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/README",
+  "description": "Download your Code",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/Download_your_code_Icon-EN.png",
   "cardType": "side",
   "label": "",
-  "labelClass": "",
-  "otherActions": [{
-  "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/README-FR",
-  "cardType": "side"
-  }]
+  "labelClass": ""
 }
 ]
 ```

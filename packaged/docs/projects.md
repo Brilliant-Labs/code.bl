@@ -16,7 +16,8 @@
     {
         "name": "b.Board Cards",
         "url": "/projects/bboard-cards",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/IMAGE_BANK_Icon-EN.png"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/IMAGE_BANK_Icon-EN.png",
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro1/ImgBank.gif"
     },
     {
         "name": "    ",
@@ -81,37 +82,19 @@
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
         "url": "/projects/bboard-cyberville",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif"
     },
     {
         "name": "            ",
         "url": "/projects/bboard-cyberville2",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
-    },
-    {
-        "name": "              ",
-        "url": "/projects/bboard-cyberville3",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
-    },
-    {
-        "name": "Cybersécurité #2, Cyberville and b.Board 1.4 >>> F R E N C H <<<",
-        "url": "/projects/bboard-cyberville-FR",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif"
     },
     {
         "name": "             ",
-        "url": "/projects/bboard-cyberville2-FR",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif"
-    },
-    {
-        "name": "               ",
-        "url": "/projects/bboard-cyberville3-FR",
+        "url": "/projects/bboard-cyberville3",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif"
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/movie.gif"
     },
     {
         "name": "Live Coding",
@@ -214,10 +197,7 @@
 [   ](/projects/bboard4),
 [CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville),
 [            ](/projects/bboard-cyberville2),
-[              ](/projects/bboard-cyberville3),
-[Cybersécurité #2, Cyberville and b.Board 1.4 >>> F R E N C H <<<](/projects/bboard-cyberville-FR),
-[             ](/projects/bboard-cyberville2-FR),
-[               ](/projects/bboard-cyberville3-FR),
+[             ](/projects/bboard-cyberville3),
 [Live Coding](/live-coding),
 [Games](/projects/games),
 [Radio Games](/projects/radio-games),

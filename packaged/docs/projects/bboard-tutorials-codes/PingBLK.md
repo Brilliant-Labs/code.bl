@@ -15,7 +15,7 @@ In your particular case, let's make sure everyone knows who you are, what your r
 Place a ``||Cybersecurity:connect to wifi||`` block to stablish conection with the __Access Point__ M5Core2.
 
 ```blocks
-Cybersec.WifiConnect("Cyberville #?", "")
+Cybersec.WifiConnect("Cyberville #1", "")
 });
 ```
 
