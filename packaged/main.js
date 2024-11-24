@@ -20339,8 +20339,8 @@ function showFirmwareDialogAsync() {
             ),
         ),
 
-        React.createElement("a", { href: "https://drive.google.com/file/d/1otOlZFlWpcb-agkSik9XY2DqPYFL91aa/view?usp=sharing" }, "How to know my b.Board Version?                    |"),
-        React.createElement("a", { href: "https://drive.google.com/file/d/1g5fHso1ON-yVFHqaRRCifrU2X1WU_6qf/view?usp=sharing" }, "|                    Comment connaître mon b.Board Version?"),
+        React.createElement("a", { href: "https://drive.google.com/file/d/1yllWJcc--RhKsAEizD8vK-3rGGuAAV-P/view?usp=sharing" }, "How to know my b.Board Version?                    |"),
+        React.createElement("a", { href: "https://drive.google.com/file/d/1CNfE8U6z9BpZur0wZq9BgEN3jootvnbB/view?usp=sharing" }, "|                    Comment connaître mon b.Board Version?"),
         React.createElement("div", null),
         React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Checkversions-.hex" }, "Download .hex file to read dsPIC 💟 and ESP32 🛜 firmware"),
     ),

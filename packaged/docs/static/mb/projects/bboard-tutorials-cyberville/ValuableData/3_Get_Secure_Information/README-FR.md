@@ -55,7 +55,7 @@ __4.__ Modifiez le code pour fournir le bon __ratio__ de __🧪 Chlore__ et __�
 
 __5.__ Obtenez des indices sur la __page Web__ pour obtenir votre réponse de __ratio__ t envoyez-la au 📳 Point d'accès pour savoir si vous avez échoué ou réussi cette activité.
 
-__6.__ Nous avons vraiment besoin de votre aide pour cette activité ! Il est super important que nous complétions l'analyse de l'arbre d'attaque. Vous pouvez le télécharger [ici](https://drive.google.com/file/d/1oQ6VcHOxjwsNm0QkQ5ws38UD9L0yy2Bw/view?usp=sharing).
+__6.__ Nous avons vraiment besoin de votre aide pour cette activité ! Il est super important que nous complétions l'analyse de l'arbre d'attaque. Vous pouvez le télécharger [ici](https://drive.google.com/file/d/1vCoDr7exkB7IL_R0OE0K4H-grIoM85OM/view?usp=sharing).
 
 ##### ~avatar
 __C'est vraiment important de comprendre les défis liés à l'utilisation des blocs pour le 'Niveau de Chlorure' et le 'Niveau de Fluorure.' Cela devrait être reflété dans les niveaux de barre affichés sur la bande Neopixel, afin que nous puissions tous être sur la même longueur d'onde !__
