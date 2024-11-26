@@ -58,7 +58,7 @@ In order to reconnect, it is necessary to either modify the code -be ingenius- o
 
 ## Code Example
 
-You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+You can download the code for this activity from https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex the file will be in Recent Download History, just drag and drop it into a new project.  
 
 Or use this code example is to connect the b.Board to M5Core2 module Access Point 📳.
 

@@ -20322,8 +20322,15 @@ function showFirmwareDialogAsync() {
                     lf("Instructions for microcontroller ESP32 🛜")),
                     React.createElement("p", null,
                     lf("1️⃣ Prepare the USB to Serial - UART converter for the update"),
-                    React.createElement("div", null),
-                    React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/ESP32_V3.2.zip" }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2"),
+//                    React.createElement("div", null),                    
+//                    React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/ESP32_V3.2.zip" }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2"),
+
+//React.createElement("div", null,
+//React.createElement("button", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank"), className: "ui button icon icon-and-text primary purple attached" }, "Click to Download bBoardFirmware2_17.hex")),
+
+React.createElement("div", null,
+React.createElement( "a",{ onClick:()=> window.open("bBoardFirmware2_17.hex", "_blank") }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2")),
+
                     React.createElement("div", null),
                     React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Flash_Tool.zip" }, "3️⃣ Click to Download the Flash Tool software"),              
                     React.createElement("br", null), 
