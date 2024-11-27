@@ -16,7 +16,7 @@ The __🧑‍🎓 Students__ will need to obtain the right *sequence* to turn on
 ### 🧑‍🏫  __Teachers__
 For __Mission 1- Weird Light__ Please follow the next steps that you will find on M5Core2 module:
 
-1. Load __Mission_1: Weird Lights__ on the M5Core2. You can view this [__*🎬 video*__](https://drive.google.com/file/d/1Ra37Ctwg_KHiViCR3XP2hXUteJ2BQ-y6/view?usp=sharing) if you don't remember how to do this.
+1. Load __Mission_1: Weird Lights__ on the M5Core2. You can view this [🎬__* video*__](https://drive.google.com/file/d/1Ra37Ctwg_KHiViCR3XP2hXUteJ2BQ-y6/view?usp=sharing) if you don't remember how to do this.
 
 2. Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
 
@@ -30,7 +30,7 @@ For __Mission 1- Weird Light__ Please follow the next steps that you will find o
 
     ![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected_EN.png?raw=true "Mission Selected")  
   
-Help the students 🧑‍🎓 with the [__File Attack Methods__](https://drive.google.com/file/d/1odDIwYkuC88d0alDoKA43cvtOF87OxG2/view?usp=sharing) to succeed in this activity.
+Help the students 🧑‍🎓 with the __`File Attack Methods`__ [__⬇️ Here__](https://drive.google.com/file/d/1odDIwYkuC88d0alDoKA43cvtOF87OxG2/view?usp=sharing) to succeed in this activity.
 
 ### 🧑‍🎓 __Students__
 
@@ -57,10 +57,10 @@ __2.__ Choose your role 👤 in __Cyberville__:
 |    9️⃣ Industry         |🏪| `Techmach Industries`  
 |    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`   
 |    1️⃣1️⃣ Cyber Security |🕵️‍♂️| `(Not available as role)`    
-|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community`          
-        
-In IDE code environment looks like:  
-![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-EN.png?raw=true "Choose a Role")    
+|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community`  
+
+<br>
+In IDE code environment looks like:![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-EN.png?raw=true "Choose a Role")    
 
 __3.__ Select a device to be protected:   
     ✴️ 1 Heat Control ❄️  
@@ -105,14 +105,8 @@ Remember to setup a new password and select a new sequence on the 📳 M5 module
  You can send your new code, when you see a triangle (* 🔺 *on the b.Board's screen).*
 
 ## Code Example
-You can download the .Hex file code for this activity by clicking 👉 Here. The file will appear 
-in your Recent Downloads. You can either drag and drop it into a new project or click the edit 
-icon <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" alt="IconEdit" title="IconEdit" width="30" /> 
-
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
-
-
-to open it in the 🧩 Blocks editor and modify your code.
+You can download the .Hex file code for this activity by clicking [__👉Here__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex). The file will appear 
+in your Recent Downloads. You can either drag and drop it into a new project or click the edit icon![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")to open it in the 🧩 Blocks editor and modify your code.
 
 Or use this code example to evaluate your code sequence and test it.
 
