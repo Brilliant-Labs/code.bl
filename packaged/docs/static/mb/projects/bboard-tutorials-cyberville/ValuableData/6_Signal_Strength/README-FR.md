@@ -57,5 +57,5 @@ Assurez-vous toujours que vous êtes connecté au bon réseau __Cyberville__ ava
 input.onButtonPressed(Button.A, function () {
     basic.showString(Cybersec.getSignalStrength())
 })
-Cybersec.WifiConnect("Cyberville #2", "")
+Cybersec.WifiConnect("Cyberville #?", "")
 ```

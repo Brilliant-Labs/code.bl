@@ -57,5 +57,5 @@ Allways be sure that you are connected in the right __Cyberville__ network, befo
 input.onButtonPressed(Button.A, function () {
     basic.showString(Cybersec.getSignalStrength())
 })
-Cybersec.WifiConnect("Cyberville #2", "")
+Cybersec.WifiConnect("Cyberville #?", "")
 ```

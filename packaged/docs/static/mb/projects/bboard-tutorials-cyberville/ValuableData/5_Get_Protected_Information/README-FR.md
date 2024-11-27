@@ -93,11 +93,10 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     Cybersec.ShowEncr(Cybersec.indexencr(Index_Encr.three))
 })
-let CL_Strip: neopixel.Strip = null
 let FL_Strip: neopixel.Strip = null
+let CL_Strip: neopixel.Strip = null
 let Full_Strip: neopixel.Strip = null
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
-FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
-
+FL_Strip = Full_Strip.range(0, 10)
 ```

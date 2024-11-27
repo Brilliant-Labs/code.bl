@@ -70,19 +70,18 @@ __*Please do not forget to set up the correct name for the access point in your 
 ```blocks
 input.onButtonPressed(Button.A, function () {
     for (let Count = 0; Count <= 9; Count++) {
-        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.zero)), neopixel.colors(NeoPixelColors.Green))
         CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.zero)), neopixel.colors(NeoPixelColors.Blue))
+        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.zero)), neopixel.colors(NeoPixelColors.Green))
     }
     Full_Strip.show()
     Cybersec.MissionWater(Cybersec.indexhat(Index_H.one))
 })
-let CL_Strip: neopixel.Strip = null
 let FL_Strip: neopixel.Strip = null
+let CL_Strip: neopixel.Strip = null
 let Full_Strip: neopixel.Strip = null
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
-FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
-
+FL_Strip = Full_Strip.range(0, 10)
 ```
 
 

@@ -74,16 +74,15 @@ __*Veuillez ne pas oublier de configurer le bon nom pour le point d'accès sur v
 input.onButtonPressed(Button.A, function () {
     Cybersec.MissionWater(Cybersec.indexhat(Index_H.two))
     for (let Count = 0; Count <= 9; Count++) {
-        CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.one)), neopixel.colors(NeoPixelColors.Blue))
-        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.one)), neopixel.colors(NeoPixelColors.Green))
+        CL_Strip.setPixelColor(Count + (10 - (Cybersec.indexcl(Index_CL.one) - Cybersec.indexavcl(Index_AVCL.one))), neopixel.colors(NeoPixelColors.Blue))
+        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.one) / Cybersec.indexavfl(Index_AVFL.one)), neopixel.colors(NeoPixelColors.Green))
     }
     Full_Strip.show()
 })
-let CL_Strip: neopixel.Strip = null
 let FL_Strip: neopixel.Strip = null
+let CL_Strip: neopixel.Strip = null
 let Full_Strip: neopixel.Strip = null
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
-FL_Strip = Full_Strip.range(0, 10)
 CL_Strip = Full_Strip.range(20, 10)
-
+FL_Strip = Full_Strip.range(0, 10)
 ```

@@ -95,8 +95,6 @@ input.onButtonPressed(Button.B, function () {
     basic.showString(Cybersec.getIPaddressbBoard())
 })
 Cybersec.WifiConnect("Cyberville #?", "")
-basic.forever(function () {
-	
+basic.forever(function () {	
 })
-
 ```

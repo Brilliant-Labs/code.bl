@@ -13,7 +13,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "description": "Learn about Cybersecurity NETWORKING in Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "Networking",
   "labelClass": "indigo ribbon small"
 },
@@ -23,7 +23,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "description": "Connect your b.Board to Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connecting_Icon-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -33,7 +33,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "description": "Find your MAC and IP address in Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/MAC_IP_Icon-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif", 
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -43,7 +43,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "description": "Get your ROLE in Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Roles_Icon-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -53,7 +53,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "description": "Do a ping on the Cyberville network. See who is available.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/4_Do_Ping/Do_Ping_Icon-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 

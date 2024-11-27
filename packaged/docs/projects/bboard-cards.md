@@ -12,13 +12,13 @@ Learn to use Boards using Card your @boardname@!
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README-EN",
   "description": "Hello b.Board | Bonjour b.Board",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/Hello_bBoard_Icon-EN.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "1_Intro",
   "labelClass": "orange ribbon med",
 
   "otherActions": [{
   "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README-FR",
-  "cardType": "side"
+  "cardType": "large"
   }]
 },
 {
@@ -26,12 +26,12 @@ Learn to use Boards using Card your @boardname@!
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/README-EN",
   "description": "Let´s Code | Codons",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/Lets_Code_Icon-EN.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": "",
   "otherActions": [{
   "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro4/README-FR",
-  "cardType": "side"
+  "cardType": "large"
   }]
 },
 {
@@ -39,12 +39,12 @@ Learn to use Boards using Card your @boardname@!
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/README-EN",
   "description": "Your Code Guide | Votre guide du code",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/Your_Code_Guide_Icon-EN.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": "",
   "otherActions": [{
   "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/README-FR",
-  "cardType": "side"
+  "cardType": "large"
   }]
 },
 {
@@ -52,12 +52,12 @@ Learn to use Boards using Card your @boardname@!
   "url":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/README-EN",
   "description": "Download your Code | Téléchargez votre code",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/Download_your_code_Icon-EN.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": "",
   "otherActions": [{
   "url": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/README-FR",
-  "cardType": "side"
+  "cardType": "large"
   }]
 }
 ]

@@ -13,7 +13,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Polluted Water. Water Treatment Plant Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "Valuable Data",
   "labelClass": "indigo ribbon small"
 },
@@ -23,7 +23,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Grab your tools and start customizing your own water treatment plant.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Water_Calibration.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -33,7 +33,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Be careful out there and make sure you're getting reliable information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info_RedHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -43,7 +43,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Be careful out there and make sure you're getting secure information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Secure_Info_BlackHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -53,7 +53,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Be careful out there and make sure you're getting safe information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Safe_Info_WhiteHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -63,7 +63,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Be careful out there and make sure you're getting Protected information from the web.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
@@ -73,7 +73,7 @@ Mission 2 Polluted Water !! @boardname@.
   "description": "Just a friendly reminder to check in on your AP lotated.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/Signal_Strength-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 }
