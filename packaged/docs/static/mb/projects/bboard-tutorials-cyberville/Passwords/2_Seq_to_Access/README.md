@@ -35,8 +35,11 @@ Help the students 🧑‍🎓 with the [__File Attack Methods__](https://drive.g
 ### 🧑‍🎓 __Students__
 
 __1.__ Connect to the WiFi access point on the 📳 M5 Module. The 🧑‍🏫 teacher must provide the AP name and __password__. Use the *Connect to WiFi* 🧩 block. Remember, it should looks like this (✅ on screen b.Board):
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected" width="300" />  
 
+![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")
+
+If you get a ✅, you are connected to Access Point.
 If you got a small __x__ (❎ on screen b.Board), you are __*NOT*__ connected.   
   
 __2.__ Choose your role 👤 in __Cyberville__:  
@@ -54,8 +57,7 @@ __2.__ Choose your role 👤 in __Cyberville__:
 |    9️⃣ Industry         |🏪| `Techmach Industries`  
 |    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`   
 |    1️⃣1️⃣ Cyber Security |🕵️‍♂️| `(Not available as role)`    
-|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community`  
-
+|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community`          
         
 In IDE code environment looks like:  
 ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-EN.png?raw=true "Choose a Role")    
@@ -69,7 +71,6 @@ __3.__ Select a device to be protected:
  
 In IDE code environment looks like:  
 ![ChooseDevice](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseDevice-EN.png?raw=true "Choose a Role")
-
 __4.__ Code the b.Board to complete the sequence to turn on the devices affected by the hack. Remember that this sequence is secret, and you have to figure out how to get it.
 
 __5.__ Use the *Send Protection Sequence* 🧩 block at the end to check if you have the right sequence defined by your 🧑‍🏫 teacher, and remember to have fun!.
@@ -100,15 +101,18 @@ The 📳 access point will be reset to start a new challenge.
 Remember to setup a new password and select a new sequence on the 📳 M5 module.
 ##### ~
 
----
  *Just a quick note to remind you to stay connected (* ✅ *on the b.Board's screen). If you're not connected (* ❎ *on the b.Board's screen), your code protection sequence will be disqualified and won't be sent.       
  You can send your new code, when you see a triangle (* 🔺 *on the b.Board's screen).*
 
-
 ## Code Example
+You can download the .Hex file code for this activity by clicking 👉 Here. The file will appear 
+in your Recent Downloads. You can either drag and drop it into a new project or click the edit 
+icon <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" alt="IconEdit" title="IconEdit" width="30" /> 
 
-You can download the code for this activity from [__👉Here__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex), the file will be in Recent Download History, just drag and drop it into a new project, or click on the icon 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" alt="IconEdit" title="IconEdit." width="50" /> to open as blocks code.
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
+
+
+to open it in the 🧩 Blocks editor and modify your code.
 
 Or use this code example to evaluate your code sequence and test it.
 
