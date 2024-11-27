@@ -19,7 +19,7 @@
   * [Your Code Guide | Votre guide du code](/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro5/README-EN.html)
   * [Download your Code | Téléchargez votre code](/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro6/README-EN.html)
 * [    ](/projects/bboard-cards2)
-  * [Make it Light Up](/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights1/README)
+  * [Make it Light Up](/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights1/README)
   * [Make it Up Different Colours](/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights2/README)
   * [Make it Up Different Colours Using a Button](/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights3/README)
   * [Add Your Name Screen](/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights4/README)

@@ -1,4 +1,11 @@
+
 # 2_SEQUENCE TO ACCESS
+
+~avatar
+_``|Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to``_ ICON _``edit the sample code or download``_ ICON _``it to your b.Board.``|_
+~
+
+
 
 Guess what! Our __Cyberville__ school is under a cyber attack.
 
@@ -102,9 +109,7 @@ Remember to setup a new password and select a new sequence on the 📳 M5 module
 
 ## Code Example
 
-You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex` the file will be in Recent Download History, just drag and drop it into a new project.
-
-[__here__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex)
+You can download the code for this activity from [__👉Here__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex) the file will be in Recent Download History, just drag and drop it into a new project.
 
 Or use this code example to evaluate your code sequence and test it.
 
