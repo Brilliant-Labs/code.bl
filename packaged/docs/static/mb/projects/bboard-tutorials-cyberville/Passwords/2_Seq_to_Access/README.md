@@ -106,12 +106,12 @@ Remember to setup a new password and select a new sequence on the 📳 M5 module
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__👉Here__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex). 
-The file will appear in your downloads folder. You can either drag and drop it into a new project, or click the 📝 Edit icon below in the programming language modes to open it in the 🧩 Blocks editor for code modification.
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 
-This code example to evaluate your code sequence and test it.
+_**`Please do not forget to set up the correct name and password for the access point.`**_
 
-__*Please do not forget to set up the correct name and password for the access point.*__
+This code example to evaluate your code sequence and test it.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

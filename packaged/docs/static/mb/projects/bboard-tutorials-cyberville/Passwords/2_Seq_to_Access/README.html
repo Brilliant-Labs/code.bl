@@ -1812,10 +1812,10 @@ In IDE code environment looks like:<img class="ui image" src="https://github.com
     </div>
 <p> <em>Just a quick note to remind you to stay connected (</em> ✅ <em>on the b.Board’s screen). If you’re not connected (</em> ❎ <em>on the b.Board’s screen), your code protection sequence will be disqualified and won’t be sent.<br> You can send your new code, when you see a triangle (</em> 🔺 <em>on the b.Board’s screen).</em></p>
 <h2 id="code-example">Code Example</h2><p>You can download the .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex"><strong>👉Here</strong></a>. 
-The file will appear in your downloads folder. You can either drag and drop it into a new project, or click the 📝 Edit icon below in the programming language modes to open it in the 🧩 Blocks editor for code modification.
+Once downloaded, either drag and drop it into a new project, or click the <strong>📝 Edit</strong> icon in the programming language modes to modify it in the 🧩 Blocks editor.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" alt="IconEdit" title="IconEdit" loading="lazy"></p>
+<p><em><strong><code>Please do not forget to set up the correct name and password for the access point.</code></strong></em></p>
 <p>This code example to evaluate your code sequence and test it.</p>
-<p><strong><em>Please do not forget to set up the correct name and password for the access point.</em></strong></p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
     if (Cybersec.WiFi_Connected()) {
