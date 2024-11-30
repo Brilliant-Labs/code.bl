@@ -60,10 +60,9 @@ __7.__ ⬇️ Download the code to micro:bit.
 __8.__ The student's will now display their unique MAC Address 🆔 on micro:bit screen pressing A button, and the IP Address 📮 pressing B button.
 
 The MAC address 🆔 will be displayed on micro:bit display, similar to this (Scrolling ⏪):  
-``__My MAC: 34:ab:95:98:d1:f8__``
-
+__`My MAC: 34:ab:95:98:d1:f8`__      
 And the IP address 📮 will be displayed on Microbit display, similar to this (Scrolling ⏪):  
-``__My IP: 192.168.4.2__``
+__`My IP: 192.168.4.2`__
        
 __9.__ At the end of this activity 🧑‍🏫 teachers should talk with their 🧑‍🎓 students about why 🆔 MAC and 📮 IP addresses are crucial for cybersecurity and the development of __Cyberville__.
 
@@ -87,7 +86,7 @@ You can download the .hex file for this activity by clicking [__⬇️ Here__](h
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 
-_**`Please do not forget to set up the correct name and password for the access point.Mute the PC sound to listen the b.Board sound.`**_
+_**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the b.Board sound.`**_
 
 You can use this code example to obtain the 🆔 MAC and 📮 IP addresses.
 

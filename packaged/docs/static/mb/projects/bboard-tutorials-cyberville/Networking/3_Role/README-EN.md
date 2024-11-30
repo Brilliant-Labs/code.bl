@@ -25,7 +25,7 @@ __4.__ Program the micro:bit to play a sound or a melody (You can find this in t
 Please choose one of the following roles in __Cyberville__: 
 ![Rol](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol.png?raw=true "Rol")
 
-As an example, if you chose __WATER__ and are connected to the WiFi Network, then your micro:bit should look like this:
+As an example, if you chose __💧 WATER__ and are connected to the WiFi Network, then your micro:bit should look like this:
 
 ![Step10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Step10.png?raw=true "Step10")
 
@@ -36,9 +36,9 @@ You can download the .hex file for this activity by clicking [__⬇️ Here__](h
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 
-_**`Please do not forget to set up the correct name and password for the access point.Mute the PC sound to listen the __b.Board__ sound.`**_
+_**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the __b.Board__ sound.`**_
 
-You can use this code example to have a __Role 👤__ in __Cyberville__, please change the WETER-Umbrella for your own role.
+You can use this code example to have a __👤 Role__ in __Cyberville__, please change the WETER-Umbrella for your own role.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
