@@ -1,7 +1,7 @@
 
 ---
 # ~avatar
-_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your b.Board._
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
 
@@ -9,46 +9,43 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Malware 🦠 __, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __The Black Hat Frend__.
+This activity is related to __Malware 🦠__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> ![BlackHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/BlackHat.png?raw=true "BlackHat")the ⚫ 🎩 __Red Hat__ friend.
 ## Activity
 __*Let's start!!!*__
-
-Run the exaple code to ensure the levels bar on our plant are working correctly. Then follow the next steps.  
-
 ## __🧑‍🏫 Teachers:__
 
-For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
+For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5 module:
 
-__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [🎬__*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+__1.__ Load __Mission_2: Water Polluted__ into M5 module. You can see this [🎬 __*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
-__2.__ Press the first button __GO!!!__, then select the frend __Black Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
+__2.__ Press the first button __GO!!!__, then select the friend ⚫ 🎩 __Black Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
-__3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example:  
-        AP name  📳: __Cyberville #1__  
-        Password 🔑: __BL_Cybr1__ *(if you are using default one)*
+__3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example: 
+
+`AP name 📳 :`__`Cyberville #?`__      
+`Password 🔑:`__`BL_Cybr1 `__ *(If you are using default one)*
 
 Remember that there are three differents ways to setup passwords on 📳 M5 Module for __Cyberville__ network. Agree with 🧑‍🎓 students which password are you going to use for this activity. 
 
 ##### ~avatar
 Options to setup __Passwords__:
 
-__No Password:__ Don't press any buttons on the initializing screen. [🎬__*Video*__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__No Password:__ Don't press any buttons on the initializing screen. [🎬 __*Video*__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__Default Password:__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [🎬__*Video*__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__Default Password:__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [🎬 __*Video*__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__Custom Password:__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [🎬__*Video*__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__Custom Password:__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [🎬 __*Video*__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 ##### ~
 
-__4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the 📳 M5 module screen, which will display the M5 module for Mission 2 as __Black Hat for Malware__. The 🧑‍🎓 students can find information on the __Webpage__ generated by the 📳 Access Point with 📮 IP address is: 192.168.4.1.
-
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="200" />
-
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/arrow.png?raw=true" alt="Hats" title="Hats" width="200" />
-
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M2B.png?raw=true" alt="Hats" title="Hats" width="200" />
-
+__4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the 📳 M5 module screen, which will display the M5 module for Mission 2 as ⚫ 🎩 __Black Hat for Malware__. The 🧑‍🎓 students can find information on the __Webpage__ generated by the 📳 Access Point with 📮 IP address is: 192.168.4.1.
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="200" />
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/arrow.png?raw=true" alt="Hats" title="Hats" width="200" />
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M2B.png?raw=true" alt="Hats" title="Hats" width="200" />
+    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2_0.png?raw=true "Hats")
+    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/arrow.png?raw=true "Hats")
+    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2B.png?raw=true "Hats")
 ## __🧑‍🎓 Students:__
 
 __1.__ Be sure that your __PC__ are connected to the __Cyberville__  📳 Access Point, according to the information agree with the 🧑‍🏫 teacher.
@@ -61,25 +58,27 @@ __4.__ Modify the code to provide the correct __ratio__ of __🧪 Chlorine__ and
 
 __5.__ Obtain some clues on the __Webpage__ to get your __ratio__ answer and send it to the 📳 Access Point to know if you fail or success for this activity.
 
-__6.__ We really need your help with this activity! It's super important that we complete the Attack-Tree Analysis. You can download it from [⬇️Here](https://drive.google.com/file/d/1AxxZ7OnsMydw9o44Xaw0NdP3r-IiTJ4z/view?usp=sharing).
+__6.__ We really need your help with this activity! It's super important that we complete the __Attack-Tree Analysis__. You can download it from [⬇️ Here](https://drive.google.com/file/d/1AxxZ7OnsMydw9o44Xaw0NdP3r-IiTJ4z/view?usp=sharing).
 
-##### ~avatar
-__You can get a copy of the __*Attack-Tree Analysis*__ page from your teacher.__
-__Once you have it, you can use the terminal at https://cyberville.brilliantlabs.ca/terminal.html to introduce the commands that will give you thr right antivirus number values. I hope this helps!!__
-##### ~
-
+``You can get a copy of the`` __``Attack-Tree Analysis``__ ``page from your teacher.
+Once you have it, you can use the terminal at https://cyberville.brilliantlabs.ca/terminal.html to introduce the commands that will give you thr right antivirus number values. I hope this helps!!``
 ##### ~avatar
 __It's really important to understand the challenges related to the use of blocks for the 'Level of Chloride' and 'Level of Fluoride.' This should be reflected in the bar levels displayed on the Neopixel strip, so we can all be on the same page!__
 ##### ~
 
+__⚠️ Important: WiFi Connection Setup__  
+1️⃣ Connect your PC to the WiFi access point broadcast by your 📳 M5 module   
+2️⃣ Once connected, open your web browser  
+3️⃣ Navigate to: __``http://192.168.4.1``__  
+4️⃣ Get the clues to solve the __Malware 🦠__ challenge
+
+
 ## Code Example
-You can download the .hex file for this activity by clicking [__⬇️Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Black-Hat.hex). 
+You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Black-Hat.hex). 
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
 
 Or use this code base as example to test the right __ratio__ and save the Water Treatment Plant!.
-
-__*Please do not forget to set up the correct name for the access point in your PC, and go to 192.168.4.1*__
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -97,6 +96,8 @@ Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 CL_Strip = Full_Strip.range(20, 10)
 FL_Strip = Full_Strip.range(0, 10)
 ```
+</br>
+</br>
 
 ---
 ---
@@ -105,3 +106,5 @@ FL_Strip = Full_Strip.range(0, 10)
 ![Black1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Black1_EN.png?raw=true "Black1")
 ![Black2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Black2_EN.png?raw=true "Black2")
 ![Black3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Black3_EN.png?raw=true "Black3")
+---
+---
