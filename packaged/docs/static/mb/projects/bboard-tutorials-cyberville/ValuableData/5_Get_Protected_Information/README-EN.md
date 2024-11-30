@@ -1,7 +1,7 @@
 
 ---
 # ~avatar
-_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
 
@@ -9,14 +9,14 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Encription 🗝️__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true" alt="BlueHat" title="BlueHat" width="50"/> ![BlueHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlueHat.png?raw=true "BluekHat")the 🟣 🎩 __Blue Hat__ friend.
+This activity is related to __Encription 🗝️__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true" alt="BlueHat" title="BlueHat" width="50"/> ![BlueHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true "BluekHat")the 🟣 🎩 __Blue Hat__ friend.
 ## Activity
 __*Let's start!!!*__
 ## __🧑‍🏫 Teachers:__
 
 For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
 
-__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [🎬__*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [🎬 __*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
 __2.__ Press the first button __GO!!!__, then select the friend 🟣 🎩 __Blue Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
@@ -58,7 +58,7 @@ __4.__ Modify the code to provide the correct __ratio__ of __🧪 Chlorine__ and
 
 __5.__ Obtain some clues on the __Webpage__ to get your __ratio__ answer and send it to the 📳 Access Point to know if you fail or success for this activity.
 
-__6.__ Use the __B key__ to start delivering the encoded code, take a 📋 piece of paper and a ✏️ pencil to make notes on the 🗝️ encripted messages. 
+__6.__ Use the __`👇⏺️  B key`__ to start delivering the encoded code, take a 📋 piece of paper and a ✏️ pencil to make notes on the 🗝️ encripted messages. 
 
 ### ~avatar
 Remember that another way to view your information is on the __*Show Console Device*__.
@@ -79,7 +79,7 @@ __⚠️ Important: WiFi Connection Setup__
 1️⃣ Connect your PC to the WiFi access point broadcast by your 📳 M5 module   
 2️⃣ Once connected, open your web browser  
 3️⃣ Navigate to: __``http://192.168.4.1``__  
-4️⃣ Get the clues to solve the _Encription 🗝️__ challenges
+4️⃣ Get the clues to solve the __Encription 🗝️__ challenges
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex). 

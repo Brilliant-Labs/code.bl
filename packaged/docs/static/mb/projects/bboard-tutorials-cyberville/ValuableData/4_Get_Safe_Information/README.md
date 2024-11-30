@@ -99,4 +99,6 @@ FL_Strip = Full_Strip.range(0, 10)
 ### Main Website preview from M5 Webserver - Activities Valuable Data
 
 ![White1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_White1_EN.png?raw=true "White1")
-![White1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_White2_EN.png?raw=true "White1")
+![White2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_White2_EN.png?raw=true "White2")
+---
+---

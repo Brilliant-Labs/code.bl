@@ -1,7 +1,7 @@
 
 ---
 # ~avatar
-_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
 
@@ -99,4 +99,6 @@ FL_Strip = Full_Strip.range(0, 10)
 ### Main Website preview from M5 Webserver - Activities Valuable Data
 
 ![White1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_White1_EN.png?raw=true "White1")
-![White1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_White2_EN.png?raw=true "White1")
+![White2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_White2_EN.png?raw=true "White2")
+---
+---
