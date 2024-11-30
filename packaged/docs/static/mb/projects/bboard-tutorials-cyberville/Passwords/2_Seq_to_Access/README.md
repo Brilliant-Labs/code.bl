@@ -30,7 +30,7 @@ For __Mission 1- Weird Light__ Please follow the next steps that you will find o
 
     ![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected_EN.png?raw=true "Mission Selected")  
   
-Help the students 🧑‍🎓 with the __`File Attack Methods`__ [__👉Here__](https://drive.google.com/file/d/1odDIwYkuC88d0alDoKA43cvtOF87OxG2/view?usp=sharing) to succeed in this activity.
+Help the students 🧑‍🎓 with the __`File Attack Methods`__ [__👉 Here__](https://drive.google.com/file/d/1odDIwYkuC88d0alDoKA43cvtOF87OxG2/view?usp=sharing) to succeed in this activity.
 
 ### 🧑‍🎓 __Students__
 
