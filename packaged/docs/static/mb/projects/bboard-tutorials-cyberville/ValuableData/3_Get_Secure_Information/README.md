@@ -9,7 +9,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Malware 🦠__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.jpg?raw=true" alt="BlackHat" title="BlackHat" width="50"/> ![BlackHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/BlackHat.jpg?raw=true "BlackHat")the ⚫ 🎩 __Red Hat__ friend.
+This activity is related to __Malware 🦠__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> ![BlackHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true "BlackHat")the ⚫ 🎩 __Black Hat__ friend.
 ## Activity
 __*Let's start!!!*__
 ## __🧑‍🏫 Teachers:__
@@ -43,7 +43,7 @@ __4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Hats.jpeg?raw=true" alt="Hats" title="Hats" width="200" />
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/arrow.png?raw=true" alt="Hats" title="Hats" width="200" />
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M2B.png?raw=true" alt="Hats" title="Hats" width="200" />
-    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M20.png?raw=true "Hats")
+    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M2_0.png?raw=true "Hats")
     ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/arrow.png?raw=true "Hats")
     ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/M2B.png?raw=true "Hats")
 ## __🧑‍🎓 Students:__
@@ -58,7 +58,7 @@ __4.__ Modify the code to provide the correct __ratio__ of __🧪 Chlorine__ and
 
 __5.__ Obtain some clues on the __Webpage__ to get your __ratio__ answer and send it to the 📳 Access Point to know if you fail or success for this activity.
 
-__6.__ We really need your help with this activity! It's super important that we complete the __`Attack-Tree Analysis`__. You can download it from  [__👉 Here__](https://drive.google.com/file/d/1AxxZ7OnsMydw9o44Xaw0NdP3r-IiTJ4z/view?usp=sharing).
+__6.__ We really need your help with this activity! It's super important that we complete the __`Attack-Tree Analysis`__, you can download it from [__👉 Here__](https://drive.google.com/file/d/1AxxZ7OnsMydw9o44Xaw0NdP3r-IiTJ4z/view?usp=sharing).
 
 ##### ~avatar
 You can get a copy of the __`Attack-Tree Analysis`__ page from your teacher.

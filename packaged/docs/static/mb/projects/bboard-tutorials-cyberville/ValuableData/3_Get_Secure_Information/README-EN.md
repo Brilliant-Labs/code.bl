@@ -74,7 +74,6 @@ __⚠️ Important: WiFi Connection Setup__
 3️⃣ Navigate to: __``http://192.168.4.1``__  
 4️⃣ Get the clues to solve the __Malware 🦠__ challenge
 
-
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Black-Hat.hex). 
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
