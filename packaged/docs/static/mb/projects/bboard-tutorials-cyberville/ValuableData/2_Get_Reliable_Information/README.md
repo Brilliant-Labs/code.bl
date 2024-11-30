@@ -1,24 +1,29 @@
+
+---
+# ~avatar
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your b.Board._
+# ~
+---
+
 # 2_GET RELIABLE INFORMATION - Red Hat
 
 Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
 
-This activity is related to __Phising 🎣__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> __The Red Hat Frend__.
+This activity is related to __Phising 🎣__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> 
+![RedHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true "RedHat")__The Red Hat Frend__.
 ## Activity
 __*Let's start!!!*__
-
-Run the exaple code to ensure the levels bar on our plant are working correctly. Then follow the next steps.  
-
 ## __🧑‍🏫 Teachers:__
+For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5 module:
 
-For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5Core2 module:
+__1.__ Load __Mission_2: Water Polluted__ into M5 module. You can see this [🎬 __*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
-__1.__ Load __Mission_2: Water Polluted__ into M5Core2. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
-
-__2.__ Press the first button __GO!!!__, then select the frend with __Red Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
+__2.__ Press the first button __GO!!!__, then select the frend with 🔴 🎩 __Red Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
 ![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
 
-__3.__ Share the current __Access Point name__ created by the 📳 M5 Module with the classroom and the password if it is the case. For example:  
+__3.__ Share the current __Access Point name__ created by the 📳 M5 Module with the classroom and the password if it is the case. For example:
+
         AP name  📳: __Cyberville #1__  
         Password 🔑: __BL_Cybr1__ *(if you are using default one)*
 
@@ -27,11 +32,11 @@ Remember that there are three differents ways to setup passwords on 📳 M5 modu
 ##### ~avatar
 Options to setup __Passwords__:
 
-__No Password__ Don't press any buttons on the initializing screen. [Video Here](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__No Password__ Don't press any buttons on the initializing screen. [🎬 __*Video*__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__Default Password__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [Video Here](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__Default Password__ In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button on the initializing screen to set the default password. [🎬 __*Video*__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 
-__Custom Password__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [Video Here](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+__Custom Password__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [🎬 __*Video*__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
 ##### ~
 
 __4.__ The __🧑‍🏫 Teacher__ will choose the sources of information on the 📳 M5 module screen, which will display the M5 module for Mission 2 as __Red Hat for Phising__. The 🧑‍🎓 students can find information on the __Webpage__ generated by the 📳 Access Point with 📮 IP address is: 192.168.4.1.
@@ -59,13 +64,18 @@ __5.__ Obtain some clues on the __Webpage__ to get your __ratio__ answer and sen
 __It's really important to understand the challenges related to the use of blocks for the 'Level of Chloride' and 'Level of Fluoride.' This should be reflected in the bar levels displayed on the Neopixel strip, so we can all be on the same page!__
 ##### ~  
 
-## Code Example
+__⚠️ Important: WiFi Connection Setup__  
+1️⃣ Connect your PC to the WiFi access point broadcast by your 📳 M5 module   
+2️⃣ Once connected, open your web browser  
+3️⃣ Navigate to: __``http://192.168.4.1``__  
+4️⃣ Get the clues to solve the __Phising 🎣__ challenge
 
-You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+## Code Example
+You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex). 
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
 
 Or use this code base as example to test the right __ratio__ and save the Water Treatment Plant!.
-
-__*Please do not forget to set up the correct name for the access point in your PC, and go to 192.168.4.1*__
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -83,11 +93,8 @@ Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 CL_Strip = Full_Strip.range(20, 10)
 FL_Strip = Full_Strip.range(0, 10)
 ```
-
-
-
-
-
+</br>
+</br>
 
 ---
 ---
@@ -96,4 +103,5 @@ FL_Strip = Full_Strip.range(0, 10)
 ![Red1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red1_EN.png?raw=true "Red1")
 ![Red2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red2_EN.png?raw=true "Red2")
 ![Red3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red3_EN.png?raw=true "Red3")
-![Red4](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Red4_EN.png?raw=true "Red4")
+---
+---

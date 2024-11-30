@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,15 +1680,27 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="4_pinging">4_PINGING</h1><p>Now that the <strong>Cyberville</strong> network is up and running and everyone’s roles are filled, it’s time to find out if there’s someone special in the network. To do that, we’re going to use the command “<strong>ping</strong>.”</p>
-<p>A <strong>“ping”</strong> is a simple Internet program that lets you test and verify if a particular destination <strong>IP</strong> address exists and can accept requests in the <strong>Cyberville</strong> network. It’s really easy to use! Another great thing about <strong>ping</strong> is that it lets you know if another b.Board is trying to reach you and that it’s working properly.
+        <hr>
+
+    <div class='avatar '>
+        <div class='avatar-image'></div>
+        <div class='ui compact message'>
+            <p><em>Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to</em> 📝<strong>Edit</strong> <em>the sample code or</em> ⬇️ <strong>download</strong> <em>it to your <strong>b.Board</strong>.</em></p>
+
+        </div>
+    </div>
+<hr>
+<h1 id="4_pinging">4_PINGING</h1><p>Now that the <strong>Cyberville</strong> network is up and running and everyone’s roles are filled, it’s time to find out if there’s someone special in the network. To do that, we’re going to use the command “<strong>ping</strong>.”</p>
+<p>A <strong>“ping”</strong> is a simple Internet program that lets you test and verify if a particular destination <strong>IP</strong> address exists and can accept requests in the <strong>Cyberville</strong> network. It’s really easy to use! Another great thing about <strong>ping</strong> is that it lets you know if another <strong>b.Board</strong> is trying to reach you and that it’s working properly.
 Let’s use the <strong>“ping”</strong> command to find out if other roles are in the <strong>Cyberville</strong> network! </p>
 <h2 id="activity">Activity</h2><p>Let’s quickly check if the access point 📳 M5Core2 Module is available. Just do a <strong>Ping</strong>, and we’ll know in no time! It has a handy default IP address of 192.168.4.1, which is perfect for getting started using the command PING! 
-It would be really fun to share our ID cards and find out who our classmates are connected to! Don’t forget to set up your friends’ IP addresses in the block 🧩 [Do PING to IP:___], and make sure you’re connected to the right access point 📳.
+It would be really fun to share our ID cards and find out who our classmates are connected to! Don’t forget to set up your friends’ IP addresses in the block 🧩 <code>||Do PING to IP(&quot;&quot;)||</code>, and make sure you’re connected to the right access point 📳.
 You’ll get a 😊 smiley face if your request role is available in the network, and a 😔 sad face if it’s not.</p>
-<h2 id="code-example">Code Example</h2><p>You can download the code for this activity from <code>https://www.brilliantlabs.ca/documents/cybersec/Networking_D.hex</code> the file will be in Recent Download History, just drag and drop it into a new project.  </p>
-<p>Or use this code example to <strong>pinging</strong> your friends.</p>
-<p><strong><em>Please do not forget to set up the correct name for the access point. Mute the PC sound to listen the b.Board sound.</em></strong></p>
+<h2 id="code-example">Code Example</h2><p>You can download the .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking_D.hex"><strong>⬇️ Here</strong></a>. 
+Once downloaded, either drag and drop it into a new project, or click the <strong>📝 Edit</strong> icon in the programming language modes to modify it in the 🧩 Blocks editor.
+<img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" alt="IconEdit" title="IconEdit" loading="lazy"></p>
+<p><em><strong><code>Please do not forget to set up the correct name and password for the access point.Mute the PC sound to listen the __b.Board__ sound.</code></strong></em></p>
+<p>You can use this code example to <strong>pinging</strong> your friends.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     Cybersec.PingbBfrend(&quot;192.168.4.1&quot;)
 })

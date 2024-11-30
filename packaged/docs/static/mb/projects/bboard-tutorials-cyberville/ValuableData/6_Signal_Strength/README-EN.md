@@ -1,4 +1,11 @@
-# 6_SIGNAL STRENGTH
+
+---
+# ~avatar
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your b.Board._
+# ~
+---
+
+# 3_SIGNAL STRENGTH
 
 Hey there! We're sure you'll be really interested to know that the location of your Wi-Fi Access Point 📳 in your house is super important for cybersecurity!
 
@@ -29,6 +36,7 @@ Students 🧑‍🎓 will read the signal strength based on their code, and Teac
 
 ### 🧑‍🎓 __*Students*__
 __1.__ Connect to the WiFi access point M5Core2 📳. The teacher must provide the AP name and password. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen b.Board):
+<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />
 ![Connected_gif](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Connected_gif")  
 
 If you got a small __x__ (❎ on screen b.Board), you are __*NOT*__ connected.   
@@ -39,15 +47,16 @@ __3.__ Find the *Get the signal Strength* block in Cybersecurity blocks, and use
 
 __4.__ Get the __RSSI__ level and check how strong is the signal according to the Access Point 📳 location, get your own conclusion about the better plase to get a strong signal.
 
-__5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [Download](https://drive.google.com/file/d/1LNoaNRcknDB6Oy8KqP0S8L2PaEW8EaEH/view?usp=sharing), and print the planes.
+__5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [⬇️Download](https://drive.google.com/file/d/1LNoaNRcknDB6Oy8KqP0S8L2PaEW8EaEH/view?usp=sharing), and print the planes.
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true" alt="House1" title="House1" width="450" />
 
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2.png?raw=true" alt="House2" title="House2" width="450" />
 
 ## Code Example
-
-You can download the code for this activity from `https://brilliantlabs.ca/documents/cybersec/RSSI.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+You can download the .hex file for this activity by clicking [__⬇️Here__](https://brilliantlabs.ca/documents/cybersec/RSSI.hex). 
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 
 Or use this code as example to get the __RSSI__ power.
 

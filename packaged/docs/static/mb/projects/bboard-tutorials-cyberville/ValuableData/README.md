@@ -24,13 +24,15 @@ Your mission is to analyze and produce a Cybersecurity Assessment Report to help
 * Could the source of the information pose a security risk (e.g., malware)?
 * Does encryption help me protect myself?
 
-To get the correct ratio of __🧪Chloride to 🧪Fluoride__ for the __Cyberville__ Water Treatment Plant, please use the information on the __Cyberville__ websites and send the right ratio through the b.Board code configuration.
+To get the correct ratio of __🧪Chloride to 🧪Fluoride__ for the __Cyberville__ Water Treatment Plant, please use the information on the __Cyberville__ websites and send the right ratio through the __b.Board__ code configuration.
 
 There are 10 different levels for __🧪Chlorine__, displayed as blue neopixels, and 10 levels for __🧪Fluoride__, shown as green, all on the same Neopixel Strip. Each level is represented by a neopixel. The __Ratio Chloride:Fluoride__ should be visualized according to the levels. The figure below represents 5 levels of __🧪Chlorine__ and 10 levels of __🧪Fluoride__. Cybersecurity Kit #2 includes a Neopixel Strip with 30 Neopixels.
 
-![LevelBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/LevelBar.jpg?raw=true "LevelBar")
+![LevelBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/LevelBar_EN.jpg?raw=true "LevelBar")
 
-It's a great way to show off your skills and help keep the water treatment plant's digital space safe and secure! __Have fun!__
+It's a great way to show off your skills and help keep the water treatment plant's digital space safe and secure! 
+
+__*Have fun!*__
 
 
 

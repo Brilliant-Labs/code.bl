@@ -1,3 +1,10 @@
+
+---
+# ~avatar
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
+# ~
+---
+
 # 3_Roles
 
 In this activity you will take on a role in Cyberville so that you can protect it from Cyber Attacks.
@@ -22,15 +29,16 @@ As an example, if you chose __WATER__ and are connected to the WiFi Network, the
 
 ![Step10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Step10.png?raw=true "Step10")
 
-Once you've successfully linked each b.Board in the classroom to __Cyberville__ and assigned it a role, it's time for the fun part! Your teacher will simulate a __Cyber Attack__ by disabling the M5 module, which is the WiFi provider for __Cyberville__. This will disconnect all the devices in __Cyberville__, creating a situation of chaos within the __Cyberville__ network!
+Once you've successfully linked each __b.Board__ in the classroom to __Cyberville__ and assigned it a role, it's time for the fun part! Your teacher will simulate a __Cyber Attack__ by disabling the M5 module, which is the WiFi provider for __Cyberville__. This will disconnect all the devices in __Cyberville__, creating a situation of chaos within the __Cyberville__ network!
 
 ## Code Example
+You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex). 
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 
-You can download the code for this activity from `https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex` the file will be in Recent Download History, just drag and drop it into a new project.  
+_**`Please do not forget to set up the correct name and password for the access point.Mute the PC sound to listen the __b.Board__ sound.`**_
 
-Or use this code example to know if you have and __active role 👤__ in __Cyberville__.
-
-__*Please do not forget to set up the correct name for the access point. Mute the PC sound to listen the b.Board sound.*__
+You can use this code example to have a __Role 👤__ in __Cyberville__, please change the WETER-Umbrella for your own role.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

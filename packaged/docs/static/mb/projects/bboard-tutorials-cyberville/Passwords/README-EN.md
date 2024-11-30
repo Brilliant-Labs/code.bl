@@ -21,8 +21,10 @@ Recently, some reports have been sent to the supervisor about heat and light-rel
 
 I just wanted to let you know that there is a proper way -*a sequence*- to turn on the devices affected by this situation to protect and save the school from the cyber attack. I know it can be tricky, but I'm sure you can find it!
 
-In summary, the five affected devices are listed as __Heat Center, Air Conditioning, Lights Cafe, Lights Gym, and Internet__, which have a corresponding BLiXel number in the b.board. Provide the __Cyberville__ community with the right sequence using your b.Board and pass this mission, saving 🏫 'Lincoln High School' 2️⃣!
+In summary, the five affected devices are listed as __Heat Center, Air Conditioning, Lights Cafe, Lights Gym, and Internet__, which have a corresponding BLiXel number in the __b.board__. Provide the __Cyberville__ community with the right sequence using your __b.Board__ and pass this mission, saving 🏫 'Lincoln High School' 2️⃣!
 
 ![BliXels](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/BliXels.png?raw=true "BliXels")
 
-Ready to level up your cybersecurity skills? As a complementary activity let's dive into the world of penetration testing! This is a great way to identify potential problems and find any malware that might have been installed on the school's web infrastructure. Once you find something, you get to be the detective and figure out where it came from, how to fix it, and how to make sure it doesn't happen again. The best part? You get to create a Cybersecurity Assessment Report, where you'll document all the problems you find, your solutions, and your recommendations to fix them. This is a great way to show off your skills and help keep the school’s digital space stay safe and secure! __*Have fun!*__
+Ready to level up your cybersecurity skills? As a complementary activity let's dive into the world of penetration testing! This is a great way to identify potential problems and find any malware that might have been installed on the school's web infrastructure. Once you find something, you get to be the detective and figure out where it came from, how to fix it, and how to make sure it doesn't happen again. The best part? You get to create a Cybersecurity Assessment Report, where you'll document all the problems you find, your solutions, and your recommendations to fix them. This is a great way to show off your skills and help keep the school’s digital space stay safe and secure!
+
+__*Have fun!*__
