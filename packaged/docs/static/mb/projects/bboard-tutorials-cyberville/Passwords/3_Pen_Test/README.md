@@ -8,4 +8,4 @@ To help with this activity you will use this simplified Cybersecurity Assessment
 
 ![PenTest](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration_Test.png?raw=true "Penetration Test")
 
-Download to print [__👉Here__](https://drive.google.com/file/d/1olnFYjDaeksdrgLxqsAW_SRAgxP1kfgX/view?usp=sharing)
+Download to print [__👉 Here__](https://drive.google.com/file/d/1olnFYjDaeksdrgLxqsAW_SRAgxP1kfgX/view?usp=sharing)

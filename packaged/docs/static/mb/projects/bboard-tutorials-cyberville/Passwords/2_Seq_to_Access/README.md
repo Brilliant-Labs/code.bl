@@ -1,7 +1,7 @@
 
 ---
 # ~avatar
-_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
+_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
 
@@ -23,8 +23,9 @@ For __Mission 1- Weird Light__ Please follow the next steps that you will find o
     ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_EN.png?raw=true "Activity Mission 1")
 
 3. Share the current __Access Point name__ created by the M5Core2 with the classroom and the password, if one has been set. For example:  
-        AP name  📳: __Cyberville #1__  
-        Password 🔑: __BL_Cybr1__ *(if you are using default one)*
+
+`AP name 📳 :`__`Cyberville #?`__      
+`Password 🔑:`__`BL_Cybr1 `__ *(If you are using default one)*
 
 4. Finally, select one of the four options (A, B, C or D) on the screen. Your choice will be highlighted in yellow. That is all!.  
 
@@ -131,4 +132,4 @@ input.onButtonPressed(Button.A, function () {
             `)
     }
 })
-```
+``

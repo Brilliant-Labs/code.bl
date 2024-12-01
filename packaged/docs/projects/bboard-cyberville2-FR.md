@@ -13,7 +13,7 @@ Mission 1 Lumières Étranges !! @boardname@.
   "description": "Lumières Étranges. École Sous Cyberattaque !",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "Mots de passe",
   "labelClass": "indigo ribbon small"
 },
@@ -23,7 +23,7 @@ Mission 1 Lumières Étranges !! @boardname@.
   "description": "Définir des mots de passe.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Set_Psw_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "FR",
   "labelClass": ""
 },
@@ -33,7 +33,7 @@ Mission 1 Lumières Étranges !! @boardname@.
   "description": "Trouvez la bonne séquence pour accéder à l'école et la protéger.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Seq_to_Access_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "FR",
   "labelClass": ""
 },
@@ -43,7 +43,7 @@ Mission 1 Lumières Étranges !! @boardname@.
   "description": "Effectuer un test de pénétration pour prévenir les attaques futures.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/PenTest_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "side",
+  "cardType": "large",
   "label": "FR",
   "labelClass": ""
 }

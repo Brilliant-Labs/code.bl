@@ -1,3 +1,10 @@
+
+---
+# ~avatar
+_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._
+# ~
+---
+
 # 2_SÉQUENCE D'ACCÈS
 
 Devinez quoi ! Notre école __Cyberville__ est sous une cyberattaque.
@@ -9,64 +16,69 @@ Les __🧑‍🎓 élèves__ devront obtenir la bonne séquence pour allumer les
 ---  
 
 ### 🧑‍🏫  __Enseignants:__
-Pour la __Mission 1 - Lumières étranges__ euillez suivre les étapes suivantes que vous trouverez sur le module M5Core2 :
+Pour la __Mission 1 - Lumières étranges.__ Veuillez suivre les étapes suivantes que vous trouverez sur le module M5 :
 
-1. Chargez __Mission_1 : Lumières étranges__ sur le M5Core2. Vous pouvez regarder cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) isi vous ne vous souvenez pas comment faire.
+1. Chargez __Mission_1 : Lumières étranges__ sur le module M5. Vous pouvez regarder cette [🎬 __*vidéo*__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous ne vous souvenez pas comment faire.
 
 
-2. Appuyez sur le premier bouton __ALLER!__, puis sélectionnez la __équence de protection par code A, B, C ou D__ que vous souhaitez utiliser comme défi pour vos élèves. ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_FR.png?raw=true "Activité Mission 1")
+2. Appuyez sur le premier bouton __ALLER!__, puis sélectionnez la __séquence de protection par code A, B, C ou D__ que vous souhaitez utiliser comme défi pour vos élèves. 
+
+    ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_FR.png?raw=true "Activité Mission 1")
 
 3. Partagez le nom __du point d'accès__ actuel créé par le M5Core2 avec la classe ainsi que le mot de passe, 
 s'il a été défini. Par exemple :  
-        Nom AP 📳: __Cyberville #1__  
-        Mot de passe 🔑: __BL_Cybr1__ *(si vous utilisez le mot de passe par défaut)*
+
+`Nom AP 📳:`__`Cyberville #1`__  
+`Mot de passe 🔑:`__`BL_Cybr1`__ *(si vous utilisez le mot de passe par défaut)*
 
 4. Enfin, sélectionnez l'une des quatre options (A, B, C ou D) sur l'écran. Votre choix sera mis en surbrillance en jaune. C'est tout !. 
 
-![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected.png?raw=true "Mission Selected")  
+    ![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected_FR.png?raw=true "Mission Selected")  
   
-Aidez les élèves 🧑‍🎓 avec les [__Méthodes d'Attaque de Fichiers__](https://drive.google.com/file/d/16vj_-4z4jYt-uMMecOKX35zViVwBlh7x/view?usp=sharing) pour réussir cette activité.
+Aidez les élèves 🧑‍🎓 avec les __`Méthodes d'Attaque de Fichiers`__[__👉 Ici__](https://drive.google.com/file/d/16vj_-4z4jYt-uMMecOKX35zViVwBlh7x/view?usp=sharing) pour réussir cette activité.
 
 ### 🧑‍🎓 __Élèves__
 
-__1.__ Connectez-vous au point d'accès WiFi sur le 📳 M5 Module. L'enseignant 🧑‍🏫 doit fournir le nom du point d'accès et le __password__. Utilisez le 🧩 bloc *Connecter au Wi-Fi*. N'oubliez pas que cela devrait ressembler à ceci (✅ à l'écran du b.Board) :       
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />  
-
-Si vous obtenez un petit __x__ (❎ à l'écran du b.Board), vous __N'ÊTES PAS__ connecté.   
+__1.__ Connectez-vous au point d'accès WiFi sur le 📳 M5 module. L'enseignant 🧑‍🏫 doit fournir le nom du point d'accès et le __password__. Utilisez le 🧩 bloc ``||Connecter au Wi-Fi||``. N'oubliez pas que cela devrait ressembler à ceci (✅ à l'écran du __b.Board__) :       
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />
+    ![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")    
+Si vous obtenez un ✅, vous êtes connecté au Point d'Accès.
+Si vous obtenez un petit __x__ (❎ sur l'écran __b.Board__), vous __*N'ÊTES PAS*__ connecté. 
   
-__2.__ Choisissez votre rôle 👤 dans __Cyberville__:  
-    1️⃣ École             🏫  `École Lincoln`     
-    2️⃣ Hôpital           🏥  `Hôpital Cyberville`        
-    3️⃣ Eau               💧  `AquaPure`             
-    4️⃣ WiFi-BL           📳  (Non disponible en tant que rôle)               
-    5️⃣ Gouvernement      🏢  `Services gouvernementaux de Cyberville`             
-    6️⃣ Brilliant Labs    🏩  `Brilliant Labs`             
-    7️⃣ Banque            🏦  `Banque du Pacifique`               
-    8️⃣ Usine             🏭  `Volt Motors`        
-    9️⃣ Industrie         🏪  `Techmach Industries`        
-    1️⃣0️⃣ Centre d'art    🎨  `Centre d'art Harmony`       
-    1️⃣1️⃣ Cybersécurité   🕵️‍♂️  (Non disponible en tant que rôle)        
-    1️⃣2️⃣ Citoyens        😎  `La communauté de Cyberville`        
-    
-In IDE code environment looks like:  
-![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-FR.png?raw=true "Choose a Role")    
+__2.__ Choisissez votre rôle 👤 dans __Cyberville__:
+
+| Rôle 👤  | Icône  | Nom de l'entité |
+| :------------------   | :---: | :----------------- |
+|    1️⃣ École            | 🏫 | `École Lincoln`     
+|    2️⃣ Hôpital          | 🏥 | `Hôpital Cyberville`        
+|    3️⃣ Eau              | 💧 | `AquaPure`             
+|    4️⃣ WiFi-BL          | 📳 | `(Non disponible en tant que rôle)`               
+|    5️⃣ Gouvernement     | 🏢 | `Services gouvernementaux de Cyberville`             
+|    6️⃣ Brilliant Labs   | 🏩 | `Brilliant Labs`             
+|    7️⃣ Banque           | 🏦 | `Banque du Pacifique`               
+|    8️⃣ Usine            | 🏭 | `Volt Motors`        
+|    9️⃣ Industrie        | 🏪 | `Techmach Industries`        
+|    1️⃣0️⃣ Centre d'art   | 🎨 | `Centre d'art Harmony`       
+|    1️⃣1️⃣ Cybersécurité  | 🕵️‍♂️ | `(Non disponible en tant que rôle)`        
+|    1️⃣2️⃣ Citoyens       | 😎 | `La communauté de Cyberville`        
+
+<br>    
+Dans l’environnement de code IDE, cela ressemble à:  
+    ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-FR.png?raw=true "Choose a Role")    
 
 __3.__ Sélectionnez un appareil à protéger:   
-    1 Contrôle de la chaleur (Heat Control))    ❄️  
-    2 Contrôle de l'air (Air Control)           🌀  
-    3 Lampes Café (Lamps Cafe)                  💡☕  
-    4 Lampes Gym (Lamps Gym)                    💡🏃    
-    5 Internet (Internet)                       🛜  
+    ✴️ 1 Contrôle de la chaleur (Heat Control)     ❄️  
+    ✴️ 2 Contrôle de l'air (Air Control)           🌀  
+    ✴️ 3 Lampes Café (Lamps Cafe)                  💡☕  
+    ✴️ 4 Lampes Gym (Lamps Gym)                    💡🏃    
+    ✴️ 5 Internet (Internet)                       🛜  
  
 Dans l'environnement de code IDE, cela ressemble à :
     ![ChooseDevice](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseDevice-FR.png?raw=true "Choose a Role")
+__4.__ Codez le __b.Board__ pour compléter la séquence afin d'allumer les dispositifs affectés par le piratage. N'oubliez pas que cette séquence est secrète et que vous devez trouver comment l'obtenir.
 
-__4.__ Codez le b.Board pour compléter la séquence afin d'allumer les dispositifs affectés par le piratage. N'oubliez pas que cette séquence est secrète et que vous devez trouver comment l'obtenir.
-
-__5.__ Utilisez le bloc Envoyer la *Séquence de Protection* 🧩 à la fin pour vérifier si vous avez la bonne séquence définie par votre 🧑‍🏫 enseignant, et n'oubliez pas de vous amuser !
+__5.__ Utilisez le bloc Envoyer la ``||Séquence de Protection||`` 🧩 à la fin pour vérifier si vous avez la bonne séquence définie par votre 🧑‍🏫 enseignant, et n'oubliez pas de vous amuser !
   
-***
-
 ##### ~avatar
 📌 __*Notes:*__
 
@@ -93,22 +105,19 @@ Le point d'accès 📳 sera réinitialisé pour commencer un nouveau défi.
 N'oubliez pas de configurer un nouveau mot de passe et de sélectionner une nouvelle séquence sur le module 📳 M5.
 ##### ~
 
-
-
 ---
 
- *Juste un petit rappel pour vous souvenir de rester connecté (✅ sur l'écran du b.Board). Si vous n'êtes pas connecté (❎ sur l'écran du b.Board), votre séquence de protection par code sera disqualifiée et ne sera pas envoyée.
- Vous pouvez envoyer votre nouveau code lorsque vous voyez un triangle (🔺 sur l'écran du b.Board).*
-
----
+ *Juste un petit rappel pour vous souvenir de rester connecté (✅ sur l'écran du __b.Board__). Si vous n'êtes pas connecté (❎ sur l'écran du __b.Board__), votre séquence de protection par code sera disqualifiée et ne sera pas envoyée.
+ Vous pouvez envoyer votre nouveau code lorsque vous voyez un triangle (🔺 sur l'écran du __b.Board__).*
 
 ## Exemple de Code
-
-Vous pouvez télécharger le code pour cette activité à partir de`https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex` Le fichier sera dans l'historique des téléchargements récents, il vous suffit de le faire glisser et de le déposer dans un nouveau projet.  
-
-Ou utilisez cet exemple de code pour évaluer votre séquence de code et la tester.
+Vous pouvez télécharger le fichier .hex pour cette activité en cliquant [__⬇️ Ici__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex).
+Une fois téléchargé, glissez-déposez-le dans un nouveau projet, ou cliquez sur l'icône **📝 Modifier** dans les modes de langage de programmation pour le modifier dans l'éditeur de 🧩 Blocs.
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit_FR.png?raw=true "IconEdit")
 
 __*Veuillez ne pas oublier de configurer le nom et le mot de passe corrects pour le point d'accès.*__
+
+Cet exemple de code pour évaluer votre séquence de code et la tester.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

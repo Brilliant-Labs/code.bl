@@ -1685,7 +1685,7 @@
     <div class='avatar '>
         <div class='avatar-image'></div>
         <div class='ui compact message'>
-            <p><em>Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to</em> 📝<strong>Edit</strong> <em>the sample code or</em> ⬇️ <strong>download</strong> <em>it to your <strong>b.Board</strong>.</em></p>
+            <p><em>Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to</em> 📝 <strong>Edit</strong> <em>the sample code or</em> ⬇️ <strong>download</strong> <em>it to your <strong>b.Board</strong>.</em></p>
 
         </div>
     </div>
@@ -1701,8 +1701,10 @@
 <p> <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_EN.png?raw=true" alt="Act_M1" title="Activity Mission 1" loading="lazy"></p>
 </li>
 <li><p>Share the current <strong>Access Point name</strong> created by the M5Core2 with the classroom and the password, if one has been set. For example:  </p>
-<pre><code> AP name  📳: __Cyberville #1__  
- Password 🔑: __BL_Cybr1__ *(if you are using default one)*</code></pre></li>
+</li>
+</ol>
+<p><code>AP name 📳 :</code><strong><code>Cyberville #?</code></strong><br><code>Password 🔑:</code><strong><code>BL_Cybr1</code></strong> <em>(If you are using default one)</em></p>
+<ol start="4">
 <li><p>Finally, select one of the four options (A, B, C or D) on the screen. Your choice will be highlighted in yellow. That is all!.  </p>
 <p> <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected_EN.png?raw=true" alt="M1_Selected" title="Mission Selected" loading="lazy">  </p>
 </li>
@@ -1815,8 +1817,9 @@ Once downloaded, either drag and drop it into a new project, or click the <stron
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true" alt="IconEdit" title="IconEdit" loading="lazy"></p>
 <p><em><strong><code>Please do not forget to set up the correct name and password for the access point.</code></strong></em></p>
 <p>This code example to evaluate your code sequence and test it.</p>
-<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
-    Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+<p><code>`</code>blocks
+input.onButtonPressed(Button.A, function () {
+    Cybersec.WifiConnect(“Cyberville #?”, “”)
     if (Cybersec.WiFi_Connected()) {
         Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
         Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
@@ -1825,15 +1828,15 @@ Once downloaded, either drag and drop it into a new project, or click the <stron
         Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
         Cybersec.sendprot()
     } else {
-        basic.showLeds(`
-            # . . . #
-            . # . # .
-            . . # . .
-            . # . # .
-            # . . . #
-            `)
-    }
-})</code></pre>
+        basic.showLeds(`</p>
+<pre><code>        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        # . . . #
+        `)
+}</code></pre><p>})
+<code></code></p>
 
     </div>
 

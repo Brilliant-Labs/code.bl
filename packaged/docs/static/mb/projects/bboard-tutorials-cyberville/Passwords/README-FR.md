@@ -21,9 +21,11 @@ Récemment, des rapports ont été envoyés au superviseur concernant des probl�
 
 Je voulais juste vous informer qu'il existe une méthode appropriée — une séquence — pour allumer les appareils touchés par cette situation et protéger l'école contre l'attaque cybernétique. Je sais que cela peut être délicat, mais je suis sûr que vous pouvez y arriver !
 
-En résumé, les cinq appareils affectés sont répertoriés comme __Centre de Chaleur, Climatisation, Lumières Café, Lumières Gymnase et Internet__, qui ont chacun un numéro BLiXel correspondant sur la b.board. Fournissez à la communauté __Cyberville__ la bonne séquence en utilisant votre b.Board et réussissez cette mission, sauvant ainsi 🏫 'Lincoln High School' 2️⃣ !
+En résumé, les cinq appareils affectés sont répertoriés comme __Centre de Chaleur (Heat Center), Climatisation (Air Conditioning), Lumières Café (Lights Cafe), Lumières Gymnase (Lights Gym) et Internet__, qui ont chacun un numéro BLiXel correspondant sur la b.board. Fournissez à la communauté __Cyberville__ la bonne séquence en utilisant votre __b.Board__ et réussissez cette mission, sauvant ainsi 🏫 'Lincoln High School' 2️⃣ !
 
 ![BliXels](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/BliXels.png?raw=true "BliXels")
 
 Prêt à améliorer vos compétences en cybersécurité ? En tant qu'activité complémentaire, plongeons dans le monde du test de pénétration ! C'est un excellent moyen d'identifier les problèmes potentiels et de détecter tout malware qui pourrait avoir été installé sur l'infrastructure web de l'école. Une fois que vous avez trouvé quelque chose, vous devenez le détective et devez découvrir d'où cela vient, comment le réparer et comment faire en sorte que cela ne se reproduise plus. Le meilleur dans tout ça ? Vous allez créer un Rapport d'Évaluation de la Cybersécurité, où vous documenterez tous les problèmes trouvés, vos solutions et vos recommandations pour les corriger. 
-C'est un excellent moyen de montrer vos compétences et d'aider à garder l'espace numérique de l'école sûr et sécurisé.! __*Amusez-vous bien !*__
+C'est un excellent moyen de montrer vos compétences et d'aider à garder l'espace numérique de l'école sûr et sécurisé.!
+
+__*Amusez-vous bien !*__
