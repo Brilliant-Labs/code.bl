@@ -47,12 +47,12 @@ __1.__ Download [__👉 Here__](https://drive.google.com/file/d/1ldS8fqcVLhBBQ_I
 
 ![Cover for M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true "Cover for M2.")
 
-## 🧑‍🏫 __Teachers:__
+## 🧑‍🏫 Teachers:
 
 Teachers will guide the proccess to obtain the neopixel level bar from the students 🧑‍🎓.
 
 
-## 🧑‍🎓 __Students:__
+## 🧑‍🎓 Students:
 
 In this example, you'll find a suggested Water Plant Calibration environment for this activity. But don't be afraid to get creative! You can easily recreate two bars of neopixels for 10 BLixels each, in whatever way you like.
 

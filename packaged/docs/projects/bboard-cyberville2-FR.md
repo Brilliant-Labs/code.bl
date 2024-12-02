@@ -38,7 +38,7 @@ Mission 1 Lumières Étranges !! @boardname@.
   "labelClass": ""
 },
 {
-  "name": "3_Test de pénétration",
+  "name": "3_Test D'Intrusion",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/README-FR.html",
   "description": "Effectuer un test de pénétration pour prévenir les attaques futures.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/PenTest_Icon-FR.png",

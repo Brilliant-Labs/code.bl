@@ -15,7 +15,7 @@ __*Let's start!!!*__
 ## __🧑‍🏫 Teachers:__
 For __Mission 2- Water Polluted__ Please follow the next steps that you will find on M5 module:
 
-__1.__ Load __Mission_2: Water Polluted__ into M5 module. You can see this [🎬 __*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+__1.__ Load __Mission_2: Water Polluted__ into 📳 M5 module. You can see this [🎬 __*video*__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
 
 __2.__ Press the first button __GO!!!__, then select the friend with 🔴 🎩 __Red Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
