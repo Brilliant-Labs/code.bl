@@ -10,7 +10,7 @@ N'oubliez pas de changer la langue dans ⚙️ `More...` > 🌎 `Languaje` > `Fr
 
 Devinez quoi ! Notre usine de traitement de l'eau de __Cyberville__ est sous une cyberattaque !! L'eau a été polluée car nous avons reçu des informations erronées sur le bon ratio entre les proportions de __🧪Chlore__ et de __🧪Fluorure__.
 
-Cette activité est liée à __Malware 🦠 __, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __L'Ami au Chapeau Noir.__.
+Cette activité est liée à __Malware 🦠 __, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true" alt="BlackHat" title="BlackHat" width="50"/> __L'Ami au Chapeau Noir__.
 ![BlackHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/BlackHat.png?raw=true "BlackHat")L'Ami au ⚫ 🎩 __Chapeau Noir__.
 ## Activité
 __*Commençons!!!*__
@@ -21,7 +21,7 @@ Exécutez le code d'exemple pour vous assurer que la barre de niveaux de notre u
 
 Pour la __Mission 2- Eau Polluée__ Veuillez suivre les étapes suivantes que vous trouverez sur le 📳 module M5:
 
-__1.__ Chargez __Mission_2: Eau Polluée__ dans le 📳 module M5. Vous pouvez visionner cette [🎬 __*vidéo*__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous souhaitez vous souvenir de la manière de le faire.
+__1.__ Chargez __Mission_2: Eau Polluée__ dans le 📳 module M5. Vous pouvez visionner cette [🎬 __*Vidéo*__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous souhaitez vous souvenir de la manière de le faire.
 
 __2.__ Appuyez sur le premier bouton __Allons-y!__, puis sélectionnez l'ami  __Chapeau Noir__ tque vous souhaitez utiliser comme défi pour vos 🧑‍🎓 étudiants. 
 
@@ -63,7 +63,7 @@ __4.__ Modifiez le code pour fournir le bon __ratio__ de __🧪 Chlore__ et __�
 
 __5.__ Obtenez des indices sur la __page Web__ pour obtenir votre réponse de __ratio__ et envoyez-la au 📳 Point d'accès pour savoir si vous avez échoué ou réussi cette activité.
 
-__6.__ Nous avons vraiment besoin de votre aide pour cette activité ! Il est très important que nous complétions __`l'Analyse de l'arbre d'attaque`__. Vous pouvez la télécharger depuis [👉 __Ici__](https://drive.google.com/file/d/1vCoDr7exkB7IL_R0OE0K4H-grIoM85OM/view?usp=sharing).
+__6.__ Nous avons vraiment besoin de votre aide pour cette activité ! Il est très important que nous complétions __`l'Analyse de l'arbre d'attaque`__. Vous pouvez la télécharger depuis [👉 __Ici__](https://drive.google.com/file/d/1oQ6VcHOxjwsNm0QkQ5ws38UD9L0yy2Bw/view?usp=sharing).
 
 ##### ~avatar
 Vous pouvez obtenir une copie de la page __`d'Analyse de l'arbre d'attaque`__ auprès de votre enseignant.

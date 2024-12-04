@@ -14,7 +14,7 @@ Un __"ping"__ est un programme Internet simple qui vous permet de tester et de v
 
 ## Activité
 Vérifions rapidement si le point d'accès 📳 M5 Module est disponible. Il suffit de faire un __Ping__, et nous le saurons en un rien de temps ! Il a une adresse IP par défaut pratique de 192.168.4.1, idéale pour commencer avec la commande PING !
-Ce serait vraiment amusant de partager nos cartes d'identité et de découvrir à qui nos camarades de classe sont connectés ! N'oubliez pas de configurer les adresses IP de vos amis dans le bloc 🧩 ``||Faire PING vers IP :___||``, et assurez-vous d'être connecté au bon point d'accès 📳.
+Ce serait vraiment amusant de partager nos cartes d'identité et de découvrir à qui nos camarades de classe sont connectés ! N'oubliez pas de configurer les adresses IP de vos amis dans le bloc 🧩 ``||Effectuez un PING vers l'IP("")||``, et assurez-vous d'être connecté au bon point d'accès 📳.
 Vous obtiendrez un 😊 visage souriant si votre rôle de demande est disponible sur le réseau, et un 😔 visage triste si ce n'est pas le cas.
 
 ## Exemple de code

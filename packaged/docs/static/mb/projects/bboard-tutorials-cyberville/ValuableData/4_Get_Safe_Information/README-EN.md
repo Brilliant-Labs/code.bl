@@ -1,9 +1,7 @@
 <!--
----
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
----
 -->
 # 4_GET SAFE INFORMATION - White Hat
 
@@ -71,6 +69,7 @@ You can download the .hex file for this activity by clicking [__⬇️ Here__](h
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
 -->
+
 Or use this code base as example to test the right __ratio__ and save the Water Treatment Plant!.
 
 ```blocks

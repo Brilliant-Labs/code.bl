@@ -29,7 +29,9 @@ Il y a 10 niveaux différents pour le __🧪Chlore__, affichés par des Neopixel
 
 ![LevelBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/LevelBar_FR.jpg?raw=true "LevelBar")
 
-C'est une excellente façon de montrer vos compétences tout en aidant à sécuriser l'espace numérique de l'usine de traitement des eaux ! __Amusez-vous bien!__
+C'est une excellente façon de montrer vos compétences tout en aidant à sécuriser l'espace numérique de l'usine de traitement des eaux !  
+
+__Amusez-vous bien!__
 
 
 ---

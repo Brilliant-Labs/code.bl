@@ -25,7 +25,7 @@ Pour la __Mission 1 - Lumières étranges.__ Veuillez suivre les étapes suivant
 
     ![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_FR.png?raw=true "Activité Mission 1")
 
-3. Partagez le nom __du point d'accès__ actuel créé par le M5Core2 avec la classe ainsi que le mot de passe, 
+3. Partagez le nom __du point d'accès__ actuel créé par le 📳 module M5 avec la classe ainsi que le mot de passe, 
 s'il a été défini. Par exemple :  
 
 `Nom AP 📳:`__`Cyberville #1`__  

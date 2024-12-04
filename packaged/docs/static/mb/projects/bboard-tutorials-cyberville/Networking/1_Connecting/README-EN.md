@@ -1,10 +1,9 @@
-<!--
----
+<!--  
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
----
 -->
+
 # 1_CONNECTING
 
 It's time to connect to the __Cyberville__ WiFi network. __Cyberville__ iis a fictional futuristic city developed by the awesome folks at Brilliant Labs. In __Cyberville__, all clients or __b.Boards__ are connected to the __Cyberville__ WiFi network. The WiFi service in __Cyberville__ is provided by the M5 module, which will create the WiFi Access Point 📳 called "Cyberville #?". Let´s connect to the __Cyberville__ network.  
@@ -67,7 +66,8 @@ You can download the .hex file for this activity by clicking [__⬇️ Here__](h
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 -->
-_**`Please do not forget to set up the correct name and password for the access point.`**_
+
+_**``Please do not forget to set up the correct name and password for the access point.``**_
 
 This code example to evaluate your code sequence and test it.
 

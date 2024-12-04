@@ -31,7 +31,7 @@ __5.__ Gestion sécurisée des réseaux invités 🔧🐒 En plaçant votre poin
 ### 🧑‍🏫  __*Enseignants*__
 Il incombe au personnel enseignant de fournir aux élèves un point d'accès 📳 en utilisant le module M5Core2 pour cette activité. L'activité de mise en réseau est le choix le plus approprié, car elle nécessite uniquement la création d'un point d'accès 📳.
 Il est également nécessaire de partager avec les élèves les informations suivantes concernant __RSSI__ et la force du signal.
-![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true "RSSI")  
+![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI_FR.png?raw=true "RSSI")  
 Pour déterminer la force du signal dans __Cyberville__,  l'enseignant 🧑‍🏫 doit sortir de la salle de classe ou s'éloigner des __b.Boards__.
 Les élèves 🧑‍🎓 liront la force du signal en fonction de leur code et de la position de l'enseignant avec le 📳 module M5.
 
@@ -49,9 +49,9 @@ __4.__ Obtenez le niveau __RSSI__ et vérifiez la force du signal selon l'emplac
 
 __5.__ Disons que c'est votre maison... Où placerez-vous votre point d'accès 📳 pour protéger vos __données précieuses__? [__👉Télécharger__](https://drive.google.com/file/d/1NbCdomctqUPhOdIIMiiZB4_KXT83Y6jD/view?usp=sharing), et imprimez les plans.
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1_FR.png?raw=true" alt="House1" title="House1" width="450" />
-    ![House1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true?raw=true "House1") 
+    ![House1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1_FR.png?raw=true?raw=true "House1") 
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2_FR.png?raw=true" alt="House2" title="House2" width="450" />
-    ![House2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2.png?raw=true?raw=true "House2") 
+    ![House2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2_FR.png?raw=true?raw=true "House2") 
 
 ## Exemple de code
 Vous pouvez télécharger le fichier .hex pour cette activité en cliquant sur [⬇️ Ici](https://brilliantlabs.ca/documents/cybersec/RSSI.hex). 

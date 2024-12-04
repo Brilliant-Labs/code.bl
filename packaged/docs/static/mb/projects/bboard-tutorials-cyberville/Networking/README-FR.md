@@ -23,16 +23,16 @@ Cette activité utilise les b.Boards comme clients et le module microcontrôleur
 ### 🧑‍🏫 Enseignants
 Les enseignants doivent sélectionner l'activité __Réseautage__ sur le M5Core2 et suivre les étapes selon l'activité.
 
-Pour sélectionner une activité dans le M5Core2, consultez cette [**_vidéo_**](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing).
+Pour sélectionner une activité dans le 📳 module M5, consultez cette [🎬 __vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing).
 
-Voici une fiche technique de base pour le M5Core2 :
+Voici une fiche technique de base pour le 📳 module M5:
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true" alt="M5core2" title="Fiche technique M5Core2" width="400" />
 
 ### 🧑‍🎓 Étudiants
-Les étudiants 🧑‍🎓 vont créer leur propre communauté __Cyberville__ ! Voici comment cela fonctionne :
-__1.__ Connectez le b.Board au WiFi __Cyberville__ 📳.
-__2.__ Trouvez les adresses MAC 🆔 et IP 📮 du b.Board.
-__3.__ Prenez un rôle dans Cyberville 👤.
+Les étudiants 🧑‍🎓 vont créer leur propre communauté __Cyberville__ ! Voici comment cela fonctionne:  
+__1.__ Connectez le b.Board au WiFi __Cyberville__ 📳.  
+__2.__ Trouvez les adresses MAC 🆔 et IP 📮 du b.Board.  
+__3.__ Prenez un 👤 rôle dans Cyberville .
 
 Retournez à la page principale et commencez les activités de réseautage de Cyberville dans l'ordre suivant :
 

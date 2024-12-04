@@ -21,7 +21,7 @@ This activity uses the __b.Boards__ as clients, and the M5 microcontroller modul
 ---
 
 ### 🧑‍🏫  __Teachers__
-Teachers must select the __Networking__ activity on the M5Core2, and follow the steps according to the activity.
+Teachers must select the __Networking__ activity on the M5 module, and follow the steps according to the activity.
 
 To select any activity within M5 module, see this [🎬 __*video*__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing).
 

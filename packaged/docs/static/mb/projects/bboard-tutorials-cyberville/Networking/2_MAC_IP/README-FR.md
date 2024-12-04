@@ -27,10 +27,10 @@ Cette activité consiste à trouver l'adresse MAC 🆔 et l'adresse IP 📮 de c
 De plus, les enseignants 🧑‍🏫 et les étudiants 🧑‍🎓 doivent publier les adresses MAC et IP sur la carte d'identité de __Cyberville__:
 
 🧑‍🏫 Carte d'identité des enseignants
-Téléchargez la carte d'identité pour les enseignants 🧑‍🏫 [__⬇️ Ici__](https://drive.google.com/file/d/1EnfeuJK2KT-1-K8Pp-kZ2VPfwaLjvDFZ/view?usp=sharing)
+Téléchargez la carte d'identité pour les enseignants 🧑‍🏫 [__👉 Ici__](https://drive.google.com/file/d/1EnfeuJK2KT-1-K8Pp-kZ2VPfwaLjvDFZ/view?usp=sharing)
 
 ### 🧑‍🎓 Carte d'identité des étudiants
-Téléchargez la carte d'identité pour les étudiants 🧑‍🎓 [__⬇️ Ici__](https://drive.google.com/file/d/1L_Q3F4pbEFy0FwHtw97My_tA7F-5hCj-/view?usp=sharing)
+Téléchargez la carte d'identité pour les étudiants 🧑‍🎓 [__👉 Ici__](https://drive.google.com/file/d/1L_Q3F4pbEFy0FwHtw97My_tA7F-5hCj-/view?usp=sharing)
 
 Voici un exemple de ce à quoi s'attendre pour cette activité:
 <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Example_EN.png?raw=true" alt="ID" title="ID Example." width="300" />
@@ -60,10 +60,10 @@ __7.__ ⬇️ Téléchargez le code sur le micro:bit.
 
 __8.__ Les étudiants afficheront maintenant leur adresse MAC unique 🆔 sur l'écran du micro:bit en appuyant sur le bouton A, et l'adresse IP 📮 en appuyant sur le bouton B.
 
-L'adresse MAC 🆔 sera affichée sur l'écran du micro:bit, de manière similaire à ceci (défilement ⏪):
-__`Mon MAC : 34:ab:95:98:d1:f8`__
-Et l'adresse IP 📮 sera affichée sur l'écran du micro:bit, de manière similaire à ceci (défilement ⏪):
-__`Mon IP : 192.168.4.2`__
+L'adresse MAC 🆔 sera affichée sur l'écran du micro:bit, de manière similaire à ceci (défilement ⏪):  
+__`Mon MAC : 34:ab:95:98:d1:f8`__  
+Et l'adresse IP 📮 sera affichée sur l'écran du micro:bit, de manière similaire à ceci (défilement ⏪):  
+__`Mon IP : 192.168.4.2`__  
 
 __9.__ À la fin de cette activité, les enseignants 🧑‍🏫 devraient discuter avec leurs étudiants 🧑‍🎓 de l'importance des adresses 🆔 MAC et 📮 IP pour la cybersécurité et le développement de __Cyberville__.
 
