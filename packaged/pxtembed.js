@@ -105373,11 +105373,11 @@ ${opts.repo.name.replace(/^pxt-/, '')}=github:${opts.repo.fullName}#${opts.repo.
         function embedUrl(rootUrl, tag, id, height) {
             const url = `${rootUrl}#${tag}:${id}`;
             let padding = '70%';
-            return `<div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>`;
+            return `<div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}" frameborder="0" sandbox="allow-popups allow-downloads allow-forms allow-scripts allow-same-origin"></iframe></div>`;
         }
         docs.embedUrl = embedUrl;
         function runUrl(url, padding, id) {
-            let embed = `<div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}?id=${encodeURIComponent(id)}" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>`;
+            let embed = `<div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}?id=${encodeURIComponent(id)}" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-downloads allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>`;
             return embed;
         }
         docs.runUrl = runUrl;
@@ -172270,7 +172270,7 @@ var pxt;
                         const url = getRunUrl(options) + "#nofooter=1" + deps;
                         const assets = options.assetJSON ? `data-assets="${encodeURIComponent(JSON.stringify(options.assetJSON))}"` : "";
                         const data = encodeURIComponent($js.text());
-                        let $embed = $(`<div class="ui card sim"><div class="ui content"><div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}" data-code="${data}" ${assets} allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div></div></div>`);
+                        let $embed = $(`<div class="ui card sim"><div class="ui content"><div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}" data-code="${data}" ${assets} allowfullscreen="allowfullscreen" sandbox="allow-popups allow-downloads allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div></div></div>`);
                         $c.append($embed);
                         scrollJQueryIntoView($embed);
                     }

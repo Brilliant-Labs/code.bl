@@ -365,7 +365,7 @@ var pxt;
                         const url = getRunUrl(options) + "#nofooter=1" + deps;
                         const assets = options.assetJSON ? `data-assets="${encodeURIComponent(JSON.stringify(options.assetJSON))}"` : "";
                         const data = encodeURIComponent($js.text());
-                        let $embed = $(`<div class="ui card sim"><div class="ui content"><div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}" data-code="${data}" ${assets} allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div></div></div>`);
+                        let $embed = $(`<div class="ui card sim"><div class="ui content"><div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${url}" data-code="${data}" ${assets} allowfullscreen="allowfullscreen" sandbox="allow-popups allow-downloads allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div></div></div>`);
                         $c.append($embed);
                         scrollJQueryIntoView($embed);
                     }
@@ -1332,7 +1332,7 @@ var pxt;
                     padding = (100 / pxt.appTarget.simulator.aspectRatio) + '%';
                 let $sim = $(`<div class="ui card"><div class="ui content">
                     <div style="position:relative;height:0;padding-bottom:${padding};overflow:hidden;">
-                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe>
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-popups allow-downloads allow-forms allow-scripts allow-same-origin"></iframe>
                     </div>
                     </div></div>`);
                 const deps = options.package ? "&deps=" + encodeURIComponent(options.package) : "";

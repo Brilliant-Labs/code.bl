@@ -2922,7 +2922,7 @@ class ProjectView extends auth.Component {
             /* eslint-disable @microsoft/sdl/react-iframe-missing-sandbox */
             React.createElement("div", { className: "ui container" },
                 React.createElement("div", { id: "printcontainer", style: { 'position': 'relative', 'height': 0, 'paddingBottom': '40%', 'overflow': 'hidden' } },
-                    React.createElement("iframe", { frameBorder: "0", "aria-label": lf("Print preview"), sandbox: "allow-popups allow-forms allow-scripts allow-same-origin allow-modals", style: { 'position': 'absolute', 'top': 0, 'left': 0, 'width': '100%', 'height': '100%' }, src: url })))
+                    React.createElement("iframe", { frameBorder: "0", "aria-label": lf("Print preview"), sandbox: "allow-popups allow-downloads allow-forms allow-scripts allow-same-origin allow-modals", style: { 'position': 'absolute', 'top': 0, 'left': 0, 'width': '100%', 'height': '100%' }, src: url })))
             /* eslint-enable @microsoft/sdl/react-iframe-missing-sandbox */
         }).then(r => {
         });
