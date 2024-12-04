@@ -5,7 +5,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 # ~
 ---
 
-# 3_SIGNAL STRENGTH
+# 6_SIGNAL STRENGTH
 
 Hey there! We're sure you'll be really interested to know that the location of your Wi-Fi Access Point 📳 in your house is super important for cybersecurity!
 
@@ -33,7 +33,7 @@ It is also necessary to share with the students the following information regard
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true" alt="RSSI" title="RSSI" width="450" /> 
     ![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true "RSSI")
 To determine the strength of the signal in __Cyberville__, the teacher 🧑‍🏫 should walk out of the classroom or away from the __b.boards__.
-Students 🧑‍🎓 will read the signal strength based on their code, and Teacher's location with the M5 module.
+Students 🧑‍🎓 will read the signal strength based on their code, and Teacher's location with the 📳 M5 module.
 
 ### 🧑‍🎓 __*Students*__
 __1.__ Connect to the WiFi access point M5Core2 📳. The teacher must provide the AP name and password. Use the *Connect to WiFi* block. Remember, it should looks like this (✅ on screen __b.Board__):
@@ -42,17 +42,17 @@ __1.__ Connect to the WiFi access point M5Core2 📳. The teacher must provide t
     
 If you got a small __x__ (❎ on screen __b.Board__), you are __*NOT*__ connected.   
   
-__2.__ Use a block *on button A pressed*, inside add a *show string ()* block 
+__2.__ Use a block *on button A pressed*, inside add a 🧩 ``||show string ()||`` block. 
   
-__3.__ Find the *Get the signal Strength* block in Cybersecurity blocks, and use it replacing the *hello!* word in Show String block.
+__3.__ Find the 🧩 ``||Get the signal Strength||`` block in Cybersecurity blocks, and use it replacing the *hello!* word in 🧩 ``||Show String||`` block.
 
 __4.__ Get the __RSSI__ level and check how strong is the signal according to the Access Point 📳 location, get your own conclusion about the better plase to get a strong signal.
 
-__5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [__👉 Download__](https://drive.google.com/file/d/1LNoaNRcknDB6Oy8KqP0S8L2PaEW8EaEH/view?usp=sharing), and print the planes.
-
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true" alt="House1" title="House1" width="450" />
-
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2.png?raw=true" alt="House2" title="House2" width="450" />
+__5.__ Let's say this is your house... Where will you place your Access Point 📳 to protect your __valuable data__? [__👉 Download__](https://drive.google.com/file/d/1JHVTCPVQasBzFBa8dVCZa5DlvRbEDtuY/view?usp=sharing), and print the planes.
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true" alt="House1" title="House1" width="450" />
+    ![House1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true?raw=true "House1") 
+    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2.png?raw=true" alt="House2" title="House2" width="450" />
+    ![House2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true?raw=true "House2") 
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/RSSI.hex). 

@@ -6,7 +6,7 @@ Vidéo d'introduction sur la cybersécurité Niveau 2 et __Cyberville__
 https://www.youtube.com/watch?v=kbKzA-E_EdE&t=11s
 ##### ~
 ---
-Bienvenue dans __Mission 2!__ Dans cette mission, vous apprendrez des concepts et des méthodes de base utilisés en cybersécurité, notamment le phishing, les logiciels malveillants, les ransomwares, le chiffrement, les attaques basées sur la localisation, et bien plus encore. Dans "Mission 2 : Eau Polluée", vous devrez résoudre un défi et __*déterminer le ratio correct*__ pour protéger l'eau de __Cyberville__ contre une nouvelle cyberattaque. Bonne chance !
+Bienvenue dans __Mission 2!__ Dans cette mission, vous apprendrez des concepts et des méthodes de base utilisés en cybersécurité, notamment le phishing, les logiciels malveillants, les ransomwares, le chiffrement, les attaques basées sur la localisation, et bien plus encore. Dans "Mission 2 : Eau Polluée", vous devrez résoudre un défi et __*déterminer le ratio correct*__ pour protéger l'eau de __Cyberville__ contre une nouvelle cyberattaque. Bonne chance!
 
 ## Description de l'activité
 ### __Mission 2__ Eau Polluée
@@ -32,8 +32,8 @@ Il y a 10 niveaux différents pour le __🧪Chlore__, affichés par des Neopixel
 C'est une excellente façon de montrer vos compétences tout en aidant à sécuriser l'espace numérique de l'usine de traitement des eaux ! __Amusez-vous bien!__
 
 
-
+---
+---
 ### Aperçu du site principal depuis le serveur Web M5 - Données précieuses d'activités
 
-![Main](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Distribution_WEBS/Web_Main_FR.png?raw=true "Main")
-
+![Main](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Main_FR.png?raw=true "Main")

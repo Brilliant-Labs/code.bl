@@ -1,7 +1,8 @@
 
 ---
 # ~avatar
-_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._
+_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._  
+N'oubliez pas de changer la langue dans ⚙️ `More...` > 🌎 `Languaje` > `Français` dans le coin supérieur droit.
 # ~
 ---
 
@@ -24,7 +25,7 @@ __2.__ Appuyez sur le premier bouton __Allons-y!__, puis sélectionnez l'ami  �
 
 __3.__ Partagez le nom actuel du __point d'accès__ créé par le 📳 module M5 avec la classe, ainsi que le mot de passe si nécessaire. Par exemple :  
 
-`Nom AP 📳: `__`Cyberville #1`__  
+`Nom AP 📳: `__`Cyberville #?`__  
 `Mot de passe 🔑: `__`BL_Cybr1 `__ *(si vous utilisez le mot de passe par défaut)*
 
 Rappelez-vous qu'il existe trois manières différentes de configurer des mots de passe sur le 📳 module M5 pour le réseau __Cyberville__. Convenez avec les 🧑‍🎓 étudiants du mot de passe que vous allez utiliser pour cette activité. 

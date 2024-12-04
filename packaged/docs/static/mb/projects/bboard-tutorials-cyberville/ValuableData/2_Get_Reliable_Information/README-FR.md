@@ -1,7 +1,8 @@
 
 ---
 # ~avatar
-_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._
+_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._  
+N'oubliez pas de changer la langue dans ⚙️ `More...` > 🌎 `Languaje` > `Français` dans le coin supérieur droit.
 # ~
 ---
 
@@ -9,14 +10,14 @@ _Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la
 
 Devinez quoi ! Notre usine de traitement de l'eau de __Cyberville__ st sous cyberattaque ! L'eau a été polluée parce que nous avons reçu des informations erronées concernant le bon ratio entre les proportions de __🧪Chlore__ et de __🧪Fluorure__.
 
-Cette activité est liée au __Phishing 🎣__, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> [RedHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true "RedHat")L'Ami au 🔴 🎩 __Chapeau Rouge__.
+Cette activité est liée au __Phishing 🎣__, et notre source d'information est fournie par <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true" alt="RedHat" title="RedHat" width="50"/> ![RedHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/RedHat.png?raw=true "RedHat")L'Ami au 🔴 🎩 __Chapeau Rouge__.
 ## Activité
 __*Commençons !!!*__
 ## __🧑‍🏫 Enseignants:__
 
 Pour la __Mission 2- Eau Polluée__ veuillez suivre les étapes suivantes que vous trouverez dans le 📳 module M5:
 
-__1.__ Chargez __Mission_2: Eau Polluée__ dans module M5. Vous pouvez voir cette [__vidéo__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous souhaitez vous rappeler comment le faire.
+__1.__ Chargez __Mission_2: Eau Polluée__ dans module M5. Vous pouvez voir cette [🎬 __*vidéo*__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing) si vous souhaitez vous rappeler comment le faire.
 
 __2.__ Appuyez sur le premier bouton __Allez-y!__, appuyez sur le premier bouton 🔴 🎩 __Chapeau Rouge__ que vous souhaitez utiliser comme défi pour vos 🧑‍🎓 étudiants.
 
@@ -24,7 +25,7 @@ __2.__ Appuyez sur le premier bouton __Allez-y!__, appuyez sur le premier bouton
 
 __3.__ Partagez le nom du __Point d'accès__ actuel créé par le 📳 Module M5 avec la classe ainsi que le mot de passe, le cas échéant. Par exemple :  
 
-`Nom AP  📳: `__`Cyberville #1`__  
+`Nom AP  📳: `__`Cyberville #?`__  
 `Mot de passe 🔑: `__`BL_Cybr1`__ *(si vous utilisez celui par défaut)*
 
 N'oubliez pas qu'il existe trois façons différentes de configurer les mots de passe sur le 📳 module M5 pour le réseau __Cyberville__ Convenez avec les 🧑‍🎓 étudiants du mot de passe que vous allez utiliser pour cette activité. 
@@ -69,9 +70,9 @@ __⚠️ Important : Configuration de la connexion WiFi__
 4️⃣ Obtenez les indices pour résoudre les défis de l'__Phishing 🎣__.
 
 ## Exemple de code
-You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex). 
-Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")  
+Vous pouvez télécharger le fichier .hex pour cette activité en cliquant sur [__⬇️ Ici__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex).
+Une fois téléchargé, glissez-déposez-le dans un nouveau projet, ou cliquez sur l'icône **📝 Modifier** dans les modes de langage de programmation pour le modifier dans l'éditeur 🧩 Blocks.
+![IconeModifier](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit_FR.png?raw=true "IconeModifier")
 
 Ou utilisez cette base de code comme exemple pour tester le bon __ratio__ et sauver l'usine de traitement des eaux !.
 

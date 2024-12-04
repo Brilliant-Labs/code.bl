@@ -1,7 +1,8 @@
 
 ---
 # ~avatar
-_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._
+_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._  
+N'oubliez pas de changer la langue dans ⚙️ `More...` > 🌎 `Languaje` > `Français` dans le coin supérieur droit.
 # ~
 ---
 
@@ -25,7 +26,7 @@ __2.__ Appuyez sur le premier bouton __Allons-y!__, puis sélectionnez l'ami ⚪
 
 __3.__ Partagez le nom actuel du __point d'accès__ créé par le 📳 module M5 avec la classe, ainsi que le mot de passe si nécessaire. Par exemple :  
 
-`Nom AP 📳: `__`Cyberville #1`__  
+`Nom AP 📳: `__`Cyberville #?`__  
 `Mot de passe 🔑: `__`BL_Cybr1`__ *(si vous utilisez le mot de passe par défaut)*
 
 Rappelez-vous qu'il existe trois manières différentes de configurer des mots de passe sur le 📳 module M5 pour le réseau __Cyberville__. Convenez avec les 🧑‍🎓 étudiants du mot de passe que vous allez utiliser pour cette activité. 
@@ -46,7 +47,7 @@ __4.__  L' __🧑‍🏫 Enseignant__ choisira les sources d'information sur l'�
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/M2C.png?raw=true" alt="Hats" title="Hats" width="200" />
     ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/M2_0.png?raw=true "Hats")
     ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/arrow.png?raw=true "Hats")
-    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/
+    ![Hats](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/M2C.png?raw=true "Hats")
 ## __🧑‍🎓 Étudiants:__
 
 __1.__ Assurez-vous que vos __PC__ sont connectés au Point d'accès 📳 __Cyberville__, selon les informations convenues avec l'🧑‍🏫 enseignant.

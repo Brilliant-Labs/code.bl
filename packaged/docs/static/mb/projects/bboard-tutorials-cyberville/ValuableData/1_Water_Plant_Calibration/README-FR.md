@@ -1,7 +1,8 @@
 
 ---
 # ~avatar
-_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._
+_Veuillez lire attentivement l'activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez_ 📝 **Modifier** _le code exemple ou le_ ⬇️ **télécharger** _sur votre __b.Board__._  
+N'oubliez pas de changer la langue dans ⚙️ `More...` > 🌎 `Languaje` > `Français` dans le coin supérieur droit.
 # ~
 ---
 
@@ -40,9 +41,9 @@ Nous avons rendu cela très facile pour vous de recréer l'incroyable environnem
 
 __1.__ Téléchargez [__👉 Ici__](https://drive.google.com/file/d/17spLZf_iIgcOw3t3dSWAFbFN8hODKeYu/view?usp=sharing),  imprimez et recouvrez le b.board pour la Mission 2.  
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover_FR.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
-    ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true "Cover")
+    ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover_FR.png?raw=true "Cover")
     
-    ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true "Cover for M2.")
+![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true "Cover for M2.")
 
 ## 🧑‍🏫 Enseignants :
 
@@ -72,6 +73,8 @@ Ou utilisez ce code comme exemple. Veuillez noter que la bande est connectée à
 
 ##### ~avatar
 Vous devez modifier les valeurs pour __🧪Chlore__ et __🧪Fluorure__ en fonction de chaque activité, ce qui signifie que vous devez modifier ce code en utilisant les blocs __Niveau de Chloride__ et __Niveau de Fluorure__ dans la section `... plus` sous le bouton Cybersécurité de __b.Board__. 
+##### ~
+
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
