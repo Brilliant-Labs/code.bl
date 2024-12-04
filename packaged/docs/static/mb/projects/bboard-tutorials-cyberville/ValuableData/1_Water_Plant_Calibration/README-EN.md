@@ -1,10 +1,10 @@
-
+<!--
 ---
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
-
+-->
 # 1_VALUABLE DATA
 
 __Valuable Data__ is a really important topic in Cybersecurity. It's all about keeping and obtaining information safe and secure on a network. It's not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your __Cyberville__. It's so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We're here to help you with all of that!
@@ -42,8 +42,7 @@ __All right, let's get started *Calibrating* our levels bar on our plant!__
 We've made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:
 
 __1.__ Download [__👉 Here__](https://drive.google.com/file/d/1ldS8fqcVLhBBQ_IIyVCmBPPUuvGLlPEw/view?usp=drive_link), print and cover the __b.board__ for Mission 2.  
-    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
-    ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true "Cover")
+![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true "Cover")
 
 ![Cover for M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true "Cover for M2.")
 
@@ -68,9 +67,10 @@ __*Have fun!*__
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex). 
+<!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
-
+-->
 Or use this code as example. Please pay attention that strip is connected to __P2__, and the levels are __5 for 🧪Chlorine__ and __5 for 🧪 Fluoride__, also notice that we are using the 🧩 ``||Level of Chlorine (#)||`` block, and the 🧩 ``||Level of Fluoride (#)||`` block to set the levels of `Chorine` and `Fluoride`.
 
 ##### ~avatar

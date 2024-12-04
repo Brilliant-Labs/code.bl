@@ -1680,7 +1680,17 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="3_r-les">3_Rôles</h1><p>Dans cette activité, vous prendrez un rôle à Cyberville afin de pouvoir la protéger des cyberattaques.</p>
+        <hr>
+
+    <div class='avatar '>
+        <div class='avatar-image'></div>
+        <div class='ui compact message'>
+            <p><em>Veuillez lire attentivement l’activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez</em> 📝 <strong>Modifier</strong> <em>le code exemple ou le</em> ⬇️ <strong>télécharger</strong> <em>sur votre <strong>b.Board</strong>.</em><br>N’oubliez pas de changer la langue dans ⚙️ <code>More...</code> &gt; 🌎 <code>Languaje</code> &gt; <code>Français</code> dans le coin supérieur droit.</p>
+
+        </div>
+    </div>
+<hr>
+<h1 id="3_r-les">3_Rôles</h1><p>Dans cette activité, vous prendrez un rôle à Cyberville afin de pouvoir la protéger des cyberattaques.</p>
 <h2 id="activit-">Activité :</h2><h3 id="prendre-un-r-le-dans-cyberville">Prendre un rôle dans Cyberville</h3><p><em>Commençons !</em></p>
 <p><strong>1.</strong> Remplis ta carte d’identité <strong>Cyberville</strong> avec les noms, adresses MAC 🆔 et adresses IP 📮.</p>
 <p><strong>2.</strong> Acquiers une identité en choisissant un rôle au sein de <strong>Cyberville</strong>.</p>
@@ -1689,12 +1699,14 @@ afin d’indiquer que vous êtes connecté au réseau Wi-Fi <strong>Cyberville</
 <p><strong>4.</strong> Programmez le micro:bit pour qu’il joue un son ou une mélodie (vous pouvez le trouver dans les blocs de musique) si vous n’êtes pas connecté au réseau Wi-Fi <strong>Cyberville</strong>.</p>
 <p>Veuillez choisir l’un des rôles suivants dans <strong>Cyberville</strong>:
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Rol_FR.png?raw=true" alt="Rol" title="Rol" loading="lazy"></p>
-<p>Par exemple, si vous choisissez <strong>EAU</strong> et que vous êtes connecté au réseau Wi-Fi, alors votre micro:bit devrait ressembler à ceci :</p>
+<p>Par exemple, si vous choisissez <strong>💧 EAU</strong> et que vous êtes connecté au réseau Wi-Fi, alors votre micro:bit devrait ressembler à ceci :</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/3_Role/Step10_FR.png?raw=true" alt="Step10" title="Step10" loading="lazy"></p>
-<p>Une fois que chaque b.Board dans la classe est reliée à <strong>Cyberville</strong> et qu’un rôle lui est attribué, c’est le moment amusant ! Ton enseignant va simuler une <strong>Cyberattaque</strong> en désactivant le module M5, qui est le fournisseur Wi-Fi de <strong>Cyberville</strong>. Cela déconnectera tous les appareils dans <strong>Cyberville</strong>, créant une situation de chaos au sein du réseau <strong>Cyberville</strong>!</p>
-<h2 id="exemple-de-code">Exemple de code</h2><p>Tu peux télécharger le code pour cette activité depuis <code>https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex</code>. Le fichier sera dans l’historique des téléchargements récents, il suffit de le glisser-déposer dans un nouveau projet.</p>
+<p>Une fois que chaque <strong>b.Board</strong> dans la classe est reliée à <strong>Cyberville</strong> et qu’un rôle lui est attribué, c’est le moment amusant ! Ton enseignant va simuler une <strong>Cyberattaque</strong> en désactivant le module M5, qui est le fournisseur Wi-Fi de <strong>Cyberville</strong>. Cela déconnectera tous les appareils dans <strong>Cyberville</strong>, créant une situation de chaos au sein du réseau <strong>Cyberville</strong>!</p>
+<h2 id="exemple-de-code">Exemple de code</h2><p>Vous pouvez télécharger le fichier .hex pour cette activité en cliquant sur <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex"><strong>⬇️ Ici</strong></a>.
+Une fois téléchargé, glissez-déposez-le dans un nouveau projet, ou cliquez sur l’icône <strong>📝 Modifier</strong> dans les modes de langage de programmation pour le modifier dans l’éditeur 🧩 Blocks.
+<img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit_FR.png?raw=true" alt="IconeModifier" title="IconeModifier" loading="lazy"></p>
+<p><em><strong><code>N&#39;oubliez pas de configurer le nom et le mot de passe corrects pour le point d&#39;accès. Coupez le son du PC pour écouter le son de la b.Board.</code></strong></em></p>
 <p>Ou utilise cet exemple de code pour savoir si tu as un <strong>rôle actif 👤</strong> dans <strong>Cyberville</strong>.</p>
-<p><strong><em>N’oublie pas de configurer le nom correct du point d’accès. Coupe le son du PC pour écouter le son du b.Board.</em></strong></p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     basic.showString(Cybersec.getMACaddressbBoard())
 })

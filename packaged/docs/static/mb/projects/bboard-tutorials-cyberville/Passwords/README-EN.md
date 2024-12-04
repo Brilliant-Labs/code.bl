@@ -7,7 +7,6 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 ##### ~
 ---
 
-
 Welcome to __Mission 1!__ In this mission, you'll learn some basic concepts and methods used in cybersecurity. These include passwords, brute force, dictionary, rainbow table, shoulder surfing, and more. In __"Mission 1: Weird Lights,"__ you'll need to solve a challenge and find the correct sequence to protect the school from a new cyberattack. Good luck!
 
 ## Activity Description

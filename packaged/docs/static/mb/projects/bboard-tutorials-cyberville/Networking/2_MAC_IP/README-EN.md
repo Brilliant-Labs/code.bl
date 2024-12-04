@@ -1,10 +1,10 @@
-
+<!--
 ---
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
-
+-->
 # 2_MAC and IP Address
 
 The Media Access Control (MAC) Address 🆔 is a 12-digit hexadecimal number assigned to each device connected to a network. It appears in the following format:
@@ -31,8 +31,7 @@ Download the ID Card for Teachers 🧑‍🏫 [__⬇️ Here__](https://drive.go
 ### 🧑‍🎓 __*Students ID Card*__
 Download the ID Card for Students 🧑‍🎓 [__⬇️ Here__](https://drive.google.com/file/d/1uYi49zPMzKYuliF4TlS2NQBoPTkMTcoD/view?usp=drive_link)
 
-This is an example of what to expect for this activity: 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Example_EN.png?raw=true" alt="ID" title="ID Example." width="300" />
+This is an example of what to expect for this activity:
 ![ID Example](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Example_EN.png?raw=true "ID Example")  
 
 *Let's start!*
@@ -47,7 +46,7 @@ __3.__ Replace the “Hello!” text in the 🧩 ``||show string||`` block with 
 
 __4.__ Add a new 🧩 ``||on button A pressed||`` block, however this time select "on button B pressed".
 
-__5.__ Replace the “Hello!” text in the 🧩 ``||show string||`` block with the 🧩 ``||Get the bBoard´s IP Address||`` block. This is located under "b.Board blocks" in "CyberSecurity".
+__5.__ Replace the “Hello!” text in the 🧩 ``||show string||`` block with the 🧩 ``||Get the bBoard´s IP Address||`` block. This is located under "__b.Board__ blocks" in "CyberSecurity".
 
 ![Step6](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Step6.png?raw=true "Step 5")
 
@@ -83,9 +82,10 @@ If you would like, you can also see the 🆔 MAC and 📮 IP address on the __*S
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex). 
+<!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
-
+-->
 _**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the b.Board sound.`**_
 
 You can use this code example to obtain the 🆔 MAC and 📮 IP addresses.

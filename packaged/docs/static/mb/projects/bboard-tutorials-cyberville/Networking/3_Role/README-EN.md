@@ -1,10 +1,10 @@
-
+<!--
 ---
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
-
+-->
 # 3_Roles
 
 In this activity you will take on a role in Cyberville so that you can protect it from Cyber Attacks.
@@ -33,9 +33,10 @@ Once you've successfully linked each __b.Board__ in the classroom to __Cybervill
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex). 
+<!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
-
+-->
 _**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the __b.Board__ sound.`**_
 
 You can use this code example to have a __👤 Role__ in __Cyberville__, please change the WETER-Umbrella for your own role.

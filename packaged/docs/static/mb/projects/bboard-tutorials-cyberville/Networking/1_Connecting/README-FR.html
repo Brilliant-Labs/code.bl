@@ -1680,7 +1680,17 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="1_connexion">1_CONNEXION</h1><p>Il est temps de se connecter au réseau Wi-Fi de <strong>Cyberville</strong>. <strong>Cyberville</strong> est une ville fictive futuriste développée par l’équipe géniale de Brilliant Labs. Dans <strong>Cyberville</strong>, tous les clients ou b.Boards sont connectés au réseau Wi-Fi de <strong>Cyberville</strong>. Le service Wi-Fi à <strong>Cyberville</strong> est fourni par le module M5Core2, qui crée le point d’accès Wi-Fi 📳 appelé “Cyberville #?”. Connectons-nous au réseau <strong>Cyberville</strong>.</p>
+        <hr>
+
+    <div class='avatar '>
+        <div class='avatar-image'></div>
+        <div class='ui compact message'>
+            <p><em>Veuillez lire attentivement l’activité et suivre les étapes fournies. Dans la section Exemple de Code, vous pourrez</em> 📝 <strong>Modifier</strong> <em>le code exemple ou le</em> ⬇️ <strong>télécharger</strong> <em>sur votre <strong>b.Board</strong>.</em><br>N’oubliez pas de changer la langue dans ⚙️ <code>More...</code> &gt; 🌎 <code>Languaje</code> &gt; <code>Français</code> dans le coin supérieur droit.</p>
+
+        </div>
+    </div>
+<hr>
+<h1 id="1_connexion">1_CONNEXION</h1><p>Il est temps de se connecter au réseau Wi-Fi de <strong>Cyberville</strong>. <strong>Cyberville</strong> est une ville fictive futuriste développée par l’équipe géniale de Brilliant Labs. Dans <strong>Cyberville</strong>, tous les clients ou <strong>b.Boards</strong> sont connectés au réseau Wi-Fi de <strong>Cyberville</strong>. Le service Wi-Fi à <strong>Cyberville</strong> est fourni par le module M5Core2, qui crée le point d’accès Wi-Fi 📳 appelé “Cyberville #?”. Connectons-nous au réseau <strong>Cyberville</strong>.</p>
 <h2 id="description-de-l-activit-">Description de l’activité</h2><p>Les 🧑‍🎓 étudiants devraient être capables de se connecter au point d’accès Wi-Fi de <strong>Cyberville</strong> créé par le 🧑‍🏫 enseignant.</p>
 <p><em>Commençons !</em></p>
 <h2 id="-enseignants-">🧑‍🏫 Enseignants :</h2><p>Pour établir le point d’accès 📳 requis, il est essentiel d’utiliser le module M5Core2, car cela facilitera la connexion nécessaire. L’activité <strong>Networking_BL_EN</strong>, qui se trouve dans le module M5Core2, doit être sélectionnée et chargée.</p>
@@ -1695,18 +1705,18 @@
 <p>Il peut être utile de partager votre adresse MAC 🆔 et votre adresse IP 📮 générées par le module M5Core2 avec les étudiants, car cela leur fournira une représentation visuelle du format.</p>
 <h4 id="nom-du-point-d-acc-s-num-ro-de-cyberville">Nom du point d’accès - Numéro de Cyberville</h4><p>Notez que nous n’utiliserons pas de mot de passe pour cette activité, car le numéro de <strong>Cyberville</strong> changera chaque fois que vous redémarrez le M5Core2.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb_FR.png?raw=true" alt="CybervilleNumb" title="Cyberville Number for Access Point" loading="lazy"></p>
-<h2 id="-tudiants-"><strong>🧑‍🎓 Étudiants:</strong></h2><p><strong>1.</strong> Créez un nouveau projet en utilisant le micro:bit V2, en vous assurant que vous travaillez avec une <strong>b.Board Rev 1.4</strong> et en le nommant “Networking_A”. Vous pouvez trouver des instructions sur la façon d’identifier la version matérielle et logicielle de votre b.Board <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/1g5fHso1ON-yVFHqaRRCifrU2X1WU_6qf/view?usp=sharing">ici</a>.</p>
+<h2 id="-tudiants-"><strong>🧑‍🎓 Étudiants:</strong></h2><p><strong>1.</strong> Créez un nouveau projet en utilisant le micro:bit V2, en vous assurant que vous travaillez avec une <strong>b.Board Rev 1.4</strong> et en le nommant “Networking_A”. Vous pouvez trouver des instructions sur la façon d’identifier la version matérielle et logicielle de votre <strong>b.Board</strong> <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/1g5fHso1ON-yVFHqaRRCifrU2X1WU_6qf/view?usp=sharing">__👉ici</a>.</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1_FR.png?raw=true" alt="Step1" title="Step1" loading="lazy"> </p>
-<p><strong>2.</strong> Utilisez le bloc 🧩[Connexion au WiFi:( ) avec mot de passe:( )] et placez-le dans le bloc 🧩[On Start].</p>
+<p><strong>2.</strong> Utilisez le bloc 🧩<code>||Connexion au WiFi(&quot;&quot;) avec mot de passe(&quot;&quot;)||</code> et placez-le dans le bloc 🧩<code>||On Start||</code>.</p>
 <p><strong>3.</strong> Assurez-vous d’utiliser le nom Wi-Fi exact tel qu’il apparaît sur le M5Core2. Demandez les informations correctes à l’enseignant 🧑‍🏫.</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step2_FR.png?raw=true" alt="Step2" title="Step2" loading="lazy">  </p>
-<p><strong>4.</strong> Utilisez le bloc conditionnel logique <strong>“si”</strong> pour vérifier si vous êtes connecté. Si vous êtes connecté, affichez un visage souriant 😃 sur le micro:bit avec le bloc 🧩[afficher texte].</p>
-<p><strong>5.</strong> Ensuite, créez un autre bloc 🧩 pour vous déconnecter du réseau. Vous pouvez utiliser le bloc d’entrée 🧩[sur le logo appuye] pour cela et placer le bloc 🧩[Deconnexion du WiFi] à l’intérieur. Ajoutez également un bloc 🧩[montrer l’icone] après la déconnexion pour afficher un visage triste 🙁 après la déconnexion.</p>
+<p><strong>4.</strong> Utilisez le 🧩 bloc conditionnel logique <code>||si||</code> pour vérifier si vous êtes connecté. Si vous êtes connecté, affichez un visage souriant 😃 sur le micro:bit avec le bloc 🧩<code>||afficher texte||</code>.</p>
+<p><strong>5.</strong> Ensuite, créez un autre bloc 🧩 pour vous déconnecter du réseau. Vous pouvez utiliser le bloc d’entrée 🧩<code>||sur le logo appuye||</code> pour cela et placer le bloc 🧩<code>||Deconnexion du WiFi||</code> à l’intérieur. Ajoutez également un bloc 🧩<code>||montrer l&#39;icone||</code> après la déconnexion pour afficher un visage triste 🙁 après la déconnexion.</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step3_FR.png?raw=true" alt="Step3" title="Step3" loading="lazy"></p>
-<p><strong>6.</strong> Allumez le b.Board et établissez la communication entre le PC, le micro:bit et le b.Board.</p>
+<p><strong>6.</strong> Allumez le <strong>b.Board</strong> et établissez la communication entre le PC, le micro:bit et le <strong>b.Board</strong>.</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step4_FR.png?raw=true" alt="Step4" title="Step4" loading="lazy"></p>
-<p><strong>7.</strong> Téléchargez le code et vérifiez le code de connexion et de déconnexion avec le point d’accès Wi-Fi du module M5Core2.</p>
-<h2 id="-quoi-s-attendre-"><strong>À quoi s’attendre ?</strong></h2><p>Lorsque les étudiants 🧑‍🎓 utilisent le bloc 🧩[Connexion au WiFi:( ) avec mot de passe:( )], une coche clignotante ✅ apparaîtra comme test d’initialisation, indiquant qu’ils sont connectés au point d’accès 📳. Si le micro
+<p><strong>7.</strong> ⬇️ Téléchargez le code et vérifiez le code de connexion et de déconnexion avec le point d’accès Wi-Fi du 📳 module M5.</p>
+<h2 id="-quoi-s-attendre-"><strong>À quoi s’attendre ?</strong></h2><p>Lorsque les étudiants 🧑‍🎓 utilisent le bloc 🧩<code>||Connexion au WiFi(&quot;&quot;) avec mot de passe(&quot;&quot;)||</code>, une coche clignotante ✅ apparaîtra comme test d’initialisation, indiquant qu’ils sont connectés au point d’accès 📳. Si le micro
 affiche une ❎, cela signifie que la connexion a échoué.</p>
 <p></p>
 <p>Les étudiants 🧑‍🎓 verront un visage souriant 😃 s’ils sont connectés.
@@ -1715,10 +1725,12 @@ affiche une ❎, cela signifie que la connexion a échoué.</p>
 Students will see smile face if they are connected.
 <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Disconnected_FR.png?raw=true" alt="Disconnected" title="Disconnected" loading="lazy"></p>
 <p>En appuyant sur le logo du Microbit les élèves se déconnecteront du système.
-Pour se reconnecter, il est nécessaire de modifier le code - soyez ingénieux - ou de redémarrer la b.Board.</p>
-<h2 id="exemple-de-code">Exemple de code</h2><p>Vous pouvez télécharger le code pour cette activité depuis <code>https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex</code> le fichier sera dans l’historique de téléchargement récent, il suffit de le glisser-déposer dans un nouveau projet.</p>
-<p>Ou utilisez cet exemple de code pour connecter la b.Board au point d’accès du module M5Core2 📳.</p>
-<p><strong><em>N’oubliez pas de configurer le nom correct du point d’accès. Coupe le son du PC pour écouter le son du b.Board.</em></strong></p>
+Pour se reconnecter, il est nécessaire de modifier le code - soyez ingénieux - ou de redémarrer la <strong>b.Board</strong>.</p>
+<h2 id="exemple-de-code">Exemple de code</h2><p>Vous pouvez télécharger le fichier .hex pour cette activité en cliquant sur <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex"><strong>⬇️ Ici</strong></a>.
+Une fois téléchargé, glissez-déposez-le dans un nouveau projet, ou cliquez sur l’icône <strong>📝 Modifier</strong> dans les modes de langage de programmation pour le modifier dans l’éditeur 🧩 Blocks.
+<img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit_FR.png?raw=true" alt="IconeModifier" title="IconeModifier" loading="lazy"></p>
+<p><em><strong><code>Veuillez ne pas oublier de configurer le nom et le mot de passe corrects pour le point d&#39;accès.</code></strong></em></p>
+<p>Cet exemple de code pour évaluer votre séquence de code et la tester.</p>
 <pre><code class="lang-blocks">input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     Cybersec.Disconnect()
     basic.showIcon(IconNames.Sad)

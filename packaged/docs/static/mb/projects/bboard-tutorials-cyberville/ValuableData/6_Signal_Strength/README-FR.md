@@ -10,7 +10,7 @@ N'oubliez pas de changer la langue dans ⚙️ `More...` > 🌎 `Languaje` > `Fr
 
 Salut ! Nous sommes sûrs que vous serez vraiment intéressé de savoir que l'emplacement de votre point d'accès Wi-Fi 📳 dans votre maison est super important pour la cybersécurité !
 
-Dans cette activité, nous allons avoir une petite discussion sur la force du signal Wi-Fi. L'indicateur de force du signal reçu, ou __RSSI__, est une petite mesure pratique qui vous montre à quel point le signal que vous recevez est fort. Nous avons de bonnes nouvelles pour vous ! Notre __b.Board__ dispose d'un module radio et d'un bloc pour lire la puissance générée par le point d'accès M5Core2 📳. Juste un petit rappel : __RSSI__ est indiqué par une unité négative appelée dBm. Plus le nombre est élevé, meilleur est le signal ! Mais comment cela est-il lié à la cybersécurité ? À cause du point d'accès 📳 dans notre maison, nous pouvons être plus ou moins vulnérables pour nos __*données précieuses*__.
+Dans cette activité, nous allons avoir une petite discussion sur la force du signal Wi-Fi. L'indicateur de force du signal reçu, ou __RSSI__, est une petite mesure pratique qui vous montre à quel point le signal que vous recevez est fort. Nous avons de bonnes nouvelles pour vous ! Notre __b.Board__ dispose d'un module radio et d'un bloc pour lire la puissance générée par le point d'accès 📳 module M5. Juste un petit rappel : __RSSI__ est indiqué par une unité négative appelée dBm. Plus le nombre est élevé, meilleur est le signal ! Mais comment cela est-il lié à la cybersécurité ? À cause du point d'accès 📳 dans notre maison, nous pouvons être plus ou moins vulnérables pour nos __*données précieuses*__.
 
 Voyons comment cela fonctionne, et n'oubliez pas de répondre au dernier test !
 
@@ -31,8 +31,7 @@ __5.__ Gestion sécurisée des réseaux invités 🔧🐒 En plaçant votre poin
 ### 🧑‍🏫  __*Enseignants*__
 Il incombe au personnel enseignant de fournir aux élèves un point d'accès 📳 en utilisant le module M5Core2 pour cette activité. L'activité de mise en réseau est le choix le plus approprié, car elle nécessite uniquement la création d'un point d'accès 📳.
 Il est également nécessaire de partager avec les élèves les informations suivantes concernant __RSSI__ et la force du signal.
-    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true" alt="RSSI" title="RSSI" width="450" /> 
-    ![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true "RSSI")
+![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true "RSSI")  
 Pour déterminer la force du signal dans __Cyberville__,  l'enseignant 🧑‍🏫 doit sortir de la salle de classe ou s'éloigner des __b.Boards__.
 Les élèves 🧑‍🎓 liront la force du signal en fonction de leur code et de la position de l'enseignant avec le 📳 module M5.
 
@@ -52,7 +51,7 @@ __5.__ Disons que c'est votre maison... Où placerez-vous votre point d'accès �
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1_FR.png?raw=true" alt="House1" title="House1" width="450" />
     ![House1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true?raw=true "House1") 
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2_FR.png?raw=true" alt="House2" title="House2" width="450" />
-    ![House2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House1.png?raw=true?raw=true "House2") 
+    ![House2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/House2.png?raw=true?raw=true "House2") 
 
 ## Exemple de code
 Vous pouvez télécharger le fichier .hex pour cette activité en cliquant sur [⬇️ Ici](https://brilliantlabs.ca/documents/cybersec/RSSI.hex). 

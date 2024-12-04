@@ -25,8 +25,7 @@ Teachers must select the __Networking__ activity on the M5Core2, and follow the 
 
 To select any activity within M5 module, see this [🎬 __*video*__](https://drive.google.com/file/d/10wwarSBpShICwBmd_FT7_MREetXONrN8/view?usp=sharing).
 
-This is a basic spec sheet for the M5Core2:  
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true" alt="M5core2" title="Spec sheet M5Core2" width="400" />
+This is a basic spec sheet for the M5 module:  
 ![Spec sheet M5Core2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true "Spec sheet M5Core2.")
 
 ### 🧑‍🎓 __Students__

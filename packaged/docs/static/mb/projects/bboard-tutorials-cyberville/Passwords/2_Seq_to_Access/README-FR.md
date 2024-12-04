@@ -63,8 +63,9 @@ __2.__ Choisissez votre rôle 👤 dans __Cyberville__:
 |    1️⃣2️⃣ Citoyens       | 😎 | `La communauté de Cyberville`        
 
 <br>    
-Dans l’environnement de code IDE, cela ressemble à:  
-    ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-FR.png?raw=true "Choose a Role")    
+Dans l’environnement de code IDE, cela ressemble à:
+
+![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-FR.png?raw=true "Choose a Role")    
 
 __3.__ Sélectionnez un appareil à protéger:   
     ✴️ 1 Contrôle de la chaleur (Heat Control)     ❄️  

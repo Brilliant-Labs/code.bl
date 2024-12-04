@@ -1,10 +1,10 @@
-
+<!--
 ---
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
-
+-->
 # 1_CONNECTING
 
 It's time to connect to the __Cyberville__ WiFi network. __Cyberville__ iis a fictional futuristic city developed by the awesome folks at Brilliant Labs. In __Cyberville__, all clients or __b.Boards__ are connected to the __Cyberville__ WiFi network. The WiFi service in __Cyberville__ is provided by the M5 module, which will create the WiFi Access Point 📳 called "Cyberville #?". Let´s connect to the __Cyberville__ network.  
@@ -49,8 +49,6 @@ __7.__ ⬇️ Download the code and check the connection and disconnection code 
 
 ## __What to expect?__
 When students 🧑‍🎓 use the 🧩 ``||Connect to WiFi("") with Password("")||`` block, a flashing check mark ✅ will appear as an initialization test, indicating that they are connected to the access point 📳. If the micro:bit shows a ❎, it means the connection was unsuccessful.
-
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="If you get a ✅, you are connected to Access Point" width="300" />
 ![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")
 
 Students 🧑‍🎓 will see smiley face 😃 if they are connected.
@@ -65,9 +63,10 @@ In order to reconnect, it is necessary to either modify the code -be ingenius- o
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex). 
+<!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
-
+-->
 _**`Please do not forget to set up the correct name and password for the access point.`**_
 
 This code example to evaluate your code sequence and test it.

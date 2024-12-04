@@ -1,10 +1,10 @@
-
+<!--
 ---
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
-
+-->
 # 2_SEQUENCE TO ACCESS
 
 Guess what! Our __Cyberville__ school is under a cyber attack.
@@ -35,8 +35,7 @@ Help the students 🧑‍🎓 with the __`File Attack Methods`__ [__👉 Here__]
 
 ### 🧑‍🎓 __Students__
 
-__1.__ Connect to the WiFi access point on the 📳 M5 module. The 🧑‍🏫 teacher must provide the AP name and __password__. Use the 🧩 ``||Connect to WiFi||`` block. Remember, it should looks like this (✅ on screen __b.Board__):
-    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected" width="300" />  
+__1.__ Connect to the WiFi access point on the 📳 M5 module. The 🧑‍🏫 teacher must provide the AP name and __password__. Use the 🧩 ``||Connect to WiFi||`` block. Remember, it should looks like this (✅ on screen __b.Board__): 
     ![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")
 If you get a ✅, you are connected to Access Point.
 If you got a small __x__ (❎ on screen __b.Board__), you are __*NOT*__ connected.   
@@ -60,7 +59,8 @@ __2.__ Choose your role 👤 in __Cyberville__:
 
 <br>
 In IDE code environment looks like:
-    ![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-EN.png?raw=true "Choose a Role")    
+
+![ChooseRole](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/ChooseRole-EN.png?raw=true "Choose a Role")    
 
 __3.__ Select a device to be protected:   
     ✴️ 1 Heat Control ❄️  
@@ -106,9 +106,10 @@ Remember to setup a new password and select a new sequence on the 📳 M5 module
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex). 
+<!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
-
+-->
 _**`Please do not forget to set up the correct name and password for the access point.`**_
 
 This code example to evaluate your code sequence and test it.

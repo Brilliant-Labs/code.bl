@@ -7,7 +7,6 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 ##### ~
 ---
 
-
 Bienvenue à __Mission 1!__ Dans cette mission, vous apprendrez quelques concepts et méthodes de base utilisés en cybersécurité. Ceux-ci incluent les mots de passe, la force brute, le dictionnaire, la table arc-en-ciel, l'observation par-dessus l'épaule, et bien plus encore. Dans __"Mission 1 : Lumières étranges,"__ vous devrez relever un défi et trouver la bonne séquence pour protéger l'école d'une nouvelle cyberattaque. Bonne chance !
 
 ## Description de l'activité

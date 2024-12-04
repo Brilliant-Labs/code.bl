@@ -16,7 +16,6 @@ We've made it really easy for you to recreate the awesome environment from Missi
 
 __1.__ Download [__👉 Here__](https://drive.google.com/file/d/1u48lccLm7I4rxf287-CPFnYVhJqHE8gb/view?usp=drive_link), print and cover the __b.Board__ for Mission 1.
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/M1_Cover.png?raw=true" alt="M1_Cover" title="Cover for Mission 1." width="450" />
 ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/M1_Cover.png?raw=true "Cover")
 
 ![Cover for Mission 1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Cover_Gif_M1.gif?raw=true "Cover for M1.")
@@ -48,7 +47,6 @@ __Custom Password:__ We highly recommend this option to involve the students, ju
 
 Quick note: Please make sure that __*b.Board is connected*__. Thanks!
 
-<img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true" alt="Connected_gif" title="Connected_gif" width="300" />  
 ![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")
 
 If you get a ✅, you are connected to Access Point 📳.
