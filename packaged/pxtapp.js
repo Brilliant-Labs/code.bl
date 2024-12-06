@@ -7703,7 +7703,7 @@ ${opts.repo.name.replace(/^pxt-/, '')}=github:${opts.repo.fullName}#${opts.repo.
         function codeEmbedUrl(rootUrl, id, height) {
             const docurl = `${rootUrl}---codeembed#pub:${id}`;
             height = Math.ceil(height || 300);
-            return `<div style="position:relative;height:calc(${height}px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${docurl}" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>`;
+            return `<div style="position:relative;height:calc(${height}px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="${docurl}" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin allow-downloads"></iframe></div>`;
         }
         docs.codeEmbedUrl = codeEmbedUrl;
         const inlineTags = {
@@ -29961,7 +29961,7 @@ var pxsim;
             frame.title = pxsim.localization.lf("Simulator");
             frame.allowFullscreen = true;
             frame.setAttribute('allow', 'autoplay');
-            frame.setAttribute('sandbox', 'allow-same-origin allow-scripts');
+            frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-downloads');
             frame.className = 'no-select';
             const furl = (url || this.getSimUrl()) + '#' + frame.id;
             frame.src = furl;

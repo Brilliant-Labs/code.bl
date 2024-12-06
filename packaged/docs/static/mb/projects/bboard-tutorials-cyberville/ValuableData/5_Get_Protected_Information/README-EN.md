@@ -103,6 +103,7 @@ let Full_Strip: neopixel.Strip = null
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 CL_Strip = Full_Strip.range(20, 10)
 FL_Strip = Full_Strip.range(0, 10)
+
 ```
 </br>
 </br>

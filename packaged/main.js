@@ -18095,7 +18095,7 @@ class SideDocs extends data.Component {
                 React.createElement(sui.Icon, { icon: `icon inverted chevron ${showLeftChevron ? 'left' : 'right'}` })),
             React.createElement("div", { id: "sidedocs" },
                 React.createElement("div", { id: "sidedocsframe-wrapper" },
-                    React.createElement("iframe", { id: "sidedocsframe", src: url, title: lf("Documentation"), "aria-atomic": "true", "aria-live": "assertive", sandbox: `allow-scripts allow-same-origin allow-forms ${lockedEditor ? "" : "allow-popups"}` })),
+                    React.createElement("iframe", { id: "sidedocsframe", src: url, title: lf("Documentation"), "aria-atomic": "true", "aria-live": "assertive", sandbox: `allow-scripts allow-downloads allow-same-origin allow-forms ${lockedEditor ? "" : "allow-popups"}` })),
                 !lockedEditor && React.createElement("div", { className: "ui app hide", id: "sidedocsbar" },
                     React.createElement("a", { className: "ui icon link", role: "button", tabIndex: 0, "data-content": lf("Open documentation in new tab"), "aria-label": lf("Open documentation in new tab"), onClick: this.popOut, onKeyDown: sui.fireClickOnEnter },
                         React.createElement(sui.Icon, { icon: "external" })))));
@@ -21999,7 +21999,7 @@ class Extensions extends data.Component {
         const frame = document.createElement('iframe');
         frame.className = `extension-frame extension-frame-${name}`;
         frame.allowFullscreen = true;
-        frame.setAttribute('sandbox', 'allow-same-origin allow-scripts');
+        frame.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-downloads');
         frame.frameBorder = "0";
         frame.style.display = "none";
         wrapper.appendChild(frame);
@@ -25865,7 +25865,7 @@ function makeAsync() {
         /* eslint-disable @microsoft/sdl/react-iframe-missing-sandbox */
         React.createElement("div", { className: "ui container" },
             React.createElement("div", { id: "makecontainer", style: { 'position': 'relative', 'height': 0, 'paddingBottom': '40%', 'overflow': 'hidden' } },
-                React.createElement("iframe", { id: "makeiframe", frameBorder: "0", sandbox: "allow-popups allow-forms allow-scripts allow-same-origin allow-modals", style: { 'position': 'absolute', 'top': 0, 'left': 0, 'width': '100%', 'height': '100%' } })))
+                React.createElement("iframe", { id: "makeiframe", frameBorder: "0", sandbox: "allow-popups allow-forms allow-scripts allow-downloads allow-same-origin allow-modals", style: { 'position': 'absolute', 'top': 0, 'left': 0, 'width': '100%', 'height': '100%' } })))
         /* eslint-enable @microsoft/sdl/react-iframe-missing-sandbox */
         ,
         onLoaded: (_) => {
