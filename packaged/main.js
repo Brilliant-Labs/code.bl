@@ -20308,15 +20308,16 @@ function showFirmwareDialogAsync() {
                                 lf("4️⃣ Press A on the micro:bit"),
                                 React.createElement("br", null),
                                 lf("When you see the smiley face, your b.Board now has the latest firmware"),    
-                                React.createElement("br", null),
+//                            React.createElement("br", null),
 //React.createElement("a", { href: "bBoardFirmware2_17.hex" }, "Click to Download b.Board dsPIC 💟 firmware Version 2_17.hex"),
 //                                React.createElement("a", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank") },"Click to Download b.Board dsPIC 💟 firmware Version 2_17.hex"),
                             ),
 
-React.createElement("a", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank") },"Click to Download b.Board dsPIC 💟 firmware Version 2_17.hex"),
+React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/bBoard/bBoardFirmware2_17.hex"},"Click to Download b.Board dsPIC 💟 firmware Version 2_17.hex"),
 
 //React.createElement("div", null,
-// React.createElement("button", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank"), className: "ui button icon icon-and-text primary purple attached" }, "Click to Download b.Board dsPIC 💟 firmware Ver.2_17.hex"),                 
+//React.createElement("button", { onClick: () => window.open("bBoardFirmware2_17.hex", "_blank"), className: "ui button icon icon-and-text primary purple attached" }, "Click to Download b.Board dsPIC 💟 firmware Ver.2_17.hex"),   ),    
+
                     ),
                 ),
         React.createElement("div", { className: "ui icon purple message" },
