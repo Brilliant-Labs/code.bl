@@ -9,7 +9,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 __Valuable Data__ is a really important topic in Cybersecurity. It's all about keeping and obtaining information safe and secure on a network. It's not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your __Cyberville__. It's so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We're here to help you with all of that!
 
-Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phising__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
+Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phishing__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
 
 As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
 

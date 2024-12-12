@@ -7,7 +7,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 # 5_GET PROTECTED INFORMATION - Blue Hat
 
-Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
+Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Fluoride__ proportions.
 
 This activity is related to __Encription 🗝️__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true" alt="BlueHat" title="BlueHat" width="50"/> ![BlueHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true "BluekHat")the 🟣 🎩 __Blue Hat__ friend.
 ## Activity

@@ -3,7 +3,7 @@
 __Les mots de passe__ sont très importants en cybersécurité, et nous sommes là pour vous aider ! Ils sont le moyen principal pour les utilisateurs de prouver leur identité. Plongeons ensemble dans quelques points clés sur les mots de passe en cybersécurité !
 Un mot de passe solide est généralement long et complexe, ce qui rend beaucoup plus difficile pour quiconque de le deviner ou de le craquer.
 
-Les attaques les plus courantes contre les mots de passe sont le __Force Brute (Brute Force), Hameçonnage (Phising), Attaque par Dictionnaire (Dictionary Attack), Bourrage d'Identifiants (Credential Stuffing)__.
+Les attaques les plus courantes contre les mots de passe sont le __Force Brute (Brute Force), Hameçonnage (Phishing), Attaque par Dictionnaire (Dictionary Attack), Bourrage d'Identifiants (Credential Stuffing)__.
 
 Oh, oui ! Nous sommes tous passés par là, n'est-ce pas ? 🏫 Lincoln High School' 2️⃣ __Cyberville__ a été piratée, et c'est pourquoi vous devez résoudre __Mission 1__. Cela peut arriver à n'importe qui, et nous comprenons tout à fait si vous vous sentez un peu dépassé en ce moment. Mais ne vous inquiétez pas ! Il existe des moyens de vous protéger, vous et notre école __Cyberville__, contre de futures attaques.
 

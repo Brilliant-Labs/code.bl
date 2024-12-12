@@ -1683,7 +1683,7 @@
         <p>
 </p>
 <h1 id="1_valuable-data">1_VALUABLE DATA</h1><p><strong>Valuable Data</strong> is a really important topic in Cybersecurity. It’s all about keeping and obtaining information safe and secure on a network. It’s not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your <strong>Cyberville</strong>. It’s so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We’re here to help you with all of that!</p>
-<p>Let’s learn together about some of the most common cyber attacks on our <strong><em>Valuable Data</em></strong>, for example <strong>Phising</strong>, <strong>Malware</strong>, <strong>Ransomware</strong>, and how to protect us with <strong>Encryption</strong> and others. Once we’ve done that, we’ll solve the Second Mission, “Polluted Water - Water Treatment Plant Under Attack!”</p>
+<p>Let’s learn together about some of the most common cyber attacks on our <strong><em>Valuable Data</em></strong>, for example <strong>Phishing</strong>, <strong>Malware</strong>, <strong>Ransomware</strong>, and how to protect us with <strong>Encryption</strong> and others. Once we’ve done that, we’ll solve the Second Mission, “Polluted Water - Water Treatment Plant Under Attack!”</p>
 <p>As a <strong>Cyberville</strong>‘s citizen you need to know that <strong>🧪 Chlorine</strong> is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of <strong>🧪 Chlorine</strong> typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.</p>
 <p><strong>🧪 Fluoride</strong> is often added to drinking water to prevent tooth decay. The optimal concentration of <strong>🧪 Fluoride</strong> in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.</p>
 <p>The ratio of <strong>🧪 Chlorine</strong> to <strong>🧪 Fluoride</strong> would then depend on the specific concentrations used in the treatment process, and it’s not necessarily a fixed <strong>ratio</strong>. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.</p>
@@ -1732,10 +1732,6 @@ The 📳 M5 Module will provide different <strong>Websites</strong> selected by 
 <h2 id="-students-">🧑‍🎓 Students:</h2><p>In this example, you’ll find a suggested Water Plant Calibration environment for this activity. But don’t be afraid to get creative! You can easily recreate two bars of neopixels for 10 BLixels each, in whatever way you like.</p>
 <p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/LevelBar.gif?raw=true" alt="Level_Bar" title="Level Bar." loading="lazy"></p>
 <p><strong>⚠️ Important: WiFi Connection Setup</strong><br>1️⃣ Connect your PC to the WiFi access point broadcast by your 📳 M5 module<br>2️⃣ Once connected, open your web browser<br>3️⃣ Navigate to: <strong><code>http://192.168.4.1</code></strong><br>4️⃣ Get the clues to solve the challenges</p>
-<p><strong><em>Have fun!</em></strong></p>
-<h2 id="code-example">Code Example</h2><p>You can download the .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex"><strong>⬇️ Here</strong></a>. 
-</p>
-<p>Or use this code as example. Please pay attention that strip is connected to <strong>P2</strong>, and the levels are <strong>5 for 🧪Chlorine</strong> and <strong>5 for 🧪 Fluoride</strong>, also notice that we are using the 🧩 <code>||Level of Chlorine (#)||</code> block, and the 🧩 <code>||Level of Fluoride (#)||</code> block to set the levels of <code>Chorine</code> and <code>Fluoride</code>.</p>
 
     <div class='avatar '>
         <div class='avatar-image'></div>
@@ -1744,6 +1740,10 @@ The 📳 M5 Module will provide different <strong>Websites</strong> selected by 
 
         </div>
     </div>
+<p><strong><em>Have fun!</em></strong></p>
+<h2 id="code-example">Code Example</h2><p>You can download the .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex"><strong>⬇️ Here</strong></a>, then drag an drop it anywhere on the Workspace. 
+</p>
+<p>Or use this code as example in a <strong>New Projet</strong>. Please pay attention that strip is connected to <strong>P2</strong>, and the levels are <strong>5 for 🧪Chlorine</strong> and <strong>5 for 🧪 Fluoride</strong>, also notice that we are using the 🧩 <code>||Level of Chlorine (#)||</code> block, and the 🧩 <code>||Level of Fluoride (#)||</code> block to set the levels of <strong><code>Chorine</code></strong> and <strong><code>Fluoride</code></strong>.</p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     for (let Count = 0; Count &lt;= 9; Count++) {
         CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.five)), neopixel.colors(NeoPixelColors.Blue))

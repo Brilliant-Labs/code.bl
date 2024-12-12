@@ -5,7 +5,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 -->
 # 5_GET PROTECTED INFORMATION - Blue Hat
 
-Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
+Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Fluoride__ proportions.
 
 This activity is related to __Encription 🗝️__, and our source of information is privided by ![BlueHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/BlueHat.png?raw=true "BluekHat") the 🟣 🎩 __Blue Hat__ friend.
 ## Activity
@@ -76,14 +76,18 @@ __⚠️ Important: WiFi Connection Setup__
 3️⃣ Navigate to: __``http://192.168.4.1``__  
 4️⃣ Get the clues to solve the __Encription 🗝️__ challenges
 
+##### ~avatar
+You should change the values for __Level of Choride__ and __Level of Flouride__ according to this activity. 
+##### ~
+
 ## Code Example
-You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex).
+You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex), then drag an drop it anywhere on the Workspace.
 <!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
 -->
 
-Or use this code base as example to test the right __ratio__ and save the Water Treatment Plant!.
+Or use this code as example in a __New Projet__ to test the right __ratio__ and save the Water Treatment Plant!.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {

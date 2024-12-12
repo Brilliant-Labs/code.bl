@@ -7,7 +7,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 # 4_GET SAFE INFORMATION - White Hat
 
-Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Floride__ proportions.
+Guess what! Our __Cyberville__ Water Treatment Plant is under a Cyber Attack!!, and the water was polluted because we got a erradical information about the right ratio between the __🧪Chloride__ and __🧪Fluoride__ proportions.
 
 This activity is related to __Ransomware 💸__, and our source of information is privided by <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/WhiteHat.png?raw=true" alt="WhiteHat" title="WhiteHat" width="50"/>![WhiteHat](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/WhiteHat.png?raw=true "WhitekHat")the ⚪ 🎩 __White Hat__ friend.
 ## Activity

@@ -3,7 +3,7 @@
 __Passwords__ are super important in cybersecurity, and we're here to help you with that! They're the main way users can be sure they're who they say they are! Let's dive into some key points about passwords in cybersecurity together!
 A strong password is usually long and complex, which makes it much harder for anyone to guess or crack them.
 
-The most common passwords attack are __Brute Force, Phising, Dictionary Attack, Credential Stuffing__.
+The most common passwords attack are __Brute Force, Phishing, Dictionary Attack, Credential Stuffing__.
 
 Oh, yes! We’ve all been there, right? The __Cyberville__ 🏫 'Lincoln High School' 2️⃣ has been hacked, and that’s why you have to solve __Mission 1__. It can happen to anyone, and we totally get it if you're feeling a little overwhelmed right now. But don't you worry! There are ways you can protect yourself and our __Cyberville__ School from future attacks.
 

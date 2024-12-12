@@ -7,7 +7,7 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 
 __Valuable Data__ is a really important topic in Cybersecurity. It's all about keeping and obtaining information safe and secure on a network. It's not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your __Cyberville__. It's so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We're here to help you with all of that!
 
-Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phising__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
+Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phishing__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
 
 As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
 
@@ -61,20 +61,20 @@ __⚠️ Important: WiFi Connection Setup__
 3️⃣ Navigate to: __``http://192.168.4.1``__  
 4️⃣ Get the clues to solve the challenges
 
+##### ~avatar
+You should change the values for __🧪Chloride__ and __🧪Flouride__ according to each activity, that means you need to modify this code using the __Level of Choride__ and __Level of Flouride__ Blocks in to section `... more` under CyberSecurity button from __b.Board__. 
+##### ~
+
 __*Have fun!*__
 
 ## Code Example
-You can download the .hex file for this activity by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex). 
+You can download the .hex file for this activity by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex), then drag an drop it anywhere on the Workspace. 
 <!--
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
 -->
 
-Or use this code as example. Please pay attention that strip is connected to __P2__, and the levels are __5 for 🧪Chlorine__ and __5 for 🧪 Fluoride__, also notice that we are using the 🧩 ``||Level of Chlorine (#)||`` block, and the 🧩 ``||Level of Fluoride (#)||`` block to set the levels of `Chorine` and `Fluoride`.
-
-##### ~avatar
-You should change the values for __🧪Chloride__ and __🧪Flouride__ according to each activity, that means you need to modify this code using the __Level of Choride__ and __Level of Flouride__ Blocks in to section `... more` under CyberSecurity button from __b.Board__. 
-##### ~
+Or use this code as example in a __New Projet__. Please pay attention that strip is connected to __P2__, and the levels are __5 for 🧪Chlorine__ and __5 for 🧪 Fluoride__, also notice that we are using the 🧩 ``||Level of Chlorine (#)||`` block, and the 🧩 ``||Level of Fluoride (#)||`` block to set the levels of __`Chorine`__ and __`Fluoride`__.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
