@@ -8,39 +8,48 @@ Welcome to __Mission 3!__ In this mission, you'll learn the three main principle
 Here we have some tips about __CIA Triad__
 
 ##### ~avatar
-__🤫 Confidenciality__ 
-• To Remember 🤔
+__🤫 Confidenciality__  
+
+• To Remember 🤔  
     Only the right people should be able to see important information.
-• To Prevent ⚠️
+
+• To Prevent ⚠️  
     Keep information safe so only the right people can see it.
-• To Protect 🔰
-    ✔︎ Two factor authentication
-    ✔︎ Access control
-    ✔︎ Cryptography
+
+• To Protect 🔰  
+    ✔︎ Two factor authentication  
+    ✔︎ Access control  
+    ✔︎ Cryptography  
 ##### ~
 
 ##### ~avatar
-__🤝 Integrity__
-• To Remember 🤔
-    Information should always be correct and not changed in a sneaky way.
-• To Prevent ⚠️
-    Make sure information stays correct and isn’t secretly changed.
-• To Protect 🔰
-    ✔︎ Hashing
-    ✔︎ Digital signatures
-    ✔︎ Keys
+__🤝 Integrity__  
+
+• To Remember 🤔  
+    Information should always be correct and not changed in a sneaky way.  
+
+• To Prevent ⚠️  
+    Make sure information stays correct and isn’t secretly changed.  
+
+• To Protect 🔰  
+    ✔︎ Hashing  
+    ✔︎ Digital signatures  
+    ✔︎ Keys  
 ##### ~
 
 ##### ~avatar
-__🗓️ Availability__
-• To Remember 🤔
-    nformation should be ready and easy to get when you need it!
-• To Prevent ⚠️
-    Keep information available so it can always be used, even if something goes wrong!
-• To Protect 🔰
-    ✔︎ Backup
-    ✔︎ Redundancy
-    ✔︎ Fault tolerance
+__🗓️ Availability__  
+
+• To Remember 🤔  
+    Information should be ready and easy to get when you need it!  
+
+• To Prevent ⚠️  
+    Keep information available so it can always be used, even if something goes wrong!  
+    
+• To Protect 🔰  
+    ✔︎ Backup  
+    ✔︎ Redundancy  
+    ✔︎ Fault tolerance  
 ##### ~
 
 ![Mission_3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/Parking_Pases.gif?raw=true "Mission 3")
