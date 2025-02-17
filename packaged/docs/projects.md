@@ -98,7 +98,7 @@
     {
         "name": "               ",
         "url": "/projects/bboard-cyberville4",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/Parking_Passes.gif",
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/Parking_Pases.gif",
         "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
     },
     {

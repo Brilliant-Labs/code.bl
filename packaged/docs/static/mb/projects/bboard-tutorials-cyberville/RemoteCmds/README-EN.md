@@ -4,7 +4,6 @@ Welcome to __Mission 3!__ In this mission, you'll learn the three main principle
 
 ![CIA_Fox](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/CIA_Fox.png?raw=true "CIA_Fox")
 
-
 Here we have some tips about __CIA Triad__
 
 ##### ~avatar
@@ -52,26 +51,26 @@ __🗓️ Availability__
     ✔︎ Fault tolerance  
 ##### ~
 
+## __Mission 3.__ Fake Parking Pases
+#### *Government Parking Lot Under Cyber Attack!*
 ![Mission_3](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/Parking_Pases.gif?raw=true "Mission 3")
-
 __Description of the incident:__
-In Cyberville there is a government building with many services to the population.  In one of their department, citizens with some physical disabilities can obtain a free parking pass to park their cars in a reserved parking zone when they move across the city.  This parking pass can’t be used by all citizens who must pay their parking fees when necessary.  Recently, several fake Parking Passes and IDs were spotted by a couple of parking attendants.  The passes were used by people who shouldn’t have received a parking pass.  The police were informed and they discovered that there was a scam to sell fake parking passes.  They suspect someone working in the government building but have yet to discover who it is.
+In __Cyberville__ there is a government building with many services to the population.  In one of their department, citizens with some physical disabilities can obtain a free parking pass to park their cars in a reserved parking zone when they move across the city.  This parking pass can’t be used by all citizens who must pay their parking fees when necessary.  Recently, several fake Parking Passes and IDs were spotted by a couple of parking attendants.  The passes were used by people who shouldn’t have received a parking pass.  The police were informed and they discovered that there was a scam to sell fake parking passes.  They suspect someone working in the government building but have yet to discover who it is.
 
 __Your mission:__
 Your mission is to discover how someone inside or outside the government building has access to the network and how to prevent this scam from happening. You must evaluate how strong your cybersecurity is and apply the CIA triad to achieve success. You will need to complete a Cybersecurity Assessment Report and share it with government officials and the police.
 
-## Activity Description
-### __Mission 3__ Fake Parking Pases
-#### *Government Parking Lot Under Cyber Attack!*
 
-For this activity, you will design a parking access control system using two __b.Boards__. You will work in pairs, with one __b.Board__ managing a barrier that grants access to individuals with physical disabilities who possess a free parking pass ID in __Cyberville 🏢 Goverment building__. The second __b.Board__ will remotely control access through the __Cyberville__ Wi-Fi access point provided by the 📳 M5 module.
-This task is divided into three parts, following the principles of the CIA Triad in cybersecurity: confidentiality, integrity, and availability.
-For this Mission 3, you will need the ID card from the Networking activity, along with an understanding of IP addresses and Access Points. It is strongly recommended that you review the concepts covered in Blue Hat and explore the importance of signal strength in the Valuable Data activity.
+### Activity Description
+
+For this activity, you will design a parking access control system using two __b.Boards__. You will work in pairs, with one __b.Board__ managing a barrier that grants access to individuals with physical disabilities who possess a free parking pass ID in __Cyberville 🏢 Goverment building__. The second __b.Board__ will __REMOTELY CONTROL ACCESS__ through the __Cyberville__ Wi-Fi access point provided by the 📳 M5 module.
+This task is divided into three parts, following the principles of the CIA Triad in cybersecurity: Confidentiality, integrity, and Availability.
+For this Mission 3, you will need the 🎫 ID card from the Networking activity, along with an understanding of IP addresses and Access Points. It is strongly recommended that you review the concepts covered in 🔵 🎩 Blue Hat and explore the importance of signal strength in the Valuable Data activity.
 Additionally, you will need a servo motor to construct the parking control barrier. Here is an example:
 
-![ParkingBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/ParkingBar.jpg?raw=true "ParkingBar")
+![ParkingBar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/ParkingBar.png?raw=true "ParkingBar")
 
-It's a great way to show off your skills and help protect the Parking Lot Government Building from getting scammed and keep the information safe.
+It's a great way to show off your skills and help protect the Parking Lot __🏢 Government Building__ from getting scammed and keep the information safe.
 
 __*Have fun!*__
 
