@@ -8,13 +8,13 @@ Bienvenue à CYBERVILLE !!! @boardname@.
 
 ```codecard
 [{
-  "name": "Networking - Cyberville",
+  "name": "Activité 7 - Networking",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/README-FR.html",
   "description": "Découvrez les réseaux de cybersécurité à Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif",
   "cardType": "large",
-  "label": "Networking - Cyberville",
+  "label": "Networking",
   "labelClass": "indigo ribbon small"
 },
 {

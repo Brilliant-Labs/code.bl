@@ -1,104 +1,90 @@
+# 1_CONFIDENTIALITY
+Do you want to keep a secret safe? 🤫 Then confidentiality is the best place to start! It’s like having a top-secret vault where only the people you trust and give permission (like your best friend… maybe 😉) can access the information.
+🕵️‍♂️ But What If a Sneaky Snoop Tries to Peek?
+Hackers (a.k.a. digital troublemakers) are always looking for ways to sneak into your private information. They might try to: 🔑 Guess your password, 🕶️ Steal secret codes, 🤥 Trick you into giving them access.
+But don’t worry! Good cybersecurity helps keep them out and protects your secrets! 💪
 
----
-# ~avatar
-_Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
-# ~
----
+Oh no! The 🏢 Government Parking Lot is under cyber attack! Someone created fake ID passes, which means the parking lot lost its Confidentiality. In this mission, we’ll dive deeper into __Confidentiality__ and learn how to protect our information just like the Government Parking Lot should have!
 
-# 1_VALUABLE DATA
+There are several ways in which we can protect your privacy (Confidentiality), and here are a few of them:
+Passwords & Locks 🔑 – Computers use passwords to keep information safe.
+Secret Codes (Encryption) 🔐 – Even if someone gets in, they’ll just see a bunch of jumbled-up nonsense unless they have the secret key!
+Security Guards (Firewalls & Antivirus) – They act like bodyguards, keeping the bad guys away.
+Multi-factor authentication (or 2FA) - Require two or more pieces of evidence to access.
+Access control (Approval) - Enable to manage who is autorized to access adata and resources.
 
-__Valuable Data__ is a really important topic in Cybersecurity. It's all about keeping and obtaining information safe and secure on a network. It's not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your __Cyberville__. It's so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We're here to help you with all of that!
+## __Activity Description__
+For this activity, we're going to explore some ways to protect our information: 🔑 __Passwords__, 🔐 Encription, and 🪪 Multifactor Authentication!
 
-Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phishing__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
+## __🧑‍🏫 Teachers:__
+For __Mission 3__ Fake Parking Passe__ Please follow the next steps that you will find on M5 module:
 
-As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
+__1.__ Load __Mission 3__ Fake Parking Passe__ into 📳 M5 module. You can see this [__video__](https://www.canva.com/design/DAGJhm69_Mk/JdN1bb74mN-bKiclzST5Ag/watch?utm_content=DAGJhm69_Mk&utm_campaign=designshare&utm_medium=link&utm_source=editor) if you want to remember how to do it.
+__2.__ Press the first button __GO!!!__, then guide the 🧑‍🎓 students for the activity. 
+__3.__ Share the current __Access Point name__ created by the  📳 M5 module with the classroom and the password if it is the case. For example:  AP name 📳: __Cyberville #1__ 
+__4.__ In order to involve the student in the __Confidentialy__ concept, 🧑‍🏫 theachers need to setup a 🔑Password. Remember that there are three differents ways to setup passwords on  📳 M5 module for Cyberville network. Agree with student which password are you going to use for this activity. 
 
-__🧪 Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪 Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
+- [__No Password__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). Just a friendly reminder: don't press any buttons! Thanks!
 
-The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed __ratio__. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
+- [__Default Password__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). In this case the Default Password is __BL_Cybr1__. Just wanted to let you know that you must press the first button to set the default password. 
 
-The ratio of __🧪Chlorine__ to __🧪Fluoride__ in treated water can vary depending on several factors including the specific requirements of the water treatment facility, local regulations, and the source water quality.
-
-🧑‍🎓 Students and 🧑‍🏫 teachers, we just wanted to remind you that it's important to choose a __*reliable, secure, safe, and protected source of information*__ on the __Cyberville__ network, to avoid exposing your __Valuable Data__. 
-
-To develop the next activities:
-
-| Activity Name | Color Hat | Case Study|
-| :------------------   | :---: | :----------------- |
-| Reliable information  | 🔴 🎩 Red Hat| `Phishing` 🎣|
-| Secure information    | ⚫ 🎩 Black Hat| `Malware`  🦠| 
-| Safe information      | ⚪ 🎩 White Hat| `Ransomware`  💸|
-| Protected information | 🟣 🎩 Blue Hat| `Encription` 🗝️|
-
-<br>
-The 📳 M5 Module will provide different __Websites__ selected by the 🧑‍🏫 teacher, which are based on hacker challenges with different __Color 🎩 Hats__ for each activity. It's up to you to choose the most reliable, secure, logical, and intuitive data to get the correct results. Be aware that not all information is credible; it could be infected or may require analysis. But don't worry! It should always be protected. You may fail in the attempt, but that's part of the fun!
-
-__*Have fun!*__
+- [__Custom Password__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). We highly recommend this option to involve the students, just press middle button on  📳  M5 module, and enter the agreed 8 characters of the password agreed between the student and the teacher, for example __BL_cyb24__, at the end please press the middle button again for three seconds to set it. That is all!
+__5.__ Once the password is set by the 🧑‍🏫 teacher, for example Password 🔑: __BL_Cybr1__ *(if you are using default one)* must find the way to securely share the Password  with the  🧑‍🎓 students doing a broken phone game or ecryption game like this:
 
 
-## Activity
-__All right, let's get started *Calibrating* our levels bar on our plant!__
 
-We've made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:
+### 🧑‍🎓 __Students__
+__1.__ Students should follow the steps in Activity 1_Connecting for __Networking__, but add the __Password__ that 🧑‍🏫 teacher should share in a secure and confidential way. 
 
-__1.__ Download [__👉 Here__](https://drive.google.com/file/d/1ldS8fqcVLhBBQ_IIyVCmBPPUuvGLlPEw/view?usp=drive_link), print and cover the __b.board__ for Mission 2.  
-    <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
-    ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true "Cover")
-
-![Cover for M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true "Cover for M2.")
-
-## 🧑‍🏫 __Teachers:__
-
-Teachers will guide the proccess to obtain the neopixel level bar from the students 🧑‍🎓.
+![Set_Psw] https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/SetPsw.png
 
 
-## 🧑‍🎓 __Students:__
 
-In this example, you'll find a suggested Water Plant Calibration environment for this activity. But don't be afraid to get creative! You can easily recreate two bars of neopixels for 10 BLixels each, in whatever way you like.
+Just a quick note to ask that you please __make sure that b.Board is connected__. 
 
-![Level_Bar](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/LevelBar.gif?raw=true "Level Bar.")
 
-__⚠️ Important: WiFi Connection Setup__  
-1️⃣ Connect your PC to the WiFi access point broadcast by your 📳 M5 module   
-2️⃣ Once connected, open your web browser  
-3️⃣ Navigate to: __``http://192.168.4.1``__  
-4️⃣ Get the clues to solve the challenges
 
-__*Have fun!*__
+
+
+
+
+
+
+https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif
+
+If you get a ✅, you are connected to Access Point 📳.
+__2.__ It is crucial for the students to know the IP address of the b.Board in order to succeed in this mission 3, the students must fill out the ID card again, but in this case only with the name and IP address. Remember that you can download and print the ID card from these links
+### 🧑‍🎓 __*Students ID Card*__
+Download the ID Card for Students 🧑‍🎓 [__⬇️ Here__] https://drive.google.com/file/d/1uYi49zPMzKYuliF4TlS2NQBoPTkMTcoD/view?usp=drive_link
+
+
+For this first part of the activity, this should be a good example of how to fill out the Cyberville ID card.
 
 ## Code Example
-You can download the .hex file for this activity by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex). 
+You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex). 
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit") 
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 
-Or use this code as example. Please pay attention that strip is connected to __P2__, and the levels are __5 for 🧪Chlorine__ and __5 for 🧪 Fluoride__, also notice that we are using the 🧩 ``||Level of Chlorine (#)||`` block, and the 🧩 ``||Level of Fluoride (#)||`` block to set the levels of `Chorine` and `Fluoride`.
+_**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the b.Board sound.`**_
 
-##### ~avatar
-You should change the values for __🧪Chloride__ and __🧪Flouride__ according to each activity, that means you need to modify this code using the __Level of Choride__ and __Level of Flouride__ Blocks in to section `... more` under CyberSecurity button from __b.Board__. 
-##### ~
+You can use this code example to obtain the 📮 IP addresses.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    for (let Count = 0; Count <= 9; Count++) {
-        CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.five)), neopixel.colors(NeoPixelColors.Blue))
-        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.five)), neopixel.colors(NeoPixelColors.Green))
-    }
-    Full_Strip.show()
+ basic.showString(Cybersec.getIPaddressbBoard())
 })
-let FL_Strip: neopixel.Strip = null
-let CL_Strip: neopixel.Strip = null
-let Full_Strip: neopixel.Strip = null
-Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
-CL_Strip = Full_Strip.range(20, 10)
-FL_Strip = Full_Strip.range(0, 10)
+Cybersec.WifiConnect("Cyberville #?", "")
+basic.forever(function () { 
+})
 ```
-</br>
-</br>
 
----
----
-### Main Website preview from M5 Webserver - Activities Valuable Data
+📌 __*Notes:*__
+If you would like, you can also see the 📮 IP address on the __*Show Console Device*__.
+### ~ avatar
+*Once you download your code...*
+1. Click on the refresh button 🔄 (circular arrow icon) in the simulator window.
+2. __Wait__ until *Show console Device* button apears on console output window.
+3. Click on it.
 
-![Main](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Main_EN.png?raw=true "Main")
----
----
+![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console.png?raw=true "Console Device")
+### ~

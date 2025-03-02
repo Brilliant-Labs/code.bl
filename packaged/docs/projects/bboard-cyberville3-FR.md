@@ -1,78 +1,47 @@
 # Projects
 
-Mission 2 Eau polluée !! @boardname@!
+Mission Lumières Étranges !! @boardname@!
 
 ## Basic
 
-Mission 2 Eau polluée !! @boardname@.
+Mission Lumières Étranges !! @boardname@.
 
 ```codecard
 [{
-  "name": "Données précieuses - Mission 2",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/README-FR.html",
-  "description": " Eau polluée. Usine de traitement des eaux sous attaque informatique!",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Polluted_Water.gif",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie.gif",
-  "cardType": "large",
+  "name": "Activité 10 - Mots de passe",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/README-FR.html",
+  "description": "Lumières Étranges. École Sous Cyberattaque !",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "label": "Données précieuses",
+  "cardType": "large",
+  "label": "Mots de passe",
   "labelClass": "indigo ribbon small"
 },
 {
-  "name": "1_Calibration de l'usine de traitement des eaux",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/README-FR.html",
-  "description": "Prenez vos outils et commencez à personnaliser votre propre usine de traitement des eaux.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Water_Calibration-FR.png",
+  "name": "1_Paramétrage des mots de passe",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/README-FR.html",
+  "description": "Définir des mots de passe.",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Set_Psw_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "large",
   "label": "FR",
   "labelClass": ""
 },
 {
-  "name": "2_Obtenez des informations fiables",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/README-FR.html",
-  "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations fiables sur le web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/Get_Reliable_Info_RedHat-FR.png",
+  "name": "2_Séquence d'accès",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/README-FR.html",
+  "description": "Trouvez la bonne séquence pour accéder à l'école et la protéger.",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Seq_to_Access_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "large",
   "label": "FR",
   "labelClass": ""
 },
 {
-  "name": "3_Obtenez des informations sécurisées",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/README-FR.html",
-  "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/3_Get_Secure_Information/Get_Secure_Info_BlackHat-FR.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "large",
-  "label": "FR",
-  "labelClass": ""
-},
-{
-  "name": "4_Obtenez des informations sûres",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/README-FR.html",
-  "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/4_Get_Safe_Information/Get_Safe_Info_WhiteHat-FR.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "large",
-  "label": "FR",
-  "labelClass": ""
-},
-{
-  "name": "5_Obtenez des informations protégées",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/README-FR.html",
-  "description": "Soyez prudent là-dehors et assurez-vous d'obtenir des informations sécurisées sur le web.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/5_Get_Protected_Information/Get_Protected_Info_BlueHat-FR.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
-  "cardType": "large",
-  "label": "FR",
-  "labelClass": ""
-},
-{
-  "name": "6_Puissance du signal",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/README-FR.html",
-  "description": "Just a friendly reminder to check in on your AP lotated.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/Signal_Strength-FR.png",
+  "name": "3_Test D'Intrusion",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/README-FR.html",
+  "description": "Effectuer un test de pénétration pour prévenir les attaques futures.",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/PenTest_Icon-FR.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif",
   "cardType": "large",
   "label": "FR",

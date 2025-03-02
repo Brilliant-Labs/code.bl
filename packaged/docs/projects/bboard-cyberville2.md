@@ -1,47 +1,47 @@
 # Projects
 
-Mission 1 Lights Weird !! @boardname@!
+Mission Fake Parking Passes !! @boardname@!
 
 ## Basic
 
-Mission 1 Lights Weird !! @boardname@.
+Mission Fake Parking Passes !! @boardname@.
 
 ```codecard
 [{
-  "name": "Passwords - Mission 1",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/README-EN",
-  "description": "Weird Lights. School Under Cyber Attack!",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School_Under_Attack.gif",
+  "name": "Activity 9 - Remote Cmds",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/README-EN",
+  "description": "Fake Parking Passes. Government Parking Lot Under Cyber Attack!",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/Gov-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
   "cardType": "side",
-  "label": "Passwords",
+  "label": "Remote Commands",
   "labelClass": "indigo ribbon small"
 },
 {
-  "name": "1_Setting Passwords",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/README-EN",
-  "description": "Set passwords.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/Set_Psw_Icon-EN.png",
+  "name": "1_Confidentiality - CIA Triad",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/README-EN",
+  "description": "Keep information in secret!",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/Confidentiality-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
   "cardType": "side",
   "label": "",
   "labelClass": ""
 },
 {
-  "name": "2_Sequence to access",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/README-EN",
-  "description": "Find the right sequence to access and protect the School.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Seq_to_Access_Icon-EN.png",
+  "name": "2_Integrity - CIA Triad",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/2_Integrity/README-EN",
+  "description": "Information never should be alterated!",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/2_Integrity/Integrity-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
   "cardType": "side",
   "label": "",
   "labelClass": ""
 },
 {
-  "name": "3_Penetration Test",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/README-EN",
-  "description": "Perform a penetration test to prevent future attacks.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/PenTest_Icon-EN.png",
+  "name": "3_Availability - CIA Triad",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/3_Availability/README-EN",
+  "description": "Information allways ready!!",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/3_Availability/Availability-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif",
   "cardType": "side",
   "label": "",

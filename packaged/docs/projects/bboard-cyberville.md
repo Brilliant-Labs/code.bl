@@ -8,7 +8,7 @@ Welcome to CYBERVILLE!! @boardname@.
 
 ```codecard
 [{
-  "name": "Networking - Cyberville",
+  "name": "Activity 7 - Networking",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/README-EN",
   "description": "Learn about Cybersecurity NETWORKING in Cyberville.",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
