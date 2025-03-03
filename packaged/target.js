@@ -2746,7 +2746,7 @@ var pxtTargetBundle = {
             "advmath.cpp": "#include \"pxtbase.h\"\n\nusing namespace std;\n\n#define SINGLE(op) return fromDouble(::op(toDouble(x)));\n\nnamespace Math_ {\n\n//%\nTNumber log2(TNumber x){SINGLE(log2)}\n//%\nTNumber exp(TNumber x){SINGLE(exp)}\n//%\nTNumber tanh(TNumber x){SINGLE(tanh)}\n//%\nTNumber sinh(TNumber x){SINGLE(sinh)}\n//%\nTNumber cosh(TNumber x){SINGLE(cosh)}\n//%\nTNumber atanh(TNumber x){SINGLE(atanh)}\n//%\nTNumber asinh(TNumber x){SINGLE(asinh)}\n//%\nTNumber acosh(TNumber x){SINGLE(acosh)}\n\n}",
             "bBoard.ts": "\n// Configuring command messages...\n\nconst enum BoardID {\n\n    //% block=\"b.Board\"\n    zero = 0,\n}\n//     //% block=\"Expansion 1\"\n//     one = 1,\n//     //% block=\"Expansion 2\"\n//     two,\n//     //% block=\"Expansion 3\"\n//     three,\n//     //% block=\"Expansion 4\"\n//     four,\n//     //% block=\"Expansion 5\"\n//     five,\n//     //% block=\"Expansion 6\"\n//     six,\n//     //% block=\"Expansion 7\"\n//     seven,\n//     //% block=\"Expansion 8\"\n//     eight,\n//     //% block=\"Expansion 9\"\n//     nine, \n//         //% block=\"Expansion 10\"\n//         ten,\n//         //% block=\"Expansion 11\"\n//         eleven,\n//         //% block=\"Expansion 12\"\n//         twelve,\n//         //% block=\"Expansion 13\"\n//         thirteen,\n//         //% block=\"Expansion 14\"\n//         fourteen,\n//         //% block=\"Expansion 15\"\n//         fifteen,\n//         //% block=\"Expansion 16\"\n//         sixteen,\n//         //% block=\"Expansion 17\"\n//         seventeen,\n//         //% block=\"Expansion 18\"\n//         eighteen,\n//         //% block=\"Expansion 19\"\n//         nineteen, \n//         //% block=\"Expansion 20\"\n//         Twenty\n\n// }\n\nconst BUILT_IN_PERIPHERAL = 0\nconst enum ClickID {\n\n\n    //% block=\"Clickboard A\"\n    A = 1,\n\n\n    //% block=\"Clickboard B\"\n    B = 2,\n\n\n\n}\n// function checkifexists(): number{\n//     let retval=25;\n//     for (var _i = 2; _i < 24; _i++) {\n//         if(bBoard_Control.arrayClick.indexOf(_i) !== -1){\n//             retval= 25;\n//         }\n//         else{\n//             retval= _i;\n//         }\n//     }\n//     console.log(\"RetVal \"+retval)\n//     return retval;\n// }\n\nenum clickIOPin {\n\n    AN = 0x0001,\n    RST = 0x0002,\n    CS = 0x0004,\n    SCK = 0x0008,\n    MISO = 0x0010,\n    MOSI = 0x0020,\n    SDA = 0x0400,\n    SCL = 0x0800,\n    TX = 0x1000,\n    RX = 0x2000,\n    INT = 0x4000,\n    PWM = 0x8000\n\n\n}\nenum IOPullDirection {\n\n    //% block=\"Pull Up\"\n    one = 1,\n    //% block=\"Pull Down\"\n    two = 2,\n    //% block=\"None\"\n    three = 3\n\n}\nenum ODCEnable {\n\n    //% block=\"Disable\"\n    zero = 0,\n    //% block=\"Enable\"\n    one = 1,\n\n\n}\nenum clickADCPin {\n    AN = 0x0001,\n    RST = 0x0002,\n    PWM = 0x8000\n\n}\nenum SPIMode {\n\n    Mode0 = 0,\n    Mode1 = 1,\n    Mode2 = 2,\n    Mode3 = 3\n\n}\n\n\nenum clickPWMPin {\n    AN = 0x0001,\n    RST = 0x0002,\n    PWM = 0x8000,\n    INT = 0x4000\n}\n\nenum clickIODirection {\n\n    input = 3,\n    output = 2\n\n}\n\nenum bBoardEventsMask {\n\n    UARTRx = 1,\n    CN_HIGH = 2,\n    CN_LOW = 4,\n    MIC_THRESHOLD = 8\n\n\n}\nenum bBoardEvents {\n\n    UARTRx = 0,\n    CN_HIGH = 1,\n    CN_LOW = 2,\n    MIC_THRESHOLD = 3\n\n\n}\n\nenum moduleIDs {\n\n    // Module Ids\n    GPIO_module_id = 1,\n    UART_module_id = 2,\n    I2C_module_id = 4,\n    SPI_module_id = 5,\n    MOTOR_module_id = 6,\n    MIC_module_id = 7,\n    PWM_module_id = 8,\n    ADC_module_id = 9,\n    MUSIC_module_id = 10,\n    EEPROM_module_id = 0xD,\n    BLiXel_module_id = 0xE,\n    STATUS_module_id = 0x10\n}\n\n\n// 'Clear BBoard tx buffer' command\nlet CLEAR_BBOARD_TX_BUFFER = pins.createBuffer(1)\nCLEAR_BBOARD_TX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_CLEAR_TX_BUFFER)\n\n// 'Clear BBoard rx buffer' command\nlet CLEAR_BBOARD_RX_BUFFER = pins.createBuffer(1)\nCLEAR_BBOARD_RX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_CLEAR_RX_BUFFER)\n\n// 'Read BBoard tx buffer size' command\nlet READ_TX_BUFFER_SIZE = pins.createBuffer(1)\nREAD_TX_BUFFER_SIZE.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_READ_TX_BUFFER_SIZE)\n\n// 'Execute BBoard command' command\nlet EXECUTE_BBOARD_COMMAND = pins.createBuffer(1)\nEXECUTE_BBOARD_COMMAND.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_EXECUTE_COMMAND)\n\n// 'Read BBoard TX buffer' command\nlet READ_BBOARD_TX_BUFFER = pins.createBuffer(1)\nREAD_BBOARD_TX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_READ_TX_BUFFER_DATA)\n\n// 'Read BBoard Event Click Mask' command\nlet READ_EVENT_CLICK_MASK = pins.createBuffer(1)\nREAD_EVENT_CLICK_MASK.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_READ_EVENT_CLICK_MASK)\n\n\n\nlet AnalogValue = 0\nlet BBOARD_BASE_ADDRESS = 40;\nlet BBOARD_UART_TX_BUFF_SIZE = 128;\nlet actionCount = 0\n\nlet BBOARD_I2C_ADDRESS = 40\n\n\nlet BBOARD_COMMAND_SW_VERSION = 9\n\nconst enum bBoard_Command {\n    BBOARD_COMMAND_CLEAR_TX_BUFFER = 1,\n    BBOARD_COMMAND_READ_TX_BUFFER_DATA = 2,\n    BBOARD_COMMAND_READ_TX_BUFFER_SIZE = 3,\n    BBOARD_COMMAND_WRITE_RX_BUFFER_DATA = 4,\n    BBOARD_COMMAND_READ_EVENT_CLICK_MASK = 6,\n    BBOARD_COMMAND_CLEAR_RX_BUFFER = 0,\n    BBOARD_COMMAND_EXECUTE_COMMAND = 7\n}\n\n\n// Module Ids\nlet GPIO_module_id = 1\nlet UART_module_id = 2\nlet I2C_module_id = 4\nlet SPI_module_id = 5\nlet PWM_module_id = 8\nlet ADC_module_id = 9\nlet STATUS_module_id = 0x10\n\n// STATUS Ids\nlet Knock_Knock_id = 1\nlet FIRMWARE_VERSION_id = 2\nlet STATUS_INTERRUPT = 0x05\nlet STATUS_INTERRUPT_ENABLE_MASK = 0x06 //Used to set/clear any of the 64 possible interrupt sources that will trigger the P12 Interrupt Pin\nlet STATUS_INTERRUPT_ENABLE_MASK_SET = 0x07 //Used to set any of the 64 possible interrupt sources that will trigger the P12 Interrupt Pin\nlet STATUS_INTERRUPT_ENABLE_MASK_CLR = 0x08 //Used to clear any of the 64 possible interrupt sources that will trigger the P12 Interrupt Pin\nlet STATUS_INTERRUPT_CN_HIGH = 0x09 //Query the pin(s) that have caused the CN High Flag to be set\nlet STATUS_INTERRUPT_ENABLE_CN_HIGH = 0x0A //Set/Clear which pin(s) can trigger a CN High Interrupt event\nlet STATUS_INTERRUPT_ENABLE_CN_HIGH_SET = 0x0B //Set which pin(s) can trigger a CN High Interrupt event\nlet STATUS_INTERRUPT_ENABLE_CN_HIGH_CLR = 0x0C //Clear which pin(s) can trigger a CN High Interrupt event\nlet STATUS_INTERRUPT_CN_LOW = 0x0D //Query the pin(s) that have caused the CN High Flag to be set\nlet STATUS_INTERRUPT_ENABLE_CN_LOW = 0x0E //Set/Clear which pin(s) can trigger a CN Low Interrupt event\nlet STATUS_INTERRUPT_ENABLE_CN_LOW_SET = 0x0F//Set which pin(s) can trigger a CN Low Interrupt event\nlet STATUS_INTERRUPT_ENABLE_CN_LOW_CLR = 0x10 //Clear which pin(s) can trigger a CN Low Interrupt event\n\n// PWM Function Ids\nlet PWM_Duty_id = 1\nlet PWM_Freq_id = 2\n\n\n//BLiXel Function IDs\n\nlet BLiXel_ADD = 0x01\nlet BLiXel_REMOVE = 0x02\nlet BLiXel_SHOW = 0x03\nlet BLiXel_HIDE = 0x04\nlet BLiXel_CLEAR = 0x05\nlet BLiXel_STRIP_WRITE_SINGLE_DATA = 0x06\nlet BLiXel_STRIP_WRITE_BUFFER_DATA = 0x07\nlet BLiXel_STRIP_READ_SINGLE_DATA = 0x08\nlet BLiXel_STRIP_READ_BUFFER_DATA = 0x09\nlet BLiXel_STRIP_SET_COLOUR = 0x0A\nlet BLiXel_STRIP_SET_PIXEL = 0x0B\nlet BLiXel_STRIP_BAR_GRAPH = 0x0C\nlet BLiXel_STRIP_SET_BRIGHTNESS = 0x0D\n\n\n\n\n\nlet UART_STATUS = 0\nlet UART_INTEN = 2\nlet UART_INTENCLR = 3\nlet UART_BAUD_id = 4\nlet UART_WRITE_TX_DATA = 5\nlet UART_READ_RX_DATA = 6\nlet UART_READ_RX_DATA_BYTES = 7\nlet UART_CLEAR_RX_DATA = 8\n\n\n//GPIO Function IDs\nlet DIRSET_id = 2\nlet DIRCLR_id = 3\nlet GPIO_id = 4\nlet SET_id = 5\nlet CLR_id = 6\nlet TOGGLE_id = 7\nlet GPIOPULLENSET_id = 0x0B\nlet ODC_id = 0x0D\nlet ADC_READ_id = 16\n\n\n//SPI function IDs\nlet SPI_WRITE_id = 1\nlet SPI_READ_id = 2\nlet SPI_CONFIG_id = 3\nlet SPI_WRITEBULK_id = 4\nlet SPI_WRITEBULK_CS_id = 5\nlet SPI_READBULK_CS_id = 6\nlet SPI_BAUD_id = 7\nlet SPI_CONFIG_CS_id = 8\n\n//I2C function IDs\nlet I2C_WRITE_id = 1\nlet I2C_READ_id = 2\nlet I2C_WRITE_NO_MEM_id = 3\nlet I2C_READ_NO_MEM_id = 4\n\n//-------------------------Click Board Blocks Begin -----------------------------------\n/**\n * Custom clickBoard\n */\n//% advanced=true\n//% weight=100 color=#9E4894 icon=\"\"\n//% labelLineWidth=1001\nnamespace bBoard_Control {\n\n\n    let enabled = false\n\n    enum interruptState {\n\n        // Module Ids\n        active = 1,\n\n    }\n \n\n\n\n\n\n    //% blockId=bBoardEvent block=\"bBoardEvent $boardID $clickID $eventID\" blockAllowMultiple=1\n    //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n    let eventStart = false;\n    //clearAllInterrupts();\n\n    function clearAllInterrupts() {\n        BLiX(0, 0, 0, STATUS_module_id, STATUS_INTERRUPT_ENABLE_MASK, [0x00000000],null, 0); //Disable all interrupts (Only good for b.Board. Will have to address expansion boards)\n\n    }\n    export function clickEventID(clickAddress: number): number {\n        let clickEventID = 1;\n        return clickEventID << clickAddress\n    }\n\n    export function ClickAddressID(clickEventID: number): number {\n        let index = 0;\n        if (clickEventID) {\n            while (clickEventID != 1) {\n                clickEventID >>= 1;\n                index++;\n            }\n            return index\n        }\n        return null\n    }\n\n\n\n    export function eventInit(eventID:number,boardID: BoardID, clickID: ClickID)  {\n        eventStart = true;\n        BLiX(boardID,clickID,0,STATUS_module_id,STATUS_INTERRUPT_ENABLE_MASK_SET,[eventID],null,0)\n\n\n    }\n\n    export function getPinEvents(boardID:BoardID,clickID: ClickID, direction: bBoardEventsMask): number {\n        let buf = pins.createBuffer(2);\n        let functionID = direction == bBoardEventsMask.CN_HIGH ? STATUS_INTERRUPT_CN_HIGH : STATUS_INTERRUPT_CN_LOW\n        return (BLiX(boardID, clickID, 0xFFFF, STATUS_module_id, functionID, null,null, 2).getNumber(NumberFormat.UInt16LE, 0)) \n      \n    }\n    export function pinEventSet(boardID:BoardID,clickID: ClickID, pin: clickIOPin, direction: bBoardEventsMask) {\n        let absoluteClickAddress = boardID*3 + clickID;\n        let functionID = direction == bBoardEventsMask.CN_HIGH ? STATUS_INTERRUPT_ENABLE_CN_HIGH_SET : STATUS_INTERRUPT_ENABLE_CN_LOW_SET\n        BLiX(boardID, clickID, pin, STATUS_module_id, functionID,null, null, 0)\n        digitalReadPin(pin,boardID,clickID)\n        \n    }\n\n    export function pinEventClear(boardID:BoardID,clickID: ClickID, pin: clickIOPin, direction: bBoardEventsMask) {\n        let functionID = direction == bBoardEventsMask.CN_HIGH ? STATUS_INTERRUPT_ENABLE_CN_HIGH_CLR : STATUS_INTERRUPT_ENABLE_CN_LOW_CLR\n        BLiX(boardID, clickID, pin, STATUS_module_id, functionID,null, null, 0)\n    }\n\n\n\n    control.runInParallel(function () { //Create another \"thread\" to run this code\n        let clickMask = 0;\n        let eventMask = 0;\n        let currentClickMask = 0;\n        let currentEventMask = 0;\n        let clickID = 0;\n        let boardID = 0;\n\n\n\n\n        while (1) {\n          \n            if (eventStart) {\n                \n                //callbackArrays.find(function (ob) { return ob.clickID === clickID})\n\n                if (pins.digitalReadPin(DigitalPin.P12) == interruptState.active) //Check to see if the P12 pin is active\n                {\n                    clickMask = getClickEventMask() //Get the click mask (clear P12)\n\n                    while (clickMask > 0) {\n                        for (let clickIndex = 0; clickIndex < 32; clickIndex++) {\n                            if (clickMask == 0) {\n                                break;\n                            }\n                            currentClickMask = (clickMask & (0x0001 << clickIndex));\n                            if (currentClickMask) {\n                                clickMask = clickMask & ~(0x0001 << clickIndex)\n                                boardID = Math.idiv(clickIndex,3)\n                                clickID = clickIndex%3\n\n                                eventMask = getInterruptSource(boardID, clickID)\n                        \n                                for (let eventIndex = 0; eventIndex < 64; eventIndex++) {\n                                    if (eventMask == 0) {\n                                        break;\n                                    }\n                                    if ((eventMask & (0x0001 << eventIndex))) {\n                                   \n\n                                        eventMask = eventMask & ~(0x0001 << eventIndex)\n                                        currentEventMask = 0x0001 << eventIndex\n                                        if(currentEventMask == bBoardEventsMask.CN_HIGH||currentEventMask == bBoardEventsMask.CN_LOW)\n                                        {\n                                            let pinsCNActive = getPinEvents(boardID,clickID, currentEventMask)\n                                            \n                                            for(let i=0;i<16;i++)\n                                            {\n                                                if(pinsCNActive==0)\n                                                {\n                                                    break;\n                                                }\n                                                if(pinsCNActive  & (0x0001 << i))\n                                                {\n                                              \n                                                    control.raiseEvent(getbBoardEventBusSource(getBoardID(clickIndex),getClickID(clickIndex),eventIndex),0x01<<i)\n                                                    pinsCNActive = pinsCNActive & ~(0x0001 << i)\n                                                \n                                                }\n                                            }\n                                            \n                                        }\n                                        else\n                                        {\n                                            control.raiseEvent(getbBoardEventBusSource(getBoardID(clickIndex),getClickID(clickIndex),eventIndex),0)\n                                        }\n\n                                        \n\n\n                              \n\n                                    }\n                                }\n\n                            }\n\n\n\n\n\n                        }\n\n\n\n                    }\n\n\n                }\n            }\n\n            basic.pause(20);\n        }\n    })\n    function getBoardID(absoluteClickAddress:number)\n    {\n        return Math.idiv(absoluteClickAddress,3)\n    }\n\n    function getClickID(absoluteClickAddress:number)\n    {\n        return absoluteClickAddress%3\n    }\n    export let BLiX_INT_EVENT = 0x8000\n\n\n    export function getbBoardEventBusSource(boardID:BoardID, clickID:ClickID,bBoardEventBusSourceID:number):number\n    {\n\n        return   BLiX_INT_EVENT |bBoardEventBusSourceID<<7 |(boardID*3 + clickID)\n    }\n//16 L1 bits 16 L2 bits 8 clickAddressAbsolute \n\n// Level 1 eventMask = 16 bit \n// Level 2 eventMask = 16 bit\n// boardID/clickID = 8 bit\n\n    export let arrayClick: BoardID[] = []\n\n    //   export let arrayClickList: BoardID[]=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n\n\n\n\n    let AnalogValue = 0\n    let BBOARD_BASE_ADDRESS = 40;\n    let BBOARD_UART_TX_BUFF_SIZE = 128;\n    let actionCount = 0\n\n    let BBOARD_I2C_ADDRESS = 40\n\n\n    let BBOARD_COMMAND_SW_VERSION = 9\n\n    const enum bBoard_Command {\n\n        BBOARD_COMMAND_CLEAR_TX_BUFFER = 1,\n        BBOARD_COMMAND_READ_TX_BUFFER_DATA = 2,\n        BBOARD_COMMAND_READ_TX_BUFFER_SIZE = 3,\n        BBOARD_COMMAND_WRITE_RX_BUFFER_DATA = 4,\n        BBOARD_COMMAND_READ_EVENT_CLICK_MASK = 6,\n        BBOARD_COMMAND_CLEAR_RX_BUFFER = 0,\n        BBOARD_COMMAND_EXECUTE_COMMAND = 7\n\n    }\n\n    // 'Clear BBoard tx buffer' command\n    let CLEAR_BBOARD_TX_BUFFER = pins.createBuffer(1)\n    CLEAR_BBOARD_TX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_CLEAR_TX_BUFFER)\n\n    // 'Clear BBoard rx buffer' command\n    let CLEAR_BBOARD_RX_BUFFER = pins.createBuffer(1)\n    CLEAR_BBOARD_RX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_CLEAR_RX_BUFFER)\n\n    // 'Read BBoard tx buffer size' command\n    let READ_TX_BUFFER_SIZE = pins.createBuffer(1)\n    READ_TX_BUFFER_SIZE.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_READ_TX_BUFFER_SIZE)\n\n    // 'Execute BBoard command' command\n    let EXECUTE_BBOARD_COMMAND = pins.createBuffer(1)\n    EXECUTE_BBOARD_COMMAND.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_EXECUTE_COMMAND)\n\n    // 'Read BBoard TX buffer' command\n    let READ_BBOARD_TX_BUFFER = pins.createBuffer(1)\n    READ_BBOARD_TX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_READ_TX_BUFFER_DATA)\n\n    // 'Read BBoard Event Click Mask' command\n    let READ_EVENT_CLICK_MASK = pins.createBuffer(1)\n    READ_EVENT_CLICK_MASK.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_READ_EVENT_CLICK_MASK)\n\n\n\n\n    // Module Ids\n    let GPIO_module_id = 1\n    let UART_module_id = 2\n    let I2C_module_id = 4\n    let SPI_module_id = 5\n    let PWM_module_id = 8\n    let ADC_module_id = 9\n    let STATUS_module_id = 0x10\n\n    // STATUS Ids\n    let Knock_Knock_id = 1\n    let FIRMWARE_VERSION_id = 2\n    let STATUS_INTERRUPT = 0x05\n    let STATUS_INTERRUPT_ENABLE_MASK = 0x06 //Used to set/clear any of the 64 possible interrupt sources that will trigger the P12 Interrupt Pin\n    let STATUS_INTERRUPT_ENABLE_MASK_SET = 0x07 //Used to set any of the 64 possible interrupt sources that will trigger the P12 Interrupt Pin\n    let STATUS_INTERRUPT_ENABLE_MASK_CLR = 0x08 //Used to clear any of the 64 possible interrupt sources that will trigger the P12 Interrupt Pin\n    let STATUS_INTERRUPT_CN_HIGH = 0x09 //Query the pin(s) that have caused the CN High Flag to be set\n    let STATUS_INTERRUPT_ENABLE_CN_HIGH = 0x0A //Set/Clear which pin(s) can trigger a CN High Interrupt event\n    let STATUS_INTERRUPT_ENABLE_CN_HIGH_SET = 0x0B //Set which pin(s) can trigger a CN High Interrupt event\n    let STATUS_INTERRUPT_ENABLE_CN_HIGH_CLR = 0x0C //Clear which pin(s) can trigger a CN High Interrupt event\n    let STATUS_INTERRUPT_CN_LOW = 0x0D //Query the pin(s) that have caused the CN High Flag to be set\n    let STATUS_INTERRUPT_ENABLE_CN_LOW = 0x0E //Set/Clear which pin(s) can trigger a CN Low Interrupt event\n    let STATUS_INTERRUPT_ENABLE_CN_LOW_SET = 0x0F//Set which pin(s) can trigger a CN Low Interrupt event\n    let STATUS_INTERRUPT_ENABLE_CN_LOW_CLR = 0x10 //Clear which pin(s) can trigger a CN Low Interrupt event\n\n\n    //BLiXel Function IDs\n\n    let BLiXel_ADD = 0x01\n    let BLiXel_REMOVE = 0x02\n    let BLiXel_SHOW = 0x03\n    let BLiXel_HIDE = 0x04\n    let BLiXel_CLEAR = 0x05\n    let BLiXel_STRIP_WRITE_SINGLE_DATA = 0x06\n    let BLiXel_STRIP_WRITE_BUFFER_DATA = 0x07\n    let BLiXel_STRIP_READ_SINGLE_DATA = 0x08\n    let BLiXel_STRIP_READ_BUFFER_DATA = 0x09\n\n    // ADC Function Ids\n    let ADC_READ_id = 16\n\n\n\n\n    export function sendCommand(clickPin: clickIOPin, moduleID: number, functionID: number, boardID: BoardID, clickID: ClickID) {\n\n        //Derive the address of the click port (0= on board 1=A 2=B on b.Board)(3 = on board, 4=A, 5=B on Expansion 1 etc)\n        BLiX(boardID, clickID, clickPin, moduleID, functionID, null,null, 0)\n\n    }\n\n\n    export function sendData(clickPin: clickIOPin, moduleID: number, functionID: number, data: number[], boardID: BoardID, clickID: ClickID) {\n\n        BLiX(boardID, clickID, clickPin, moduleID, functionID, data,null, 0)\n        //Derive the address of the click port (0= on board 1=A 2=B on b.Board)(3 = on board, 4=A, 5=B on Expansion 1 etc)\n\n\n    }\n    export function readData16(clickPin: clickIOPin, moduleID: number, functionID: number, data: number[], boardID: BoardID, clickID: ClickID): number {\n\n\n\n\n        let TX_BUFFER_DATAbuf = BLiX(boardID, clickID, clickPin, moduleID, functionID, data,null, 2)\n        return (TX_BUFFER_DATAbuf.getUint8(0) + TX_BUFFER_DATAbuf.getUint8(1) * 256)\n\n\n\n    }\n\n    export function sendBuffer(clickPin: clickIOPin, moduleID: number, functionID: number, buff: Buffer, boardID: BoardID, clickID: ClickID) {\n\n        BLiX(boardID, clickID, clickPin, moduleID, functionID, null,buff, 0)\n\n\n\n\n\n\n    }\n\n\n\n\n\n\n\n\n\n\n\n\n\n    export function analogPitch(frequency: number, ms: number, boardID: BoardID, clickID: ClickID) {\n\n        if (frequency <= 0) {\n\n            setDuty(clickPWMPin.PWM, 0, boardID, clickID);\n        } else {\n            setDuty(clickPWMPin.PWM, 70, boardID, clickID);\n            PWMFrequency(clickPWMPin.PWM, frequency * 100, boardID, clickID);\n        }\n\n        if (ms > 0) {\n            control.waitMicros(ms * 1000)\n\n            setDuty(clickPWMPin.PWM, 0, boardID, clickID);\n            // TODO why do we use wait_ms() here? it's a busy wait I think\n            basic.pause(5);\n        }\n\n\n    }\n\n\n    //% blockId=set_Duty\n    //% block=\"set duty cycle on pin $clickPin to $duty on $boardID $clickID\"\n    //% block.loc.fr=\"Définir le rapport cyclique sur la broche $clickPin à $duty sur $boardID $clickID\",\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% duty.min=0 duty.max=100 \n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PWMSettings\"\n    //% group=\"PWM\"\n    export function setDuty(clickPin: clickPWMPin, duty: number, boardID: BoardID, clickID: ClickID) {\n\n        let dutyCycle = 0;\n        duty = duty / 100;\n        dutyCycle = duty * 1000; //the BLiX chip expects a value of 0-1000\n\n        BLiX(boardID, clickID, parseInt(clickPin.toString()), PWM_module_id, PWM_Duty_id,[dutyCycle & 0x00FF, (dutyCycle & 0xFF00) >> 8],null, 0)\n\n\n\n\n\n\n\n    }\n\n    //%blockId=PWM_frequency\n    //% block=\"set PWM frequency on pin $clickPin to $PWMfreq on $boardID $clickID\"\n    //% block.loc.fr=\"définir fréquence PWM sur broche $clickPin à $PWMfreq sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PWMSettings\"\n    //% group=\"PWM\"\n    export function PWMFrequency(clickPin: clickPWMPin, PWMfreq: number, boardID: BoardID, clickID: ClickID) {\n        BLiX(boardID, clickID, parseInt(clickPin.toString()), PWM_module_id, PWM_Freq_id, [PWMfreq & 0x000000FF, (PWMfreq & 0x0000FF00) >> 8, (PWMfreq & 0x00FF0000) >> 16, (PWMfreq & 0xFF000000) >> 24],null, 0)\n    }\n\n\n\n\n\n    /// End of PWM settings\n\n\n\n\n\n    function getUARTDataSize(boardID: BoardID, clickID: ClickID): number {\n\n\n\n        let TX_BUFFER_DATAbuf = BLiX(boardID, clickID, 0, UART_module_id, UART_STATUS, null,null, 4)\n        let UART_RX_SIZE = TX_BUFFER_DATAbuf.getUint8(0) + TX_BUFFER_DATAbuf.getUint8(1) * 256\n        // UART_TX_SIZE = TX_BUFFER_DATAbuf.getUint8(2) + TX_BUFFER_DATAbuf.getUint8(3) * 256\n\n\n        return UART_RX_SIZE;\n    }\n\n\n    export function clearUARTRxBuffer( boardID: BoardID, clickID: ClickID) {\n\n        BLiX(boardID, clickID, 0, UART_module_id, UART_CLEAR_RX_DATA, null,null, 0)\n\n\n\n    }\n\n    export function clearUARTMPCR(){\n        CLEAR_BBOARD_TX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_CLEAR_TX_BUFFER)\n        CLEAR_BBOARD_RX_BUFFER.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_CLEAR_RX_BUFFER)\n    }\n\n\n    //% blockId=is_UART_Data_Avail\n    //% block=\"is UART data available on $boardID $clickID?\"\n    //% block.loc.fr=\"les données UART sont disponibles sur $boardID $clickID?\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"UARTSettings\"\n    //% group=\"UART\"\n\n    export function isUARTDataAvailable(boardID: BoardID, clickID: ClickID): boolean {\n\n\n\n        if (getUARTDataSize(boardID, clickID)) {\n\n            return true;\n\n        }\n        return false;\n    }\n\n    /**\n    * Set the UART baud rate\n    * @param baud the baud rate, eg: 115200\n    */\n    //% weight=4 advanced=false\n    //% blockId=bBoard_UART_frequency \n    //% block=\"set UART baud to $baud on $boardID $clickID\"\n    //% block.loc.fr=\"définir UART baud à $baud sur $boardID $clickID\"\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% baud.delf=115200\n    //% defl=\"UARTSettings\"\n    //% group=\"UART\"\n    export function UARTFrequency(baud: number, boardID: BoardID, clickID: ClickID) {\n\n        // (Note: BRG = Fp / baudrate)\n        //(Note: Fp = 40000000)\n\n        let Fp = 40000000; //Frequency of the dspic Peripheral clock\n        let brg = Fp / baud\n        BLiX(boardID, clickID, 0, UART_module_id, UART_BAUD_id, [brg & 0x00FF, (brg & 0xFF00) >> 8],null, 0)\n\n\n\n    }\n\n    //% blockId=send_UART_Buffer\n    //% block=\"send buffer $buff on $boardID $clickID\"\n    //% block.loc.fr=\"envoyer un message $buff sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"UARTSettings\"\n    //% group=\"UART\"\n\n    export function UARTSendBuffer(buff: Buffer, boardID: BoardID, clickID: ClickID) {\n        let remainingBytes = buff.length\n        let messageLength = 0\n        let messageIndex = 0;\n       let buffSlice:Buffer\n        while (remainingBytes) {\n                messageLength = Math.min(remainingBytes + 6, 128);\n        \n            \n            \n               buffSlice = buff.slice(messageIndex*128 ,messageLength)\n               BLiX(boardID, clickID, 0, UART_module_id, UART_WRITE_TX_DATA,null, buffSlice, 0)\n               remainingBytes = remainingBytes - messageLength + 6;\n               messageIndex++;\n            }\n\n         \n        \n        \n\n\n        \n\n\n    }\n\n\n\n\n\n    //% blockId=get_UART_Byte\n    //% block=\"read string on $boardID $clickID\"\n    //% block.loc.fr=\"lire phrase sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"UARTSettings\"\n    //% group=\"UART\"\n\n    export function getUARTData(boardID: BoardID, clickID: ClickID): string {\n\n\n        let UART_Rx_BuffSize = getUARTDataSize(boardID, clickID);\n\n        if (UART_Rx_BuffSize > 0) {\n            return BLiX(boardID, clickID, 0, UART_module_id, UART_READ_RX_DATA_BYTES, [UART_Rx_BuffSize & 0x00FF, (UART_Rx_BuffSize & 0xFF00) >> 8],null, UART_Rx_BuffSize).toString()\n        }\n        return \"\"\n\n\n    }\n\n    //% blockId=send_UART_String\n    //% block=\"send string $UARTString on $boardID $clickID\"\n    //% block.loc.fr=\"envoyer phrase $UARTString sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"UARTSettings\"\n    //% group=\"UART\"\n\n    export function UARTSendString(UARTString: string, boardID: BoardID, clickID: ClickID) {\n        UARTSendBuffer(control.createBufferFromUTF8(UARTString),boardID,clickID)\n\n    }\n\n\n\n\n\n\n    //% blockId=set_IO_direction\n    //% block=\"set pin $clickPin to $direction on $boardID $clickID\"\n    //% block.loc.fr=\"définir briche $clickPin à $direction sur $boardID $clickID\",\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"Pins\"\n    //% group=\"Pins\"\n    export function setIODirection(clickPin: clickIOPin, direction: clickIODirection, boardID: BoardID, clickID: ClickID) {\n\n        let directionID = direction == clickIODirection.output ? DIRCLR_id : DIRSET_id\n\n        BLiX(boardID, clickID, clickPin, GPIO_module_id, directionID, [directionID],null, 0)\n\n\n\n\n\n    }\n\n    //% blockId=Open_Drain_set\n    //% block=\"$ODC_Enable open drain on $clickPin on $boardID $clickID\"\n    //% block.loc.fr=\"$ODC_Enable l’ouverture du drain sur $clickPin sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PinSettings\"\n    //% group=\"Pins\"\n    export function setOpenDrain(ODC_Enable: ODCEnable, clickPin: clickIOPin, boardID: BoardID, clickID: ClickID) {\n\n        BLiX(boardID, clickID, clickPin, GPIO_module_id, ODC_id,[ODC_Enable],null, 0)\n\n\n\n\n\n    }\n\n\n    //% blockId=GPIO_pull_set\n    //% block=\"set pin $clickPin to $pullDirection on $boardID $clickID\"\n    //% block.loc.fr=\"définir broche $clickPin à $pullDirection sur $boardID $clickID\",\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PinSettings\"\n    //% group=\"Pins\"\n\n    export function setPullDirection(clickPin: clickIOPin, pullDirection: IOPullDirection, boardID: BoardID, clickID: ClickID) {\n        BLiX(boardID, clickID, clickPin, GPIO_module_id, GPIOPULLENSET_id, [pullDirection],null, 0)\n\n\n\n    }\n\n\n\n\n\n    //% blockId=digital_Read_Pin\n    //% block=\"digital read pin $clickPin on $boardID $clickID\"\n    //% block.loc.fr=\"lire la briche digitale $clickPin sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PinSettings\"\n    //% group=\"Pins\"\n    export function digitalReadPin(clickPin: clickIOPin, boardID: BoardID, clickID: ClickID): number {\n\n        let TX_BUFFER_DATAbuf = BLiX(boardID, clickID, clickPin, GPIO_module_id, GPIO_id, null,null, 2)\n\n        let pinStatus = (TX_BUFFER_DATAbuf.getUint8(0) + TX_BUFFER_DATAbuf.getUint8(1) * 256) & clickPin;\n\n        return pinStatus == 0 ? 0 : 1\n\n    }\n\n    //% blockId=write_pin\n    //% block=\"write pin $clickPin to $value on $boardID $clickID\"\n    //% block.loc.fr=\"écrire broche $clickPin à $value sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PinSettings\"\n    //% group=\"Pins\"\n\n    export function writePin(value: number, clickPin: clickIOPin, boardID: BoardID, clickID: ClickID) {\n\n        if (value > 0) {\n            setPin(clickPin, boardID, clickID);\n\n        }\n\n        else {\n            clearPin(clickPin, boardID, clickID);\n        }\n\n\n    }\n\n\n\n\n\n    export function setPin(clickPin: clickIOPin, boardID: BoardID, clickID: ClickID) {\n\n        BLiX(boardID, clickID, clickPin, GPIO_module_id, SET_id, null,null, 0)\n        // 'Set clickboard output pins values HIGH' command\n\n    }\n\n\n\n    export function clearPin(clickPin: clickIOPin, boardID: BoardID, clickID: ClickID) {\n\n        // 'Set clickboard output pins values LOW' command\n\n        BLiX(boardID, clickID, clickPin, GPIO_module_id, CLR_id, null,null, 0)\n\n\n\n\n\n    }\n\n    //% blockId=Analog_Read\n    //% block=\"analog read pin %clickPin on $boardID $clickID\"\n    //% block.loc.fr=\"lire la broche analogue %clickPin sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=false\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"PinSettings\"\n    //% group=\"Pins\"\n\n    export function analogRead(clickPin: clickADCPin, boardID: BoardID, clickID: ClickID): number {\n\n\n        let TX_BUFFER_DATAbuf = BLiX(boardID, clickID, parseInt(clickPin.toString()), ADC_module_id, ADC_READ_id,null, null, 2)\n\n\n        return (TX_BUFFER_DATAbuf.getUint8(0) + TX_BUFFER_DATAbuf.getUint8(1) * 256)\n\n\n\n    }\n\n\n\n\n\n\n    ///END of class PinSettings\n\n\n\n    /// End of pinsettings functions\n\n\n    //% blockId=getFirmwareVersion\n    //% block=\"Get firmware 💟 dsPIC version on $boardID\"\n    //% block.loc.fr=\"Obtenez la version du firmware 💟 du dsPIC sur $boardID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% group=\"_____________\"\n\n\n    export function getFirmwareVersion(boardID:BoardID): number {\n      serial.writeLine(\"->\"+\" \")\n        let VERSIONBuffer = BLiX(boardID, 0, 0, STATUS_module_id, FIRMWARE_VERSION_id,null,null, 2)\n\n        let versionInt = VERSIONBuffer.getUint8(1);\n        let versionDec = VERSIONBuffer.getUint8(0);\n        serial.writeLine(\"💟 dsPIC version: \"+versionInt + versionDec / 100+\" \")\n        return (versionInt + versionDec / 100);\n    }\n\n    //% blockId=getClickEventMask\n    //% block=\"Get click event mask\"\n    //% block.loc.fr=\"Obtenir click event mask\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% group=\"_____________\"\n\n\n    export function getClickEventMask(): number {\n\n        let analogValue = 0;\n\n\n        let interruptMask = 0\n\n\n\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_RX_BUFFER, false)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_TX_BUFFER, false)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, READ_EVENT_CLICK_MASK, false)\n        //control.waitMicros(500)\n        //pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, READ_BBOARD_TX_BUFFER, false)\n        let MASKBuffer = pins.i2cReadBuffer(BBOARD_I2C_ADDRESS, 4, false)\n\n\n        interruptMask = MASKBuffer.getUint8(0) | MASKBuffer.getUint8(1) << 8 | MASKBuffer.getUint8(2) << 16 | MASKBuffer.getUint8(3) << 24\n        control.waitMicros(500)\n\n\n\n        return interruptMask;\n\n    }\n\n\n    //% blockId=getInterruptSource\n    //% block=\"Get Interrupt source on $boardID $clickID\"\n    //% block.loc.fr=\"Obtenir la source d'interruption sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% group=\"_____________\"\n\n\n    export function getInterruptSource(boardID: BoardID, clickID: ClickID): number {\n        let clickNumSlot = boardID * 3 + clickID\n\n        let interruptMask = 0\n\n        let GET_INTERRUPT_COMMAND = pins.createBuffer(4)\n        GET_INTERRUPT_COMMAND.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_WRITE_RX_BUFFER_DATA)\n        GET_INTERRUPT_COMMAND.setNumber(NumberFormat.UInt8LE, 1, clickNumSlot)\n        GET_INTERRUPT_COMMAND.setNumber(NumberFormat.UInt8LE, 2, STATUS_module_id)\n        GET_INTERRUPT_COMMAND.setNumber(NumberFormat.UInt8LE, 3, STATUS_INTERRUPT)\n\n\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_RX_BUFFER, false)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_TX_BUFFER, false)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, GET_INTERRUPT_COMMAND, false)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, EXECUTE_BBOARD_COMMAND, false)\n        control.waitMicros(500)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, READ_BBOARD_TX_BUFFER, false)\n        let MASKBuffer = pins.i2cReadBuffer(BBOARD_I2C_ADDRESS, 8, false)\n\n        interruptMask = MASKBuffer.getUint8(0) | MASKBuffer.getUint8(1) << 8 | MASKBuffer.getUint8(2) << 16 | MASKBuffer.getUint8(3) << 24 | MASKBuffer.getUint8(4) << 32 | MASKBuffer.getUint8(5) << 40 | MASKBuffer.getUint8(6) << 48 | MASKBuffer.getUint8(7) << 56\n        control.waitMicros(500)\n\n\n\n        return interruptMask;\n    }\n\n\n\n\n\n\n\n    //% blockId=spi_Write\n    //% block=\"spi write $value on $boardID $clickID\"\n    //% block.loc.fr=\"spi écrire $value sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n\n    export function SPIWrite(value: number, boardID: BoardID, clickID: ClickID) {\n\n\n\n        BLiX(boardID, clickID, 0, SPI_module_id, SPI_WRITE_id, [value],null, 0)\n\n\n    }\n\n\n    //%blockId=spi_Write_array\n    //% block=\"spi write array $arrayValues on $boardID $clickID\"\n    //% block.loc.fr=\"spi noter la liste $arrayValues sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n\n    export function SPIWriteArray(arrayValues: number[], boardID: BoardID, clickID: ClickID) {\n\n\n        BLiX(boardID, clickID, 0, SPI_module_id, SPI_WRITEBULK_id, arrayValues,null, 0)\n\n\n\n\n    }\n    /**\n    * Set the SPI frequency\n    * @param frequency the clock frequency, eg: 1000000\n    */\n    //% help=pins/spi-frequency weight=4 advanced=true\n    //% blockId=bBoard_spi_frequency \n    //% block=\"spi set frequency $frequency on $boardID $clickID\"\n    //% block.loc.fr=\"spi définir la fréquence $frequency sur $boardID $clickID\"\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n    export function spiFrequency(frequency: number, boardID: BoardID, clickID: ClickID) {\n\n        let Fp = 40000000; //Frequency of the dspic Peripheral clock\n        let brgl = (Fp / (2 * frequency)) - 1\n\n        BLiX(boardID, clickID, 0, SPI_module_id, SPI_WRITEBULK_id, [brgl & 0x00FF, (brgl & 0xFF00) >> 8],null, null)\n\n\n        // (Note: BRG = ( Fp / (2 * BaudRate) ) - 1   )\n        // (Note: Fp = 40000000)\n\n\n\n    }\n\n\n    //% blockId=spi_Write_buffer\n    //% block=\"spi write buffer $bufferValues on $boardID $clickID\"\n    //% block.loc.fr=\"spi écrire un message $bufferValues sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n    export function SPIWriteBuffer(bufferValues: Buffer, boardID: BoardID, clickID: ClickID) {\n\n\n\n        BLiX(boardID, clickID, 0, SPI_module_id, SPI_WRITEBULK_id, null,bufferValues, null)\n\n\n\n\n    }\n\n    //%blockId=spi_Mode_Select\n    //% block=\"spi set mode to $mode on $boardID $clickID\"\n    //% block.loc.fr=\"spi définir mode à $mode sur $boardID $clickID\"    \n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n\n    export function SPIModeSelect(mode: SPIMode, boardID: BoardID, clickID: ClickID) {\n        let SPI_CKE = 1\n        let SPI_CKP = 0\n\n\n        switch (mode) {\n            case SPIMode.Mode0:\n                SPI_CKE = 1\n                SPI_CKP = 0\n                break;\n\n            case SPIMode.Mode1:\n                SPI_CKE = 0\n                SPI_CKP = 0\n                break;\n\n            case SPIMode.Mode2:\n                SPI_CKE = 1\n                SPI_CKP = 1\n                break;\n            case SPIMode.Mode3:\n                SPI_CKE = 0\n                SPI_CKP = 1\n                break;\n        }\n\n\n        BLiX(boardID, clickID, 0, SPI_module_id, SPI_CONFIG_id,  [SPI_CKE, SPI_CKP],null, null)\n\n\n\n    }\n\n\n\n    //% blockId=spi_Read\n    //% block=\"spi read $numBytes bytes on $boardID $clickID\"\n    //% block.loc.fr=\"spi lire $numBytes bytes sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n\n    export function SPIread(numBytes: number, boardID: BoardID, clickID: ClickID): number {\n\n\n       \n        return BLiX(boardID, clickID, 0, SPI_module_id, SPI_READ_id,[numBytes],null, numBytes).getUint8(0)\n\n\n\n\n    }\n\n    /**\n    * Set the SPI Chip Select Pin\n    */\n    //% weight=4 advanced=true\n    //% blockId=bBoard_spi_CS \n    //% block=\"spi assign CS Pin to pin $clickPin on $boardID $clickID\"\n    //% block.loc.fr=\"spi assigner Broche CS à broche $clickPin sur $boardID $clickID\"\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"SPISettings\"\n    //% group=\"SPI\"\n\n    export function spiCS(clickPin: clickIOPin, boardID: BoardID, clickID: ClickID) {\n\n\n\n\n        BLiX(boardID, clickID, clickPin, SPI_module_id, SPI_CONFIG_CS_id, null,null, 0)\n\n\n\n    }\n\n\n\n\n\n\n\n    ///END  of class SPISettings\n\n\n\n    //End of SPIsetting functions\n\n//MPCR\n   /**\n     * Read one number from an I2C address.\n     */\n    //% blockId=pins_i2c_readnumber block=\"i2c read number at address %address|of format %format|repeated %repeated\"\n    export function i2cReadNumberMP(address: number, format: NumberFormat,boardID: BoardID, clickID: ClickID): number {\n        let numBytes = pins.sizeOf(format);\n        let buffer = BLiX(boardID, clickID, 0, I2C_module_id, I2C_READ_NO_MEM_id, [address, numBytes], null, numBytes);\n        return buffer.getNumber(format, 0);\n    }\n\n    //% blockId=i2c_ReadNoMem_9bit\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% block=\"i2c read 9-bit $numBytes bytes at i2c address $address on $boardID $clickID\"\n    //% block.loc.fr=\"i2c lire 9 bits $numBytes bytes à l’adresse i2c $address sur $boardID $clickID\"\n    //% weight=6\n    //% shadow=variables_get\n    //% defl=\"I2CSettings\"\n    //% group=\"I2C\"\n\n    export function I2CreadBuffMP(address: number, numBytes: number, boardID: BoardID, clickID: ClickID): Buffer {\n        return BLiX(boardID, clickID, 0, I2C_module_id, I2C_READ_NO_MEM_id, [address, numBytes & 0x1FF], null, numBytes);\n    }\n\n//\n\n\n\n    //%blockId=i2c_ReadNoMem\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% block=\"i2c read $numBytes bytes at i2c address $address on $boardID $clickID\" \n    //% block.loc.fr=\"i2c lire $numBytes bytes à l’adresse i2c $address sur $boardID $clickID\"\n    //% weight=6\n    //% shadow=variables_get\n    //% defl=\"I2CSettings\"\n    //% group=\"I2C\"\n\n\n    export function I2CreadNoMem(address: number, numBytes: number, boardID: BoardID, clickID: ClickID): Buffer {\n\n\n\n\n\n       \n        return BLiX(boardID, clickID, 0, I2C_module_id, I2C_READ_NO_MEM_id, [address, numBytes],null, numBytes)\n\n\n\n\n\n    }\n\n\n\n    //%blockId=i2c_Read\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% block=\"i2c read $numBytes bytes |at memory address $memAddress |at i2c address $address on $boardID $clickID\" \n    //% block.loc.fr=\"i2c lire $numBytes bytes |à l’adresse enregistrée $memAddress |at i2c adresse $address sur $boardID $clickID\"\n    //% weight=6\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"I2CSettings\"\n    //% group=\"I2C\"\n\n\n\n    export function I2Cread(address: number, memAddress: number, numBytes: number, boardID: BoardID, clickID: ClickID): number {\n\n\n\n   \n        return BLiX(boardID, clickID, 0, I2C_module_id, I2C_READ_id, [address, memAddress, numBytes],null, numBytes).getUint8(0)\n\n\n\n    }\n\n    /**\n     * Write one number to a 7-bit I2C address.\n     */\n    //% blockId=i2c_write_number\n    //% block=\"i2c write number $value|to i2c address $address|of format $format | repeated $repeated on $boardID $clickID\" weight=6\n    //% block.loc.fr=\"i2c écrire nombre $value|to i2c adresse $address|du format $format | répété $repeated sur $boardID $clickID\"\n    //% blockGap=7\n    //% weight=90   color=#9E4894 icon=\"\"\n    //% advanced=true\n    //% blockNamespace=bBoard_Control\n    //% shadow=variables_get\n    //% defl=\"I2CSettings\"\n    //% group=\"I2C\"\n\n    export function i2cWriteNumber(address: number, value: number, format: NumberFormat, repeated: boolean, boardID: BoardID, clickID: ClickID) {\n\n        let tempBuf = pins.createBuffer(pins.sizeOf(format))\n        let disableStop = repeated == true ? 1 : 0;\n        tempBuf.setNumber(format, 0, value)\n\n        let concatBuff = Buffer.concat([pins.createBufferFromArray([address, disableStop]), tempBuf]) //Add the two control bytes to the beginning of the buffer\n        BLiX(boardID, clickID, 0, I2C_module_id, I2C_WRITE_id,null, concatBuff, 0)\n\n    }\n\n\n    /**\n    * Write a buffer to a 7-bit I2C address.\n    */\n    //% help=pins/i2c-write-number blockGap=8\n    //% blockNamespace=bBoard_Control\n\n    export function i2cWriteBuffer(address: number, buf: Buffer, boardID: BoardID, clickID: ClickID) {\n\n\n        let concatBuff = Buffer.concat([pins.createBufferFromArray([address, 0]), buf]) //Add the two control bytes to the beginning of the buffer\n        BLiX(boardID, clickID, 0, I2C_module_id, I2C_WRITE_id, null,concatBuff, 0)\n\n\n    }\n\n    ///END of I2CSettings\n\n\n\n\n    ///  End of I2C settings functions\n\n\n\n\n\n    export function BLiX(boardID: BoardID, clickID: ClickID, clickPin: clickIOPin, moduleID: number, functionID: number, dataA:number[],dataB: Buffer, returnBytes: number): Buffer {\n        let clickAddress = boardID * 3 + clickID;\n        let readDataDelay = 500; //500us delay standard\n        let BLiXCommandBuff = pins.createBuffer(6)\n        let BLiXDataBuff: Buffer;\n\n\n       \n        BLiXCommandBuff.setNumber(NumberFormat.UInt8LE, 0, bBoard_Command.BBOARD_COMMAND_WRITE_RX_BUFFER_DATA)\n        BLiXCommandBuff.setNumber(NumberFormat.UInt8LE, 1, clickAddress)\n        BLiXCommandBuff.setNumber(NumberFormat.UInt8LE, 2, moduleID)\n        BLiXCommandBuff.setNumber(NumberFormat.UInt8LE, 3, functionID)\n        BLiXCommandBuff.setNumber(NumberFormat.UInt8LE, 4, clickPin & 0x00FF)\n        BLiXCommandBuff.setNumber(NumberFormat.UInt8LE, 5, (clickPin & 0xFF00) >> 8)\n\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_RX_BUFFER, false)\n       \n\n        if (dataA||dataB) {\n            \n            if(dataA)\n            {\n                dataB = pins.createBufferFromArray(dataA)\n            }\n        \n\n            BLiXCommandBuff = Buffer.concat([BLiXCommandBuff, dataB])\n        }\n        if (returnBytes > 0) {\n            control.waitMicros(500)\n            pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_TX_BUFFER, false);\n            control.waitMicros(500)\n        }\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, BLiXCommandBuff, false)\n        control.waitMicros(500)\n        pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, EXECUTE_BBOARD_COMMAND, false)\n        if (returnBytes > 0) {\n            if(moduleID==moduleIDs.I2C_module_id)\n            {\n                readDataDelay = 50000 + 100*(returnBytes+1); // With a 100KHZ I2C peripheral it took roughly 500uS for the I2C read to begin and each byte took roughly 100uS + the Address frame (100uS)\n            }\n            // pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, CLEAR_BBOARD_RX_BUFFER, false)\n            control.waitMicros(readDataDelay)\n            pins.i2cWriteBuffer(BBOARD_I2C_ADDRESS, READ_BBOARD_TX_BUFFER, false)\n            control.waitMicros(500)\n            return pins.i2cReadBuffer(BBOARD_I2C_ADDRESS, returnBytes, false)\n\n        }\n   \n             control.waitMicros( 5000 + 100*(BLiXCommandBuff.length+1) )\n        \n        return null\n\n    }\n\n\n\n}",
             "bBoardBlixel.ts": "/**\n * Well known colours for a BLixel strip\n */\n enum BLiXelcolours {\n    //% block=red\n    //% block.loc.fr=rouge\n    Red = 0xFF0000,\n    //% block=orange\n    Orange = 0xFFA500,\n    //% block=yellow\n    Yellow = 0xFFFF00,\n    //% block=green\n    Green = 0x00FF00,\n    //% block=blue\n    Blue = 0x0000FF,\n    //% block=indigo\n    Indigo = 0x4b0082,\n    //% block=violet\n    Violet = 0x8a2be2,\n    //% block=purple\n    Purple = 0xFF00FF,\n    //% block=white\n    White = 0xFFFFFF,\n    //% block=black\n    Black = 0x000000\n}\n\n\n/**\n * Well known colours for a BLixel strip\n */\nenum BLiXelIndex {\n    //% block=1\n    one = 0,\n    //% block=2\n    two = 1,\n    //% block=3\n    three = 2,\n    //% block=4\n    four = 3,\n    //% block=5\n    five = 4\n  \n}\n    /**\n     * Different modes for RGB or RGB+W BLiXel strips\n    */\n     enum BLiXelMode {\n        //% block=\"RGB (GRB format)\"\n        RGB = 0,\n        //% block=\"RGB+W\"\n        RGBW = 1,\n        //% block=\"RGB (RGB format)\"\n        RGB_RGB = 2\n    }\n\n\n/**\n * export functions to operate BLiXel strips.\n */\n//% weight=400 \n//% color=#9E4894 \n//% icon=\"\\uf110\"\n//% labelLineWidth=1001\n//% advanced=true\nnamespace BLiXel {\n    \n    let currentBLiXelBuffer = pins.createBuffer(5*3);\n    let currentColour:BLiXelcolours = null\n    let currentBrightness = 100\n    let bBoardRGBMode = BLiXelMode.RGB\n\n   blixelsOff(); //Need to set all BLiXels to off whenever we start up to avoid reprogramming micro:bit but BLiXels still on on b.Board from old code\n\n\n     \n//     // let numBlixels = 5;\n\n\n         /**\n         * Displays a vertical bar graph based on the `value` and `high` value.\n         * If `high` is 0, the chart gets adjusted automatically.\n         * @param value current value to plot\n         * @param max maximum value, eg: 100\n         * @param min maximum value, eg: 0\n         */\n        //% blockId=BLiXel_show_bar_graph \n        //% block=\"show BLiXel bar graph of variable $value|with max value $max ||min value $min\"\n        //% block.loc.fr=\"montrer BLiXel diagramme à barres de la variable $value|avec valeur max $max ||valeur min $min\"\n        //% weight=300\n        //% min.defl=0\n        //% expandableArgumentMode=\"toggle\"\n        export function showBarGraph(value: number, max: number, min?:number): void {\n \n            //TODO: Make change on BLiX to allow minimum signed value\n            let dynamicRange = max - min\n            if(value < min)\n            {\n                value = min\n            }\n            if (value>max)\n            {\n                value = max\n            }\n            let blixelsToLight = Math.round(MAX_BBOARD_BLIXELS*((value-min)/dynamicRange))\n            //let blixBuffer = pins.createBuffer(4);\n            //blixBuffer.setNumber(NumberFormat.UInt16LE, 0, max)\n            //blixBuffer.setNumber(NumberFormat.UInt16LE, 2, value)\n            if(!currentColour) //If a current colour has not been set\n            {\n                currentColour = BLiXelcolours.Purple\n                showColour(currentColour)\n            }\n\n        \n            let red = (unpackR(currentColour)*currentBrightness)>>8;\n            let green = (unpackG(currentColour)*currentBrightness)>>8; \n            let blue = (unpackB(currentColour)*currentBrightness)>>8;\n            if(bBoardRGBMode == BLiXelMode.RGB_RGB)\n            {\n                 red = (unpackG(currentColour)*currentBrightness)>>8;\n                 green = (unpackR(currentColour)*currentBrightness)>>8;\n            }\n            \n            for(let i =0;i<MAX_BBOARD_BLIXELS;i++)\n            {\n                if(i>=(blixelsToLight))\n                {\n                    currentBLiXelBuffer.fill(0,i*3)\n                    break;\n                }\n                currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,i*3,red)\n                currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,i*3+1,green)\n                currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,i*3+2,blue)\n            }\n            sendBLiXelBuffer(currentBLiXelBuffer)\n           // bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_BAR_GRAPH, null,blixBuffer,0)\n            show();\n\n            }\n           const MAX_BBOARD_BLIXELS = 5\n         /**\n         * Shows all LEDs to a given colour (range 0-255 for r, g, b).\n         * @param rgb RGB colour of the LED\n         */\n        //% blockId=\"BLiXel_colour\" \n        //% block=\"set all BLiXels to $rgb=BLiXel_colours\" blockGap=9\n        //% block.loc.fr=\"définir tous BLiXels à $rgb=BLiXel_colours\"\n        //% rgb.shadow=\"colorNumberPicker\"\n        //% weight=400 \n        export function  showColour(rgb: number ) {\n            rgb = rgbModeApply(rgb);\n            let colourBuffer = pins.createBuffer(4);\n            colourBuffer.setNumber(NumberFormat.UInt32LE, 0, rgb)\n            for(let i=0; i<MAX_BBOARD_BLIXELS;i++)\n            {\n                currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,i*3,(rgb&0xFF0000)>>16)\n                currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,i*3+1,(rgb&0xFF00)>>8)\n                currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,i*3+2,rgb&0xFF)\n            }\n            currentColour = rgb;\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_COLOUR, null,colourBuffer,0)\n            show();\n  \n\n        }\n                 /**\n         * Turn off all BLiXels\n         * \n         */\n        //% blockId=\"BLiXel_off\" \n        //% block=\"turn off all BLiXels\" \n        //% block.loc.fr=\"fermer tous les BLiXels\" \n        //% blockGap=9\n        //% weight=10\n        export function  blixelsOff() {\n\n            let colourBuffer = pins.createBuffer(4);\n            colourBuffer.setNumber(NumberFormat.UInt32LE, 0, 0)\n            currentBLiXelBuffer.fill(0)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_COLOUR, null,colourBuffer,0)\n            show();\n  \n\n        }\n\n          /**\n     * Gets the index of a BLiXel\n     */\n    //% blockGap=9\n    //% blockId=\"BLiXel_Index\" \n    //% block=\"%index\"\n    //% block.loc.fr=\"%index\"\n    //% blockHidden=true \n    //% advanced=true\n      export function blixel_index(index: BLiXelIndex): number {\n        return index;\n    }\n              /**\n     * Correct a BLiXeL Manufacturer error for colours on certain bBoards\n     */\n    //% blockGap=9\n    //% blockId=\"BLiXEL_colourCorrection\"\n    //% block=\"BLiXel colour correction\" \n    //% block.loc.fr=\"BLiXel corriger les couleurs\"\n    //% advanced=true\n    export function blixelColourCorrection()\n    {\n        bBoardRGBMode = BLiXelMode.RGB_RGB;\n    }\n    export function rgbModeApply(rgb:number):number\n    {\n        let red = unpackR(rgb);\n        let green = unpackG(rgb);\n        let blue = unpackB(rgb);\n\n        if(bBoardRGBMode == BLiXelMode.RGB_RGB)\n        {\n           return packRGB(green,red,blue);\n        }\n        else\n        {\n            return rgb\n        }\n    }\n         /**\n         * Set LED to a given colour (range 0-255 for r, g, b).\n         * You need to call ``show`` to make the changes visible.\n         * @param pixeloffset position of the BLiXel in the strip\n         * @param rgb RGB colour of the LED\n         */\n        //% blockId=\"BLiXel_set_pixel_colour\" \n        //% block=\"set BLiXel $pixeloffset=BLiXel_Index to $rgb=BLiXel_colours\"\n        //% block.loc.fr=\"définir BLiXel $pixeloffset=BLiXel_Index to $rgb=BLiXel_colours\"\n        //% blockGap=9\n        //% rgb.shadow=\"colorNumberPicker\"\n        //% advanced=false\n        //% weight=200 \n        export function setPixelColour(pixeloffset: number, rgb: number): void {\n            rgb = rgbModeApply(rgb);\n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixeloffset >= 5)\n            {\n                pixeloffset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0, rgb)\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixeloffset)\n            currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,pixeloffset*3,(rgb&0xFF0000)>>16)\n            currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,pixeloffset*3+1,(rgb&0xFF00)>>8)\n            currentBLiXelBuffer.setNumber(NumberFormat.UInt8LE,pixeloffset*3+2,rgb&0xFF)\n\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null,BLiXelBuffer,0)\n            show();\n        }\n\n\n\n       /**\n   * Show all changes sent to the BLiXels\n       * \n    */  \n //% blockId=bBoardBlixel_show\n  //% block=\"show\"\n  //% block.loc.fr=\"montrer\"\n  //% advanced=true\n        export function  show() {\n      \n                \n                bBoard_Control.sendData(parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)\n      \n    \n        }\n\n//          /**\n//          * Turn off all LEDs.\n//          * \n//          */\n//         //% blockId=\"BLiXel_clear\" block=\"clear\"\n//         //% advanced=true\n//          function clear(): void {\n//             currentBLiXelBuffer.fill(0)\n//             showColour(BLiXelcolours.Black) \n//         }\n\n      \n    /**\n      * Get the BLiXel Index\n      * @param BLiXelIndex BLiXel pixel number (1 is leftmost, 5 is rightmost), eg: 1, 5\n      */\n    //% blockId=BLiXelPicker block=\"%BLiXelIndex\"\n    //% blockHidden=true \n    //% colorSecondary=\"#FFFFFF\"\n    //% BLiXelIndex.fieldEditor=\"numberdropdown\" BLiXelIndex.fieldOptions.decompileLiterals=true\n    //% BLiXelIndex.fieldOptions.data='[[\"1, 0], [\"2\", 1], [\"3\", 2], [\"4\", 3], [\"5\", 4]]'\n    export function __BLiXelPicker(BLiXelIndex: number): number {\n        return BLiXelIndex;\n    }\n\n\n         /**\n         * Set the brightness of the strip. This flag only applies to future operation.\n         * @param brightness a measure of LED brightness in 0-100. eg: 50\n         */\n        //% blockId=\"BLiXel_set_brightness\" \n        //% block=\"set brightness $brightness\" \n        //% block.loc.fr=\"définir la luminosité $brightness\"\n        //% advanced=false\n        //% brightness.min=0 brightness.max=100\n        //% weight=200 \n        export function setBrightness(brightness: number): void {\n           \n            currentBrightness = Math.min(Math.max(Math.round(brightness *2.55),0),255)\n\n            sendBLiXelBuffer(currentBLiXelBuffer)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_BRIGHTNESS, [currentBrightness],null,0)\n            show()\n\n        }\n\n    \n\n   \n        function sendBLiXelBuffer(blixelBuffer:Buffer)\n        {\n\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_WRITE_BUFFER_DATA, null,blixelBuffer,0)\n        }\n        // /**\n        //  * Shift LEDs forward and clear with zeros.\n        //  * You need to call ``show`` to make the changes visible.\n        //  * @param offset number of pixels to shift forward, eg: 1\n        //  */\n        // //% blockId=\"BLiXel_shift\" block=\"shift pixels by $offset\" blockGap=9\n        // export function shift(offset: number = 1): void {\n         \n        // }\n\n//         // /**\n//         //  * Rotate LEDs forward.\n//         //  * You need to call ``show`` to make the changes visible.\n//         //  * @param offset number of pixels to rotate forward, eg: 1\n//         //  */\n//         // //% blockId=\"BLiXel_rotate\" block=\"rotate pixels by $offset\" blockGap=9\n//         // export function rotate(offset: number = 1): void {\n  \n//         // }\n\n \n     \n    \n\n    /**\n    * Converts red, green, blue channels into a RGB colour\n    * @param red value of the red channel between 0 and 255. eg: 255\n    * @param green value of the green channel between 0 and 255. eg: 255\n    * @param blue value of the blue channel between 0 and 255. eg: 255\n    */\n    //% blockId=\"BLiXel_rgb\" \n    //% block=\"red %red|green %green|blue %blue\"\n    //% block.loc.fr=\"rouge %red|vert %green|bleu %blue\"\n    //% advanced=true\n    export  function rgb(red: number, green: number, blue: number): number {\n        return packRGB(red, green, blue);\n    }\n\n     /**\n     * Gets the RGB value of a known colour\n     */\n    //% blockGap=9\n    //% blockId=\"BLiXel_colours\" \n    //% block=\"%colour\"\n    //% advanced=true\n    export  function colours(colour: BLiXelcolours): number {\n        return colour;\n    }\n    export function packRGB(a: number, b: number, c: number): number {\n        return ((a & 0xFF) << 16) | ((b & 0xFF) << 8) | (c & 0xFF);\n    }\n    export function unpackR(rgb: number): number {\n        let r = (rgb >> 16) & 0xFF;\n        return r;\n    }\n    export function unpackG(rgb: number): number {\n        let g = (rgb >> 8) & 0xFF;\n        return g;\n    }\n    export function unpackB(rgb: number): number {\n        let b = (rgb) & 0xFF;\n        return b;\n    }\n\n     /**\n     * Converts a hue saturation luminosity value into a RGB colour\n     * @param h hue from 0 to 360\n     * @param s saturation from 0 to 99\n     * @param l luminosity from 0 to 99\n     */\n    //% blockId=BLiXelHSL \n    //% block=\"hue %h|saturation %s|luminosity %l\"\n    //% block.loc.fr=\"nuance %h|saturation %s|luminosité %l\"\n    //% advanced=true\n    export  function hsl(h: number, s: number, l: number): number {\n        h = Math.round(h);\n        s = Math.round(s);\n        l = Math.round(l);\n        h = h % 360;\n        s = Math.clamp(0, 99, s);\n        l = Math.clamp(0, 99, l);\n        let c = Math.idiv((((100 - Math.abs(2 * l - 100)) * s) << 8), 10000); //chroma, [0,255]\n        let h1 = Math.idiv(h, 60); //[0,6]\n        let h2 = Math.idiv((h - h1 * 60) * 256, 60); //[0,255]\n        let temp = Math.abs((((h1 % 2) << 8) + h2) - 256);\n        let x = (c * (256 - (temp))) >> 8; //[0,255], second largest component of this colour\n        let r$: number;\n        let g$: number;\n        let b$: number;\n        if (h1 == 0) {\n            r$ = c; g$ = x; b$ = 0;\n        } else if (h1 == 1) {\n            r$ = x; g$ = c; b$ = 0;\n        } else if (h1 == 2) {\n            r$ = 0; g$ = c; b$ = x;\n        } else if (h1 == 3) {\n            r$ = 0; g$ = x; b$ = c;\n        } else if (h1 == 4) {\n            r$ = x; g$ = 0; b$ = c;\n        } else if (h1 == 5) {\n            r$ = c; g$ = 0; b$ = x;\n        }\n        let m = Math.idiv((Math.idiv((l * 2 << 8), 100) - c), 2);\n        let r = r$ + m;\n        let g = g$ + m;\n        let b = b$ + m;\n        return packRGB(r, g, b);\n    }\n}",
-            "bBoardCyberSec.ts": "let defaultWiFiTimeoutmSCybSec = 30000\nlet CyberWiFiTimeoutmSCybSec = 7000;\nlet ConsoleTimeoutmSCybSec = 1000;\n\nlet CyberComTimeoutmSCybSec=1000;//use 300ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\nlet ProtCodeCybSec=0;\nlet ProtCodeCybSecStr=\"\";\nlet MSG_PCSCybSec=\"\";\nlet FullMSG_PCSCybSec=\"\";\nlet LenPCSCybSec=0;\n\nlet RatioCodCybSece=0;\nlet RatioCodCybSeceStr=\"\";\nlet MSG_RCSCybSec=\"\";\nlet FullMSG_RCSCybSec=\"\";\nlet LenRCSCybSec=0;\nlet indexclStrCybSec=\"\";\nlet indexflStrCybSec=\"\";\nlet indexhatStrCybSec=\"\";\nlet indexavclStrCybSec=\"\";\nlet indexavflStrCybSec=\"\";\nlet indexenclStrCybSec=\"\";\nlet ColCybSec = 2; // ColCybSecumn (0-4) Turn on the LED at the specified coordinates\nlet CLCybSec=0;\nlet CLCybSecAV=0;\nlet FLCybSec=0;\nlet FLCybSecAV=0;\n\nlet CoinCybSec = 0\nlet CoinCybSecY = 0\nlet CoinCybSecX = 0\n\nlet MSG_NDRDCybSec=\"\";// Menssage Number Degree, Role and destination\nlet FullMSG_NDRDCybSec=\"\";// FULL Menssage Number Degree, Role and destination\nlet LenNDRDCybSec=0;// Len nenssage Number Degree, Role and destination\n\nlet MSG_UDP_FullCybSec = \"\";\nlet ClrStripCybSec: neopixel.Strip = null\n\n\n\n\n\n\n\n\n\n\n\n\n//------------------------- CYBERSECURITY -----------------------------------\n/** Cybersecurity */\n///////////////////////////////////////////////////////////////////////////////////////////////////////////\n/**\n* Custom blocks\n*/\n//% block=\"CyberSecurity\"\n//% block.loc.fr=\"Cybersécurité\"\n//% advanced=true\n//% weight=100\n//% color=#9E4894 \n//% icon=\"\\uf21b\"      //LOGO CYBER\n//% labelLineWidth=1001\n//% groups='Initialize and Connections', 'Networking','Version ESP32', 'Remote Comands', 'Missions', 'Missions1'\n\n//------------------------- Networking -----------------------------------   \n\nnamespace Cybersec {\n\n//--------------------- Initialize and Connections ----------------------    \n    \n    /* Num 2 Str */\n    /** | >> En << | Convert Num to Str \n        | >> Fr << | -- \n    */\n        //% blockId=Num2Str\n        //% block=\"Num $num to Str\"\n        //% block.loc.fr=\"--\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"    \n        //% weight=100\n        export function numberToStringCybSec(num: number): string {\n            return num.toString();\n        }\n\n    /* Str 2 Num */\n    /** | >> En << | Convert Str to Num \n        | >> Fr << | -- \n    */\n        //% blockId=Str2Num\n        //% block.loc.fr=\"--\"\n        //% block=\"Str $str to Num\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"    \n        //% weight=100\n        export function stringToNumberCybSec(str: string): number {\n            return parseFloat(str); \n        }\n\n    /* AT Commands*/\n    /** | >> En << | Type in the command that will be followed for \"AT+\" \n        | >> Fr << | --\n        | >> Block to run AT Commands  << |\n        * @param ATcmd\n    */\n        //% blockId=ATCommand\n        //% block=\"$this Execute this AT command: $ATcmd\"\n        //% block.loc.fr=\"--\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"    \n        //% weight=100\n        export function DoATcmdCybSec(ATcmd:string):void{  \n            bBoard_Control.UARTSendString(\"AT+\" + ATcmd + \"\\r\\n\", boardIDGlobal, clickIDGlobal); \n            response = WiFiResponse(\"OK\",false,3000);//defaultWiFiTimeoutmSCybSec=30000\n            serial.writeLine(\"Listening...  \" + (receivedData))\n        }\n\n    /* Signal Strength */\n    /** | >> En << | Get the signal strength from b.Board to the access point. \n        | >> Fr << | Obtenir la force du signal entre le b.Board et le point d'accès.\n        | >> \n        Excellent/Excellent > -60. \n        Good/Bon -61 to -75. \n        Fair/Juste -76 to -80. \n        Bad/Mauvais -81 to -89. \n        Very Bad/Tres mauvais <-90.\n         << |\n    */\n        //% blockId=\"SignalStrength\"\n        //% block=\"$this Get the signal strength\"\n        //% block.loc.fr=\"$this Obtenir la force du signal\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% receivedData.shadow=variables_get\n        //% draggableParameters=variable\n        export function getSignalStrengthCybSec(): string {\n            bBoard_Control.UARTSendString(\"AT+CWJAP?\\r\\n\", boardIDGlobal, clickIDGlobal); \n//  serial.writeLine(\"\" + (bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)))\n            response = WiFiResponse(\"OK\", false, ConsoleTimeoutmSCybSec);//ConsoleTimeoutmSCybSec=1000\n            serial.writeLine(\"RRSI is: \" + receivedData.substr(56, 3) + \"\")\n            return(\"RSSI:\" + receivedData.substr(56, 3))\n        }\n\n    /* Secuence Animation */ \n    /** | >> En << | Show a lighting secuence on b.Board´s BLiXels and sound \"twinkle\".\n        | >> Fr << | Montrer une séquence d'éclairage sur les BLiXels de b.Board et le son \"twinkle\". \n    */\n        //% group=\"Initialize and Connections\" \n        //% blockId=\"Sequence Animation\" \n        //% block=\"Sequence BLiXels on b.Board\"\n        //% block.loc.fr=\"Séquence des BLiXels du b.Board\"\n        //% advanced=false\n        //% weight=100 \n        export function AnimationCybSec() {        \n                soundExpression.twinkle.play()\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.one)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.two));\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.three));                             \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.four)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.five)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);\n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.five)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.four));\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.three));                             \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.two)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.one));              \n        }\n\n    /* Coding Check b.Board */ \n    /** | >> En << | Turn on b.Board BLiXel to be notified when your code crosses this point.\n        | >> Fr << | Activez le BLixel b.Board pour être averti lorsque votre code franchit ce point.\n        * @param pixelONset position of the BLiXel in b.Board\n    */\n        //% blockId=\"Coding Check b.Board\" \n        //% block=\"b.Board BliXel $pixelONset=BLiXel_Index to check when it reaches this point\"\n        //% block.loc.fr=\"b.Board BliXel $pixelONset=BLiXel_Index pour vérifier si le code francît ce point\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\" \n        //% weight=100  \n        export function setBLCodeCybSec(pixelONset: number): void {       \n                let BLiXelBuffer = pins.createBuffer(5);\n                if (pixelONset >= 5)\n                {\n                    pixelONset = 4;\n                }\n                BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF00FF)                           // Purple = 0xFF00FF\n                BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n                bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n                bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n//                basic.pause(300) \n//                BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0x000000)// Black = 0x000000\n//                BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n//                bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n//                bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n    /* WiFi Off */\n    /** | >> En << | Turn off Wi-Fi capabilities; to reestablish, you need to turn off and then turn on the b.Board again.\n        | >> Fr << | Désactivez les capacités Wi-Fi; pour les rétablir, vous devez éteindre puis rallumer le b.Board.      \n    */\n        //% blockId=\"WiFi Off\"\n        //% block=\"WiFi Off\"\n        //% block.loc.fr=\"désactiver le wifi\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n        export function WiFi_OFFCybSec(): void {\n                serial.writeLine(\"\" + \"b.Board->\" + \"\")     // Always to publish in Console, the last \"\" completes the line to send and show\n                \n                bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n                bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)\n                bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion,\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n                serial.writeLine(\"WiFi Off\" + \"\")\n        }          \n       \n    /* WiFi Reset */\n    /** | >> En << | Reset Wi-Fi capabilities. You need to enter WiFi information. \n        | >> Fr << | Réinitialiser les capacités Wi-Fi. Vous devez saisir les informations relatives au Wi-Fi.      \n    */\n        //% blockId=\"WiFi Reset\"\n        //% block=\"WiFi Reset\"\n        //% block.loc.fr=\"Réinitialiser le Wi-Fi\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n        export function WiFi_RSCybSec(): void {\n                serial.writeLine(\"\" + \"b.Board->\" + \"\")     // Always to publish in Console, the last \"\" completes the line to send and show\n\n                bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n                bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)\n                bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLCybSecEAR\\\",\\\"pwd_CLCybSecEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLCybSecEAR and pwd_CLCybSecEAR are nothing, I use them to clear de ESP32 \n                bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion,\n                bBoard_Control.UARTSendString(\"AT+CWAUTOCONN=0\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                bBoard_Control.UARTSendString(\"AT+RESTORE\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                bBoard_Control.UARTSendString(\"AT+RST\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec); //Wait for the response \"OK\" \n                basic.pause(300)                    // Delay to publish in console\n                serial.writeLine(\"WiFi Reset\" + \"\")\n        }  \n        \n    /* WiFi Disconnect */\n    /** | >> En << | Discconect from the current WiFi.\n        | >> Fr << | Se déconnecter du réseau Wi-Fi actuel.      \n    */\n        //% blockId=\"WiFi Disconnect\"\n        //% block=\"WiFi Disconnect\"\n        //% block.loc.fr=\"Déconnexion du WiFi\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100 \n        export function DisconnectCybSec():void {\n                music.playTone(988, music.beat(BeatFraction.Eighth))\n                basic.clearScreen()\n          \n                serial.writeLine(\"\" + \"b.Board->\" + \"\")     // Always to publish in Console, the last \"\" completes the line to send and show\n\n                bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n                bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLCybSecEAR\\\",\\\"pwd_CLCybSecEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLCybSecEAR and pwd_CLCybSecEAR are nothing, I use them to clear de ESP32  \n                bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec); //Wait for the response \"OK\" \n                basic.pause(300)                    // Delay to publish in console\n                serial.writeLine(\"Disconnected\" + \"\")\n        }\n\n    /* WiFi Check  */\n    /** | >> En << | Check the WiFi status. \n        | >> Fr << | Vérifiez l'état du WiFi. \n        | >> \n        #O: The ESP32 station is not initialized. \n        #1: THe ESP32 station is initialized, but not started a Wi-Fi connection yet. \n        #2: The ESP32 station is connected to an AP and its IP address is obteined.  \n        #3: The ESP32 station has created a TCP/SSL transmission. \n        #4: All of the TCO/UPD/SSL connections of th ESP32 station are disconnected. \n        #5: The ESP32 station started a WiFi connection, but was not connected to an AP or disconnected from an AP.\n        << |\n        */\n        //% blockId=\"WiFi Check\"\n        //% block=\"b.Board is Connected and Available\"\n        //% block.loc.fr=\"b.Board est Connectée et Disponible\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100 \n        export function WiFi_ConnectedCybSec(): boolean {\n                pause(3000)    \n                bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal); \n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec); \n                let statusStartIndex = receivedData.indexOf(\"STATUS:\")\n                let connected = parseInt(receivedData.substr(statusStartIndex + 7, 1)); //Convert the characters we received representing the length of the IPD response to an integer        \n                if (connected == 0){                                // O:The ESP32 station is not initialized\n                    while (1){\n                    basic.showLeds(`\n                    . . . . .\n                    . # . # .\n                    . . # . .\n                    . # . # .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#0\")\n                    serial.writeLine(\"IsConnected? Error #0\")\n                    serial.writeLine(\"\") \n                    return false;\n                }}\n                if (connected == 1){                                // 1: THe ESP32 station is initialized, but not started a Wi-Fi connection yet\n                    while (1){\n                    basic.showLeds(`\n                    . . . . .\n                    . # . # .\n                    . . # . .\n                    . # . # .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#1\")\n                    serial.writeLine(\"IsConnected? Error #1\")\n                    serial.writeLine(\"\")  \n                    return false;\n                }}\n                if (connected == 2){                                // 2: The ESP32 station is connected to an AP and its IP address is obteined.    \n                    while (1){\n                    basic.showLeds(`\n                    . . . . .\n                    . . . . # \n                    . # . # .\n                    . . # . .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#2\")                \n                    serial.writeLine(\"IsConnected? OK #2\")\n                    serial.writeLine(\"\")  \n                    return true;\n                }}\n                if (connected == 3){                                // 3: The ESP32 station has created a TCP/SSL transmission.\n                    while (1){\n                    basic.showLeds(`\n                    . . . . #\n                    . # . # . \n                    . . # . .\n                    . . . . .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#3\")\n                    serial.writeLine(\"IsConnected? OK #3\")\n                    serial.writeLine(\"\")  \n                    return true;\n                }}\n                if (connected == 4){                                // 4: All of the TCO/UPD/SSL connections of th ESP32 station are disconnected\n                    while (1){\n                    basic.showIcon(IconNames.Sad,400)\n//                    basic.showString(\"#4\")\n                    serial.writeLine(\"IsConnected? Error #4\")\n                    serial.writeLine(\"\")  \n                    return false;\n                }}\n                if (connected == 5){                                // 5: The ESP32 station started a WiFi connection, but was not connected to an AP or disconnected from an AP\n                    while (1){\n                    basic.showIcon(IconNames.Sad, 400)\n//                    basic.showString(\"#5\")\n                    serial.writeLine(\"IsConnected? Error #5\")\n                    serial.writeLine(\"\")  \n                    return false;\n                }}\n                basic.showIcon(IconNames.Sad, 400)\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.five)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.four));\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.three));        \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.two)); \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.one)); \n                serial.writeLine(\"IsConnected? NO\")\n                serial.writeLine(\"\")  \n                return false;\n        }\n    \n    /* WiFi Connection */\n    /** | >> En << | Initializes WiFi capabilities. b.Board power switch should be ON.\n        | >> Fr << | Initialise les capacités WiFi. b.Board l'interrupteur d'alimentation de la carte doit être sur ON.         \n        * @param ssid to ssid, eg: \"Cyberville #?\"           \n        * @param pwd to ssid, eg: \"\"\n    */\n        //% blockId=\"Wifi Connection\" \n        //% block=\"Connect to WiFi: $ssid| with Password: $pwd\"\n        //% block.loc.fr=\"Connexion au WiFi : $ssid| avec mot de passe :$pwd\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n        export function WifiConnectCybSec(ssid: string, pwd: string): void { \n            //control.waitMicros(4) // Enable Console to display info. It doesn´t work properly.\n                            bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                            bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                            basic.pause(1000)\n                            bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);    \n                            bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal);            // Reset previous WiFi//Disconnect the created conextion,                  \n                        // Animation using BLiXel\n                            Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                            Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.one)); \n                            Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                            Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.two)); \n                            Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20);\n                            Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.three)); \n                            Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                            Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.four));\n                            Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);\n                            Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.five)); \n                        // Commands to startup WiFi capabilities\n                            bBoard_Control.UARTSendString(\"AT+CWMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);\n            //response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec); //7000         // Wait for the response \"OK\" \n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000                             \n            \n                            bBoard_Control.UARTSendString(\"AT+CIPMUX=1\\r\\n\", boardIDGlobal, clickIDGlobal);         // Enable multiple connections\n            //response = WiFiResponse(\"OK\",false,CyberWiFiTimeoutmSCybSec); \n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000                   \n            \n                            bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"\" + ssid + \"\\\",\\\"\" + pwd + \"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Connect to WiFi Network\n            //response = WiFiResponse(\"OK\",false,CyberWiFiTimeoutmSCybSec);\n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000 \n            \n            // added 2025                \n            bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);        // To get WiFi information about the b.Board\n            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n            serial.writeLine(\"WiFi b.Board Info \" + receivedData)                \n            //\n            \n                            bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);    // Mode 0 = Active (data receive instantly to MCU),  Mode 1 = Passive (data reveice keep in socket)\n            //response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000 \n            \n            //bBoard_Control.UARTSendString(\"AT+CWLAPOPT=1,31\\r\\n\", boardIDGlobal, clickIDGlobal);    // Set the Configuration for the Command AT+CWLAP \"list AP´s\".  (It is not tested yet)\n            //response = WiFiResponse(\"OK\", false, ConsoleTimeoutmSCybSec);                        \n                           \n                            bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);        // CHECK NO connection MAKE INFINITE LOOP you have to reset b.Board\n            //response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000 \n            \n                            if (response==0){                                                                       // WiFi Error \n                                serial.writeLine(\"Done! AP available? Error Try Again\") \n                                basic.showLeds(`\n                                . . . . .\n                                . # . # . \n                                . . # . .\n                                . # . # .\n                                . . . . .\n                                `)  \n                                basic.pause(1000)\n                            }\n                            else{                                                                                   // WiFI Connected\n                                serial.writeLine(\"\") \n                                serial.writeLine(\"Connected!\")\n                                basic.showLeds(`\n                                . . . . .\n                                . . . . # \n                                . # . # .\n                                . . # . .\n                                . . . . .\n                                `)  \n                                basic.pause(300)\n                                basic.clearScreen()              \n                            }\n            \n        }\n                        \n//------------------------- Networking -----------------------------------  \n\n    /* PING IP */\n    /** | >> En << | Do PING to a IP address.  If the destination responds, you will see a smiley face; otherwise, a sad face. \n        | >> Fr << | Faites un PING vers une adresse IP.  Si la destination répond, vous verrez un smiley ; sinon, un visage triste.\n        | >> The response time should not exceed 10 seconds  << |\n        * @param PingbB to PingbB, eg: \"192.168.4.1\"\n    */\n        //% blockId=PINGIP\n        //% block=\"$this Do PING to IP: $PingbB\"\n        //% block.loc.fr=\"Effectuez un PING vers l'IP: $PingbB\"\n        //% advanced=false\n        //% group=\"Networking\"      \n        //% weight=100\n\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"Do_Ping\"\n        export function PingbBfrendCybSec(PingbB:string):void{  \n            soundExpression.hello.play()\n            bBoard_Control.UARTSendString(\"AT+PING=\\\"\" + PingbB +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//  serial.writeLine(\"\" + (bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)))\n            response = WiFiResponse(\"OK\",false,3000);//defaultWiFiTimeoutmSCybSec=30000\n            serial.writeLine(\"\" + (receivedData))\n            if (receivedData == \"TIMEOUT\"){\n                soundExpression.slide.play()\n                basic.showIcon(IconNames.No,4000)\n                serial.writeLine(\"\" + (receivedData))\n                serial.writeLine(\"PING to IP: \"+ PingbB)\n                basic.clearScreen()\n            }\n            if (response == 1) {                                //RESPONSE ==1 connected\n                soundExpression.slide.play()\n                basic.showIcon(IconNames.Happy,4000)\n                serial.writeLine(\"\" + (receivedData))\n                serial.writeLine(\"PING to IP: \"+ PingbB)\n                basic.clearScreen()\n            }\n            if (response == 0) {   \n                soundExpression.slide.play()\n                basic.showIcon(IconNames.Sad,4000)            //response ==0 NO conected\n                serial.writeLine(\"\" + (receivedData))\n                serial.writeLine(\"PING to IP: \"+ PingbB)\n                basic.clearScreen()\n            }\n        }\n\n    /* MAC Address AP */\n    /** | >> En << | Display the b.Board access point MAC Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse point d'accès MAC du b.Board sur le PC de la console et sur l'écran du Micro:Bit. \n     */\n        //% blockId=GetMACAP\n        //% block=\"$this Get the AP´s MAC address\"\n        //% block.loc.fr=\"$this Obtenir Ládresse MAC du point d´accès\"\n        //% advanced=false\n        //% group=\"Networking\"\n        //% weight=100\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"MAC_AP\"\n        export function getMACaddressAPCybSec(): string {\n            let macAP=\"\"\n            bBoard_Control.UARTSendString(\"AT+CWJAP?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n//serial.writeLine(\"\" + (receivedData))          \n            let startIndex = receivedData.indexOf(\"+CWJAP:\") + 8\n            let endIndex = receivedData.indexOf(\",\",startIndex) - 1\n            let wfname = receivedData.substr(startIndex, endIndex - startIndex )\n            let szwf = wfname.length\n            let startIndexMAC = receivedData.indexOf(\"+CWJAP:\") +11 + szwf\n            let endIndexMAC = receivedData.indexOf(\",\", startIndexMAC) - 2 // (-2 characters at the end of msg)\n            macAP = receivedData.substr(startIndexMAC, endIndexMAC - startIndexMAC+1) \n            serial.writeLine(\"AP MAC: \" + macAP)              \n            return(\"AP MAC:\" + macAP);\n            }\n        \n    /* IP Address AP */\n    /** | >> En << | Display the access point IP Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse IP du point d'accès sur le PC de la console et sur l'écran du Micro:Bit. \n    */\n        //% blockId=GetIPAP\n        //% block=\"$this Get the AP´s IP address\"\n        //% block.loc.fr=\"$this Obtenir L´IP du point d´accés\"\n        //% advanced=false\n        //% group=\"Networking\"\n        //% weight=100\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"IP_bBoard\"\n        export function getIPaddressAPCybSec(): string {\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);        \n//serial.writeLine(\"\" + (receivedData))\n        let startIndex = receivedData.indexOf(\"gateway:\")+9\n        let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n        let APIP = receivedData.substr(startIndex, endIndex - startIndex )\n        serial.writeLine(\"AP IP: \"+ APIP)\n        return(\"AP IP:\" + APIP);\n        }\n    \n    /* MAC Address b.Board */\n    /** | >> En << | Display the b.Board MAC Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse MAC du b.Board sur le PC de la console et sur l'écran du Micro:Bit. \n    */\n        //% blockId=\"GetMACbBoard\"\n        //% block=\"$this Get the b.Board MAC address\"\n        //% block.loc.fr=\"$this Obtenir Ládresse MAC du b.Board\"\n        //% advanced=false\n        //% group=\"Networking\"        \n        //% weight=100 \n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"Get_MAC_bBoard\"\n        export function getMACaddressbBoardCybSec(): string {\n            bBoard_Control.UARTSendString(\"AT+CIPSTAMAC?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n            response = WiFiResponse(\"OK\", false, ConsoleTimeoutmSCybSec);//ConsoleTimeoutmSCybSec=1000\n            serial.writeLine(\"b.Board MAC: \" + receivedData.substr(27, 17) + \"\")    //55,17 CIFSR\n            return(\"b.Board MAC:\" + receivedData.substr(27,17));     \n//serial.writeLine(\"b.Board MAC: \" + receivedData.substr(27, 17) + \"\")          \n            }\n\n    /* IP Address b.Board */   \n    /** | >> Es << | Display the b.Board IP Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse IP du b.Board sur le PC de la console et sur l'écran du Micro:Bit. \n     */\n        //% blockId=\"GetIPBoard\"\n        //% block=\"$this Get the b.Board´s IP address\"\n        //% block.loc.fr=\"$this Obtenir I´IP du b.Board\"\n        //% advanced=false\n        //% group=\"Networking\"        \n        //% weight=100 \n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"IP_bBoard\"\n        export function getIPaddressbBoardCybSec(): string {\n            bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);//30000\nserial.writeLine(\"\" + (receivedData))\n            let startIndex = receivedData.indexOf(\"ip:\") + 4 \n            let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n            let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n            serial.writeLine(\"b.Board IP: \" + MyIP)\n            return(\"b.Board IP:\" + MyIP);\n//corrected ^            \n//            bBoard_Control.UARTSendString(\"AT+CIFSR\\r\\n\", boardIDGlobal, clickIDGlobal);\n//            response = WiFiResponse(\"OK\", false, ConsoleTimeoutmSCybSec);\n//            serial.writeLine(\"My otra IP: \" + (receivedData.substr(23,15)) + \"\")//22,17\n//            return(\"My IP:\" + receivedData.substr(23,15));\n//            serial.writeLine(\"My otra IP: \" + receivedData.substr(23, 15) + \"\")\n        }   \n\n\n//------------------------- Version ESP32 - Others -----------------------------------     \n    //% block \n    //% group=\"Version ESP32\"\n    //% icon=\"\\uf7c0\"\n    //% afterOnStart=true\n    //% blockGap=9\n    //% advanced=false\n\n    /* Firmware ESP32 */\n    /** | >> En << | Display the ESP32 firmware version. \n        | >> Fr << | Affichez la version du firmware de l'ESP32. \n        | >>  We strongly recommend version 3.2 or higher.  << |\n    */\n        //% blockId=\"GetFirmwareESP32\"\n        //% block=\"Get firmware 🛜 microcontroller ESP32 version on b.Board\"\n        //% block.loc.fr=\"Obtenez la version du firmware 🛜 du microcontrôleur ESP32 sur la carte b.Board.\"\n        //% advanced=false\n        //% group=\"Version ESP32\"\n        //% blockGap=9\n        //% weight=110    \n        //% afterOnStart=true\n        //% advanced=false\n        //% blockHidden=false \n        export function getFirmwareESP32CybSec(): string {\n          serial.writeLine(\"->\"+\" \")\n            bBoard_Control.UARTSendString(\"AT+GMR\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n            response = WiFiResponse(\"OK\", false,3000);\n            let vStartIndex = receivedData.indexOf (\"version:\")\n            let FirmESP32=receivedData.substr(vStartIndex+8,3)// get firmware version\n            serial.writeLine(\"🛜 WiFi Chip Version: \"+FirmESP32+\" \")\n            return(FirmESP32);\n        }\n \n    // ColCybSecours\n    // Red = 0xFF0000, Orange = 0xFFA500, Yellow = 0xFFFF00, Green = 0x00FF00, White = 0xFFFFFF\n    // Blue = 0x0000FF, Indigo = 0x4b0082,Violet = 0x8a2be2,Purple = 0xFF00FF, Black = 0x000000\n\n        // Set here to publish  BLiXel ON BLUE\n        export function setPixelColourPURPLECybSec(pixelONset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelONset >= 5)\n            {\n                pixelONset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF00FF)// Purple = 0xFF00FF\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n    \n    // Set here to publish  BLiXel ON BLUE\n        export function setPixelColourBLUECybSec(pixelONset: number): void {       \n        let BLiXelBuffer = pins.createBuffer(5);\n        if (pixelONset >= 5)\n        {\n            pixelONset = 4;\n        }\n        BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0x0000FF)// Blue = 0x0000FF\n        BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n        bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n        bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n    // Set here to publish  BLiXel ON GREEN\n        export function setPixelColourONCybSec(pixelONset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelONset >= 5)\n            {\n                pixelONset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF00FF)// Purple = 0xFF00FF\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n    \n    // Set here to publish  BLiXel ON RED\n        export function setPixelColourREDCybSec(pixelONset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelONset >= 5)\n            {\n                pixelONset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF0000)// RED = 0xFF0000\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n    // Set here to publish  BLiXel OFF         \n        export function setPixelColourOFFCybSec(pixelOFFset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelOFFset >= 5)\n            {              \n                pixelOFFset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0x000000)// Black = 0x000000\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelOFFset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n//Here END Cyberville 1\n\n\n\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" 2024 \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n//------------------------- Remote Comands -----------------------------------\n    //% block \n    //% group=\"Remote Commands\"\n    //% icon=\"\\uf7c0\"\n    //% afterOnStart=true\n    //% blockGap=9\n    //% advanced=false\n\n//------------------------- Receive Data -----------------------------------      \n/**  Receive Data from AP                           \n    */\n    //% block=\"Receive Message from 192.168.4.1 | $RCVInfo\"\n    //% blockId=\"Receive Data From 192.168.4.1\"\n    //% weight=110     \n    //% group=\"Remote Commands\"\n    //% BlockAllowMultiple=1\n    //% RCVInfo.shadow=variables_get\n    //% draggableParameters=variable\n    //% afterOnStart=true \n    //% blockGap=9\n    //% blockHidden=true \n    //% advanced=false\n    export function ReceiVCybSecCybSec(): string {  \n        let IPAddR = \"192.168.4.1\"    //Tipe here the AP address\n   \n        //Mode=1 to Receive\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n//            serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//            serial.writeLine(\"receiveData: \" + (receivedData))      \n        pause(500)//Important\n\n    //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//          serial.writeLine(\"My IP: \"+MyIP)//Print my IP address      \n//          serial.writeLine(\"AP IP: \"+IPAddR)//Print my AP IPaddress      \n        //_____\n\n    //Sending request \"GET /\" to start communication with AP. \n    bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAddR +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);        \n    let MSGSR = \"GET /\\r\"     // Message \"GET /\\r\" to start communication ->Package\n    bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\"+5+\"\\r\\n\", boardIDGlobal, clickIDGlobal); //size packet = 7 lo cambie a 5\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n    bBoard_Control.UARTSendString(MSGSR, boardIDGlobal, clickIDGlobal); //Send the contents of the packet              \n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n//        serial.writeLine(\"Data to Send: \"+MSGSR) //send command GET /\n    //_____\n\n    //Ready to Receive.     Important CIPRECVMODE=1\n    let RCVInfo = \"\";\n    let receivedStr = \"\"; //The built string\n        //Getting LENGHT data \n            bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n//              serial.writeLine(\"ReceivedData is: \" + (receivedData))\n            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//              serial.writeLine(\"start-> \" + startIndexDrcv)\n            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//              serial.writeLine(\"end-> \" + endIndexDrcv)\n            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n            let LenDrcvSize=LenDrcv.length\n//              serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//              serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n            let TotLen= parseInt(LenDrcv)+LenDrcvSize\n            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n        //______           \n        pause(500);//Important  \n        //Getting Data\n            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n            //For ReceivedData\n                let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDrcv+26)\n//              serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n                let totDX=DXrcv.length\n//              serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n            //___\n            //For RCVInfo\n                RCVInfo = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)\n                let sIndexDXrcv = RCVInfo.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//              serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n                let eIndexDXrcv = RCVInfo.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//              serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n            //___\n\n//RCVInfo = RCVInfo.substr(sIndexDXrcv, TotLen)\n    RCVInfo = RCVInfo.substr(sIndexDXrcv, parseInt(LenDrcv))\n    serial.writeLine(\"Receiving block: \" + RCVInfo)// to visualize data received\n    //______           \n\n    bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n\n    //Ready to Receive done!     Important CIPRECVMODE=0\n    bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n\n    return(\"\" + RCVInfo);     \n\n    }\n\n//------------------------- Send ON BLiXel for AP -----------------------------------   \n /** Send ON BLiXel for a IP \n    * @param IPAdd to IPAdd, eg: \"192.168.4.1\"\n    * @param pixelONsetTEST position of the BLiXel in the strip\n    */\n    //% blockId=\"Send BLiXel_ON_# for a IP \" \n    //% block=\"For IP number: $IPAdd | Ask to Turn ON BliXel #: $pixelONsetTEST=BLiXel_Index\"\n     //% afterOnStart=true\n    //% group=\"Remote Commands\"\n    //% weight=200 \n    //% blockGap=9 \n    //% blockHidden=true \n    //% advanced=false\n    export function send_LEDMSG_ONCybSec(IPAdd: string, pixelONsetTEST: number): void {\n        \n//SENDING REQUEST GET/             Important -> CIPRECVMODE=0  \n    let BLiXelBuffer = pins.createBuffer(5);\n                       \n    let LEDMSGON = \"\";\n            if (pixelONsetTEST == 0){ LEDMSGON=\"GET /ON_1\";}\n            if (pixelONsetTEST == 1){ LEDMSGON=\"GET /ON_2\";}\n            if (pixelONsetTEST == 2){ LEDMSGON=\"GET /ON_3\";}\n            if (pixelONsetTEST == 3){ LEDMSGON=\"GET /ON_4\";}\n            if (pixelONsetTEST == 4){ LEDMSGON=\"GET /ON_5\";}\n            serial.writeLine(\"to send...\" + (LEDMSGON))\n\n    //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"My IP is:\"+MyIP)//Print my IP address idex       \n    //______\n\n    //Getting AP IP address\n        bBoard_Control.UARTSendString(\"AT+CIPAP?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n\n        let APipStartIndex = receivedData.indexOf(\"ip:\")\n        let APIP = (receivedData.substr(APipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"AP IPadd is: \"+APIP)//Print my IP address idex    \n    //_____\n\n        let RCVdoneIPON=\"\";  \n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE0 TO SENDING\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAdd +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + LEDMSGON.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n        bBoard_Control.UARTSendString(LEDMSGON, boardIDGlobal, clickIDGlobal); //Send the contents of the packet  \n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//        serial.writeLine(\"Sending\" +LEDMSGON)\n//        serial.writeLine(\"len\" +LEDMSGON.length.toString())\n        \n//RECIVING  Important -> CIPRECVMODE=1\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"receiveData: \" + (receivedData))      \n        pause(500)//Important\n\n//Getting LENGHT data \n           bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n           response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n//           serial.writeLine(\"ReceivedData is: \" + (receivedData))\n            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//           serial.writeLine(\"start-> \" + startIndexDrcv)\n            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//            serial.writeLine(\"end-> \" + endIndexDrcv)\n            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n            let LenDrcvSize=LenDrcv.length\n//            serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//            serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n            let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n            pause(500);//Important                     \n//Getting Data\n            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n            //For ReceivedData\n                let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDrcv+26)\n//              serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n                let totDX=DXrcv.length\n//            serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n            //___\n            //For RCVInfo\n            RCVdoneIPON = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)\n                let sIndexDXrcv = RCVdoneIPON.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//              serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n                let eIndexDXrcv = RCVdoneIPON.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//              serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n            //___\n\n        RCVdoneIPON = RCVdoneIPON.substr(sIndexDXrcv, parseInt(LenDrcv))\n        serial.writeLine(\"Receiving: \"+RCVdoneIPON)// to visualize data received\n\n        if (RCVdoneIPON == \"ON_1\"){Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one));}\n        if (RCVdoneIPON == \"ON_2\"){Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two));}\n        if (RCVdoneIPON == \"ON_3\"){Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three));}\n        if (RCVdoneIPON == \"ON_4\"){Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four));}\n        if (RCVdoneIPON == \"ON_5\"){Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five));}\n\n//-*** Need to address this. Use CIPSTATUS to see when TCP connection is closed as thingspeak automatically closes it when message sent/received */\n        bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5,\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\n    }\n\n//------------------------- Send OFF BLiXel for AP -----------------------------------   \n/** Send OFF BLiXel for a IP \n    * @param IPAdd to IPAdd, eg: \"192.168.4.1\"\n    * @param pixelOFFsetTEST position of the BLiXel in the strip\n    */\n    //% blockId=\"Send BLiXel_OFF_# for a IP \" \n    //% block=\"For IP number: $IPAdd | Ask to Turn OFF BliXel #: $pixelOFFsetTEST=BLiXel_Index\"\n    //% afterOnStart=true\n    //% group=\"Remote Commands\"\n    //% weight=200  \n    //% blockGap=9\n    //% blockHidden=true\n    //% advanced=false\n    export function send_LEDMSG_OFFCybSec(IPAdd: string, pixelOFFsetTEST: number): void {\n\n//SENDING REQUEST GET/             Important -> CIPRECVMODE=0  \n    let BLiXelBuffer = pins.createBuffer(5);\n    let LEDMSGOFF = \"\";\n            if (pixelOFFsetTEST == 0){ LEDMSGOFF=\"GET /OFF1\";}\n            if (pixelOFFsetTEST == 1){ LEDMSGOFF=\"GET /OFF2\";}\n            if (pixelOFFsetTEST == 2){ LEDMSGOFF=\"GET /OFF3\";}\n            if (pixelOFFsetTEST == 3){ LEDMSGOFF=\"GET /OFF4\";}\n            if (pixelOFFsetTEST == 4){ LEDMSGOFF=\"GET /OFF5\";}\n        serial.writeLine(\"\" + (LEDMSGOFF))\n\n    //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, 300);//use OJJO300 00ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\n\n\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"My IP is:\"+MyIP)//Print my IP address idex       \n        //______\n\n        //Getting AP IP address\n        bBoard_Control.UARTSendString(\"AT+CIPAP?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, 300);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\n\n        let APipStartIndex = receivedData.indexOf(\"ip:\")\n        let APIP = (receivedData.substr(APipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"AP IPadd is: \"+APIP)//Print my IP address idex    \n//_____\n\n        let RCVdoneIPOFF=\"\";  \n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE0 TO SENDING\n        response = WiFiResponse(\"OK\", false, 300);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 300);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAdd +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n        response = WiFiResponse(\"OK\", false, 300);//}\n        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + LEDMSGOFF.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n        response = WiFiResponse(\"OK\", false, 300);//}\n        bBoard_Control.UARTSendString(LEDMSGOFF, boardIDGlobal, clickIDGlobal); //Send the contents of the packet  \n        response = WiFiResponse(\"OK\", false, 300);//}\n//        serial.writeLine(\"Sending\" +LEDMSGOFF)\n//        serial.writeLine(\"len\" +LEDMSGOFF.length.toString())\n\n//RECIVING  Important -> CIPRECVMODE=1\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, 300);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long \n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 300);\n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"receiveData: \" + (receivedData))      \n        pause(500)//Important\n\n//Getting LENGHT data \n        bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n//           serial.writeLine(\"ReceivedData is: \" + (receivedData))\n        let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//           serial.writeLine(\"start-> \" + startIndexDrcv)\n        let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//            serial.writeLine(\"end-> \" + endIndexDrcv)\n        let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n        let LenDrcvSize=LenDrcv.length\n//            serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//            serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n        let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n        pause(500);//Important                     \n//Getting Data\n    bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n    //For ReceivedData\n        let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n        let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n        let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDrcv+26)\n//              serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n//            let totDX=DXrcv.length\n//            serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n    //___\n    //For RCVInfo\n        RCVdoneIPOFF = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)\n        let sIndexDXrcv = RCVdoneIPOFF.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//              serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n        let eIndexDXrcv = RCVdoneIPOFF.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//              serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n    //___\n\n    RCVdoneIPOFF = RCVdoneIPOFF.substr(sIndexDXrcv, parseInt(LenDrcv))\n    serial.writeLine(\"Receiving: \"+RCVdoneIPOFF)// to visualize data received\n\n    if (RCVdoneIPOFF == \"OFF1\"){Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.one));}\n    if (RCVdoneIPOFF == \"OFF2\"){Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.two));}\n    if (RCVdoneIPOFF == \"OFF3\"){Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.three));}\n    if (RCVdoneIPOFF == \"OFF4\"){Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.four));}\n    if (RCVdoneIPOFF == \"OFF5\"){Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.five));}\n\n//*** Need to address this. Use CIPSTATUS to see when TCP connection is closed as thingspeak automatically closes it when message sent/received */\n        bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5,\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 300);\n\n        serial.writeLine(\"\" + (bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)))\n        response = WiFiResponse(\"OK\", false, 300);\n    }\n\n//------------------------------------ Missions --------------------------------------   \n    //% block \n    //% group=\"Missions\"\n    //% icon=\"\\uf7c0\"\n     //% afterOnStart=true\n    //% blockGap=9\n    //% advanced=true\n    //% blockHidden=false \n\n//-------Roles_Index----    \n /** Gets the index of Roles\n    */\n    //% blockGap=9\n    //% blockId=\"BLiXel_IndexR\" \n    //% block=\"%indexR\"\n    //% block.loc.fr=\"%indexR\"\n    //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function blixel_indexRCybSec(indexR: BLiXelIndexR): number {\n        return indexR;\n    }\n/** Gets the index of Appliance\n    */\n    //% blockGap=9\n    //% blockId=\"Appliance_Index\" \n    //% block=\"%indexApp\"\n    //% block.loc.fr=\"%indexApp\"\n     //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function appliance_indexCybSec(indexApp: ApplianceIndex): number {\n        return indexApp;\n    }\n\n/* Mission lights, select the Role and the Appliance (BLixel #) to turn on\n    */ \n    /** | >> En << | Select your role. Protect the appliance in the appropriate order.\n        | >> Fr << | Sélectionnez votre rôle. Protégez l'appareil dans l'ordre approprié.\n        * @param Role in Cyberville\n        * @param Appliance in School\n    */\n        //% blockId=\"Mission Wierd Lights\" \n        //% block=\"Role: $Role=BLiXel_IndexR | and Protect the: $Appliance=Appliance_Index\"\n        //% block.loc.fr=\"Rôle : $Role=BLiXel_IndexR | et protégez l' : $Appliance=Appliance_Index\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 1: Weird Lights at School - What is the Code Protection?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function MissionLightsCybSec(Role: number, Appliance:number): void {             \n//            serial.writeLine(\"Role: \" + Role)\n        //Getting the Protection Code String\n            let ApplianceStr = Appliance.toString()     //number to String\n            ProtCodeCybSecStr=ProtCodeCybSecStr+ApplianceStr;       // Store the string to be sent to M5\n//            serial.writeLine(\"The Appliance number is: \" + Appliance)\n//            serial.writeLine(\"The AplicaneStr: \"+ ApplianceStr)\n//            serial.writeLine(\"The Protection Code String is: \"+ ProtCodeCybSecStr)\n            LenPCSCybSec = ProtCodeCybSecStr.length\n//            serial.writeLine(\"Lenght Protection Code String is: \"+ LenPCSCybSec)\n        //____\n\n        //SENDING REQUEST GET/ + Role# + /ON_ + Appliance#            Important -> CIPRECVMODE=0  \n        MSG_PCSCybSec = \"GET\"+Role+\"/ON_\"+Appliance;//Menssage to be sent as request, Protection Cose String\n        //serial.writeLine(\"to send...:  \" + (MSG_PCSCybSec))\n        //serial.writeLine(\"The code selected was:  \" + (ProtCodeCybSecStr))\n\n        FullMSG_PCSCybSec = \"GET\"+Role+\"/PCBL_\"+ProtCodeCybSecStr; //message GET + Role number + currentLine.endsWith ProtectionCodeBrilliantLabs          +Appliance;//Menssage to be sent as request, Protection Cose String\n\n        } // assemble  FullMSG_PCSCybSec = \"GET\"+Role+\"/PCBL_\"+ProtCodeCybSecStr; \n\n/* Send the protection */\n    /** | >> En << | Send protection sequence for attack resolution.\n        | >> Fr << | Envoi d'une séquence de protection pour la résolution de l'attaque.      \n    */\n        //% blockId=\"Send_Protection\"\n        //% block=\"Send Code Protection Sequence\"\n        //% block.loc.fr=\"Séquence de protection du code d’envoi\"\n        //% advanced=true\n        //% group=\"Mission 1: Weird Lights at School - What is the Code Protection?\"\n        //% weight=100\n        export function sendprotCybSec(): void {\n        soundExpression.giggle.play()\n//        serial.writeLine(\"The protection code is: \"+ ProtCodeCybSecStr + \" it is going to be send to m5\")\n//        serial.writeLine(\"The full protection code is: \"+ FullMSG_PCSCybSec + \" it is going to be send to m5\")\n\n        readytosend();\n\n        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + FullMSG_PCSCybSec.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//____________________________________    V   _______________________________\n        bBoard_Control.UARTSendString(FullMSG_PCSCybSec, boardIDGlobal, clickIDGlobal); //Send FULLMSG_PCSCybSec the contents of the packet  \n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//        serial.writeLine(\"Sending to AP: \" + ProtCodeCybSecStr + \" as code proteccion\")\n        serial.writeLine(\"Sending to AP: \" + FullMSG_PCSCybSec)\n//        serial.writeLine(\"Lenght MSC_PCS is: \" +MSG_PCSCybSec.length.toString())\n\n        ProtCodeCybSecStr=\"\"; //Delete the message to get a new one\n        FullMSG_PCSCybSec=\"\"; //Delete the message to get a new one  // NO QUITAR\n//        serial.writeLine(\"ProtCodeCybSecStr was sent! and deleted.\")   \n//        serial.writeLine(\"FULLMSG_PCSCybSec was sent! and deleted.\")      \n        pause(600)//***** Important **** (500 9july)\n\n        //Flashing\n        // Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(Appliance-1)); basic.pause(500+LenPCSCybSec*1000); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(Appliance-1));//Flashing BLixel\n        // Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(Appliance-1)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(Appliance-1));//Flashing BLixel\n        //___________\n\n/* Receiving to confirm */\n    //RECIVING  Important -> CIPRECVMODE=1\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, 500);//CyberComTimeoutmSCybSec=400 (500 July10)\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 500);  // CyberComTimeoutmSCybSec=400 (500 July10)      \n        pause(600)//***** Important **** (500 9july)\n\n        let RCVdonIPON =\"\"; // Variable empty to start\n\n    //Getting LENGHT data \n        bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n        let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//           serial.writeLine(\"start-> \" + startIndexDrcv)\n        let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//            serial.writeLine(\"end-> \" + endIndexDrcv)\n        let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n        let LenDrcvSize=LenDrcv.length\n//            serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//            serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n        let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n    //_____\n//        pause(500);//***** Important ****     \n\n    //Getting Data\n        bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n        //For ReceivedData\n        let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n        let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n        let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n//          serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n        let totDX=DXrcv.length\n//          serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n    //___\n\n    //For RCVInfo\n        RCVdonIPON = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n        let sIndexDXrcv = RCVdonIPON.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//          serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n        let eIndexDXrcv = RCVdonIPON.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//          serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n    //___\n        let MSG_PCSCybSec_RCV  = RCVdonIPON.substr(sIndexDXrcv, parseInt(LenDrcv))\n        serial.writeLine(\"MSG received: \" + MSG_PCSCybSec_RCV)\n\n        \n//jul10\n\nif (MSG_PCSCybSec_RCV==\"11111\"){\n    readytosend();\n\n    bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + 4 + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n    bBoard_Control.UARTSendString(\"Good\", boardIDGlobal, clickIDGlobal); //Send FULLMSG_PCSCybSec the contents of the packet  \n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n    serial.writeLine(\"Good\")// This is the word to confirm the code is correct!\n    \n    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(500); \n    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(500); \n    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(500); \n    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(500); \n    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(500); \n\n    basic.showIcon(IconNames.Happy,100) \n    soundExpression.happy.play()\n    pause(7000)\n    soundExpression.happy.play()\n    pause(7000)\n    soundExpression.happy.play()\n    pause(7000)\n    soundExpression.happy.play()\n    Winner();\n }\n\n\n\n\n\n\n  //-***Close the comunication */\n  //Close all ports\n          bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n          response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n  //Ready to Receive done!     Important CIPRECVMODE=0 \n          bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n          response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\n          serial.writeLine(\"Client Closed!, Please recconect again\")\n          //Client required to reconnect\n          bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLCybSecEAR\\\",\\\"pwd_CLCybSecEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLCybSecEAR and pwd_CLCybSecEAR are nothing, I use them to clear de ESP32, close the connection  \n//          basic.showLeds(`\n//          . . . . .\n//          . . . . .\n//          . . # . .\n//          . # # # .\n//          . . . . .\n//          `)\n\n\n\n    // Read the confirmation sent by M5 and turn on the appliance \n        let Confirm=\"\";    // Variable empty to start\n        \n        Confirm = MSG_PCSCybSec_RCV.substr(0,5-4)//First Digit Code\n//        serial.writeLine(\"Confirmed 1: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n    \n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.one));\n            }else{\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel\n     \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.one));}\n        Confirm = MSG_PCSCybSec_RCV.substr(1,1)//Second Digit Code\n//        serial.writeLine(\"Confirmed 2: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.two));\n            }else{\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel\n\n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.two));}\n        Confirm = MSG_PCSCybSec_RCV.substr(2,1)//Third Digit Code\n//        serial.writeLine(\"Confirmed 3: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.three));\n            }else{\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel\n\n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.three));}  \n        Confirm = MSG_PCSCybSec_RCV.substr(3,1)//Fourth Digit Code\n//        serial.writeLine(\"Confirmed 4: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.four));\n            }else{\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel\n\n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.four));} \n        Confirm = MSG_PCSCybSec_RCV.substr(4,1)//Fiveth Digit Code\n//        serial.writeLine(\"Confirmed 5: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n\n                Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(BLiXelIndex.five));\n            }else{\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(100); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(400); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(50); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(10); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(5); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(3); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel\n\n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(BLiXelIndex.five));} \n    //__________ \n            \n\n//        if (MSG_PCSCybSec_RCV==\"11111\"){\n//            readytosend();\n//            bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + 4 + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//            bBoard_Control.UARTSendString(\"Good\", boardIDGlobal, clickIDGlobal); //Send FULLMSG_PCSCybSec the contents of the packet  \n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//            serial.writeLine(\"Good\")// This is the word to confirm the code is correct!\n            \n//            basic.showIcon(IconNames.Happy,100) \n//            soundExpression.happy.play()\n//            pause(7000)\n//            soundExpression.happy.play()\n//            pause(7000)\n//            soundExpression.happy.play()\n//            pause(7000)\n//            soundExpression.happy.play()\n//            Winner();\n//         }\n        if (MSG_PCSCybSec_RCV!=\"11111\"){\n            soundExpression.sad.play()\n            basic.showIcon(IconNames.Sad,2000) \n            pause(1000)\n            basic.clearScreen()\n         }\n\n        MSG_PCSCybSec_RCV=\"\"; //Delete the message to get a new one\n        RCVdonIPON=\"\";  //Delete the message to get a new one\n        Confirm=\"\";     //Delete the message to get a new one\n\n          basic.showLeds(`\n          . . . . .\n          . . . . .\n          . . # . .\n          . # # # .\n          . . . . .\n          `)\n\n        }   \n\n    export function Winner(){//infinite loop   //Disconect and OFF wifi\n        basic.showIcon(IconNames.Happy,100)    \n        \n        bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n        response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\n        bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n        bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n        bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)\n        bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion,\n        response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n        bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLCybSecEAR\\\",\\\"pwd_CLCybSecEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLCybSecEAR and pwd_CLCybSecEAR are nothing, I use them to clear de ESP32, close the connection  \n        response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n        Winner();\n\n    }\n\n    export function readytosend(){\n        //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//              serial.writeLine(\"My IP is: \"+MyIP)//Print my IP address idex       \n    //Getting AP IP address\n        bBoard_Control.UARTSendString(\"AT+CIPAP?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n        let APipStartIndex = receivedData.indexOf(\"ip:\")\n        let APIP = (receivedData.substr(APipStartIndex+4,11)); // get ip Address local\n//              serial.writeLine(\"AP IPadd is: \"+APIP)//Print my IP address idex    \n//_____\n    //Sending MSG_PCSCybSec                    \n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE0 TO SENDING\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);        \n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);        \n        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ APIP +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n    }\n\n\n//------------------------- Missions #2 -----------------------------------\n\n    /* Levels Cloride */\n    /** | >> En << | Select the level for Cloride.\n        | >> Fr << | Sélectionner le niveau pour Clorure.      \n        * @param Level_CLCybSec Level of Cloride\n    */\n        //% blockId=\"Level of Cloride Solution\" \n        //% block=\"%indexCLCybSec\"\n        //% block.loc.fr=\"%indexCLCybSec\"\n        //% color=#0000ff       //blue\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% group.loc.fr=\"Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio?\"\"\n        //% weight=100  \n        export function indexclCybSec(indexCLCybSec: Index_CLCybSec): number {\n            if (indexhatStrCybSec==\"2\"){\n                // Black Hat actvity\n                    //Virus,\n                        CLCybSec=indexCLCybSec; \n                        indexCLCybSec=indexCLCybSec+14;//the virus add 14 to number selected\n                    //___\n                    // Ones, tens, x20,x30,x40,x50,x60,x70,x80,x90\n                        if (indexCLCybSec >= 0 && indexCLCybSec <=10){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            indexCLCybSec=indexCLCybSec;\n//serial.writeLine(\"Caution: Chlorine value is: \" + (indexCLCybSec))  \n                        } else if (indexCLCybSec >= 11 && indexCLCybSec <=19){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 4);// Reprensent 10's\n                            indexCLCybSec=indexCLCybSec-10;\nserial.writeLine(\"Caution: Chlorine value is: \" + (indexCLCybSec+10)) \n                        } else if (indexCLCybSec >= 20 && indexCLCybSec <=29){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 3);led.plot(0, 4);// Reprensent 20's\n                            indexCLCybSec=indexCLCybSec-20;\nserial.writeLine(\"Caution: Chlorine value is: \" + (indexCLCybSec+20)) \n                        } else if (indexCLCybSec >= 30 && indexCLCybSec <=39){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 30's\n                            indexCLCybSec=indexCLCybSec-30;\n//serial.writeLine(\"Caution: Chlorine value is: \" + indexCLCybSec+30) \n                        } else if (indexCLCybSec >= 40 && indexCLCybSec <=49){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 40's\n                            indexCLCybSec=indexCLCybSec-40;\n//serial.writeLine(\"Caution: Chlorine value is:\" + indexCLCybSec+40) \n                        } else if (indexCLCybSec >= 50 && indexCLCybSec <=59){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 50's\n                            indexCLCybSec=indexCLCybSec-50;\n//serial.writeLine(\"Caution: Chlorine value is: \" + indexCLCybSec+50) \n                        } else if (indexCLCybSec >= 60 && indexCLCybSec <=69){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 60's\n                            indexCLCybSec=indexCLCybSec-60;\n                        } else if (indexCLCybSec >= 70 && indexCLCybSec <=79){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 3);led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 70's\n                            indexCLCybSec=indexCLCybSec-70;\n                        } else if (indexCLCybSec >= 80 && indexCLCybSec <=89){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 2);led.plot(1, 3);led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 80's\n                            indexCLCybSec=indexCLCybSec-80;\n                        } else if (indexCLCybSec >= 90 && indexCLCybSec <=99){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 1);led.plot(1, 2);led.plot(1, 3);led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 90's\n                            indexCLCybSec=indexCLCybSec-90;\n                        } else if (indexCLCybSec >= 100){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 0);\n                            indexCLCybSec=indexCLCybSec-100;\n                        }\n                 // _____________\n            } \n            indexclStrCybSec=indexCLCybSec.toString();\n            return indexCLCybSec;\n        }\n    /* Levels Fluoride */\n    /** | >> En << | Select the level for Fluoride.\n        | >> Fr << | Sélectionner le niveau pour Fluorure.      \n        * @param Level_FLCybSec Level of Fluoride\n    */\n        //% blockId=\"Level of Fluoride Solution\" \n        //% block=\"%indexFLCybSec\"\n        //% block.loc.fr=\"%indexFLCybSec\"\n        //% color=#008000  // green\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% weight=100  \n        export function indexflCybSec(indexFLCybSec: Index_FLCybSec): number { \n            if (indexhatStrCybSec==\"2\"){\n                // Black Hat actvity\n                //Virus\n                    FLCybSec=indexFLCybSec;\n                    indexFLCybSec=indexFLCybSec*7;//Virus, the virus multiply for 7 to number selected   \n                //___\n                    // Ones, tens, x20,x30,x40,x50,x60,x70,x80,x90\n                    if (indexFLCybSec >= 0 && indexFLCybSec <=10){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            indexFLCybSec=indexFLCybSec;\nserial.writeLine(\"Caution: Fluoride value is: \" + indexFLCybSec)  \n                        } else if (indexFLCybSec >= 11 && indexFLCybSec <=19){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 4);// Reprensent 10's\n                            indexFLCybSec=indexFLCybSec-10;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFLCybSec+10))                     \n                        } else if (indexFLCybSec >= 20 && indexFLCybSec <=29){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 3);led.plot(3, 4);// Reprensent 20's\n                            indexFLCybSec=indexFLCybSec-20;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFLCybSec+20))                     \n                        } else if (indexFLCybSec >= 30 && indexFLCybSec <=39){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 30's\n                            indexFLCybSec=indexFLCybSec-30;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFLCybSec+30))                     \n                        } else if (indexFLCybSec >= 40 && indexFLCybSec <=49){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 40's\n                            indexFLCybSec=indexFLCybSec-40;\nserial.writeLine(\"⚠️ Caution: Fluoride value is: \" + (indexFLCybSec+40))                     \n                        } else if (indexFLCybSec >= 50 && indexFLCybSec <=59){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 50's\n                            indexFLCybSec=indexFLCybSec-50;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFLCybSec+50))                     \n                        } else if (indexFLCybSec >= 60 && indexFLCybSec <=69){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(4, 4);// Reprensent 60's\n                            indexFLCybSec=indexFLCybSec-60;                           \nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFLCybSec+60))                    \n                        } else if (indexFLCybSec >= 70){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 70's\nserial.writeLine(\"Caution: Fluoride value is: \" + 70)                     \n                            indexFLCybSec=-1-1;\n                        } else if (indexFLCybSec >= 71 && indexFLCybSec <=79){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 70's\n                            indexFLCybSec=indexFLCybSec-70;\n//serial.writeLine(\"Caution: Fluoride value is: \" + (indexFLCybSec+70))                     \n                        } else if (indexFLCybSec >= 80 && indexFLCybSec <=89){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 2);led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 80's\n                            indexFLCybSec=indexFLCybSec-80;\n//serial.writeLine(\"Caution: Fluoride value is: \" + indexFLCybSec)                     \n                        } else if (indexFLCybSec >= 90 && indexFLCybSec <=99){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 1);led.plot(4, 2);led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 90's\n                            indexFLCybSec=indexFLCybSec-90;\n//serial.writeLine(\"Caution: Fluoride value is: \" + indexFLCybSec)                     \n                        } else if (indexFLCybSec >= 100){\n                            for (let b=0; b<5;b++){ led.plotBrightness(ColCybSec, b,1);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 0);\n                            indexFLCybSec=indexFLCybSec-100;\n//serial.writeLine(\"Caution: Fluoride value is:\" + indexFLCybSec)                     \n                        }\n                    // _____________\n            }\n            indexflStrCybSec=indexFLCybSec.toString();\n            return indexFLCybSec;\n        }\n\n    /* Antivirus CLCybSec*/\n    /** | >> En << | Select the number that should work as an Antivirus for Chlorine.\n        | >> Fr << | Sélectionnez le numéro qui doit fonctionner comme un Antivirus Clore.      \n        * @param AntivirusC Antivirus hat black\n    */\n        //% blockId=\"AntivirusCLCybSec\" \n        //% block=\"%indexAVCLCybSec\"\n        //% block.loc.fr=\"%indexAVCLCybSec\"\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% weight=100  \n        export function indexavclCybSec(indexAVCLCybSec: Index_AVCLCybSec): number {\n            CLCybSecAV=indexAVCLCybSec; \n            if (indexhatStrCybSec==\"2\"){\n                // Black Hat actvity\n                if  (indexAVCLCybSec==14){    \n                        Cybersec.setPixelColourBLUECybSec(BLiXel.blixel_index(2));  \n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0)); \n                        Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); \n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3)); \n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));\n                        serial.writeLine(\"_____________________________________________________\") \n                        serial.writeLine(\"Now >>> Chlorine <<< levels are safe, CONGRATS =) !!!\") \n                        serial.writeLine(\"The current is: \"+ CLCybSec)\n                        serial.writeLine(\"_____________________________________________________\") \n                if (CLCybSec==0||CLCybSec==1||CLCybSec==2||CLCybSec==3||CLCybSec==4||CLCybSec==5){\n                     indexAVCLCybSec=4;        \n                    } else if (CLCybSec==6||CLCybSec==7||CLCybSec==8||CLCybSec==9||CLCybSec==10){\n                     indexAVCLCybSec=-7+1;\n                  }\n                for (let b=0; b<5;b++){ led.unplot(ColCybSec, b);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                for (let b=0; b<5;b++){ led.unplot(0, b);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                for (let b=0; b<5;b++){ led.unplot(1, b);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates     \n                if  (FLCybSecAV==7){\n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));  \n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1)); \n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2)); \n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3)); \n                    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(4));                       \n                    //basic.showIcon(IconNames.Happy,100)  \n                    //music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                }   \n            } else{\n                serial.writeLine(\":( Chlorine levels are stll infected!\")  \n                }\n            } \n            indexclStrCybSec=indexAVCLCybSec.toString();\n            return indexAVCLCybSec;\n    }        \n\n    /* Antivirus FLCybSec*/\n    /** | >> En << | Select the number that should work as an Antivirus for Fluoride.\n        | >> Fr << | Sélectionnez le numéro qui doit fonctionner comme un antivirus Fluoruree.      \n        * @param AntivirusF Antivirus hat black\n    */\n        //% blockId=\"AntivirusFLCybSec\" \n        //% block=\"%indexAVFLCybSec\"\n        //% block.loc.fr=\"%indexAVFLCybSec\"\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% weight=100  \n        export function indexavflCybSec(indexAVFLCybSec: Index_AVFLCybSec): number {\n            FLCybSecAV=indexAVFLCybSec; \n            if (indexhatStrCybSec==\"2\"){\n                // Black Hat actvity\n                if  (indexAVFLCybSec==7){\n                    Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(3));  \n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1)); \n                    Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); \n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2)); \n                    Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));\n\n                    serial.writeLine(\"____________________________________________________\") \n                    serial.writeLine(\"Now >>>Flouride<<< levels are safe, CONGRATS =) !!!\") \n                    serial.writeLine(\"The current is: \"+ FLCybSec)\n                    serial.writeLine(\"____________________________________________________\") \n\n                    if (FLCybSec==0){\n                        indexAVFLCybSec=14;     \n                        } else if (FLCybSec==1){\n                        indexAVFLCybSec=-1+1;     //0=1 ok\n                       } else if (FLCybSec==2){\n                        indexAVFLCybSec=2;        //2=2 ok\n                       } else if (FLCybSec==3){\n                        indexAVFLCybSec=1-0.6775; //0.3225=3 ok\n                       } else if (FLCybSec==4){\n                        indexAVFLCybSec=2;        //2=4 ok\n                       } else if (FLCybSec==5){\n                        indexAVFLCybSec=1;        //1=5 ok\n                       } else if (FLCybSec==6){\n                        indexAVFLCybSec=1-0.7;    //0.3=6 ok\n                       } else if (FLCybSec==7){\n                        indexAVFLCybSec=2-0.715;  //1.285=7 ok\n                       } else if (FLCybSec==8){\n                        indexAVFLCybSec=1-0.3;    //0.7=8 ok \n                       } else if (FLCybSec==9){\n                        indexAVFLCybSec=1-0.667;  //0.333=9 ok\n                       } else if (FLCybSec==10){\n                        indexAVFLCybSec=-1+0.8;   //0.2=10 ok because  indexFLCybSec=-2 for 70 show 10\n                    }\n                    for (let b=0; b<5;b++){ led.unplot(ColCybSec, b);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                    for (let b=0; b<5;b++){ led.unplot(3, b);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates\n                    for (let b=0; b<5;b++){ led.unplot(4, b);}// ColCybSecumn (0-4) Turn on the LED at the specified coordinates     \n                    if  (CLCybSecAV==14){\n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));  \n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1)); \n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2)); \n                        Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3)); \n                        Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(4));\n                        //basic.showIcon(IconNames.Happy,100)  \n                        //music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)       \n                    } \n            } else{\n//              music.startMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)\n                serial.writeLine(\":( Flouride levels are stll infected!\")  \n              }\n            } \n\n            indexavclStrCybSec=indexAVFLCybSec.toString();\n            return indexAVFLCybSec;\n    }        \n\n    /* ColCybSecorHat */\n    /** | >> En << | Select your Friend Hat\n        | >> Fr << | Choisissez votre Chapeau d'Ami      \n    */\n    //% blockGap=9\n    //% blockId=\"ColCybSecorHat\" \n    //% block=\"%indexH\"\n    //% block.loc.fr=\"%indexH\"\n    //% color=#ffa500 //orange\n    //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function indexhatCybSec(indexH: Index_H): number {\n        indexhatStrCybSec=indexH.toString();\n        return indexH;\n    }\n\n    /* CipherCode */\n    /** | >> En << | Encryption mode\n        | >> Fr << | Mode de chiffrement. Le mode sera affiché en langue anglaise. \n    */\n    //% blockGap=9\n    //% blockId=\"CipherCodes\" \n    //% block=\"%indexEncr\"\n    //% block.loc.fr=\"%indexEncr\"\n    //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function indexencrCybSec(indexEncr: Index_Encr): number {\n        indexenclStrCybSec=indexEncr.toString();\n        return indexEncr;\n    }\n\n    /* Show Encrytion Messages */\n    /** | >> En << | Select your encryption mode\n        | >> Fr << | Sélectionnez votre mode de cryptage \n        * @param Encr mode     \n    */\n        //% blockId=\"Show Encrytion Mode\"\n        //% block=\"Show me the encryption message as: $Encr=CipherCodes\"\n        //% block.loc.fr=\"Montrez-moi le message de cryptage: $Encr=CipherCodes\"\n        //% afterOnStart=true\n        //% advanced=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% group.loc.fr=\"Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio?\"\"\n        //% weight=100\n        export function ShowEncrCybSec(Encr:number): void{\nserial.writeLine(\"\")\nserial.writeLine(\"\")\n            if (indexenclStrCybSec==\"1\"){\n                Ready();\n                //Message\n                serial.writeLine(\"- . - .\"); serial.writeLine(\". - . .\"); serial.writeLine(\"- - - . . .\"); serial.writeLine(\". . . - -\")\n                serial.writeLine(\". . - .\"); serial.writeLine(\". - . .\"); serial.writeLine(\"- - - . . .\"); serial.writeLine(\"- . . . -\")\n                serial.writeLine(\"\")\n                    Dahs(); Dit(); Dahs(); Dit(); basic.pause(1000)                // C\n                    Dit(); Dahs(); Dit(); Dit(); basic.pause(1000)                 // L\n                    Dahs(); Dahs(); Dahs(); Dit(); Dit(); Dit(); basic.pause(1000) // :\n                    Dit(); Dit(); Dit(); Dahs(); Dahs(); basic.pause(2000)         // 3\n                    Dit(); Dit(); Dahs(); Dit(); basic.pause(1000)                 // F\n                    Dit(); Dahs(); Dit(); Dit(); basic.pause(1000)                 // L\n                    Dahs(); Dahs(); Dahs(); Dit(); Dit(); Dit(); basic.pause(1000) // :\n                    Dahs(); Dit(); Dit(); Dit(); Dahs();  basic.pause(2000)        // 6\n                //______\n                Over();\n            } else if (indexenclStrCybSec==\"2\"){\n                Ready();\n                //Message\n                    serial.writeLine(\"3-12-20-15-6-12-18-1-20-9-15-9-19-19-5-22-5-14-20-15-14-9-14-5\")//CLCybSec=7  FLCybSec=9 \n                    serial.writeLine(\"\")\n                    basic.showString(\"3-12-20-15-6-12-18-1-20-9-15-9-19-19-5-22-5-14-20-15-14-9-14-5\")\n                //_____\n                Over();\n            }else if (indexenclStrCybSec==\"3\"){\n                Ready();\n                //Message\n                    serial.writeLine(\"Silly\"); serial.writeLine(\"House\"); serial.writeLine(\"Tortoise\"); serial.writeLine(\"TShirt\"); serial.writeLine(\"Surprised\"); \n                    serial.writeLine(\"Yes\"); serial.writeLine(\"Asleep\");serial.writeLine(\"SmallHeart\"); serial.writeLine(\"Scissors\"); serial.writeLine(\"Skull\");\n\n                    serial.writeLine(\"Confused\"); serial.writeLine(\"Tortoise\"); serial.writeLine(\"TShirt\"); serial.writeLine(\"Surprised\"); \n                    serial.writeLine(\"Yes\"); serial.writeLine(\"Asleep\");serial.writeLine(\"SmallHeart\"); serial.writeLine(\"Scissors\"); serial.writeLine(\"Cow\");\n\n                    serial.writeLine(\"\")\n                    basic.showIcon(IconNames.Silly); basic.pause(600)          //C\n                    basic.showIcon(IconNames.House); basic.pause(600)          //H\n                    basic.showIcon(IconNames.Tortoise); basic.pause(600)       //L\n                    basic.showIcon(IconNames.TShirt); basic.pause(600)         //O\n                    basic.showIcon(IconNames.Surprised); basic.pause(600)      //R \n                    basic.showIcon(IconNames.Yes); basic.pause(600)            //I\n                    basic.showIcon(IconNames.Asleep); basic.pause(600)         //D\n                    basic.showIcon(IconNames.SmallHeart); basic.pause(600)     //E\n                    basic.showIcon(IconNames.Scissors); basic.pause(600)       //:\n                    basic.showIcon(IconNames.Skull); basic.pause(600)          //7\n                    basic.clearScreen(); basic.pause(2000)                     //\n                    basic.showIcon(IconNames.Confused); basic.pause(600)       //F\n                    basic.showIcon(IconNames.Tortoise); basic.pause(600)       //L\n                    basic.showIcon(IconNames.TShirt); basic.pause(600)         //O\n                    basic.showIcon(IconNames.Surprised); basic.pause(600)      //R\n                    basic.showIcon(IconNames.Yes); basic.pause(600)            //I\n                    basic.showIcon(IconNames.Asleep); basic.pause(600)         //D\n                    basic.showIcon(IconNames.SmallHeart); basic.pause(600)     //E\n                    basic.showIcon(IconNames.Scissors); basic.pause(600)       //:\n                    basic.showIcon(IconNames.Cow); basic.pause(600)            //4\n                //_____\n                Over();\n            } else if (indexenclStrCybSec==\"4\"){\n                Ready();\n                //Message\n                serial.writeLine(\"CLCybSec code: JSVY\")\n                serial.writeLine(\"Key: <- 4\") \n                serial.writeLine(\"FLCybSec code: ADQZ\")\n                serial.writeLine(\"Key: -> 5\") \n\n                serial.writeLine(\"\")\n                basic.showString(\"CLCybSec code:\")//4\n                basic.showString(\"J\")\n                basic.showString(\"S\")\n                basic.showString(\"Y\")\n                basic.showString(\"V\")\n                basic.showString(\" \")\n                basic.showString(\"KEY:\")      \n                images.createBigImage(`\n                  . . . # . . . . . . . # . # . . . . .\n                  . . # # . . . . . . . # . # . . . . .\n                  . # # # # # # # . . . # # # . . . . .\n                  . . # # . . . . . . . . . # . . . . .\n                  . . . # . . . . . . . . . # . . . . .\n                    `).scrollImage(1, 200)\n                basic.showString(\"FLCybSec code:\")//5\n                basic.showString(\"A\")\n                basic.showString(\"D\")\n                basic.showString(\"Q\")\n                basic.showString(\"Z\")\n                basic.showString(\" \")\n                basic.showString(\"KEY:\") \n                images.createBigImage(`\n                    . . . . # . . . . . # # # . . . . . \n                    . . . . # # . . . . # . . . . . . . \n                    # # # # # # # . . . # # # . . . . . \n                    . . . . # # . . . . . . # . . . . . \n                    . . . . # . . . . . # # # . . . . . \n                    `).scrollImage(1, 200)\n                //____\n                Over();\n            } else {\n                Ready();\n                //Message    2:5\n                serial.writeLine(\"\")      \n                serial.writeLine(\"(4-3) (1-1) (4-5) (2-4) (3-5) (2-4) (4-4) (4-5) (5-3) (3-5) (4-5) (3-5) (2-1) (2-4) (5-2) (1-5)\") \n\n                basic.showString(\"(4-3)(1-1)(4-5)(2-4)(3-5)(2-4)(4-4)(4-5)(5-3)(3-5)(4-5)(3-5)(2-1)(2-4)(5-2)(1-5)\")\n                //____    \n                Over();\n            }\n        }\n\n        export function Ready(){           \n            music.startMelody(music.builtInMelody(Melodies.Baddy), MelodyOptions.Once)\n            basic.showAnimation(`0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  \n                                 0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  \n                                 0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  `, 60);//3\n\n            basic.showAnimation(`0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  \n                                 0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 1 0 0 0  0 1 0 0 0  0 1 0 0 0  \n                                 0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  `, 60);//2\n\n            basic.showAnimation(`0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 1 1 0 0  0 1 1 0 0  0 1 1 0 0  \n                                 0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  \n                                 0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  `, 60);//1\n\n            basic.showAnimation(`0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0 \n                                1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0\n                                1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  \n                                1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  \n                                0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0 `, 180);//end            \n        }\n\n        export function Over(){           \n        music.startMelody(music.builtInMelody(Melodies.Punchline), MelodyOptions.Once)\n        basic.showAnimation(`1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0   \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0   \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0    \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0    \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0   `, 180);//end  \n        }\n\n        export function Dit(){           \n            basic.showLeds(`\n            . . . . .\n            . # # # .\n            . # # # .\n            . # # # .\n            . . . . .\n            `)\n            music.playTone(988, music.beat(BeatFraction.Quarter))//Dit\n            basic.clearScreen()\n            basic.pause(200)    \n        }\n\n        export function Dahs(){\n            basic.showLeds(`\n                . . . . .\n                . . . . .\n                # # # # #\n                . . . . .\n                . . . . .\n                `)\n                music.playTone(988, music.beat(BeatFraction.Whole))//Dahs\n            basic.clearScreen()\n            basic.pause(200) \n        }\n\n    /* Mission Water, select your Hat and send the Ratio */ \n    /** | >> En << | Select your Hat ColCybSecor Source information and send the Ratio Chlorine:Fluoride.\n        | >> Fr << | Sélectionnez la Couleur de votre chapeau sorece d'information et envoyez le bon ratio Chlore:Fluorure.\n        * @param Hat in Cyberville\n    */\n    //% blockId=\"Mission Water Treatment Polluted\" \n    //% block=\"Hat color source information: $Hat=ColCybSecorHat | and send the Ratio\"\n    //% block.loc.fr=\"Couleur de votre chapeau sorece d'information : $Hat=ColCybSecorHat | et envoyez le Ratio\"\n    //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n    //% group.loc.fr=\"Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio ?\"\n    //% afterOnStart=true\n    //% weight=100        \n    //% blockHidden=false \n    //% advanced=true\n    export function MissionWaterCybSec(Hat:number): void{  \nserial.writeLine(\"Ready, set, go! \")           \n        if (indexhatStrCybSec==\"1\"){\n        // Red Hat actvity\n        if (indexclStrCybSec==\"3\" && indexflStrCybSec==\"7\"){// complety safe\n                    Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(4));//Flashing BLixel                \n                    basic.showIcon(IconNames.Happy,100) \n                    soundExpression.happy.play()\n                    pause(7000)\n                    soundExpression.happy.play()\n                    pause(7000)\n                    soundExpression.happy.play()\n                    pause(7000)\n                    soundExpression.happy.play()\n                    } else if (indexclStrCybSec==\"7\" && (indexflStrCybSec==\"3\")){//  safe\n                        Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(3)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3));//Flashing BLixel                \n                        Losser();\n                        } else if ((indexclStrCybSec==\"1\"||indexclStrCybSec==\"2\"||indexclStrCybSec==\"8\") && (indexflStrCybSec==\"7\")){// moderate\n                            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(2)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2));//Flashing BLixel                \n                            Losser();\n                            } else if ((indexflStrCybSec==\"1\"||indexflStrCybSec==\"2\"||indexflStrCybSec==\"8\") && (indexclStrCybSec==\"3\")){// danger\n                                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));//Flashing BLixel                \n                                Losser();\n                                    } else{ // CLCybSec hight danger \n                                        Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); basic.pause(500); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));//Flashing BLixel                \n                                        Losser();\n                                        }\n        // _____________              \n        } else if (indexhatStrCybSec==\"2\"){\n        // Black Hat actvity           \n            for (let flash=0; flash<3;flash++){ Cybersec.setPixelColourBLUECybSec(BLiXel.blixel_index(0)); Cybersec.setPixelColourONCybSec(BLiXel.blixel_index(1)); basic.pause(200); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0)); Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1));} \n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); //0CLCybSec with virus       \n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(1)); //1FLCybSec with virus  \n            if  (CLCybSecAV==14 && FLCybSecAV==7){\n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(0));  \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(1)); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(2)); \n                Cybersec.setPixelColourOFFCybSec(BLiXel.blixel_index(3)); \n                Cybersec.setPixelColourPURPLECybSec(BLiXel.blixel_index(4));\n                basic.showIcon(IconNames.Happy,100)  \n             }          \n          \n        // _____________\n        } else if (indexhatStrCybSec==\"3\"){ \n        // White Hat actvity\n            if (indexclStrCybSec==\"1\" && indexflStrCybSec==\"1\"){// complety safe\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . . # # . \n                . # . . # # . . . # . # . . # . . # \n                # # # . . # . . . . . . . . # # # # \n                . # . . . # . . # . . . # . # . . # \n                . . . . # # # . . # # # . . # . . # \n                `).scrollImage(1, 200) \n            } else if (indexclStrCybSec==\"1\" && indexflStrCybSec==\"2\"){// complety safe\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . # # # . \n                . # . . # # . . . # . # . . # . . # \n                # # # . . # . . . . . . . . # # # . \n                . # . . . # . . # . . . # . # . . # \n                . . . . # # # . . # # # . . # # # .\n                `).scrollImage(1, 200) \n            } else if (indexclStrCybSec==\"3\" && indexflStrCybSec==\"5\"){// complety safe\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . . # # # \n                . # . . # # . . . # . # . . # . . . \n                # # # . . # . . . . . . . . # . . . \n                . # . . . # . . # . . . # . # . . . \n                . . . . # # # . . # # # . . . # # #\n                `).scrollImage(1, 200) \n            } else if (indexclStrCybSec==\"4\" && indexflStrCybSec==\"1\"){// complety safe\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . # # # .\n                . # . . # # . . . # . # . . # . . # \n                # # # . . # . . . . . . . . # . . # \n                . # . . . # . . # . . . # . # . . # \n                . . . . # # # . . # # # . . # # # .\n                `).scrollImage(1, 200) \n            } else if (indexclStrCybSec==\"7\" && indexflStrCybSec==\"3\"){// complety safe\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . . # # # \n                . # . . # # . . . # . # . . # . . . \n                # # # . . # . . . . . . . . # # # . \n                . # . . . # . . # . . . # . # . . . \n                . . . . # # # . . # # # . . . # # #\n                `).scrollImage(1, 200) \n            } else{\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); // complety dangerous\n                soundExpression.sad.play()\n                images.createBigImage(`\n                . . . . . # . . # # . # #\n                . . . . # # . . # # . # #\n                # # # . . # . . . . . . .\n                . . . . . # . . . # # # .\n                . . . . # # # . # . . . #\n                `).scrollImage(1, 200) \n                ClrStripCybSec = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)\n                ClrStripCybSec.showRainbow(100, 350)\n                Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); \n            }\n        // _____________    \n\n        } else {                    \n        // Blue Hat actvity\n        if (indexclStrCybSec==\"3\" && indexflStrCybSec==\"6\"){// complety safe\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . . # # . \n            . # . # . . # . . # \n            . . . . . . # # # # \n            # . . . # . # . . # \n            . # # # . . # . . # \n            `).scrollImage(1, 200) \n        } else if(indexclStrCybSec==\"7\" && indexflStrCybSec==\"9\"){\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . # # # .\n            . # . # . . # . . # \n            . . . . . . # # # # \n            # . . . # . # . . # \n            . # # # . . # # # . \n            `).scrollImage(1, 200) \n        } else if(indexclStrCybSec==\"7\" && indexflStrCybSec==\"4\"){\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . . # # #\n            . # . # . . # . . . \n            . . . . . . # . . . \n            # . . . # . # . . . \n            . # # # . . . # # # \n            `).scrollImage(1, 200) \n        } else if(indexclStrCybSec==\"4\" && indexflStrCybSec==\"5\"){\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . # # # .\n            . # . # . . # . . # \n            . . . . . . # . . # \n            # . . . # . # . . # \n            . # # # . . # # # . \n            `).scrollImage(1, 200) \n        } else if(indexclStrCybSec==\"2\" && indexflStrCybSec==\"5\"){\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . . # # #\n            . # . # . . # . . . \n            . . . . . . # # # #\n            # . . . # . # . . . \n            . # # # . . . # # # \n            `).scrollImage(1, 200) \n        } else{\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); // complety dangerous\n            soundExpression.sad.play()\n            images.createBigImage(`\n            # # . # #\n            # # . # #\n            . . . . .\n            . # # # .\n            # . . . #\n            `).scrollImage(1, 200) \n            ClrStripCybSec = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)\n            ClrStripCybSec.showRainbow(100, 350)\n            Cybersec.setPixelColourREDCybSec(BLiXel.blixel_index(0)); \n            }\n        } \n    }       \n    \n    export function Losser(){\n        soundExpression.sad.play()\n        basic.showIcon(IconNames.Sad,2000) \n        pause(1000)\n        basic.clearScreen()\n    }\n\n\n\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" 2024 \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//This is the End 2024\n\n\n\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" 2025 \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n//------------------------- Missions #3 -----------------------------------\n\n\n//---------- Parking Bar control & simulation -------------//\nlet ParkingBarAngle = 0;\nlet Step = 0;\nStep = 0;\n\n\n    /**\n     * Return the Position Parking Bar Value in degrees.\n     */\n        //% blockId=\"Position Value\" \n        //% block=\"Position value in degrees for 🚥\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11 \n//% blockHidden=false \n        export function getValueDegCybSec(): number {\n            return ParkingBarAngle;\n        }\n\n    /**\n     * Moves Down one step parking bar in -11.25º\n     */\n        //% blockId=\"Down Step\" \n        //% block=\"⤵️ Down One Step 🚥\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11\n//% blockHidden=false \n        export function decreaseCybSec(): void {\n            if (Step > 0) {Step += 0 - 1}\n            showImageCybSec(Step)\n        }\n\n    /**\n     * Moves Up one step parking bar in +11.25º\n     */\n        //% blockId=\"Up Step\" \n        //% block=\"⤴️ Up One Step 🚥\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11 \n//% blockHidden=false\n        export function increaseCybSec(): void {\n            if (Step < 8) {Step += 1}\n            showImageCybSec(Step)\n        }\n\n    /**\n     * Parking Bar Simulation \n     | >> En << | Simulates 🚥 angle 0° to 90° in 8 steps (11.25° each) on the micro:bit.\n     | >> Fr << | ---.\n    */\n        //% blockId=\"Parking Bar\" \n        //% block=\"Parking Bar 🚥 Simulation\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11\n//% blockHidden=false\n        export function LocalparkbarCybSec(): void {\n            showImageCybSec(Step)\n        }\n\n    function showImageCybSec (level: number) {\n        if (level == 0) {\n            basic.showLeds(`\n            . . . . .\n            . . . . .\n            . . . . .\n            . . . . .\n            # # # # #\n            `)\n        } else if (level == 1) {\n            basic.showLeds(`\n            . . . . .\n            . . . . .\n            . . . . .\n            . . . . #\n            # # # # .\n            `)\n        } else if (level == 2) {\n            basic.showLeds(`\n            . . . . .\n            . . . . .\n            . . . . #\n            . . . # .\n            # # # . .\n            `)\n        } else if (level == 3) {\n        basic.showLeds(`\n            . . . . .\n            . . . . #\n            . . . # .\n            . . # . .\n            # # . . .\n            `)\n        } else if (level == 4) {\n        basic.showLeds(`\n            . . . . #\n            . . . # .\n            . . # . .\n            . # . . .\n            # . . . .\n            `)\n        } else if (level == 5) {\n        basic.showLeds(`\n            . . . # .\n            . . # . .\n            . # . . .\n            # . . . .\n            # . . . .\n            `)\n        } else if (level == 6) {\n        basic.showLeds(`\n            . . # . .\n            . # . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            `)\n        } else if (level == 7) {\n        basic.showLeds(`\n            . # . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            `)\n        } else if (level == 8) {\n        basic.showLeds(`\n            # . . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            `)\n        }\n    ParkingBarAngle = Step * 11.25\n    }\n\n    /* Ready to listen from Cyberville */\n    /** | >> En << | Set to hear any MSG sent to the Cyberville's WiFi. The MSG will be displayed on the console.\n        | >> Fr << | --.      \n    */\n        //% blockId=\"Ready to listen\"\n        //% block=\"Set to receive data from Cyberville's WiFi\"\n        //% block.loc.fr=\"--\"\n        //% advanced=true\n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        //% weight=100 \n        //% color=#a75a9e\n        export function Rdy2listenCybSec():void {\n            //Open ports to listen    \n            bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);     \n            bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"255.255.255.255\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //TO ALL \n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n            pause(1000)//***** Important ****\n            let Listening=\"\";\n\n            //Infinite loop to listen\n            loops.everyInterval(3000, function () {\n                //Getting LENGHT data \n                    bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n                    let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n                    let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n                    let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n                    let LenDrcvSize=LenDrcv.length\n                //Getting Data\n                    bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n                    pause(2000)//***** Important **** \n                    //For ReceivedData\n                    let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                    let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                    let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n                    let totDX=DXrcv.length\n                //For RCVInfo\n                    Listening = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n                    let sIndexDXrcv = Listening.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n                    let eIndexDXrcv = Listening.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n                    let MSG_Listened  = Listening.substr(sIndexDXrcv, parseInt(LenDrcv))\n                    //____________________________________ \"  V  \" _____________________________\n                    serial.writeLine(\"Message heard:  \" + MSG_Listened)\n                    serial.writeLine(\"===============================================\")\n                    pause(1000)//***** Important **** \n                })\n        }\n\n    /* Receiving data form spacific IP */    \n    /** | >> En << | Receiving data from a specific IP. Data comes in Str format. You can drag and drop the MSG.\n        | >> Fr << | --.\n        * @param Origin where to hear the number, eg: \"192.168.4.1\" \n    */\n    //% blockId=Rcv_Data_from_IP\n    //% block=\"$this Data received from IP: $Origin\"\n    //% block.loc.fr=\"--\"\n    //% advanced=true\n    //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"       \n    //% weight=100\n    //% draggableParameters=variable\n    //% blockHidden=false \n    //% afterOnStart=true\n    //% color=#a75a9e\n        export function ReceiveDataCybSec(Origin?: string): string {\n        \n        //    let receivedMessage = \"\";\n            \n            // Close any open connections\n            bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n            \n            // Set passive receive mode\n            bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n            pause(600);\n            \n            if (Origin) {\n                // Start listening from a specific IP\n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\" + Origin + \"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n                pause(1000);\n            }\n            \n            // Request data length\n            bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12;\n            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv);\n            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv);\n            \n            // Request actual data\n            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);\n            pause(2000);\n            \n            let dataReceived = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal);\n            let startIndexDXrcv = dataReceived.indexOf(\":\") + 1;\n            let MSG_IP = dataReceived.substr(startIndexDXrcv, parseInt(LenDrcv));\n            \n            serial.writeLine(\"Received Message: \" + MSG_IP);\n            pause(600);\n            return MSG_IP;\n        }\n\n    /* Set the Text MSG to send, set your address and the destination address  */ \n    /** | >> En << | To send a Text MSG to a specific IP destination.\n        | >> Fr << | ---.\n        * @param TXT_UDP MSG to send, eg: \"Hi\"\n        * @param Destination where to send the number, eg: \"192.168.4.1\"\n    */\n        //% blockId=\"Send Text to IP\" \n        //% block=\"Send Text: $TXT_UDP | To IP: $Destination\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function TXT_UPD_SndCybSec(TXT_UDP: string, Destination: string): void {             \n\n            //Close current open ports\n                bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n    \n            //Getting My IP b.Board\n                bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);//7000\n                let startIndex = receivedData.indexOf(\"ip:\") + 4 \n                let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n                let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n    \n            //Sending MSG_UDP    \n                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);     \n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Destination +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n                \n                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  TXT_UDP.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n    //_______________________________________    V   _______________________________\n                bBoard_Control.UARTSendString(TXT_UDP, boardIDGlobal, clickIDGlobal); //Send MSG2SndUDP the contents of the packet  \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n                serial.writeLine(\"Sending from: \" + MyIP + \" to: \" + Destination + \" message: \" + TXT_UDP)\n                pause(1000)//***** Important **** \n                serial.writeLine(\"\")\n        } \n\n    /* Set the Number to send, set your address and the destination address  */ \n    /** | >> En << | To send a Number MSG to a specific IP destination.\n        | >> Fr << | ---.\n        * @param Num_UDP Number to send, eg: 1234\n        * @param Destination where to send the number, eg: \"192.168.4.1\"\n    */\n        //% blockId=\"Send Number to IP\" \n        //% block=\"Send Number: $Num_UDP | To IP: $Destination\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function Num_UDP_SndCybSec(Num_UDP: number, Destination: string): void {             \n\n            let MSG_UDP = Num_UDP.toString();\n            \n            //Close current open ports\n                bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n    \n            //Getting My IP b.Board\n                bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);//7000\n                let startIndex = receivedData.indexOf(\"ip:\") + 4 \n                let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n                let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n    \n            //Sending Num_UDP    \n                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);     \n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Destination +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //Start communication\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n                \n                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  MSG_UDP.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Prepare to send\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n    //_______________________________________    V   _______________________________\n                bBoard_Control.UARTSendString(MSG_UDP, boardIDGlobal, clickIDGlobal); //Send the number as a string  \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n                serial.writeLine(\"Sending from: \" + MyIP + \" to: \" + Destination + \" number: \" + Num_UDP)\n                pause(1000)//***** Important **** \n                serial.writeLine(\"\") \n        }\n\n    /* Say Hello to everyone  */ \n    /** | >> En << | Set an MSG from a Role to be sent to everyone in Cyberville's WiFi.\n        | >> Fr << | ---.\n        * @param Role in Cyberville\n        * @param MSG_UDP MSG to send, eg: \"Hi\"\n    */\n        //% blockId=\"To send a MSG to everyone in Cyberville's WiFi\" \n        //% block=\"The $Role=BLiXel_IndexR role | says:$MSG_UDP to everyone!\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function MSG_UPD_SndtoAllCybSec(Role: number, MSG_UDP: string): void {             \n\n            //Close current open ports\n                bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n\n            //Fix the number Role selected and do a relation with icon to sent msg\n                let Rolefix=Role;\n                if(Rolefix==4){Role=5;}\n                if(Rolefix==5){Role=6;} \n                if(Rolefix==6){Role=7;} \n                if(Rolefix==7){Role=8;}\n                if(Rolefix==8){Role=9;}\n                if(Rolefix==9){Role=10;}\n                if(Rolefix==0){Role=12;}\n            \n                let CybervilleIcon=\"\";\n                if(Role==1){CybervilleIcon=\"School\";}\n                if(Role==2){CybervilleIcon=\"Hospital\";}\n                if(Role==3){CybervilleIcon=\"Water\";}\n                if(Role==5){CybervilleIcon=\"Government\";}\n                if(Role==6){CybervilleIcon=\"Brilliant Labs\";}\n                if(Role==7){CybervilleIcon=\"Bank\";}\n                if(Role==8){CybervilleIcon=\"Factory\";}\n                if(Role==8){CybervilleIcon=\"Industry\";}\n                if(Role==10){CybervilleIcon=\"Art Center\";}\n                if(Role==0){CybervilleIcon=\"Citizens\";}\n\n            //Getting My IP b.Board\n                bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);//7000\n                let startIndex = receivedData.indexOf(\"ip:\") + 4 \n                let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n                let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n    \n            //Sending MSG_UDP to all    \n                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);     \n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"255.255.255.255\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //TO ALL \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n\n            //Assebling the MSG_UDP message\n//__________________________________________________________________________________________    V   _______________________________\n                MSG_UDP_FullCybSec=\"Sent from Role: \"+ Role + \" (\" +CybervilleIcon+ \")\" + \", with IP:\" + MyIP + \", Message: \" + MSG_UDP;//FULL MSG TO SEND\n                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  MSG_UDP_FullCybSec.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//_____________________________________________    V   _______________________________\n                bBoard_Control.UARTSendString(MSG_UDP_FullCybSec, boardIDGlobal, clickIDGlobal); //Send MSG2SndUDP the contents of the packet  \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n                serial.writeLine(\"The Role: \" + Role + \" with IP: \" + MyIP + \" said: \" + MSG_UDP)\n//pause(1000)//***** Important **** \n//                serial.writeLine(\"\")\n         \n//Receiving answer from AP, if answer is Cyberville, show hi and the icone selected\n                bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); //1000\n                let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n                let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n                let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n                let LenDrcvSize=LenDrcv.length\n                    \n                //Getting Data\n                    bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n                    pause(1000)//***** Important ****  \n                //For ReceivedData\n                    let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                    let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                    let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n                    let totDX=DXrcv.length\n                //For RCVInfo\n                    let AnswerAP = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n                    let sIndexDXrcv = AnswerAP.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n                    let eIndexDXrcv = AnswerAP.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n                    let MSG_Answer_AP  = AnswerAP.substr(sIndexDXrcv, parseInt(LenDrcv))\n\n                //Getting as response from AP \"Cyberville\" to publish hi\n                    if (MSG_Answer_AP = \"Cyberville\"){\n                        basic.showLeds(`\n                            # . . . #\n                            # . . . .\n                            # # # . #\n                            # . # . #\n                            # . # . #\n                            `)\n                        basic.pause(2000)\n                // Finding the Role icone     \n                        if (Role==1){School();\n                        } else if (Role==2){Hospital();\n                        } else if (Role==3){Water();\n                        }else if (Role==5){Government();\n                        }else if (Role==6){Brilliant();\n                        }else if (Role==7){Bank();\n                        }else if (Role==8){Factory();\n                        }else if (Role==9){Industry();\n                        }else if (Role==10){Art();\n                        }else{Citizens();}\n                    }  \n             //________________________________________ \"  V  \" _____________________________\n             serial.writeLine(\"Message received:  \" + MSG_Answer_AP)\n             serial.writeLine(\"===============================================\")\n        } \n     \n        export function School(){\n            basic.showLeds(`\n                # # . # #\n                # # . # #\n                . # # # .\n                . # # # .\n                . # # # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }         \n        export function Hospital(){\n            basic.showLeds(`\n                # . # . #\n                # . # . #\n                # # # # #\n                . . # . .\n                . . # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        } \n        export function Water(){\n            basic.showLeds(`\n                . # # # .\n                # # # # #\n                . . # . .\n                # . # . .\n                # # # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        } \n        export function Government(){\n            basic.showLeds(`\n                . # . # .\n                # . # . #\n                . # . # .\n                # . # . #\n                . # . # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Brilliant(){\n            basic.showLeds(`\n                . # . # .\n                . . . . .\n                . . # . .\n                . # . # .\n                . . # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Bank(){\n            basic.showLeds(`\n                . . # . .\n                . . # . .\n                . . # . .\n                . # # # .\n                . . # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Factory(){\n            basic.showLeds(`\n                # # . . #\n                # # . # .\n                . . # . .\n                # # . # .\n                # # . . #\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Industry(){\n            basic.showLeds(`\n                . . . # #\n                . . . # #\n                # # # # #\n                # # # # #\n                . # . # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Art(){\n            basic.showLeds(`\n                . . # . .\n                . . # # .\n                . . # . #\n                # # # . .\n                # # # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Citizens(){\n            basic.showLeds(`\n                . . # . .\n                . # # # .\n                # # # # #\n                . # # # .\n                . # . # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n\n\n\n\n\n\n\n\n\n//********2025******/\n\n}  \n\n\n\n\n\n// This list SHOULD be out of the namespace Cybersec {}  *Important\n enum BLiXelIndexR {\n    //% block=\"1 SCHOOL\"\n    //% block.loc.fr=\"1 ÉCOLE\"\n        oneCybSec = 1,    \n    //% block=\"2 HOSPITAL\"\n    //% block.loc.fr=\"2 HÔPITAL\"\n        twoCybSec = 2,    \n    //% block=\"3 WATER\"\n    //% block.loc.fr=\"3 EAU\"\n        threeCybSec = 3,\n//    //% block=\"4 WiFi-BL\"\n//    four = 4,\n    //% block=\"5 GOVERNMENT\"\n    //% block.loc.fr=\"5 GOUVERNEMENT\"\n        fiveCybSec = 4,\n    //% block=\"6 BRILLIANT LABS\"\n    //% block.loc.fr=\"6 CREATIFS LABOS\"\n        sixCybSec = 5,    \n    //% block=\"7 BANK\"\n    //% block.loc.fr=\"7 BANQUE\"\n        sevenCybSec = 6,\n    //% block=\"8 FACTORY\"\n    //% block.loc.fr=\"8 USINE\"\n        eightCybSec = 7,\n    //% block=\"9 INDUSTRY\"\n    //% block.loc.fr=\"9 INDUSTRIE\"\n        nineCybSec = 8, \n    //% block=\"10 ARTCENTER\"\n    //% block.loc.fr=\"10 ARTCENTER\"\n        tenCybSec = 9,\n//    //% block=\"11CYBERSEGURIDAD\"\n//        eleven = 11,    \n    //% block=\"12 CITIZENS\"\n    //% block.loc.fr=\"12 CITOYENS\"\n        twelveCybSec = 0\n }\n\n enum ApplianceIndex {\n    //% block=\"☼ 1 HeatCntr\"\n    //% block.loc.fr=\"☼ 1 CntrChaleur\"\n        oneCybSec = 1,\n    //% block=\"☼ 2 Air Cond\"\n    //% block.loc.fr=\"☼ 2 Climatiseur\"\n        twoCybSec = 2,\n    //% block=\"☼ 3 LampCafe\"\n    //% block.loc.fr=\"☼ 3 CafeLampe\"\n        threeCybSec = 3,\n    //% block=\"☼ 4 Lamp Gym\"\n    //% block.loc.fr=\"☼ 4 Lampe Gym\"\n        fourCybSec = 4,\n    //% block=\"☼ 5 Internet\"\\\n    //% block.loc.fr=\"☼ 5 Internet\"\n        fiveCybSec = 5,\n }\n\n enum Index_CLCybSec {\n    //% block=\"Level of Chlorine: 0\"\n    //% block.loc.fr=\"Niveau de Chlore: 0\"\n        zeroCybSec = 0,    \n    //% block=\"Level of Chlorine: 1\"\n    //% block.loc.fr=\"Niveau de Chlore: 1\"\n        oneCybSec = 1,    \n    //% block=\"Level of Chlorine: 2\"\n    //% block.loc.fr=\"Niveau de Chlore: 2\"\n        twoCybSec = 2,    \n    //% block=\"Level of Chlorine: 3\"\n    //% block.loc.fr=\"Niveau de Chlore: 3\"\n        threeCybSec = 3,\n    //% block=\"Level of Chlorine: 4\"\n    //% block.loc.fr=\"Niveau de Chlore: 4\"\n        fourCybSec = 4,\n    //% block=\"Level of Chlorine: 5\"\n    //% block.loc.fr=\"Niveau de Chlore: 5\"\n        fiveCybSec = 5,\n    //% block=\"Level of Chlorine: 6\"\n    //% block.loc.fr=\"Niveau de Chlore: 6\"\n        sixCybSec = 6,    \n    //% block=\"Level of Chlorine: 7\"\n    //% block.loc.fr=\"Niveau de Chlore: 7\"\n        sevenCybSec = 7,\n    //% block=\"Level of Chlorine: 8\"\n    //% block.loc.fr=\"Niveau de Chlore: 8\"\n        eightCybSec =8,\n    //% block=\"Level of Chlorine: 9\"\n    //% block.loc.fr=\"Niveau de Chlore: 9\"\n        nineCybSec = 9,\n    //% block=\"Level of Chlorine:10\"\n    //% block.loc.fr=\"Niveau de Chlore:10\"\n        tenCybSec= 10,\n }\n\n enum Index_FLCybSec {\n    //% block=\"Level of Fluoride: 0\"\n    //% block.loc.fr=\"Niveau de Fluorure: 0\"\n        zeroCybSec = 0,    \n    //% block=\"Level of Fluoride: 1\"\n    //% block.loc.fr=\"Niveau de Fluorure: 1\"\n        oneCybSec = 1,    \n    //% block=\"Level of Fluoride: 2\"\n    //% block.loc.fr=\"Niveau de Fluorure: 2\"\n        twoCybSec = 2,    \n    //% block=\"Level of Fluoride: 3\"\n    //% block.loc.fr=\"Niveau de Fluorure: 3\"\n        threeCybSec = 3,\n    //% block=\"Level of Fluoride: 4\"\n    //% block.loc.fr=\"Niveau de Fluorure: 4\"\n        fourCybSec = 4,\n    //% block=\"Level of Fluoride: 5\"\n    //% block.loc.fr=\"Niveau de Fluorure: 5\"\n        fiveCybSec = 5,\n    //% block=\"Level of Fluoride: 6\"\n    //% block.loc.fr=\"Niveau de Fluorure: 6\"\n        sixCybSec = 6,    \n    //% block=\"Level of Fluoride: 7\"\n    //% block.loc.fr=\"Niveau de Fluorure: 7\"\n        sevenCybSec = 7,\n    //% block=\"Level of Fluoride: 8\"\n    //% block.loc.fr=\"Niveau de Fluorure: 8\"\n        eightCybSec = 8,\n    //% block=\"Level of Fluoride: 9\"\n    //% block.loc.fr=\"Niveau de Fluorure: 9\"\n        nineCybSec = 9,\n    //% block=\"Level of Fluoride:10\"\n    //% block.loc.fr=\"Niveau de Fluorure:10\"\n        tenCybSec = 10, \n }\n\n enum Index_AVCLCybSec {\n    //% block=\"Number as Antivirus CLCybSec: 1\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 1\"\n        oneCybSec = 1,    \n    //% block=\"Number as Antivirus CLCybSec: 2\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 2\"\n        twoCybSec = 2,    \n    //% block=\"Number as Antivirus CLCybSec: 3\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 3\"\n        threeCybSec = 3,\n    //% block=\"Number as Antivirus CLCybSec: 4\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec : 4\"\n        fourCybSec = 4,\n    //% block=\"Number as Antivirus CLCybSec: 5\"\n    //% block.loc.fr=\"Nombre d'Antivirus Cl: 5\"      \n        fiveCybSec = 5,    \n    //% block=\"Number as Antivirus CLCybSec: 6\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 6\"    \n        sixCybSec = 6,    \n    //% block=\"Number as Antivirus CLCybSec: 7\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 7\"   \n        sevenCybSec = 7,\n    //% block=\"Number as Antivirus CLCybSec: 8\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 8\" \n        eightCybSec = 8,\n    //% block=\"Number as Antivirus CLCybSec: 9\"\n    //% block.loc.fr=\"Nombre d'antivirus Cl: 9\"   \n        ninesCybSec = 9,    \n    //% block=\"Number as antivirus CLCybSec: 10\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 10\"\n        tenCybSec = 10,  \n    //% block=\"Number as Antivirus CLCybSec: 11\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 11\"\n        elevenCybSec = 11,    \n    //% block=\"Number as Antivirus CLCybSec: 12\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 12\"\n        twelveCybSec = 12,\n    //% block=\"Number as Antivirus CLCybSec: 13\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 13\"\n        thirteenCybSec = 13,\n    //% block=\"Number as Antivirus CLCybSec: 14\"\n    //% block.loc.fr=\"Nombre d'Antivirus Cl: 14\"\n        fourteenCybSec = 14,    \n    //% block=\"Number as Antivirus CLCybSec: 15\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 15\"\n        fiveteenCybSec = 15,    \n    //% block=\"Number as Antivirus CLCybSec: 16\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 16\"\n        sixteenCybSec = 16,\n    //% block=\"Number as Antivirus CLCybSec: 17\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 17\"\n        seventeenCybSec = 17,\n    //% block=\"Number as Antivirus CLCybSec: 18\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 18\"\n        eigthteenCybSec = 18,    \n    //% block=\"Number as Antivirus CLCybSec: 19\"\n    //% block.loc.fr=\"Nombre d'Antivirus CLCybSec: 19\"\n        nineteenCybSec = 19,\n    //% block=\"Number as Antivirus CLCybSec: 20\"\n    //% block.loc.fr=\"Nombre d'antivAntivirusrus CLCybSec: 20\"\n        twentyCybSec = 20,\n }\n\n enum Index_AVFLCybSec {\n    //% block=\"Number as Antivirus FLCybSec: 1\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 1\"\n        oneCybSec = 1,    \n    //% block=\"Number as Antivirus FLCybSec: 2\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 2\"\n        twoCybSec = 2,    \n    //% block=\"Number as Antivirus FLCybSec: 3\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 3\"\n        threeCybSec = 3,\n    //% block=\"Number as Antivirus FLCybSec: 4\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 4\"\n        fourCybSec = 4,\n    //% block=\"Number as Antivirus FLCybSec: 5\"\n    //% block.loc.fr=\"Nombre d'Antivirus Fl: 5\"\n        fiveCybSec = 5,    \n    //% block=\"Number as Antivirus FLCybSec: 6\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 6\"\n        sixCybSec = 6,    \n    //% block=\"Number as Antivirus FLCybSec: 7\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 7\"\n        sevenCybSec = 7,\n    //% block=\"Number as Antivirus FLCybSec: 8\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 8\"\n        eightCybSec = 8,\n    //% block=\"Number as Antivirus FLCybSec: 9\"\n    //% block.loc.fr=\"Nombre d'antivAntivirusirus FLCybSec: 9\"\n        nineCybSec = 9,    \n    //% block=\"Number as Antivirus FLCybSec: 10\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 10\"\n        tenCybSec = 10,  \n    //% block=\"Number as Antivirus FLCybSec: 11\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 11\"\n        elevenCybSec = 11,    \n    //% block=\"Number as Antivirus FLCybSec: 12\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 12\"\n        twelveCybSec = 12,\n    //% block=\"Number as Antivirus FLCybSec: 13\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 13\"\n        thirteenCybSec = 13,\n    //% block=\"Number as Antivirus FLCybSec: 14\"\n    //% block.loc.fr=\"Nombre d'Antivirus Fl: 14\"\n        fourteenCybSec = 14,    \n    //% block=\"Number as Antivirus FLCybSec: 15\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 15\"\n        fiveteenCybSec = 15,    \n    //% block=\"Number as Antivirus FLCybSec: 16\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 16\"\n        sixteenCybSec = 16,\n    //% block=\"Number as Antivirus FLCybSec: 17\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 17\"\n        seventeenCybSec = 17,\n    //% block=\"Number as Antivirus FLCybSec: 18\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 18\"\n        eigthteenCybSec = 18,    \n    //% block=\"Number as Antivirus FLCybSec: 19\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 19\"\n        nineteenCybSec = 19,\n    //% block=\"Number as Antivirus FLCybSec: 20\"\n    //% block.loc.fr=\"Nombre d'Antivirus FLCybSec: 20\"\n        twentyCybSec = 20,\n }\n\n enum Index_H {\n    //% block=\"Red 🔴🎩\"\n    //% block.loc.fr=\"Rouge 🔴🎩\"\n        oneCybSec = 1,    \n    //% block=\"Black ⚫🎩\"\n    //% block.loc.fr=\"Noir ⚫🎩\"\n        twoCybSec = 2,    \n    //% block=\"White ⚪🎩\"\n    //% block.loc.fr=\"Blanc ⚪🎩\"\n        threeCybSec = 3,\n    //% block=\"Blue 🟣🎩\"\n    //% block.loc.fr=\"Bleue 🟣🎩\"\n        fourCybSec = 4,\n }\n\n enum Index_Encr {\n    //% block=\"Morse-Code\"\n    //% block.loc.fr=\"Code-Morse\"\n        oneCybSec = 1,    \n    //% block=\"Cypher\"\n    //% block.loc.fr=\"Chiffre\"\n        twoCybSec = 2,    \n    //% block=\"Cyberville-Cypher\"\n    //% block.loc.fr=\"Chiffre de Cyberville\"\n        threeCybSec = 3,\n    //% block=\"Caesar_Cypher\"\n    //% block.loc.fr=\"Cypher de Cesar\"\n        fourCybSec = 4,\n    //% block=\"Number_Grid\"\n    //% block.loc.fr=\"Grille Numerique\"\n        fiveCybSec = 5,\n }\n\n\n\n\n//-------------------------------------------------------------------\n//backup comments in file: examples codes\n\n                     //-***Close the comunication */ NO borrar\n                     //Close all ports\n//      bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n//     response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n                     //Ready to Receive done!     Important CIPRECVMODE=0 \n                     //  bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n                     //  response = WiFiResponse(\"OK\", false, 200);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmSCybSec because it is too long\n                     //  serial.writeLine(\"Client Closed!, Please recconect again\")\n                     //Client required to reconnect\n                     //  bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLCybSecEAR\\\",\\\"pwd_CLCybSecEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLCybSecEAR and pwd_CLCybSecEAR are nothing, I use them to clear de ESP32, close the connection  \n                     // \n\n\n\n\n\n\n                     //                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  MSG_UDP.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n//                response = WiFiResponse(\"OK\", true, CyberComTimeoutmSCybSec);\n//_______________________________________    V   _______________________________\n//                bBoard_Control.UARTSendString(MSG_UDP, boardIDGlobal, clickIDGlobal); //Send MSG2SndUDP the contents of the packet  \n//                response = WiFiResponse(\"OK\", true, CyberComTimeoutmSCybSec);\n//                serial.writeLine(\"Sending from Role: \"+ Role + \"with IP: \" + MyIP + \" message: \" + MSG_UDP)\n//                serial.writeLine(\"Lenght MSG_UDP is: \" +MSG_UDP.length.toString())\n\n//    /**\n//     * Return the Remote Position Parking Bar Value from a specific IP and Role\n//     */\n//        //% blockId=\"Remote Position Parking Bar Value\" \n//        //% block=\"The Position 🚥 Value\"\n//        //% block.loc.fr=\"---\"\n//        //% advanced=true\n//        //% weight=100  \n//        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n//        //% color=#0fbc11 \n//        export function RemoteValueNum(): string {\n//            return ParkingBarAngle.toString();\n//        }\n\n\n\n\n\n\n\n//    /* ID Parking Access, set the number to send, select the Role and the destination role  */ \n//    /** | >> En << | Set a number, select your role and the destination role.\n//        | >> Fr << | ---.\n//        * @param Degree number to send, eg: 90\n//        * @param Role in Cyberville\n//        * @param Destination where to send the number, eg: \"192.168.4.1\"\n//    */\n//        //% blockId=\"Send Degree\" \n//        //% block=\"WiFi send number: %Degree | From: $Role=BLiXel_IndexR | To: $Destination\"\n//        //% block.loc.fr=\"---\"\n//        //% advanced=true\n//        //% weight=100  \n//        //% group=\"Mission 3: ID Parking Lot Access Stolen- Are you using the CIA triad?\"        \n//        //% afterOnStart=true\n//        //% blockHidden=true\n//        export function Mission3(Degree: number, Role: number, Destination:string): void {             \n//            //SENDING REQUEST GET/ +Degree + Role# + Destination#            Important -> CIPRECVMODE=0  \n//  //MSG_NDRDCybSec = \"GET\"+\" \"+Degree+\" \"+Role+\" \"+Destination;//Menssage to be sent as Degree number,Role,Destination\n//    MSG_NDRDCybSec = \"GET/\"\n//    serial.writeLine(\"to send...:  \" + (MSG_NDRDCybSec))\n//\n//            readytosend();     \n//            bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + MSG_NDRDCybSec.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//    //____________________________________    V   _______________________________\n//            bBoard_Control.UARTSendString(MSG_NDRDCybSec, boardIDGlobal, clickIDGlobal); //Send MSG_NDRDCybSec the contents of the packet  \n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//            serial.writeLine(\"Sending to AP: \" + MSG_NDRDCybSec)\n//            serial.writeLine(\"Lenght MSG_NDRDCybSec is: \" +MSG_NDRDCybSec.length.toString())\n//    \n//            MSG_NDRDCybSec=\"\"; //Delete the message to get a new one  // NO QUITAR\n//            serial.writeLine(\"MSG_NDRDCybSec was sent! and deleted.\")      \n//            pause(600)//***** Important **** \n//\n//        } \n\n//    /* RECEIVING DATA */\n//    /** | >> En << | Receiving data from AP\n//        | >> Fr << |--\n//    */\n//        //% blockId=ReceivingData\n//        //% block=\"$this Receiving data\"\n//        //% block.loc.fr=\"--\"\n//        //% advanced=true\n//        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"       \n//        //% weight=100\n//        //% draggableParameters=variable\n//        //% blockHidden=true \n//        //% afterOnStart=true                               //This block will only execute after the onStart block is finished    \n//        export function ReceivingDatafromAP(): string {\n//            /* Receiving to confirm */\n//            //RECIVING  Important -> CIPRECVMODE=1\n//                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n//                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//CyberComTimeoutmSCybSec=1000\n//                pause(600)//***** Important **** (500 9july)\n//            let RCVAP =\"\"; // Variable empty to start\n//            //Getting LENGHT data \n//                bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n//                response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n//                let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//        //serial.writeLine(\"start-> \" + startIndexDrcv)\n//                let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//        //serial.writeLine(\"end-> \" + endIndexDrcv)\n//                let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n//                let LenDrcvSize=LenDrcv.length\n//        //serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//        //serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n//        //let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//        //serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n//            //Getting Data\n//                bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n//        pause(2000)//***** Important ****  \n//                //For ReceivedData\n//                let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n//                let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n//                let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n//        //serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n//                let totDX=DXrcv.length\n//        //serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n//            //For RCVInfo\n//                RCVAP = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n//                let sIndexDXrcv = RCVAP.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//        //serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n//                let eIndexDXrcv = RCVAP.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//        //serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n//                let MSG_AP  = RCVAP.substr(sIndexDXrcv, parseInt(LenDrcv))\n//        //_____________________________ \"  V  \" _____________________________\n//                serial.writeLine(\"Message:  \" + MSG_AP)\n//        //bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n//        //response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n//        //            return(\"receiving data from AP:\" + MSG_AP);\n//        pause(600)//***** Important **** \n//                return(MSG_AP);  \n//                }\n//        \n//    /* Set to listen from a specific IP */\n//            /** | >> En << | Ready to listen from a speficic IP.\n//                | >> Fr << | --.\n//                * @param Origin where to hear the number, eg: \"192.168.4.1\" \n//             //* @param Degree data received, eg:\"Hi\" \n//            */\n//                //% blockId=\"Listen from specific IP\"\n//                //% block=\"Receive from IP: $Origin | the message: $Degree\"\n//                //% block.loc.fr=\"--\"\n//                //% advanced=true\n//                //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n//                //% afterOnStart=true\n//                //% draggableParameters=variable\n//                //% blockHidden=true \n//                //% weight=100 \n//                //export function Rdy2listenIP(Origin:string):void {\n//                    export function Rdy2listenIP(Origin:string, Degree:string): void {\n//        \n//        \n//                    //Close current open ports\n//                    bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n//                    response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmSCybSec);\n//                \n//                    //Open ports to listen    \n//                    bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n//                    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);     \n//                  //bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Destination +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n//                    bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Origin +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //TO specific IP\n//                    response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);//}\n//                    pause(1000)//***** Important ****\n//                    let Listening=\"\";\n//                    let MSG_receivedIP=\"\";// Empty to start\n//        \n//                    //Infinite loop to listen\n//                    loops.everyInterval(3000, function () {\n//                        //Getting LENGHT data \n//                            bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n//                            response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); \n//                            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//                            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//                            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n//                            let LenDrcvSize=LenDrcv.length\n//                        //Getting Data\n//                            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n//                            pause(2000)//***** Important **** \n//                            //For ReceivedData\n//                            let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n//                            let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n//                            let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n//                            let totDX=DXrcv.length\n//                        //For RCVInfo\n//                            Listening = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n//                            let sIndexDXrcv = Listening.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//                            let eIndexDXrcv = Listening.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//                            let MSG_receivedIP  = Listening.substr(sIndexDXrcv, parseInt(LenDrcv))\n//                            //____________________________________ \"  V  \" _____________________________\n//                            serial.writeLine(\"Message heard IP:  \" + MSG_receivedIP)\n//                            serial.writeLine(\"===============================================\")\n//                            pause(1000)//***** Important **** \n//                        })\n//                    //return(MSG_receivedIP);\n//            }\n//      \n\n// //------------------------- Send Data -----------------------------------    \n// /**  Send Data\n//    * @param IPAdd to IPAdd, eg: \"192.168.4.1\"\n//    * @param MSG to MSG, eg:\"Data to send\"\n//    */\n//    //% block=\"For IP number: $IPAdd | send data: $MSG\"\n//    //% blockId=Wifi_Send_Message\n//    //% afterOnStart=true\n//    //% weight=110\n//    //% blockGap=9\n//    //% group=\"Remote Commands\"\n//    //% blockHidden=true \n//    //% advanced=false\n//    export function send_MSG_MPCR(IPAdd: string, MSG:string): void {\n//\n//        //Getting my IP address\n//        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n//        let ipStartIndex = receivedData.indexOf(\"ip:\")\n//        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get IP STA\n// //      serial.writeLine(\"My IP: \"+MyIP)//Print my IP address idex       \n// //      serial.writeLine(\"AP IP: \"+IPAdd)//Print my IP address idex       \n//        //_____\n//\n//        //Start comunication\n//        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAdd +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);       \n//        let MSGS = \"GET1/PCBL_\"+MSG//((+\"\\r\"     // This is the message to send.   the last \\r means end of tha line sended, Carriage Return\n//        let LENMSGS = MSG.length+10      // Size message 10 characters {GET1/PCBL_}\n//        //_____\n//\n//        //Sending request \"GET /\" to start communication with AP. Sending GET /xxxMSGSxxx\n//        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\"+LENMSGS+\"\\r\\n\", boardIDGlobal, clickIDGlobal); //s add \\r to the packet \n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);     \n//   \n//        bBoard_Control.UARTSendString(MSGS, boardIDGlobal, clickIDGlobal); //Send the contents of the packet              \n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec);\n//        serial.writeLine(\"Sending: \"+MSGS)\n// //      serial.writeLine(\"Len... \"+LENMSGS)//Lenght MSGS\n//        //_____\n//\n//        //Close comunication\n//        bBoard_Control.UARTSendString(\"AT+CIPCLCybSecOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal); //Close ALL your connections\n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmSCybSec); //Wait for the response \"OK\"\n//    }\n\n\n\n        \n// \\\\ //------------------------- Roles -----------------------------------  \n// For futures applications, it needs to be checked...  \n\n//    //* Set HostName */\n//    /** | >> En << | Configure your Name in Cyberville for the network. Others can then use this name to perform a PING.. \n//        | >> Fr << | Configurez votre nom d'hôte pour le réseau. D'autres personnes peuvent ensuite utiliser ce nom pour effectuer un PING.              \n//        * @param HNamebB to HNamebB, eg: \"SCHOOL\"\n//    */\n//        //% blockId=\"SetHostName\"\n//        //% block=\"Your name in Cyberville: $HNamebB\"\n//        //% block.loc.fr=\"Votre nom à Cyberville: $HNamebB\"\n//        //% advanced=false\n//        //% group=\"Roles\"      \n//        //% weight=100\n        \n//        export function HostNamebB(HNamebB:string):void{\n//            bBoard_Control.UARTSendString(\"AT+CWDHCP=1,1\\r\\n\", boardIDGlobal, clickIDGlobal);                           // ENABLE DHCP with softAP\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n\n//            bBoard_Control.UARTSendString(\"AT+CIPDNS=0\\r\\n\", boardIDGlobal, clickIDGlobal);                             // Enable DNS automatic\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n\n//            bBoard_Control.UARTSendString(\"AT+MDNS=1,\\\"\"+HNamebB+\"\\\",\\\"_http\\\",80\\r\\n\", boardIDGlobal, clickIDGlobal);  // Set MDNS same name Hostname\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n        \n//            bBoard_Control.UARTSendString(\"AT+CIPDNS?\\r\\n\", boardIDGlobal, clickIDGlobal);                              // Query DNS server info\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n//  //serial.writeLine(\"\"+(receivedData))\n\n//            bBoard_Control.UARTSendString(\"AT+CWHOSTNAME=\\\"\" + HNamebB+ \"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);        // Set Hostname\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);        \n//  //serial.writeLine(\"\"+(receivedData))\n\n//            bBoard_Control.UARTSendString(\"AT+CIPDNS?\\r\\n\", boardIDGlobal, clickIDGlobal);                              // Query DNS server info\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n//  //serial.writeLine(\"\" + (receivedData))\n                 \n//            serial.writeLine(\"Name in Cyberville: \"+(HNamebB))\n//        }\n \n//    /* PING HostName*/\n//    /** | >> En << | Do PING to a Name in Cyberville.  If the destination responds, you will see a smiley face; otherwise, a sad face. \n//        | >> Fr << | Faites un PING vers une nom Cyberville.  Si la destination répond, vous verrez un smiley ; sinon, un visage triste.\n//        | >> The response time should not exceed 10 seconds  << |\n//        * @param PingbBDNS to PingbBDNS ,eg: \"WiFi_BL\"\n//        */\n//        //% blockId=\"PingHostName\"\n//        //% block=\"Do PING to a Name in Cyberville: $PingbBDNS\"\n//        //% block.loc.fr=\"Faire PING à un nom dans Cyberville: $PingBDNS\"\n//        //% advanced=false\n//        //% group=\"Roles\"      \n//        //% weight=100 \n//        export function PingbBDNS(PingbBDNS:string):void{\n//            let dnslocal=PingbBDNS+\".local\"\n//            serial.writeLine(\"dnslocal is: \" + dnslocal)\n// //        bBoard_Control.UARTSendString(\"AT+PING=\\\"\" + PingbBDNS+\"\\\"+\\\".local\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//            bBoard_Control.UARTSendString(\"AT+PING=\\\"dnslocal\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//            response = WiFiResponse(\"OK\",false,30000);//defaultWiFiTimeoutmSCybSec=30000\n//            serial.writeLine(\"\" + (receivedData))\n//            soundExpression.hello.playUntilDone()\n//            if (receivedData == \"TIMEOUT\"){\n//                basic.showIcon(IconNames.No,1000)\n//                soundExpression.slide.play()\n//                basic.showIcon(IconNames.No,2000) \n//                serial.writeLine(\"\" + (receivedData))\n//                serial.writeLine(\"PING to Name in Cyberville: \"+ PingbBDNS)\n//            }\n//            if (response == 1) {                                //RESPONSE ==1 connected\n//                basic.showIcon(IconNames.No,1000)\n//                soundExpression.slide.play()\n//                basic.showIcon(IconNames.Happy,2000)\n//                serial.writeLine(\"\" + (receivedData))\n//                serial.writeLine(\"PING to Name in Cyberville: \"+ PingbBDNS)\n//            }\n//            if (response == 0) {   \n//                basic.showIcon(IconNames.No,1000)\n//                soundExpression.slide.play()\n//                basic.showIcon(IconNames.Sad,2000)              //response ==0 NO conected\n//                serial.writeLine(\"\" + (receivedData))\n//                serial.writeLine(\"PING to Name in Cyberville: \"+ PingbBDNS)\n//            }\n//        }\n\n\n//    /* Read HostName */\n//    /** | >> En << | Display your current Name in Cyberville.  \n//        | >> Fr << | Affichez votre nom Cyberville actuel.\n//        | >> The default HostName is espressif wich is the the manufacturer of ESP32<< |\n//    */       \n//        //% blockId=\"ReadHostName\"\n//        //% block=\"$this Get your Name in Cyberville\"\n//        //% block.loc.fr=\"$this Obtenez votre nom à Cyberville\"\n//        //% advanced=false\n//        //% group=\"Roles\"\n//        //% weight=100\n//        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n//        //% receivedData.shadow=variables_get\n//        //% draggableParameters=variable       \n//        export function getHostNamebB(): string {\n//            bBoard_Control.UARTSendString(\"AT+CWHOSTNAME?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmSCybSec);\n//            serial.writeLine(\"Name in Cyberville: \"+(receivedData.substr(28,10))) \n//            return(\"Name in Cyberville:\"+receivedData.substr(28,10));\n//        }\n",
+            "bBoardCyberSec.ts": "//let defaultWiFiTimeoutmS = 30000\nlet CyberWiFiTimeoutmS = 7000;\nlet ConsoleTimeoutmS = 1000;\n\nlet CyberComTimeoutmS=1000;//use 300ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\nlet ProtCode=0;\nlet ProtCodeStr=\"\";\nlet MSG_PCS=\"\";\nlet FullMSG_PCS=\"\";\nlet LenPCS=0;\n\nlet RatioCode=0;\nlet RatioCodeStr=\"\";\nlet MSG_RCS=\"\";\nlet FullMSG_RCS=\"\";\nlet LenRCS=0;\nlet indexclStr=\"\";\nlet indexflStr=\"\";\nlet indexhatStr=\"\";\nlet indexavclStr=\"\";\nlet indexavflStr=\"\";\nlet indexenclStr=\"\";\nlet Col = 2; // Column (0-4) Turn on the LED at the specified coordinates\nlet CL=0;\nlet CLAV=0;\nlet FL=0;\nlet FLAV=0;\n\nlet Coin = 0\nlet CoinY = 0\nlet CoinX = 0\n\nlet MSG_NDRD=\"\";// Menssage Number Degree, Role and destination\nlet FullMSG_NDRD=\"\";// FULL Menssage Number Degree, Role and destination\nlet LenNDRD=0;// Len nenssage Number Degree, Role and destination\n\nlet MSG_UDP_Full = \"\";\nlet ClrStrip: neopixel.Strip = null\n\n\n\n\n\n\n\n\n\n\n\n\n//------------------------- CYBERSECURITY -----------------------------------\n/** Cybersecurity */\n///////////////////////////////////////////////////////////////////////////////////////////////////////////\n/**\n* Custom blocks\n*/\n//% block=\"CyberSecurity\"\n//% block.loc.fr=\"Cybersécurité\"\n//% advanced=true\n//% weight=100\n//% color=#9E4894 \n//% icon=\"\\uf21b\"      //LOGO CYBER\n//% labelLineWidth=1001\n//% groups='Initialize and Connections', 'Networking','Version ESP32', 'Remote Comands', 'Missions', 'Missions1'\n\n//------------------------- Networking -----------------------------------   \n\nnamespace Cybersec {\n\n//--------------------- Initialize and Connections ----------------------    \n    \n    /* Num 2 Str */\n    /** | >> En << | Convert Num to Str \n        | >> Fr << | -- \n    */\n        //% blockId=Num2Str\n        //% block=\"Num $num to Str\"\n        //% block.loc.fr=\"--\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"    \n        //% weight=100\n        export function numberToString(num: number): string {\n            return num.toString();\n        }\n\n    /* Str 2 Num */\n    /** | >> En << | Convert Str to Num \n        | >> Fr << | -- \n    */\n        //% blockId=Str2Num\n        //% block.loc.fr=\"--\"\n        //% block=\"Str $str to Num\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"    \n        //% weight=100\n        export function stringToNumber(str: string): number {\n            return parseFloat(str); \n        }\n\n    /* AT Commands*/\n    /** | >> En << | Type in the command that will be followed for \"AT+\" \n        | >> Fr << | --\n        | >> Block to run AT Commands  << |\n        * @param ATcmd\n    */\n        //% blockId=ATCommand\n        //% block=\"$this Execute this AT command: $ATcmd\"\n        //% block.loc.fr=\"--\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"    \n        //% weight=100\n        export function DoATcmd(ATcmd:string):void{  \n            bBoard_Control.UARTSendString(\"AT+\" + ATcmd + \"\\r\\n\", boardIDGlobal, clickIDGlobal); \n            response = WiFiResponse(\"OK\",false,3000);//defaultWiFiTimeoutmS=30000\n            serial.writeLine(\"Listening...  \" + (receivedData))\n        }\n\n    /* Signal Strength */\n    /** | >> En << | Get the signal strength from b.Board to the access point. \n        | >> Fr << | Obtenir la force du signal entre le b.Board et le point d'accès.\n        | >> \n        Excellent/Excellent > -60. \n        Good/Bon -61 to -75. \n        Fair/Juste -76 to -80. \n        Bad/Mauvais -81 to -89. \n        Very Bad/Tres mauvais <-90.\n         << |\n    */\n        //% blockId=\"SignalStrength\"\n        //% block=\"$this Get the signal strength\"\n        //% block.loc.fr=\"$this Obtenir la force du signal\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% receivedData.shadow=variables_get\n        //% draggableParameters=variable\n        export function getSignalStrength(): string {\n            bBoard_Control.UARTSendString(\"AT+CWJAP?\\r\\n\", boardIDGlobal, clickIDGlobal); \n//  serial.writeLine(\"\" + (bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)))\n            response = WiFiResponse(\"OK\", false, ConsoleTimeoutmS);//ConsoleTimeoutmS=1000\n            serial.writeLine(\"RRSI is: \" + receivedData.substr(56, 3) + \"\")\n            return(\"RSSI:\" + receivedData.substr(56, 3))\n        }\n\n    /* Secuence Animation */ \n    /** | >> En << | Show a lighting secuence on b.Board´s BLiXels and sound \"twinkle\".\n        | >> Fr << | Montrer une séquence d'éclairage sur les BLiXels de b.Board et le son \"twinkle\". \n    */\n        //% group=\"Initialize and Connections\" \n        //% blockId=\"Sequence Animation\" \n        //% block=\"Sequence BLiXels on b.Board\"\n        //% block.loc.fr=\"Séquence des BLiXels du b.Board\"\n        //% advanced=false\n        //% weight=100 \n        export function Animation() {        \n                soundExpression.twinkle.play()\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two));\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three));                             \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);\n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four));\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three));                             \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one));              \n        }\n\n    /* Coding Check b.Board */ \n    /** | >> En << | Turn on b.Board BLiXel to be notified when your code crosses this point.\n        | >> Fr << | Activez le BLixel b.Board pour être averti lorsque votre code franchit ce point.\n        * @param pixelONset position of the BLiXel in b.Board\n    */\n        //% blockId=\"Coding Check b.Board\" \n        //% block=\"b.Board BliXel $pixelONset=BLiXel_Index to check when it reaches this point\"\n        //% block.loc.fr=\"b.Board BliXel $pixelONset=BLiXel_Index pour vérifier si le code francît ce point\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\" \n        //% weight=100  \n        export function setBLCode(pixelONset: number): void {       \n                let BLiXelBuffer = pins.createBuffer(5);\n                if (pixelONset >= 5)\n                {\n                    pixelONset = 4;\n                }\n                BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF00FF)                           // Purple = 0xFF00FF\n                BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n                bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n                bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n//                basic.pause(300) \n//                BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0x000000)// Black = 0x000000\n//                BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n//                bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n//                bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n    /* WiFi Off */\n    /** | >> En << | Turn off Wi-Fi capabilities; to reestablish, you need to turn off and then turn on the b.Board again.\n        | >> Fr << | Désactivez les capacités Wi-Fi; pour les rétablir, vous devez éteindre puis rallumer le b.Board.      \n    */\n        //% blockId=\"WiFi Off\"\n        //% block=\"WiFi Off\"\n        //% block.loc.fr=\"désactiver le wifi\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n        export function WiFi_OFF(): void {\n                serial.writeLine(\"\" + \"b.Board->\" + \"\")     // Always to publish in Console, the last \"\" completes the line to send and show\n                \n                bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n                bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)\n                bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion,\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n                serial.writeLine(\"WiFi Off\" + \"\")\n        }          \n       \n    /* WiFi Reset */\n    /** | >> En << | Reset Wi-Fi capabilities. You need to enter WiFi information. \n        | >> Fr << | Réinitialiser les capacités Wi-Fi. Vous devez saisir les informations relatives au Wi-Fi.      \n    */\n        //% blockId=\"WiFi Reset\"\n        //% block=\"WiFi Reset\"\n        //% block.loc.fr=\"Réinitialiser le Wi-Fi\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n        export function WiFi_RS(): void {\n                serial.writeLine(\"\" + \"b.Board->\" + \"\")     // Always to publish in Console, the last \"\" completes the line to send and show\n\n                bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n                bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)\n                bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLEAR\\\",\\\"pwd_CLEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLEAR and pwd_CLEAR are nothing, I use them to clear de ESP32 \n                bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion,\n                bBoard_Control.UARTSendString(\"AT+CWAUTOCONN=0\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                bBoard_Control.UARTSendString(\"AT+RESTORE\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                bBoard_Control.UARTSendString(\"AT+RST\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS); //Wait for the response \"OK\" \n                basic.pause(300)                    // Delay to publish in console\n                serial.writeLine(\"WiFi Reset\" + \"\")\n        }  \n        \n    /* WiFi Disconnect */\n    /** | >> En << | Discconect from the current WiFi.\n        | >> Fr << | Se déconnecter du réseau Wi-Fi actuel.      \n    */\n        //% blockId=\"WiFi Disconnect\"\n        //% block=\"WiFi Disconnect\"\n        //% block.loc.fr=\"Déconnexion du WiFi\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100 \n        export function Disconnect():void {\n                music.playTone(988, music.beat(BeatFraction.Eighth))\n                basic.clearScreen()\n          \n                serial.writeLine(\"\" + \"b.Board->\" + \"\")     // Always to publish in Console, the last \"\" completes the line to send and show\n\n                bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n                bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLEAR\\\",\\\"pwd_CLEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLEAR and pwd_CLEAR are nothing, I use them to clear de ESP32  \n                bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion, now is ready to a new one\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS); //Wait for the response \"OK\" \n                basic.pause(300)                    // Delay to publish in console\n                serial.writeLine(\"Disconnected\" + \"\")\n        }\n\n    /* WiFi Check  */\n    /** | >> En << | Check the WiFi status. \n        | >> Fr << | Vérifiez l'état du WiFi. \n        | >> \n        #O: The ESP32 station is not initialized. \n        #1: THe ESP32 station is initialized, but not started a Wi-Fi connection yet. \n        #2: The ESP32 station is connected to an AP and its IP address is obteined.  \n        #3: The ESP32 station has created a TCP/SSL transmission. \n        #4: All of the TCO/UPD/SSL connections of th ESP32 station are disconnected. \n        #5: The ESP32 station started a WiFi connection, but was not connected to an AP or disconnected from an AP.\n        << |\n        */\n        //% blockId=\"WiFi Check\"\n        //% block=\"b.Board is Connected and Available\"\n        //% block.loc.fr=\"b.Board est Connectée et Disponible\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100 \n        export function WiFi_Connected(): boolean {\n                pause(3000)    \n                bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal); \n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS); \n                let statusStartIndex = receivedData.indexOf(\"STATUS:\")\n                let connected = parseInt(receivedData.substr(statusStartIndex + 7, 1)); //Convert the characters we received representing the length of the IPD response to an integer        \n                if (connected == 0){                                // O:The ESP32 station is not initialized\n                    while (1){\n                    basic.showLeds(`\n                    . . . . .\n                    . # . # .\n                    . . # . .\n                    . # . # .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#0\")\n                    serial.writeLine(\"IsConnected? Error #0\")\n                    serial.writeLine(\"\") \n                    return false;\n                }}\n                if (connected == 1){                                // 1: THe ESP32 station is initialized, but not started a Wi-Fi connection yet\n                    while (1){\n                    basic.showLeds(`\n                    . . . . .\n                    . # . # .\n                    . . # . .\n                    . # . # .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#1\")\n                    serial.writeLine(\"IsConnected? Error #1\")\n                    serial.writeLine(\"\")  \n                    return false;\n                }}\n                if (connected == 2){                                // 2: The ESP32 station is connected to an AP and its IP address is obteined.    \n                    while (1){\n                    basic.showLeds(`\n                    . . . . .\n                    . . . . # \n                    . # . # .\n                    . . # . .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#2\")                \n                    serial.writeLine(\"IsConnected? OK #2\")\n                    serial.writeLine(\"\")  \n                    return true;\n                }}\n                if (connected == 3){                                // 3: The ESP32 station has created a TCP/SSL transmission.\n                    while (1){\n                    basic.showLeds(`\n                    . . . . #\n                    . # . # . \n                    . . # . .\n                    . . . . .\n                    . . . . .\n                    `)\n//                    basic.showString(\"#3\")\n                    serial.writeLine(\"IsConnected? OK #3\")\n                    serial.writeLine(\"\")  \n                    return true;\n                }}\n                if (connected == 4){                                // 4: All of the TCO/UPD/SSL connections of th ESP32 station are disconnected\n                    while (1){\n                    basic.showIcon(IconNames.Sad,400)\n//                    basic.showString(\"#4\")\n                    serial.writeLine(\"IsConnected? Error #4\")\n                    serial.writeLine(\"\")  \n                    return false;\n                }}\n                if (connected == 5){                                // 5: The ESP32 station started a WiFi connection, but was not connected to an AP or disconnected from an AP\n                    while (1){\n                    basic.showIcon(IconNames.Sad, 400)\n//                    basic.showString(\"#5\")\n                    serial.writeLine(\"IsConnected? Error #5\")\n                    serial.writeLine(\"\")  \n                    return false;\n                }}\n                basic.showIcon(IconNames.Sad, 400)\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four));\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20); Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three));        \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two)); \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one)); \n                serial.writeLine(\"IsConnected? NO\")\n                serial.writeLine(\"\")  \n                return false;\n        }\n    \n    /* WiFi Connection */\n    /** | >> En << | Initializes WiFi capabilities. b.Board power switch should be ON.\n        | >> Fr << | Initialise les capacités WiFi. b.Board l'interrupteur d'alimentation de la carte doit être sur ON.         \n        * @param ssid to ssid, eg: \"Cyberville #?\"           \n        * @param pwd to ssid, eg: \"\"\n    */\n        //% blockId=\"Wifi Connection\" \n        //% block=\"Connect to WiFi: $ssid| with Password: $pwd\"\n        //% block.loc.fr=\"Connexion au WiFi : $ssid| avec mot de passe :$pwd\"\n        //% advanced=false\n        //% group=\"Initialize and Connections\"\n        //% weight=100\n        export function WifiConnect(ssid: string, pwd: string): void { \n            //control.waitMicros(4) // Enable Console to display info. It doesn´t work properly.\n                            bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                            bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n                            basic.pause(1000)\n                            bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);    \n                            bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal);            // Reset previous WiFi//Disconnect the created conextion,                  \n                        // Animation using BLiXel\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one)); \n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two)); \n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20);\n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three)); \n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four));\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);\n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five)); \n                        // Commands to startup WiFi capabilities\n                            bBoard_Control.UARTSendString(\"AT+CWMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);\n            //response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS); //7000         // Wait for the response \"OK\" \n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000                             \n            \n                            bBoard_Control.UARTSendString(\"AT+CIPMUX=1\\r\\n\", boardIDGlobal, clickIDGlobal);         // Enable multiple connections\n            //response = WiFiResponse(\"OK\",false,CyberWiFiTimeoutmS); \n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000                   \n            \n                            bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"\" + ssid + \"\\\",\\\"\" + pwd + \"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Connect to WiFi Network\n            //response = WiFiResponse(\"OK\",false,CyberWiFiTimeoutmS);\n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000 \n            \n            // added 2025                \n            bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);        // To get WiFi information about the b.Board\n            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n            serial.writeLine(\"WiFi b.Board Info \" + receivedData)                \n            //\n            \n                            bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);    // Mode 0 = Active (data receive instantly to MCU),  Mode 1 = Passive (data reveice keep in socket)\n            //response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000 \n            \n            //bBoard_Control.UARTSendString(\"AT+CWLAPOPT=1,31\\r\\n\", boardIDGlobal, clickIDGlobal);    // Set the Configuration for the Command AT+CWLAP \"list AP´s\".  (It is not tested yet)\n            //response = WiFiResponse(\"OK\", false, ConsoleTimeoutmS);                        \n                           \n                            bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);        // CHECK NO connection MAKE INFINITE LOOP you have to reset b.Board\n            //response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n                            response = WiFiResponse(\"OK\", false, 3000);//Never less than 3000 \n            \n                            if (response==0){                                                                       // WiFi Error \n                                serial.writeLine(\"Done! AP available? Error Try Again\") \n                                basic.showLeds(`\n                                . . . . .\n                                . # . # . \n                                . . # . .\n                                . # . # .\n                                . . . . .\n                                `)  \n                                basic.pause(1000)\n                            }\n                            else{                                                                                   // WiFI Connected\n                                serial.writeLine(\"\") \n                                serial.writeLine(\"Connected!\")\n                                basic.showLeds(`\n                                . . . . .\n                                . . . . # \n                                . # . # .\n                                . . # . .\n                                . . . . .\n                                `)  \n                                basic.pause(300)\n                                basic.clearScreen()              \n                            }\n            \n        }\n                        \n//------------------------- Networking -----------------------------------  \n\n    /* PING IP */\n    /** | >> En << | Do PING to a IP address.  If the destination responds, you will see a smiley face; otherwise, a sad face. \n        | >> Fr << | Faites un PING vers une adresse IP.  Si la destination répond, vous verrez un smiley ; sinon, un visage triste.\n        | >> The response time should not exceed 10 seconds  << |\n        * @param PingbB to PingbB, eg: \"192.168.4.1\"\n    */\n        //% blockId=PINGIP\n        //% block=\"$this Do PING to IP: $PingbB\"\n        //% block.loc.fr=\"Effectuez un PING vers l'IP: $PingbB\"\n        //% advanced=false\n        //% group=\"Networking\"      \n        //% weight=100\n\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"Do_Ping\"\n        export function PingbBfrend(PingbB:string):void{  \n            soundExpression.hello.play()\n            bBoard_Control.UARTSendString(\"AT+PING=\\\"\" + PingbB +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//  serial.writeLine(\"\" + (bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)))\n            response = WiFiResponse(\"OK\",false,3000);//defaultWiFiTimeoutmS=30000\n            serial.writeLine(\"\" + (receivedData))\n            if (receivedData == \"TIMEOUT\"){\n                soundExpression.slide.play()\n                basic.showIcon(IconNames.No,4000)\n                serial.writeLine(\"\" + (receivedData))\n                serial.writeLine(\"PING to IP: \"+ PingbB)\n                basic.clearScreen()\n            }\n            if (response == 1) {                                //RESPONSE ==1 connected\n                soundExpression.slide.play()\n                basic.showIcon(IconNames.Happy,4000)\n                serial.writeLine(\"\" + (receivedData))\n                serial.writeLine(\"PING to IP: \"+ PingbB)\n                basic.clearScreen()\n            }\n            if (response == 0) {   \n                soundExpression.slide.play()\n                basic.showIcon(IconNames.Sad,4000)            //response ==0 NO conected\n                serial.writeLine(\"\" + (receivedData))\n                serial.writeLine(\"PING to IP: \"+ PingbB)\n                basic.clearScreen()\n            }\n        }\n\n    /* MAC Address AP */\n    /** | >> En << | Display the b.Board access point MAC Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse point d'accès MAC du b.Board sur le PC de la console et sur l'écran du Micro:Bit. \n     */\n        //% blockId=GetMACAP\n        //% block=\"$this Get the AP´s MAC address\"\n        //% block.loc.fr=\"$this Obtenir Ládresse MAC du point d´accès\"\n        //% advanced=false\n        //% group=\"Networking\"\n        //% weight=100\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"MAC_AP\"\n        export function getMACaddressAP(): string {\n            let macAP=\"\"\n            bBoard_Control.UARTSendString(\"AT+CWJAP?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n//serial.writeLine(\"\" + (receivedData))          \n            let startIndex = receivedData.indexOf(\"+CWJAP:\") + 8\n            let endIndex = receivedData.indexOf(\",\",startIndex) - 1\n            let wfname = receivedData.substr(startIndex, endIndex - startIndex )\n            let szwf = wfname.length\n            let startIndexMAC = receivedData.indexOf(\"+CWJAP:\") +11 + szwf\n            let endIndexMAC = receivedData.indexOf(\",\", startIndexMAC) - 2 // (-2 characters at the end of msg)\n            macAP = receivedData.substr(startIndexMAC, endIndexMAC - startIndexMAC+1) \n            serial.writeLine(\"AP MAC: \" + macAP)              \n            return(\"AP MAC:\" + macAP);\n            }\n        \n    /* IP Address AP */\n    /** | >> En << | Display the access point IP Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse IP du point d'accès sur le PC de la console et sur l'écran du Micro:Bit. \n    */\n        //% blockId=GetIPAP\n        //% block=\"$this Get the AP´s IP address\"\n        //% block.loc.fr=\"$this Obtenir L´IP du point d´accés\"\n        //% advanced=false\n        //% group=\"Networking\"\n        //% weight=100\n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"IP_bBoard\"\n        export function getIPaddressAP(): string {\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);        \n//serial.writeLine(\"\" + (receivedData))\n        let startIndex = receivedData.indexOf(\"gateway:\")+9\n        let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n        let APIP = receivedData.substr(startIndex, endIndex - startIndex )\n        serial.writeLine(\"AP IP: \"+ APIP)\n        return(\"AP IP:\" + APIP);\n        }\n    \n    /* MAC Address b.Board */\n    /** | >> En << | Display the b.Board MAC Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse MAC du b.Board sur le PC de la console et sur l'écran du Micro:Bit. \n    */\n        //% blockId=\"GetMACbBoard\"\n        //% block=\"$this Get the b.Board MAC address\"\n        //% block.loc.fr=\"$this Obtenir Ládresse MAC du b.Board\"\n        //% advanced=false\n        //% group=\"Networking\"        \n        //% weight=100 \n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"Get_MAC_bBoard\"\n        export function getMACaddressbBoard(): string {\n            bBoard_Control.UARTSendString(\"AT+CIPSTAMAC?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n            response = WiFiResponse(\"OK\", false, ConsoleTimeoutmS);//ConsoleTimeoutmS=1000\n            serial.writeLine(\"b.Board MAC: \" + receivedData.substr(27, 17) + \"\")    //55,17 CIFSR\n            return(\"b.Board MAC:\" + receivedData.substr(27,17));     \n//serial.writeLine(\"b.Board MAC: \" + receivedData.substr(27, 17) + \"\")          \n            }\n\n    /* IP Address b.Board */   \n    /** | >> Es << | Display the b.Board IP Address on the Console PC and on the Micro:Bit screen.\n        | >> Fr << | Affichez l'adresse IP du b.Board sur le PC de la console et sur l'écran du Micro:Bit. \n     */\n        //% blockId=\"GetIPBoard\"\n        //% block=\"$this Get the b.Board´s IP address\"\n        //% block.loc.fr=\"$this Obtenir I´IP du b.Board\"\n        //% advanced=false\n        //% group=\"Networking\"        \n        //% weight=100 \n\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% this.shadow=variables_get\n        //% this.defl=\"IP_bBoard\"\n        export function getIPaddressbBoard(): string {\n            bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);//30000\nserial.writeLine(\"\" + (receivedData))\n            let startIndex = receivedData.indexOf(\"ip:\") + 4 \n            let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n            let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n            serial.writeLine(\"b.Board IP: \" + MyIP)\n            return(\"b.Board IP:\" + MyIP);\n//corrected ^            \n//            bBoard_Control.UARTSendString(\"AT+CIFSR\\r\\n\", boardIDGlobal, clickIDGlobal);\n//            response = WiFiResponse(\"OK\", false, ConsoleTimeoutmS);\n//            serial.writeLine(\"My otra IP: \" + (receivedData.substr(23,15)) + \"\")//22,17\n//            return(\"My IP:\" + receivedData.substr(23,15));\n//            serial.writeLine(\"My otra IP: \" + receivedData.substr(23, 15) + \"\")\n        }   \n\n\n//------------------------- Version ESP32 - Others -----------------------------------     \n    //% block \n    //% group=\"Version ESP32\"\n    //% icon=\"\\uf7c0\"\n    //% afterOnStart=true\n    //% blockGap=9\n    //% advanced=false\n\n    /* Firmware ESP32 */\n    /** | >> En << | Display the ESP32 firmware version. \n        | >> Fr << | Affichez la version du firmware de l'ESP32. \n        | >>  We strongly recommend version 3.2 or higher.  << |\n    */\n        //% blockId=\"GetFirmwareESP32\"\n        //% block=\"Get firmware 🛜 microcontroller ESP32 version on b.Board\"\n        //% block.loc.fr=\"Obtenez la version du firmware 🛜 du microcontrôleur ESP32 sur la carte b.Board.\"\n        //% advanced=false\n        //% group=\"Version ESP32\"\n        //% blockGap=9\n        //% weight=110    \n        //% afterOnStart=true\n        //% advanced=false\n        //% blockHidden=false \n        export function getFirmwareESP32(): string {\n          serial.writeLine(\"->\"+\" \")\n            bBoard_Control.UARTSendString(\"AT+GMR\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n            response = WiFiResponse(\"OK\", false,3000);\n            let vStartIndex = receivedData.indexOf (\"version:\")\n            let FirmESP32=receivedData.substr(vStartIndex+8,3)// get firmware version\n            serial.writeLine(\"🛜 WiFi Chip Version: \"+FirmESP32+\" \")\n            return(FirmESP32);\n        }\n \n    // Colours\n    // Red = 0xFF0000, Orange = 0xFFA500, Yellow = 0xFFFF00, Green = 0x00FF00, White = 0xFFFFFF\n    // Blue = 0x0000FF, Indigo = 0x4b0082,Violet = 0x8a2be2,Purple = 0xFF00FF, Black = 0x000000\n\n        // Set here to publish  BLiXel ON BLUE\n        export function setPixelColourPURPLE(pixelONset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelONset >= 5)\n            {\n                pixelONset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF00FF)// Purple = 0xFF00FF\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n    \n    // Set here to publish  BLiXel ON BLUE\n        export function setPixelColourBLUE(pixelONset: number): void {       \n        let BLiXelBuffer = pins.createBuffer(5);\n        if (pixelONset >= 5)\n        {\n            pixelONset = 4;\n        }\n        BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0x0000FF)// Blue = 0x0000FF\n        BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n        bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n        bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n    // Set here to publish  BLiXel ON GREEN\n        export function setPixelColourON(pixelONset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelONset >= 5)\n            {\n                pixelONset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF00FF)// Purple = 0xFF00FF\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n    \n    // Set here to publish  BLiXel ON RED\n        export function setPixelColourRED(pixelONset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelONset >= 5)\n            {\n                pixelONset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0xFF0000)// RED = 0xFF0000\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelONset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n    // Set here to publish  BLiXel OFF         \n        export function setPixelColourOFF(pixelOFFset: number): void {       \n            let BLiXelBuffer = pins.createBuffer(5);\n            if (pixelOFFset >= 5)\n            {              \n                pixelOFFset = 4;\n            }\n            BLiXelBuffer.setNumber(NumberFormat.UInt32LE, 0,0x000000)// Black = 0x000000\n            BLiXelBuffer.setNumber(NumberFormat.UInt8LE, 4, pixelOFFset)\n            bBoard_Control.BLiX(0,0,clickIOPin.PWM, moduleIDs.BLiXel_module_id, BLiXel_STRIP_SET_PIXEL, null, BLiXelBuffer,0)\n            bBoard_Control.sendData (parseInt(clickIOPin.PWM.toString()), moduleIDs.BLiXel_module_id, BLiXel_SHOW, [],0,0)//Show\n        }\n\n//Here END Cyberville 1\n\n\n\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" 2024 \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n//------------------------- Remote Comands -----------------------------------\n    //% block \n    //% group=\"Remote Commands\"\n    //% icon=\"\\uf7c0\"\n    //% afterOnStart=true\n    //% blockGap=9\n    //% advanced=false\n\n//------------------------- Receive Data -----------------------------------      \n/**  Receive Data from AP                           \n    */\n    //% block=\"Receive Message from 192.168.4.1 | $RCVInfo\"\n    //% blockId=\"Receive Data From 192.168.4.1\"\n    //% weight=110     \n    //% group=\"Remote Commands\"\n    //% BlockAllowMultiple=1\n    //% RCVInfo.shadow=variables_get\n    //% draggableParameters=variable\n    //% afterOnStart=true \n    //% blockGap=9\n    //% blockHidden=true \n    //% advanced=false\n    export function ReceiV(): string {  \n        let IPAddR = \"192.168.4.1\"    //Tipe here the AP address\n   \n        //Mode=1 to Receive\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n//            serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//            serial.writeLine(\"receiveData: \" + (receivedData))      \n        pause(500)//Important\n\n    //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//          serial.writeLine(\"My IP: \"+MyIP)//Print my IP address      \n//          serial.writeLine(\"AP IP: \"+IPAddR)//Print my AP IPaddress      \n        //_____\n\n    //Sending request \"GET /\" to start communication with AP. \n    bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAddR +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);        \n    let MSGSR = \"GET /\\r\"     // Message \"GET /\\r\" to start communication ->Package\n    bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\"+5+\"\\r\\n\", boardIDGlobal, clickIDGlobal); //size packet = 7 lo cambie a 5\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n    bBoard_Control.UARTSendString(MSGSR, boardIDGlobal, clickIDGlobal); //Send the contents of the packet              \n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n//        serial.writeLine(\"Data to Send: \"+MSGSR) //send command GET /\n    //_____\n\n    //Ready to Receive.     Important CIPRECVMODE=1\n    let RCVInfo = \"\";\n    let receivedStr = \"\"; //The built string\n        //Getting LENGHT data \n            bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n//              serial.writeLine(\"ReceivedData is: \" + (receivedData))\n            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//              serial.writeLine(\"start-> \" + startIndexDrcv)\n            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//              serial.writeLine(\"end-> \" + endIndexDrcv)\n            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n            let LenDrcvSize=LenDrcv.length\n//              serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//              serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n            let TotLen= parseInt(LenDrcv)+LenDrcvSize\n            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n        //______           \n        pause(500);//Important  \n        //Getting Data\n            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n            //For ReceivedData\n                let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDrcv+26)\n//              serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n                let totDX=DXrcv.length\n//              serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n            //___\n            //For RCVInfo\n                RCVInfo = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)\n                let sIndexDXrcv = RCVInfo.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//              serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n                let eIndexDXrcv = RCVInfo.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//              serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n            //___\n\n//RCVInfo = RCVInfo.substr(sIndexDXrcv, TotLen)\n    RCVInfo = RCVInfo.substr(sIndexDXrcv, parseInt(LenDrcv))\n    serial.writeLine(\"Receiving block: \" + RCVInfo)// to visualize data received\n    //______           \n\n    bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n\n    //Ready to Receive done!     Important CIPRECVMODE=0\n    bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n\n    return(\"\" + RCVInfo);     \n\n    }\n\n//------------------------- Send ON BLiXel for AP -----------------------------------   \n /** Send ON BLiXel for a IP \n    * @param IPAdd to IPAdd, eg: \"192.168.4.1\"\n    * @param pixelONsetTEST position of the BLiXel in the strip\n    */\n    //% blockId=\"Send BLiXel_ON_# for a IP \" \n    //% block=\"For IP number: $IPAdd | Ask to Turn ON BliXel #: $pixelONsetTEST=BLiXel_Index\"\n     //% afterOnStart=true\n    //% group=\"Remote Commands\"\n    //% weight=200 \n    //% blockGap=9 \n    //% blockHidden=true \n    //% advanced=false\n    export function send_LEDMSG_ON(IPAdd: string, pixelONsetTEST: number): void {\n        \n//SENDING REQUEST GET/             Important -> CIPRECVMODE=0  \n    let BLiXelBuffer = pins.createBuffer(5);\n                       \n    let LEDMSGON = \"\";\n            if (pixelONsetTEST == 0){ LEDMSGON=\"GET /ON_1\";}\n            if (pixelONsetTEST == 1){ LEDMSGON=\"GET /ON_2\";}\n            if (pixelONsetTEST == 2){ LEDMSGON=\"GET /ON_3\";}\n            if (pixelONsetTEST == 3){ LEDMSGON=\"GET /ON_4\";}\n            if (pixelONsetTEST == 4){ LEDMSGON=\"GET /ON_5\";}\n            serial.writeLine(\"to send...\" + (LEDMSGON))\n\n    //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"My IP is:\"+MyIP)//Print my IP address idex       \n    //______\n\n    //Getting AP IP address\n        bBoard_Control.UARTSendString(\"AT+CIPAP?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n\n        let APipStartIndex = receivedData.indexOf(\"ip:\")\n        let APIP = (receivedData.substr(APipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"AP IPadd is: \"+APIP)//Print my IP address idex    \n    //_____\n\n        let RCVdoneIPON=\"\";  \n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE0 TO SENDING\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAdd +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + LEDMSGON.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n        bBoard_Control.UARTSendString(LEDMSGON, boardIDGlobal, clickIDGlobal); //Send the contents of the packet  \n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//        serial.writeLine(\"Sending\" +LEDMSGON)\n//        serial.writeLine(\"len\" +LEDMSGON.length.toString())\n        \n//RECIVING  Important -> CIPRECVMODE=1\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"receiveData: \" + (receivedData))      \n        pause(500)//Important\n\n//Getting LENGHT data \n           bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n           response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n//           serial.writeLine(\"ReceivedData is: \" + (receivedData))\n            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//           serial.writeLine(\"start-> \" + startIndexDrcv)\n            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//            serial.writeLine(\"end-> \" + endIndexDrcv)\n            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n            let LenDrcvSize=LenDrcv.length\n//            serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//            serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n            let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n            pause(500);//Important                     \n//Getting Data\n            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n            //For ReceivedData\n                let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDrcv+26)\n//              serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n                let totDX=DXrcv.length\n//            serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n            //___\n            //For RCVInfo\n            RCVdoneIPON = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)\n                let sIndexDXrcv = RCVdoneIPON.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//              serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n                let eIndexDXrcv = RCVdoneIPON.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//              serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n            //___\n\n        RCVdoneIPON = RCVdoneIPON.substr(sIndexDXrcv, parseInt(LenDrcv))\n        serial.writeLine(\"Receiving: \"+RCVdoneIPON)// to visualize data received\n\n        if (RCVdoneIPON == \"ON_1\"){Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one));}\n        if (RCVdoneIPON == \"ON_2\"){Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two));}\n        if (RCVdoneIPON == \"ON_3\"){Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three));}\n        if (RCVdoneIPON == \"ON_4\"){Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four));}\n        if (RCVdoneIPON == \"ON_5\"){Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five));}\n\n//-*** Need to address this. Use CIPSTATUS to see when TCP connection is closed as thingspeak automatically closes it when message sent/received */\n        bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5,\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\n    }\n\n//------------------------- Send OFF BLiXel for AP -----------------------------------   \n/** Send OFF BLiXel for a IP \n    * @param IPAdd to IPAdd, eg: \"192.168.4.1\"\n    * @param pixelOFFsetTEST position of the BLiXel in the strip\n    */\n    //% blockId=\"Send BLiXel_OFF_# for a IP \" \n    //% block=\"For IP number: $IPAdd | Ask to Turn OFF BliXel #: $pixelOFFsetTEST=BLiXel_Index\"\n    //% afterOnStart=true\n    //% group=\"Remote Commands\"\n    //% weight=200  \n    //% blockGap=9\n    //% blockHidden=true\n    //% advanced=false\n    export function send_LEDMSG_OFF(IPAdd: string, pixelOFFsetTEST: number): void {\n\n//SENDING REQUEST GET/             Important -> CIPRECVMODE=0  \n    let BLiXelBuffer = pins.createBuffer(5);\n    let LEDMSGOFF = \"\";\n            if (pixelOFFsetTEST == 0){ LEDMSGOFF=\"GET /OFF1\";}\n            if (pixelOFFsetTEST == 1){ LEDMSGOFF=\"GET /OFF2\";}\n            if (pixelOFFsetTEST == 2){ LEDMSGOFF=\"GET /OFF3\";}\n            if (pixelOFFsetTEST == 3){ LEDMSGOFF=\"GET /OFF4\";}\n            if (pixelOFFsetTEST == 4){ LEDMSGOFF=\"GET /OFF5\";}\n        serial.writeLine(\"\" + (LEDMSGOFF))\n\n    //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, 300);//use OJJO300 00ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\n\n\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"My IP is:\"+MyIP)//Print my IP address idex       \n        //______\n\n        //Getting AP IP address\n        bBoard_Control.UARTSendString(\"AT+CIPAP?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, 300);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\n\n        let APipStartIndex = receivedData.indexOf(\"ip:\")\n        let APIP = (receivedData.substr(APipStartIndex+4,11)); // get ip Address local\n//        serial.writeLine(\"AP IPadd is: \"+APIP)//Print my IP address idex    \n//_____\n\n        let RCVdoneIPOFF=\"\";  \n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE0 TO SENDING\n        response = WiFiResponse(\"OK\", false, 300);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 300);        \n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"\" + (receivedData))\n        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAdd +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n        response = WiFiResponse(\"OK\", false, 300);//}\n        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + LEDMSGOFF.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n        response = WiFiResponse(\"OK\", false, 300);//}\n        bBoard_Control.UARTSendString(LEDMSGOFF, boardIDGlobal, clickIDGlobal); //Send the contents of the packet  \n        response = WiFiResponse(\"OK\", false, 300);//}\n//        serial.writeLine(\"Sending\" +LEDMSGOFF)\n//        serial.writeLine(\"len\" +LEDMSGOFF.length.toString())\n\n//RECIVING  Important -> CIPRECVMODE=1\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, 300);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long \n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 300);\n//        serial.writeLine(bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal));\n//        serial.writeLine(\"receiveData: \" + (receivedData))      \n        pause(500)//Important\n\n//Getting LENGHT data \n        bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n//           serial.writeLine(\"ReceivedData is: \" + (receivedData))\n        let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//           serial.writeLine(\"start-> \" + startIndexDrcv)\n        let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//            serial.writeLine(\"end-> \" + endIndexDrcv)\n        let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n        let LenDrcvSize=LenDrcv.length\n//            serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//            serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n        let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n        pause(500);//Important                     \n//Getting Data\n    bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n    //For ReceivedData\n        let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n        let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n        let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDrcv+26)\n//              serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n//            let totDX=DXrcv.length\n//            serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n    //___\n    //For RCVInfo\n        RCVdoneIPOFF = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)\n        let sIndexDXrcv = RCVdoneIPOFF.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//              serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n        let eIndexDXrcv = RCVdoneIPOFF.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//              serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n    //___\n\n    RCVdoneIPOFF = RCVdoneIPOFF.substr(sIndexDXrcv, parseInt(LenDrcv))\n    serial.writeLine(\"Receiving: \"+RCVdoneIPOFF)// to visualize data received\n\n    if (RCVdoneIPOFF == \"OFF1\"){Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one));}\n    if (RCVdoneIPOFF == \"OFF2\"){Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two));}\n    if (RCVdoneIPOFF == \"OFF3\"){Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three));}\n    if (RCVdoneIPOFF == \"OFF4\"){Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four));}\n    if (RCVdoneIPOFF == \"OFF5\"){Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five));}\n\n//*** Need to address this. Use CIPSTATUS to see when TCP connection is closed as thingspeak automatically closes it when message sent/received */\n        bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5,\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 300);\n\n        serial.writeLine(\"\" + (bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)))\n        response = WiFiResponse(\"OK\", false, 300);\n    }\n\n//------------------------------------ Missions --------------------------------------   \n    //% block \n    //% group=\"Missions\"\n    //% icon=\"\\uf7c0\"\n     //% afterOnStart=true\n    //% blockGap=9\n    //% advanced=true\n    //% blockHidden=false \n\n//-------Roles_Index----    \n /** Gets the index of Roles\n    */\n    //% blockGap=9\n    //% blockId=\"BLiXel_IndexR\" \n    //% block=\"%indexR\"\n    //% block.loc.fr=\"%indexR\"\n    //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function blixel_indexR(indexR: BLiXelIndexR): number {\n        return indexR;\n    }\n/** Gets the index of Appliance\n    */\n    //% blockGap=9\n    //% blockId=\"Appliance_Index\" \n    //% block=\"%indexApp\"\n    //% block.loc.fr=\"%indexApp\"\n     //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function appliance_index(indexApp: ApplianceIndex): number {\n        return indexApp;\n    }\n\n/* Mission lights, select the Role and the Appliance (BLixel #) to turn on\n    */ \n    /** | >> En << | Select your role. Protect the appliance in the appropriate order.\n        | >> Fr << | Sélectionnez votre rôle. Protégez l'appareil dans l'ordre approprié.\n        * @param Role in Cyberville\n        * @param Appliance in School\n    */\n        //% blockId=\"Mission Wierd Lights\" \n        //% block=\"Role: $Role=BLiXel_IndexR | and Protect the: $Appliance=Appliance_Index\"\n        //% block.loc.fr=\"Rôle : $Role=BLiXel_IndexR | et protégez l' : $Appliance=Appliance_Index\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 1: Weird Lights at School - What is the Code Protection?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function MissionLights(Role: number, Appliance:number): void {             \n//            serial.writeLine(\"Role: \" + Role)\n        //Getting the Protection Code String\n            let ApplianceStr = Appliance.toString()     //number to String\n            ProtCodeStr=ProtCodeStr+ApplianceStr;       // Store the string to be sent to M5\n//            serial.writeLine(\"The Appliance number is: \" + Appliance)\n//            serial.writeLine(\"The AplicaneStr: \"+ ApplianceStr)\n//            serial.writeLine(\"The Protection Code String is: \"+ ProtCodeStr)\n            LenPCS = ProtCodeStr.length\n//            serial.writeLine(\"Lenght Protection Code String is: \"+ LenPCS)\n        //____\n\n        //SENDING REQUEST GET/ + Role# + /ON_ + Appliance#            Important -> CIPRECVMODE=0  \n        MSG_PCS = \"GET\"+Role+\"/ON_\"+Appliance;//Menssage to be sent as request, Protection Cose String\n        //serial.writeLine(\"to send...:  \" + (MSG_PCS))\n        //serial.writeLine(\"The code selected was:  \" + (ProtCodeStr))\n\n        FullMSG_PCS = \"GET\"+Role+\"/PCBL_\"+ProtCodeStr; //message GET + Role number + currentLine.endsWith ProtectionCodeBrilliantLabs          +Appliance;//Menssage to be sent as request, Protection Cose String\n\n        } // assemble  FullMSG_PCS = \"GET\"+Role+\"/PCBL_\"+ProtCodeStr; \n\n/* Send the protection */\n    /** | >> En << | Send protection sequence for attack resolution.\n        | >> Fr << | Envoi d'une séquence de protection pour la résolution de l'attaque.      \n    */\n        //% blockId=\"Send_Protection\"\n        //% block=\"Send Code Protection Sequence\"\n        //% block.loc.fr=\"Séquence de protection du code d’envoi\"\n        //% advanced=true\n        //% group=\"Mission 1: Weird Lights at School - What is the Code Protection?\"\n        //% weight=100\n        export function sendprot(): void {\n        soundExpression.giggle.play()\n//        serial.writeLine(\"The protection code is: \"+ ProtCodeStr + \" it is going to be send to m5\")\n//        serial.writeLine(\"The full protection code is: \"+ FullMSG_PCS + \" it is going to be send to m5\")\n\n        readytosend();\n\n        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + FullMSG_PCS.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//____________________________________    V   _______________________________\n        bBoard_Control.UARTSendString(FullMSG_PCS, boardIDGlobal, clickIDGlobal); //Send FULLMSG_PCS the contents of the packet  \n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//        serial.writeLine(\"Sending to AP: \" + ProtCodeStr + \" as code proteccion\")\n        serial.writeLine(\"Sending to AP: \" + FullMSG_PCS)\n//        serial.writeLine(\"Lenght MSC_PCS is: \" +MSG_PCS.length.toString())\n\n        ProtCodeStr=\"\"; //Delete the message to get a new one\n        FullMSG_PCS=\"\"; //Delete the message to get a new one  // NO QUITAR\n//        serial.writeLine(\"ProtCodeStr was sent! and deleted.\")   \n//        serial.writeLine(\"FULLMSG_PCS was sent! and deleted.\")      \n        pause(600)//***** Important **** (500 9july)\n\n        //Flashing\n        // Cybersec.setPixelColourON(BLiXel.blixel_index(Appliance-1)); basic.pause(500+LenPCS*1000); Cybersec.setPixelColourOFF(BLiXel.blixel_index(Appliance-1));//Flashing BLixel\n        // Cybersec.setPixelColourON(BLiXel.blixel_index(Appliance-1)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(Appliance-1));//Flashing BLixel\n        //___________\n\n/* Receiving to confirm */\n    //RECIVING  Important -> CIPRECVMODE=1\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n        response = WiFiResponse(\"OK\", false, 500);//CyberComTimeoutmS=400 (500 July10)\n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, 500);  // CyberComTimeoutmS=400 (500 July10)      \n        pause(600)//***** Important **** (500 9july)\n\n        let RCVdonIPON =\"\"; // Variable empty to start\n\n    //Getting LENGHT data \n        bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n        let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//           serial.writeLine(\"start-> \" + startIndexDrcv)\n        let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//            serial.writeLine(\"end-> \" + endIndexDrcv)\n        let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n        let LenDrcvSize=LenDrcv.length\n//            serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//            serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n        let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//            serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n    //_____\n//        pause(500);//***** Important ****     \n\n    //Getting Data\n        bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n        //For ReceivedData\n        let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n        let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n        let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n//          serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n        let totDX=DXrcv.length\n//          serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n    //___\n\n    //For RCVInfo\n        RCVdonIPON = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n        let sIndexDXrcv = RCVdonIPON.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//          serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n        let eIndexDXrcv = RCVdonIPON.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//          serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n    //___\n        let MSG_PCS_RCV  = RCVdonIPON.substr(sIndexDXrcv, parseInt(LenDrcv))\n        serial.writeLine(\"MSG received: \" + MSG_PCS_RCV)\n\n        \n//jul10\n\nif (MSG_PCS_RCV==\"11111\"){\n    readytosend();\n\n    bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + 4 + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n    bBoard_Control.UARTSendString(\"Good\", boardIDGlobal, clickIDGlobal); //Send FULLMSG_PCS the contents of the packet  \n    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n    serial.writeLine(\"Good\")// This is the word to confirm the code is correct!\n    \n    Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(500); \n    Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(500); \n    Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(500); \n    Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(500); \n    Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(500); \n\n    basic.showIcon(IconNames.Happy,100) \n    soundExpression.happy.play()\n    pause(7000)\n    soundExpression.happy.play()\n    pause(7000)\n    soundExpression.happy.play()\n    pause(7000)\n    soundExpression.happy.play()\n    Winner();\n }\n\n\n\n\n\n\n  //-***Close the comunication */\n  //Close all ports\n          bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n          response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n  //Ready to Receive done!     Important CIPRECVMODE=0 \n          bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n          response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\n          serial.writeLine(\"Client Closed!, Please recconect again\")\n          //Client required to reconnect\n          bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLEAR\\\",\\\"pwd_CLEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLEAR and pwd_CLEAR are nothing, I use them to clear de ESP32, close the connection  \n//          basic.showLeds(`\n//          . . . . .\n//          . . . . .\n//          . . # . .\n//          . # # # .\n//          . . . . .\n//          `)\n\n\n\n    // Read the confirmation sent by M5 and turn on the appliance \n        let Confirm=\"\";    // Variable empty to start\n        \n        Confirm = MSG_PCS_RCV.substr(0,5-4)//First Digit Code\n//        serial.writeLine(\"Confirmed 1: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n    \n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one));\n            }else{\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel\n     \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one));}\n        Confirm = MSG_PCS_RCV.substr(1,1)//Second Digit Code\n//        serial.writeLine(\"Confirmed 2: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two));\n            }else{\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel\n\n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two));}\n        Confirm = MSG_PCS_RCV.substr(2,1)//Third Digit Code\n//        serial.writeLine(\"Confirmed 3: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three));\n            }else{\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel\n\n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three));}  \n        Confirm = MSG_PCS_RCV.substr(3,1)//Fourth Digit Code\n//        serial.writeLine(\"Confirmed 4: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four));\n            }else{\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel\n\n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four));} \n        Confirm = MSG_PCS_RCV.substr(4,1)//Fiveth Digit Code\n//        serial.writeLine(\"Confirmed 5: \" + Confirm)\n        if (Confirm==\"1\"){\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n\n                Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five));\n            }else{\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(100); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(400); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(50); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                basic.pause(600);\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(10); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(5); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(3); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel\n\n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five));} \n    //__________ \n            \n\n//        if (MSG_PCS_RCV==\"11111\"){\n//            readytosend();\n//            bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + 4 + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//            bBoard_Control.UARTSendString(\"Good\", boardIDGlobal, clickIDGlobal); //Send FULLMSG_PCS the contents of the packet  \n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//            serial.writeLine(\"Good\")// This is the word to confirm the code is correct!\n            \n//            basic.showIcon(IconNames.Happy,100) \n//            soundExpression.happy.play()\n//            pause(7000)\n//            soundExpression.happy.play()\n//            pause(7000)\n//            soundExpression.happy.play()\n//            pause(7000)\n//            soundExpression.happy.play()\n//            Winner();\n//         }\n        if (MSG_PCS_RCV!=\"11111\"){\n            soundExpression.sad.play()\n            basic.showIcon(IconNames.Sad,2000) \n            pause(1000)\n            basic.clearScreen()\n         }\n\n        MSG_PCS_RCV=\"\"; //Delete the message to get a new one\n        RCVdonIPON=\"\";  //Delete the message to get a new one\n        Confirm=\"\";     //Delete the message to get a new one\n\n          basic.showLeds(`\n          . . . . .\n          . . . . .\n          . . # . .\n          . # # # .\n          . . . . .\n          `)\n\n        }   \n\n    export function Winner(){//infinite loop   //Disconect and OFF wifi\n        basic.showIcon(IconNames.Happy,100)    \n        \n        bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n        response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\n        bBoard_Control.clearUARTRxBuffer(boardIDGlobal, clickIDGlobal);             //  bBoard.clearUARTRxBuffer(clickBoardNum);\n        bBoard_Control.writePin(0, clickIOPin.CS, boardIDGlobal, clickIDGlobal)     \n        bBoard_Control.writePin(1, clickIOPin.CS, boardIDGlobal, clickIDGlobal)\n        bBoard_Control.UARTSendString(\"AT+CWQAP\\r\\n\", boardIDGlobal, clickIDGlobal); //Disconnect the created conextion,\n        response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n        bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLEAR\\\",\\\"pwd_CLEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLEAR and pwd_CLEAR are nothing, I use them to clear de ESP32, close the connection  \n        response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n        Winner();\n\n    }\n\n    export function readytosend(){\n        //Getting my IP address\n        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n        let ipStartIndex = receivedData.indexOf(\"ip:\")\n        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get ip Address local\n//              serial.writeLine(\"My IP is: \"+MyIP)//Print my IP address idex       \n    //Getting AP IP address\n        bBoard_Control.UARTSendString(\"AT+CIPAP?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n        let APipStartIndex = receivedData.indexOf(\"ip:\")\n        let APIP = (receivedData.substr(APipStartIndex+4,11)); // get ip Address local\n//              serial.writeLine(\"AP IPadd is: \"+APIP)//Print my IP address idex    \n//_____\n    //Sending MSG_PCS                    \n        bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE0 TO SENDING\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);        \n        bBoard_Control.UARTSendString(\"AT+CIPSTATUS\\r\\n\", boardIDGlobal, clickIDGlobal);\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);        \n        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ APIP +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n    }\n\n\n//------------------------- Missions #2 -----------------------------------\n\n    /* Levels Cloride */\n    /** | >> En << | Select the level for Cloride.\n        | >> Fr << | Sélectionner le niveau pour Clorure.      \n        * @param Level_CL Level of Cloride\n    */\n        //% blockId=\"Level of Cloride Solution\" \n        //% block=\"%indexCL\"\n        //% block.loc.fr=\"%indexCL\"\n        //% color=#0000ff       //blue\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% group.loc.fr=\"Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio?\"\"\n        //% weight=100  \n        export function indexcl(indexCL: Index_CL): number {\n            if (indexhatStr==\"2\"){\n                // Black Hat actvity\n                    //Virus,\n                        CL=indexCL; \n                        indexCL=indexCL+14;//the virus add 14 to number selected\n                    //___\n                    // Ones, tens, x20,x30,x40,x50,x60,x70,x80,x90\n                        if (indexCL >= 0 && indexCL <=10){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            indexCL=indexCL;\n//serial.writeLine(\"Caution: Chlorine value is: \" + (indexCL))  \n                        } else if (indexCL >= 11 && indexCL <=19){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 4);// Reprensent 10's\n                            indexCL=indexCL-10;\nserial.writeLine(\"Caution: Chlorine value is: \" + (indexCL+10)) \n                        } else if (indexCL >= 20 && indexCL <=29){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 3);led.plot(0, 4);// Reprensent 20's\n                            indexCL=indexCL-20;\nserial.writeLine(\"Caution: Chlorine value is: \" + (indexCL+20)) \n                        } else if (indexCL >= 30 && indexCL <=39){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 30's\n                            indexCL=indexCL-30;\n//serial.writeLine(\"Caution: Chlorine value is: \" + indexCL+30) \n                        } else if (indexCL >= 40 && indexCL <=49){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 40's\n                            indexCL=indexCL-40;\n//serial.writeLine(\"Caution: Chlorine value is:\" + indexCL+40) \n                        } else if (indexCL >= 50 && indexCL <=59){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 50's\n                            indexCL=indexCL-50;\n//serial.writeLine(\"Caution: Chlorine value is: \" + indexCL+50) \n                        } else if (indexCL >= 60 && indexCL <=69){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 60's\n                            indexCL=indexCL-60;\n                        } else if (indexCL >= 70 && indexCL <=79){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 3);led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 70's\n                            indexCL=indexCL-70;\n                        } else if (indexCL >= 80 && indexCL <=89){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 2);led.plot(1, 3);led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 80's\n                            indexCL=indexCL-80;\n                        } else if (indexCL >= 90 && indexCL <=99){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 1);led.plot(1, 2);led.plot(1, 3);led.plot(1, 4);led.plot(0, 0);led.plot(0, 1);led.plot(0, 2);led.plot(0, 3);led.plot(0, 4);// Reprensent 90's\n                            indexCL=indexCL-90;\n                        } else if (indexCL >= 100){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(1, 0);\n                            indexCL=indexCL-100;\n                        }\n                 // _____________\n            } \n            indexclStr=indexCL.toString();\n            return indexCL;\n        }\n    /* Levels Fluoride */\n    /** | >> En << | Select the level for Fluoride.\n        | >> Fr << | Sélectionner le niveau pour Fluorure.      \n        * @param Level_FL Level of Fluoride\n    */\n        //% blockId=\"Level of Fluoride Solution\" \n        //% block=\"%indexFL\"\n        //% block.loc.fr=\"%indexFL\"\n        //% color=#008000  // green\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% weight=100  \n        export function indexfl(indexFL: Index_FL): number { \n            if (indexhatStr==\"2\"){\n                // Black Hat actvity\n                //Virus\n                    FL=indexFL;\n                    indexFL=indexFL*7;//Virus, the virus multiply for 7 to number selected   \n                //___\n                    // Ones, tens, x20,x30,x40,x50,x60,x70,x80,x90\n                    if (indexFL >= 0 && indexFL <=10){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            indexFL=indexFL;\nserial.writeLine(\"Caution: Fluoride value is: \" + indexFL)  \n                        } else if (indexFL >= 11 && indexFL <=19){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 4);// Reprensent 10's\n                            indexFL=indexFL-10;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFL+10))                     \n                        } else if (indexFL >= 20 && indexFL <=29){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 3);led.plot(3, 4);// Reprensent 20's\n                            indexFL=indexFL-20;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFL+20))                     \n                        } else if (indexFL >= 30 && indexFL <=39){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 30's\n                            indexFL=indexFL-30;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFL+30))                     \n                        } else if (indexFL >= 40 && indexFL <=49){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 40's\n                            indexFL=indexFL-40;\nserial.writeLine(\"⚠️ Caution: Fluoride value is: \" + (indexFL+40))                     \n                        } else if (indexFL >= 50 && indexFL <=59){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 50's\n                            indexFL=indexFL-50;\nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFL+50))                     \n                        } else if (indexFL >= 60 && indexFL <=69){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(3, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(4, 4);// Reprensent 60's\n                            indexFL=indexFL-60;                           \nserial.writeLine(\"Caution: Fluoride value is: \" + (indexFL+60))                    \n                        } else if (indexFL >= 70){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 70's\nserial.writeLine(\"Caution: Fluoride value is: \" + 70)                     \n                            indexFL=-1-1;\n                        } else if (indexFL >= 71 && indexFL <=79){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 70's\n                            indexFL=indexFL-70;\n//serial.writeLine(\"Caution: Fluoride value is: \" + (indexFL+70))                     \n                        } else if (indexFL >= 80 && indexFL <=89){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 2);led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 80's\n                            indexFL=indexFL-80;\n//serial.writeLine(\"Caution: Fluoride value is: \" + indexFL)                     \n                        } else if (indexFL >= 90 && indexFL <=99){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 1);led.plot(4, 2);led.plot(4, 3);led.plot(4, 4);led.plot(3, 0);led.plot(3, 1);led.plot(3, 2);led.plot(3, 3);led.plot(3, 4);// Reprensent 90's\n                            indexFL=indexFL-90;\n//serial.writeLine(\"Caution: Fluoride value is: \" + indexFL)                     \n                        } else if (indexFL >= 100){\n                            for (let b=0; b<5;b++){ led.plotBrightness(Col, b,1);}// Column (0-4) Turn on the LED at the specified coordinates\n                            led.plot(4, 0);\n                            indexFL=indexFL-100;\n//serial.writeLine(\"Caution: Fluoride value is:\" + indexFL)                     \n                        }\n                    // _____________\n            }\n            indexflStr=indexFL.toString();\n            return indexFL;\n        }\n\n    /* Antivirus CL*/\n    /** | >> En << | Select the number that should work as an Antivirus for Chlorine.\n        | >> Fr << | Sélectionnez le numéro qui doit fonctionner comme un Antivirus Clore.      \n        * @param AntivirusC Antivirus hat black\n    */\n        //% blockId=\"AntivirusCL\" \n        //% block=\"%indexAVCL\"\n        //% block.loc.fr=\"%indexAVCL\"\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% weight=100  \n        export function indexavcl(indexAVCL: Index_AVCL): number {\n            CLAV=indexAVCL; \n            if (indexhatStr==\"2\"){\n                // Black Hat actvity\n                if  (indexAVCL==14){    \n                        Cybersec.setPixelColourBLUE(BLiXel.blixel_index(2));  \n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(0)); \n                        Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); \n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(3)); \n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));\n                        serial.writeLine(\"_____________________________________________________\") \n                        serial.writeLine(\"Now >>> Chlorine <<< levels are safe, CONGRATS =) !!!\") \n                        serial.writeLine(\"The current is: \"+ CL)\n                        serial.writeLine(\"_____________________________________________________\") \n                if (CL==0||CL==1||CL==2||CL==3||CL==4||CL==5){\n                     indexAVCL=4;        \n                    } else if (CL==6||CL==7||CL==8||CL==9||CL==10){\n                     indexAVCL=-7+1;\n                  }\n                for (let b=0; b<5;b++){ led.unplot(Col, b);}// Column (0-4) Turn on the LED at the specified coordinates\n                for (let b=0; b<5;b++){ led.unplot(0, b);}// Column (0-4) Turn on the LED at the specified coordinates\n                for (let b=0; b<5;b++){ led.unplot(1, b);}// Column (0-4) Turn on the LED at the specified coordinates     \n                if  (FLAV==7){\n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));  \n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(1)); \n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(2)); \n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(3)); \n                    Cybersec.setPixelColourON(BLiXel.blixel_index(4));                       \n                    //basic.showIcon(IconNames.Happy,100)  \n                    //music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                }   \n            } else{\n                serial.writeLine(\":( Chlorine levels are stll infected!\")  \n                }\n            } \n            indexclStr=indexAVCL.toString();\n            return indexAVCL;\n    }        \n\n    /* Antivirus FL*/\n    /** | >> En << | Select the number that should work as an Antivirus for Fluoride.\n        | >> Fr << | Sélectionnez le numéro qui doit fonctionner comme un antivirus Fluoruree.      \n        * @param AntivirusF Antivirus hat black\n    */\n        //% blockId=\"AntivirusFL\" \n        //% block=\"%indexAVFL\"\n        //% block.loc.fr=\"%indexAVFL\"\n        //% advanced=true\n        //% afterOnStart=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% weight=100  \n        export function indexavfl(indexAVFL: Index_AVFL): number {\n            FLAV=indexAVFL; \n            if (indexhatStr==\"2\"){\n                // Black Hat actvity\n                if  (indexAVFL==7){\n                    Cybersec.setPixelColourON(BLiXel.blixel_index(3));  \n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(1)); \n                    Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); \n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(2)); \n                    Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));\n\n                    serial.writeLine(\"____________________________________________________\") \n                    serial.writeLine(\"Now >>>Flouride<<< levels are safe, CONGRATS =) !!!\") \n                    serial.writeLine(\"The current is: \"+ FL)\n                    serial.writeLine(\"____________________________________________________\") \n\n                    if (FL==0){\n                        indexAVFL=14;     \n                        } else if (FL==1){\n                        indexAVFL=-1+1;     //0=1 ok\n                       } else if (FL==2){\n                        indexAVFL=2;        //2=2 ok\n                       } else if (FL==3){\n                        indexAVFL=1-0.6775; //0.3225=3 ok\n                       } else if (FL==4){\n                        indexAVFL=2;        //2=4 ok\n                       } else if (FL==5){\n                        indexAVFL=1;        //1=5 ok\n                       } else if (FL==6){\n                        indexAVFL=1-0.7;    //0.3=6 ok\n                       } else if (FL==7){\n                        indexAVFL=2-0.715;  //1.285=7 ok\n                       } else if (FL==8){\n                        indexAVFL=1-0.3;    //0.7=8 ok \n                       } else if (FL==9){\n                        indexAVFL=1-0.667;  //0.333=9 ok\n                       } else if (FL==10){\n                        indexAVFL=-1+0.8;   //0.2=10 ok because  indexFL=-2 for 70 show 10\n                    }\n                    for (let b=0; b<5;b++){ led.unplot(Col, b);}// Column (0-4) Turn on the LED at the specified coordinates\n                    for (let b=0; b<5;b++){ led.unplot(3, b);}// Column (0-4) Turn on the LED at the specified coordinates\n                    for (let b=0; b<5;b++){ led.unplot(4, b);}// Column (0-4) Turn on the LED at the specified coordinates     \n                    if  (CLAV==14){\n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));  \n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(1)); \n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(2)); \n                        Cybersec.setPixelColourOFF(BLiXel.blixel_index(3)); \n                        Cybersec.setPixelColourON(BLiXel.blixel_index(4));\n                        //basic.showIcon(IconNames.Happy,100)  \n                        //music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)       \n                    } \n            } else{\n//              music.startMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)\n                serial.writeLine(\":( Flouride levels are stll infected!\")  \n              }\n            } \n\n            indexavclStr=indexAVFL.toString();\n            return indexAVFL;\n    }        \n\n    /* ColorHat */\n    /** | >> En << | Select your Friend Hat\n        | >> Fr << | Choisissez votre Chapeau d'Ami      \n    */\n    //% blockGap=9\n    //% blockId=\"ColorHat\" \n    //% block=\"%indexH\"\n    //% block.loc.fr=\"%indexH\"\n    //% color=#ffa500 //orange\n    //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function indexhat(indexH: Index_H): number {\n        indexhatStr=indexH.toString();\n        return indexH;\n    }\n\n    /* CipherCode */\n    /** | >> En << | Encryption mode\n        | >> Fr << | Mode de chiffrement. Le mode sera affiché en langue anglaise. \n    */\n    //% blockGap=9\n    //% blockId=\"CipherCodes\" \n    //% block=\"%indexEncr\"\n    //% block.loc.fr=\"%indexEncr\"\n    //% afterOnStart=true\n    //% blockHidden=true \n    //% advanced=true\n    export function indexencr(indexEncr: Index_Encr): number {\n        indexenclStr=indexEncr.toString();\n        return indexEncr;\n    }\n\n    /* Show Encrytion Messages */\n    /** | >> En << | Select your encryption mode\n        | >> Fr << | Sélectionnez votre mode de cryptage \n        * @param Encr mode     \n    */\n        //% blockId=\"Show Encrytion Mode\"\n        //% block=\"Show me the encryption message as: $Encr=CipherCodes\"\n        //% block.loc.fr=\"Montrez-moi le message de cryptage: $Encr=CipherCodes\"\n        //% afterOnStart=true\n        //% advanced=true\n        //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n        //% group.loc.fr=\"Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio?\"\"\n        //% weight=100\n        export function ShowEncr(Encr:number): void{\nserial.writeLine(\"\")\nserial.writeLine(\"\")\n            if (indexenclStr==\"1\"){\n                Ready();\n                //Message\n                serial.writeLine(\"- . - .\"); serial.writeLine(\". - . .\"); serial.writeLine(\"- - - . . .\"); serial.writeLine(\". . . - -\")\n                serial.writeLine(\". . - .\"); serial.writeLine(\". - . .\"); serial.writeLine(\"- - - . . .\"); serial.writeLine(\"- . . . -\")\n                serial.writeLine(\"\")\n                    Dahs(); Dit(); Dahs(); Dit(); basic.pause(1000)                // C\n                    Dit(); Dahs(); Dit(); Dit(); basic.pause(1000)                 // L\n                    Dahs(); Dahs(); Dahs(); Dit(); Dit(); Dit(); basic.pause(1000) // :\n                    Dit(); Dit(); Dit(); Dahs(); Dahs(); basic.pause(2000)         // 3\n                    Dit(); Dit(); Dahs(); Dit(); basic.pause(1000)                 // F\n                    Dit(); Dahs(); Dit(); Dit(); basic.pause(1000)                 // L\n                    Dahs(); Dahs(); Dahs(); Dit(); Dit(); Dit(); basic.pause(1000) // :\n                    Dahs(); Dit(); Dit(); Dit(); Dahs();  basic.pause(2000)        // 6\n                //______\n                Over();\n            } else if (indexenclStr==\"2\"){\n                Ready();\n                //Message\n                    serial.writeLine(\"3-12-20-15-6-12-18-1-20-9-15-9-19-19-5-22-5-14-20-15-14-9-14-5\")//CL=7  FL=9 \n                    serial.writeLine(\"\")\n                    basic.showString(\"3-12-20-15-6-12-18-1-20-9-15-9-19-19-5-22-5-14-20-15-14-9-14-5\")\n                //_____\n                Over();\n            }else if (indexenclStr==\"3\"){\n                Ready();\n                //Message\n                    serial.writeLine(\"Silly\"); serial.writeLine(\"House\"); serial.writeLine(\"Tortoise\"); serial.writeLine(\"TShirt\"); serial.writeLine(\"Surprised\"); \n                    serial.writeLine(\"Yes\"); serial.writeLine(\"Asleep\");serial.writeLine(\"SmallHeart\"); serial.writeLine(\"Scissors\"); serial.writeLine(\"Skull\");\n\n                    serial.writeLine(\"Confused\"); serial.writeLine(\"Tortoise\"); serial.writeLine(\"TShirt\"); serial.writeLine(\"Surprised\"); \n                    serial.writeLine(\"Yes\"); serial.writeLine(\"Asleep\");serial.writeLine(\"SmallHeart\"); serial.writeLine(\"Scissors\"); serial.writeLine(\"Cow\");\n\n                    serial.writeLine(\"\")\n                    basic.showIcon(IconNames.Silly); basic.pause(600)          //C\n                    basic.showIcon(IconNames.House); basic.pause(600)          //H\n                    basic.showIcon(IconNames.Tortoise); basic.pause(600)       //L\n                    basic.showIcon(IconNames.TShirt); basic.pause(600)         //O\n                    basic.showIcon(IconNames.Surprised); basic.pause(600)      //R \n                    basic.showIcon(IconNames.Yes); basic.pause(600)            //I\n                    basic.showIcon(IconNames.Asleep); basic.pause(600)         //D\n                    basic.showIcon(IconNames.SmallHeart); basic.pause(600)     //E\n                    basic.showIcon(IconNames.Scissors); basic.pause(600)       //:\n                    basic.showIcon(IconNames.Skull); basic.pause(600)          //7\n                    basic.clearScreen(); basic.pause(2000)                     //\n                    basic.showIcon(IconNames.Confused); basic.pause(600)       //F\n                    basic.showIcon(IconNames.Tortoise); basic.pause(600)       //L\n                    basic.showIcon(IconNames.TShirt); basic.pause(600)         //O\n                    basic.showIcon(IconNames.Surprised); basic.pause(600)      //R\n                    basic.showIcon(IconNames.Yes); basic.pause(600)            //I\n                    basic.showIcon(IconNames.Asleep); basic.pause(600)         //D\n                    basic.showIcon(IconNames.SmallHeart); basic.pause(600)     //E\n                    basic.showIcon(IconNames.Scissors); basic.pause(600)       //:\n                    basic.showIcon(IconNames.Cow); basic.pause(600)            //4\n                //_____\n                Over();\n            } else if (indexenclStr==\"4\"){\n                Ready();\n                //Message\n                serial.writeLine(\"CL code: JSVY\")\n                serial.writeLine(\"Key: <- 4\") \n                serial.writeLine(\"FL code: ADQZ\")\n                serial.writeLine(\"Key: -> 5\") \n\n                serial.writeLine(\"\")\n                basic.showString(\"CL code:\")//4\n                basic.showString(\"J\")\n                basic.showString(\"S\")\n                basic.showString(\"Y\")\n                basic.showString(\"V\")\n                basic.showString(\" \")\n                basic.showString(\"KEY:\")      \n                images.createBigImage(`\n                  . . . # . . . . . . . # . # . . . . .\n                  . . # # . . . . . . . # . # . . . . .\n                  . # # # # # # # . . . # # # . . . . .\n                  . . # # . . . . . . . . . # . . . . .\n                  . . . # . . . . . . . . . # . . . . .\n                    `).scrollImage(1, 200)\n                basic.showString(\"FL code:\")//5\n                basic.showString(\"A\")\n                basic.showString(\"D\")\n                basic.showString(\"Q\")\n                basic.showString(\"Z\")\n                basic.showString(\" \")\n                basic.showString(\"KEY:\") \n                images.createBigImage(`\n                    . . . . # . . . . . # # # . . . . . \n                    . . . . # # . . . . # . . . . . . . \n                    # # # # # # # . . . # # # . . . . . \n                    . . . . # # . . . . . . # . . . . . \n                    . . . . # . . . . . # # # . . . . . \n                    `).scrollImage(1, 200)\n                //____\n                Over();\n            } else {\n                Ready();\n                //Message    2:5\n                serial.writeLine(\"\")      \n                serial.writeLine(\"(4-3) (1-1) (4-5) (2-4) (3-5) (2-4) (4-4) (4-5) (5-3) (3-5) (4-5) (3-5) (2-1) (2-4) (5-2) (1-5)\") \n\n                basic.showString(\"(4-3)(1-1)(4-5)(2-4)(3-5)(2-4)(4-4)(4-5)(5-3)(3-5)(4-5)(3-5)(2-1)(2-4)(5-2)(1-5)\")\n                //____    \n                Over();\n            }\n        }\n\n        export function Ready(){           \n            music.startMelody(music.builtInMelody(Melodies.Baddy), MelodyOptions.Once)\n            basic.showAnimation(`0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  \n                                 0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  \n                                 0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  `, 60);//3\n\n            basic.showAnimation(`0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0  0 0 0 1 0  0 0 0 1 0  \n                                 0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 1 0 0 0  0 1 0 0 0  0 1 0 0 0  \n                                 0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  `, 60);//2\n\n            basic.showAnimation(`0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 1 1 0 0  0 1 1 0 0  0 1 1 0 0  \n                                 0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  \n                                 0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  \n                                 0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 1 1 1 0  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 0 1 1  1 0 0 0 1  0 0 0 0 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  `, 60);//1\n\n            basic.showAnimation(`0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0 \n                                1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0\n                                1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  \n                                1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  \n                                0 1 1 1 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0 `, 180);//end            \n        }\n\n        export function Over(){           \n        music.startMelody(music.builtInMelody(Melodies.Punchline), MelodyOptions.Once)\n        basic.showAnimation(`1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0   \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0   \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0    \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0    \n                             1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  0 1 1 1 0  0 1 1 1 0  0 0 1 0 0  0 0 1 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0   `, 180);//end  \n        }\n\n        export function Dit(){           \n            basic.showLeds(`\n            . . . . .\n            . # # # .\n            . # # # .\n            . # # # .\n            . . . . .\n            `)\n            music.playTone(988, music.beat(BeatFraction.Quarter))//Dit\n            basic.clearScreen()\n            basic.pause(200)    \n        }\n\n        export function Dahs(){\n            basic.showLeds(`\n                . . . . .\n                . . . . .\n                # # # # #\n                . . . . .\n                . . . . .\n                `)\n                music.playTone(988, music.beat(BeatFraction.Whole))//Dahs\n            basic.clearScreen()\n            basic.pause(200) \n        }\n\n    /* Mission Water, select your Hat and send the Ratio */ \n    /** | >> En << | Select your Hat Color Source information and send the Ratio Chlorine:Fluoride.\n        | >> Fr << | Sélectionnez la Couleur de votre chapeau sorece d'information et envoyez le bon ratio Chlore:Fluorure.\n        * @param Hat in Cyberville\n    */\n    //% blockId=\"Mission Water Treatment Polluted\" \n    //% block=\"Hat color source information: $Hat=ColorHat | and send the Ratio\"\n    //% block.loc.fr=\"Couleur de votre chapeau sorece d'information : $Hat=ColorHat | et envoyez le Ratio\"\n    //% group=\"Mission 2: Water Treatment Plant Polluted - What is the correct ratio?\"\n    //% group.loc.fr=\"Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio ?\"\n    //% afterOnStart=true\n    //% weight=100        \n    //% blockHidden=false \n    //% advanced=true\n    export function MissionWater(Hat:number): void{  \nserial.writeLine(\"Ready, set, go! \")           \n        if (indexhatStr==\"1\"){\n        // Red Hat actvity\n        if (indexclStr==\"3\" && indexflStr==\"7\"){// complety safe\n                    Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(4));//Flashing BLixel                \n                    basic.showIcon(IconNames.Happy,100) \n                    soundExpression.happy.play()\n                    pause(7000)\n                    soundExpression.happy.play()\n                    pause(7000)\n                    soundExpression.happy.play()\n                    pause(7000)\n                    soundExpression.happy.play()\n                    } else if (indexclStr==\"7\" && (indexflStr==\"3\")){//  safe\n                        Cybersec.setPixelColourRED(BLiXel.blixel_index(3)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(3));//Flashing BLixel                \n                        Losser();\n                        } else if ((indexclStr==\"1\"||indexclStr==\"2\"||indexclStr==\"8\") && (indexflStr==\"7\")){// moderate\n                            Cybersec.setPixelColourRED(BLiXel.blixel_index(2)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(2));//Flashing BLixel                \n                            Losser();\n                            } else if ((indexflStr==\"1\"||indexflStr==\"2\"||indexflStr==\"8\") && (indexclStr==\"3\")){// danger\n                                Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));//Flashing BLixel                \n                                Losser();\n                                    } else{ // CL hight danger \n                                        Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); basic.pause(500); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));//Flashing BLixel                \n                                        Losser();\n                                        }\n        // _____________              \n        } else if (indexhatStr==\"2\"){\n        // Black Hat actvity           \n            for (let flash=0; flash<3;flash++){ Cybersec.setPixelColourBLUE(BLiXel.blixel_index(0)); Cybersec.setPixelColourON(BLiXel.blixel_index(1)); basic.pause(200); Cybersec.setPixelColourOFF(BLiXel.blixel_index(0)); Cybersec.setPixelColourOFF(BLiXel.blixel_index(1));} \n            Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); //0CL with virus       \n            Cybersec.setPixelColourRED(BLiXel.blixel_index(1)); //1FL with virus  \n            if  (CLAV==14 && FLAV==7){\n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(0));  \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(1)); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(2)); \n                Cybersec.setPixelColourOFF(BLiXel.blixel_index(3)); \n                Cybersec.setPixelColourPURPLE(BLiXel.blixel_index(4));\n                basic.showIcon(IconNames.Happy,100)  \n             }          \n          \n        // _____________\n        } else if (indexhatStr==\"3\"){ \n        // White Hat actvity\n            if (indexclStr==\"1\" && indexflStr==\"1\"){// complety safe\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . . # # . \n                . # . . # # . . . # . # . . # . . # \n                # # # . . # . . . . . . . . # # # # \n                . # . . . # . . # . . . # . # . . # \n                . . . . # # # . . # # # . . # . . # \n                `).scrollImage(1, 200) \n            } else if (indexclStr==\"1\" && indexflStr==\"2\"){// complety safe\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . # # # . \n                . # . . # # . . . # . # . . # . . # \n                # # # . . # . . . . . . . . # # # . \n                . # . . . # . . # . . . # . # . . # \n                . . . . # # # . . # # # . . # # # .\n                `).scrollImage(1, 200) \n            } else if (indexclStr==\"3\" && indexflStr==\"5\"){// complety safe\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . . # # # \n                . # . . # # . . . # . # . . # . . . \n                # # # . . # . . . . . . . . # . . . \n                . # . . . # . . # . . . # . # . . . \n                . . . . # # # . . # # # . . . # # #\n                `).scrollImage(1, 200) \n            } else if (indexclStr==\"4\" && indexflStr==\"1\"){// complety safe\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . # # # .\n                . # . . # # . . . # . # . . # . . # \n                # # # . . # . . . . . . . . # . . # \n                . # . . . # . . # . . . # . # . . # \n                . . . . # # # . . # # # . . # # # .\n                `).scrollImage(1, 200) \n            } else if (indexclStr==\"7\" && indexflStr==\"3\"){// complety safe\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n                music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n                images.createBigImage(`\n                . . . . . # . . . # . # . . . # # # \n                . # . . # # . . . # . # . . # . . . \n                # # # . . # . . . . . . . . # # # . \n                . # . . . # . . # . . . # . # . . . \n                . . . . # # # . . # # # . . . # # #\n                `).scrollImage(1, 200) \n            } else{\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); // complety dangerous\n                soundExpression.sad.play()\n                images.createBigImage(`\n                . . . . . # . . # # . # #\n                . . . . # # . . # # . # #\n                # # # . . # . . . . . . .\n                . . . . . # . . . # # # .\n                . . . . # # # . # . . . #\n                `).scrollImage(1, 200) \n                ClrStrip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)\n                ClrStrip.showRainbow(100, 350)\n                Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); \n            }\n        // _____________    \n\n        } else {                    \n        // Blue Hat actvity\n        if (indexclStr==\"3\" && indexflStr==\"6\"){// complety safe\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . . # # . \n            . # . # . . # . . # \n            . . . . . . # # # # \n            # . . . # . # . . # \n            . # # # . . # . . # \n            `).scrollImage(1, 200) \n        } else if(indexclStr==\"7\" && indexflStr==\"9\"){\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . # # # .\n            . # . # . . # . . # \n            . . . . . . # # # # \n            # . . . # . # . . # \n            . # # # . . # # # . \n            `).scrollImage(1, 200) \n        } else if(indexclStr==\"7\" && indexflStr==\"4\"){\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . . # # #\n            . # . # . . # . . . \n            . . . . . . # . . . \n            # . . . # . # . . . \n            . # # # . . . # # # \n            `).scrollImage(1, 200) \n        } else if(indexclStr==\"4\" && indexflStr==\"5\"){\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . # # # .\n            . # . # . . # . . # \n            . . . . . . # . . # \n            # . . . # . # . . # \n            . # # # . . # # # . \n            `).scrollImage(1, 200) \n        } else if(indexclStr==\"2\" && indexflStr==\"5\"){\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(4)); \n            music.startMelody(music.builtInMelody(Melodies.BaDing), MelodyOptions.Once)\n            images.createBigImage(`\n            . # . # . . . # # #\n            . # . # . . # . . . \n            . . . . . . # # # #\n            # . . . # . # . . . \n            . # # # . . . # # # \n            `).scrollImage(1, 200) \n        } else{\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); // complety dangerous\n            soundExpression.sad.play()\n            images.createBigImage(`\n            # # . # #\n            # # . # #\n            . . . . .\n            . # # # .\n            # . . . #\n            `).scrollImage(1, 200) \n            ClrStrip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)\n            ClrStrip.showRainbow(100, 350)\n            Cybersec.setPixelColourRED(BLiXel.blixel_index(0)); \n            }\n        } \n    }       \n    \n    export function Losser(){\n        soundExpression.sad.play()\n        basic.showIcon(IconNames.Sad,2000) \n        pause(1000)\n        basic.clearScreen()\n    }\n\n\n\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" 2024 \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//This is the End 2024\n\n\n\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\" 2025 \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n//\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n\n//------------------------- Missions #3 -----------------------------------\n\n\n//---------- Parking Bar control & simulation -------------//\nlet ParkingBarAngle = 0;\nlet Step = 0;\nStep = 0;\n\n\n    /**\n     * Return the Position Parking Bar Value in degrees.\n     */\n        //% blockId=\"Position Value\" \n        //% block=\"Position value in degrees for 🚥\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11 \n//% blockHidden=false \n        export function getValueDeg(): number {\n            return ParkingBarAngle;\n        }\n\n    /**\n     * Moves Down one step parking bar in -11.25º\n     */\n        //% blockId=\"Down Step\" \n        //% block=\"⤵️ Down One Step 🚥\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11\n//% blockHidden=false \n        export function decrease(): void {\n            if (Step > 0) {Step += 0 - 1}\n            showImage(Step)\n        }\n\n    /**\n     * Moves Up one step parking bar in +11.25º\n     */\n        //% blockId=\"Up Step\" \n        //% block=\"⤴️ Up One Step 🚥\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11 \n//% blockHidden=false\n        export function increase(): void {\n            if (Step < 8) {Step += 1}\n            showImage(Step)\n        }\n\n    /**\n     * Parking Bar Simulation \n     | >> En << | Simulates 🚥 angle 0° to 90° in 8 steps (11.25° each) on the micro:bit.\n     | >> Fr << | ---.\n    */\n        //% blockId=\"Parking Bar\" \n        //% block=\"Parking Bar 🚥 Simulation\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% color=#0fbc11\n//% blockHidden=false\n        export function Localparkbar(): void {\n            showImage(Step)\n        }\n\n    function showImage (level: number) {\n        if (level == 0) {\n            basic.showLeds(`\n            . . . . .\n            . . . . .\n            . . . . .\n            . . . . .\n            # # # # #\n            `)\n        } else if (level == 1) {\n            basic.showLeds(`\n            . . . . .\n            . . . . .\n            . . . . .\n            . . . . #\n            # # # # .\n            `)\n        } else if (level == 2) {\n            basic.showLeds(`\n            . . . . .\n            . . . . .\n            . . . . #\n            . . . # .\n            # # # . .\n            `)\n        } else if (level == 3) {\n        basic.showLeds(`\n            . . . . .\n            . . . . #\n            . . . # .\n            . . # . .\n            # # . . .\n            `)\n        } else if (level == 4) {\n        basic.showLeds(`\n            . . . . #\n            . . . # .\n            . . # . .\n            . # . . .\n            # . . . .\n            `)\n        } else if (level == 5) {\n        basic.showLeds(`\n            . . . # .\n            . . # . .\n            . # . . .\n            # . . . .\n            # . . . .\n            `)\n        } else if (level == 6) {\n        basic.showLeds(`\n            . . # . .\n            . # . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            `)\n        } else if (level == 7) {\n        basic.showLeds(`\n            . # . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            `)\n        } else if (level == 8) {\n        basic.showLeds(`\n            # . . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            # . . . .\n            `)\n        }\n    ParkingBarAngle = Step * 11.25\n    }\n\n    /* Ready to listen from Cyberville */\n    /** | >> En << | Set to hear any MSG sent to the Cyberville's WiFi. The MSG will be displayed on the console.\n        | >> Fr << | --.      \n    */\n        //% blockId=\"Ready to listen\"\n        //% block=\"Set to receive data from Cyberville's WiFi\"\n        //% block.loc.fr=\"--\"\n        //% advanced=true\n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        //% weight=100 \n        //% color=#a75a9e\n        export function Rdy2listen():void {\n            //Open ports to listen    \n            bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);     \n            bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"255.255.255.255\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //TO ALL \n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n            pause(1000)//***** Important ****\n            let Listening=\"\";\n\n            //Infinite loop to listen\n            loops.everyInterval(3000, function () {\n                //Getting LENGHT data \n                    bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n                    let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n                    let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n                    let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n                    let LenDrcvSize=LenDrcv.length\n                //Getting Data\n                    bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n                    pause(2000)//***** Important **** \n                    //For ReceivedData\n                    let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                    let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                    let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n                    let totDX=DXrcv.length\n                //For RCVInfo\n                    Listening = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n                    let sIndexDXrcv = Listening.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n                    let eIndexDXrcv = Listening.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n                    let MSG_Listened  = Listening.substr(sIndexDXrcv, parseInt(LenDrcv))\n                    //____________________________________ \"  V  \" _____________________________\n                    serial.writeLine(\"Message heard:  \" + MSG_Listened)\n                    serial.writeLine(\"===============================================\")\n                    pause(1000)//***** Important **** \n                })\n        }\n\n    /* Receiving data form spacific IP */    \n    /** | >> En << | Receiving data from a specific IP. Data comes in Str format. You can drag and drop the MSG.\n        | >> Fr << | --.\n        * @param Origin where to hear the number, eg: \"192.168.4.1\" \n    */\n    //% blockId=Rcv_Data_from_IP\n    //% block=\"$this Data received from IP: $Origin\"\n    //% block.loc.fr=\"--\"\n    //% advanced=true\n    //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"       \n    //% weight=100\n    //% draggableParameters=variable\n    //% blockHidden=false \n    //% afterOnStart=true\n    //% color=#a75a9e\n        export function ReceiveData(Origin?: string): string {\n        \n        //    let receivedMessage = \"\";\n            \n            // Close any open connections\n            bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n            \n            // Set passive receive mode\n            bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n            pause(600);\n            \n            if (Origin) {\n                // Start listening from a specific IP\n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\" + Origin + \"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n                pause(1000);\n            }\n            \n            // Request data length\n            bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12;\n            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv);\n            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv);\n            \n            // Request actual data\n            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);\n            pause(2000);\n            \n            let dataReceived = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal);\n            let startIndexDXrcv = dataReceived.indexOf(\":\") + 1;\n            let MSG_IP = dataReceived.substr(startIndexDXrcv, parseInt(LenDrcv));\n            \n            serial.writeLine(\"Received Message: \" + MSG_IP);\n            pause(600);\n            return MSG_IP;\n        }\n\n    /* Set the Text MSG to send, set your address and the destination address  */ \n    /** | >> En << | To send a Text MSG to a specific IP destination.\n        | >> Fr << | ---.\n        * @param TXT_UDP MSG to send, eg: \"Hi\"\n        * @param Destination where to send the number, eg: \"192.168.4.1\"\n    */\n        //% blockId=\"Send Text to IP\" \n        //% block=\"Send Text: $TXT_UDP | To IP: $Destination\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function TXT_UPD_Snd(TXT_UDP: string, Destination: string): void {             \n\n            //Close current open ports\n                bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n    \n            //Getting My IP b.Board\n                bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);//7000\n                let startIndex = receivedData.indexOf(\"ip:\") + 4 \n                let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n                let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n    \n            //Sending MSG_UDP    \n                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);     \n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Destination +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n                \n                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  TXT_UDP.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n    //_______________________________________    V   _______________________________\n                bBoard_Control.UARTSendString(TXT_UDP, boardIDGlobal, clickIDGlobal); //Send MSG2SndUDP the contents of the packet  \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n                serial.writeLine(\"Sending from: \" + MyIP + \" to: \" + Destination + \" message: \" + TXT_UDP)\n                pause(1000)//***** Important **** \n                serial.writeLine(\"\")\n        } \n\n    /* Set the Number to send, set your address and the destination address  */ \n    /** | >> En << | To send a Number MSG to a specific IP destination.\n        | >> Fr << | ---.\n        * @param Num_UDP Number to send, eg: 1234\n        * @param Destination where to send the number, eg: \"192.168.4.1\"\n    */\n        //% blockId=\"Send Number to IP\" \n        //% block=\"Send Number: $Num_UDP | To IP: $Destination\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function Num_UDP_Snd(Num_UDP: number, Destination: string): void {             \n\n            let MSG_UDP = Num_UDP.toString();\n            \n            //Close current open ports\n                bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n    \n            //Getting My IP b.Board\n                bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);//7000\n                let startIndex = receivedData.indexOf(\"ip:\") + 4 \n                let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n                let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n    \n            //Sending Num_UDP    \n                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);     \n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Destination +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //Start communication\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n                \n                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  MSG_UDP.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Prepare to send\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n    //_______________________________________    V   _______________________________\n                bBoard_Control.UARTSendString(MSG_UDP, boardIDGlobal, clickIDGlobal); //Send the number as a string  \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n                serial.writeLine(\"Sending from: \" + MyIP + \" to: \" + Destination + \" number: \" + Num_UDP)\n                pause(1000)//***** Important **** \n                serial.writeLine(\"\") \n        }\n\n    /* Say Hello to everyone  */ \n    /** | >> En << | Set an MSG from a Role to be sent to everyone in Cyberville's WiFi.\n        | >> Fr << | ---.\n        * @param Role in Cyberville\n        * @param MSG_UDP MSG to send, eg: \"Hi\"\n    */\n        //% blockId=\"To send a MSG to everyone in Cyberville's WiFi\" \n        //% block=\"The $Role=BLiXel_IndexR role | says:$MSG_UDP to everyone!\"\n        //% block.loc.fr=\"---\"\n        //% advanced=true\n        //% weight=100  \n        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n        //% afterOnStart=true\n        //% blockHidden=false \n        export function MSG_UPD_SndtoAll(Role: number, MSG_UDP: string): void {             \n\n            //Close current open ports\n                bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n\n            //Fix the number Role selected and do a relation with icon to sent msg\n                let Rolefix=Role;\n                if(Rolefix==4){Role=5;}\n                if(Rolefix==5){Role=6;} \n                if(Rolefix==6){Role=7;} \n                if(Rolefix==7){Role=8;}\n                if(Rolefix==8){Role=9;}\n                if(Rolefix==9){Role=10;}\n                if(Rolefix==0){Role=12;}\n            \n                let CybervilleIcon=\"\";\n                if(Role==1){CybervilleIcon=\"School\";}\n                if(Role==2){CybervilleIcon=\"Hospital\";}\n                if(Role==3){CybervilleIcon=\"Water\";}\n                if(Role==5){CybervilleIcon=\"Government\";}\n                if(Role==6){CybervilleIcon=\"Brilliant Labs\";}\n                if(Role==7){CybervilleIcon=\"Bank\";}\n                if(Role==8){CybervilleIcon=\"Factory\";}\n                if(Role==8){CybervilleIcon=\"Industry\";}\n                if(Role==10){CybervilleIcon=\"Art Center\";}\n                if(Role==0){CybervilleIcon=\"Citizens\";}\n\n            //Getting My IP b.Board\n                bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);//7000\n                let startIndex = receivedData.indexOf(\"ip:\") + 4 \n                let endIndex = receivedData.indexOf(\"+\",startIndex) - 3\n                let MyIP = receivedData.substr(startIndex, endIndex - startIndex )\n    \n            //Sending MSG_UDP to all    \n                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);     \n                bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"255.255.255.255\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //TO ALL \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n\n            //Assebling the MSG_UDP message\n//__________________________________________________________________________________________    V   _______________________________\n                MSG_UDP_Full=\"Sent from Role: \"+ Role + \" (\" +CybervilleIcon+ \")\" + \", with IP:\" + MyIP + \", Message: \" + MSG_UDP;//FULL MSG TO SEND\n                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  MSG_UDP_Full.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//_____________________________________________    V   _______________________________\n                bBoard_Control.UARTSendString(MSG_UDP_Full, boardIDGlobal, clickIDGlobal); //Send MSG2SndUDP the contents of the packet  \n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n                serial.writeLine(\"The Role: \" + Role + \" with IP: \" + MyIP + \" said: \" + MSG_UDP)\n//pause(1000)//***** Important **** \n//                serial.writeLine(\"\")\n         \n//Receiving answer from AP, if answer is Cyberville, show hi and the icone selected\n                bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); //1000\n                let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n                let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n                let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n                let LenDrcvSize=LenDrcv.length\n                    \n                //Getting Data\n                    bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n                    pause(1000)//***** Important ****  \n                //For ReceivedData\n                    let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n                    let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n                    let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n                    let totDX=DXrcv.length\n                //For RCVInfo\n                    let AnswerAP = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n                    let sIndexDXrcv = AnswerAP.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n                    let eIndexDXrcv = AnswerAP.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n                    let MSG_Answer_AP  = AnswerAP.substr(sIndexDXrcv, parseInt(LenDrcv))\n\n                //Getting as response from AP \"Cyberville\" to publish hi\n                    if (MSG_Answer_AP = \"Cyberville\"){\n                        basic.showLeds(`\n                            # . . . #\n                            # . . . .\n                            # # # . #\n                            # . # . #\n                            # . # . #\n                            `)\n                        basic.pause(2000)\n                // Finding the Role icone     \n                        if (Role==1){School();\n                        } else if (Role==2){Hospital();\n                        } else if (Role==3){Water();\n                        }else if (Role==5){Government();\n                        }else if (Role==6){Brilliant();\n                        }else if (Role==7){Bank();\n                        }else if (Role==8){Factory();\n                        }else if (Role==9){Industry();\n                        }else if (Role==10){Art();\n                        }else{Citizens();}\n                    }  \n             //________________________________________ \"  V  \" _____________________________\n             serial.writeLine(\"Message received:  \" + MSG_Answer_AP)\n             serial.writeLine(\"===============================================\")\n        } \n     \n        export function School(){\n            basic.showLeds(`\n                # # . # #\n                # # . # #\n                . # # # .\n                . # # # .\n                . # # # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }         \n        export function Hospital(){\n            basic.showLeds(`\n                # . # . #\n                # . # . #\n                # # # # #\n                . . # . .\n                . . # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        } \n        export function Water(){\n            basic.showLeds(`\n                . # # # .\n                # # # # #\n                . . # . .\n                # . # . .\n                # # # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        } \n        export function Government(){\n            basic.showLeds(`\n                . # . # .\n                # . # . #\n                . # . # .\n                # . # . #\n                . # . # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Brilliant(){\n            basic.showLeds(`\n                . # . # .\n                . . . . .\n                . . # . .\n                . # . # .\n                . . # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Bank(){\n            basic.showLeds(`\n                . . # . .\n                . . # . .\n                . . # . .\n                . # # # .\n                . . # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Factory(){\n            basic.showLeds(`\n                # # . . #\n                # # . # .\n                . . # . .\n                # # . # .\n                # # . . #\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Industry(){\n            basic.showLeds(`\n                . . . # #\n                . . . # #\n                # # # # #\n                # # # # #\n                . # . # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Art(){\n            basic.showLeds(`\n                . . # . .\n                . . # # .\n                . . # . #\n                # # # . .\n                # # # . .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n        export function Citizens(){\n            basic.showLeds(`\n                . . # . .\n                . # # # .\n                # # # # #\n                . # # # .\n                . # . # .\n                `)\n            basic.pause(2000)\n            basic.clearScreen()                \n        }\n\n\n\n\n\n\n\n\n\n//********2025******/\n\n}  \n\n\n\n\n\n// This list SHOULD be out of the namespace Cybersec {}  *Important\n enum BLiXelIndexR {\n    //% block=\"1 SCHOOL\"\n    //% block.loc.fr=\"1 ÉCOLE\"\n        one = 1,    \n    //% block=\"2 HOSPITAL\"\n    //% block.loc.fr=\"2 HÔPITAL\"\n        two = 2,    \n    //% block=\"3 WATER\"\n    //% block.loc.fr=\"3 EAU\"\n        three = 3,\n//    //% block=\"4 WiFi-BL\"\n//    four = 4,\n    //% block=\"5 GOVERNMENT\"\n    //% block.loc.fr=\"5 GOUVERNEMENT\"\n        five = 4,\n    //% block=\"6 BRILLIANT LABS\"\n    //% block.loc.fr=\"6 CREATIFS LABOS\"\n        six = 5,    \n    //% block=\"7 BANK\"\n    //% block.loc.fr=\"7 BANQUE\"\n        seven = 6,\n    //% block=\"8 FACTORY\"\n    //% block.loc.fr=\"8 USINE\"\n        eight = 7,\n    //% block=\"9 INDUSTRY\"\n    //% block.loc.fr=\"9 INDUSTRIE\"\n        nine = 8, \n    //% block=\"10 ARTCENTER\"\n    //% block.loc.fr=\"10 ARTCENTER\"\n        ten = 9,\n//    //% block=\"11CYBERSEGURIDAD\"\n//        eleven = 11,    \n    //% block=\"12 CITIZENS\"\n    //% block.loc.fr=\"12 CITOYENS\"\n        twelve = 0\n }\n\n enum ApplianceIndex {\n    //% block=\"☼ 1 HeatCntr\"\n    //% block.loc.fr=\"☼ 1 CntrChaleur\"\n        one = 1,\n    //% block=\"☼ 2 Air Cond\"\n    //% block.loc.fr=\"☼ 2 Climatiseur\"\n        two = 2,\n    //% block=\"☼ 3 LampCafe\"\n    //% block.loc.fr=\"☼ 3 CafeLampe\"\n        three = 3,\n    //% block=\"☼ 4 Lamp Gym\"\n    //% block.loc.fr=\"☼ 4 Lampe Gym\"\n        four = 4,\n    //% block=\"☼ 5 Internet\"\\\n    //% block.loc.fr=\"☼ 5 Internet\"\n        five = 5,\n }\n\n enum Index_CL {\n    //% block=\"Level of Chlorine: 0\"\n    //% block.loc.fr=\"Niveau de Chlore: 0\"\n        zero = 0,    \n    //% block=\"Level of Chlorine: 1\"\n    //% block.loc.fr=\"Niveau de Chlore: 1\"\n        one = 1,    \n    //% block=\"Level of Chlorine: 2\"\n    //% block.loc.fr=\"Niveau de Chlore: 2\"\n        two = 2,    \n    //% block=\"Level of Chlorine: 3\"\n    //% block.loc.fr=\"Niveau de Chlore: 3\"\n        three = 3,\n    //% block=\"Level of Chlorine: 4\"\n    //% block.loc.fr=\"Niveau de Chlore: 4\"\n        four = 4,\n    //% block=\"Level of Chlorine: 5\"\n    //% block.loc.fr=\"Niveau de Chlore: 5\"\n        five = 5,\n    //% block=\"Level of Chlorine: 6\"\n    //% block.loc.fr=\"Niveau de Chlore: 6\"\n        six = 6,    \n    //% block=\"Level of Chlorine: 7\"\n    //% block.loc.fr=\"Niveau de Chlore: 7\"\n        seven = 7,\n    //% block=\"Level of Chlorine: 8\"\n    //% block.loc.fr=\"Niveau de Chlore: 8\"\n        eight =8,\n    //% block=\"Level of Chlorine: 9\"\n    //% block.loc.fr=\"Niveau de Chlore: 9\"\n        nine = 9,\n    //% block=\"Level of Chlorine:10\"\n    //% block.loc.fr=\"Niveau de Chlore:10\"\n        ten= 10,\n }\n\n enum Index_FL {\n    //% block=\"Level of Fluoride: 0\"\n    //% block.loc.fr=\"Niveau de Fluorure: 0\"\n        zero = 0,    \n    //% block=\"Level of Fluoride: 1\"\n    //% block.loc.fr=\"Niveau de Fluorure: 1\"\n        one = 1,    \n    //% block=\"Level of Fluoride: 2\"\n    //% block.loc.fr=\"Niveau de Fluorure: 2\"\n        two = 2,    \n    //% block=\"Level of Fluoride: 3\"\n    //% block.loc.fr=\"Niveau de Fluorure: 3\"\n        three = 3,\n    //% block=\"Level of Fluoride: 4\"\n    //% block.loc.fr=\"Niveau de Fluorure: 4\"\n        four = 4,\n    //% block=\"Level of Fluoride: 5\"\n    //% block.loc.fr=\"Niveau de Fluorure: 5\"\n        five = 5,\n    //% block=\"Level of Fluoride: 6\"\n    //% block.loc.fr=\"Niveau de Fluorure: 6\"\n        six = 6,    \n    //% block=\"Level of Fluoride: 7\"\n    //% block.loc.fr=\"Niveau de Fluorure: 7\"\n        seven = 7,\n    //% block=\"Level of Fluoride: 8\"\n    //% block.loc.fr=\"Niveau de Fluorure: 8\"\n        eight = 8,\n    //% block=\"Level of Fluoride: 9\"\n    //% block.loc.fr=\"Niveau de Fluorure: 9\"\n        nine = 9,\n    //% block=\"Level of Fluoride:10\"\n    //% block.loc.fr=\"Niveau de Fluorure:10\"\n        ten = 10, \n }\n\n enum Index_AVCL {\n    //% block=\"Number as Antivirus CL: 1\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 1\"\n        one = 1,    \n    //% block=\"Number as Antivirus CL: 2\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 2\"\n        two = 2,    \n    //% block=\"Number as Antivirus CL: 3\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 3\"\n        three = 3,\n    //% block=\"Number as Antivirus CL: 4\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL : 4\"\n        four = 4,\n    //% block=\"Number as Antivirus CL: 5\"\n    //% block.loc.fr=\"Nombre d'Antivirus Cl: 5\"      \n        five = 5,    \n    //% block=\"Number as Antivirus CL: 6\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 6\"    \n        six = 6,    \n    //% block=\"Number as Antivirus CL: 7\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 7\"   \n        seven = 7,\n    //% block=\"Number as Antivirus CL: 8\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 8\" \n        eight = 8,\n    //% block=\"Number as Antivirus CL: 9\"\n    //% block.loc.fr=\"Nombre d'antivirus Cl: 9\"   \n        nines = 9,    \n    //% block=\"Number as antivirus CL: 10\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 10\"\n        ten = 10,  \n    //% block=\"Number as Antivirus CL: 11\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 11\"\n        eleven = 11,    \n    //% block=\"Number as Antivirus CL: 12\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 12\"\n        twelve = 12,\n    //% block=\"Number as Antivirus CL: 13\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 13\"\n        thirteen = 13,\n    //% block=\"Number as Antivirus CL: 14\"\n    //% block.loc.fr=\"Nombre d'Antivirus Cl: 14\"\n        fourteen = 14,    \n    //% block=\"Number as Antivirus CL: 15\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 15\"\n        fiveteen = 15,    \n    //% block=\"Number as Antivirus CL: 16\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 16\"\n        sixteen = 16,\n    //% block=\"Number as Antivirus CL: 17\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 17\"\n        seventeen = 17,\n    //% block=\"Number as Antivirus CL: 18\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 18\"\n        eigthteen = 18,    \n    //% block=\"Number as Antivirus CL: 19\"\n    //% block.loc.fr=\"Nombre d'Antivirus CL: 19\"\n        nineteen = 19,\n    //% block=\"Number as Antivirus CL: 20\"\n    //% block.loc.fr=\"Nombre d'antivAntivirusrus CL: 20\"\n        twenty = 20,\n }\n\n enum Index_AVFL {\n    //% block=\"Number as Antivirus FL: 1\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 1\"\n        one = 1,    \n    //% block=\"Number as Antivirus FL: 2\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 2\"\n        two = 2,    \n    //% block=\"Number as Antivirus FL: 3\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 3\"\n        three = 3,\n    //% block=\"Number as Antivirus FL: 4\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 4\"\n        four = 4,\n    //% block=\"Number as Antivirus FL: 5\"\n    //% block.loc.fr=\"Nombre d'Antivirus Fl: 5\"\n        five = 5,    \n    //% block=\"Number as Antivirus FL: 6\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 6\"\n        six = 6,    \n    //% block=\"Number as Antivirus FL: 7\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 7\"\n        seven = 7,\n    //% block=\"Number as Antivirus FL: 8\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 8\"\n        eight = 8,\n    //% block=\"Number as Antivirus FL: 9\"\n    //% block.loc.fr=\"Nombre d'antivAntivirusirus FL: 9\"\n        nine = 9,    \n    //% block=\"Number as Antivirus FL: 10\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 10\"\n        ten = 10,  \n    //% block=\"Number as Antivirus FL: 11\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 11\"\n        eleven = 11,    \n    //% block=\"Number as Antivirus FL: 12\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 12\"\n        twelve = 12,\n    //% block=\"Number as Antivirus FL: 13\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 13\"\n        thirteen = 13,\n    //% block=\"Number as Antivirus FL: 14\"\n    //% block.loc.fr=\"Nombre d'Antivirus Fl: 14\"\n        fourteen = 14,    \n    //% block=\"Number as Antivirus FL: 15\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 15\"\n        fiveteen = 15,    \n    //% block=\"Number as Antivirus FL: 16\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 16\"\n        sixteen = 16,\n    //% block=\"Number as Antivirus FL: 17\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 17\"\n        seventeen = 17,\n    //% block=\"Number as Antivirus FL: 18\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 18\"\n        eigthteen = 18,    \n    //% block=\"Number as Antivirus FL: 19\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 19\"\n        nineteen = 19,\n    //% block=\"Number as Antivirus FL: 20\"\n    //% block.loc.fr=\"Nombre d'Antivirus FL: 20\"\n        twenty = 20,\n }\n\n enum Index_H {\n    //% block=\"Red 🔴🎩\"\n    //% block.loc.fr=\"Rouge 🔴🎩\"\n        one = 1,    \n    //% block=\"Black ⚫🎩\"\n    //% block.loc.fr=\"Noir ⚫🎩\"\n        two = 2,    \n    //% block=\"White ⚪🎩\"\n    //% block.loc.fr=\"Blanc ⚪🎩\"\n        three = 3,\n    //% block=\"Blue 🟣🎩\"\n    //% block.loc.fr=\"Bleue 🟣🎩\"\n        four = 4,\n }\n\n enum Index_Encr {\n    //% block=\"Morse-Code\"\n    //% block.loc.fr=\"Code-Morse\"\n        one = 1,    \n    //% block=\"Cypher\"\n    //% block.loc.fr=\"Chiffre\"\n        two = 2,    \n    //% block=\"Cyberville-Cypher\"\n    //% block.loc.fr=\"Chiffre de Cyberville\"\n        three = 3,\n    //% block=\"Caesar_Cypher\"\n    //% block.loc.fr=\"Cypher de Cesar\"\n        four = 4,\n    //% block=\"Number_Grid\"\n    //% block.loc.fr=\"Grille Numerique\"\n        five = 5,\n }\n\n\n\n\n//-------------------------------------------------------------------\n//backup comments in file: examples codes\n\n                     //-***Close the comunication */ NO borrar\n                     //Close all ports\n//      bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n//     response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n                     //Ready to Receive done!     Important CIPRECVMODE=0 \n                     //  bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=0\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send\n                     //  response = WiFiResponse(\"OK\", false, 200);//use 200ms wating for OK, I am not using defaultWiFiTimeoutmS because it is too long\n                     //  serial.writeLine(\"Client Closed!, Please recconect again\")\n                     //Client required to reconnect\n                     //  bBoard_Control.UARTSendString(\"AT+CWJAP=\\\"SSID_CLEAR\\\",\\\"pwd_CLEAR\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);  //SSID_CLEAR and pwd_CLEAR are nothing, I use them to clear de ESP32, close the connection  \n                     // \n\n\n\n\n\n\n                     //                bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" +  MSG_UDP.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n//                response = WiFiResponse(\"OK\", true, CyberComTimeoutmS);\n//_______________________________________    V   _______________________________\n//                bBoard_Control.UARTSendString(MSG_UDP, boardIDGlobal, clickIDGlobal); //Send MSG2SndUDP the contents of the packet  \n//                response = WiFiResponse(\"OK\", true, CyberComTimeoutmS);\n//                serial.writeLine(\"Sending from Role: \"+ Role + \"with IP: \" + MyIP + \" message: \" + MSG_UDP)\n//                serial.writeLine(\"Lenght MSG_UDP is: \" +MSG_UDP.length.toString())\n\n//    /**\n//     * Return the Remote Position Parking Bar Value from a specific IP and Role\n//     */\n//        //% blockId=\"Remote Position Parking Bar Value\" \n//        //% block=\"The Position 🚥 Value\"\n//        //% block.loc.fr=\"---\"\n//        //% advanced=true\n//        //% weight=100  \n//        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n//        //% color=#0fbc11 \n//        export function RemoteValueNum(): string {\n//            return ParkingBarAngle.toString();\n//        }\n\n\n\n\n\n\n\n//    /* ID Parking Access, set the number to send, select the Role and the destination role  */ \n//    /** | >> En << | Set a number, select your role and the destination role.\n//        | >> Fr << | ---.\n//        * @param Degree number to send, eg: 90\n//        * @param Role in Cyberville\n//        * @param Destination where to send the number, eg: \"192.168.4.1\"\n//    */\n//        //% blockId=\"Send Degree\" \n//        //% block=\"WiFi send number: %Degree | From: $Role=BLiXel_IndexR | To: $Destination\"\n//        //% block.loc.fr=\"---\"\n//        //% advanced=true\n//        //% weight=100  \n//        //% group=\"Mission 3: ID Parking Lot Access Stolen- Are you using the CIA triad?\"        \n//        //% afterOnStart=true\n//        //% blockHidden=true\n//        export function Mission3(Degree: number, Role: number, Destination:string): void {             \n//            //SENDING REQUEST GET/ +Degree + Role# + Destination#            Important -> CIPRECVMODE=0  \n//  //MSG_NDRD = \"GET\"+\" \"+Degree+\" \"+Role+\" \"+Destination;//Menssage to be sent as Degree number,Role,Destination\n//    MSG_NDRD = \"GET/\"\n//    serial.writeLine(\"to send...:  \" + (MSG_NDRD))\n//\n//            readytosend();     \n//            bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\" + MSG_NDRD.length.toString() + \"\\r\\n\", boardIDGlobal, clickIDGlobal); //Get ready to send a packet and specifiy the size\n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//    //____________________________________    V   _______________________________\n//            bBoard_Control.UARTSendString(MSG_NDRD, boardIDGlobal, clickIDGlobal); //Send MSG_NDRD the contents of the packet  \n//            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//            serial.writeLine(\"Sending to AP: \" + MSG_NDRD)\n//            serial.writeLine(\"Lenght MSG_NDRD is: \" +MSG_NDRD.length.toString())\n//    \n//            MSG_NDRD=\"\"; //Delete the message to get a new one  // NO QUITAR\n//            serial.writeLine(\"MSG_NDRD was sent! and deleted.\")      \n//            pause(600)//***** Important **** \n//\n//        } \n\n//    /* RECEIVING DATA */\n//    /** | >> En << | Receiving data from AP\n//        | >> Fr << |--\n//    */\n//        //% blockId=ReceivingData\n//        //% block=\"$this Receiving data\"\n//        //% block.loc.fr=\"--\"\n//        //% advanced=true\n//        //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"       \n//        //% weight=100\n//        //% draggableParameters=variable\n//        //% blockHidden=true \n//        //% afterOnStart=true                               //This block will only execute after the onStart block is finished    \n//        export function ReceivingDatafromAP(): string {\n//            /* Receiving to confirm */\n//            //RECIVING  Important -> CIPRECVMODE=1\n//                bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal); //MODE 0=ACTIVE only to send  1=PASSIVE to receive mode it is \"Important\"\n//                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//CyberComTimeoutmS=1000\n//                pause(600)//***** Important **** (500 9july)\n//            let RCVAP =\"\"; // Variable empty to start\n//            //Getting LENGHT data \n//                bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n//                response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n//                let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//        //serial.writeLine(\"start-> \" + startIndexDrcv)\n//                let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//        //serial.writeLine(\"end-> \" + endIndexDrcv)\n//                let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n//                let LenDrcvSize=LenDrcv.length\n//        //serial.writeLine(\"LEN Data ReceiVed: \" + LenDrcv)\n//        //serial.writeLine(\"LEN Data size: \" + LenDrcvSize)\n//        //let TotLen= parseInt(LenDrcv)+LenDrcvSize\n//        //serial.writeLine(\"Total lenght: \" + TotLen)//Totalize Lenght size\n//            //Getting Data\n//                bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n//        pause(2000)//***** Important ****  \n//                //For ReceivedData\n//                let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n//                let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n//                let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n//        //serial.writeLine(\"Frame DXrcv: \" + DXrcv) //to visualize the data frame\n//                let totDX=DXrcv.length\n//        //serial.writeLine(\"len totDX: \" + totDX) //to visualize lenght amount\n//            //For RCVInfo\n//                RCVAP = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n//                let sIndexDXrcv = RCVAP.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//        //serial.writeLine(\"sIndexDXrcv: \" + sIndexDXrcv)\n//                let eIndexDXrcv = RCVAP.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//        //serial.writeLine(\"eIndexDXrcv: \" + eIndexDXrcv)\n//                let MSG_AP  = RCVAP.substr(sIndexDXrcv, parseInt(LenDrcv))\n//        //_____________________________ \"  V  \" _____________________________\n//                serial.writeLine(\"Message:  \" + MSG_AP)\n//        //bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n//        //response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n//        //            return(\"receiving data from AP:\" + MSG_AP);\n//        pause(600)//***** Important **** \n//                return(MSG_AP);  \n//                }\n//        \n//    /* Set to listen from a specific IP */\n//            /** | >> En << | Ready to listen from a speficic IP.\n//                | >> Fr << | --.\n//                * @param Origin where to hear the number, eg: \"192.168.4.1\" \n//             //* @param Degree data received, eg:\"Hi\" \n//            */\n//                //% blockId=\"Listen from specific IP\"\n//                //% block=\"Receive from IP: $Origin | the message: $Degree\"\n//                //% block.loc.fr=\"--\"\n//                //% advanced=true\n//                //% group=\"Mission 3: ID Parking Lot Access Stolen - Are you using the CIA triad?\"        \n//                //% afterOnStart=true\n//                //% draggableParameters=variable\n//                //% blockHidden=true \n//                //% weight=100 \n//                //export function Rdy2listenIP(Origin:string):void {\n//                    export function Rdy2listenIP(Origin:string, Degree:string): void {\n//        \n//        \n//                    //Close current open ports\n//                    bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal);\n//                    response = WiFiResponse(\"OK\", false, defaultWiFiTimeoutmS);\n//                \n//                    //Open ports to listen    \n//                    bBoard_Control.UARTSendString(\"AT+CIPRECVMODE=1\\r\\n\", boardIDGlobal, clickIDGlobal);//MODE=1 passive, MODE=0 active\n//                    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);     \n//                  //bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Destination +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //Start comuninication\n//                    bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"UDP\\\",\\\"\"+ Origin +\"\\\",1234,1234,0\\r\\n\", boardIDGlobal, clickIDGlobal); //TO specific IP\n//                    response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);//}\n//                    pause(1000)//***** Important ****\n//                    let Listening=\"\";\n//                    let MSG_receivedIP=\"\";// Empty to start\n//        \n//                    //Infinite loop to listen\n//                    loops.everyInterval(3000, function () {\n//                        //Getting LENGHT data \n//                            bBoard_Control.UARTSendString(\"AT+CIPRECVLEN?\\r\\n\", boardIDGlobal, clickIDGlobal);\n//                            response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); \n//                            let startIndexDrcv = receivedData.indexOf(\"+CIPRECVLEN:\") + 12 // +CIPRECVLEN: = 12characters\n//                            let endIndexDrcv = receivedData.indexOf(\",\", startIndexDrcv)\n//                            let LenDrcv = receivedData.substr(startIndexDrcv, endIndexDrcv - startIndexDrcv)\n//                            let LenDrcvSize=LenDrcv.length\n//                        //Getting Data\n//                            bBoard_Control.UARTSendString(\"AT+CIPRECVDATA=0,\" + LenDrcv + \"\\r\\n\", boardIDGlobal, clickIDGlobal);//for Link=0        //for ReceivedData, to see data length of link \n//                            pause(2000)//***** Important **** \n//                            //For ReceivedData\n//                            let startIndexDXrcv = receivedData.indexOf(\":\")+1 //Ok Ok\n//                            let endIndexDXrcv = receivedData.indexOf(\",\", startIndexDXrcv)\n//                            let DXrcv = receivedData.substr(startIndexDXrcv, endIndexDXrcv - startIndexDXrcv+26)\n//                            let totDX=DXrcv.length\n//                        //For RCVInfo\n//                            Listening = bBoard_Control.getUARTData(boardIDGlobal, clickIDGlobal)   \n//                            let sIndexDXrcv = Listening.indexOf(\":\") + LenDrcvSize + 2 // Ok Ok OK\n//                            let eIndexDXrcv = Listening.indexOf(\",\", sIndexDXrcv) + parseInt(LenDrcv)\n//                            let MSG_receivedIP  = Listening.substr(sIndexDXrcv, parseInt(LenDrcv))\n//                            //____________________________________ \"  V  \" _____________________________\n//                            serial.writeLine(\"Message heard IP:  \" + MSG_receivedIP)\n//                            serial.writeLine(\"===============================================\")\n//                            pause(1000)//***** Important **** \n//                        })\n//                    //return(MSG_receivedIP);\n//            }\n//      \n\n// //------------------------- Send Data -----------------------------------    \n// /**  Send Data\n//    * @param IPAdd to IPAdd, eg: \"192.168.4.1\"\n//    * @param MSG to MSG, eg:\"Data to send\"\n//    */\n//    //% block=\"For IP number: $IPAdd | send data: $MSG\"\n//    //% blockId=Wifi_Send_Message\n//    //% afterOnStart=true\n//    //% weight=110\n//    //% blockGap=9\n//    //% group=\"Remote Commands\"\n//    //% blockHidden=true \n//    //% advanced=false\n//    export function send_MSG_MPCR(IPAdd: string, MSG:string): void {\n//\n//        //Getting my IP address\n//        bBoard_Control.UARTSendString(\"AT+CIPSTA?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n//        let ipStartIndex = receivedData.indexOf(\"ip:\")\n//        let MyIP = (receivedData.substr(ipStartIndex+4,11)); // get IP STA\n// //      serial.writeLine(\"My IP: \"+MyIP)//Print my IP address idex       \n// //      serial.writeLine(\"AP IP: \"+IPAdd)//Print my IP address idex       \n//        //_____\n//\n//        //Start comunication\n//        bBoard_Control.UARTSendString(\"AT+CIPSTART=0,\\\"TCP\\\",\\\"\"+ IPAdd +\"\\\",80,30,\\\"\"+ MyIP +\"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);       \n//        let MSGS = \"GET1/PCBL_\"+MSG//((+\"\\r\"     // This is the message to send.   the last \\r means end of tha line sended, Carriage Return\n//        let LENMSGS = MSG.length+10      // Size message 10 characters {GET1/PCBL_}\n//        //_____\n//\n//        //Sending request \"GET /\" to start communication with AP. Sending GET /xxxMSGSxxx\n//        bBoard_Control.UARTSendString(\"AT+CIPSEND=0,\"+LENMSGS+\"\\r\\n\", boardIDGlobal, clickIDGlobal); //s add \\r to the packet \n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);     \n//   \n//        bBoard_Control.UARTSendString(MSGS, boardIDGlobal, clickIDGlobal); //Send the contents of the packet              \n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS);\n//        serial.writeLine(\"Sending: \"+MSGS)\n// //      serial.writeLine(\"Len... \"+LENMSGS)//Lenght MSGS\n//        //_____\n//\n//        //Close comunication\n//        bBoard_Control.UARTSendString(\"AT+CIPCLOSE=5\\r\\n\", boardIDGlobal, clickIDGlobal); //Close ALL your connections\n//        response = WiFiResponse(\"OK\", false, CyberComTimeoutmS); //Wait for the response \"OK\"\n//    }\n\n\n\n        \n// \\\\ //------------------------- Roles -----------------------------------  \n// For futures applications, it needs to be checked...  \n\n//    //* Set HostName */\n//    /** | >> En << | Configure your Name in Cyberville for the network. Others can then use this name to perform a PING.. \n//        | >> Fr << | Configurez votre nom d'hôte pour le réseau. D'autres personnes peuvent ensuite utiliser ce nom pour effectuer un PING.              \n//        * @param HNamebB to HNamebB, eg: \"SCHOOL\"\n//    */\n//        //% blockId=\"SetHostName\"\n//        //% block=\"Your name in Cyberville: $HNamebB\"\n//        //% block.loc.fr=\"Votre nom à Cyberville: $HNamebB\"\n//        //% advanced=false\n//        //% group=\"Roles\"      \n//        //% weight=100\n        \n//        export function HostNamebB(HNamebB:string):void{\n//            bBoard_Control.UARTSendString(\"AT+CWDHCP=1,1\\r\\n\", boardIDGlobal, clickIDGlobal);                           // ENABLE DHCP with softAP\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n\n//            bBoard_Control.UARTSendString(\"AT+CIPDNS=0\\r\\n\", boardIDGlobal, clickIDGlobal);                             // Enable DNS automatic\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n\n//            bBoard_Control.UARTSendString(\"AT+MDNS=1,\\\"\"+HNamebB+\"\\\",\\\"_http\\\",80\\r\\n\", boardIDGlobal, clickIDGlobal);  // Set MDNS same name Hostname\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n        \n//            bBoard_Control.UARTSendString(\"AT+CIPDNS?\\r\\n\", boardIDGlobal, clickIDGlobal);                              // Query DNS server info\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n//  //serial.writeLine(\"\"+(receivedData))\n\n//            bBoard_Control.UARTSendString(\"AT+CWHOSTNAME=\\\"\" + HNamebB+ \"\\\"\\r\\n\", boardIDGlobal, clickIDGlobal);        // Set Hostname\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);        \n//  //serial.writeLine(\"\"+(receivedData))\n\n//            bBoard_Control.UARTSendString(\"AT+CIPDNS?\\r\\n\", boardIDGlobal, clickIDGlobal);                              // Query DNS server info\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n//  //serial.writeLine(\"\" + (receivedData))\n                 \n//            serial.writeLine(\"Name in Cyberville: \"+(HNamebB))\n//        }\n \n//    /* PING HostName*/\n//    /** | >> En << | Do PING to a Name in Cyberville.  If the destination responds, you will see a smiley face; otherwise, a sad face. \n//        | >> Fr << | Faites un PING vers une nom Cyberville.  Si la destination répond, vous verrez un smiley ; sinon, un visage triste.\n//        | >> The response time should not exceed 10 seconds  << |\n//        * @param PingbBDNS to PingbBDNS ,eg: \"WiFi_BL\"\n//        */\n//        //% blockId=\"PingHostName\"\n//        //% block=\"Do PING to a Name in Cyberville: $PingbBDNS\"\n//        //% block.loc.fr=\"Faire PING à un nom dans Cyberville: $PingBDNS\"\n//        //% advanced=false\n//        //% group=\"Roles\"      \n//        //% weight=100 \n//        export function PingbBDNS(PingbBDNS:string):void{\n//            let dnslocal=PingbBDNS+\".local\"\n//            serial.writeLine(\"dnslocal is: \" + dnslocal)\n// //        bBoard_Control.UARTSendString(\"AT+PING=\\\"\" + PingbBDNS+\"\\\"+\\\".local\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//            bBoard_Control.UARTSendString(\"AT+PING=\\\"dnslocal\\\"\\r\\n\", boardIDGlobal, clickIDGlobal); \n//            response = WiFiResponse(\"OK\",false,30000);//defaultWiFiTimeoutmS=30000\n//            serial.writeLine(\"\" + (receivedData))\n//            soundExpression.hello.playUntilDone()\n//            if (receivedData == \"TIMEOUT\"){\n//                basic.showIcon(IconNames.No,1000)\n//                soundExpression.slide.play()\n//                basic.showIcon(IconNames.No,2000) \n//                serial.writeLine(\"\" + (receivedData))\n//                serial.writeLine(\"PING to Name in Cyberville: \"+ PingbBDNS)\n//            }\n//            if (response == 1) {                                //RESPONSE ==1 connected\n//                basic.showIcon(IconNames.No,1000)\n//                soundExpression.slide.play()\n//                basic.showIcon(IconNames.Happy,2000)\n//                serial.writeLine(\"\" + (receivedData))\n//                serial.writeLine(\"PING to Name in Cyberville: \"+ PingbBDNS)\n//            }\n//            if (response == 0) {   \n//                basic.showIcon(IconNames.No,1000)\n//                soundExpression.slide.play()\n//                basic.showIcon(IconNames.Sad,2000)              //response ==0 NO conected\n//                serial.writeLine(\"\" + (receivedData))\n//                serial.writeLine(\"PING to Name in Cyberville: \"+ PingbBDNS)\n//            }\n//        }\n\n\n//    /* Read HostName */\n//    /** | >> En << | Display your current Name in Cyberville.  \n//        | >> Fr << | Affichez votre nom Cyberville actuel.\n//        | >> The default HostName is espressif wich is the the manufacturer of ESP32<< |\n//    */       \n//        //% blockId=\"ReadHostName\"\n//        //% block=\"$this Get your Name in Cyberville\"\n//        //% block.loc.fr=\"$this Obtenez votre nom à Cyberville\"\n//        //% advanced=false\n//        //% group=\"Roles\"\n//        //% weight=100\n//        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n//        //% receivedData.shadow=variables_get\n//        //% draggableParameters=variable       \n//        export function getHostNamebB(): string {\n//            bBoard_Control.UARTSendString(\"AT+CWHOSTNAME?\\r\\n\", boardIDGlobal, clickIDGlobal); //Put the clickinto station (client) mode\n//            response = WiFiResponse(\"OK\", false, CyberWiFiTimeoutmS);\n//            serial.writeLine(\"Name in Cyberville: \"+(receivedData.substr(28,10))) \n//            return(\"Name in Cyberville:\"+receivedData.substr(28,10));\n//        }\n",
             "bBoardMic.ts": "//-------------------------Click Board Blocks Begin -----------------------------------\n//% weight=500\n//% color=#9E4894 \n//% icon=\"\"\n//% advanced=true\n//% labelLineWidth=1001\n​\nnamespace bBoard_Mic {\n\n \nconst DEFAULT_MIC_THRESHOLD = 50;\n​let currentMicThreshold = DEFAULT_MIC_THRESHOLD;\nlet ​micInitialized = false; \n\n    ​function micInit()\n    {\n        if(!micInitialized)\n        {\n            micEnable(micState.enabled)\n            micInitialized = true\n        }\n\n    }\n\n    enum functionID {\n        // FunctionIds\n        getSoundLevel = 1,\n        setThreshold = 2,\n        getThresholdFlag = 3,\n        clearThresholdFlag = 4,\n        enable = 5,\n        getRMS = 6,\n        setBaseline = 7\n    }\n    export enum micState {\n        enabled = 1,\n        disabled = 0\n    }\n    export enum soundLevel {\n        loud = 1\n    }\n​\n    //% blockId=onBLMicThresh \n    //% block=\"on $soundLevel sound\" \n    //% block.loc.fr=\"allumé $soundLevel sound\"\n    //% blockAllowMultiple=0\n    //% afterOnStart=true                                       //This block will only execute after the onStart block is finished\n    //% this.defl=\"bBoardMic\"\n    //% parts=\"bBoardMic\"\n    //% advanced=false\n    export function onMicThresh(soundLevel: soundLevel, a: () => void): void { //Pass user blocks as a callback function \"a\". \n        micInit();\n        bBoard_Control.eventInit(bBoardEventsMask.MIC_THRESHOLD, BoardID.zero, BUILT_IN_PERIPHERAL); \n        control.onEvent(bBoard_Control.getbBoardEventBusSource(BoardID.zero,BUILT_IN_PERIPHERAL,bBoardEvents.MIC_THRESHOLD),0, () => BLMICEvent(a) )\n        clearThresholdFlag()\n    }\n​\n    function BLMICEvent(a:()=>void)\n    {\n        a()\n        clearThresholdFlag()\n\n    }\n\n    //% blockId=Mic_Enable\n    //% block=\"microphone $enable\"\n    //% block.loc.fr=\"microphone $enable\"\n    //% advanced=true\n    export function micEnable(enable: bBoard_Mic.micState) {\n        let data = [enable]\n        setThresholdLevel(currentMicThreshold);\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MIC_module_id, functionID.enable, data, null, 0)\n        micBaseline();\n     \n    }\n​\n    //% blockId=Mic_baseline\n    //% block=\"update microphone baseline\"\n    //% block.loc.fr=\"mise à jour de la référence microphone\"\n    //% advanced=true\n    export function micBaseline() {\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MIC_module_id, functionID.setBaseline, [], null, 0)\n    }\n​\n    //% blockId=Mic_Sound_Level\n    //% block=\"get sound level\"\n    //% block.loc.fr=\"obtenir le niveau de bruit\"\n    //% advanced=false\n    export function micSoundLevel(): number {\n        micInit();\n        let soundLevel: number\n        soundLevel = bBoard_Control.readData16(clickIOPin.AN, moduleIDs.MIC_module_id, functionID.getRMS, null, BoardID.zero, BUILT_IN_PERIPHERAL)\n        return soundLevel\n    }\n​\n    //% blockId=Mic_Threshold_Flag\n    //% block=\"has threshold been reached?\"\n    //% block.loc.fr=\"le seuil a t-il été atteint?\"\n    //% advanced=true\n    export function micThresholdFlag(): boolean {\n       \n        let micThreshold: number\n        micThreshold = bBoard_Control.readData16(clickIOPin.AN, moduleIDs.MIC_module_id, functionID.getThresholdFlag, [], BoardID.zero, BUILT_IN_PERIPHERAL)\n        return micThreshold == 1 ? true : false\n    }\n\n\n    //% blockId=Mic_Set_Threshold\n    //% block=\"set mic threshold level to %threshold\"\n    //% block.loc.fr=\"définir le seuil du micro sur %threshold\"\n    //% threshold.defl=50\n    //% advanced=true\n    export function setThresholdLevel(threshold: number) {\n        if(threshold <= 0)\n        {\n            threshold = DEFAULT_MIC_THRESHOLD;\n        }\n       \n            currentMicThreshold = threshold;\n        \n        let data = [threshold & 0x00FF, ((threshold & 0xFF00) >> 8)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MIC_module_id, functionID.setThreshold, data, null, 0)\n    }\n​\n    //% blockId=Clear_Threshold_Flag\n    //% block=\"clear threshold flag\"\n    //% block.loc.fr=\"effacer le seuil\"\n    \n    //% advanced=true\n    export function clearThresholdFlag() {\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MIC_module_id, functionID.clearThresholdFlag, [], null, 0)\n    }\n}",
             "bBoardMotor.ts": "//% weight=100 \n//% color=#9E4894 \n//% icon=\"\"\n//% advanced=true\n//% labelLineWidth=1001\nnamespace bBoard_Motor {\n\n    enum functionID {\n        // FunctionIds\n        enableMotor = 1,\n        setMotor = 2\n    }\n    export enum motorState {\n        enabled = 1,\n        disabled = 0\n    }\n    export enum motorDirection {\n        forward = 1,\n        backward = 2,\n        brake = 0\n    }\n    export enum motorDriver {\n        left = 1,\n        right = 2\n    }\n\n    /**\n     * Allows you to disable and enable the motor driver on the b.Board\n     */\n    //% block=\"motor driver %enable\"\n    //% block.loc.fr=\"pilote de moteur %enable\"\n    //% weight=100\n    //% advanced=true\n    export function motorEnable(enable: motorState): void {\n        // bBoard_Control.sendData(clickPin: clickIOPin,moduleID:number,functionID:number, data: number[], )\n\n        let data = [enable]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.enableMotor, data, null, 0)\n    }\n\n    /**\n     * Set left motor to a speed for an amount of time\n     * @param waitTime how long to move motor for, eg: 100, 200, 500, 1000, 2000\n     */\n    //% blockId=bBoard_Motor_motorLeftTimed\n    //% block=\"set left motor speed to$duty \\\\% for$waitTime (ms)\"\n    //% block.loc.fr=\"réglez la vitesse du moteur gauche à$duty \\\\% for$waitTime (ms)\"\n    //% duty.min=-100 duty.max=100\n    //% duty.shadow=\"speedPicker\"\n    //% waitTime.shadow=\"timePicker\"\n    //% waitTime.defl=1000\n    //% weight=112\n    export function motorLeftTimed(duty: number, waitTime: number): void {\n        //motor_Driver, direction, duty\n\n        let data = [motorDriver.left, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n        control.runInBackground(() => motorLeftTimedDelay(waitTime))\n    }\n\n    function motorLeftTimedDelay(waitTime: number) {\n        basic.pause(waitTime)\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, [motorDriver.left, 0], null, 0)\n    }\n\n    /**\n     * Set right motor to a speed for an amount of time\n     * @param waitTime how long to move motor for, eg: 100, 200, 500, 1000, 2000\n     */\n    //% blockId=bBoard_Motor_motorRightTimed\n    //% block=\"set right motor speed to$duty \\\\% for$waitTime (ms)\"\n    //% block.loc.fr=\"réglez la vitesse du moteur droit xxx à$duty \\\\% for$waitTime (ms)\"\n    //% duty.min=-100 duty.max=100\n    //% duty.shadow=\"speedPicker\"\n    //% waitTime.shadow=\"timePicker\"\n    //% waitTime.defl=1000\n    //% weight=111\n    export function motorRightTimed(duty: number, waitTime: number): void {\n        //motor_Driver, direction, duty\n\n        let data = [motorDriver.right, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n        control.runInBackground(() => motorRightTimedDelay(waitTime))\n    }\n\n    function motorRightTimedDelay(waitTime: number) {\n        basic.pause(waitTime)\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, [motorDriver.right, 0], null, 0)\n    }\n\n    /**\n     * Set motor to a speed for an amount of time\n     * @param waitTime how long to move motor for, eg: 100, 200, 500, 1000, 2000\n     */\n    //% blockId=bBoard_Motor_motorTimed\n    //% block=\"set both motors speed to$duty \\\\% for$waitTime (ms)\"\n    //% block.loc.fr=\"réglez la vitesse des deux moteurs sur$duty \\\\% for$waitTime (ms)\"\n    //% duty.min=-100 duty.max=100\n    //% duty.shadow=\"speedPicker\"\n    //% waitTime.shadow=\"timePicker\"\n    //% waitTime.defl=1000\n    //% weight=110\n    export function motorTimed(duty: number, waitTime: number): void {\n        let data = [motorDriver.right, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n        data = [motorDriver.left, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n        control.runInBackground(() => motorTimedDelay(waitTime))\n    }\n\n    function motorTimedDelay(waitTime: number) {\n        basic.pause(waitTime)\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, [motorDriver.left, 0], null, 0)\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, [motorDriver.right, 0], null, 0)\n    }\n\n    /**\n     * motor set duty\n     */\n    //% block=\"set left motor speed to$duty \\\\%\"\n    //% block.loc.fr=\"réglez la vitesse du moteur gauche à$duty \\\\%\"\n    //% duty.min=-100 duty.max=100\n    //% duty.shadow=\"speedPicker\"\n    //% advanced=false\n    //% weight=102\n    export function motorLeftDuty(duty: number): void {\n        //motor_Driver, direction, duty\n\n        let data = [motorDriver.left, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n\n    }\n\n    /**\n   * motor set duty\n   */\n    //% block=\"set right motor speed to$duty \\\\%\"\n    //% block.loc.fr=\"réglez la vitesse du moteur droit à$duty \\\\%\"\n    //% duty.min=-100 duty.max=100\n    //% duty.shadow=\"speedPicker\"\n    //% advanced=false\n    //% weight=101\n    export function motorRightDuty(duty: number): void {\n        //motor_Driver, direction, duty\n\n        let data = [motorDriver.right, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n\n    }\n\n    /**\n   * motor set duty\n   */\n    //% block=\"set both motors speed to$duty \\\\%\"\n    //% block.loc.fr=\"réglez la vitesse des deux moteurs à$duty \\\\%\"\n    //% duty.min=-100 duty.max=100\n    //% duty.shadow=\"speedPicker\"\n    //% advanced=false\n    //% weight=100\n    export function motorDuty(duty: number): void {\n        //motor_Driver, direction, duty\n\n        let data = [motorDriver.right, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n        data = [motorDriver.left, duty >= 0 ? motorDirection.forward : motorDirection.backward, Math.abs(duty)]\n        bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.PWM, moduleIDs.MOTOR_module_id, functionID.setMotor, data, null, 0)\n\n    }\n\n\n}\n",
             "bBoardSound.ts": "\n\n\n\n\n//-------------------------Click Board Blocks Begin -----------------------------------\n//% weight=200\n//% color=#9E4894 \n//% icon=\"\"\n//% advanced=true\n//% labelLineWidth=1001\n//% deprecated=true\n\nnamespace bBoard_Sound {\n  let currentBPM = 0; \n\n  enum functionID {\n      // FunctionIds\n      enableSpeaker = 1,\n      setBPM = 2,\n      sendSong = 3,\n      playSong = 4,\n      stopSong = 5,\n      playTone = 6,\n      setVolume = 7\n  }\n\n  music.setPlayTone(function (frequency: number, duration: number) {\n    let toneBuffer = pins.createBuffer(4);\n    toneBuffer.setNumber(NumberFormat.UInt16LE, 0, frequency)\n    toneBuffer.setNumber(NumberFormat.UInt16LE, 2, duration)\n   \n\nbBoard_Control.BLiX(BoardID.zero,BUILT_IN_PERIPHERAL,0,moduleIDs.MUSIC_module_id,functionID.setVolume,[music.volume()],null,0);\n    bBoard_Control.BLiX(BoardID.zero,BUILT_IN_PERIPHERAL,0,moduleIDs.MUSIC_module_id,functionID.playTone,null,toneBuffer,0);\n    basic.pause(duration)\n})\n  // //% blockId=Speaker_Enable\n  // //% block=\"Speaker $enable\"\n  // //% advanced=false\n  // export function speakerEnable(enable: bBoard_Sound.speakerState) {\n  //     let data = [enable]\n  //     bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MUSIC_module_id, functionID.enableSpeaker, data, null, 0)\n  // }\n\n \n  function startSong() {\n      bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MUSIC_module_id, functionID.playSong, [], null, 0)\n  }\n  \n  //% blockId=bBoardSound_Set_Tempo\n  //% block=\"set frequencies tempo to (bpm)%BPM\"\n  //% block.loc.fr=\"régler le tempo des fréquences sur (bpm)%BPM\"\n  //% BPM.defl=\"60\"\n  //% advanced=false\n  export function setFrequenciesBPM(BPM: number) {\n    currentBPM = BPM;\n      let data = [BPM & 0x00FF, ((BPM & 0xFF00) >> 8)]\n      bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MUSIC_module_id, functionID.setBPM, data, null, 0)\n  }\n\n  // //% blockId=Load_Song\n  // //% block=\"load frequencies $song to play\"\n  // //% advanced=true\n  // export function loadSong(song: number[]) {\n  //     song.push(0); //Ensure there is a 0 at the end of the song to stop it\n  //     let buff = pins.createBuffer(song.length * 2)\n  //     for (let i = 0; i < buff.length; i++) {\n  //         buff.setNumber(NumberFormat.UInt8LE, 2 * i, song[i] & 0x00FF)\n  //         buff.setNumber(NumberFormat.UInt8LE, 2 * i + 1, (song[i] & 0xFF00) >> 8)\n  //     }\n  //     bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MUSIC_module_id, functionID.sendSong, null, buff, 0)       \n  // }\n\n  //% blockId=Play_Frequencies\n  //% block=\"play frequencies $frequencies Hz\"\n  //% block.loc.fr=\"jouer les fréquences $frequencies Hz\"\n  //% frequencies.defl=100,200,300\n  //% advanced=false\n  export function playFrequency(frequencies: number[]) {\n    if(currentBPM == 0 )\n    {\n      setFrequenciesBPM(60);\n      currentBPM = 60;\n    }\n\n    frequencies.push(0); //Ensure there is a 0 at the end of the song to stop it\n      let buff = pins.createBuffer(frequencies.length * 2)\n      for (let i = 0; i < buff.length; i++) {\n          buff.setNumber(NumberFormat.UInt8LE, 2 * i, frequencies[i] & 0x00FF)\n          buff.setNumber(NumberFormat.UInt8LE, 2 * i + 1, (frequencies[i] & 0xFF00) >> 8)\n      }\n      bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MUSIC_module_id, functionID.sendSong, null, buff, 0)       \n      startSong();\n      basic.pause((frequencies.length-1)* ((60/currentBPM )* 1000 ))\n  }\n\n  // //% blockId=bBoard_analog_pitch \n  // //% block=\"analog pitch %frequency|for (ms) %ms\"\n  // //% help=pins/analog-pitch \n  // //% weight=4 \n  // //% async \n  // //% advanced=true \n  // //% blockGap=8\n  // export function analogPitch( frequency:number,  ms:number) {\n  //     let data = [frequency, ms]\n  //     bBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, clickIOPin.AN, moduleIDs.MUSIC_module_id, functionID.playTone, data, null, 0)\n  // }\n}\n  \nnamespace music\n{\n\n\nexport enum speakerTypes {\n\n// FunctionIds\n\nallSpeakers = 1,\n\nbBoardSpeaker = 2,\n\nmicrobitSpeaker = 3\n\n \n\n\n}\n\nenum functionID {\n\n// FunctionIds\n\nenableSpeaker = 1,\n\nsetBPM = 2,\n\nsendSong = 3,\n\nplaySong = 4,\n\nstopSong = 5,\n\nplayTone = 6,\n\nsetVolume = 7\n\n}\n\n \n\n//%blockId=bBoardSpeakerSelect\n\n//%block=\"Set music speaker to $speakerSelect\"\n\n//%block.loc.fr=\"Réglez le haut-parleur sur $speakerSelect\"\n\n//% blockGap=7\n\n//% advanced=false\n\n//% blockNamespace=music\n\n//% speakerSelect.defl=speakerTypes.allSpeakers\n\nexport function bBoardSpeakerSelect(speakerSelect:speakerTypes)\n\n{\n\nif (speakerSelect == speakerTypes.bBoardSpeaker)\n\n{\n\nmusic.setPlayTone(function (frequency: number, duration: number) {\n\nlet toneBuffer = pins.createBuffer(4);\n\ntoneBuffer.setNumber(NumberFormat.UInt16LE, 0, frequency)\n\ntoneBuffer.setNumber(NumberFormat.UInt16LE, 2, duration)\n\n\n\nbBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, 0, moduleIDs.MUSIC_module_id, functionID.setVolume, [music.volume()], null, 0);\n\nbBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, 0, moduleIDs.MUSIC_module_id, functionID.playTone, null, toneBuffer, 0);\n\n \n\nbasic.pause(duration)\n\n})\n\n}\n\nelse if (speakerSelect == speakerTypes.microbitSpeaker)\n\n{\n\nmusic.setPlayTone(function (frequency: number, duration: number) {\n\n\npins.analogPitch(frequency, duration);\n\n\n})\n\n}\n\nelse //all speakers\n\n{\n\nmusic.setPlayTone(function (frequency: number, duration: number) {\n\nlet toneBuffer = pins.createBuffer(4);\n\ntoneBuffer.setNumber(NumberFormat.UInt16LE, 0, frequency)\n\ntoneBuffer.setNumber(NumberFormat.UInt16LE, 2, duration)\n\n\n\nbBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, 0, moduleIDs.MUSIC_module_id, functionID.setVolume, [music.volume()], null, 0);\n\nbBoard_Control.BLiX(BoardID.zero, BUILT_IN_PERIPHERAL, 0, moduleIDs.MUSIC_module_id, functionID.playTone, null, toneBuffer, 0);\n\npins.analogPitch(frequency, duration);\n\n// basic.pause(duration)\n\n})\n\n}\n\n}\n\n \n\nbBoardSpeakerSelect(speakerTypes.allSpeakers); //Set default to both speakers.\n\n}\n\n\n",
@@ -33403,163 +33403,154 @@ var pxtTargetBundle = {
                         "parameters": [],
                         "pyQName": "bBoard_WiFi.is_connected"
                     },
-                    "defaultWiFiTimeoutmSCybSec": {
+                    "CyberWiFiTimeoutmS": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "default_wi_fi_timeoutm_scyb_sec"
+                        "pyQName": "cyber_wi_fi_timeoutm_s"
                     },
-                    "CyberWiFiTimeoutmSCybSec": {
+                    "ConsoleTimeoutmS": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "cyber_wi_fi_timeoutm_scyb_sec"
+                        "pyQName": "console_timeoutm_s"
                     },
-                    "ConsoleTimeoutmSCybSec": {
+                    "CyberComTimeoutmS": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "console_timeoutm_scyb_sec"
+                        "pyQName": "cyber_com_timeoutm_s"
                     },
-                    "CyberComTimeoutmSCybSec": {
+                    "ProtCode": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "cyber_com_timeoutm_scyb_sec"
+                        "pyQName": "prot_code"
                     },
-                    "ProtCodeCybSec": {
-                        "kind": 4,
-                        "retType": "number",
-                        "pyQName": "prot_code_cyb_sec"
-                    },
-                    "ProtCodeCybSecStr": {
+                    "ProtCodeStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "prot_code_cyb_sec_str"
+                        "pyQName": "prot_code_str"
                     },
-                    "MSG_PCSCybSec": {
+                    "MSG_PCS": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "FullMSG_PCSCybSec": {
+                    "FullMSG_PCS": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "LenPCSCybSec": {
+                    "LenPCS": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "len_pcs_cyb_sec"
+                        "pyQName": "len_pcs"
                     },
-                    "RatioCodCybSece": {
+                    "RatioCode": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "ratio_cod_cyb_sece"
+                        "pyQName": "ratio_code"
                     },
-                    "RatioCodCybSeceStr": {
+                    "RatioCodeStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "ratio_cod_cyb_sece_str"
+                        "pyQName": "ratio_code_str"
                     },
-                    "MSG_RCSCybSec": {
+                    "MSG_RCS": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "FullMSG_RCSCybSec": {
+                    "FullMSG_RCS": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "LenRCSCybSec": {
+                    "LenRCS": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "len_rcs_cyb_sec"
+                        "pyQName": "len_rcs"
                     },
-                    "indexclStrCybSec": {
+                    "indexclStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "indexcl_str_cyb_sec"
+                        "pyQName": "indexcl_str"
                     },
-                    "indexflStrCybSec": {
+                    "indexflStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "indexfl_str_cyb_sec"
+                        "pyQName": "indexfl_str"
                     },
-                    "indexhatStrCybSec": {
+                    "indexhatStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "indexhat_str_cyb_sec"
+                        "pyQName": "indexhat_str"
                     },
-                    "indexavclStrCybSec": {
+                    "indexavclStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "indexavcl_str_cyb_sec"
+                        "pyQName": "indexavcl_str"
                     },
-                    "indexavflStrCybSec": {
+                    "indexavflStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "indexavfl_str_cyb_sec"
+                        "pyQName": "indexavfl_str"
                     },
-                    "indexenclStrCybSec": {
+                    "indexenclStr": {
                         "kind": 4,
                         "retType": "string",
-                        "pyQName": "indexencl_str_cyb_sec"
+                        "pyQName": "indexencl_str"
                     },
-                    "ColCybSec": {
+                    "Col": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "col_cyb_sec"
+                        "pyQName": "col"
                     },
-                    "CLCybSec": {
+                    "CL": {
+                        "kind": 4,
+                        "retType": "number"
+                    },
+                    "CLAV": {
+                        "kind": 4,
+                        "retType": "number"
+                    },
+                    "FL": {
+                        "kind": 4,
+                        "retType": "number"
+                    },
+                    "FLAV": {
+                        "kind": 4,
+                        "retType": "number"
+                    },
+                    "Coin": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "cl_cyb_sec"
+                        "pyQName": "coin"
                     },
-                    "CLCybSecAV": {
+                    "CoinY": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "cl_cyb_sec_av"
+                        "pyQName": "coin_y"
                     },
-                    "FLCybSec": {
+                    "CoinX": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "fl_cyb_sec"
+                        "pyQName": "coin_x"
                     },
-                    "FLCybSecAV": {
-                        "kind": 4,
-                        "retType": "number",
-                        "pyQName": "fl_cyb_sec_av"
-                    },
-                    "CoinCybSec": {
-                        "kind": 4,
-                        "retType": "number",
-                        "pyQName": "coin_cyb_sec"
-                    },
-                    "CoinCybSecY": {
-                        "kind": 4,
-                        "retType": "number",
-                        "pyQName": "coin_cyb_sec_y"
-                    },
-                    "CoinCybSecX": {
-                        "kind": 4,
-                        "retType": "number",
-                        "pyQName": "coin_cyb_sec_x"
-                    },
-                    "MSG_NDRDCybSec": {
+                    "MSG_NDRD": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "FullMSG_NDRDCybSec": {
+                    "FullMSG_NDRD": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "LenNDRDCybSec": {
+                    "LenNDRD": {
                         "kind": 4,
                         "retType": "number",
-                        "pyQName": "len_ndrd_cyb_sec"
+                        "pyQName": "len_ndrd"
                     },
-                    "MSG_UDP_FullCybSec": {
+                    "MSG_UDP_Full": {
                         "kind": 4,
                         "retType": "string"
                     },
-                    "ClrStripCybSec": {
+                    "ClrStrip": {
                         "kind": 4,
                         "retType": "neopixel.Strip",
-                        "pyQName": "clr_strip_cyb_sec"
+                        "pyQName": "clr_strip"
                     },
                     "Cybersec": {
                         "kind": 5,
@@ -33587,7 +33578,7 @@ var pxtTargetBundle = {
                             }
                         }
                     },
-                    "Cybersec.numberToStringCybSec": {
+                    "Cybersec.numberToString": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -33632,9 +33623,9 @@ var pxtTargetBundle = {
                                 "name": "num"
                             }
                         ],
-                        "pyQName": "Cybersec.number_to_string_cyb_sec"
+                        "pyQName": "Cybersec.number_to_string"
                     },
-                    "Cybersec.stringToNumberCybSec": {
+                    "Cybersec.stringToNumber": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
@@ -33680,9 +33671,9 @@ var pxtTargetBundle = {
                                 "type": "string"
                             }
                         ],
-                        "pyQName": "Cybersec.string_to_number_cyb_sec"
+                        "pyQName": "Cybersec.string_to_number"
                     },
-                    "Cybersec.DoATcmdCybSec": {
+                    "Cybersec.DoATcmd": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "ATCommand",
@@ -33735,9 +33726,9 @@ var pxtTargetBundle = {
                                 "type": "string"
                             }
                         ],
-                        "pyQName": "Cybersec.do_atcmd_cyb_sec"
+                        "pyQName": "Cybersec.do_atcmd"
                     },
-                    "Cybersec.getSignalStrengthCybSec": {
+                    "Cybersec.getSignalStrength": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -33778,9 +33769,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_signal_strength_cyb_sec"
+                        "pyQName": "Cybersec.get_signal_strength"
                     },
-                    "Cybersec.AnimationCybSec": {
+                    "Cybersec.Animation": {
                         "kind": -3,
                         "attributes": {
                             "group": "Initialize and Connections",
@@ -33804,9 +33795,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.animation_cyb_sec"
+                        "pyQName": "Cybersec.animation"
                     },
-                    "Cybersec.setBLCodeCybSec": {
+                    "Cybersec.setBLCode": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Coding Check b.Board",
@@ -33856,9 +33847,9 @@ var pxtTargetBundle = {
                                 "description": "position of the BLiXel in b.Board"
                             }
                         ],
-                        "pyQName": "Cybersec.set_bl_code_cyb_sec"
+                        "pyQName": "Cybersec.set_bl_code"
                     },
-                    "Cybersec.WiFi_OFFCybSec": {
+                    "Cybersec.WiFi_OFF": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "WiFi Off",
@@ -33883,7 +33874,7 @@ var pxtTargetBundle = {
                         },
                         "parameters": []
                     },
-                    "Cybersec.WiFi_RSCybSec": {
+                    "Cybersec.WiFi_RS": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "WiFi Reset",
@@ -33908,7 +33899,7 @@ var pxtTargetBundle = {
                         },
                         "parameters": []
                     },
-                    "Cybersec.DisconnectCybSec": {
+                    "Cybersec.Disconnect": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "WiFi Disconnect",
@@ -33932,9 +33923,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.disconnect_cyb_sec"
+                        "pyQName": "Cybersec.disconnect"
                     },
-                    "Cybersec.WiFi_ConnectedCybSec": {
+                    "Cybersec.WiFi_Connected": {
                         "kind": -3,
                         "retType": "boolean",
                         "attributes": {
@@ -33960,7 +33951,7 @@ var pxtTargetBundle = {
                         },
                         "parameters": []
                     },
-                    "Cybersec.WifiConnectCybSec": {
+                    "Cybersec.WifiConnect": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -34034,9 +34025,9 @@ var pxtTargetBundle = {
                                 "default": ""
                             }
                         ],
-                        "pyQName": "Cybersec.wifi_connect_cyb_sec"
+                        "pyQName": "Cybersec.wifi_connect"
                     },
-                    "Cybersec.PingbBfrendCybSec": {
+                    "Cybersec.PingbBfrend": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -34104,9 +34095,9 @@ var pxtTargetBundle = {
                                 "default": "192.168.4.1"
                             }
                         ],
-                        "pyQName": "Cybersec.pingb_bfrend_cyb_sec"
+                        "pyQName": "Cybersec.pingb_bfrend"
                     },
-                    "Cybersec.getMACaddressAPCybSec": {
+                    "Cybersec.getMACaddressAP": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -34154,9 +34145,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_ma_caddress_ap_cyb_sec"
+                        "pyQName": "Cybersec.get_ma_caddress_ap"
                     },
-                    "Cybersec.getIPaddressAPCybSec": {
+                    "Cybersec.getIPaddressAP": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -34204,9 +34195,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_ipaddress_ap_cyb_sec"
+                        "pyQName": "Cybersec.get_ipaddress_ap"
                     },
-                    "Cybersec.getMACaddressbBoardCybSec": {
+                    "Cybersec.getMACaddressbBoard": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -34254,9 +34245,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_ma_caddressb_board_cyb_sec"
+                        "pyQName": "Cybersec.get_ma_caddressb_board"
                     },
-                    "Cybersec.getIPaddressbBoardCybSec": {
+                    "Cybersec.getIPaddressbBoard": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -34304,9 +34295,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_ipaddressb_board_cyb_sec"
+                        "pyQName": "Cybersec.get_ipaddressb_board"
                     },
-                    "Cybersec.getFirmwareESP32CybSec": {
+                    "Cybersec.getFirmwareESP32": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -34335,54 +34326,54 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_firmware_esp32_cyb_sec"
+                        "pyQName": "Cybersec.get_firmware_esp32"
                     },
-                    "Cybersec.setPixelColourPURPLECybSec": {
+                    "Cybersec.setPixelColourPURPLE": {
                         "kind": -3,
                         "parameters": [
                             {
                                 "name": "pixelONset"
                             }
                         ],
-                        "pyQName": "Cybersec.set_pixel_colour_purple_cyb_sec"
+                        "pyQName": "Cybersec.set_pixel_colour_purple"
                     },
-                    "Cybersec.setPixelColourBLUECybSec": {
+                    "Cybersec.setPixelColourBLUE": {
                         "kind": -3,
                         "parameters": [
                             {
                                 "name": "pixelONset"
                             }
                         ],
-                        "pyQName": "Cybersec.set_pixel_colour_blue_cyb_sec"
+                        "pyQName": "Cybersec.set_pixel_colour_blue"
                     },
-                    "Cybersec.setPixelColourONCybSec": {
+                    "Cybersec.setPixelColourON": {
                         "kind": -3,
                         "parameters": [
                             {
                                 "name": "pixelONset"
                             }
                         ],
-                        "pyQName": "Cybersec.set_pixel_colour_on_cyb_sec"
+                        "pyQName": "Cybersec.set_pixel_colour_on"
                     },
-                    "Cybersec.setPixelColourREDCybSec": {
+                    "Cybersec.setPixelColourRED": {
                         "kind": -3,
                         "parameters": [
                             {
                                 "name": "pixelONset"
                             }
                         ],
-                        "pyQName": "Cybersec.set_pixel_colour_red_cyb_sec"
+                        "pyQName": "Cybersec.set_pixel_colour_red"
                     },
-                    "Cybersec.setPixelColourOFFCybSec": {
+                    "Cybersec.setPixelColourOFF": {
                         "kind": -3,
                         "parameters": [
                             {
                                 "name": "pixelOFFset"
                             }
                         ],
-                        "pyQName": "Cybersec.set_pixel_colour_off_cyb_sec"
+                        "pyQName": "Cybersec.set_pixel_colour_off"
                     },
-                    "Cybersec.ReceiVCybSecCybSec": {
+                    "Cybersec.ReceiV": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -34434,9 +34425,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.recei_vcyb_sec_cyb_sec"
+                        "pyQName": "Cybersec.recei_v"
                     },
-                    "Cybersec.send_LEDMSG_ONCybSec": {
+                    "Cybersec.send_LEDMSG_ON": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -34515,7 +34506,7 @@ var pxtTargetBundle = {
                             }
                         ]
                     },
-                    "Cybersec.send_LEDMSG_OFFCybSec": {
+                    "Cybersec.send_LEDMSG_OFF": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -34594,7 +34585,7 @@ var pxtTargetBundle = {
                             }
                         ]
                     },
-                    "Cybersec.blixel_indexRCybSec": {
+                    "Cybersec.blixel_indexR": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
@@ -34635,7 +34626,7 @@ var pxtTargetBundle = {
                             }
                         ]
                     },
-                    "Cybersec.appliance_indexCybSec": {
+                    "Cybersec.appliance_index": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
@@ -34674,7 +34665,7 @@ var pxtTargetBundle = {
                             }
                         ]
                     },
-                    "Cybersec.MissionLightsCybSec": {
+                    "Cybersec.MissionLights": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Mission Wierd Lights",
@@ -34751,9 +34742,9 @@ var pxtTargetBundle = {
                                 "description": "in School"
                             }
                         ],
-                        "pyQName": "Cybersec.mission_lights_cyb_sec"
+                        "pyQName": "Cybersec.mission_lights"
                     },
-                    "Cybersec.sendprotCybSec": {
+                    "Cybersec.sendprot": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Send_Protection",
@@ -34776,8 +34767,7 @@ var pxtTargetBundle = {
                                 "parameters": []
                             }
                         },
-                        "parameters": [],
-                        "pyQName": "Cybersec.sendprot_cyb_sec"
+                        "parameters": []
                     },
                     "Cybersec.Winner": {
                         "kind": -3,
@@ -34788,14 +34778,14 @@ var pxtTargetBundle = {
                         "kind": -3,
                         "parameters": []
                     },
-                    "Cybersec.indexclCybSec": {
+                    "Cybersec.indexcl": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
                             "blockId": "Level of Cloride Solution",
-                            "block": "%indexCLCybSec",
+                            "block": "%indexCL",
                             "locs": {
-                                "fr|block": "%indexCLCybSec",
+                                "fr|block": "%indexCL",
                                 "fr|param|group": "Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio?"
                             },
                             "color": "#0000ff",
@@ -34804,21 +34794,21 @@ var pxtTargetBundle = {
                             "group": "Mission 2: Water Treatment Plant Polluted - What is the correct ratio?",
                             "weight": 100,
                             "paramHelp": {
-                                "Level_CLCybSec": "Level of Cloride"
+                                "Level_CL": "Level of Cloride"
                             },
                             "jsDoc": "| >> En << | Select the level for Cloride.\n| >> Fr << | Sélectionner le niveau pour Clorure.",
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "param",
-                                        "name": "indexCLCybSec",
+                                        "name": "indexCL",
                                         "ref": false
                                     }
                                 ],
                                 "parameters": [
                                     {
                                         "kind": "param",
-                                        "name": "indexCLCybSec",
+                                        "name": "indexCL",
                                         "ref": false
                                     }
                                 ]
@@ -34826,21 +34816,20 @@ var pxtTargetBundle = {
                         },
                         "parameters": [
                             {
-                                "name": "indexCLCybSec",
-                                "type": "Index_CLCybSec",
+                                "name": "indexCL",
+                                "type": "Index_CL",
                                 "isEnum": true
                             }
-                        ],
-                        "pyQName": "Cybersec.indexcl_cyb_sec"
+                        ]
                     },
-                    "Cybersec.indexflCybSec": {
+                    "Cybersec.indexfl": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
                             "blockId": "Level of Fluoride Solution",
-                            "block": "%indexFLCybSec",
+                            "block": "%indexFL",
                             "locs": {
-                                "fr|block": "%indexFLCybSec"
+                                "fr|block": "%indexFL"
                             },
                             "color": "#008000",
                             "advanced": true,
@@ -34848,21 +34837,21 @@ var pxtTargetBundle = {
                             "group": "Mission 2: Water Treatment Plant Polluted - What is the correct ratio?",
                             "weight": 100,
                             "paramHelp": {
-                                "Level_FLCybSec": "Level of Fluoride"
+                                "Level_FL": "Level of Fluoride"
                             },
                             "jsDoc": "| >> En << | Select the level for Fluoride.\n| >> Fr << | Sélectionner le niveau pour Fluorure.",
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "param",
-                                        "name": "indexFLCybSec",
+                                        "name": "indexFL",
                                         "ref": false
                                     }
                                 ],
                                 "parameters": [
                                     {
                                         "kind": "param",
-                                        "name": "indexFLCybSec",
+                                        "name": "indexFL",
                                         "ref": false
                                     }
                                 ]
@@ -34870,21 +34859,20 @@ var pxtTargetBundle = {
                         },
                         "parameters": [
                             {
-                                "name": "indexFLCybSec",
-                                "type": "Index_FLCybSec",
+                                "name": "indexFL",
+                                "type": "Index_FL",
                                 "isEnum": true
                             }
-                        ],
-                        "pyQName": "Cybersec.indexfl_cyb_sec"
+                        ]
                     },
-                    "Cybersec.indexavclCybSec": {
+                    "Cybersec.indexavcl": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
-                            "blockId": "AntivirusCLCybSec",
-                            "block": "%indexAVCLCybSec",
+                            "blockId": "AntivirusCL",
+                            "block": "%indexAVCL",
                             "locs": {
-                                "fr|block": "%indexAVCLCybSec"
+                                "fr|block": "%indexAVCL"
                             },
                             "advanced": true,
                             "afterOnStart": true,
@@ -34898,14 +34886,14 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "param",
-                                        "name": "indexAVCLCybSec",
+                                        "name": "indexAVCL",
                                         "ref": false
                                     }
                                 ],
                                 "parameters": [
                                     {
                                         "kind": "param",
-                                        "name": "indexAVCLCybSec",
+                                        "name": "indexAVCL",
                                         "ref": false
                                     }
                                 ]
@@ -34913,21 +34901,20 @@ var pxtTargetBundle = {
                         },
                         "parameters": [
                             {
-                                "name": "indexAVCLCybSec",
-                                "type": "Index_AVCLCybSec",
+                                "name": "indexAVCL",
+                                "type": "Index_AVCL",
                                 "isEnum": true
                             }
-                        ],
-                        "pyQName": "Cybersec.indexavcl_cyb_sec"
+                        ]
                     },
-                    "Cybersec.indexavflCybSec": {
+                    "Cybersec.indexavfl": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
-                            "blockId": "AntivirusFLCybSec",
-                            "block": "%indexAVFLCybSec",
+                            "blockId": "AntivirusFL",
+                            "block": "%indexAVFL",
                             "locs": {
-                                "fr|block": "%indexAVFLCybSec"
+                                "fr|block": "%indexAVFL"
                             },
                             "advanced": true,
                             "afterOnStart": true,
@@ -34941,14 +34928,14 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "param",
-                                        "name": "indexAVFLCybSec",
+                                        "name": "indexAVFL",
                                         "ref": false
                                     }
                                 ],
                                 "parameters": [
                                     {
                                         "kind": "param",
-                                        "name": "indexAVFLCybSec",
+                                        "name": "indexAVFL",
                                         "ref": false
                                     }
                                 ]
@@ -34956,19 +34943,18 @@ var pxtTargetBundle = {
                         },
                         "parameters": [
                             {
-                                "name": "indexAVFLCybSec",
-                                "type": "Index_AVFLCybSec",
+                                "name": "indexAVFL",
+                                "type": "Index_AVFL",
                                 "isEnum": true
                             }
-                        ],
-                        "pyQName": "Cybersec.indexavfl_cyb_sec"
+                        ]
                     },
-                    "Cybersec.indexhatCybSec": {
+                    "Cybersec.indexhat": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
                             "blockGap": "9",
-                            "blockId": "ColCybSecorHat",
+                            "blockId": "ColorHat",
                             "block": "%indexH",
                             "locs": {
                                 "fr|block": "%indexH"
@@ -35001,10 +34987,9 @@ var pxtTargetBundle = {
                                 "type": "Index_H",
                                 "isEnum": true
                             }
-                        ],
-                        "pyQName": "Cybersec.indexhat_cyb_sec"
+                        ]
                     },
-                    "Cybersec.indexencrCybSec": {
+                    "Cybersec.indexencr": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
@@ -35041,10 +35026,9 @@ var pxtTargetBundle = {
                                 "type": "Index_Encr",
                                 "isEnum": true
                             }
-                        ],
-                        "pyQName": "Cybersec.indexencr_cyb_sec"
+                        ]
                     },
-                    "Cybersec.ShowEncrCybSec": {
+                    "Cybersec.ShowEncr": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Show Encrytion Mode",
@@ -35091,7 +35075,7 @@ var pxtTargetBundle = {
                                 "description": "mode     "
                             }
                         ],
-                        "pyQName": "Cybersec.show_encr_cyb_sec"
+                        "pyQName": "Cybersec.show_encr"
                     },
                     "Cybersec.Ready": {
                         "kind": -3,
@@ -35113,13 +35097,13 @@ var pxtTargetBundle = {
                         "parameters": [],
                         "pyQName": "Cybersec.dahs"
                     },
-                    "Cybersec.MissionWaterCybSec": {
+                    "Cybersec.MissionWater": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Mission Water Treatment Polluted",
-                            "block": "Hat color source information: $Hat=ColCybSecorHat | and send the Ratio",
+                            "block": "Hat color source information: $Hat=ColorHat | and send the Ratio",
                             "locs": {
-                                "fr|block": "Couleur de votre chapeau sorece d'information : $Hat=ColCybSecorHat | et envoyez le Ratio",
+                                "fr|block": "Couleur de votre chapeau sorece d'information : $Hat=ColorHat | et envoyez le Ratio",
                                 "fr|param|group": "Mission 2 : Pollution de la station d'épuration - Quel est le bon ratio ?"
                             },
                             "group": "Mission 2: Water Treatment Plant Polluted - What is the correct ratio?",
@@ -35130,7 +35114,7 @@ var pxtTargetBundle = {
                             "paramHelp": {
                                 "Hat": "in Cyberville"
                             },
-                            "jsDoc": "| >> En << | Select your Hat ColCybSecor Source information and send the Ratio Chlorine:Fluoride.\n| >> Fr << | Sélectionnez la Couleur de votre chapeau sorece d'information et envoyez le bon ratio Chlore:Fluorure.",
+                            "jsDoc": "| >> En << | Select your Hat Color Source information and send the Ratio Chlorine:Fluoride.\n| >> Fr << | Sélectionnez la Couleur de votre chapeau sorece d'information et envoyez le bon ratio Chlore:Fluorure.",
                             "_def": {
                                 "parts": [
                                     {
@@ -35141,7 +35125,7 @@ var pxtTargetBundle = {
                                     {
                                         "kind": "param",
                                         "name": "Hat",
-                                        "shadowBlockId": "ColCybSecorHat",
+                                        "shadowBlockId": "ColorHat",
                                         "ref": true
                                     },
                                     {
@@ -35162,7 +35146,7 @@ var pxtTargetBundle = {
                                     {
                                         "kind": "param",
                                         "name": "Hat",
-                                        "shadowBlockId": "ColCybSecorHat",
+                                        "shadowBlockId": "ColorHat",
                                         "ref": true
                                     }
                                 ]
@@ -35174,14 +35158,14 @@ var pxtTargetBundle = {
                                 "description": "in Cyberville"
                             }
                         ],
-                        "pyQName": "Cybersec.mission_water_cyb_sec"
+                        "pyQName": "Cybersec.mission_water"
                     },
                     "Cybersec.Losser": {
                         "kind": -3,
                         "parameters": [],
                         "pyQName": "Cybersec.losser"
                     },
-                    "Cybersec.getValueDegCybSec": {
+                    "Cybersec.getValueDeg": {
                         "kind": -3,
                         "retType": "number",
                         "attributes": {
@@ -35208,9 +35192,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.get_value_deg_cyb_sec"
+                        "pyQName": "Cybersec.get_value_deg"
                     },
-                    "Cybersec.decreaseCybSec": {
+                    "Cybersec.decrease": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Down Step",
@@ -35235,10 +35219,9 @@ var pxtTargetBundle = {
                                 "parameters": []
                             }
                         },
-                        "parameters": [],
-                        "pyQName": "Cybersec.decrease_cyb_sec"
+                        "parameters": []
                     },
-                    "Cybersec.increaseCybSec": {
+                    "Cybersec.increase": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Up Step",
@@ -35263,10 +35246,9 @@ var pxtTargetBundle = {
                                 "parameters": []
                             }
                         },
-                        "parameters": [],
-                        "pyQName": "Cybersec.increase_cyb_sec"
+                        "parameters": []
                     },
-                    "Cybersec.LocalparkbarCybSec": {
+                    "Cybersec.Localparkbar": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Parking Bar",
@@ -35292,9 +35274,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.localparkbar_cyb_sec"
+                        "pyQName": "Cybersec.localparkbar"
                     },
-                    "Cybersec.Rdy2listenCybSec": {
+                    "Cybersec.Rdy2listen": {
                         "kind": -3,
                         "attributes": {
                             "blockId": "Ready to listen",
@@ -35321,9 +35303,9 @@ var pxtTargetBundle = {
                             }
                         },
                         "parameters": [],
-                        "pyQName": "Cybersec.rdy2listen_cyb_sec"
+                        "pyQName": "Cybersec.rdy2listen"
                     },
-                    "Cybersec.ReceiveDataCybSec": {
+                    "Cybersec.ReceiveData": {
                         "kind": -3,
                         "retType": "string",
                         "attributes": {
@@ -35387,9 +35369,9 @@ var pxtTargetBundle = {
                                 "default": "192.168.4.1"
                             }
                         ],
-                        "pyQName": "Cybersec.receive_data_cyb_sec"
+                        "pyQName": "Cybersec.receive_data"
                     },
-                    "Cybersec.TXT_UPD_SndCybSec": {
+                    "Cybersec.TXT_UPD_Snd": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -35471,7 +35453,7 @@ var pxtTargetBundle = {
                             }
                         ]
                     },
-                    "Cybersec.Num_UDP_SndCybSec": {
+                    "Cybersec.Num_UDP_Snd": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -35552,7 +35534,7 @@ var pxtTargetBundle = {
                             }
                         ]
                     },
-                    "Cybersec.MSG_UPD_SndtoAllCybSec": {
+                    "Cybersec.MSG_UPD_SndtoAll": {
                         "kind": -3,
                         "attributes": {
                             "paramDefl": {
@@ -35696,8 +35678,8 @@ var pxtTargetBundle = {
                             "Number"
                         ]
                     },
-                    "BLiXelIndexR.oneCybSec": {
-                        "retType": "BLiXelIndexR.oneCybSec",
+                    "BLiXelIndexR.one": {
+                        "retType": "BLiXelIndexR.one",
                         "attributes": {
                             "block": "1 SCHOOL",
                             "locs": {
@@ -35715,13 +35697,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.oneCybSec",
+                            "BLiXelIndexR.one",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.ONE_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.ONE"
                     },
-                    "BLiXelIndexR.twoCybSec": {
-                        "retType": "BLiXelIndexR.twoCybSec",
+                    "BLiXelIndexR.two": {
+                        "retType": "BLiXelIndexR.two",
                         "attributes": {
                             "block": "2 HOSPITAL",
                             "locs": {
@@ -35739,13 +35721,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.twoCybSec",
+                            "BLiXelIndexR.two",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.TWO_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.TWO"
                     },
-                    "BLiXelIndexR.threeCybSec": {
-                        "retType": "BLiXelIndexR.threeCybSec",
+                    "BLiXelIndexR.three": {
+                        "retType": "BLiXelIndexR.three",
                         "attributes": {
                             "block": "3 WATER",
                             "locs": {
@@ -35763,13 +35745,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.threeCybSec",
+                            "BLiXelIndexR.three",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.THREE_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.THREE"
                     },
-                    "BLiXelIndexR.fiveCybSec": {
-                        "retType": "BLiXelIndexR.fiveCybSec",
+                    "BLiXelIndexR.five": {
+                        "retType": "BLiXelIndexR.five",
                         "attributes": {
                             "block": "5 GOVERNMENT",
                             "locs": {
@@ -35787,13 +35769,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.fiveCybSec",
+                            "BLiXelIndexR.five",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.FIVE_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.FIVE"
                     },
-                    "BLiXelIndexR.sixCybSec": {
-                        "retType": "BLiXelIndexR.sixCybSec",
+                    "BLiXelIndexR.six": {
+                        "retType": "BLiXelIndexR.six",
                         "attributes": {
                             "block": "6 BRILLIANT LABS",
                             "locs": {
@@ -35811,13 +35793,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.sixCybSec",
+                            "BLiXelIndexR.six",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.SIX_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.SIX"
                     },
-                    "BLiXelIndexR.sevenCybSec": {
-                        "retType": "BLiXelIndexR.sevenCybSec",
+                    "BLiXelIndexR.seven": {
+                        "retType": "BLiXelIndexR.seven",
                         "attributes": {
                             "block": "7 BANK",
                             "locs": {
@@ -35835,13 +35817,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.sevenCybSec",
+                            "BLiXelIndexR.seven",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.SEVEN_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.SEVEN"
                     },
-                    "BLiXelIndexR.eightCybSec": {
-                        "retType": "BLiXelIndexR.eightCybSec",
+                    "BLiXelIndexR.eight": {
+                        "retType": "BLiXelIndexR.eight",
                         "attributes": {
                             "block": "8 FACTORY",
                             "locs": {
@@ -35859,13 +35841,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.eightCybSec",
+                            "BLiXelIndexR.eight",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.EIGHT_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.EIGHT"
                     },
-                    "BLiXelIndexR.nineCybSec": {
-                        "retType": "BLiXelIndexR.nineCybSec",
+                    "BLiXelIndexR.nine": {
+                        "retType": "BLiXelIndexR.nine",
                         "attributes": {
                             "block": "9 INDUSTRY",
                             "locs": {
@@ -35883,13 +35865,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.nineCybSec",
+                            "BLiXelIndexR.nine",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.NINE_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.NINE"
                     },
-                    "BLiXelIndexR.tenCybSec": {
-                        "retType": "BLiXelIndexR.tenCybSec",
+                    "BLiXelIndexR.ten": {
+                        "retType": "BLiXelIndexR.ten",
                         "attributes": {
                             "block": "10 ARTCENTER",
                             "locs": {
@@ -35907,13 +35889,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.tenCybSec",
+                            "BLiXelIndexR.ten",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.TEN_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.TEN"
                     },
-                    "BLiXelIndexR.twelveCybSec": {
-                        "retType": "BLiXelIndexR.twelveCybSec",
+                    "BLiXelIndexR.twelve": {
+                        "retType": "BLiXelIndexR.twelve",
                         "attributes": {
                             "block": "12 CITIZENS",
                             "locs": {
@@ -35931,10 +35913,10 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "BLiXelIndexR.twelveCybSec",
+                            "BLiXelIndexR.twelve",
                             "Number"
                         ],
-                        "pyQName": "BLiXelIndexR.TWELVE_CYB_SEC"
+                        "pyQName": "BLiXelIndexR.TWELVE"
                     },
                     "ApplianceIndex": {
                         "kind": 6,
@@ -35944,8 +35926,8 @@ var pxtTargetBundle = {
                             "Number"
                         ]
                     },
-                    "ApplianceIndex.oneCybSec": {
-                        "retType": "ApplianceIndex.oneCybSec",
+                    "ApplianceIndex.one": {
+                        "retType": "ApplianceIndex.one",
                         "attributes": {
                             "block": "☼ 1 HeatCntr",
                             "locs": {
@@ -35963,13 +35945,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "ApplianceIndex.oneCybSec",
+                            "ApplianceIndex.one",
                             "Number"
                         ],
-                        "pyQName": "ApplianceIndex.ONE_CYB_SEC"
+                        "pyQName": "ApplianceIndex.ONE"
                     },
-                    "ApplianceIndex.twoCybSec": {
-                        "retType": "ApplianceIndex.twoCybSec",
+                    "ApplianceIndex.two": {
+                        "retType": "ApplianceIndex.two",
                         "attributes": {
                             "block": "☼ 2 Air Cond",
                             "locs": {
@@ -35987,13 +35969,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "ApplianceIndex.twoCybSec",
+                            "ApplianceIndex.two",
                             "Number"
                         ],
-                        "pyQName": "ApplianceIndex.TWO_CYB_SEC"
+                        "pyQName": "ApplianceIndex.TWO"
                     },
-                    "ApplianceIndex.threeCybSec": {
-                        "retType": "ApplianceIndex.threeCybSec",
+                    "ApplianceIndex.three": {
+                        "retType": "ApplianceIndex.three",
                         "attributes": {
                             "block": "☼ 3 LampCafe",
                             "locs": {
@@ -36011,13 +35993,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "ApplianceIndex.threeCybSec",
+                            "ApplianceIndex.three",
                             "Number"
                         ],
-                        "pyQName": "ApplianceIndex.THREE_CYB_SEC"
+                        "pyQName": "ApplianceIndex.THREE"
                     },
-                    "ApplianceIndex.fourCybSec": {
-                        "retType": "ApplianceIndex.fourCybSec",
+                    "ApplianceIndex.four": {
+                        "retType": "ApplianceIndex.four",
                         "attributes": {
                             "block": "☼ 4 Lamp Gym",
                             "locs": {
@@ -36035,13 +36017,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "ApplianceIndex.fourCybSec",
+                            "ApplianceIndex.four",
                             "Number"
                         ],
-                        "pyQName": "ApplianceIndex.FOUR_CYB_SEC"
+                        "pyQName": "ApplianceIndex.FOUR"
                     },
-                    "ApplianceIndex.fiveCybSec": {
-                        "retType": "ApplianceIndex.fiveCybSec",
+                    "ApplianceIndex.five": {
+                        "retType": "ApplianceIndex.five",
                         "attributes": {
                             "block": "☼ 5 Internet",
                             "locs": {
@@ -36059,21 +36041,21 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "ApplianceIndex.fiveCybSec",
+                            "ApplianceIndex.five",
                             "Number"
                         ],
-                        "pyQName": "ApplianceIndex.FIVE_CYB_SEC"
+                        "pyQName": "ApplianceIndex.FIVE"
                     },
-                    "Index_CLCybSec": {
+                    "Index_CL": {
                         "kind": 6,
-                        "retType": "Index_CLCybSec",
+                        "retType": "Index_CL",
                         "extendsTypes": [
-                            "Index_CLCybSec",
+                            "Index_CL",
                             "Number"
                         ]
                     },
-                    "Index_CLCybSec.zeroCybSec": {
-                        "retType": "Index_CLCybSec.zeroCybSec",
+                    "Index_CL.zero": {
+                        "retType": "Index_CL.zero",
                         "attributes": {
                             "block": "Level of Chlorine: 0",
                             "locs": {
@@ -36091,13 +36073,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.zeroCybSec",
+                            "Index_CL.zero",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.ZERO_CYB_SEC"
+                        "pyQName": "Index_CL.ZERO"
                     },
-                    "Index_CLCybSec.oneCybSec": {
-                        "retType": "Index_CLCybSec.oneCybSec",
+                    "Index_CL.one": {
+                        "retType": "Index_CL.one",
                         "attributes": {
                             "block": "Level of Chlorine: 1",
                             "locs": {
@@ -36115,13 +36097,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.oneCybSec",
+                            "Index_CL.one",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.ONE_CYB_SEC"
+                        "pyQName": "Index_CL.ONE"
                     },
-                    "Index_CLCybSec.twoCybSec": {
-                        "retType": "Index_CLCybSec.twoCybSec",
+                    "Index_CL.two": {
+                        "retType": "Index_CL.two",
                         "attributes": {
                             "block": "Level of Chlorine: 2",
                             "locs": {
@@ -36139,13 +36121,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.twoCybSec",
+                            "Index_CL.two",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.TWO_CYB_SEC"
+                        "pyQName": "Index_CL.TWO"
                     },
-                    "Index_CLCybSec.threeCybSec": {
-                        "retType": "Index_CLCybSec.threeCybSec",
+                    "Index_CL.three": {
+                        "retType": "Index_CL.three",
                         "attributes": {
                             "block": "Level of Chlorine: 3",
                             "locs": {
@@ -36163,13 +36145,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.threeCybSec",
+                            "Index_CL.three",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.THREE_CYB_SEC"
+                        "pyQName": "Index_CL.THREE"
                     },
-                    "Index_CLCybSec.fourCybSec": {
-                        "retType": "Index_CLCybSec.fourCybSec",
+                    "Index_CL.four": {
+                        "retType": "Index_CL.four",
                         "attributes": {
                             "block": "Level of Chlorine: 4",
                             "locs": {
@@ -36187,13 +36169,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.fourCybSec",
+                            "Index_CL.four",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.FOUR_CYB_SEC"
+                        "pyQName": "Index_CL.FOUR"
                     },
-                    "Index_CLCybSec.fiveCybSec": {
-                        "retType": "Index_CLCybSec.fiveCybSec",
+                    "Index_CL.five": {
+                        "retType": "Index_CL.five",
                         "attributes": {
                             "block": "Level of Chlorine: 5",
                             "locs": {
@@ -36211,13 +36193,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.fiveCybSec",
+                            "Index_CL.five",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.FIVE_CYB_SEC"
+                        "pyQName": "Index_CL.FIVE"
                     },
-                    "Index_CLCybSec.sixCybSec": {
-                        "retType": "Index_CLCybSec.sixCybSec",
+                    "Index_CL.six": {
+                        "retType": "Index_CL.six",
                         "attributes": {
                             "block": "Level of Chlorine: 6",
                             "locs": {
@@ -36235,13 +36217,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.sixCybSec",
+                            "Index_CL.six",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.SIX_CYB_SEC"
+                        "pyQName": "Index_CL.SIX"
                     },
-                    "Index_CLCybSec.sevenCybSec": {
-                        "retType": "Index_CLCybSec.sevenCybSec",
+                    "Index_CL.seven": {
+                        "retType": "Index_CL.seven",
                         "attributes": {
                             "block": "Level of Chlorine: 7",
                             "locs": {
@@ -36259,13 +36241,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.sevenCybSec",
+                            "Index_CL.seven",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.SEVEN_CYB_SEC"
+                        "pyQName": "Index_CL.SEVEN"
                     },
-                    "Index_CLCybSec.eightCybSec": {
-                        "retType": "Index_CLCybSec.eightCybSec",
+                    "Index_CL.eight": {
+                        "retType": "Index_CL.eight",
                         "attributes": {
                             "block": "Level of Chlorine: 8",
                             "locs": {
@@ -36283,13 +36265,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.eightCybSec",
+                            "Index_CL.eight",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.EIGHT_CYB_SEC"
+                        "pyQName": "Index_CL.EIGHT"
                     },
-                    "Index_CLCybSec.nineCybSec": {
-                        "retType": "Index_CLCybSec.nineCybSec",
+                    "Index_CL.nine": {
+                        "retType": "Index_CL.nine",
                         "attributes": {
                             "block": "Level of Chlorine: 9",
                             "locs": {
@@ -36307,13 +36289,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.nineCybSec",
+                            "Index_CL.nine",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.NINE_CYB_SEC"
+                        "pyQName": "Index_CL.NINE"
                     },
-                    "Index_CLCybSec.tenCybSec": {
-                        "retType": "Index_CLCybSec.tenCybSec",
+                    "Index_CL.ten": {
+                        "retType": "Index_CL.ten",
                         "attributes": {
                             "block": "Level of Chlorine:10",
                             "locs": {
@@ -36331,21 +36313,21 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_CLCybSec.tenCybSec",
+                            "Index_CL.ten",
                             "Number"
                         ],
-                        "pyQName": "Index_CLCybSec.TEN_CYB_SEC"
+                        "pyQName": "Index_CL.TEN"
                     },
-                    "Index_FLCybSec": {
+                    "Index_FL": {
                         "kind": 6,
-                        "retType": "Index_FLCybSec",
+                        "retType": "Index_FL",
                         "extendsTypes": [
-                            "Index_FLCybSec",
+                            "Index_FL",
                             "Number"
                         ]
                     },
-                    "Index_FLCybSec.zeroCybSec": {
-                        "retType": "Index_FLCybSec.zeroCybSec",
+                    "Index_FL.zero": {
+                        "retType": "Index_FL.zero",
                         "attributes": {
                             "block": "Level of Fluoride: 0",
                             "locs": {
@@ -36363,13 +36345,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.zeroCybSec",
+                            "Index_FL.zero",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.ZERO_CYB_SEC"
+                        "pyQName": "Index_FL.ZERO"
                     },
-                    "Index_FLCybSec.oneCybSec": {
-                        "retType": "Index_FLCybSec.oneCybSec",
+                    "Index_FL.one": {
+                        "retType": "Index_FL.one",
                         "attributes": {
                             "block": "Level of Fluoride: 1",
                             "locs": {
@@ -36387,13 +36369,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.oneCybSec",
+                            "Index_FL.one",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.ONE_CYB_SEC"
+                        "pyQName": "Index_FL.ONE"
                     },
-                    "Index_FLCybSec.twoCybSec": {
-                        "retType": "Index_FLCybSec.twoCybSec",
+                    "Index_FL.two": {
+                        "retType": "Index_FL.two",
                         "attributes": {
                             "block": "Level of Fluoride: 2",
                             "locs": {
@@ -36411,13 +36393,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.twoCybSec",
+                            "Index_FL.two",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.TWO_CYB_SEC"
+                        "pyQName": "Index_FL.TWO"
                     },
-                    "Index_FLCybSec.threeCybSec": {
-                        "retType": "Index_FLCybSec.threeCybSec",
+                    "Index_FL.three": {
+                        "retType": "Index_FL.three",
                         "attributes": {
                             "block": "Level of Fluoride: 3",
                             "locs": {
@@ -36435,13 +36417,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.threeCybSec",
+                            "Index_FL.three",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.THREE_CYB_SEC"
+                        "pyQName": "Index_FL.THREE"
                     },
-                    "Index_FLCybSec.fourCybSec": {
-                        "retType": "Index_FLCybSec.fourCybSec",
+                    "Index_FL.four": {
+                        "retType": "Index_FL.four",
                         "attributes": {
                             "block": "Level of Fluoride: 4",
                             "locs": {
@@ -36459,13 +36441,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.fourCybSec",
+                            "Index_FL.four",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.FOUR_CYB_SEC"
+                        "pyQName": "Index_FL.FOUR"
                     },
-                    "Index_FLCybSec.fiveCybSec": {
-                        "retType": "Index_FLCybSec.fiveCybSec",
+                    "Index_FL.five": {
+                        "retType": "Index_FL.five",
                         "attributes": {
                             "block": "Level of Fluoride: 5",
                             "locs": {
@@ -36483,13 +36465,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.fiveCybSec",
+                            "Index_FL.five",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.FIVE_CYB_SEC"
+                        "pyQName": "Index_FL.FIVE"
                     },
-                    "Index_FLCybSec.sixCybSec": {
-                        "retType": "Index_FLCybSec.sixCybSec",
+                    "Index_FL.six": {
+                        "retType": "Index_FL.six",
                         "attributes": {
                             "block": "Level of Fluoride: 6",
                             "locs": {
@@ -36507,13 +36489,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.sixCybSec",
+                            "Index_FL.six",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.SIX_CYB_SEC"
+                        "pyQName": "Index_FL.SIX"
                     },
-                    "Index_FLCybSec.sevenCybSec": {
-                        "retType": "Index_FLCybSec.sevenCybSec",
+                    "Index_FL.seven": {
+                        "retType": "Index_FL.seven",
                         "attributes": {
                             "block": "Level of Fluoride: 7",
                             "locs": {
@@ -36531,13 +36513,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.sevenCybSec",
+                            "Index_FL.seven",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.SEVEN_CYB_SEC"
+                        "pyQName": "Index_FL.SEVEN"
                     },
-                    "Index_FLCybSec.eightCybSec": {
-                        "retType": "Index_FLCybSec.eightCybSec",
+                    "Index_FL.eight": {
+                        "retType": "Index_FL.eight",
                         "attributes": {
                             "block": "Level of Fluoride: 8",
                             "locs": {
@@ -36555,13 +36537,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.eightCybSec",
+                            "Index_FL.eight",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.EIGHT_CYB_SEC"
+                        "pyQName": "Index_FL.EIGHT"
                     },
-                    "Index_FLCybSec.nineCybSec": {
-                        "retType": "Index_FLCybSec.nineCybSec",
+                    "Index_FL.nine": {
+                        "retType": "Index_FL.nine",
                         "attributes": {
                             "block": "Level of Fluoride: 9",
                             "locs": {
@@ -36579,13 +36561,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.nineCybSec",
+                            "Index_FL.nine",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.NINE_CYB_SEC"
+                        "pyQName": "Index_FL.NINE"
                     },
-                    "Index_FLCybSec.tenCybSec": {
-                        "retType": "Index_FLCybSec.tenCybSec",
+                    "Index_FL.ten": {
+                        "retType": "Index_FL.ten",
                         "attributes": {
                             "block": "Level of Fluoride:10",
                             "locs": {
@@ -36603,31 +36585,31 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_FLCybSec.tenCybSec",
+                            "Index_FL.ten",
                             "Number"
                         ],
-                        "pyQName": "Index_FLCybSec.TEN_CYB_SEC"
+                        "pyQName": "Index_FL.TEN"
                     },
-                    "Index_AVCLCybSec": {
+                    "Index_AVCL": {
                         "kind": 6,
-                        "retType": "Index_AVCLCybSec",
+                        "retType": "Index_AVCL",
                         "extendsTypes": [
-                            "Index_AVCLCybSec",
+                            "Index_AVCL",
                             "Number"
                         ]
                     },
-                    "Index_AVCLCybSec.oneCybSec": {
-                        "retType": "Index_AVCLCybSec.oneCybSec",
+                    "Index_AVCL.one": {
+                        "retType": "Index_AVCL.one",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 1",
+                            "block": "Number as Antivirus CL: 1",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 1"
+                                "fr|block": "Nombre d'Antivirus CL: 1"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 1",
+                                        "text": "Number as Antivirus CL: 1",
                                         "style": []
                                     }
                                 ],
@@ -36635,23 +36617,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.oneCybSec",
+                            "Index_AVCL.one",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.ONE_CYB_SEC"
+                        "pyQName": "Index_AVCL.ONE"
                     },
-                    "Index_AVCLCybSec.twoCybSec": {
-                        "retType": "Index_AVCLCybSec.twoCybSec",
+                    "Index_AVCL.two": {
+                        "retType": "Index_AVCL.two",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 2",
+                            "block": "Number as Antivirus CL: 2",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 2"
+                                "fr|block": "Nombre d'Antivirus CL: 2"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 2",
+                                        "text": "Number as Antivirus CL: 2",
                                         "style": []
                                     }
                                 ],
@@ -36659,23 +36641,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.twoCybSec",
+                            "Index_AVCL.two",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.TWO_CYB_SEC"
+                        "pyQName": "Index_AVCL.TWO"
                     },
-                    "Index_AVCLCybSec.threeCybSec": {
-                        "retType": "Index_AVCLCybSec.threeCybSec",
+                    "Index_AVCL.three": {
+                        "retType": "Index_AVCL.three",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 3",
+                            "block": "Number as Antivirus CL: 3",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 3"
+                                "fr|block": "Nombre d'Antivirus CL: 3"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 3",
+                                        "text": "Number as Antivirus CL: 3",
                                         "style": []
                                     }
                                 ],
@@ -36683,23 +36665,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.threeCybSec",
+                            "Index_AVCL.three",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.THREE_CYB_SEC"
+                        "pyQName": "Index_AVCL.THREE"
                     },
-                    "Index_AVCLCybSec.fourCybSec": {
-                        "retType": "Index_AVCLCybSec.fourCybSec",
+                    "Index_AVCL.four": {
+                        "retType": "Index_AVCL.four",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 4",
+                            "block": "Number as Antivirus CL: 4",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec : 4"
+                                "fr|block": "Nombre d'Antivirus CL : 4"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 4",
+                                        "text": "Number as Antivirus CL: 4",
                                         "style": []
                                     }
                                 ],
@@ -36707,15 +36689,15 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.fourCybSec",
+                            "Index_AVCL.four",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.FOUR_CYB_SEC"
+                        "pyQName": "Index_AVCL.FOUR"
                     },
-                    "Index_AVCLCybSec.fiveCybSec": {
-                        "retType": "Index_AVCLCybSec.fiveCybSec",
+                    "Index_AVCL.five": {
+                        "retType": "Index_AVCL.five",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 5",
+                            "block": "Number as Antivirus CL: 5",
                             "locs": {
                                 "fr|block": "Nombre d'Antivirus Cl: 5"
                             },
@@ -36723,7 +36705,7 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 5",
+                                        "text": "Number as Antivirus CL: 5",
                                         "style": []
                                     }
                                 ],
@@ -36731,23 +36713,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.fiveCybSec",
+                            "Index_AVCL.five",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.FIVE_CYB_SEC"
+                        "pyQName": "Index_AVCL.FIVE"
                     },
-                    "Index_AVCLCybSec.sixCybSec": {
-                        "retType": "Index_AVCLCybSec.sixCybSec",
+                    "Index_AVCL.six": {
+                        "retType": "Index_AVCL.six",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 6",
+                            "block": "Number as Antivirus CL: 6",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 6"
+                                "fr|block": "Nombre d'Antivirus CL: 6"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 6",
+                                        "text": "Number as Antivirus CL: 6",
                                         "style": []
                                     }
                                 ],
@@ -36755,23 +36737,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.sixCybSec",
+                            "Index_AVCL.six",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.SIX_CYB_SEC"
+                        "pyQName": "Index_AVCL.SIX"
                     },
-                    "Index_AVCLCybSec.sevenCybSec": {
-                        "retType": "Index_AVCLCybSec.sevenCybSec",
+                    "Index_AVCL.seven": {
+                        "retType": "Index_AVCL.seven",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 7",
+                            "block": "Number as Antivirus CL: 7",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 7"
+                                "fr|block": "Nombre d'Antivirus CL: 7"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 7",
+                                        "text": "Number as Antivirus CL: 7",
                                         "style": []
                                     }
                                 ],
@@ -36779,23 +36761,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.sevenCybSec",
+                            "Index_AVCL.seven",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.SEVEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.SEVEN"
                     },
-                    "Index_AVCLCybSec.eightCybSec": {
-                        "retType": "Index_AVCLCybSec.eightCybSec",
+                    "Index_AVCL.eight": {
+                        "retType": "Index_AVCL.eight",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 8",
+                            "block": "Number as Antivirus CL: 8",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 8"
+                                "fr|block": "Nombre d'Antivirus CL: 8"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 8",
+                                        "text": "Number as Antivirus CL: 8",
                                         "style": []
                                     }
                                 ],
@@ -36803,15 +36785,15 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.eightCybSec",
+                            "Index_AVCL.eight",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.EIGHT_CYB_SEC"
+                        "pyQName": "Index_AVCL.EIGHT"
                     },
-                    "Index_AVCLCybSec.ninesCybSec": {
-                        "retType": "Index_AVCLCybSec.ninesCybSec",
+                    "Index_AVCL.nines": {
+                        "retType": "Index_AVCL.nines",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 9",
+                            "block": "Number as Antivirus CL: 9",
                             "locs": {
                                 "fr|block": "Nombre d'antivirus Cl: 9"
                             },
@@ -36819,7 +36801,7 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 9",
+                                        "text": "Number as Antivirus CL: 9",
                                         "style": []
                                     }
                                 ],
@@ -36827,23 +36809,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.ninesCybSec",
+                            "Index_AVCL.nines",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.NINES_CYB_SEC"
+                        "pyQName": "Index_AVCL.NINES"
                     },
-                    "Index_AVCLCybSec.tenCybSec": {
-                        "retType": "Index_AVCLCybSec.tenCybSec",
+                    "Index_AVCL.ten": {
+                        "retType": "Index_AVCL.ten",
                         "attributes": {
-                            "block": "Number as antivirus CLCybSec: 10",
+                            "block": "Number as antivirus CL: 10",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 10"
+                                "fr|block": "Nombre d'Antivirus CL: 10"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as antivirus CLCybSec: 10",
+                                        "text": "Number as antivirus CL: 10",
                                         "style": []
                                     }
                                 ],
@@ -36851,23 +36833,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.tenCybSec",
+                            "Index_AVCL.ten",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.TEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.TEN"
                     },
-                    "Index_AVCLCybSec.elevenCybSec": {
-                        "retType": "Index_AVCLCybSec.elevenCybSec",
+                    "Index_AVCL.eleven": {
+                        "retType": "Index_AVCL.eleven",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 11",
+                            "block": "Number as Antivirus CL: 11",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 11"
+                                "fr|block": "Nombre d'Antivirus CL: 11"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 11",
+                                        "text": "Number as Antivirus CL: 11",
                                         "style": []
                                     }
                                 ],
@@ -36875,23 +36857,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.elevenCybSec",
+                            "Index_AVCL.eleven",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.ELEVEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.ELEVEN"
                     },
-                    "Index_AVCLCybSec.twelveCybSec": {
-                        "retType": "Index_AVCLCybSec.twelveCybSec",
+                    "Index_AVCL.twelve": {
+                        "retType": "Index_AVCL.twelve",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 12",
+                            "block": "Number as Antivirus CL: 12",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 12"
+                                "fr|block": "Nombre d'Antivirus CL: 12"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 12",
+                                        "text": "Number as Antivirus CL: 12",
                                         "style": []
                                     }
                                 ],
@@ -36899,23 +36881,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.twelveCybSec",
+                            "Index_AVCL.twelve",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.TWELVE_CYB_SEC"
+                        "pyQName": "Index_AVCL.TWELVE"
                     },
-                    "Index_AVCLCybSec.thirteenCybSec": {
-                        "retType": "Index_AVCLCybSec.thirteenCybSec",
+                    "Index_AVCL.thirteen": {
+                        "retType": "Index_AVCL.thirteen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 13",
+                            "block": "Number as Antivirus CL: 13",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 13"
+                                "fr|block": "Nombre d'Antivirus CL: 13"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 13",
+                                        "text": "Number as Antivirus CL: 13",
                                         "style": []
                                     }
                                 ],
@@ -36923,15 +36905,15 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.thirteenCybSec",
+                            "Index_AVCL.thirteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.THIRTEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.THIRTEEN"
                     },
-                    "Index_AVCLCybSec.fourteenCybSec": {
-                        "retType": "Index_AVCLCybSec.fourteenCybSec",
+                    "Index_AVCL.fourteen": {
+                        "retType": "Index_AVCL.fourteen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 14",
+                            "block": "Number as Antivirus CL: 14",
                             "locs": {
                                 "fr|block": "Nombre d'Antivirus Cl: 14"
                             },
@@ -36939,7 +36921,7 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 14",
+                                        "text": "Number as Antivirus CL: 14",
                                         "style": []
                                     }
                                 ],
@@ -36947,23 +36929,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.fourteenCybSec",
+                            "Index_AVCL.fourteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.FOURTEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.FOURTEEN"
                     },
-                    "Index_AVCLCybSec.fiveteenCybSec": {
-                        "retType": "Index_AVCLCybSec.fiveteenCybSec",
+                    "Index_AVCL.fiveteen": {
+                        "retType": "Index_AVCL.fiveteen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 15",
+                            "block": "Number as Antivirus CL: 15",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 15"
+                                "fr|block": "Nombre d'Antivirus CL: 15"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 15",
+                                        "text": "Number as Antivirus CL: 15",
                                         "style": []
                                     }
                                 ],
@@ -36971,23 +36953,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.fiveteenCybSec",
+                            "Index_AVCL.fiveteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.FIVETEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.FIVETEEN"
                     },
-                    "Index_AVCLCybSec.sixteenCybSec": {
-                        "retType": "Index_AVCLCybSec.sixteenCybSec",
+                    "Index_AVCL.sixteen": {
+                        "retType": "Index_AVCL.sixteen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 16",
+                            "block": "Number as Antivirus CL: 16",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 16"
+                                "fr|block": "Nombre d'Antivirus CL: 16"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 16",
+                                        "text": "Number as Antivirus CL: 16",
                                         "style": []
                                     }
                                 ],
@@ -36995,23 +36977,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.sixteenCybSec",
+                            "Index_AVCL.sixteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.SIXTEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.SIXTEEN"
                     },
-                    "Index_AVCLCybSec.seventeenCybSec": {
-                        "retType": "Index_AVCLCybSec.seventeenCybSec",
+                    "Index_AVCL.seventeen": {
+                        "retType": "Index_AVCL.seventeen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 17",
+                            "block": "Number as Antivirus CL: 17",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 17"
+                                "fr|block": "Nombre d'Antivirus CL: 17"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 17",
+                                        "text": "Number as Antivirus CL: 17",
                                         "style": []
                                     }
                                 ],
@@ -37019,23 +37001,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.seventeenCybSec",
+                            "Index_AVCL.seventeen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.SEVENTEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.SEVENTEEN"
                     },
-                    "Index_AVCLCybSec.eigthteenCybSec": {
-                        "retType": "Index_AVCLCybSec.eigthteenCybSec",
+                    "Index_AVCL.eigthteen": {
+                        "retType": "Index_AVCL.eigthteen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 18",
+                            "block": "Number as Antivirus CL: 18",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 18"
+                                "fr|block": "Nombre d'Antivirus CL: 18"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 18",
+                                        "text": "Number as Antivirus CL: 18",
                                         "style": []
                                     }
                                 ],
@@ -37043,23 +37025,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.eigthteenCybSec",
+                            "Index_AVCL.eigthteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.EIGTHTEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.EIGTHTEEN"
                     },
-                    "Index_AVCLCybSec.nineteenCybSec": {
-                        "retType": "Index_AVCLCybSec.nineteenCybSec",
+                    "Index_AVCL.nineteen": {
+                        "retType": "Index_AVCL.nineteen",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 19",
+                            "block": "Number as Antivirus CL: 19",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus CLCybSec: 19"
+                                "fr|block": "Nombre d'Antivirus CL: 19"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 19",
+                                        "text": "Number as Antivirus CL: 19",
                                         "style": []
                                     }
                                 ],
@@ -37067,23 +37049,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.nineteenCybSec",
+                            "Index_AVCL.nineteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.NINETEEN_CYB_SEC"
+                        "pyQName": "Index_AVCL.NINETEEN"
                     },
-                    "Index_AVCLCybSec.twentyCybSec": {
-                        "retType": "Index_AVCLCybSec.twentyCybSec",
+                    "Index_AVCL.twenty": {
+                        "retType": "Index_AVCL.twenty",
                         "attributes": {
-                            "block": "Number as Antivirus CLCybSec: 20",
+                            "block": "Number as Antivirus CL: 20",
                             "locs": {
-                                "fr|block": "Nombre d'antivAntivirusrus CLCybSec: 20"
+                                "fr|block": "Nombre d'antivAntivirusrus CL: 20"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus CLCybSec: 20",
+                                        "text": "Number as Antivirus CL: 20",
                                         "style": []
                                     }
                                 ],
@@ -37091,31 +37073,31 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVCLCybSec.twentyCybSec",
+                            "Index_AVCL.twenty",
                             "Number"
                         ],
-                        "pyQName": "Index_AVCLCybSec.TWENTY_CYB_SEC"
+                        "pyQName": "Index_AVCL.TWENTY"
                     },
-                    "Index_AVFLCybSec": {
+                    "Index_AVFL": {
                         "kind": 6,
-                        "retType": "Index_AVFLCybSec",
+                        "retType": "Index_AVFL",
                         "extendsTypes": [
-                            "Index_AVFLCybSec",
+                            "Index_AVFL",
                             "Number"
                         ]
                     },
-                    "Index_AVFLCybSec.oneCybSec": {
-                        "retType": "Index_AVFLCybSec.oneCybSec",
+                    "Index_AVFL.one": {
+                        "retType": "Index_AVFL.one",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 1",
+                            "block": "Number as Antivirus FL: 1",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 1"
+                                "fr|block": "Nombre d'Antivirus FL: 1"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 1",
+                                        "text": "Number as Antivirus FL: 1",
                                         "style": []
                                     }
                                 ],
@@ -37123,23 +37105,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.oneCybSec",
+                            "Index_AVFL.one",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.ONE_CYB_SEC"
+                        "pyQName": "Index_AVFL.ONE"
                     },
-                    "Index_AVFLCybSec.twoCybSec": {
-                        "retType": "Index_AVFLCybSec.twoCybSec",
+                    "Index_AVFL.two": {
+                        "retType": "Index_AVFL.two",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 2",
+                            "block": "Number as Antivirus FL: 2",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 2"
+                                "fr|block": "Nombre d'Antivirus FL: 2"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 2",
+                                        "text": "Number as Antivirus FL: 2",
                                         "style": []
                                     }
                                 ],
@@ -37147,23 +37129,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.twoCybSec",
+                            "Index_AVFL.two",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.TWO_CYB_SEC"
+                        "pyQName": "Index_AVFL.TWO"
                     },
-                    "Index_AVFLCybSec.threeCybSec": {
-                        "retType": "Index_AVFLCybSec.threeCybSec",
+                    "Index_AVFL.three": {
+                        "retType": "Index_AVFL.three",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 3",
+                            "block": "Number as Antivirus FL: 3",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 3"
+                                "fr|block": "Nombre d'Antivirus FL: 3"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 3",
+                                        "text": "Number as Antivirus FL: 3",
                                         "style": []
                                     }
                                 ],
@@ -37171,23 +37153,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.threeCybSec",
+                            "Index_AVFL.three",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.THREE_CYB_SEC"
+                        "pyQName": "Index_AVFL.THREE"
                     },
-                    "Index_AVFLCybSec.fourCybSec": {
-                        "retType": "Index_AVFLCybSec.fourCybSec",
+                    "Index_AVFL.four": {
+                        "retType": "Index_AVFL.four",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 4",
+                            "block": "Number as Antivirus FL: 4",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 4"
+                                "fr|block": "Nombre d'Antivirus FL: 4"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 4",
+                                        "text": "Number as Antivirus FL: 4",
                                         "style": []
                                     }
                                 ],
@@ -37195,15 +37177,15 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.fourCybSec",
+                            "Index_AVFL.four",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.FOUR_CYB_SEC"
+                        "pyQName": "Index_AVFL.FOUR"
                     },
-                    "Index_AVFLCybSec.fiveCybSec": {
-                        "retType": "Index_AVFLCybSec.fiveCybSec",
+                    "Index_AVFL.five": {
+                        "retType": "Index_AVFL.five",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 5",
+                            "block": "Number as Antivirus FL: 5",
                             "locs": {
                                 "fr|block": "Nombre d'Antivirus Fl: 5"
                             },
@@ -37211,7 +37193,7 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 5",
+                                        "text": "Number as Antivirus FL: 5",
                                         "style": []
                                     }
                                 ],
@@ -37219,23 +37201,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.fiveCybSec",
+                            "Index_AVFL.five",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.FIVE_CYB_SEC"
+                        "pyQName": "Index_AVFL.FIVE"
                     },
-                    "Index_AVFLCybSec.sixCybSec": {
-                        "retType": "Index_AVFLCybSec.sixCybSec",
+                    "Index_AVFL.six": {
+                        "retType": "Index_AVFL.six",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 6",
+                            "block": "Number as Antivirus FL: 6",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 6"
+                                "fr|block": "Nombre d'Antivirus FL: 6"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 6",
+                                        "text": "Number as Antivirus FL: 6",
                                         "style": []
                                     }
                                 ],
@@ -37243,23 +37225,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.sixCybSec",
+                            "Index_AVFL.six",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.SIX_CYB_SEC"
+                        "pyQName": "Index_AVFL.SIX"
                     },
-                    "Index_AVFLCybSec.sevenCybSec": {
-                        "retType": "Index_AVFLCybSec.sevenCybSec",
+                    "Index_AVFL.seven": {
+                        "retType": "Index_AVFL.seven",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 7",
+                            "block": "Number as Antivirus FL: 7",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 7"
+                                "fr|block": "Nombre d'Antivirus FL: 7"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 7",
+                                        "text": "Number as Antivirus FL: 7",
                                         "style": []
                                     }
                                 ],
@@ -37267,23 +37249,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.sevenCybSec",
+                            "Index_AVFL.seven",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.SEVEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.SEVEN"
                     },
-                    "Index_AVFLCybSec.eightCybSec": {
-                        "retType": "Index_AVFLCybSec.eightCybSec",
+                    "Index_AVFL.eight": {
+                        "retType": "Index_AVFL.eight",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 8",
+                            "block": "Number as Antivirus FL: 8",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 8"
+                                "fr|block": "Nombre d'Antivirus FL: 8"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 8",
+                                        "text": "Number as Antivirus FL: 8",
                                         "style": []
                                     }
                                 ],
@@ -37291,23 +37273,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.eightCybSec",
+                            "Index_AVFL.eight",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.EIGHT_CYB_SEC"
+                        "pyQName": "Index_AVFL.EIGHT"
                     },
-                    "Index_AVFLCybSec.nineCybSec": {
-                        "retType": "Index_AVFLCybSec.nineCybSec",
+                    "Index_AVFL.nine": {
+                        "retType": "Index_AVFL.nine",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 9",
+                            "block": "Number as Antivirus FL: 9",
                             "locs": {
-                                "fr|block": "Nombre d'antivAntivirusirus FLCybSec: 9"
+                                "fr|block": "Nombre d'antivAntivirusirus FL: 9"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 9",
+                                        "text": "Number as Antivirus FL: 9",
                                         "style": []
                                     }
                                 ],
@@ -37315,23 +37297,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.nineCybSec",
+                            "Index_AVFL.nine",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.NINE_CYB_SEC"
+                        "pyQName": "Index_AVFL.NINE"
                     },
-                    "Index_AVFLCybSec.tenCybSec": {
-                        "retType": "Index_AVFLCybSec.tenCybSec",
+                    "Index_AVFL.ten": {
+                        "retType": "Index_AVFL.ten",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 10",
+                            "block": "Number as Antivirus FL: 10",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 10"
+                                "fr|block": "Nombre d'Antivirus FL: 10"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 10",
+                                        "text": "Number as Antivirus FL: 10",
                                         "style": []
                                     }
                                 ],
@@ -37339,23 +37321,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.tenCybSec",
+                            "Index_AVFL.ten",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.TEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.TEN"
                     },
-                    "Index_AVFLCybSec.elevenCybSec": {
-                        "retType": "Index_AVFLCybSec.elevenCybSec",
+                    "Index_AVFL.eleven": {
+                        "retType": "Index_AVFL.eleven",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 11",
+                            "block": "Number as Antivirus FL: 11",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 11"
+                                "fr|block": "Nombre d'Antivirus FL: 11"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 11",
+                                        "text": "Number as Antivirus FL: 11",
                                         "style": []
                                     }
                                 ],
@@ -37363,23 +37345,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.elevenCybSec",
+                            "Index_AVFL.eleven",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.ELEVEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.ELEVEN"
                     },
-                    "Index_AVFLCybSec.twelveCybSec": {
-                        "retType": "Index_AVFLCybSec.twelveCybSec",
+                    "Index_AVFL.twelve": {
+                        "retType": "Index_AVFL.twelve",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 12",
+                            "block": "Number as Antivirus FL: 12",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 12"
+                                "fr|block": "Nombre d'Antivirus FL: 12"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 12",
+                                        "text": "Number as Antivirus FL: 12",
                                         "style": []
                                     }
                                 ],
@@ -37387,23 +37369,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.twelveCybSec",
+                            "Index_AVFL.twelve",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.TWELVE_CYB_SEC"
+                        "pyQName": "Index_AVFL.TWELVE"
                     },
-                    "Index_AVFLCybSec.thirteenCybSec": {
-                        "retType": "Index_AVFLCybSec.thirteenCybSec",
+                    "Index_AVFL.thirteen": {
+                        "retType": "Index_AVFL.thirteen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 13",
+                            "block": "Number as Antivirus FL: 13",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 13"
+                                "fr|block": "Nombre d'Antivirus FL: 13"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 13",
+                                        "text": "Number as Antivirus FL: 13",
                                         "style": []
                                     }
                                 ],
@@ -37411,15 +37393,15 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.thirteenCybSec",
+                            "Index_AVFL.thirteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.THIRTEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.THIRTEEN"
                     },
-                    "Index_AVFLCybSec.fourteenCybSec": {
-                        "retType": "Index_AVFLCybSec.fourteenCybSec",
+                    "Index_AVFL.fourteen": {
+                        "retType": "Index_AVFL.fourteen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 14",
+                            "block": "Number as Antivirus FL: 14",
                             "locs": {
                                 "fr|block": "Nombre d'Antivirus Fl: 14"
                             },
@@ -37427,7 +37409,7 @@ var pxtTargetBundle = {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 14",
+                                        "text": "Number as Antivirus FL: 14",
                                         "style": []
                                     }
                                 ],
@@ -37435,23 +37417,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.fourteenCybSec",
+                            "Index_AVFL.fourteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.FOURTEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.FOURTEEN"
                     },
-                    "Index_AVFLCybSec.fiveteenCybSec": {
-                        "retType": "Index_AVFLCybSec.fiveteenCybSec",
+                    "Index_AVFL.fiveteen": {
+                        "retType": "Index_AVFL.fiveteen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 15",
+                            "block": "Number as Antivirus FL: 15",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 15"
+                                "fr|block": "Nombre d'Antivirus FL: 15"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 15",
+                                        "text": "Number as Antivirus FL: 15",
                                         "style": []
                                     }
                                 ],
@@ -37459,23 +37441,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.fiveteenCybSec",
+                            "Index_AVFL.fiveteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.FIVETEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.FIVETEEN"
                     },
-                    "Index_AVFLCybSec.sixteenCybSec": {
-                        "retType": "Index_AVFLCybSec.sixteenCybSec",
+                    "Index_AVFL.sixteen": {
+                        "retType": "Index_AVFL.sixteen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 16",
+                            "block": "Number as Antivirus FL: 16",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 16"
+                                "fr|block": "Nombre d'Antivirus FL: 16"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 16",
+                                        "text": "Number as Antivirus FL: 16",
                                         "style": []
                                     }
                                 ],
@@ -37483,23 +37465,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.sixteenCybSec",
+                            "Index_AVFL.sixteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.SIXTEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.SIXTEEN"
                     },
-                    "Index_AVFLCybSec.seventeenCybSec": {
-                        "retType": "Index_AVFLCybSec.seventeenCybSec",
+                    "Index_AVFL.seventeen": {
+                        "retType": "Index_AVFL.seventeen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 17",
+                            "block": "Number as Antivirus FL: 17",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 17"
+                                "fr|block": "Nombre d'Antivirus FL: 17"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 17",
+                                        "text": "Number as Antivirus FL: 17",
                                         "style": []
                                     }
                                 ],
@@ -37507,23 +37489,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.seventeenCybSec",
+                            "Index_AVFL.seventeen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.SEVENTEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.SEVENTEEN"
                     },
-                    "Index_AVFLCybSec.eigthteenCybSec": {
-                        "retType": "Index_AVFLCybSec.eigthteenCybSec",
+                    "Index_AVFL.eigthteen": {
+                        "retType": "Index_AVFL.eigthteen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 18",
+                            "block": "Number as Antivirus FL: 18",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 18"
+                                "fr|block": "Nombre d'Antivirus FL: 18"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 18",
+                                        "text": "Number as Antivirus FL: 18",
                                         "style": []
                                     }
                                 ],
@@ -37531,23 +37513,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.eigthteenCybSec",
+                            "Index_AVFL.eigthteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.EIGTHTEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.EIGTHTEEN"
                     },
-                    "Index_AVFLCybSec.nineteenCybSec": {
-                        "retType": "Index_AVFLCybSec.nineteenCybSec",
+                    "Index_AVFL.nineteen": {
+                        "retType": "Index_AVFL.nineteen",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 19",
+                            "block": "Number as Antivirus FL: 19",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 19"
+                                "fr|block": "Nombre d'Antivirus FL: 19"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 19",
+                                        "text": "Number as Antivirus FL: 19",
                                         "style": []
                                     }
                                 ],
@@ -37555,23 +37537,23 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.nineteenCybSec",
+                            "Index_AVFL.nineteen",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.NINETEEN_CYB_SEC"
+                        "pyQName": "Index_AVFL.NINETEEN"
                     },
-                    "Index_AVFLCybSec.twentyCybSec": {
-                        "retType": "Index_AVFLCybSec.twentyCybSec",
+                    "Index_AVFL.twenty": {
+                        "retType": "Index_AVFL.twenty",
                         "attributes": {
-                            "block": "Number as Antivirus FLCybSec: 20",
+                            "block": "Number as Antivirus FL: 20",
                             "locs": {
-                                "fr|block": "Nombre d'Antivirus FLCybSec: 20"
+                                "fr|block": "Nombre d'Antivirus FL: 20"
                             },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": "Number as Antivirus FLCybSec: 20",
+                                        "text": "Number as Antivirus FL: 20",
                                         "style": []
                                     }
                                 ],
@@ -37579,10 +37561,10 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_AVFLCybSec.twentyCybSec",
+                            "Index_AVFL.twenty",
                             "Number"
                         ],
-                        "pyQName": "Index_AVFLCybSec.TWENTY_CYB_SEC"
+                        "pyQName": "Index_AVFL.TWENTY"
                     },
                     "Index_H": {
                         "kind": 6,
@@ -37592,8 +37574,8 @@ var pxtTargetBundle = {
                             "Number"
                         ]
                     },
-                    "Index_H.oneCybSec": {
-                        "retType": "Index_H.oneCybSec",
+                    "Index_H.one": {
+                        "retType": "Index_H.one",
                         "attributes": {
                             "block": "Red 🔴🎩",
                             "locs": {
@@ -37611,13 +37593,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_H.oneCybSec",
+                            "Index_H.one",
                             "Number"
                         ],
-                        "pyQName": "Index_H.ONE_CYB_SEC"
+                        "pyQName": "Index_H.ONE"
                     },
-                    "Index_H.twoCybSec": {
-                        "retType": "Index_H.twoCybSec",
+                    "Index_H.two": {
+                        "retType": "Index_H.two",
                         "attributes": {
                             "block": "Black ⚫🎩",
                             "locs": {
@@ -37635,13 +37617,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_H.twoCybSec",
+                            "Index_H.two",
                             "Number"
                         ],
-                        "pyQName": "Index_H.TWO_CYB_SEC"
+                        "pyQName": "Index_H.TWO"
                     },
-                    "Index_H.threeCybSec": {
-                        "retType": "Index_H.threeCybSec",
+                    "Index_H.three": {
+                        "retType": "Index_H.three",
                         "attributes": {
                             "block": "White ⚪🎩",
                             "locs": {
@@ -37659,13 +37641,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_H.threeCybSec",
+                            "Index_H.three",
                             "Number"
                         ],
-                        "pyQName": "Index_H.THREE_CYB_SEC"
+                        "pyQName": "Index_H.THREE"
                     },
-                    "Index_H.fourCybSec": {
-                        "retType": "Index_H.fourCybSec",
+                    "Index_H.four": {
+                        "retType": "Index_H.four",
                         "attributes": {
                             "block": "Blue 🟣🎩",
                             "locs": {
@@ -37683,10 +37665,10 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_H.fourCybSec",
+                            "Index_H.four",
                             "Number"
                         ],
-                        "pyQName": "Index_H.FOUR_CYB_SEC"
+                        "pyQName": "Index_H.FOUR"
                     },
                     "Index_Encr": {
                         "kind": 6,
@@ -37696,8 +37678,8 @@ var pxtTargetBundle = {
                             "Number"
                         ]
                     },
-                    "Index_Encr.oneCybSec": {
-                        "retType": "Index_Encr.oneCybSec",
+                    "Index_Encr.one": {
+                        "retType": "Index_Encr.one",
                         "attributes": {
                             "block": "Morse-Code",
                             "locs": {
@@ -37715,13 +37697,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_Encr.oneCybSec",
+                            "Index_Encr.one",
                             "Number"
                         ],
-                        "pyQName": "Index_Encr.ONE_CYB_SEC"
+                        "pyQName": "Index_Encr.ONE"
                     },
-                    "Index_Encr.twoCybSec": {
-                        "retType": "Index_Encr.twoCybSec",
+                    "Index_Encr.two": {
+                        "retType": "Index_Encr.two",
                         "attributes": {
                             "block": "Cypher",
                             "locs": {
@@ -37739,13 +37721,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_Encr.twoCybSec",
+                            "Index_Encr.two",
                             "Number"
                         ],
-                        "pyQName": "Index_Encr.TWO_CYB_SEC"
+                        "pyQName": "Index_Encr.TWO"
                     },
-                    "Index_Encr.threeCybSec": {
-                        "retType": "Index_Encr.threeCybSec",
+                    "Index_Encr.three": {
+                        "retType": "Index_Encr.three",
                         "attributes": {
                             "block": "Cyberville-Cypher",
                             "locs": {
@@ -37763,13 +37745,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_Encr.threeCybSec",
+                            "Index_Encr.three",
                             "Number"
                         ],
-                        "pyQName": "Index_Encr.THREE_CYB_SEC"
+                        "pyQName": "Index_Encr.THREE"
                     },
-                    "Index_Encr.fourCybSec": {
-                        "retType": "Index_Encr.fourCybSec",
+                    "Index_Encr.four": {
+                        "retType": "Index_Encr.four",
                         "attributes": {
                             "block": "Caesar_Cypher",
                             "locs": {
@@ -37787,13 +37769,13 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_Encr.fourCybSec",
+                            "Index_Encr.four",
                             "Number"
                         ],
-                        "pyQName": "Index_Encr.FOUR_CYB_SEC"
+                        "pyQName": "Index_Encr.FOUR"
                     },
-                    "Index_Encr.fiveCybSec": {
-                        "retType": "Index_Encr.fiveCybSec",
+                    "Index_Encr.five": {
+                        "retType": "Index_Encr.five",
                         "attributes": {
                             "block": "Number_Grid",
                             "locs": {
@@ -37811,10 +37793,10 @@ var pxtTargetBundle = {
                             }
                         },
                         "extendsTypes": [
-                            "Index_Encr.fiveCybSec",
+                            "Index_Encr.five",
                             "Number"
                         ],
-                        "pyQName": "Index_Encr.FIVE_CYB_SEC"
+                        "pyQName": "Index_Encr.FIVE"
                     },
                     "bBoard_Motor": {
                         "kind": 5,
@@ -58246,7 +58228,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "a56c04c7f77d50c765825383d1b0fab7ecb7608921a46b1f6548dc385faede52"
+            "sha": "989f6d9fb6cd9cf425076f9a60877cf2350139c5d37899e09e80b81e18b81882"
         },
         "libs/radio": {
             "apis": {
@@ -59662,7 +59644,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "38793443aae0c806d479c249fad1d1aeba6c04ea57894487f092f64c1d4f8a53"
+            "sha": "f53f78530ea84a4f9442b2e905c10cc9e93b24327717789d604c79b132832319"
         },
         "libs/devices": {
             "apis": {
@@ -61709,7 +61691,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "da0f3b00083846e75ddf91b7b8e4f13cb605401e4f59223955cb7713ea8f18c9"
+            "sha": "deecf4aa051eb6cc06fa461ab16ef06e05a13bd41cf396827e741280794d1222"
         },
         "libs/bluetooth": {
             "apis": {
@@ -62670,7 +62652,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "6935d2c8de8210c505af53f53f729892987ebdfecde18760d02b286c0b15585c"
+            "sha": "26048cd312f61885fd06bcf7f3c63464ea3f9460532ece33bb8964af552c78ca"
         },
         "libs/servo": {
             "apis": {
@@ -63312,7 +63294,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "221dc95c0d4434ed85c8989c61ab17609921afb9769eb957bb62861c4c94f483"
+            "sha": "2a08fdf515593b6eacd2d3afebb66b7cf98a332fa0e02c286142aeaeb705f040"
         },
         "libs/radio-broadcast": {
             "apis": {
@@ -64871,7 +64853,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "955c53388a43a0adb5471dc3ec086b40751d1fbb3e391caff07aa6aa4146c5eb"
+            "sha": "a04cc4d7beee74b5d7edb163b94cffd4f6cf408600bff07c5ba13f8779dd7188"
         },
         "libs/microphone": {
             "apis": {
@@ -65149,7 +65131,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "99710689ba86115051492c61019da72182f321af7c3adbf96cb1e1c238d374a4"
+            "sha": "027271eb7a1b92954663ba1a486d87c68716fc5463fec4bd57357b226c159293"
         },
         "libs/settings": {
             "apis": {
@@ -65455,7 +65437,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "fdb61931cf667c1eb5c8be0a7d9d3d7bed0ae3ed23e3626aacc1d49d218742ee"
+            "sha": "69905466cce232e096d322e92f1d106bf1c06055e4819bd621327efd74594d48"
         },
         "libs/flashlog": {
             "apis": {
@@ -65720,7 +65702,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "dca0ea769a2da46a74c43350da53ce768c32067cac11f2c3ebf35fe144fa5627"
+            "sha": "0285b5a2e616fa0c47058913034b7c223838608657a82f2af1efc2d14d8e3855"
         },
         "libs/datalogger": {
             "apis": {
@@ -66434,7 +66416,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "35f732fa7968abd0fb66413e8f822290b98248eefa00d4060b5449d4a3bc4705"
+            "sha": "8d001b0c56cb4929bf4e38998f4429c2a409447573f919708ab4448526555bfe"
         },
         "libs/blocksprj": {
             "apis": {
@@ -68121,7 +68103,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "36d31148b9bd681fca271cb5dac2336681e5ede1776cdceb643216eee2abf229"
+            "sha": "c11c8c697cb444019d087968d2e8ca56f975862b88b30ed52a609274ff8c505f"
         },
         "libs/bluetoothprj": {
             "apis": {
@@ -69353,7 +69335,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "230abb875d05b5790d1cc79828c2c7232bb80b554b91590a75a7f4dcd3b32e46"
+            "sha": "abf70e8c31c50e867ef254cf13bf7e614610b37ecbe26a21f852d0d9337be845"
         },
         "libs/tsprj": {
             "apis": {
@@ -71040,7 +71022,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "8d81157c21d925b46cd22e7a2d8b6b5147ecbe3999eeebce363b6db1808d4409"
+            "sha": "57bcc31c39b78bbaaf3a293d3e7128cd225776bb0d401314522757b12983872c"
         }
     }
 }

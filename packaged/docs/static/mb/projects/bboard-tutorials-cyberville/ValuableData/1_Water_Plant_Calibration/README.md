@@ -5,15 +5,15 @@ _Please read the activity carefully and follow the steps provided. In the Code E
 # ~
 ---
 
-# 1_VALUABLE DATA
+# 1_WHAT VALUABLE DATA IS?
 
 __Valuable Data__ is a really important topic in Cybersecurity. It's all about keeping and obtaining information safe and secure on a network. It's not just about digital data, but also about making sure social, mental, and technological security for you, your parents, and your __Cyberville__. It's so important to know where the information is stored, what the source is, how to find it, and try to protect it from unauthorized access and misuse. We're here to help you with all of that!
 
 Let's learn together about some of the most common cyber attacks on our __*Valuable Data*__, for example __Phishing__, __Malware__, __Ransomware__, and how to protect us with __Encryption__ and others. Once we've done that, we'll solve the Second Mission, "Polluted Water - Water Treatment Plant Under Attack!"
 
-As a __Cyberville__'s citizen you need to know that __🧪 Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪 Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
+As a __Cyberville__'s citizen you need to know that __🧪Chlorine__ is commonly used as a disinfectant in water treatment to kill bacteria and other pathogens. The concentration of __🧪Chlorine__ typically ranges from 0.2 to 4 milligrams per liter (mg/L) in treated drinking water.
 
-__🧪 Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪 Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
+__🧪Fluoride__ is often added to drinking water to prevent tooth decay. The optimal concentration of __🧪Fluoride__ in drinking water is usually around 0.7 to 1.2 mg/L, although this can vary depending on local regulations and recommendations.
 
 The ratio of __🧪 Chlorine__ to __🧪 Fluoride__ would then depend on the specific concentrations used in the treatment process, and it's not necessarily a fixed __ratio__. In some cases, there might not even be a direct correlation between the two as they serve different purposes in water treatment.
 
@@ -21,7 +21,7 @@ The ratio of __🧪Chlorine__ to __🧪Fluoride__ in treated water can vary depe
 
 🧑‍🎓 Students and 🧑‍🏫 teachers, we just wanted to remind you that it's important to choose a __*reliable, secure, safe, and protected source of information*__ on the __Cyberville__ network, to avoid exposing your __Valuable Data__. 
 
-To develop the next activities:
+To develop the next tasks:
 
 | Activity Name | Color Hat | Case Study|
 | :------------------   | :---: | :----------------- |
@@ -33,17 +33,14 @@ To develop the next activities:
 <br>
 The 📳 M5 Module will provide different __Websites__ selected by the 🧑‍🏫 teacher, which are based on hacker challenges with different __Color 🎩 Hats__ for each activity. It's up to you to choose the most reliable, secure, logical, and intuitive data to get the correct results. Be aware that not all information is credible; it could be infected or may require analysis. But don't worry! It should always be protected. You may fail in the attempt, but that's part of the fun!
 
-__*Have fun!*__
 
-
-## Activity
+## TASK 1: Water Plant Calibration!
 __All right, let's get started *Calibrating* our levels bar on our plant!__
 
 We've made it really easy for you to recreate the awesome environment from Mission 2 while learning about Cybersecurity. All you have to do is:
 
-__1.__ Download [__👉 Here__](https://drive.google.com/file/d/1ldS8fqcVLhBBQ_IIyVCmBPPUuvGLlPEw/view?usp=drive_link), print and cover the __b.board__ for Mission 2.  
+__1.__ Download [__👉 Here__](https://drive.google.com/file/d/1CIb0Py6PW8po8vg_LG9Bqw2y229TC2ut/view?usp=sharing), print and cover the __b.board__ for Mission Polluted Water.  
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true" alt="M2" title="Mission 2 in M5Core2" width="450" />
-    ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true "Cover")
 
 ![Cover for M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/Cover_Gif_M2.gif?raw=true "Cover for M2.")
 
@@ -95,10 +92,10 @@ FL_Strip = Full_Strip.range(0, 10)
 </br>
 </br>
 
----
----
+<!-- 
+
 ### Main Website preview from M5 Webserver - Activities Valuable Data
 
 ![Main](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Webs_png/Web_Main_EN.png?raw=true "Main")
----
----
+
+-->
