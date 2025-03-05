@@ -13,7 +13,11 @@ Security Guards (Firewalls & Antivirus) – They act like bodyguards, keeping th
 Multi-factor authentication (or 2FA) - Require two or more pieces of evidence to access.
 Access control (Approval) - Enable to manage who is autorized to access adata and resources.
 
+---
+
 #### TASK 1: Confidentiality
+Let's start! 
+
 This confidentiality task is divided into two parts, where we’ll explore how to protect our information using key cybersecurity concepts like 🔑 Passwords, 🔐 Encryption, and 🪪 Multifactor Authentication (MFA).
 
 In the first part, 🧑‍🎓 students will connect to Cyberville’s 📳 network, find their assigned 📮 IP addresses, and complete their Cyberville 🎫 ID cards. In the second part, they’ll randomly draw a secret 🎟️ ID ticket from a bag and use their coding skills to find a classmate with the matching identification code and second authentication factor (MFA). Get ready to learn, connect, and have fun! 🤫.  
@@ -26,14 +30,15 @@ __1.__ Load __Mission Fake Parking ID__ into 📳 M5 module. You can see this [_
 
 __2.__ Press the first button __GO!!!__, then guide the 🧑‍🎓 students for the activity. 
 
+![M5Act9](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/M5Act9.png?raw=true "M5Act9")  
+
 __3.__ Share the current __Access Point name__ created by the  📳 M5 module with the classroom and the password if it is the case. For example:  AP name 📳: __Cyberville #1__ 
 
 __4.__ In order to involve the student in the __Confidentialy__ concept, 🧑‍🏫 theachers need to setup a 🔑 Password. Remember that there are three differents ways to setup passwords on 📳 M5 module for __Cyberville__ network it was shown on __Activity 7 Task Connecting__.
 
 __5.__ Once the password is set by the 🧑‍🏫 teacher, for example:
 Password 🔑: __BL_Cybr1__ *(if you are using default one)* 
-must find the way to securely share the Password  with the  🧑‍🎓 students doing a __broken phone game__ or __ecryption game__ like this:
-![PrintCriptografyConfidential] https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/PrintCriptografyConfidential.png
+must find the way to securely share the Password  with the  🧑‍🎓 students doing a __broken phone game__ or __Encryption game__ like this: 👉[Encryption Game](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/PrintCriptografyConfidential.png)
 
 ---
 ### 🧑‍🎓 __Students:__

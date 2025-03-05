@@ -14,7 +14,7 @@ __1.__ Load __Mission Weird Lights__ on the ðŸ“³ M5 module. You can view this [ð
 
 __2.__ Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
 
-![Act_M1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/Mission1_EN.png?raw=true "Activity Mission 1")
+![M5Act10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M5Act8.png?raw=true "M5Act10")  
 
 __3.__ Share the current __Access Point name__ created by the M5 module with the classroom and the password, if one has been set. For example:  
 

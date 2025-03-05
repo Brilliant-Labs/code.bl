@@ -14,7 +14,7 @@ __1.__ Load __Mission Water Polluted__ into 📳 M5 module. You can see this [�
 
 __2.__ Press the first button __GO!!!__, then select the friend ⚫ 🎩 __Black Hat__ that you want to use as a challenge for your 🧑‍🎓 students. 
 
-![M2](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M2.png?raw=true "Mission 2")  
+![M5Act8](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/2_Get_Reliable_Information/M5Act8.png?raw=true "M5Act8")   
 
 __3.__ Share the current __Access Point name__ created by the 📳 M5 module with the classroom and the password if it is the case. For example: 
 

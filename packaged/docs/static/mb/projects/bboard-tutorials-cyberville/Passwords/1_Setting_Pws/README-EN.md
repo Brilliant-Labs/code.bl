@@ -4,7 +4,7 @@ A strong password is usually long and complex, which makes it much harder for an
 
 The most common passwords attack are __Brute Force, Phishing, Dictionary Attack, Credential Stuffing__.
 
-Oh, yes! We’ve all been there, right? The __Cyberville__ 🏫 'Lincoln High School' 2️⃣ has been hacked, and that’s why you have to solve __Mission 1__. It can happen to anyone, and we totally get it if you're feeling a little overwhelmed right now. But don't you worry! There are ways you can protect yourself and our __Cyberville__ School from future attacks.
+Oh, yes! We’ve all been there, right? The __Cyberville__ 🏫 'Lincoln High School' 2️⃣ has been hacked, and that’s why you have to solve __Mission Weird Lights__. It can happen to anyone, and we totally get it if you're feeling a little overwhelmed right now. But don't you worry! There are ways you can protect yourself and our __Cyberville__ School from future attacks.
 
 Let's learn together about some of the most common attacks on our passwords. Once we've done that, we'll solve the first mission, "Weird Lights - School Under Attack!"
 
@@ -15,7 +15,7 @@ Let's start!
 
 We've made it really easy for you to recreate the awesome environment from Mission Weird Lights while learning about cybersecurity. All you have to do is:
 
-__1.__ Download [__👉 Here__](https://drive.google.com/file/d/1u48lccLm7I4rxf287-CPFnYVhJqHE8gb/view?usp=drive_link), print and cover the __b.Board__ for Mission Weird Lights.
+__1.__ Download [__👉 Here__](https://drive.google.com/file/d/1ZSzu_0UeyHQE4gBJYJ9oBOPWgcrouhkD/view?usp=sharing), print and cover the __b.Board__ for Mission Weird Lights.
 
 ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/1_Setting_Pws/M1_Cover.png?raw=true "Cover")
 

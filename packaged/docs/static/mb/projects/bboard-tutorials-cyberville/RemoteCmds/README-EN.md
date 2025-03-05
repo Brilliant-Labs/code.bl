@@ -1,5 +1,12 @@
 ### REMOTE COMMANDS - Activity 9
 
+---
+##### ~avatar
+Intro video about Cybersecurity Level 2 and __Cyberville__
+https://www.youtube.com/watch?v=aapUlOM0EAo
+##### ~
+---
+
 Welcome to __Activity 9: Remote Commands!__ This activity takes place within the framework of __Mission Fake Parking ID__, where you'll learn the three main principles of cybersecurity, known as the CIA Triad! The __CIA Triad__ stands for Confidentiality, Integrity, and Availability. These three pillars are the foundation of keeping information safe.
 When using __remote commands__, vulnerabilities can arise due to weak security measures, improper authentication, or lack of encryption. Some key risks could be: unsecured communication, weak authentication, command injection, privilege escalation,replay attacks, and denial of Service.
 In __Mission Fake Parking ID__, your challenge will be to control a parking barrier __remotely__ and establish a robust way to keep your data safe, reducing the risk of it being stolen even using remote commands. To succeed, you must complete various tasks and solve different tasks.
