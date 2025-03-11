@@ -60,7 +60,11 @@ __2.__ It is crucial for the students to know the 📮 IP address of the __b.Boa
 Teachers will print pairs of tickets from [__⬇️ here__](https://drive.google.com/file/d/19U47aArl-HJ-QXbhx-lrOQb27WTFAI0G/view?usp=sharing), as shown below. Each ticket contains the same Authentication Code and Multifactor Code. These tickets are confidential for each b.Board in the classroom. The teacher will place all secret 🎟️ ID tickets into a bag so that students can randomly draw one. Teachers must ensure that students do not share this information with anyone.
 
 ### __ 🎟️ Tickets__
-![Match](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/Match.png?raw=true "Match").
+![Match](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/Match.png?raw=true "Match")
+
+🧑‍🏫 Teachers will see the clients connected to the Cyberville network on the M5 module screen. This allows them to share the available 📮 IP addresses with 🧑‍🎓 students, helping them identify their potential partners for matching.
+
+![Clients](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/Clients.png?raw=true "Clients")
 
 ---
 
