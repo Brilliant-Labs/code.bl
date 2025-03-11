@@ -38,7 +38,7 @@ __4.__ In order to involve the student in the __Confidentialy__ concept, 🧑‍
 
 __5.__ Once the password is set by the 🧑‍🏫 teacher, for example:
 Password 🔑: __BL_Cybr1__ *(if you are using default one)* 
-must find the way to securely share the Password  with the  🧑‍🎓 students doing a __broken phone game__ or __Encryption game__ like this: 👉[Encryption Game](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/PrintCriptografyConfidential.png)
+must find the way to securely share the Password  with the  🧑‍🎓 students doing a __broken phone game__ or __Encryption game__ like this: [__👉 Encryption Game__](https://drive.google.com/file/d/1KjibW5lbxdzsJBPX9-FPsGgk9ciXYbkl/view?usp=sharing)
 
 ---
 ### 🧑‍🎓 __Students:__
@@ -59,12 +59,13 @@ __2.__ It is crucial for the students to know the 📮 IP address of the __b.Boa
 ### __🧑‍🏫 Teachers:__
 Teachers will print pairs of tickets from [__⬇️ here__](https://drive.google.com/file/d/19U47aArl-HJ-QXbhx-lrOQb27WTFAI0G/view?usp=sharing), as shown below. Each ticket contains the same Authentication Code and Multifactor Code. These tickets are confidential for each b.Board in the classroom. The teacher will place all secret 🎟️ ID tickets into a bag so that students can randomly draw one. Teachers must ensure that students do not share this information with anyone.
 
+### __ 🎟️ Tickets__
 ![Match](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/1_Confidentiality/Match.png?raw=true "Match").
 
 ---
 
 ### __🧑‍🎓 Students:__
-__1.__ Once the students are connected to the __Cyberville__ network and have their 🎟️ ID secret tickets, they must be able to hear messages from the network using the 🧩 block ``||set to hear any MSG||``. They will see a "hi" word on the micro:bit screen, which means they are ready to listen to you through the __Cyberville__ network. The messages go and back will be published to the Window Console Device.
+__1.__ Once the students are connected to the __Cyberville__ network and have their 🎟️ ID secret tickets, they must be able to hear messages from the network using the 🧩 block ``||set to hear any MSG||``. They will see a "hi" word on the micro:bit screen, which means they are ready to listen to you through the __Cyberville__ network in a public way. The messages go and back will be published to the Window Console Device.
 
 __2.__ Students will send a welcome message to ALL! in the network using the 🧩 block ``||MSG to everyone||``, be aware that this message is __NOT CONFIDENTIAL__. Keep an eye on the Window Console Device to see the information is being published on the __Cyberville__ network.
 

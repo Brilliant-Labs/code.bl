@@ -14,7 +14,7 @@ __1.__ Load __Mission Weird Lights__ on the 📳 M5 module. You can view this [�
 
 __2.__ Press the first button __GO!!!__, then select the __code protection sequence A,B,C,or D__ you want to use as a challenge for your students. 
 
-![M5Act10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M5Act8.png?raw=true "M5Act10")  
+![M5Act10](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M5Act10.png?raw=true "M5Act10")  
 
 __3.__ Share the current __Access Point name__ created by the M5 module with the classroom and the password, if one has been set. For example:  
 
@@ -25,7 +25,7 @@ __4.__ Finally, select one of the four options (A, B, C or D) on the screen. You
 
 ![M1_Selected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/M1Selected_EN.png?raw=true "Mission Selected")  
   
-Help the students 🧑‍🎓 with the __`File Attack Methods`__ [__👉 Here__](https://drive.google.com/file/d/1odDIwYkuC88d0alDoKA43cvtOF87OxG2/view?usp=sharing) to succeed in this activity.
+Help the students 🧑‍🎓 with the __`File Attack Methods`__ [__👉 Here__](https://drive.google.com/file/d/1-3ZPRzpDkgGmVSEik0hyGoPHzpaL4n5F/view?usp=sharing) to succeed in this activity.
 
 ### 🧑‍🎓 __Students:__
 
@@ -104,6 +104,7 @@ You can download the .hex file for this activity by clicking [__⬇️ Here__](h
 Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 -->
+
 You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
 
 ```javascript
@@ -128,8 +129,6 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-_**`Please do not forget to set up the correct name and password for the access point.`**_
-
 This code example to evaluate your code sequence and test it.
 
 ```blocks
@@ -153,6 +152,8 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 ```
+
+_**`Please do not forget to set up the correct name and password for the access point.`**_
 
 <!--
 # ~avatar
