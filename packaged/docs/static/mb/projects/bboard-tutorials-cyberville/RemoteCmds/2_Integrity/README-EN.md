@@ -76,6 +76,7 @@ You can also cut and paste the following code into the 📜 JavaScript code area
 Agree with your match partner wich the side your are going to be part, *Control B.Board* or *Device b.Board*
 
 ##### ``|>_|`` *Side Control b.Board*
+
 ```javascript
 input.onButtonPressed(Button.A, function () {
     Cybersec.increase()
@@ -97,7 +98,9 @@ basic.forever(function () {
     Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), "192.168.4.?")
 })
 ```
+
 ##### ``|>_|`` *Side Device b.Board*
+
 ```javascript
 input.onButtonPressed(Button.A, function () {
     Cybersec.increase()
