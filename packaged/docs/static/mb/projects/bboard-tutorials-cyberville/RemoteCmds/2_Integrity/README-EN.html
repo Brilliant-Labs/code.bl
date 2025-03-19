@@ -1680,7 +1680,105 @@
 					</button>
 					
     <div class="ui text">
-        <p>😎 Coming soon!</p>
+        <h3 id="integrity">INTEGRITY</h3><p>Imagine you write a letter to your friend, sharing a secret plan for a game. Now, imagine someone changes your letter before it reaches them. Instead of saying, “Let’s meet at 3 PM,” they change it to “Let’s meet at 5 PM.” That would cause confusion, right?</p>
+<p><strong>🤝 Integrity</strong> in cybersecurity ensures that information remains correct and unchanged unless authorized individuals update it.</p>
+<p>Examples of <strong>🤝 Integrity</strong></p>
+<ul>
+<li>Homework Online 📚 – If you submit homework on a school website, <strong>Integrity</strong> means no one can change your answers after you upload them.</li>
+<li>Bank Account 💰 – If you have $100 in your account, <strong>Integrity</strong> ensures that no one can change it to $50 without permission.</li>
+<li>Gaming Scores 🎮 – If you get a high score in a game, <strong>Integrity</strong> makes sure no one cheats and changes your score.<br>For this task, we must ensure that the parking control barrier for a 🏢 government building is not altered and that its position displayed on the remote device is reliable. This is an example of <strong>Integrity</strong>.  </li>
+</ul>
+<p>🛠️ How Do We Protect <strong>Integrity</strong>?  </p>
+<ul>
+<li>Passwords 🔑 – Only the right people should be able to change information.</li>
+<li>Backups 📂 – If something gets changed by accident, we can restore the original version.</li>
+<li>Checksums &amp; Hashing 🔢 – Computers use special codes to check if data has been changed.</li>
+</ul>
+<hr>
+<h3 id="task-2-integrity">TASK 2: Integrity</h3><p>Let’s get started!</p>
+<p>This <strong>Integrity</strong> task involves sharing information between two b.Boards. The <em>Control b.Board</em> will have buttons to ⬆️ raise and ⬇️ lower the barrier remotely, while the <em>Device b.Board</em> will be attached to a servomotor that controls the barrier’s movement. For this task, you will need to work in pairs of b.Boards. We recommend collaborating with your match partner from Task 1, <strong>Confidentiality</strong>.</p>
+<p>The <em>Control b.Board</em> will also display the barrier’s position on its micro:bit screen as part of the <strong>Integrity</strong> concept.</p>
+<p>This <strong>Integrity</strong> task is divided into two parts:</p>
+<ol>
+<li>Controlling a parking access barrier 🚥 Locally - For each b.Board team.</li>
+<li>Controlling a parking access barrier 🚥 Remotely - For matched pairs b.Boards.</li>
+</ol>
+<hr>
+<h4 id="part-one-"><strong>Part One:</strong></h4><h5 id="controlling-a-parking-access-barrier-locally-"><strong>Controlling a parking access barrier 🚥 Locally…</strong></h5><p>Each team will program a b.Board to control a servomotor locally to understand how it functions. 🧑‍🎓 Students can use the following code to operate a parking access barrier 🚥 (servomotor) in a 🏢 Government parking area:</p>
+<h5 id="-_-code-example-controling-access-barrier-"><code>|&gt;_|</code> Code Example Controling Access Barrier 🚥:</h5><pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+    Cybersec.increase()
+})
+input.onButtonPressed(Button.AB, function () {
+    Cybersec.closebar()
+})
+input.onButtonPressed(Button.B, function () {
+    Cybersec.decrease()
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    Cybersec.openbar()
+})
+Cybersec.Localparkbar()
+basic.forever(function () {
+    servos.P00.setAngle(Cybersec.getValueDeg())
+})</code></pre>
+<hr>
+<h4 id="part-two-"><strong>Part Two:</strong></h4><p><strong>Controlling a parking access barrier 🚥 Remotely…</strong>
+In this part of the task, 🧑‍🎓 students are encouraged to control the barrier by sending commands remotely from the <em>Control b.Board</em> to the <em>Device b.Board</em>.</p>
+<h4 id="-teachers-"><strong>🧑‍🏫 Teachers:</strong></h4><p>For <strong>Integrity</strong> task in the frame from <strong>Mission Fake Parking ID</strong> please follow the same steps for <strong>Confidential</strong> task, in order to provide the 📳 access point name and password to the 🧑‍🎓 students.</p>
+<hr>
+<h4 id="-students-"><strong>🧑‍🎓 Students:</strong></h4><p><strong>1.</strong> Students should follow the steps in the <strong>Confidential</strong> task to obtain their own 📮 IP address as well as their matched partner’s 📮 IP address.</p>
+<p><strong>2.</strong> Once the matched teams are connected, they are ready to <strong>Send Commands Remotely</strong> and control the parking access barrier 🚥. One team with a b.Board should act as the <em>Control b.Board</em>, while the matched partner should act as the <em>Device b.Board</em>.</p>
+<h3 id="-_-code-example-"><code>|&gt;_|</code> Code Example:</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/InegrityCnt.hex"><strong>⬇️ Here for Side <em>Control b.Board</em></strong></a>, or <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/InegrityDvc.hex"><strong>⬇️ Here for Side <em>Device b.Board</em></strong></a> Once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
+Agree with your match partner wich the side your are going to be part, <em>Control B.Board</em> or <em>Device b.Board</em></p>
+<h5 id="-_-side-control-b-board"><code>|&gt;_|</code> <em>Side Control b.Board</em></h5><pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+    Cybersec.increase()
+})
+input.onButtonPressed(Button.AB, function () {
+    Cybersec.closebar()
+})
+input.onButtonPressed(Button.B, function () {
+    Cybersec.decrease()
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    Cybersec.openbar()
+})
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+Cybersec.Rdy2listen()
+Cybersec.Localparkbar()
+basic.forever(function () {
+    servos.P00.setAngle(Cybersec.getValueDeg())
+    Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), &quot;192.168.4.?&quot;)
+})</code></pre>
+<h5 id="-_-side-device-b-board"><code>|&gt;_|</code> <em>Side Device b.Board</em></h5><pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+    Cybersec.increase()
+})
+input.onButtonPressed(Button.AB, function () {
+    Cybersec.closebar()
+})
+input.onButtonPressed(Button.B, function () {
+    Cybersec.decrease()
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    Cybersec.openbar()
+})
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+Cybersec.Rdy2listen()
+Cybersec.Localparkbar()
+basic.forever(function () {
+    servos.P00.setAngle(Cybersec.getValueDeg())
+    Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), &quot;192.168.4.?&quot;)
+})</code></pre>
+<p>
+</p>
+<pre><code class="lang-blocks">Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+Cybersec.Rdy2listen()</code></pre>
+<hr>
+<ul>
+<li><em>Please do not forget to set up the correct name and password for the access point.</em></li>
+<li><em>Mute the PC sound to listen the b.Board sound.</em></li>
+</ul>
+<hr>
 
     </div>
 
