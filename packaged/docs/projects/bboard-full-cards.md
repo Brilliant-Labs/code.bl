@@ -1,10 +1,9 @@
 # Projects
 
-Learn to use ClickBoards with the b.Board and your @boardname@!
+Learn to use the b.Board using Cards your @boardname@!
 
 ## Basic
 
-Learn to use Clickboards with your @boardname@.
 
 ```codecard
 [{
