@@ -14,6 +14,11 @@
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/connect-microbit.gif"
     },
     {
+        "name": "b.Board full Cards",
+        "url": "/projects/bboard-full-cards",
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full-cards/Intro.png"
+    },
+    {
         "name": "b.Board Cards",
         "url": "/projects/bboard-cards",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/Hello_bBoard_Icon-EN.png"
@@ -206,6 +211,7 @@
 
 [Tutorials](/tutorials),
 [CyberSecurity #1](/projects/bboard-cybersec),
+[b.Board full Cards](/projects/bboard-full-cards),
 [b.Board Cards](/projects/bboard-cards),
 [    ](/projects/bboard-cards2),
 [     ](/projects/bboard-cards3),
