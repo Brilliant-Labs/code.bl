@@ -14,7 +14,7 @@
   * [Activity 4](/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_4/README)
   * [Activity 5](/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_5/README)
   * [Activity 6](/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_6/README)
-* [b.Board full Cards](/projects/bboard-full-cards)
+* [b.Board Tutorial Cards](/projects/bboard-full-cards)
   * [1_Intro](/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/README.html)
   * [2_Lights](/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/README.html)
   * [3_LED](/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/README.md)
