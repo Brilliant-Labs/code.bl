@@ -19,68 +19,9 @@
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full-cards/Intro.png"
     },
     {
-        "name": "b.Board Cards",
-        "url": "/projects/bboard-cards",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/Hello_bBoard_Icon-EN.png"
-    },
-    {
-        "name": "    ",
-        "url": "/projects/bboard-cards2",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights1/Mkt_Light_UP_Icon-EN.png"
-    },
-    {
-        "name": "     ",
-        "url": "/projects/bboard-cards3",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/3_LED/LED1/Mkt_Light_Addressable_Rainbow_Icon-EN.png"
-    },
-    {
-        "name": "      ",
-        "url": "/projects/bboard-cards4",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/4_Remote/Remote1/Send-Radio_Msg_Icon-EN.png"
-    },
-    {
-        "name": "       ",
-        "url": "/projects/bboard-cards5",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/5_Move/Move1/Adding_motors_Icon-EN.png"
-    },
-    {
-        "name": "        ",
-        "url": "/projects/bboard-cards6",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/6_Control/Control1/Use_A-B_buttons_Icon-EN.png"
-    },
-    {
-        "name": "         ",
-        "url": "/projects/bboard-cards7",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/7_Sound/Sound1/Mkt_Listen_Icon-EN.png"
-    },
-    {
-        "name": "          ",
-        "url": "/projects/bboard-cards8",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cards/8_Measure/Measure1/Mkt_Measure_Temp_Icon-EN.png"
-    },
-    {
-        "name": "b.Board Clicks",
-        "url": "/projects/bboard",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials/button-g/button_g.jpg",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials/button-g/cover.gif"
-    },
-    {
-        "name": " ",
-        "url": "/projects/bboard2",
-        "imageUrl": "docs/static/mb/projects/bboard-tutorials/motion/motion-click.jpg",
-        "largeImageUrl": "docs/static/mb/projects/bboard-tutorials/motion/motion_gif.gif"
-    },
-    {
-        "name": "  ",
-        "url": "/projects/bboard3",
-        "imageUrl": "docs/static/mb/projects/bboard-tutorials/servo/servo-click.jpg",
-        "largeImageUrl": "docs/static/mb/projects/bboard-tutorials/servo/servogif.gif"
-    },
-    {
-        "name": "   ",
-        "url": "/projects/bboard4",
-        "imageUrl": "docs/static/mb/projects/bboard-tutorials/wifi-ble/wifi-ble-click.jpg",
-        "largeImageUrl": "docs/static/mb/projects/bboard-tutorials/wifi-ble/wifi-click-gif.gif"
+        "name": "Click Boards",
+        "url": "/projects/bboard-full",
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/wifi-ble/logo.jpg"
     },
     {
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
@@ -212,18 +153,7 @@
 [Tutorials](/tutorials),
 [CyberSecurity #1](/projects/bboard-cybersec),
 [b.Board Tutorial Cards](/projects/bboard-full-cards),
-[b.Board Cards](/projects/bboard-cards),
-[    ](/projects/bboard-cards2),
-[     ](/projects/bboard-cards3),
-[      ](/projects/bboard-cards4),
-[       ](/projects/bboard-cards5),
-[        ](/projects/bboard-cards6),
-[         ](/projects/bboard-cards7),
-[          ](/projects/bboard-cards8),
-[b.Board Clicks](/projects/bboard),
-[ ](/projects/bboard2),
-[  ](/projects/bboard3),
-[   ](/projects/bboard4),
+[Click Boards](/projects/bboard-full),
 [CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville),
 [            ](/projects/bboard-cyberville1),
 [              ](/projects/bboard-cyberville2),

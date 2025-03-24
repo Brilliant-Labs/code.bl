@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights1/Mkt_Light_UP-EN.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights1/Mkt_Light_UP-EN.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,7 +1680,72 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="bboard-tutorials-cards">bboard-tutorials-cards</h1>
+        <h1 id="-b-board-tutorial-cards-">📒 b.Board Tutorial Cards:</h1><h1 id="lights"><code>LIGHTS</code></h1><ul>
+<li><a  rel="nofollow noopener" href="#make-it-light-up">Make it Light Up</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-light-different-colors">Make it Light Different Colors</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-light-up-different-colors-using-a-button">Make it Light Up Different Colors Using a Button</a> </li>
+<li><a  rel="nofollow noopener" href="#add-your-name-screen">Add Your Name Screen</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-light-a-led">Make it Light a LED</a></li>
+<li><a  rel="nofollow noopener" href="#make-a-night-light">Make a Night Light </a></li>
+<li><a  rel="nofollow noopener" href="#light-up-dark">Light Up Dark</a></li>
+</ul>
+<hr>
+<h2 id="make-it-light-up">Make it Light Up</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights1/Mkt_Light_UP-EN.png?raw=true" alt="Mkt_Light_UP-EN" title="MAKE IT LIGHT UP!" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE IT LIGHT UP! using the b.Board</p>
+<pre><code class="lang-blocks">basic.forever(function () {
+BLiXel.showColour(0xff9da5)
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+<h2 id="make-it-light-different-colors">Make it Light Different Colors</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights2/Mkt_Light-Up_Diff_Color-EN.png?raw=true" alt="Mkt_Light-Up_Diff_Color-EN" title="Mkt_Light-Up_Diff_Color-EN!" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE IT LIGHT UP different COLORS ! using the b.Board</p>
+<pre><code class="lang-blocks">BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.one), 0xffff00)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.two), 0x00ff00)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.three), 0xffffff)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.four), 0xff0000)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.five), 0x007fff)</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+<h2 id="make-it-light-up-different-colors-using-a-button">Make it Light Up Different Colors Using a Button</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights3/Mkt_Light-Up_Diff_Color_Button-EN.png?raw=true" alt="Mkt_Light-Up_Diff_Color_Button-EN" title="Mkt_Light-Up_Diff_Color_Button-EN!" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE IT LIGHT UP different COLORS using a button ! using the b.Board</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.one), 0xffff00)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.two), 0x00ff00)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.three), 0xffffff)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.four), 0xff0000)
+BLiXel.setPixelColour(BLiXel.blixel_index(BLiXelIndex.five), 0x007fff)
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+<h2 id="add-your-name-screen">Add Your Name Screen</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights4/Add_Your_Name_Screen-EN.png?raw=true" alt="Add_Your_Name_Screen-EN" title="Add_Your_Name_Screen-EN!" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example ADD YOUR NAME TO THE LED SCREEN! using the b.Board</p>
+<pre><code class="lang-blocks">basic.forever(function () {
+basic.showString(&quot;Bob&quot;)
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+<h2 id="make-it-light-a-led">Make it light a LED</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights5/Mkt_Light_Led-EN.png?raw=true" alt="Mkt_Light_Led-EN" title="Mkt_Light_Led-EN!" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example Make it light a LED using the b.Board</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+pins.digitalWritePin(DigitalPin.P0, 1)
+})
+input.onButtonPressed(Button.B, function () {
+pins.digitalWritePin(DigitalPin.P0, 0)
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+<h2 id="make-a-night-light">Make a Night Light</h2><h2 id="mkt_night_light-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights6/Mkt_Night_Light-EN.png?raw=true" alt="Mkt_Night_Light-EN" title="Mkt_Night_Light-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+<h2 id="light-up-dark">Light Up Dark</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights7/Light_Up_Dark-EN.png?raw=true" alt="Light_Up_Dark-EN" title="Light_Up_Dark-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example   LIGHT UP WHEN ITS DARK using the b.Board</p>
+<pre><code class="lang-blocks">basic.forever(function () {
+BLiXel.showColour(0x000000)
+while (input.lightLevel() &lt; 50) {
+BLiXel.showColour(0xffffff)
+}
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#lights">🔙 Back Menu</a></h5><hr>
+
     </div>
 
 					<div class="hideprint"></div>

@@ -26,7 +26,7 @@ Learn to use the b.Board using Cards your @boardname@!
 },
 {
   "name": "3_LED",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/README.md",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/README.html",
   "description": "LED",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/LED.png",
   "cardType": "large",
@@ -35,46 +35,46 @@ Learn to use the b.Board using Cards your @boardname@!
 },
 {
   "name": "4_Remote",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/README.md",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/README.html",
   "description": "Remote",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Remote.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
 {
   "name": "5_Move",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/5_Move/README.md",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/5_Move/README.html",
   "description": "Move",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Move.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
 {
   "name": "6_Control",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/6_Remote/README.md",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/6_Remote/README.html",
   "description": "Control",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Control.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
 {
   "name": "7_Sound",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/README.md",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/README.html",
   "description": "Sound",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Sound.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 },
 {
   "name": "8_Measurement",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/8_Measure/README.md",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/8_Measure/README.html",
   "description": "Measure",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Measure.png",
-  "cardType": "side",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 }

@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED1/Mkt_Light_Addressable_Rainbow-EN.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED1/Mkt_Light_Addressable_Rainbow-EN.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,7 +1680,53 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="bboard-tutorials-cards">bboard-tutorials-cards</h1>
+        <h1 id="-b-board-tutorial-cards-">📒 b.Board Tutorial Cards:</h1><h1 id="leds"><code>LEDS</code></h1><ul>
+<li><a  rel="nofollow noopener" href="#make-it-light-addressable-rainbow">Make it Light Addressable Rainbow</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-light-addressable-one-color">Make it Light Addressable One Color</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-your-lights-rotate">Make it Light Your Lights Rotate</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-blink">Make it Blink</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-control-lights-sound">Make it Control Lights Sound</a></li>
+</ul>
+<hr>
+<h2 id="make-it-light-addressable-rainbow">Make it Light Addressable Rainbow</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED1/Mkt_Light_Addressable_Rainbow-EN.png?raw=true" alt="Mkt_Light_Addressable_Rainbow-EN" title="Mkt_Light_Addressable_Rainbow-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE IT LIGHT UP ADDRESSABLE RAINBOW LIGHTS using the b.Board</p>
+<pre><code class="lang-blocks">let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
+basic.forever(function () {
+strip.showColor(neopixel.colors(NeoPixelColors.Red))
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#leds">🔙 Back Menu</a></h5><hr>
+<h2 id="make-it-light-addressable-one-color">Make it Light Addressable One Color</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED2/Mkt_Light_Addressable_One_Color-EN.png?raw=true" alt="Mkt_Light_Addressable_One_Color-EN" title="Mkt_Light_Addressable_One_Color-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE IT LIGHT UP ADDRESSABLE LIGHTS ONE COLOR using the b.Board</p>
+<pre><code class="lang-blocks">let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
+basic.forever(function () {
+strip.showColor(neopixel.colors(NeoPixelColors.Red))
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#leds">🔙 Back Menu</a></h5><hr>
+<h2 id="make-your-lights-rotate">Make Your Lights Rotate</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED3/Mk_Rotate_Your_Lights-EN.png?raw=true" alt="Mk_Your_Lights_Rotate-EN" title="Mk_Your_Lights_Rotate-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE YOUR LIGHTS ROTATE using the b.Board</p>
+<pre><code class="lang-blocks">let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
+strip.showRainbow(1, 360)
+basic.forever(function () {
+strip.rotate(1)
+strip.show()
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#leds">🔙 Back Menu</a></h5><hr>
+<h2 id="make-it-blink">Make it Blink</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED4/Mkt_Blink-EN.png?raw=true" alt="Mkt_Blink-EN" title="Mkt_Blink-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example MAKE IT BLINK using the b.Board</p>
+<pre><code class="lang-blocks">let strip = neopixel.create(DigitalPin.P0, 30, NeoPixelMode.RGB)
+basic.forever(function () {
+strip.showColor(neopixel.colors(NeoPixelColors.Red))
+basic.pause(500)
+strip.showColor(neopixel.colors(NeoPixelColors.Black))
+basic.pause(500)
+})</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#leds">🔙 Back Menu</a></h5><hr>
+<h2 id="make-it-control-lights-sound">Make it Control Lights Sound</h2><h2 id="mkt_control_lights_sound-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/LED5/Mkt_Control_Lights_Sound-EN.png?raw=true" alt="Mkt_Control_Lights_Sound-EN" title="Mkt_Control_Lights_Sound-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#leds">🔙 Back Menu</a></h5><hr>
+
     </div>
 
 					<div class="hideprint"></div>

@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote1/Send-Radio_Msg-EN.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote1/Send-Radio_Msg-EN.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,7 +1680,55 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="bboard-tutorials-cards">bboard-tutorials-cards</h1>
+        <h1 id="-b-board-tutorial-cards-">📒 b.Board Tutorial Cards:</h1><h1 id="remote"><code>REMOTE</code></h1><ul>
+<li><a  rel="nofollow noopener" href="#sending-radio-msg">Sending Radio Msg</a> </li>
+<li><a  rel="nofollow noopener" href="#receving-radio-msg">Receving Radio Msg</a> </li>
+<li><a  rel="nofollow noopener" href="#sending-radio-num">Sending Radio Num</a> </li>
+<li><a  rel="nofollow noopener" href="#receiving-radio-num">Receiving Radio Num</a> </li>
+<li><a  rel="nofollow noopener" href="#code-temp-radio-ctrl">Code Temp Radio Ctrl</a></li>
+</ul>
+<hr>
+<h2 id="sending-radio-msg">Sending Radio Msg</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote1/Send-Radio_Msg-EN.png?raw=true" alt="Send-Radio_Msg-EN" title="Send-Radio_Msg-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example SEND A MESSAGE WITH RADIO SIGNAL using the b.Board</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+radio.sendString(&quot;You are brilliant&quot;)
+})
+radio.setGroup(1)</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#remote">🔙 Back Menu</a></h5><hr>
+<h2 id="receving-radio-msg">Receving Radio Msg</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote2/Receving_Radio_Msg-EN.png?raw=true" alt="Receving_Radio_Msg-EN" title="Receving_Radio_Msg-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example RECEIVING A MESSAGE WITH RADIO SIGNAL using the b.Board</p>
+<pre><code class="lang-blocks">radio.onReceivedString(function (receivedString) {
+basic.showString(receivedString)
+})
+radio.setGroup(1)</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#remote">🔙 Back Menu</a></h5><hr>
+<h2 id="sending-radio-num">Sending Radio Num</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote3/Send_Radio_Num-EN.png?raw=true" alt="Send_Radio_Num-EN" title="RSend_Radio_Num-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example SEND A NUMBER WITH RADIO SIGNAL using the b.Board</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+radio.sendNumber(0)
+})
+radio.setGroup(1)</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#remote">🔙 Back Menu</a></h5><hr>
+<h2 id="receiving-radio-num">Receiving Radio Num</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote4/Receiving_Radio_Num-EN.png?raw=true" alt="Receiving_Radio_Num-EN" title="Receiving_Radio_Num-EN" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example RECEIVE A NUMBER VALUE WITH RADIO SIGNAL using the b.Board</p>
+<pre><code class="lang-blocks">radio.onReceivedNumber(function (receivedNumber) {
+basic.showNumber(receivedNumber)
+})
+radio.setGroup(1)</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#remote">🔙 Back Menu</a></h5><hr>
+<h2 id="code-temp-radio-ctrl">Code Temp Radio Ctrl</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote5/Code_Temp_Radio_Ctrl-EN.png?raw=true" alt="Code_Temp_Radio_Ctrl" title="Code Temperature Radio Control" loading="lazy"></p>
+<h3 id="code-example">Code Example</h3><p>Example CODE A TEMPERATURE REMOTE CONTROL USING RADIO SIGNAL using the b.Board</p>
+<pre><code class="lang-blocks">radio.onReceivedNumber(function (receivedNumber) {
+basic.showNumber(input.temperature())
+})
+radio.setGroup(1)</code></pre>
+<hr>
+<h5 id="-back-menu"><a  rel="nofollow noopener" href="#remote">🔙 Back Menu</a></h5><hr>
+
     </div>
 
 					<div class="hideprint"></div>

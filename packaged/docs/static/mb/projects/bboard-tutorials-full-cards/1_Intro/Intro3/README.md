@@ -1,6 +1,6 @@
 # 🧾 b.Board Tutorials Cards: Intro
 
-## - __Hello b.Board__ [👉 Here](https://code-alpha.brilliantlabs.ca/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README-EN_Full.html)
+## - __Hello b.Board__ [👉 Here](https://code-alpha.brilliantlabs.ca/docs/static/mb/projects/bboard-tutorials-cards/1_Intro/Intro3/README-EN.html)
 
 ## - __Hello b.Board__ [👉 Here](https://code-alpha.brilliantlabs.ca/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/README-EN.mb)
 
