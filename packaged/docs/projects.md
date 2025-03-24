@@ -9,11 +9,6 @@
         "largeImageUrl": "/docs/static/mb/projects/flashing-heart/sim.gif"
     },
     {
-        "name": "CyberSecurity #1",
-        "url": "/projects/bboard-cybersec",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/connect-microbit.gif"
-    },
-    {
         "name": "b.Board Tutorial Cards",
         "url": "/projects/bboard-full-cards",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full-cards/Intro.png"
@@ -21,7 +16,12 @@
     {
         "name": "Click Boards",
         "url": "/projects/bboard-full",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/wifi-ble/logo.jpg"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/wifi-ble/wifilogo.jpg"
+    },
+    {
+        "name": "CyberSecurity #1",
+        "url": "/projects/bboard-cybersec",
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/connect-microbit.gif"
     },
     {
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
@@ -151,9 +151,9 @@
 ## See Also
 
 [Tutorials](/tutorials),
-[CyberSecurity #1](/projects/bboard-cybersec),
 [b.Board Tutorial Cards](/projects/bboard-full-cards),
 [Click Boards](/projects/bboard-full),
+[CyberSecurity #1](/projects/bboard-cybersec),
 [CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville),
 [            ](/projects/bboard-cyberville1),
 [              ](/projects/bboard-cyberville2),
