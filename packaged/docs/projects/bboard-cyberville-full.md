@@ -9,16 +9,16 @@ Welcome to CYBERVILLE!! @boardname@.
 ```codecard
 [{
   "name": "Activity 7 - Networking",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/README-EN.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/README.html",
   "description": "Learn about Cybersecurity NETWORKING in Cyberville.",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Cyberville_Icon-EN.png",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Cyberville-EN.png",
   "cardType": "large",
-  "label": "Networking",
+  "label": "CyberSecurity 2",
   "labelClass": "indigo ribbon small"
 },
 {
   "name": "Activity 8 - Valuable Data",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README-EN.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README.html",
   "description": "Polluted Water. Water Treatment Plant Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Water.png",
   "cardType": "large",
@@ -27,7 +27,7 @@ Welcome to CYBERVILLE!! @boardname@.
 },
 {
   "name": "Activity 9 - Remote Commands",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README-EN.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README.html",
   "description": "Fake Parking Passes. Government Parking Lot Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Gov-EN.png",
   "cardType": "large",
@@ -36,7 +36,7 @@ Welcome to CYBERVILLE!! @boardname@.
 },
 {
   "name": "Activity 10 - Passwords",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README-EN.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README.html",
   "description": "GWeird Lights. School Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/School.png",
   "cardType": "large",

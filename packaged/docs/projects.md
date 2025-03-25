@@ -26,7 +26,7 @@
     {
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
         "url": "/projects/bboard-cyberville-full",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Cyberville_Icon-EN.png"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Cyberville-EN.png"
     },
     {
         "name": "Live Coding",
