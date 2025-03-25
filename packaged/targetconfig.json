@@ -278,13 +278,13 @@
        
        
         "CyberSecurity #1": "projects/bboard-cybersec",
-        "CyberSecurity #2, Cyberville and b.Board 1.4": "projects/bboard-cyberville",
-        "            ": "projects/bboard-cyberville1",
-        "              ": "projects/bboard-cyberville2",
-        "               ": "projects/bboard-cyberville3",
-        "Cybersécurité #2, Cyberville and b.Board 1.4 >>> F R E N C H <<<": "projects/bboard-cyberville-FR",
-        "             ": "projects/bboard-cyberville1-FR",
-        "                ": "projects/bboard-cyberville3-FR",
+        "CyberSecurity #2, Cyberville and b.Board 1.4": "projects/bboard-cyberville-full",
+
+       
+      
+
+        
+   
         "Live Coding": {
             "url": "live-coding",
             "shuffle": "daily",

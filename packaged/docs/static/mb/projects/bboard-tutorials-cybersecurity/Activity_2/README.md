@@ -8,17 +8,13 @@ for building their smart community later in the other activities.
 
 # Step 1 : plug in the USB from the micro bit into your pc/laptop
 
-<!-- https://github.com/Brilliant-Labs/bboard-tuts-cybersecurity-3/blob/master/cybersec/activity-1/connect-microbit.gif?raw=true -->
 ![Click](https://github.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/blob/main/Activity_1/connect-microbit.gif?raw=true "Click")
 ---
-<!-- https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_1/micro.png -->
 ![Click](https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_1/micro.png)
 
 # Step 2 : conect the microbit into the bboard and make sure the power suply is conected
-<!--https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/bborad.png -->
 ![Click](https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/bborad.png)
 
-<!--https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/b.Board_power.JPG -->
 ![Click](https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/b.Board_power.JPG)
 
 # Step 3 : once the microbit is conected 
@@ -27,11 +23,9 @@ for building their smart community later in the other activities.
 3. turn on the bboard with the switch at the side and see if the light are red
 4. (if the Blixels are not red) repeat the Step 3 Once more
 
-<!-- https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/image%20(1).png -->
-![Click](https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/image%20(1).png)
+![Click](https://github.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/blob/main/Activity_2/image%20(1).png?raw=true "Click")
 
-<!-- https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/image%20(2).png -->
-![Click](https://raw.githubusercontent.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/main/Activity_2/image%20(2).png)
+![Click](https://github.com/Brilliant-Labs/bboard-tutorials-cybersecurity-v3/blob/main/Activity_2/image%20(2).png?raw=true "Click")
 # Step 4 : if the light are red
 1. under the ``||Variables:Variables||`` tab create a brand new variable called **password**
 2. once you have set you brand new variable has been created drag the ``||Variables:Set password to 0||`` into the ``||basic:on start||`` block as well cick and drag from the ``||Basic:Basic||`` the ``||basic:show icon||`` and change it from the **heart to yes** (1st row, 3rd one)

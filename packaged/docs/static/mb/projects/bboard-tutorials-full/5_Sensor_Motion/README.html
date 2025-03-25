@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/Hello_bBoard-EN.png?raw=true" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/reed-sensor/reedswitch.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/Hello_bBoard-EN.png?raw=true" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/reed-sensor/reedswitch.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1686,9 +1686,93 @@
 <li><a  rel="nofollow noopener" href="#proximity">Proximity</a> </li>
 </ul>
 <hr>
-<h2 id="reed">Reed</h2><h2 id="hello_bboard-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/Hello_bBoard-EN.png?raw=true" alt="Hello_bBoard-EN" title="Hello_bBoard-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#motion">🔙 Back Menu</a></h5><hr>
-<h2 id="motion-click">Motion Click</h2><h2 id="lets_code-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro4/Lets_Code-EN.png?raw=true" alt="Lets_Code-EN" title="Lets_Code-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#motion">🔙 Back Menu</a></h5><hr>
-<h2 id="proximity">Proximity</h2><h2 id="your_code_guide-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro5/Your_Code_Guide-EN.png?raw=true" alt="Your_Code_Guide-EN" title="Your_Code_Guide-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#motion">🔙 Back Menu</a></h5><hr>
+<h2 id="reed">Reed</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/reed-sensor/reedswitch.png?raw=true" alt="REED SENSOR" title="Reed Sensor" loading="lazy"></p>
+<h2 id="description">Description</h2><p>Magnets always seem like magic.
+Become a magician with a Reed
+Sensor. </p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/reed-sensor/reedgif1.gif?raw=true" alt="Reed Sensor Click" title="Reed Sensor Click" loading="lazy"></p>
+<p>This switch has magnetic
+contacts that remain separated
+until a magnet is applied. With a
+little logic, the reverse could also
+be true.</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/reed-sensor/reed-click.jpg?raw=true" alt="Reed Sensor Click" title="Reed Sensor Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the Reed Sensor Click plugged into to MikroBus #1 on the b.Board. </p>
+<p>We will place the Reed Sensor Click’s value in an “IF / ELSE Statement” which we’ve nested inside a “Forever Loop”. If the reed sensor picks up magnetism and is activated then we will evaluate that input then activate an output. This output could be lights, sounds, motors, servos, on even the micro:bit’s onboard LEDs.   </p>
+<pre><code class="lang-blocks">basic.forever(function () {
+    if (Reed.isActivated(clickBoardID.one)) {
+        basic.showIcon(IconNames.Yes)
+    } else {
+        basic.showIcon(IconNames.No)
+    }
+})</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>SECRET SWITCH</p>
+<p>Keep your precious
+items safe by hiding a
+Reed Sensor inside a
+cabinet to trigger a
+servo to lock and unlock
+your treasure chest with
+a magnet.</p>
+<h2 id="reed-sensor"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/reed-sensor/reedswitchgif.gif?raw=true" alt="Reed Sensor" title="Let&#39;s Keep Things Safe" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#motion">🔙 Back Menu</a></h5><hr>
+<h2 id="motion-click">Motion Click</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/motion/motionSensor.jpg?raw=true" alt="Motion Detection" title="Motion Detection" loading="lazy"></p>
+<h2 id="description">Description</h2><p>This sensor can detect motion up
+to 1.7 metres away. There are two
+sensors on board: a PIR as well as
+a light dependent resistor. Finally,
+should you need to change the
+sensitivity of your sensor, simply
+use your b.Board screwdriver
+until you hit that sweet spot</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/motion/motion-click.jpg?raw=true" alt="Motion Click" title="Motion Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the Motion Click plugged into to MikroBus #1 on the b.Board. </p>
+<p>We will place the motion click value in an “IF Statement” which we’ve nested inside a “Forever Loop”.  </p>
+<pre><code class="lang-blocks">let Motion2 = Motion.createMotion(BoardID.zero, ClickID.A)
+
+basic.forever(function () {
+    if (Motion2.isDetected()) {
+        basic.showIcon(IconNames.Yes)
+        basic.showString(&quot;We have motion!&quot;)
+    } else {
+        basic.showIcon(IconNames.No)
+        basic.showString(&quot;No Movement&quot;)
+    }
+})
+
+</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>SOUND THE ALARM!</p>
+<p>Use this motion detecting
+sensor to secure your space.
+Keep this sensor in a
+bedroom or study space and
+code it to alert you to the
+presence of intruders</p>
+<h2 id="line-following"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/motion/motion_gif.gif?raw=true" alt="Line Following" title="Let&#39;s Keep things centered" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#motion">🔙 Back Menu</a></h5><hr>
+<h2 id="proximity">Proximity</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/proximity-2/proximity2.jpg?raw=true" alt="Proximity Detection" title="Proximity Detection" loading="lazy"></p>
+<h2 id="description">Description</h2><p>This sensor combines ambient
+light and distance to an obstacle
+to allow you to integrate
+proximity awareness into your
+project.  You can use on or the other, or both!</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/proximity-2/proximity-2-click.jpg?raw=true" alt="Proximity-2 Click" title="Proximity-2 Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the Proximity 2 Click plugged into to MikroBus #1 on the b.Board. </p>
+<p>We will place the proximity 2 click’s value in an “IF / ELSE Statement” which we’ve nested inside a “Forever Loop”.  We will compare this value then scroll a message on the Micro:Bit’s onboard LEDs depending on if the proximity value is lesser than 10cm.</p>
+<pre><code class="lang-blocks">let Proximity_22 = Proximity_2.createProximity_2(BoardID.zero, ClickID.A)
+basic.forever(function () {
+    if (Proximity_22.proximity_2_Read_Proximity() &lt; 10) {
+        basic.showString(&quot;This object is close!&quot;)
+    } else {
+        basic.showString(&quot;Not so close&quot;)
+    }
+})</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>HANDS OFF!</p>
+<p>Use this click for hands off
+control. By simply raising
+and lowering your hand over
+the sensor, control the
+volume, speed, or servo
+angles of your project.</p>
+<h2 id="proximity-2"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/proximity-2/proximity2gif.gif?raw=true" alt="Proximity 2" title="Hands Off!" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#motion">🔙 Back Menu</a></h5><hr>
 
     </div>
 

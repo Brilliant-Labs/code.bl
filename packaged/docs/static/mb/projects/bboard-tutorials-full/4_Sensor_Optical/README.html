@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/Hello_bBoard-EN.png?raw=true" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/Hello_bBoard-EN.png?raw=true" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1687,10 +1687,113 @@
 <li><a  rel="nofollow noopener" href="#uv-3">UV 3</a> </li>
 </ul>
 <hr>
-<h2 id="ir-distance">IR Distance</h2><h2 id="hello_bboard-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro3/Hello_bBoard-EN.png?raw=true" alt="Hello_bBoard-EN" title="Hello_bBoard-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
-<h2 id="ir-thermo">IR Thermo</h2><h2 id="lets_code-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro4/Lets_Code-EN.png?raw=true" alt="Lets_Code-EN" title="Lets_Code-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
-<h2 id="line-follower">Line Follower</h2><h2 id="your_code_guide-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro5/Your_Code_Guide-EN.png?raw=true" alt="Your_Code_Guide-EN" title="Your_Code_Guide-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
-<h2 id="uv-3">UV 3</h2><h2 id="download_your_code-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/Intro6/Download_your_code-EN.png?raw=true" alt="Download_your_code-EN" title="Download_your_code-EN" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
+<h2 id="ir-distance">IR Distance</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/IRpic.png?raw=true" alt="Magic" title="A magician&#39;s assistant" loading="lazy"></p>
+<h2 id="description">Description</h2><p>Using a combination of IR LEDs
+and signal processing, this
+distance sensor is great for
+measuring objects or obstacles at 
+distances between 10 and 150 cm!</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/ir-distance-click.jpg?raw=true" alt="IR Distance Click" title="IR DISTANCE Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the IR Distance Click plugged into to MikroBus #1 on the b.Board</p>
+<pre><code class="lang-blocks">let IR_Distance2 = IR_Distance.createIR_Distance(BoardID.zero, ClickID.A)
+basic.forever(function () {
+    if (IR_Distance2.getDistance() &lt; 30) {
+        basic.showString(&quot;Near&quot;)
+    } else {
+        basic.showString(&quot;Far&quot;)
+    }
+    basic.pause(1000)
+})</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>THE MAGICIAN’S ASSISTANT</p>
+<p>This sensor detects the presence of any object that is between 10 and 150 cm from its sensor. Create your own illusions by activating and deactivating a magic trick of your own design. Pull an object out of a hat and place it near the sensor to act as your own magical assistant! </p>
+<h2 id="magic"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-distance/magicianGif.gif?raw=true" alt="Magic" title="A magician&#39;s assistant" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
+<h2 id="ir-thermo">IR Thermo</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-thermo-3/howIRthermoWorks.png?raw=true" alt="IR Thermo" title="IR Thermo" loading="lazy"></p>
+<h2 id="description">Description</h2><p>Using thermal imaging, this
+sensor, once pointed at the object
+in question, will provide a
+contactless temperature reading which can be displayed, evaluated, or sent to the cloud for further analysis. </p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-thermo-3/ir-thermo-3-click.jpg?raw=true" alt="IR THERMO 3 Click" title="IR THERMO 3 Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the IR THERMO 3 Click plugged into to MikroBus #1 on the b.Board and if the temperature is higher than 20 degrees Celcius we are activating a fan with the DC motor click on MidroBus #2 onk the b.Board.  You can substitue the DC Motor click with anything you like including displaying something on the Micro:Bit’s LEDs, turning on Neopixels, servos, etc… </p>
+<pre><code class="lang-blocks">let IrThermo_32 = IrThermo_3.createIrThermo(BoardID.zero, ClickID.A)
+basic.forever(function () {
+    if (IrThermo_32.getObjectTemp(IrThermo_3.TempUnits.C) &lt; 20) {
+        basic.showString(&quot;It&#39;s cold!&quot;)
+    } else {
+        basic.showString(&quot;It&#39;s warm! Turn on the fan :)&quot;)
+        bBoard_Motor.motorLeftTimed(100, 5000)
+    }
+})
+
+</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>A WATCHED POT NEVER BOILS</p>
+<p>Have you ever heard the saying “A
+watched pot never boils?” Keep tabs
+on your stovetop or kettle from afar
+with the IrThermo 3 sensor. This
+sensor does not have to be in
+contact with the object it is
+measuring. It can also be used to
+safely measure anything in hard to
+reach places or hot things from a safe place!</p>
+<h2 id="boiling-pot"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/ir-thermo-3/boilingGIF.gif?raw=true" alt="Boiling Pot" title="Too hot? Stay safe!" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
+<h2 id="line-follower">Line Follower</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/line-follower/linefollowing.jpeg?raw=true" alt="Line Follower" title="Line Follower" loading="lazy"></p>
+<h2 id="description">Description</h2><p>If you are interested in becoming
+an autonomous car engineer,
+then you want to make sure your
+vehicle stays on course. This line
+follower has an array of 5
+reflective sensors that sense the
+difference in surface contrast</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/line-follower/line-follower-click.jpg?raw=true" alt="Line Follower Click" title="Line Follower Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the LINE FOLLOWER Click plugged into to MikroBus #1 on the b.Board. This example also has the forward and backwards movement of the robot controlled by a DC motor plugged into DC Motor on the b.Board.  We are using a servo motor to control the stearing which is plugged into P0 on the b.Board’s servo rail. </p>
+<p>We first set the robot in a forward motion at a speed of 50.  Let’s be careful not to go too fast or we may affect the line follower values.  Please note that we are following a black line in this example.</p>
+<p>We’ve set a variable named “Correction” where we will store the value of the Line Follower then adjust the steering of the robot according to the Line Follower values. </p>
+<pre><code class="lang-blocks">let Line_Follower2 = Line_Follower.createLineFollower(BoardID.zero, ClickID.A)
+bBoard_Motor.motorRightDuty(50)
+bBoard_Motor.motorLeftDuty(50)
+basic.forever(function () {
+    if (Line_Follower2.getDirectionEnum(Line_Follower.lineDetection.soft_right_turn)) {
+        pins.servoWritePin(AnalogPin.P0, 75)
+        if (Line_Follower2.getDirectionEnum(Line_Follower.lineDetection.soft_left_turn)) {
+            pins.servoWritePin(AnalogPin.P0, 105)
+        }
+        if (Line_Follower2.getDirectionEnum(Line_Follower.lineDetection.no_correction)) {
+            pins.servoWritePin(AnalogPin.P0, 90)
+        }
+    }
+})
+
+</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>A LONG AND WINDING ROAD</p>
+<p>Attach this sensor to
+any robotic design for
+line following
+capabilities. Forge your
+own path by making
+roads and mazes for
+your robot to follow.</p>
+<h2 id="line-following"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/line-follower/robot_moving.gif?raw=true" alt="Line Following" title="Let&#39;s Keep things centered" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
+<h2 id="uv-3">UV 3</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/uv3/ice.jpg?raw=true" alt="UV 3 Click" title="UV 3 click" loading="lazy"></p>
+<h2 id="description">Description</h2><p>This board is an advanced ultraviolet (UV) light sensor.  It can be used for UV measurement, sun exposure protection devices, display backlighting control based on received ambient or UV light</p>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/uv3/uv3-click.jpg?raw=true" alt="UV 3 Click" title="UV 3 Click" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>This example has the UV 3 Click plugged into to MikroBus #1 on the b.Board. </p>
+<p>We will place the UV 3 click value in a “ButtonPressed” event.  As soon as A button is pressed, we trigger the UV3 reading and display it as a message.</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
+    basic.showString(&quot;&quot; + (UV_32.UVSteps()))
+})
+let UV_32: UV_3.UV_3 = null
+UV_32 = UV_3.createUV_3(BoardID.zero, ClickID.A)</code></pre>
+<h2 id="project-idea">Project Idea</h2><p>SUN UV 3 AUTOMATIC ALERT</p>
+<p>Protection from high UV 3 levels!, Let this sensor stay
+outside and pair it with a Wifi Click to
+inform you of the UV level while you
+enjoy inside. The Wifi click
+can be coded to turn on a lamp on your
+chest of drawers to indicate that it is
+high UV 3 level, and remind you to use 
+enough SUN screen before you leave.</p>
+<h2 id="cold-gif"><img class="ui image" src="https://github.com/Brilliant-Labs/bboard-tutorials-v3/blob/master/uv3/cold.gif?raw=true" alt="Cold Gif" title="It&#39;s Cold!" loading="lazy"></h2><h5 id="-back-menu"><a  rel="nofollow noopener" href="#optical">🔙 Back Menu</a></h5><hr>
 
     </div>
 

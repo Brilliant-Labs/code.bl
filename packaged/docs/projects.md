@@ -25,45 +25,8 @@
     },
     {
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
-        "url": "/projects/bboard-cyberville",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-EN.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif"
-    },
-    {
-        "name": "            ",
-        "url": "/projects/bboard-cyberville1",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Water.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
-    },
-    {
-        "name": "              ",
-        "url": "/projects/bboard-cyberville2",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/RemoteCmds/Gov-EN.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
-    },
-    {
-        "name": "               ",
-        "url": "/projects/bboard-cyberville3",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_EN.gif"
-    },
-    {
-        "name": "Cybersécurité #2, Cyberville and b.Board 1.4 >>> F R E N C H <<<",
-        "url": "/projects/bboard-cyberville-FR",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Cyberville_Icon-FR.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/GifCyberville.gif"
-    },
-    {
-        "name": "             ",
-        "url": "/projects/bboard-cyberville1-FR",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/Water.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif"
-    },
-    {
-        "name": "                ",
-        "url": "/projects/bboard-cyberville3-FR",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/School.png",
-        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/Movie_FR.gif"
+        "url": "/projects/bboard-cyberville-full",
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Cyberville_Icon-EN.png"
     },
     {
         "name": "Live Coding",
@@ -154,13 +117,7 @@
 [b.Board Tutorial Cards](/projects/bboard-full-cards),
 [Click Boards](/projects/bboard-full),
 [CyberSecurity #1](/projects/bboard-cybersec),
-[CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville),
-[            ](/projects/bboard-cyberville1),
-[              ](/projects/bboard-cyberville2),
-[               ](/projects/bboard-cyberville3),
-[Cybersécurité #2, Cyberville and b.Board 1.4 >>> F R E N C H <<<](/projects/bboard-cyberville-FR),
-[             ](/projects/bboard-cyberville1-FR),
-[                ](/projects/bboard-cyberville3-FR),
+[CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville-full),
 [Live Coding](/live-coding),
 [Games](/projects/games),
 [Radio Games](/projects/radio-games),
