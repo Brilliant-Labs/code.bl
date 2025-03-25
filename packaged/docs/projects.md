@@ -21,7 +21,7 @@
     {
         "name": "CyberSecurity #1",
         "url": "/projects/bboard-cybersec",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/connect-microbit.gif"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/micro.png"
     },
     {
         "name": "CyberSecurity #2, Cyberville and b.Board 1.4",

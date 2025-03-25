@@ -11,7 +11,7 @@ Learn to use Clickboards with your @boardname@.
   "name": "Activity 1",
    "url":"/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/README.html",
   "description": "Activity 1",
-  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/connect-microbit.gif",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/micro.png",
   "cardType": "large",
   "label": "CyberSecurity",
   "labelClass": "red ribbon med"
