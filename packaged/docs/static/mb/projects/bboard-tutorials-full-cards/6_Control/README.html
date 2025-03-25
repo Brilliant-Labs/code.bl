@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control1/Use_A-B_buttons-EN.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control1/Use_A-B_buttons-EN.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,7 +1680,173 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="bboard-tutorials-cards">bboard-tutorials-cards</h1>
+        <h1 id="-b-board-tutorial-cards-">📒 b.Board Tutorial Cards:</h1><h1 id="control"><code>CONTROL</code></h1><ul>
+<li><a  rel="nofollow noopener" href="#use-ab-buttons">Use A-B Buttons</a> </li>
+<li><a  rel="nofollow noopener" href="#pump-a-balloon">Pump a Balloon</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-keep-score">Make it Keep Score</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-pump-water">Make it Pump Water</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-timer">Make it Timer</a></li>
+<li><a  rel="nofollow noopener" href="#make-it-stopwatch">Make it Stopwatch</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-count">Make it Count</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-detect-water">Make it Detect Water</a></li>
+<li><a  rel="nofollow noopener" href="#temp-fan-controled-icon">Temp Fan Controled Icon</a> </li>
+<li><a  rel="nofollow noopener" href="#weather-station">Weather Station</a> </li>
+<li><a  rel="nofollow noopener" href="#heads-tails">Heads Tails</a> </li>
+<li><a  rel="nofollow noopener" href="#rock-paper-scissors">Rock Paper Scissors</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-emotions">Make it Emotions</a></li>
+<li><a  rel="nofollow noopener" href="#make-it-count-steps">Make it Count Steps</a> </li>
+<li><a  rel="nofollow noopener" href="#make-a-die">Make a Die</a> </li>
+</ul>
+<hr>
+<h2 id="use-ab-buttons">Use AB Buttons</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control1/Use_A-B_buttons-EN.png?raw=true" alt="Use_A-B_buttons-EN" title="Use_A-B_buttons-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example USE A,B AND AB BUTTONS using the b.Board</p>
+<pre><code class="lang-blocks">
+input.onButtonPressed(Button.A, function () {
+basic.showIcon(IconNames.Heart)
+})
+input.onButtonPressed(Button.B, function () {
+basic.showIcon(IconNames.Yes)
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="pump-a-balloon">Pump a Balloon</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control2/Pump_a_balloon-EN.png?raw=true" alt="Pump_a_balloon-EN" title="Pump_a_balloon-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example PUMP UP AND DEFLATE A BALLON using the b.Board</p>
+<pre><code class="lang-blocks">
+input.onButtonPressed(Button.A, function () {
+bBoard_Motor.motorLeftTimed(50, 1000)
+})
+input.onButtonPressed(Button.B, function () {
+bBoard_Motor.motorRightTimed(50, 1000)
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-keep-score">Make it Keep Score</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control3/Mkt_Keep_Score-EN.png?raw=true" alt="Mkt_Keep_Score-EN" title="Mkt_Keep_Score-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT KEEP SCORE using the b.Board</p>
+<pre><code class="lang-blocks">
+input.onButtonPressed(Button.A, function () {
+Score += 1
+})
+input.onButtonPressed(Button.AB, function () {
+Score = 0
+})
+input.onButtonPressed(Button.B, function () {
+Score += -1
+})
+let Score = 0
+Score = 0
+basic.forever(function () {
+basic.showNumber(Score)
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-pump-water">Make it Pump Water</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control4/Mkt_Pump_Water-EN.png?raw=true" alt="Mkt_Pump_Water-EN" title="Mkt_Pump_Water-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT PUMP WATER using the b.Board</p>
+<pre><code class="lang-blocks">
+input.onButtonPressed(Button.A, function () {
+bBoard_Motor.motorDuty(100)
+})
+input.onButtonPressed(Button.B, function () {
+bBoard_Motor.motorDuty(0)
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-timer">Make it Timer</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control5/Mkt_Timer-EN.png?raw=true" alt="Mkt_Timer-EN" title="Mkt_Timer-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT A TIMER using the b.Board</p>
+<pre><code class="lang-blocks">
+let seconds = 0
+input.onButtonPressed(Button.A, function () {
+if (seconds &lt; 50) {
+seconds += 10
+basic.showNumber(seconds)
+basic.clearScreen()
+}
+})
+input.onButtonPressed(Button.B, function () {
+while (seconds &gt; 0) {
+basic.showNumber(seconds)
+basic.pause(1000)
+seconds += 0 - 1
+}
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-stopwatch">Make it Stopwatch</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control6/Mkt_Stopwatch-EN.png?raw=true" alt="Mkt_Stopwatch-EN" title="Mkt_Stopwatch-ENN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT A STOPWATCH using the b.Board</p>
+<pre><code class="lang-blocks">
+let secondes = 0
+input.onButtonPressed(Button.A, function () {
+if (secondes &lt; 50) {
+secondes += 10
+basic.showNumber(secondes)
+basic.clearScreen()
+}
+})
+input.onButtonPressed(Button.B, function () {
+while (secondes &gt; 0) {
+basic.showNumber(secondes)
+basic.pause(1000)
+secondes += 0 - 1
+}
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-count">Make it Count</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control7/Mkt_Count-EN.png?raw=true" alt="Mkt_Count-EN" title="Mkt_Count-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT COUNT using the b.Board</p>
+<pre><code class="lang-blocks">
+let Counting = 0
+basic.forever(function () {
+Counting += 1
+basic.pause(1000)
+basic.showString(&quot;&quot; + (Counting))
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-detect-water">Make it Detect Water</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control8/Mkt_Detect_Water-EN.png?raw=true" alt="Mkt_Detect_Water-EN" title="Mkt_Detect_Water-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="temp-fan-controled-icon">Temp Fan Controled Icon</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control9/Temp_Fan_Controled-EN.png?raw=true" alt="Temp_Fan_Controled_Icon-EN" title="Temp_Fan_Controled_Icon-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="weather-station">Weather Station</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control10/Weather_Station-EN.png?raw=true" alt="Weather_Station-EN" title="Weather_Station-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="heads-tails">Heads Tails</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control11/Heads_Tails-EN.png?raw=true" alt="Heads_Tails-EN" title="Heads_Tails-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="rock-paper-scissors">Rock Paper Scissors</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control12/Rock_Paper_Scissors-EN.png?raw=true" alt="Rock_Paper_Scissors-EN" title="Rock_Paper_Scissors-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-emotions">Make it Emotions</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control13/Mkt_Emotions-EN.png?raw=true" alt="Mkt_Emotions-EN" title="Mkt_Emotions-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-it-count-steps">Make it Count Steps</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control14/Mkt_Count_Steps-EN.png?raw=true" alt="Mkt_Count_Steps-EN" title="Mkt_Count_Steps-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+<hr>
+<h2 id="make-a-die">Make a Die</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/Control15/Mk_a_Die-EN.png?raw=true" alt="Mk_a_Die-EN" title="Mk_a_Die-EN" loading="lazy"></p>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#control">Back Menu</a></h5><hr>
+
     </div>
 
 					<div class="hideprint"></div>

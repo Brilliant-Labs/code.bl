@@ -20,7 +20,7 @@ radio.sendString("You are brilliant")
 radio.setGroup(1)
 ```
 ---
-##### [🔙 Back Menu](#remote) 
+##### 🔙 [Back Menu](#remote) 
 ---
 ## Receving Radio Msg
 ![Receving_Radio_Msg-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote2/Receving_Radio_Msg-EN.png?raw=true "Receving_Radio_Msg-EN")
@@ -33,7 +33,7 @@ basic.showString(receivedString)
 radio.setGroup(1)
 ```
 ---
-##### [🔙 Back Menu](#remote) 
+##### 🔙 [Back Menu](#remote) 
 ---
 ## Sending Radio Num
 ![Send_Radio_Num-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote3/Send_Radio_Num-EN.png?raw=true "RSend_Radio_Num-EN")
@@ -46,7 +46,7 @@ radio.sendNumber(0)
 radio.setGroup(1)
 ```
 ---
-##### [🔙 Back Menu](#remote) 
+##### 🔙 [Back Menu](#remote) 
 ---
 ## Receiving Radio Num
 ![Receiving_Radio_Num-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote4/Receiving_Radio_Num-EN.png?raw=true "Receiving_Radio_Num-EN")
@@ -59,7 +59,7 @@ basic.showNumber(receivedNumber)
 radio.setGroup(1)
 ```
 ---
-##### [🔙 Back Menu](#remote) 
+##### 🔙 [Back Menu](#remote) 
 ---
 ## Code Temp Radio Ctrl
 ![Code_Temp_Radio_Ctrl](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/Remote5/Code_Temp_Radio_Ctrl-EN.png?raw=true "Code Temperature Radio Control")
@@ -72,5 +72,5 @@ basic.showNumber(input.temperature())
 radio.setGroup(1)
 ```
 ---
-##### [🔙 Back Menu](#remote) 
+##### 🔙 [Back Menu](#remote) 
 ---

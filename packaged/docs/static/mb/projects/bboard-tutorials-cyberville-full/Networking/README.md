@@ -1,15 +1,15 @@
-# ACTIVITY 9 - NETWORKING 
+# ACTIVITY 7
+# NETWORKING 
 
 ---
 ##### ~avatar
 Intro video about the Internet and basic Networking
 https://www.youtube.com/watch?v=T-YrekltWW8
-### [⎆ Goto Tasks](#networking-tasks)
-##### ~
+##### ~ 
+### [⎆ Go to Tasks](#networking-tasks)
 ---
-
+</br>
 Hey there! We know that __Cybersecurity__ can be a pretty technical topic, but we're here to make it as easy as pie! Cybersecurity __NETWORKING__ is all about keeping your data and systems safe from prying eyes and malicious attacks. Computers that access, use, and share network resources are called clients. In __Cyberville__, we're going to use __b.Boards__ instead of computers as clients to join the __Cyberville__ network and develop different activities to learn about cybersecurity. This is going to be really fun! As you connect and identify with a role, you'll learn about networking concepts like access points, hostnames, "pinging", MAC addresses 🆔, IP addresses 📮, and more. Don't worry if it seems a bit confusing at first! We're here to help! Welcome to the __Cyberville__, have fun and enjoy coding and learning!
-
 ## Activity Description
 This activity aims to enhance understanding of how computer networks operate and the roles electronic devices play within a network. Teachers and students will collaboratively create their own WiFi network in the classroom, assuming roles in __Cyberville__, a fictional futuristic city developed by Brilliant Labs.
 
@@ -60,16 +60,14 @@ __*Have fun!*__
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 
-
-# 1_CONNECTING
-
+</br>
 It's time to connect to the __Cyberville__ WiFi network. __Cyberville__ iis a fictional futuristic city developed by the awesome folks at Brilliant Labs. In __Cyberville__, all clients or __b.Boards__ are connected to the __Cyberville__ WiFi network. The WiFi service in __Cyberville__ is provided by the M5 module, which will create the WiFi Access Point 📳 called "Cyberville #?". Let´s connect to the __Cyberville__ network.  
 
-## Activity Description
+## Task Description
 The 🧑‍🎓__students__ should be able to connect to the Cyberville WiFi Access Point created by the 🧑‍🏫 __teacher__.
 
 *Let's start!*
-## __🧑‍🏫 Teachers:__
+### __🧑‍🏫 Teachers:__
 In order to establish the requisite access point 📳, it is essential to utilize the M5 module, as this will facilitate the necessary connection. The __Networking_BL_EN__ activity, which is within the M5 module, should be selected and loaded. 
 
 ##### ~avatar
@@ -80,7 +78,7 @@ It may be beneficial to share your MAC address 🆔 and IP address 📮 generate
 ####  Access Point Name - Cyberville Number
 Note that __we will not use a password__ for this activity, as the Cyberville number will change each time you restart the M5 module.
 ![CybervilleNumb](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/CybervilleNumb_EN.png?raw=true "Cyberville Number for Access Point")
-## __🧑‍🎓 Students:__
+### __🧑‍🎓 Students:__
 __1.__ Create a new project using the micro:bit V2, ensuring that you are working with a __b.Board Rev 1.4__ and naming it "Networking_A". You can find instructions on how to identify the hardware and software version of your __b.Board__ [__👉Here__](https://drive.google.com/file/d/1yllWJcc--RhKsAEizD8vK-3rGGuAAV-P/view?usp=sharing).
 
 ![Step1](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Step1.png?raw=true "Step1")  
@@ -103,7 +101,7 @@ __6.__ Turn on the __b.Board__ and establish communication between the PC, micro
   
 __7.__ ⬇️ Download the code and check the connection and disconnection code with the 📳 M5 module WiFi access point.
 
-## __What to expect?__
+### __What to expect?__
 When students 🧑‍🎓 use the 🧩 ``||Connect to WiFi("") with Password("")||`` block, a flashing check mark ✅ will appear as an initialization test, indicating that they are connected to the access point 📳. If the micro:bit shows a ❎, it means the connection was unsuccessful.
 ![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")
 
@@ -119,12 +117,11 @@ In order to reconnect, it is necessary to either modify the code -be ingenius- o
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex). 
-<!--
-Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
--->
 
-This code example to evaluate your code sequence and test it.
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes below to modify it in the 🧩 Blocks editor.
+<!--  
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")-->
+This code example to evaluate your connection and test it.
 
 ```blocks
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -136,18 +133,19 @@ if (Cybersec.WiFi_Connected()) {
     basic.showIcon(IconNames.Happy)
 }
 ```
-_**``Please do not forget to set up the correct name and password for the access point.``**_
+### ~ avatar
+- Please do not forget to set up the correct name and password for the access point. 
+- Mute the PC sound to listen the __b.Board__ sound.
+##### ~
+### [[🔙 Back Tasks](#networking-tasks)]       |       [[⏮️ Back Networking](#networking)]  
 ---
-### [[🔙 Back Tasks](#networking-tasks)] | [[⏮️ Back Networking](#networking)]
 ---
 ## MAC AND IP ADDRESS
-<!--
+![MacIcon](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/2_MAC_IP/MAC_IP_Icon-EN.png?raw=true "MacIcon") 
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
--->
-# 2_MAC and IP Address
-
+</br>
 The Media Access Control (MAC) Address 🆔 is a 12-digit hexadecimal number assigned to each device connected to a network. It appears in the following format:
 ### 34:ab:95:98:d1
 The MAC Address 🆔 is unique; every computer, phone, tablet, __b.Board__, or electronic device connected to any network has its own MAC address 🆔.
@@ -159,7 +157,6 @@ The M5 module will assign an IP address 📮 to each __b.Board__ in __Cyberville
 
 MAC 🆔 and IP 📮 addresses work together within a network. The MAC Address 🆔 enables device identification, while the IP Address 📮 provides the location necessary for sending and receiving data.
 
-## Activity: 
 ### Find the b.Board's MAC 🆔 and IP 📮 Address
 
 This activity consists of finding the MAC 🆔 and IP address 📮 for each __b.Board__. Students will publish it on a label or __Cyberville__ ID card. Therefore, students 🧑‍🎓 can identify these addresses as unique and owned in __Cyberville__ when they make comparisons with each other, and it is useful to recognize them in the network.
@@ -223,13 +220,10 @@ If you would like, you can also see the 🆔 MAC and 📮 IP address on the __*S
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex). 
-<!--
-Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
--->
 
-_**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the b.Board sound.`**_
-
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes below to modify it in the 🧩 Blocks editor.
+<!--  
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")-->
 You can use this code example to obtain the 🆔 MAC and 📮 IP addresses.
 
 ```blocks
@@ -243,18 +237,20 @@ Cybersec.WifiConnect("Cyberville #?", "")
 basic.forever(function () {	
 })
 ```
+##### ~avatar
+- Please do not forget to set up the correct name and password for the access point. 
+- Mute the PC sound to listen the __b.Board__ sound.
+##### ~
+### [[🔙 Back Tasks](#networking-tasks)] | [[⏮️ Back Networking](#networking)]
 ---
-##### [[🔙 Back Tasks](#networking-tasks)] | [[⏮️ Back Networking](#networking)]
 ---
 ## ROLES
-<!--
+![Roles_Icon](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/3_Role/Roles_Icon-EN.png?raw=true "Roles_Icon") 
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
--->
-# 3_Roles
-
-In this activity you will take on a role in Cyberville so that you can protect it from Cyber Attacks.
+</br>
+In this task you will take on a role in Cyberville so that you can protect it from Cyber Attacks.
 
 ### Take a role in The Cyberville
 
@@ -279,14 +275,11 @@ Once you've successfully linked each __b.Board__ in the classroom to __Cybervill
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex). 
-<!--
-Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
--->
 
-_**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the __b.Board__ sound.`**_
-
-You can use this code example to have a __👤 Role__ in __Cyberville__, please change the WETER-Umbrella for your own role.
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes below to modify it in the 🧩 Blocks editor.
+<!--  
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")-->
+You can use this code example to have a __👤 Role__ in __Cyberville__, please change the 💧 WATER for your own role.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -305,43 +298,47 @@ basic.forever(function () {
     }
 })
 ```
+##### ~avatar
+- Please do not forget to set up the correct name and password for the access point. 
+- Mute the PC sound to listen the __b.Board__ sound.
+##### ~
 ---
 ##### [[🔙 Back Tasks](#networking-tasks)] | [[⏮️ Back Networking](#networking)]
 ---
+---
 ## PINGING
+![DoPingIcon](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/4_Do_Ping/Do_Ping_Icon-EN.png?raw=true "DoPingIcon") 
 ---
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝**Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 ---
-
-# 4_PINGING
-
+</br>
 Now that the __Cyberville__ network is up and running and everyone's roles are filled, it's time to find out if there's someone special in the network. To do that, we're going to use the command "__ping__."
 
 A __"ping"__ is a simple Internet program that lets you test and verify if a particular destination __IP__ address exists and can accept requests in the __Cyberville__ network. It's really easy to use! Another great thing about __ping__ is that it lets you know if another __b.Board__ is trying to reach you and that it's working properly.
 Let's use the __"ping"__ command to find out if other roles are in the __Cyberville__ network! 
 
-## Activity
+### Task
 Let's quickly check if the access point 📳 M5Core2 Module is available. Just do a __Ping__, and we'll know in no time! It has a handy default IP address of 192.168.4.1, which is perfect for getting started using the command PING! 
 It would be really fun to share our ID cards and find out who our classmates are connected to! Don't forget to set up your friends' IP addresses in the block 🧩 ``||Do PING to IP("")||``, and make sure you're connected to the right access point 📳.
 You'll get a 😊 smiley face if your request role is available in the network, and a 😔 sad face if it's not.
 
 ## Code Example
 You can download the .hex file for this activity by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Networking_D.hex). 
-Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes to modify it in the 🧩 Blocks editor.
-![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
-
-_**`Please do not forget to set up the correct name and password for the access point. Mute the PC sound to listen the __b.Board__ sound.`**_
-
+Once downloaded, either drag and drop it into a new project, or click the **📝 Edit** icon in the programming language modes below to modify it in the 🧩 Blocks editor.
+<!--  
+![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")-->
 You can use this code example to __pinging__ your friends.
-
 ```blocks
 input.onButtonPressed(Button.A, function () {
     Cybersec.PingbBfrend("192.168.4.1")
 })
 Cybersec.WifiConnect("Cyberville #?", "")
 ```
----
-##### [[🔙 Back Tasks](#networking-tasks)] | [[⏮️ Back Networking](#networking)]
+##### ~avatar
+- Please do not forget to set up the correct name and password for the access point. 
+- Mute the PC sound to listen the __b.Board__ sound.
+##### ~
+### [[🔙 Back Tasks](#networking-tasks)] | [[⏮️ Back Networking](#networking)]
 ---

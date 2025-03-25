@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta name="twitter:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/Sound1/Mkt_Listen-EN.png?raw=true" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
+<meta property="og:image" content="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/Sound1/Mkt_Listen-EN.png?raw=true" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,7 +1680,53 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="bboard-tutorials-cards">bboard-tutorials-cards</h1>
+        <h1 id="-b-board-tutorial-cards-">📒 b.Board Tutorial Cards:</h1><h1 id="sound"><code>SOUND</code></h1><ul>
+<li><a  rel="nofollow noopener" href="#make-it-listen">Make it Listen</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-play-music">Make it Play Music</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-talk">Make it Talk</a> </li>
+<li><a  rel="nofollow noopener" href="#make-it-alarm">Make it Alarm</a> </li>
+</ul>
+<hr>
+<h2 id="make-it-listen">Make it Listen</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/Sound1/Mkt_Listen-EN.png?raw=true" alt="Mkt_Listen-EN" title="Mkt_Listen-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT LISTEN using the b.Board</p>
+<pre><code class="lang-blocks">
+basic.forever(function () {
+basic.showIcon(IconNames.Happy)
+})
+bBoard_Mic.onMicThresh(bBoard_Mic.soundLevel.loud, function () {
+basic.showIcon(IconNames.Surprised)
+})
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#sound">Back Menu</a></h5><hr>
+<h2 id="make-it-play-music">Make it Play Music</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/Sound2/Mkt_Play_Music-EN.png?raw=true" alt="Mkt_Play_Music-EN" title="Mkt_Play_Music-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT PLAY MUSIC using the b.Board</p>
+<pre><code class="lang-blocks">
+music.playMelody(&quot;C5 B A G F E D C &quot;, 293)
+for (let index = 0; index &lt; 4; index++) {
+music.playTone(262, music.beat(BeatFraction.Whole))
+music.rest(music.beat(BeatFraction.Whole))
+music.playTone(392, music.beat(BeatFraction.Eighth))
+}
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#sound">Back Menu</a></h5><hr>
+<h2 id="make-it-talk">Make it Talk</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/Sound3/Mkt_Talk-EN.png?raw=true" alt="Mkt_Talk-EN" title="Mkt_Talk-EN" loading="lazy"></p>
+<h2 id="code-example">Code Example</h2><p>Example MAKE IT TALK using the b.Board</p>
+<pre><code class="lang-blocks">
+input.onButtonPressed(Button.A, function () {
+MP3.playSong(MP3_2.mp3FileNumbers.one)
+})
+input.onButtonPressed(Button.B, function () {
+MP3.pause()
+})
+let MP3: MP3_2.KT403A = null
+MP3 = MP3_2.createMP3Click(BoardID.zero, ClickID.A)
+</code></pre>
+<hr>
+<h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#sound">Back Menu</a></h5><hr>
+<h2 id="make-it-alarm">Make it Alarm</h2><h2 id="mk_alarm-en"><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/Sound4/Mk_Alarm-EN.png?raw=true" alt="Mk_Alarm-EN" title="Mk_Alarm-EN" loading="lazy"></h2><h5 id="-back-menu">🔙 <a  rel="nofollow noopener" href="#sound">Back Menu</a></h5><hr>
+
     </div>
 
 					<div class="hideprint"></div>

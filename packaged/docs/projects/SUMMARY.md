@@ -13,7 +13,7 @@
   * [3_LED](/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/README.html)
   * [4_Remote](/docs/static/mb/projects/bboard-tutorials-full-cards/4_Remote/README.html)
   * [5_Move](/docs/static/mb/projects/bboard-tutorials-full-cards/5_Move/README.html)
-  * [6_Control](/docs/static/mb/projects/bboard-tutorials-full-cards/6_Remote/README.html)
+  * [6_Control](/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/README.html)
   * [7_Sound](/docs/static/mb/projects/bboard-tutorials-full-cards/7_Sound/README.html)
   * [8_Measurement](/docs/static/mb/projects/bboard-tutorials-full-cards/8_Measure/README.html)
 * [Click Boards](/projects/bboard-full)

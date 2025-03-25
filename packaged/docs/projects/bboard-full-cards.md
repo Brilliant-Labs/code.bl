@@ -53,7 +53,7 @@ Learn to use the b.Board using Cards your @boardname@!
 },
 {
   "name": "6_Control",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/6_Remote/README.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/6_Control/README.html",
   "description": "Control",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Control.png",
   "cardType": "large",
