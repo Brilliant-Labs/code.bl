@@ -18,12 +18,21 @@ Learn to use Clickboards with your @boardname@.
 },
 {
   "name": "2_Control",
- "url":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/README.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/README.html",
   "description": "Control Click Boards",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/relay/relay.png",
   "cardType": "large",
   "label": "",
-  "labelClass": ""
+  "labelClass": "",
+
+  "otherActions": [
+    {
+      "url": "/docs/static/mb/projects/bboard-tutorials-full/2_Control/README-FR",  
+      "cardType": "side" 
+    }
+  ]
+
+
 },
 {
   "name": "3_Sensor Environmental",
@@ -48,7 +57,7 @@ Learn to use Clickboards with your @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-full/5_Sensor_Motion/README.html",
   "description": "Sensor Motion Click Boards",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full/5_Sensor_Motion/motion/motionSensor.jpg",
-  "cardType": "Large",
+  "cardType": "large",
   "label": "",
   "labelClass": ""
 }
