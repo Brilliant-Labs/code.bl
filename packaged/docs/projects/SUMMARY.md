@@ -7,7 +7,7 @@
   * [Dice](/projects/dice)
   * [Love Meter](/projects/love-meter)
   * [Micro Chat](/projects/micro-chat)
-* [b.Board Tutorial Cards](/projects/bboard-full-cards)
+* [b.Board Tutorial Cards / Cartes de tutoriel b.Board](/projects/bboard-full-cards)
   * [1_Intro](/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/README.html)
   * [2_Lights](/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/README.html)
   * [3_LED](/docs/static/mb/projects/bboard-tutorials-full-cards/3_LED/README.html)

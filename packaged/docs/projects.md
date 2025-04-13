@@ -9,7 +9,7 @@
         "largeImageUrl": "/docs/static/mb/projects/flashing-heart/sim.gif"
     },
     {
-        "name": "b.Board Tutorial Cards",
+        "name": "b.Board Tutorial Cards / Cartes de tutoriel b.Board",
         "url": "/projects/bboard-full-cards",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full-cards/Intro.png"
     },
@@ -114,7 +114,7 @@
 ## See Also
 
 [Tutorials](/tutorials),
-[b.Board Tutorial Cards](/projects/bboard-full-cards),
+[b.Board Tutorial Cards / Cartes de tutoriel b.Board](/projects/bboard-full-cards),
 [Click Boards](/projects/bboard-full),
 [CyberSecurity #1](/projects/bboard-cybersec),
 [CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville-full),

@@ -9,7 +9,7 @@ Learn to use the b.Board using Cards your @boardname@!
 [{
   "name": "1_Intro",
   "url":"/docs/static/mb/projects/bboard-tutorials-full-cards/1_Intro/README.html",
-  "description": "Hello b.Board, Lets code, Your code Guide, Download",
+  "description": "Hello b.Board, Lets code, Your code Guide, Download / Bonjour b.Board, Codons, Votre guide de code, Télécharger",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full-cards/Intro.png",
   "cardType": "large",
   "label": "Cards",
