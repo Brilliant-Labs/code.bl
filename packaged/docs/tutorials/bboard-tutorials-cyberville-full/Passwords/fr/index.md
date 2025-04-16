@@ -1,2 +1,2 @@
 # %tutorial
-@include ./README.fr.md
+@include ../README.fr.md
