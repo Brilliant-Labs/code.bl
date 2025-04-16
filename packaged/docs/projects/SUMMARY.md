@@ -33,7 +33,7 @@
   * [Activity 7 - Networking](/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/README.html)
   * [Activity 8 - Valuable Data](/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README.html)
   * [Activity 9 - Remote Commands](/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README.html)
-  * [Activity 10 - Passwords / Activité 10 - Mots de passe](/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README.md)
+  * [Activity 10 - Passwords](/docs/tutorials/bboard-tutorials-cyberville-full/Passwords/)
 * [Live Coding](/live-coding)
   * [Flashing Heart](https://youtu.be/NvEOKZ8wh9s)
   * [Name Tag](https://youtu.be/xpRI5jjQ31E)
