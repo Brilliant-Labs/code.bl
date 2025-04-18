@@ -418,13 +418,12 @@ Have fun!
 
 Let's get started!
 We've made it really easy for you to recreate the awesome environment from Mission Fake Parking ID while learning about cybersecurity. All you have to do is:
-1. Download, print and cover the b.Board for Mission Fake Parking ID.
+1. Download [__👉 Here__](https://drive.google.com/file/d/1lYtZyyQ5f7qhXzua5LGw7-LFFzpQwcW4/view?usp=sharing) print and cover the b.Board for Mission Fake Parking ID.
+![Availability](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability.png?raw=true "Availability")
 2. Connect the servomortor to P0, it will be your barrer control.
 3. Code or download the game.
 4. Play Locally or using Remote Commands
-5. Enjoy!
-
-![Availability](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability.png?raw=true "Availability")
+5. Have Fun!
 
 ### __Playing Locally:__
 To use the 🎮 game of Availiability basically you have to consider 4 things.
@@ -432,7 +431,6 @@ To use the 🎮 game of Availiability basically you have to consider 4 things.
 2) Set the timer which the barrier control 🚥 will be open.
 3) Set a input block 🧩 to start the 🎮 game. For example on button A pressed
 4) Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed
-
 
 ### ``|>_|`` Code Example Availability Game! (Locally):
 You can download the .hex file for this task by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/Availability.hex), once downloaded, either drag and drop it into a new project. 
