@@ -1,3 +1,0 @@
-# MOTS DE PASSE 
-
-Bienvenue 
