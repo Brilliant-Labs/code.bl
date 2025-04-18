@@ -376,18 +376,89 @@ Cybersec.Rdy2listen()
 ### [[🔙 Back Tasks](#remote-commands-tasks)] | [[⏮️ Back Remote Commands](#remote-commands)]  
 ---
 ---
+
 ## AVAILABILITY
 ![Availability-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability-EN.png?raw=true "Availability-EN") 
 # ~avatar
 _Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to_ 📝 **Edit** _the sample code or_ ⬇️ **download** _it to your __b.Board__._
 # ~
 </br>
-😎 Coming soon!
+Imagine you have a favorite online game that you love playing with your friends. One day, you try to log in, but the game won’t load! 😟 That’s because the game’s servers are down, or maybe too many people are trying to play at the same time. This is an example of a problem with Availability 🚧 in cybersecurity.
 
-### ~ avatar
-- Please do not forget to set up the correct name and password for the access point. 
-- Mute the PC sound to listen the __b.Board__ sound.
-##### ~
+What is Availability?
+🚧 Availability means that information and computer systems should always be ready and accessible whenever we need them. Just like a school needs to be open for students to learn, websites, apps, and online services need to be available for people to use.
+
+Why is Availability Important?
+Without Availability, we wouldn’t be able to:
+ ✅ Send messages to friends 📩
+ ✅ Watch videos online 🎥
+ ✅ Use learning websites for homework 📚
+ ✅ Play multiplayer games 🎮
+
+What Can Go Wrong?
+Sometimes, hackers or technical problems can stop a website or service from working. Here’s how:
+Too much traffic (like when too many people try to buy concert tickets at once, and the website crashes).
+Cyberattacks (like DDoS attacks, where bad people send too much fake traffic to a website, making it stop working).
+Power failures (if a server loses electricity, it can’t keep a website running).
+
+How Do We Protect Availability?
+To keep websites and services available, cybersecurity experts use:
+ 🔹 Backup servers – extra computers that take over if one fails.
+ 🔹 Load balancing – spreading out the work so no single computer gets overloaded.
+ 🔹 Cyberattack defenses – firewalls and security systems to stop bad traffic.
+
+### TASK 3: Availability
+This task is actually a fun game! In cybersecurity, Availability means making sure computers, websites, and data are always working and ready when people need them.
+
+In the Cyberville Mission: Fake Parking ID environment, Availability is like being able to enter a parking lot. When the barrier is open, you can get in—everything is available. But once the barrier closes, access is no longer available!
+
+The time the barrier stays open is set by the user. This can be done on the spot (locally) or by using Remote Commands.
+So, start the timer and run as fast as you can before the barrier closes and access is gone. 
+Have fun!
+
+Let's get started!
+We've made it really easy for you to recreate the awesome environment from Mission Fake Parking ID while learning about cybersecurity. All you have to do is:
+1. Download, print and cover the b.Board for Mission Fake Parking ID.
+2. Connect the servomortor to P0, it will be your barrer control.
+3. Code or download the game.
+4. Play Locally or using Remote Commands
+5. Enjoy!
+
+![Availability](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability.png?raw=true "Availability")
+
+### __Playing Locally:__
+To use the 🎮 game of Availiability basically you have to consider 4 things.
+1) Connect the servomotor (barrier control 🚥) in P0. (90º Open - 0º Close)
+2) Set the timer which the barrier control 🚥 will be open.
+3) Set a input block 🧩 to start the 🎮 game. For example on button A pressed
+4) Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed
+
+
+### ``|>_|`` Code Example Availability Game! (Locally):
+You can download the .hex file for this task by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/Availability.hex), once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
+
+```javascript
+input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+Cybersec.openbar()
+Cybersec.timeclose(1200)
+```
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+Cybersec.openbar()
+Cybersec.timeclose(1200)
+```
 ### [[🔙 Back Tasks](#remote-commands-tasks)] | [[⏮️ Back Remote Commands](#remote-commands)]  
 ---
 ---

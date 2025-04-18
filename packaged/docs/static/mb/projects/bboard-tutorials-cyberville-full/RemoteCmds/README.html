@@ -2039,19 +2039,64 @@ Cybersec.Rdy2listen()</code></pre>
         </div>
     </div>
 <p><br />
-😎 Coming soon!</p>
-
-    <div class='avatar '>
-        <div class='avatar-image'></div>
-        <div class='ui compact message'>
-            <ul>
-<li>Please do not forget to set up the correct name and password for the access point. </li>
-<li>Mute the PC sound to listen the <strong>b.Board</strong> sound.
-        </div>
-    </div>
-<h3 id="-back-tasks-back-remote-commands-">[<a  rel="nofollow noopener" href="#remote-commands-tasks">🔙 Back Tasks</a>] | [<a  rel="nofollow noopener" href="#remote-commands">⏮️ Back Remote Commands</a>]</h3></li>
-</ul>
-<hr>
+Imagine you have a favorite online game that you love playing with your friends. One day, you try to log in, but the game won’t load! 😟 That’s because the game’s servers are down, or maybe too many people are trying to play at the same time. This is an example of a problem with Availability 🚧 in cybersecurity.</p>
+<p>What is Availability?
+🚧 Availability means that information and computer systems should always be ready and accessible whenever we need them. Just like a school needs to be open for students to learn, websites, apps, and online services need to be available for people to use.</p>
+<p>Why is Availability Important?
+Without Availability, we wouldn’t be able to:
+ ✅ Send messages to friends 📩
+ ✅ Watch videos online 🎥
+ ✅ Use learning websites for homework 📚
+ ✅ Play multiplayer games 🎮</p>
+<p>What Can Go Wrong?
+Sometimes, hackers or technical problems can stop a website or service from working. Here’s how:
+Too much traffic (like when too many people try to buy concert tickets at once, and the website crashes).
+Cyberattacks (like DDoS attacks, where bad people send too much fake traffic to a website, making it stop working).
+Power failures (if a server loses electricity, it can’t keep a website running).</p>
+<p>How Do We Protect Availability?
+To keep websites and services available, cybersecurity experts use:
+ 🔹 Backup servers – extra computers that take over if one fails.
+ 🔹 Load balancing – spreading out the work so no single computer gets overloaded.
+ 🔹 Cyberattack defenses – firewalls and security systems to stop bad traffic.</p>
+<h3 id="task-3-availability">TASK 3: Availability</h3><p>This task is actually a fun game! In cybersecurity, Availability means making sure computers, websites, and data are always working and ready when people need them.</p>
+<p>In the Cyberville Mission: Fake Parking ID environment, Availability is like being able to enter a parking lot. When the barrier is open, you can get in—everything is available. But once the barrier closes, access is no longer available!</p>
+<p>The time the barrier stays open is set by the user. This can be done on the spot (locally) or by using Remote Commands.
+So, start the timer and run as fast as you can before the barrier closes and access is gone. 
+Have fun!</p>
+<p>Let’s get started!
+We’ve made it really easy for you to recreate the awesome environment from Mission Fake Parking ID while learning about cybersecurity. All you have to do is:</p>
+<ol>
+<li>Download, print and cover the b.Board for Mission Fake Parking ID.</li>
+<li>Connect the servomortor to P0, it will be your barrer control.</li>
+<li>Code or download the game.</li>
+<li>Play Locally or using Remote Commands</li>
+<li>Enjoy!</li>
+</ol>
+<p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability.png?raw=true" alt="Availability" title="Availability" loading="lazy"></p>
+<h3 id="playing-locally-"><strong>Playing Locally:</strong></h3><p>To use the 🎮 game of Availiability basically you have to consider 4 things.
+1) Connect the servomotor (barrier control 🚥) in P0. (90º Open - 0º Close)
+2) Set the timer which the barrier control 🚥 will be open.
+3) Set a input block 🧩 to start the 🎮 game. For example on button A pressed
+4) Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed</p>
+<h3 id="-_-code-example-availability-game-locally-"><code>|&gt;_|</code> Code Example Availability Game! (Locally):</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
+<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+Cybersec.openbar()
+Cybersec.timeclose(1200)</code></pre>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+Cybersec.openbar()
+Cybersec.timeclose(1200)</code></pre>
+<h3 id="-back-tasks-back-remote-commands-">[<a  rel="nofollow noopener" href="#remote-commands-tasks">🔙 Back Tasks</a>] | [<a  rel="nofollow noopener" href="#remote-commands">⏮️ Back Remote Commands</a>]</h3><hr>
 <hr>
 
     </div>

@@ -36,10 +36,10 @@ Welcome to CYBERVILLE!! @boardname@.
 },
 {
   "name": "Activity 10 - Passwords",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README",
   "description": "Weird Lights. School Under Cyber Attack! / Lumières étranges. Une école victime d'une cyberattaque ",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/School.png",
-  "cardType": "large",
+  "cardType": "side",
   "label": "",
   "labelClass": ""
 }
