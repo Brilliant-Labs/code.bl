@@ -1,6 +1,6 @@
 # Lights:  LIGHT UP WHEN ITS DARK
 
-![Light_Up_Dark-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cards/2_Lights/Lights7/Light_Up_Dark-EN.png?raw=true "Light_Up_Dark-EN")
+![Light_Up_Dark-EN](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-full-cards/2_Lights/Lights7/Light_Up_Dark-EN.png?raw=true "Light_Up_Dark-EN")
 
 ## Code Example
 

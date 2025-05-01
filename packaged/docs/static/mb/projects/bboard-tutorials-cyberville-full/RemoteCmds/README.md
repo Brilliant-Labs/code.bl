@@ -172,16 +172,16 @@ __3.__ Students will create a table listing the roles of all 📮 IP addresses i
 
 | Role 👤  | Icon  | Entity's name| IP Address  |
 | :------------------   | :---: | :--------------------- | :------------------|
-|    1️⃣ School           |🏫| `Lincoln School`           | 192.168._____._____
-|    2️⃣ Hospital         |🏥| `Hospital Cyberville`      | 192.168._____._____
-|    3️⃣ Water            |💧| `AquaPure`                 | 192.168._____._____
-|    5️⃣ Government       |🏢| `Cyberville Gov.Services`  | 192.168._____._____
-|    6️⃣ Brilliant Labs   |🏩| `Brilliant Labs`           | 192.168._____._____
-|    7️⃣ Bank             |🏦| `Pacific Bank`             | 192.168._____._____
-|    8️⃣ Factory          |🏭| `Volt Motors`              | 192.168._____._____
-|    9️⃣ Industry         |🏪| `Techmach Industries`      | 192.168._____._____
-|    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`       | 192.168._____._____
-|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community` | 192.168._____._____
+|    1️⃣ School           |🏫| `Lincoln School`           | 192.168.-----.-----
+|    2️⃣ Hospital         |🏥| `Hospital Cyberville`      | 192.168.-----.-----
+|    3️⃣ Water            |💧| `AquaPure`                 | 192.168.-----.-----
+|    5️⃣ Government       |🏢| `Cyberville Gov.Services`  | 192.168.-----.-----
+|    6️⃣ Brilliant Labs   |🏩| `Brilliant Labs`           | 192.168.-----.-----
+|    7️⃣ Bank             |🏦| `Pacific Bank`             | 192.168.-----.-----
+|    8️⃣ Factory          |🏭| `Volt Motors`              | 192.168.-----.-----
+|    9️⃣ Industry         |🏪| `Techmach Industries`      | 192.168.-----.-----
+|    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`       | 192.168.-----.-----
+|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community` | 192.168.-----.-----
 <br>
 __4.__ Once the listing table is done. they must send a __CONFIDENTIAL__ (private) message to each 📮 IP on the network using the 🧩 block ``||Send Private Message||`` asking for a partner with the same Autentication Code.
 
@@ -201,7 +201,7 @@ input.onButtonPressed(Button.A, function () {
     Cybersec.MSG_UPD_SndtoAll(Cybersec.blixel_indexR(BLiXelIndexR.one), "Hello everyone!")
 })
 input.onButtonPressed(Button.B, function () {
-    Cybersec.TXT_UPD_Snd("Just between us...", "192.168.4.3")
+    Cybersec.TXT_UPD_Snd("Just between us...", "192.168.4.?")
 })
 Cybersec.WifiConnect("Cyberville #?", "")
 Cybersec.Rdy2listen()
@@ -271,8 +271,9 @@ This __Integrity__ task is divided into two parts:
 
 Each team will program a b.Board to control a servomotor locally to understand how it functions. 🧑‍🎓 Students can use the following code to operate a parking access barrier 🚥 (servomotor) in a 🏢 Government parking area:
 
+### ``|>_|`` Code Example Controling Access Barrier 🚥:  
+You can download the .hex file for this task by clicking [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity-Local.hex). Once downloaded, either drag and drop it into a new project. 
 
-##### ``|>_|`` Code Example Controling Access Barrier 🚥:  
 ```javascript
 input.onButtonPressed(Button.A, function () {
     Cybersec.increase()
@@ -294,7 +295,7 @@ basic.forever(function () {
 ---
 #### __Part Two:__
 __Controlling a parking access barrier 🚥 Remotely...__
-In this part of the task, 🧑‍🎓 students are encouraged to control the barrier by sending commands remotely from the *Control b.Board* to the *Device b.Board*.
+In this part of the task, 🧑‍🎓 students are encouraged to control the barrier by sending commands remotely from the *Control* to the *Barrier*.
 
 #### __🧑‍🏫 Teachers:__
 For __Integrity__ task in the frame from __Mission Fake Parking ID__ please follow the same steps for __Confidential__ task, in order to provide the 📳 access point name and password to the 🧑‍🎓 students.
@@ -303,15 +304,15 @@ For __Integrity__ task in the frame from __Mission Fake Parking ID__ please foll
 #### __🧑‍🎓 Students:__
 __1.__ Students should follow the steps in the __Confidential__ task to obtain their own 📮 IP address as well as their matched partner’s 📮 IP address.
 
-__2.__ Once the matched teams are connected, they are ready to __Send Commands Remotely__ and control the parking access barrier 🚥. One team with a b.Board should act as the *Control b.Board*, while the matched partner should act as the *Device b.Board*.
+__2.__ Once the matched teams are connected, they are ready to __Send Commands Remotely__ and control the parking access barrier 🚥. One team with a b.Board should act as the *Control Remotely*, while the matched partner should act as the *Barrier Remotely*.
 
 
 ### ``|>_|`` Code Example:
-You can download the .hex file for this task by clicking [__⬇️ Here for Side *Control b.Board*__](https://brilliantlabs.ca/documents/cybersec/InegrityCnt.hex), or [__⬇️ Here for Side *Device b.Board*__](https://brilliantlabs.ca/documents/cybersec/InegrityDvc.hex) Once downloaded, either drag and drop it into a new project. 
+You can download the .hex file for this task by clicking [__⬇️ Here *Control*__](https://brilliantlabs.ca/documents/cybersec/Integrity_Control_Remotely.hex). Once downloaded, either drag and drop it into a new project. 
 You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
 Agree with your match partner wich the side your are going to be part, *Control B.Board* or *Device b.Board*
 
-##### ``|>_|`` *Side Control b.Board*
+##### ``|>_|`` *Control Remotely*
 
 ```javascript
 input.onButtonPressed(Button.A, function () {
@@ -334,10 +335,7 @@ basic.forever(function () {
     Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), "192.168.4.?")
 })
 ```
-
-##### ``|>_|`` *Side Device b.Board*
-
-```javascript
+```blocks
 input.onButtonPressed(Button.A, function () {
     Cybersec.increase()
 })
@@ -357,6 +355,20 @@ basic.forever(function () {
     servos.P00.setAngle(Cybersec.getValueDeg())
     Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), "192.168.4.?")
 })
+```
+
+
+##### ``|>_|`` *Barrier Remotely*
+You can download the .hex file for this task by clicking [__⬇️ Here *Barrier*__](https://brilliantlabs.ca/documents/cybersec/Integrity_Barrier_Remotely.hex). Once downloaded, either drag and drop it into a new project.
+
+```javascript
+Cybersec.WifiConnect("Cyberville #?", "")
+Cybersec.Rdy2listen()
+```
+
+```blocks
+Cybersec.WifiConnect("Cyberville #?", "")
+Cybersec.Rdy2listen()
 ```
 
 <!--
@@ -364,10 +376,10 @@ Once downloaded, either drag and drop it into a new project, or click the **📝
 ![IconEdit](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/2_Seq_to_Access/IconEdit.png?raw=true "IconEdit")
 -->
 
-```blocks
-Cybersec.WifiConnect("Cyberville #?", "")
-Cybersec.Rdy2listen()
-```
+---
+- *Please do not forget to set up the correct name and password for the access point.*
+- *Mute the PC sound to listen the b.Board sound.*
+---
 
 ### ~ avatar
 - Please do not forget to set up the correct name and password for the access point. 
@@ -458,5 +470,4 @@ Cybersec.openbar()
 Cybersec.timeclose(1200)
 ```
 ### [[🔙 Back Tasks](#remote-commands-tasks)] | [[⏮️ Back Remote Commands](#remote-commands)]  
----
 ---

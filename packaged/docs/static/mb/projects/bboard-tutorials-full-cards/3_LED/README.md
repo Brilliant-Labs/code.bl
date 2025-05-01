@@ -4,7 +4,7 @@
 
 - [Make it Light Addressable Rainbow](#make-it-light-addressable-rainbow) 
 - [Make it Light Addressable One Color](#make-it-light-addressable-one-color) 
-- [Make it Light Your Lights Rotate](#make-it-your-lights-rotate) 
+- [Make it Light Your Lights Rotate](#make-your-lights-rotate) 
 - [Make it Blink](#make-it-blink) 
 - [Make it Control Lights Sound](#make-it-control-lights-sound)
 

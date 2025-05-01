@@ -78,17 +78,17 @@ __2.__ Students will send a welcome message to ALL! in the network using the �
 __3.__ Students will create a table listing the roles of all 📮 IP addresses in the network. Like this:
 
 | Role 👤  | Icon  | Entity's name| IP Address  |
-| :------------------   | :---: | :--------------------- | :------------------|
-|    1️⃣ School           |🏫| `Lincoln School`           | 192.168._____._____
-|    2️⃣ Hospital         |🏥| `Hospital Cyberville`      | 192.168._____._____
-|    3️⃣ Water            |💧| `AquaPure`                 | 192.168._____._____
-|    5️⃣ Government       |🏢| `Cyberville Gov.Services`  | 192.168._____._____
-|    6️⃣ Brilliant Labs   |🏩| `Brilliant Labs`           | 192.168._____._____
-|    7️⃣ Bank             |🏦| `Pacific Bank`             | 192.168._____._____
-|    8️⃣ Factory          |🏭| `Volt Motors`              | 192.168._____._____
-|    9️⃣ Industry         |🏪| `Techmach Industries`      | 192.168._____._____
-|    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`       | 192.168._____._____
-|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community` | 192.168._____._____
+| :------------------   | :---: | :--------------------- | :---------------|
+|    1️⃣ School           |🏫| `Lincoln School`           | 192.168.---.--- 
+|    2️⃣ Hospital         |🏥| `Hospital Cyberville`      | 192.168.---.--- 
+|    3️⃣ Water            |💧| `AquaPure`                 | 192.168.---.--- 
+|    5️⃣ Government       |🏢| `Cyberville Gov.Services`  | 192.168.---.--- 
+|    6️⃣ Brilliant Labs   |🏩| `Brilliant Labs`           | 192.168.---.--- 
+|    7️⃣ Bank             |🏦| `Pacific Bank`             | 192.168.---.--- 
+|    8️⃣ Factory          |🏭| `Volt Motors`              | 192.168.---.--- 
+|    9️⃣ Industry         |🏪| `Techmach Industries`      | 192.168.---.--- 
+|    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`       | 192.168.---.--- 
+|    1️⃣2️⃣ Citizens       |😎| `The Cyberville community` | 192.168.---.--- 
 <br>
 __4.__ Once the listing table is done. they must send a __CONFIDENTIAL__ (private) message to each 📮 IP on the network using the 🧩 block ``||Send Private Message||`` asking for a partner with the same Autentication Code.
 
