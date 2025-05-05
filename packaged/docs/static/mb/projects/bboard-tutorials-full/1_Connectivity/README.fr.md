@@ -1,6 +1,6 @@
 # 📒 b.Board Tutorial Clickboards:
 
-# `CONNECTIVITY`
+# `CONNECTIVITY FR`
 
 - [NFC](#nfc) 
 - [WiFi ble](#wifi-ble) 

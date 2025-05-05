@@ -18,7 +18,7 @@ Learn to use Clickboards with your @boardname@.
 },
 {
   "name": "2_Control",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/README.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/README",
   "description": "Control Click Boards",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/relay/relay.png",
   "cardType": "large",
@@ -27,12 +27,10 @@ Learn to use Clickboards with your @boardname@.
 
   "otherActions": [
     {
-      "url": "/docs/static/mb/projects/bboard-tutorials-full/2_Control/README-FR",  
+      "url": "/docs/static/mb/projects/bboard-tutorials-full/2_Control/README.fr",  
       "cardType": "side" 
     }
   ]
-
-
 },
 {
   "name": "3_Sensor Environmental",
