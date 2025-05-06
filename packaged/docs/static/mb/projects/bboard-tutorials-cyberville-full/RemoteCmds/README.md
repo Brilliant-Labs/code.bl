@@ -445,7 +445,7 @@ To use the 🎮 game of Availiability basically you have to consider 4 things.
 4) Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed
 
 ### ``|>_|`` Code Example Availability Game! (Locally):
-You can download the .hex file for this task by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/Availability.hex), once downloaded, either drag and drop it into a new project. 
+You can download the .hex file for this task by clicking [__⬇️ Here__](https://www.brilliantlabs.ca/documents/cybersec/Availability_Local.hex), once downloaded, either drag and drop it into a new project. 
 You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
 
 ```javascript
@@ -469,5 +469,88 @@ input.onButtonPressed(Button.B, function () {
 Cybersec.openbar()
 Cybersec.timeclose(1200)
 ```
+
+---
+---
+### ___Playing using Remote Commands:__
+To use the 🎮 game of Availiability using Remote Commands, basically you have to consider 6 things.
+1) A classmate will set the timer remotly, and you have to run before the 🚥 barrier close. so you need two bBoards.
+2) Both needs to know thier own 📮 IP Address and classmate 📮 IP Address, so you have to be connected to the Access point 📳 M5 module, and be ready to hear any message.
+3) Connect the servomotor (barrier control 🚥) in P0. (90º Open - 0º Close).
+4) For Sending Timer b.Board side 
+ Set a input block 🧩 to Send Number: (---) To IP: (---.---.---.---). For example on button A pressed.
+Download the code.
+
+When your classamate is ready, send the timer number, remember it is in miliseconds. This start the timer before the barrier will close on the receiving b.Board side.
+5) For Receiving Runner b.Board side
+Set a input block 🧩 to receive the timer value (data) from your classmate, use the 🧩Block Number received from IP: (---.---.---.---).
+Set a input block 🧩 to start the 🎮 game Star Closing. For example on button A pressed
+Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed
+
+### ``|>_|`` Code Example Availability Game! (Sending Timer Remotely):
+You can download the .hex file by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/Availability_Timer_Remotely.hex), once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
+
+```javascript
+input.onButtonPressed(Button.A, function () {
+ Cybersec.Num_UDP_Snd(1200, "192.168.4.?")
+})
+Cybersec.WifiConnect("Cyberville #?", "")
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+ Cybersec.Num_UDP_Snd(1200, "192.168.4.?")
+})
+Cybersec.WifiConnect("Cyberville #?", "")
+```
+
+### ``|>_|`` Code Example Availability Game! (Receiving Runner Remotely):
+You can download the .hex file by clicking [__⬇️ Here__](https://brilliantlabs.ca/documents/cybersec/Availability_Runner_Remotely.hex), once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
+
+```javascript
+input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+let Timer = 0
+let Temp = 0
+Cybersec.WifiConnect("Cyberville #?", "")
+Cybersec.Rdy2listen()
+Cybersec.openbar()
+basic.forever(function () {
+ Temp = Cybersec.ReceiveNumber("192.168.4.?")
+ if (Temp > 0) {
+ Timer = Temp
+ basic.showNumber(Timer)
+ Cybersec.timeclose(Timer)
+ }
+})
+```
+```blocks
+input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+let Timer = 0
+let Temp = 0
+Cybersec.WifiConnect("Cyberville #?", "")
+Cybersec.Rdy2listen()
+Cybersec.openbar()
+basic.forever(function () {
+ Temp = Cybersec.ReceiveNumber("192.168.4.?")
+ if (Temp > 0) {
+ Timer = Temp
+ basic.showNumber(Timer)
+ Cybersec.timeclose(Timer)
+ }
+})
+```
+
+
 ### [[🔙 Back Tasks](#remote-commands-tasks)] | [[⏮️ Back Remote Commands](#remote-commands)]  
 ---

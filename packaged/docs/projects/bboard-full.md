@@ -27,7 +27,7 @@ Learn to use Clickboards with your @boardname@.
 
   "otherActions": [
     {
-      "url": "/docs/static/mb/projects/bboard-tutorials-full/2_Control/README.fr",  
+      "url": "/docs/static/mb/projects/bboard-tutorials-full/2_Control/README-FR",  
       "cardType": "side" 
     }
   ]

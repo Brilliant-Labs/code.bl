@@ -2088,7 +2088,7 @@ We’ve made it really easy for you to recreate the awesome environment from Mis
 2) Set the timer which the barrier control 🚥 will be open.
 3) Set a input block 🧩 to start the 🎮 game. For example on button A pressed
 4) Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed</p>
-<h3 id="-_-code-example-availability-game-locally-"><code>|&gt;_|</code> Code Example Availability Game! (Locally):</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
+<h3 id="-_-code-example-availability-game-locally-"><code>|&gt;_|</code> Code Example Availability Game! (Locally):</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Availability_Local.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
 You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
 <pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
  Cybersec.StartGame()
@@ -2106,6 +2106,70 @@ input.onButtonPressed(Button.B, function () {
 })
 Cybersec.openbar()
 Cybersec.timeclose(1200)</code></pre>
+<hr>
+<hr>
+<h3 id="_playing-using-remote-commands-"><strong>_Playing using Remote Commands:</strong></h3><p>To use the 🎮 game of Availiability using Remote Commands, basically you have to consider 6 things.
+1) A classmate will set the timer remotly, and you have to run before the 🚥 barrier close. so you need two bBoards.
+2) Both needs to know thier own 📮 IP Address and classmate 📮 IP Address, so you have to be connected to the Access point 📳 M5 module, and be ready to hear any message.
+3) Connect the servomotor (barrier control 🚥) in P0. (90º Open - 0º Close).
+4) For Sending Timer b.Board side 
+ Set a input block 🧩 to Send Number: (—) To IP: (—.—.—.—). For example on button A pressed.
+Download the code.</p>
+<p>When your classamate is ready, send the timer number, remember it is in miliseconds. This start the timer before the barrier will close on the receiving b.Board side.
+5) For Receiving Runner b.Board side
+Set a input block 🧩 to receive the timer value (data) from your classmate, use the 🧩Block Number received from IP: (—.—.—.—).
+Set a input block 🧩 to start the 🎮 game Star Closing. For example on button A pressed
+Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed</p>
+<h3 id="-_-code-example-availability-game-sending-timer-remotely-"><code>|&gt;_|</code> Code Example Availability Game! (Sending Timer Remotely):</h3><p>You can download the .hex file by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability_Timer_Remotely.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
+<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+ Cybersec.Num_UDP_Snd(1200, &quot;192.168.4.?&quot;)
+})
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)</code></pre>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+ Cybersec.Num_UDP_Snd(1200, &quot;192.168.4.?&quot;)
+})
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)</code></pre>
+<h3 id="-_-code-example-availability-game-receiving-runner-remotely-"><code>|&gt;_|</code> Code Example Availability Game! (Receiving Runner Remotely):</h3><p>You can download the .hex file by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability_Runner_Remotely.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
+You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
+<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+let Timer = 0
+let Temp = 0
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+Cybersec.Rdy2listen()
+Cybersec.openbar()
+basic.forever(function () {
+ Temp = Cybersec.ReceiveNumber(&quot;192.168.4.?&quot;)
+ if (Temp &gt; 0) {
+ Timer = Temp
+ basic.showNumber(Timer)
+ Cybersec.timeclose(Timer)
+ }
+})</code></pre>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+ Cybersec.StartGame()
+})
+input.onButtonPressed(Button.B, function () {
+ Cybersec.RunBC()
+})
+let Timer = 0
+let Temp = 0
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+Cybersec.Rdy2listen()
+Cybersec.openbar()
+basic.forever(function () {
+ Temp = Cybersec.ReceiveNumber(&quot;192.168.4.?&quot;)
+ if (Temp &gt; 0) {
+ Timer = Temp
+ basic.showNumber(Timer)
+ Cybersec.timeclose(Timer)
+ }
+})</code></pre>
 <h3 id="-back-tasks-back-remote-commands-">[<a  rel="nofollow noopener" href="#remote-commands-tasks">🔙 Back Tasks</a>] | [<a  rel="nofollow noopener" href="#remote-commands">⏮️ Back Remote Commands</a>]</h3><hr>
 
     </div>
