@@ -18,7 +18,7 @@ Learn to use Clickboards with your @boardname@.
 },
 {
   "name": "2_Control",
-  "url":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/README",
+  "url":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/READM.html",
   "description": "Control Click Boards",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/relay/relay.png",
   "cardType": "large",

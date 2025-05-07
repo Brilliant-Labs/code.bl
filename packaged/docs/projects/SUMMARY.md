@@ -18,7 +18,7 @@
   * [8_Measurement](/docs/static/mb/projects/bboard-tutorials-full-cards/8_Measure/README.html)
 * [Click Boards](/projects/bboard-full)
   * [1_Connectivity](/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/README.html)
-  * [2_Control](/docs/static/mb/projects/bboard-tutorials-full/2_Control/README)
+  * [2_Control](/docs/static/mb/projects/bboard-tutorials-full/2_Control/READM.html)
   * [3_Sensor Environmental](/docs/static/mb/projects/bboard-tutorials-full/3_Sensor_Enviromental/README.html)
   * [4_Sensor Optical](/docs/static/mb/projects/bboard-tutorials-full/4_Sensor_Optical/README.html)
   * [5_Sensor Motion](/docs/static/mb/projects/bboard-tutorials-full/5_Sensor_Motion/README.html)
