@@ -1,14 +1,14 @@
-# Flashing Heart - FR
+# Flashing Heart
 
-## Introduction @unplugged - FR
+## Introduction @unplugged
 
-Learn how to use the LEDs and make a flashing heart! 
+Learn in FR how to use the LEDs and make a flashing heart! 
 (Want to learn how lights work? [Watch this video](https://youtu.be/qqBmvHD5bCw)).
 
 
 ![Heart shape in the LEDs](/docs/static/mb/projects/flashing-heart/sim.gif)
 
-## Step 1 @fullscreen - FR
+## Step 1 @fullscreen -
 
 Place the ``||basic:show leds||`` block in the ``||basic:forever||`` block and draw a heart.
 
