@@ -22,7 +22,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README.html",
   "description": "Polluted Water. Water Treatment Plant Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Water.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Polluted_Water.gif",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Water.gif",
   "cardType": "large",
   "label": "",
   "labelClass": ""
@@ -32,7 +32,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README.html",
   "description": "Fake Parking Passes. Government Parking Lot Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Gov-EN.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Parking_Pases.gif",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Government.gif",
   "cardType": "large",
   "label": "",
   "labelClass": ""
@@ -40,9 +40,9 @@ Welcome to CYBERVILLE!! @boardname@.
 {
   "name": "Activity 10 - Passwords",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README",
-  "description": "Weird Lights. School Under Cyber Attack! / Lumières étranges. Une école victime d'une cyberattaque ",
+  "description": "Weird Lights. School Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/School.png",
-  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/School_Under_Attack.gif",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/School.gif",
   "cardType": "side",
   "label": "",
   "labelClass": ""

@@ -23,14 +23,7 @@ Learn to use Clickboards with your @boardname@.
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-full/2_Control/relay/relay.png",
   "cardType": "large",
   "label": "",
-  "labelClass": "",
-
-  "otherActions": [
-    {
-      "url": "/docs/static/mb/projects/bboard-tutorials-full/2_Control/README-FR",  
-      "cardType": "side" 
-    }
-  ]
+  "labelClass": ""
 },
 {
   "name": "3_Sensor Environmental",
