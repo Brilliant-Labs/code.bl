@@ -1680,23 +1680,46 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="set-pull">Set Pull</h1><p>Configure the electrical pull of the specified pin.</p>
-<p>Many micro:bit pins can be configured as <em>pull-ups</em>.  For example, a
-pull-up can set a pin’s voltage to high (3.3 volts, or <code>1</code> when
-calling <a  rel="nofollow noopener" href="/docs/reference/pins/digital-read-pin.html">digital read pin</a>).  If one
-end of a button is connected to <code>P0</code> (set to high) and the other end
-is connected to <code>GND</code> (0 volts), then when you press the button,
-<code>P0</code> is driven to 0 volts, and the micro:bit software can detect a
-button press.</p>
-<pre><code class="lang-sig">pins.setPull(DigitalPin.P9, PinPullMode.PullDown);</code></pre>
-<p>The pull-up and -down resistors are about 13kOhm.</p>
+        <h1 id="set-pull">set Pull</h1><p>Tell a digital pin use either a high voltage or low voltage to mean that the input signal is off.</p>
+<pre><code class="lang-sig">pins.A0.setPull(PinPullMode.PullDown)</code></pre>
+<p>When you want to use a digital pin to receive an input signal, the pin normally has
+a <em>pull</em> direction. This means that while the pin has no input signal, it reads <code>true</code> if
+the pull direction is <code>up</code>. But, if the pull direction is <code>down</code>, the pin reads <code>false</code>.</p>
+<p>To set the pull direction, you decide which voltage you want (high voltage or low voltage) to mean
+that an input signal to the pin is turned off. The microprocessor on your board will connect the pin to high
+voltage if you set it to pull to <code>up</code> and it will connect it to low voltage if you set it to pull <code>down</code>.</p>
+<p>Now, when you want to cause a signal on the pin, you attach your switch or a sensor so that it
+connects the pin to the opposite voltage of the pull direction you gave it. So, for example,
+if you set pin <code>D7</code> to pull <code>up</code>, you attach one lead of a switch to the pin and the other
+lead of the switch to low voltage (GND). When you press the switch, pin <code>D7</code> is now pulled <code>low</code>
+by connecting it to the low voltage. We call the pin <em>signalled</em> when this happens.</p>
+<p>Of course, if the pin’s pull direction is set to <code>down</code>, the pin is signalled when it is connected
+to high voltage (pulled <code>high</code>).</p>
+<p>You can have code that waits for a pin to change from <code>high</code> to <code>low</code>, or <code>low</code> to <code>high</code>. This is
+called a <em>pulse</em> event.</p>
 <h2 id="parameters">Parameters</h2><ul>
-<li><code>name</code>: The micro:bit hardware pin to configure (<code>P0</code>-<code>P20</code>)</li>
-<li><code>pull</code>: The pull to which to set the pin (<strong>down</strong>, <strong>up</strong>, or <strong>none</strong>)</li>
+<li><strong>pull</strong>: the pull direction to give the pin<blockquote>
+<ul>
+<li><code>up</code>: the pin is pulled up (set to high voltage) when it’s not signalled and will read <code>true</code>.</li>
+<li><code>down</code>: the pin is pulled down (set to low voltage) when it’s not signalled and will read <code>false</code>.</li>
+<li><code>none</code>: the pin is not connected to either high or low voltage. An external resistor or other
+electronics will make the pull direction.</li>
 </ul>
-<h2 id="example">Example</h2><p>The following example sets the pull of pin <code>P0</code> to <strong>up</strong> (high).</p>
-<pre><code class="lang-blocks">pins.setPull(DigitalPin.P0, PinPullMode.PullUp);</code></pre>
-<h2 id="see-also">See also</h2><p><a target="_blank" rel="nofollow noopener" href="https://developer.mbed.org/platforms/Microbit/">micro:bit | mbed</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="example">Example </h2><p>Set the pull direction for digital pin <code>D4</code> to <code>up</code>. Flash the LED connected to pin <code>D13</code> for
+one-fourth of a second when pin <code>D4</code> is pulsed <code>low</code>.</p>
+<pre><code class="lang-blocks">pins.D4.setPull(PinPullMode.PullUp)
+
+pins.D4.onPulsed(PulseValue.Low, () =&gt; {
+    pins.D13.digitalWrite(true)
+    pause(250)
+    pins.D13.digitalWrite(false)
+})</code></pre>
+<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/digital-read.html">digital read</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/on-pulsed.html">on pulsed</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/pulse-in.html">pulse in</a></p>
 
     </div>
 

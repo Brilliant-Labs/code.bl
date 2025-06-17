@@ -1720,21 +1720,7 @@ let on3 = true || true;</code></pre>
 <h2 id="negation-not-a">Negation: <code>not A</code></h2><p><code>not A</code> evaluates to the opposite (negation) of A:</p>
 <pre><code class="lang-block">let on = !false;
 let off = !true;</code></pre>
-<h2 id="examples"></h2><h2 id="example-and-operator">Example: <code>AND</code> operator</h2><p>This example turns on LED <code>3 , 3</code>, if LEDs <code>1 , 1</code> and <code>2 , 2</code> are both on:</p>
-<pre><code class="lang-blocks">if (led.point(1,1) &amp;&amp; led.point(2,2)) {
-   led.plot(3,3)
-}</code></pre>
-<h2 id="example-comparisons-of-numbers-and-strings">Example: Comparisons of numbers and strings</h2><p>When you compare two Numbers, you get a Boolean value, such as the comparison <code>x &lt; 5</code> in the code below:</p>
-<pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; {
-    let x = randint(0, 5)
-    if(x &lt; 5) {
-    basic.showString(&quot;low&quot;);
-    } else {
-    basic.showString(&quot;high&quot;);
-    }
-})</code></pre>
-<p>See the documentation on <a  rel="nofollow noopener" href="/docs/types/number.html">Numbers</a> for more information on comparing two Numbers.</p>
-
+<h2 id="examples"></h2>
     </div>
 
 					<div class="hideprint"></div>

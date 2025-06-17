@@ -1684,12 +1684,7 @@
 <pre><code class="lang-blocks">let thousand = 1000</code></pre>
 <p>The <code>on start</code> is a special event that runs when the program starts, before any other event. 
 Use this event to initialize your program.</p>
-<h2 id="exstart"></h2><p>In this example, <code>on start</code> sets a dimmer brightness on the screen and the button handler shows a string.</p>
-<pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; {
-    basic.showString(&quot;Hello!&quot;)
-})
-led.setBrightness(50)</code></pre>
-<h2 id="what-about-javascript-">What about JavaScript?</h2><p>Where is <code>on start</code>…?</p>
+<h2 id="exstart"></h2><h2 id="what-about-javascript-">What about JavaScript?</h2><p>Where is <code>on start</code>…?</p>
 <pre><code class="lang-typescript">function onStart(){} // I don&#39;t exist</code></pre>
 <p><code>on start</code> <strong>only</strong> exists in the block editor. In JavaScript, all code executes sequentially starting
 at the first line.</p>

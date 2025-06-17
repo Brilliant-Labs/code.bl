@@ -1680,19 +1680,20 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="assert">assert</h1><p>Stop the program if the assertion condition is false.</p>
-<pre><code class="lang-sig">control.assert(false)</code></pre>
+        <h1 id="assert">assert</h1><p>Display an error number and stop the program if the assertion condition is false.</p>
+<pre><code class="lang-sig">control.assert(false, 0)</code></pre>
 <p>You can insist that your program will stop at an assert block if a certain condition you check is false. The error number in the assert is written to the serial port with a failure message.</p>
 <h2 id="parameters">Parameters</h2><ul>
 <li><strong>cond</strong>: a <a  rel="nofollow noopener" href="/docs/types/boolean.html">boolean</a> where true means everything is ok or false which means, stop the program!</li>
-<li><strong>msg</strong>: an optional <a  rel="nofollow noopener" href="/docs/types/string.html">string</a> with a message describing the failed assertion.</li>
+<li><strong>code</strong>: an error <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> you match to an error situation in your program.</li>
 </ul>
-<h2 id="example">Example</h2><p>Stop the program if a sensor connected to pin <code>P0</code> sends a low (<code>0</code>) signal.</p>
-<pre><code class="lang-blocks">basic.forever(() =&gt; {
-    control.assert(pins.digitalReadPin(DigitalPin.P0) == 1)
-    basic.pause(1000)
+<h2 id="example">Example </h2><p>Stop the program if a sensor connected to pin <code>A0</code> sends a low (<code>0</code>) signal.</p>
+<pre><code class="lang-blocks">forever(function () {
+    control.assert((pins.A0.digitalRead() == 1), 15)
+    pause(1000)
 })</code></pre>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/control/panic.html">panic</a></p>
+<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/control/panic.html">panic</a></p>
+<pre><code class="lang-package">base</code></pre>
 
     </div>
 

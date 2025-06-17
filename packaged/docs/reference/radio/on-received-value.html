@@ -1701,21 +1701,10 @@
 
         </div>
     </div>
-<h2 id="example">Example</h2><p>This program keeps sending numbers that say how fast the micro:bit is
-slowing down or speeding up. When it receives numbers for the same
-thing from nearby micro:bits, show the numbers as a
-<a  rel="nofollow noopener" href="/docs/reference/led/plot-bar-graph.html">bar graph</a>.</p>
-<pre><code class="lang-blocks">basic.forever(() =&gt; {
-    radio.sendValue(&quot;accel-x&quot;, input.acceleration(Dimension.X))
-})
-radio.onReceivedValue(function (name, value) {
-    if (name == &quot;accel-x&quot;) {
-        led.plotBarGraph(value, 1023);
-    }
-})</code></pre>
-<h2 id="troubleshooting">Troubleshooting</h2><p>The <code>||radio:on received value||</code> event can only be created once, due to the hardware restrictions.</p>
+<h2 id="example"></h2><h2 id="troubleshooting">Troubleshooting</h2><p>The <code>||radio:on received value||</code> event can only be created once, due to the hardware restrictions.</p>
 <p>The radio set group might need to be set, synchronized , before the radio events will function.</p>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/on-received-number.html">on received number</a>,
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio.html">Bit Radio</a>
+<a  rel="nofollow noopener" href="/docs/reference/radio/on-received-number.html">on received number</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/received-packet.html">received packet</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/send-number.html">send number</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/send-string.html">send string</a>,

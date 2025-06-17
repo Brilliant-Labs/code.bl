@@ -1686,40 +1686,8 @@ maximum buffer length is 19 bytes.</p>
 <h2 id="parameters">Parameters</h2><ul>
 <li><code>msg</code> is a <a  rel="nofollow noopener" href="/docs/types/buffer.html">buffer</a> to send by radio.</li>
 </ul>
-<h2 id="example-remote-level">Example: Remote level</h2><p>If you load this program onto two micro:bits, each board will send the level information to the other board.</p>
-<pre><code class="lang-typescript">let ax = 0;
-let ay = 0;
-basic.forever(() =&gt; {
-    ax = input.acceleration(Dimension.X);
-    ay = input.acceleration(Dimension.Y);
-
-    // encode data in buffer
-    let buf = pins.createBuffer(4)
-    buf.setNumber(NumberFormat.Int16LE, 0, ax)
-    buf.setNumber(NumberFormat.Int16LE, 2, ay)
-    radio.sendBuffer(buf)
-})
-
-radio.onReceivedBuffer(function (receivedBuffer) {
-    // decode data from buffer
-    ax = receivedBuffer.getNumber(NumberFormat.Int16LE, 0);
-    ay = receivedBuffer.getNumber(NumberFormat.Int16LE, 2);
-
-    // display
-    basic.clearScreen()
-    led.plot(
-        pins.map(ax, -1023, 1023, 0, 4),
-        pins.map(ay, -1023, 1023, 0, 4)
-    )
-});</code></pre>
-
-    <div class="ui info message">
-        <div class="content">
-            <p>A radio that can both transmit and receive is called a <em>transceiver</em>.</p>
-
-        </div>
-    </div>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/on-received-buffer.html">on received buffer</a></p>
+<h2 id="example"></h2><h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio.html">Bit Radio</a>
+<a  rel="nofollow noopener" href="/docs/reference/radio/on-received-buffer.html">on received buffer</a></p>
 <pre><code class="lang-package">radio</code></pre>
 
     </div>

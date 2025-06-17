@@ -1680,10 +1680,15 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="device-serial-number">Device Serial Number</h1><p>Derive a unique, consistent serial number of this device from internal data.</p>
-<pre><code class="lang-sig">control.deviceSerialNumber();</code></pre>
-<p><strong>This is an advanced API.</strong>  For more information, see the
-<a target="_blank" rel="nofollow noopener" href="https://lancaster-university.github.io/microbit-docs/ubit/messageBus/">micro:bit runtime messageBus documentation</a>.</p>
+        <h1 id="device-serial-number">device Serial Number</h1><p>Get the serial number for the micro:bit</p>
+<pre><code class="lang-sig">control.deviceSerialNumber()</code></pre>
+<p>The system software in your board creates a unique number to identify the board. You can use this number in your program if you want to know which board is running your program.</p>
+<h2 id="returns">Returns</h2><ul>
+<li>a <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> that is created to uniquely identify this board.</li>
+</ul>
+<h2 id="example">Example </h2><p>Write the board serial number to the serial port.</p>
+<pre><code class="lang-blocks">serial.writeValue(&quot;serialnumber&quot;, control.deviceSerialNumber());</code></pre>
+<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/control/device-dal-version.html">device dal version</a></p>
 
     </div>
 

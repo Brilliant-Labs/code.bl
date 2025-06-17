@@ -1680,31 +1680,13 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="reset">Reset</h1><p>Reset the micro:bit and start the program again.</p>
-<p>This function is like pressing the reset button on the back of the micro:bit.</p>
+        <h1 id="reset">reset</h1><p>Reset the board and start the program from the beginning.</p>
 <pre><code class="lang-sig">control.reset()</code></pre>
-
-    <div class="ui info message">
-        <div class="content">
-            <p><strong>Simulator</strong></p>
-<p>The <strong>reset</strong> function works only on a real micro:bit and not in the simulator.</p>
-
-        </div>
-    </div>
-<h2 id="example">Example</h2><p>This program will count as high as you like when you press button <code>A</code>.
-When you get tired of counting, press button <code>B</code> to reset the
-micro:bit and start the program over.</p>
-<pre><code class="lang-blocks">let item = 0;
-basic.showNumber(item);
-input.onButtonPressed(Button.A, () =&gt; {
-    item = item + 1;
-    basic.showNumber(item);
-});
-input.onButtonPressed(Button.B, () =&gt; {
-    control.reset();
-});</code></pre>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/basic/clear-screen.html">clear screen</a>, <a  rel="nofollow noopener" href="/docs/reference/game/game-over.html">game over</a></p>
-
+<p>Everything that the program did with the board is set back to the way it was before the
+program started. The program starts over again from the beginning.</p>
+<h2 id="example">Example </h2><p>Reset the board and begin again.</p>
+<pre><code class="lang-blocks">control.reset()</code></pre>
+<h2 id="seealso"></h2>
     </div>
 
 					<div class="hideprint"></div>

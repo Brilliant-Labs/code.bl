@@ -1680,26 +1680,30 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="pulse-duration">pulse Duration</h1><p>Get the duration of the last pulse in microseconds.</p>
-<pre><code class="lang-sig">pins.pulseDuration();</code></pre>
-<p>A pin pulse is detected in the <a  rel="nofollow noopener" href="/docs/reference/pins/on-pulsed.html">onPulsed</a> event. You use <strong>pulseDuration</strong> inside that event to get the duration of the pulse that triggered the event.</p>
-
-    <div class="ui info message">
-        <div class="content">
-            <p><strong>Simulator</strong>: This function needs real hardware to work with. It’s not supported in the simulator.</p>
-
-        </div>
-    </div>
+        <h1 id="pulse-duration">pulse Duration</h1><p>Get the length of time for last pulse at any of the digital pins.</p>
+<pre><code class="lang-sig">pins.pulseDuration()</code></pre>
+<p>If you have code in an <a  rel="nofollow noopener" href="/docs/reference/pins/on-pulsed.html"><code>||pins:on pulsed||</code></a> event and you want to know how long the pulse lasted on that pin, use <code>||pins:pulse duration||</code>. </p>
+<p>The <code>||pins:pulse duration||</code> block remembers how many microseconds the last pulse was. This is only for the most
+recent pulse period that happened at any of the pins. So, you use it in an <code>||pins:on pulsed||</code> event block so that
+you know which pin the pulse was on.</p>
 <h2 id="returns">Returns</h2><ul>
-<li>a <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> that is the duration of the last pulse, measured in microseconds.</li>
+<li>a <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> that is length of time (duration) of the last pulse, in microseconds.</li>
 </ul>
-<h2 id="example">Example</h2><p>Wait for pin <code>P0</code> to be pulsed high. Display the duration of the pulse in microseconds on the LED screen.</p>
-<pre><code class="lang-blocks">pins.onPulsed(DigitalPin.P0, PulseValue.High, () =&gt; {
-    basic.showNumber(pins.pulseDuration());
-});</code></pre>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/servo-set-pulse.html">servo set pulse</a>,
-<a  rel="nofollow noopener" href="/docs/reference/pins/on-pulsed.html">on pulsed</a>,
-<a  rel="nofollow noopener" href="/docs/reference/pins/digital-read-pin.html">digital read pin</a></p>
+<h2 id="example">Example </h2><p>Count every pulse on pin <code>D4</code> that is longer than 2 milleseconds in duration. Write the total
+number of pulses to the serial port every time the count adds another thousand pulses.</p>
+<pre><code class="lang-blocks">let pulses = 0
+pins.D4.setPull(PinPullMode.PullUp)
+
+pins.D4.onPulsed(PulseValue.Low, () =&gt; {
+    if (pins.pulseDuration() &gt; 2000) {
+        pulses++
+    }
+    if (pulses % 1000 == 0) {
+        serial.writeValue(&quot;pulse count&quot;, pulses)
+    }
+})</code></pre>
+<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/digital-read.html">digital read</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/set-pull.html">set pull</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/on-pulsed.html">on pulsed</a></p>
 
     </div>
 

@@ -1683,11 +1683,7 @@
         <h1 id="number">Number</h1><p>An integer number.</p>
 <!-- parent blocks/language --><p>A <em>Number</em> is an integer such as <code>42</code> or <code>-42</code>. More precisely, a <em>Number</em> is a signed 32-bit integer (two’s complement).</p>
 <h3 id="declare-a-number-variable">Declare a number variable</h3><p>You can assign a number to a variable:</p>
-<h4 id="declareexample"></h4><pre><code class="lang-block">let num = 42;
-basic.showNumber(42);</code></pre>
-<h3 id="functionreturnexample"></h3><p>For example the following code gets the display brightness 
-(using the <a  rel="nofollow noopener" href="/docs/reference/led/brightness.html">brightness function</a>) and stores the value in a variable named <code>brightness</code>:</p>
-<pre><code class="lang-block">let brightness = led.brightness()</code></pre>
+<h4 id="declareexample"></h4><pre><code class="lang-block">let num = 42;</code></pre>
 <h3 id="arithmetic-operators">Arithmetic operators</h3><p>The following arithmetic operators work on numbers and return a <a  rel="nofollow noopener" href="/docs/types/number.html">Number</a>:</p>
 <ul>
 <li>addition: <code>1 + 3</code></li>
@@ -1705,9 +1701,11 @@ basic.showNumber(42);</code></pre>
 <li>greater or equal than : <code>4 &gt;= 3</code></li>
 <li>greater than: <code>4 &gt; 3</code></li>
 </ul>
-<h2 id="print">Show number </h2><p>The <a  rel="nofollow noopener" href="/docs/reference/basic/show-number.html">show number</a> function displays a number on the <a  rel="nofollow noopener" href="/docs/device/screen.html">LED screen</a>. 
-For example, this code displays the number 42:</p>
-<pre><code class="lang-block">basic.showNumber(42);</code></pre>
+<h2 id="print"></h2><h3 id="functions-that-return-a-number">Functions that return a number</h3><p>Some functions return a number, which you can store in a variable. </p>
+<h3 id="functionreturnexample"></h3><pre><code class="lang-block">let abs = Math.abs(-42);</code></pre>
+<h3 id="math-functions">Math functions</h3><p>The <a  rel="nofollow noopener" href="/docs/blocks/math.html">math library</a> includes math related functions. For example, the <code>min</code> function returns the minimum value of two input parameters <code>x</code> and <code>y</code>:</p>
+<pre><code class="lang-block">let lowest = Math.min(-42, 1000);</code></pre>
+<h3 id="see-also">See also</h3><p><a  rel="nofollow noopener" href="/docs/blocks/math.html">math</a>, <a  rel="nofollow noopener" href="/docs/blocks/variables/var.html">var</a>, <a  rel="nofollow noopener" href="/docs/blocks/logic/boolean.html">Boolean</a></p>
 
     </div>
 

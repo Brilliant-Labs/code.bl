@@ -1701,30 +1701,10 @@
 
         </div>
     </div>
-<h2 id="examples">Examples</h2><h3 id="tell-me-how-fast">Tell me how fast</h3><p>This program keeps sending numbers that say how fast the micro:bit is
-slowing down or speeding up.  It also receives numbers for the same
-thing from nearby micro:bits. It shows these numbers as a
-<a  rel="nofollow noopener" href="/docs/reference/led/plot-bar-graph.html">bar graph</a>.</p>
-<pre><code class="lang-blocks">basic.forever(() =&gt; {
-    radio.sendNumber(input.acceleration(Dimension.X));
-})
-radio.onReceivedNumber(function (receivedNumber) {
-    led.plotBarGraph(receivedNumber, 1023);
-})</code></pre>
-<h3 id="what-s-the-distance-">What’s the distance?</h3><p>This program uses the signal strength from received packets to graph the
-approximate distance between two micro:bits.</p>
-<pre><code class="lang-blocks">basic.forever(() =&gt; {
-    radio.sendNumber(0)
-})
-radio.onReceivedNumber(function (receivedNumber) {
-    led.plotBarGraph(
-        Math.abs(radio.receivedPacket(RadioPacketProperty.SignalStrength) + 42),
-        128 - 42
-    )
-})</code></pre>
-<h2 id="troubleshooting">Troubleshooting</h2><p>The <code>||radio:onReceivedNumber||</code> event can only be created once, due to the hardware restrictions.</p>
+<h2 id="example"></h2><h2 id="troubleshooting">Troubleshooting</h2><p>The <code>||radio:onReceivedNumber||</code> event can only be created once, due to the hardware restrictions.</p>
 <p>The radio set group might need to be set, synchronized, before the radio events will function.</p>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/on-received-string.html">on received string</a>,
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio.html">Bit Radio</a>
+<a  rel="nofollow noopener" href="/docs/reference/radio/on-received-string.html">on received string</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/received-packet.html">received packet</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/send-number.html">send number</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/send-string.html">send string</a>,

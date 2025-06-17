@@ -1680,24 +1680,21 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="analog-set-period">Analog Set Period</h1><p>Configure the period of Pulse Width Modulation (PWM) on the specified 
-analog <a  rel="nofollow noopener" href="/docs/device/pins.html">pin</a>.
-Before you call this function, you should set the specified pin as analog.</p>
-<pre><code class="lang-sig">pins.analogSetPeriod(AnalogPin.P0, 20000)</code></pre>
+        <h1 id="analog-set-period">analog Set Period</h1><p>Use this time period for servo commands and other PWM signals.</p>
+<pre><code class="lang-sig">pins.A1.analogSetPeriod(20000)</code></pre>
+<p>With <em>Pulse Width Modulation (PWM)</em>, a pulse signal is sent regularly, many times a second.
+How many times a pulse is sent in each second decides what period it has. If a <em>pwm</em> signal is sent 50
+times a second, then its period is 1/20th of a second which is 20 milliseconds.</p>
+<p>You use microseconds for the amount of time you set your <em>pwm</em> signal period. One second is a million
+microseconds and 1 millisecond is 1000 microseconds.</p>
 <h2 id="parameters">Parameters</h2><ul>
-<li><code>name</code>: a <a  rel="nofollow noopener" href="/docs/types/string.html">string</a> that specifies the pin to configure (<code>P0</code> through <code>P4</code>, or <code>P10</code>)</li>
-<li><code>micros</code>: a <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> that specifies the analog period in microseconds.</li>
+<li><strong>period</strong>: a <a target="_blank" rel="nofollow noopener" href="types/number">number</a> that is the period for the pulse signal sent at the pin.</li>
 </ul>
-<p>The following code first sets <code>P0</code> to analog with <strong>analog write
-pin</strong>, and then sets the PWM period of <code>P0</code> to 20,000 microseconds.</p>
-<pre><code class="lang-blocks">pins.analogWritePin(AnalogPin.P0, 512)
-pins.analogSetPeriod(AnalogPin.P0, 20000)</code></pre>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/device/pins.html">micro:bit pins</a>,
-<a  rel="nofollow noopener" href="/docs/reference/input/on-pin-pressed.html">on pin pressed</a>,
-<a  rel="nofollow noopener" href="/docs/reference/pins/analog-read-pin.html">analog read pin</a>,
-<a  rel="nofollow noopener" href="/docs/reference/pins/analog-write-pin.html">analog write pin</a>,
-<a  rel="nofollow noopener" href="/docs/reference/pins/digital-read-pin.html">digital read pin</a>,
-<a  rel="nofollow noopener" href="/docs/reference/pins/digital-write-pin.html">digital write pin</a></p>
+<h2 id="example">Example </h2><p>Set the period for a PWM signal to 20 milliseconds.</p>
+<pre><code class="lang-blocks">pins.A1.analogSetPeriod(20000)</code></pre>
+<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/servo-write.html">servo write</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/servo-set-pulse.html">servo set pulse</a></p>
+<p><a  rel="nofollow noopener" href="/docs/reference/pins/what-is-pwm.html">What is PWM?</a></p>
 
     </div>
 

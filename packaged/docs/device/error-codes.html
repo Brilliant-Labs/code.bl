@@ -1680,51 +1680,16 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="error-codes">Error codes</h1><p>Your micro:bit may encounter a situation that prevents it from running your code. When this happens, a frowny face will appear on your micro:bit screen (see picture) followed by an error number. These are called <em>panic</em> codes.</p>
-<pre><code class="lang-sim">basic.forever(function() {
-    basic.showLeds(`
-        # . . . #
-        # # . # #
-        . . . . .
-        . # # # .
-        # . . . #
-        `)
-    basic.pause(1000)
-    basic.clearScreen()
-    basic.showString(&quot;020&quot;)
-})</code></pre>
-<h2 id="board-system-errors">Board system errors</h2><p>The micro:bit system errors range between <strong>01</strong> - <strong>99</strong>. For a full list of these codes, what they mean and what you can do to resolve them, visit the <a target="_blank" rel="nofollow noopener" href="https://support.microbit.org/en/support/solutions/articles/19000016969">micro:bit guide to error codes</a>.</p>
+        <h1 id="error-codes">Error codes</h1><h2 id="error-info"></h2><p>Your micro:bit may encounter a situation that prevents it from running your code. The system software that runs the programs on your board may notify you that an error occurred. It might show this error as a numeric code on the display, LEDs, or as output on a data port. These are called <em>panic</em> codes. When an error happens that causes a panic code, your program will stop and you’ll need to reset the board to start again.</p>
+<h2 id="panic-codes">Panic codes</h2><p>Some panic codes are for general errors that might occur while your program runs. Other times, a device or resource you want to use isn’t present or isn’t working and you receive a panic code for that. Several panic codes are related to the use of memory and accessing data in it.</p>
 <ul>
-<li><strong>10</strong> (<code>MICROBIT_I2C_LOCKUP</code>): the micro:bit’s I2C bus is not working</li>
-<li><strong>20</strong> (<code>MICROBIT_OOM</code>): there is no free memory on the micro:bit</li>
-<li><strong>30</strong> (<code>MICROBIT_HEAP_ERROR</code>): a problem in the heap space</li>
-<li><strong>40</strong> (<code>MICROBIT_NULL_DEREFERENCE</code>): there was a NULL dereference, the micro:bit tried to manage a invalid object pointer</li>
-<li><strong>42</strong> (<code>MICROBIT_SYSTEM_ERROR</code>): there’s an error condition in the micro:bit system software</li>
-<li><strong>43</strong> (<code>MICROBIT_NO_RADIO</code>): the micro:bit can’t enable the radio</li>
-<li><strong>50</strong> (<code>MICROBIT_HARDWARE_UNAVAILABLE_ACC</code>): an error occurred with the micro:bit’s accelerometer component</li>
-<li><strong>51</strong> (<code>MICROBIT_HARDWARE_UNAVAILABLE_MAG</code>): an error occurred with the micro:bit’s magnetometer component</li>
-<li><strong>90</strong> (<code>MICROBIT_HARDWARE_CONFIGURATION_ERROR</code>): actual board hardware doesn’t match the configuration description</li>
-<li><strong>98</strong> (<code>MICROBIT_ASSERTION_FAILED</code>): assertion failed, the condition in an <a  rel="nofollow noopener" href="/docs/reference/control/assert.html">assert</a> was false</li>
-</ul>
-<h2 id="memory-errors">Memory errors</h2><p>Memory error codes range from <strong>800</strong> - <strong>909</strong>.</p>
-
-    <div class="ui negative message">
-        <div class="content">
-            <h4 id="report-errors-">Report errors!</h4><p>If you ever see an error within the range of <strong>800</strong> - <strong>909</strong>, please report an issue at <a target="_blank" rel="nofollow noopener" href="https://github.com/microsoft/pxt-microbit/issues">GitHub</a> or on the <a target="_blank" rel="nofollow noopener" href="https://support.microbit.org/">support</a> page.</p>
-
-        </div>
-    </div>
-<h3 id="garbage-collector-errors">Garbage collector errors</h3><p>Error codes generated from the garbage collector.</p>
-<ul>
-<li><strong>840</strong>: Allocation pointer is null or invalid</li>
-<li><strong>841</strong>: Garbage collection work queue error</li>
-<li><strong>843</strong>: VTable entry is not free</li>
-<li><strong>844</strong>: GC allocation failed for requested number of bytes</li>
-<li><strong>846</strong>: Invalid allocation thread</li>
-<li><strong>848</strong>: Allocation pointer beyond allocation header</li>
-<li><strong>849</strong>: Allocation pointer is null</li>
-</ul>
-<h3 id="program-access-errors">Program access errors</h3><ul>
+<li><strong>20</strong> (<code>PANIC_CODAL_OOM</code>): there is no free memory on the micro:bit</li>
+<li><strong>21</strong> (<code>PANIC_GC_OOM</code>): Garbage Collection can’t allocate any more memory</li>
+<li><strong>22</strong> (<code>PANIC_GC_TOO_BIG_ALLOCATION</code>): Garbage Collection can’t allocate memory for the requested size</li>
+<li><strong>30</strong> (<code>PANIC_CODAL_HEAP_ERROR</code>): a general memory allocation error</li>
+<li><strong>40</strong> (<code>PANIC_CODAL_NULL_DEREFERENCE</code>): a memory pointer is NULL and points to an invalid location</li>
+<li><strong>50</strong> (<code>PANIC_CODAL_USB_ERROR</code>): USB is not available or can’t initialize, transmit, or receive</li>
+<li><strong>90</strong> (<code>PANIC_CODAL_HARDWARE_CONFIGURATION_ERROR</code>): actual board hardware doesn’t match the configuration description</li>
 <li><strong>901</strong> (<code>PANIC_INVALID_BINARY_HEADER</code>): the type header for the object is not valid</li>
 <li><strong>902</strong> (<code>PANIC_OUT_OF_BOUNDS</code>): the object data portion is greater than the length defined for it</li>
 <li><strong>903</strong> (<code>PANIC_REF_DELETED</code>): an object reference was deleted and the object is no longer valid</li>
@@ -1732,21 +1697,31 @@
 <li><strong>905</strong> (<code>PANIC_INVALID_VTABLE</code>): an object vtable is invalid or not initialized</li>
 <li><strong>906</strong> (<code>PANIC_INTERNAL_ERROR</code>): an internal resource error</li>
 <li><strong>907</strong> (<code>PANIC_NO_SUCH_CONFIG</code>): the specified device resource is not present</li>
+<li><strong>908</strong> (<code>NO_SUCH_PIN</code>): the specified pin is not present on the board</li>
 <li><strong>909</strong> (<code>PANIC_INVALID_ARGUMENT</code>): the argument value is out of range or the type or format is invalid</li>
-<li><strong>927</strong> (<code>PANIC_VARIANT_NOT_SUPPORTED</code>): using a v2 feature on a v1 board</li>
-<li><strong>928</strong> (<code>MICROBIT_LOG_FULL</code>): The micro:bit failed to write to datalogger as the log was full</li>
+<li><strong>910</strong> (<code>PANIC_MEMORY_LIMIT_EXCEEDED</code>): insufficient memory is available to satisfy and allocation request</li>
+<li><strong>911</strong> (<code>PANIC_SCREEN_ERROR</code>): the screen isn’t present or it can’t properly display the output</li>
+<li><strong>912</strong> (<code>PANIC_MISSING_PROPERTY</code>): the property requested is not present in the current object</li>
+<li><strong>913</strong> (<code>PANIC_INVALID_IMAGE</code>): the data for a screen image data is invalid or formatted incorrectly</li>
+<li><strong>914</strong> (<code>PANIC_CALLED_FROM_ISR</code>): the current code isn’t allowed to run in an interrupt service routine (ISR)</li>
+<li><strong>915</strong> (<code>PANIC_HEAP_DUMPED</code>): the contents of memory was output to a debug port</li>
+<li><strong>916</strong> (<code>PANIC_STACK_OVERFLOW</code>): stack size limit for the fiber was exceeded</li>
+<li><strong>917</strong> (<code>PANIC_BLOCKING_TO_STRING</code>): inline execution blocked due to an existing resume context</li>
+<li><strong>918</strong> (<code>PANIC_VM_ERROR</code>): VM execution context error</li>
+<li><strong>920</strong> (<code>PANIC_SETTINGS_CLEARED</code>): storage required for system settings, user settings were cleared</li>
+<li><strong>921</strong> (<code>PANIC_SETTINGS_OVERLOAD</code>): frequency of writes to settings storage is too high</li>
+<li><strong>922</strong> (<code>PANIC_SETTINGS_SECRET_MISSING</code>): settings storage in flash memory is inconsistent</li>
+<li><strong>923</strong> (<code>PANIC_DELETE_ON_CLASS</code>): a settings key delete was attempted on a class</li>
+<li><strong>924</strong> (<code>PANIC_OUT_OF_TIMERS</code>): no more timers are available</li>
+<li><strong>980</strong> (<code>PANIC_CAST_FROM_UNDEFINED</code>): attempted cast from an <code>undefined</code> value to another type</li>
+<li><strong>981</strong> (<code>PANIC_CAST_FROM_BOOLEAN</code>): attempted cast from a <a  rel="nofollow noopener" href="/docs/types/boolean.html">boolean</a> value to an incompatible type</li>
+<li><strong>982</strong> (<code>PANIC_CAST_FROM_NUMBER</code>): attempted cast from a <a  rel="nofollow noopener" href="/docs/types.html">number</a> value to an incompatible type or no conversion is available</li>
+<li><strong>983</strong> (<code>PANIC_CAST_FROM_STRING</code>): attempted cast from a <a  rel="nofollow noopener" href="/docs/types/string.html">string</a> value to an incompatible type or no conversion is available</li>
+<li><strong>984</strong> (<code>PANIC_CAST_FROM_OBJECT</code>): attempted cast from an object to an incompatible type</li>
+<li><strong>985</strong> (<code>PANIC_CAST_FROM_FUNCTION</code>): attempted cast from a function to a non-function type</li>
+<li><strong>989</strong> (<code>PANIC_CAST_FROM_NULL</code>): attempted cast from a <code>null</code> value to another type</li>
 </ul>
-<h2 id="javascript-runtime-codes">JavaScript runtime codes</h2><h3 id="invalid-cast-codes">Invalid cast codes</h3><p>When the static type of <code>x</code> is a class <code>C</code>, the dynamic type of <code>x</code> isn’t <code>C</code>, and you try to access a field on <code>x</code> or call a method on <code>x</code>, you will get one of the following codes, depending on dynamic type of <code>x</code>.</p>
-<ul>
-<li><strong>980</strong> (<code>PANIC_CAST_FROM_UNDEFINED</code>): when value of <code>x</code> is <code>undefined</code></li>
-<li><strong>981</strong> (<code>PANIC_CAST_FROM_BOOLEAN</code>): when value of <code>x</code> is <code>true</code> or <code>false</code></li>
-<li><strong>982</strong> (<code>PANIC_CAST_FROM_NUMBER</code>): when <code>x</code> is a <code>number</code></li>
-<li><strong>983</strong> (<code>PANIC_CAST_FROM_STRING</code>): when <code>x</code> is a <code>string</code></li>
-<li><strong>984</strong> (<code>PANIC_CAST_FROM_OBJECT</code>): when <code>x</code> is object of some type</li>
-<li><strong>985</strong> (<code>PANIC_CAST_FROM_FUNCTION</code>): when <code>x</code> is a function</li>
-<li><strong>989</strong> (<code>PANIC_CAST_FROM_NULL</code>): when <code>x</code> is <code>null</code></li>
-</ul>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/control/panic.html">panic</a>, <a  rel="nofollow noopener" href="/docs/reference/control/assert.html">assert</a></p>
+<h2 id="specific"></h2><h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/control/panic.html">panic</a>, <a  rel="nofollow noopener" href="/docs/reference/control/assert.html">assert</a></p>
 
     </div>
 

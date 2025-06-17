@@ -1680,26 +1680,37 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="radio">Radio</h1><p>Send and receive data using radio packets.</p>
+        <h1 id="bit-radio">Bit Radio</h1><p>Send and receive data using the Bit Radio protocol.</p>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="bit-radio">Bit Radio</h4><p>The Bit Radio protocol was originally developped by <a target="_blank" rel="nofollow noopener" href="https://github.com/lancaster-university/microbit-dal/commit/d9d2343ab63a707ac9d0167545261ab57b996430#diff-4f1efa652dafc9c738aae3a4bc5c3dad">Lancaster University</a> for the BBC micro:bit project.</p>
+<p>This protocol does not contain any form of encryption, authentication or authorization. It’s purpose is solely for use as a teaching aid to demonstrate how simple communications operates, and to provide a sandpit through which learning can take place.</p>
+
+        </div>
+    </div>
 <pre><code class="lang-cards">radio.sendNumber(0);
 radio.sendValue(&quot;name&quot;, 0);
 radio.sendString(&quot;&quot;);
+radio.sendBuffer(pins.createBuffer(1));
 radio.onReceivedNumber(function (receivedNumber) { });
 radio.onReceivedValue(function (name, value) { });
 radio.onReceivedString(function (receivedString) { });
-radio.receivedPacket(RadioPacketProperty.SignalStrength)
+radio.onReceivedBuffer(function (receivedBuffer) { });
 radio.setGroup(0);</code></pre>
 <h2 id="advanced">Advanced</h2><pre><code class="lang-cards">radio.setTransmitPower(7);
+radio.setFrequencyBand(50);
 radio.setTransmitSerialNumber(false);
 radio.raiseEvent(0, 0);</code></pre>
 <pre><code class="lang-package">radio</code></pre>
 <h2 id="see-also">See Also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/send-number.html">send number</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/send-value.html">send value</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/send-string.html">send string</a>,
+<a  rel="nofollow noopener" href="/docs/reference/radio/send-buffer.html">send buffer</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/on-received-number.html">on received number</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/on-received-value.html">on received value</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/on-received-string.html">on received string</a>,
-<a  rel="nofollow noopener" href="/docs/reference/radio/received-packet.html">received packet</a>,
+<a  rel="nofollow noopener" href="/docs/reference/radio/on-received-buffer.html">on received buffer</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/set-group.html">set group</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/set-transmit-power.html">set transmit power</a>,
 <a  rel="nofollow noopener" href="/docs/reference/radio/set-transmit-serial-number.html">set transmit serial number</a>,

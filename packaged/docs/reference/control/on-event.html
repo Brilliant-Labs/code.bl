@@ -1680,10 +1680,71 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="on-event">On Event</h1><p>Raise an event in the event bus.</p>
-<pre><code class="lang-sig">control.onEvent(control.eventSourceId(EventBusSource.MICROBIT_ID_BUTTON_A), control.eventValueId(EventBusValue.MICROBIT_EVT_ANY), () =&gt; { });</code></pre>
-<p><strong>This is an advanced API.</strong>  For more information, see the
-<a target="_blank" rel="nofollow noopener" href="https://lancaster-university.github.io/microbit-docs/ubit/messageBus/">micro:bit runtime messageBus documentation</a>.</p>
+        <h1 id="on-event">on Event</h1><p>Run some code when a registered event happens.</p>
+<pre><code class="lang-sig">control.onEvent(0, 0, () =&gt; {})</code></pre>
+<p>Instead of waiting inside of a loop that is part the main program, an event block is
+a good way to have some extra code respond to something that happens with the board or
+in your program.</p>
+<p>It works like this: some code in another part of the program decides it wants to announce
+that something special or important just happened. It does this by <em>raising</em> an <em>event</em>.
+Some other code is placed inside an <code>||control:on event||</code> block. The <code>||control:on event||</code> block <em>registers</em>
+itself to run when a matching event is <em>raised</em>.</p>
+<p>Your program decides what an event should be and makes it official by <em>registering</em> the event along with
+a source identification number (id), <strong>src</strong>. The id in <strong>src</strong> is a way to know what <strong><em>thing</em></strong> is causing an event,
+like a sensor, or some special time period that is now over. The <strong>value</strong> tells what the cause of the
+event is.</p>
+<h3 id="why-use-events-">Why use events?</h3><p>If you want to run some code when a status changes, you might do it this way
+in the main part of the program:</p>
+<pre><code class="lang-blocks">let nowStatus = false
+control.runInParallel(() =&gt; {
+    control.waitMicros(10000)
+    nowStatus = true
+})
+
+let lastStatus = nowStatus;
+while(lastStatus == nowStatus) {
+    control.waitMicros(1000)
+}</code></pre>
+<p>The <a  rel="nofollow noopener" href="/docs/blocks/loops/while.html"><code>||loops:while||</code></a> loop checks for a change in <code>nowStatus</code>. The problem is that your program is stuck
+in the loop until <code>nowStatus</code> changes and it can’t do any more work until then.</p>
+<p>But, we can change the program to use an event instead of waiting in a loop. Let’s register an event
+and give it a source identifier, or <strong>src</strong>, of <code>15</code> and a cause <strong>value</strong> of <code>1</code>:</p>
+<pre><code class="lang-blocks">let because = 0;
+control.runInParallel(() =&gt; {
+    control.waitMicros(100000)
+    control.raiseEvent(15, 1)
+})
+
+control.onEvent(15, 1, () =&gt; {
+    because = 1;
+})</code></pre>
+<p>So, you see that the program registered an event known as <code>15</code>, <code>1</code>. The source is known by <code>15</code> and the
+cause of the event is <code>1</code>. Why use these numbers? Well, let’s say that you have a moisture sensor connected
+to your board. You could make it known to your program that any event that comes from a source of <code>15</code> is about your sensor. You can say that a cause of <code>1</code> means things are too dry.</p>
+<h2 id="parameters">Parameters</h2><ul>
+<li><strong>src</strong>: the identification <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> (the source) of this event, such as: <code>10</code>.</li>
+<li><strong>value</strong>: a <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> that tells what the cause of the event is, like: <code>4</code>.</li>
+<li><strong>handler</strong>: the code to run when the event happens.</li>
+</ul>
+<h2 id="example">Example </h2><p>Register two events coming from source <code>22</code>. Write to the console when
+the events of <code>0</code> and <code>1</code> are <em>raised</em>.</p>
+<pre><code class="lang-blocks">const myNotify = 22
+
+control.runInParallel(function() {
+    for (let i = 0; i &lt; 2; i++) {
+        pause(1000)
+    control.raiseEvent(myNotify, i)
+    }
+})
+
+control.onEvent(myNotify, 0, () =&gt; {
+    console.logValue(&quot;myNotify&quot;, 0)
+})
+
+control.onEvent(myNotify, 1, () =&gt; {
+    console.logValue(&quot;myNotify&quot;, 1)
+})</code></pre>
+<h2 id="seealso">See also #</h2><p><a  rel="nofollow noopener" href="/docs/reference/control/raise-event.html">raise event</a></p>
 
     </div>
 

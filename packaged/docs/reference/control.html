@@ -1680,18 +1680,21 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="control">Control</h1><p>Runtime and event utilities.</p>
-<pre><code class="lang-cards">control.inBackground(() =&gt; {
+        <h1 id="control">Control</h1><p>Program controls and events.</p>
+<pre><code class="lang-cards">control.millis();
+control.runInParallel(() =&gt; {
 
 });
 control.reset();
 control.waitMicros(4);
-control.onEvent(0, 0, () =&gt; { });
-control.raiseEvent(0, 0);
-control.eventTimestamp();
-control.eventValue();
-control.hardwareVersion();</code></pre>
-<h2 id="see-also">See Also</h2><p><a  rel="nofollow noopener" href="/docs/reference/control/in-background.html">inBackground</a>, <a  rel="nofollow noopener" href="/docs/reference/control/reset.html">reset</a>, <a  rel="nofollow noopener" href="/docs/reference/control/wait-micros.html">waitMicros</a>, <a  rel="nofollow noopener" href="/docs/reference/control/on-event.html">onEvent</a>, <a  rel="nofollow noopener" href="/docs/reference/control/raise-event.html">raiseEvent</a>, <a  rel="nofollow noopener" href="/docs/reference/control/event-timestamp.html">eventTimestamp</a>, <a  rel="nofollow noopener" href="/docs/reference/control/event-value.html">eventValue</a></p>
+control.deviceSerialNumber();</code></pre>
+<h2 id="advanced">Advanced </h2><pre><code class="lang-cards">control.raiseEvent(0, 0);
+control.onEvent(0, 0, () =&gt; {
+
+});
+control.assert(false, 0);
+control.deviceDalVersion();
+control.panic(0);</code></pre>
 
     </div>
 

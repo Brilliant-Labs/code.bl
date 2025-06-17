@@ -22,14 +22,14 @@
 <meta name="twitter:site" content="@msmakecode" />
 <meta name="twitter:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta name="twitter:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
-<meta name="twitter:image" content="/static/mb/device/usb-thin.jpg" />
+<meta name="twitter:image" content="docs/static/icons/apple-touch-icon.png" />
 
 <meta property="og:title" content="Brilliant Labs b.Board for micro:bit with MakeCode" />
 <meta property="og:site_name" content="Microsoft MakeCode" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="A b.Board Blocks / JavaScript code editor for the micro:bit powered by Microsoft MakeCode." />
 <meta property="fb:app_id" content="" />
-<meta property="og:image" content="/static/mb/device/usb-thin.jpg" />
+<meta property="og:image" content="docs/static/icons/apple-touch-icon.png" />
 
 <meta name="format-detection" content="telephone=no">
 <link rel="apple-touch-icon" href="docs/static/icons/apple-touch-icon.png">
@@ -1680,31 +1680,27 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="uploading-programs-to-your-micro-bit">Uploading programs to your micro:bit</h1><p>Most of the time you’ll be writing and testing your programs in the <a  rel="nofollow noopener" href="/docs/device/simulator.html">simulator</a>. Once you’ve finished your program though, you can <strong>compile</strong> it and run it on your micro:bit. Transferring your program to the micro:bit is as simple as saving a file to a drive on your computer.</p>
-<p>When you plug your micro:bit into USB, a new drive is created with the <strong>MICROBIT</strong> label. This is where you’ll save your program.</p>
-<p><img class="ui image" src="/static/mb/device/usb-thin.jpg" alt="" loading="lazy"></p>
+        <h1 id="uploading-programs-on-your-micro-bit">Uploading programs on your micro:bit</h1><p>While you’re writing and testing your programs, you’ll mostly be <a  rel="nofollow noopener" href="/docs/device/simulator.html">running them
+in the simulator</a>, but once you’ve finished your program you
+can <strong>compile</strong> it and run it on your micro:bit.</p>
 <p>The basic steps are:</p>
 <ol>
-<li>Connect your micro:bit to your computer with a USB cable.</li>
-<li>Click <strong>Download</strong> to download the <code>.hex</code> file.</li>
-<li>Move the <code>.hex</code> file from your computer onto the <strong>MICROBIT</strong> drive. The next section has instructions for the browser that you’re using.</li>
+<li>Connect your micro:bit to your computer via USB</li>
+<li>Press the reset button <strong>once</strong> and see that the <strong>MICROBIT</strong> drive appears</li>
+<li>Click <strong>Download</strong> and download the <code>.uf2</code> file</li>
+<li>Copy the <code>.uf2</code> file from your computer onto the MICROBIT drive</li>
 </ol>
-<h2 id="how-to-transfer-the-program-with-your-browser">How to transfer the program with your browser</h2><p>Here are instructions for different browsers on Windows and Mac computers. Choose the one you’re using:</p>
-<h3 id="windows-browsers">Windows browsers</h3><ul>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/windows-edge.html">Microsoft Edge</a></li>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/windows-ie.html">Internet Explorer</a></li>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/windows-chrome.html">Chrome</a></li>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/windows-firefox.html">Firefox</a></li>
-</ul>
-<h3 id="mac-browsers">Mac browsers</h3><ul>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/mac-safari.html">Safari</a></li>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/mac-chrome.html">Chrome</a></li>
-<li><a  rel="nofollow noopener" href="/docs/device/usb/mac-firefox.html">Firefox</a></li>
-</ul>
 
     <div class="ui info message">
         <div class="content">
-            <h4 id="transfer-problems-">Transfer problems?</h4><p>Transfer not working? See some <a  rel="nofollow noopener" href="/docs/device/usb/troubleshoot.html">troubleshooting tips</a>.</p>
+            <p>In Microsoft Edge, Firefox and Internet Explorer, you can save the <code>.uf2</code> file directly into the MICROBIT drive!</p>
+
+        </div>
+    </div>
+
+    <div class="ui info message">
+        <div class="content">
+            <p>Transfer not working? See some <a  rel="nofollow noopener" href="/docs/device/usb/troubleshooting.html">troubleshooting tips</a>.</p>
 
         </div>
     </div>

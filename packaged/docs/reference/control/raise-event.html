@@ -1680,11 +1680,46 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="raise-event">Raise Event</h1><p>Raise an event in the event bus.</p>
-<pre><code class="lang-sig">control.raiseEvent(control.eventSourceId(EventBusSource.MICROBIT_ID_BUTTON_A), control.eventValueId(EventBusValue.MICROBIT_EVT_ANY));</code></pre>
-<p><strong>This is an advanced API.</strong>  For more information, see the
-<a target="_blank" rel="nofollow noopener" href="https://lancaster-university.github.io/microbit-docs/ubit/messageBus/">micro:bit runtime messageBus documentation</a></p>
-<h2 id="see-also">See Also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/raise-event.html">radio raise event</a></p>
+        <h1 id="raise-event">raise Event</h1><p>Announce that something happened at an event source.</p>
+<pre><code class="lang-sig">control.raiseEvent(0, 0)</code></pre>
+<p>You use <code>||control:raise event||</code> to announce that something happened with the board or something special
+happened in your program. You do this if there are other parts of your program that might want
+to know about it.</p>
+<p>If you’ve added some <a  rel="nofollow noopener" href="/docs/reference/control/on-event.html"><code>||control:on event||</code></a> blocks to your program,
+the code inside them will run if the <strong>src</strong> and <strong>value</strong> numbers are the same as those with
+<code>||control:raise event||</code>. The <strong>src</strong> tells about where the event is coming from. You pick a number
+for it to identify something like a sensor or a special situation in your program. If you want
+to announce that it’s getting dark, you can make <strong>src</strong> something like <code>51</code> for the light sensor’s
+source number. This means that anything you want to announce about the light sensor, you raise
+event with <code>51</code>.</p>
+<p>Many events can happen to a single source (<strong>src</strong>). With the light sensor you can announce that
+its getting darker or lighter. This is the cause of the event, the <strong>value</strong>. So, for the light
+sensor (the source number <code>51</code>) you might add two events for <strong>value</strong>: <code>1</code> for darker and <code>2</code> for lighter.</p>
+<p>With the light sensor example, you tell the program that it’s getting darker:</p>
+<pre><code class="lang-block">control.raiseEvent(51, 1)</code></pre>
+<h2 id="parameters">Parameters</h2><ul>
+<li><strong>src</strong>: the identification <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> (the source) of this event, such as: <code>10</code>.</li>
+<li><strong>value</strong>: a <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> tells what the cause of the event is, like: <code>4</code>.</li>
+</ul>
+<h2 id="example">Example </h2><p>Register two events coming from source <code>22</code>. Write to the console when
+the events of <code>0</code> and <code>1</code> are <em>raised</em>.</p>
+<pre><code class="lang-blocks">const myNotify = 22;
+
+control.runInParallel(function() {
+    for (let i = 0; i &lt; 2; i++) {
+        pause(1000);
+        control.raiseEvent(myNotify, i);
+    }
+})
+
+control.onEvent(myNotify, 0, () =&gt; {
+    console.logValue(&quot;myNotify&quot;, 0)
+})
+
+control.onEvent(myNotify, 1, () =&gt; {
+    console.logValue(&quot;myNotify&quot;, 1)
+})</code></pre>
+<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/control/on-event.html">on event</a>, <a  rel="nofollow noopener" href="/docs/reference/control/wait-for-event.html">wait for event</a></p>
 
     </div>
 
