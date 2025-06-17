@@ -16,7 +16,7 @@
     {
         "name": "Click Boards",
         "url": "/projects/bboard-full",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/wifi-ble/wifilogo.jpg"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/LogoCon.jpg"
     },
     {
         "name": "CyberSecurity #1",
