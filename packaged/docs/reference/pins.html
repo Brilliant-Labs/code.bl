@@ -1680,30 +1680,31 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="pins">Pins</h1><p>Use the pins for analog signals, digital signals, servos, and i2c.</p>
-<h2 id="analog">Analog </h2><pre><code class="lang-cards">pins.A1.analogRead()
-pins.A1.analogWrite(1023)
-pins.A1.analogSetPeriod(20000)
-pins.A1.servoWrite(180)
-pins.A1.servoSetPulse(1500)</code></pre>
-<h2 id="digital">Digital </h2><pre><code class="lang-cards">pins.A1.digitalRead()
-pins.A1.digitalWrite(false)
-pins.D4.onEvent(PinEvent.PulseHigh, () =&gt; {})
-pins.A1.setPull(PinPullMode.PullDown)
-pins.A1.pulseIn(PulseValue.High,0)
-pins.pulseDuration()</code></pre>
-<h2 id="i2c">I2C </h2><pre><code class="lang-cards">pins.i2cReadNumber(0, NumberFormat.Int8LE, false)
-pins.i2cWriteNumber(
-0,
-0,
-NumberFormat.Int8LE,
-false
-)
-pins.i2cWriteRegister(0, 0, 0)</code></pre>
-<h2 id="spi">SPI </h2><pre><code class="lang-cards">pins.spiWrite(0);
-pins.spiMode(3);
+        <h1 id="pins">Pins</h1><p>Control currents in Pins for analog/digital signals, servos, i2c, …</p>
+<pre><code class="lang-cards">pins.digitalReadPin(DigitalPin.P0);
+pins.digitalWritePin(DigitalPin.P0, 0);
+pins.analogReadPin(AnalogPin.P0);
+pins.analogWritePin(AnalogPin.P0, 1023);
+pins.analogSetPeriod(AnalogPin.P0, 20000);
+pins.map(0, 0, 1023, 0, 4);
+pins.onPulsed(DigitalPin.P0, PulseValue.High, () =&gt; {
+
+});
+pins.pulseDuration();
+pins.pulseIn(DigitalPin.P0, PulseValue.High);
+pins.setPull(DigitalPin.P0, PinPullMode.PullDown);
+pins.analogPitch(0, 0);
+pins.analogSetPitchPin(AnalogPin.P0);</code></pre>
+<h2 id="servos">Servos</h2><pre><code class="lang-cards">pins.servoWritePin(AnalogPin.P0, 180);
+pins.servoSetPulse(AnalogPin.P0, 1500);</code></pre>
+<h2 id="i2c">I2C</h2><pre><code class="lang-cards">pins.i2cReadNumber(0, NumberFormat.Int8LE);
+pins.i2cWriteNumber(0, 0, NumberFormat.Int8LE);</code></pre>
+<h2 id="spi">SPI</h2><pre><code class="lang-cards">pins.spiWrite(0);
 pins.spiFrequency(1000000);
-pins.spiTransfer(null, null)</code></pre>
+pins.spiFormat(8,3);
+pins.spiPins(DigitalPin.P0, DigitalPin.P1, DigitalPin.P2);</code></pre>
+<h2 id="see-also">See Also</h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/digital-read-pin.html">digitalReadPin</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/digital-write-pin.html">digitalWritePin</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/analog-read-pin.html">analogReadPin</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/analog-write-pin.html">analogWritePin</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/analog-set-period.html">analogSetPeriod</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/map.html">map</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/on-pulsed.html">onPulsed</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/pulse-duration.html">pulseDuration</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/pulse-in.html">pulseIn</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/servo-write-pin.html">servoWritePin</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/servo-set-pulse.html">servoSetPulse</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/i2c-read-number.html">i2cReadNumber</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/i2c-write-number.html">i2cWriteNumber</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/set-pull.html">setPull</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/analog-pitch.html">analogPitch</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/analog-set-pitch-pin.html">analogSetPitchPin</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/spi-write.html">spiWrite</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/spi-pins.html">spiPins</a>,<a  rel="nofollow noopener" href="/docs/reference/pins/spi-format.html">spiFormat</a>,<a  rel="nofollow noopener" href="/docs/reference/pins/spi-frequency.html">spiFrequency</a></p>
 
     </div>
 

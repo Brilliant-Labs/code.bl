@@ -1683,25 +1683,18 @@
         <h1 id="sound-level">sound Level</h1><p>Find out what the the level of sound heard by microphone is.</p>
 <pre><code class="lang-sig">input.soundLevel()</code></pre>
 <h2 id="returns">Returns</h2><ul>
-<li>a <code>number</code> between <code>0</code> (quiet) and <code>255</code> (loud) which tells how loud the sounds are that the microphone hears.</li>
+<li>a <code>number</code> between <code>0</code> (low sound) and <code>255</code> (loud sound) which tells how loud the sounds are that the microphone hears.</li>
 </ul>
-<h2 id="example">Example </h2><p>Use the pixels to make a sound meter. If loud sounds are detected, more pixels light up.</p>
-<pre><code class="lang-blocks">let lastLevel = 0;
-let pixels = light.createStrip()
-
-forever(function () {
-    let level = input.soundLevel()
-    if (lastLevel != level) {
-        pixels.clear()
-        for (let i = 0; i &lt; pixels.length() / 255 * level; i++) {
-            pixels.setPixelColor(i, 0x00ff00)
-        }
-        lastLevel = level
+<h2 id="example">Example</h2><p>Show a checkerboard icon while the sound level is greater than <code>100</code>.</p>
+<pre><code class="lang-blocks">basic.forever(function () {
+    if (input.soundLevel() &gt; 100) {
+        basic.showIcon(IconNames.Chessboard)
+    } else {
+        basic.clearScreen()
     }
 })</code></pre>
-<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/input/on-loud-sound.html">on loud sound</a></p>
-<pre><code class="lang-package">microphone
-light</code></pre>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/input/on-sound.html">on sound</a>, <a  rel="nofollow noopener" href="/docs/reference/input/sound-level.html">set sound threshold</a></p>
+<pre><code class="lang-package">microphone</code></pre>
 
     </div>
 

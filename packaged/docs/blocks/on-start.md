@@ -9,7 +9,16 @@ let thousand = 1000
 The ``on start`` is a special event that runs when the program starts, before any other event. 
 Use this event to initialize your program.
 
-## #exstart
+##  #exstart
+
+In this example, ``on start`` sets a dimmer brightness on the screen and the button handler shows a string.
+
+```blocks
+input.onButtonPressed(Button.A, () => {
+    basic.showString("Hello!")
+})
+led.setBrightness(50)
+```
 
 ## What about JavaScript?
 

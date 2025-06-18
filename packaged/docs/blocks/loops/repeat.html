@@ -1683,7 +1683,14 @@
         <h1 id="repeat">Repeat</h1><p>Run part of the program the number of times you say.</p>
 <pre><code class="lang-block">for(let i = 0; i &lt; 4; ++i) {
 }</code></pre>
-<h2 id="examples"></h2>
+<h2 id="examples"></h2><h2 id="example-blinking-heart">Example: Blinking heart</h2><p>Flash the <code>heart</code> icon on the screen <code>4</code> times.</p>
+<pre><code class="lang-blocks">for (let i = 0; i &lt; 4; i++) {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(300)
+    basic.clearScreen()
+    basic.pause(300)
+}</code></pre>
+
     </div>
 
 					<div class="hideprint"></div>

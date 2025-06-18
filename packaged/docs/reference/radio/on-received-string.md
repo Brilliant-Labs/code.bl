@@ -18,7 +18,18 @@ https://www.youtube.com/watch?v=Re3H2ISfQE8
 
 ## ~
 
-## #example
+## Example
+
+This program continuously sends a cheerful message. It also receives a messages from nearby @boardname@s. It shows these messages on the screen.
+
+```blocks
+basic.forever(() => {
+    radio.sendString("I'm happy");
+})
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+})
+```
 
 ## Troubleshooting
 
@@ -28,7 +39,6 @@ The radio set group might need to be set, synchronized, before the radio events 
 
 ## See also
 
-[Bit Radio](/reference/radio)
 [on received number](/reference/radio/on-received-number),
 [received packet](/reference/radio/received-packet),
 [send number](/reference/radio/send-number),

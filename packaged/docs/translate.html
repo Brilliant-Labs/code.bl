@@ -1697,10 +1697,49 @@ and you can volunteer to translate parts of the web site. Translation into diffe
 
         </div>
     </div>
-<h2 id="promo"></h2><h2 id="localized-makecode">Localized MakeCode</h2><p>Text, or <a  rel="nofollow noopener" href="/docs/types/string.html">strings</a>, used in the editor and documentation pages are localized into the current language for the editor (you switch languages by choosing <strong>Language</strong> in the <strong>Settings</strong> menu). Text is continually being added or changed so translations are always at a different stage of completeness. MakeCode text content is stored in files on Crowdin in <a target="_blank" rel="nofollow noopener" href="https://crowdin.com/project/kindscript/en#">English</a>. Translators choose their language in the <a target="_blank" rel="nofollow noopener" href="https://crowdin.com/project/kindscript">MakeCode Crowdin project</a> and work on the files for the editor they want to translate for.</p>
+<h2 id="promo"></h2>
+    <div class="ui info message">
+        <div class="content">
+            <p>Looking to help translate the site for <strong><a target="_blank" rel="nofollow noopener" href="http://microbit.org">microbit.org</a></strong>? Try <a target="_blank" rel="nofollow noopener" href="http://translate.microbit.org/">http://translate.microbit.org/</a> to help the Microbit Foundation!</p>
+
+        </div>
+    </div>
+<h2 id="localized-makecode">Localized MakeCode</h2><p>Text, or <a  rel="nofollow noopener" href="/docs/types/string.html">strings</a>, used in the editor and documentation pages are localized into the current language for the editor (you switch languages by choosing <strong>Language</strong> in the <strong>Settings</strong> menu). Text is continually being added or changed so translations are always at a different stage of completeness. MakeCode text content is stored in files on Crowdin in <a target="_blank" rel="nofollow noopener" href="https://crowdin.com/project/kindscript/en#">English</a>. Translators choose their language in the <a target="_blank" rel="nofollow noopener" href="https://crowdin.com/project/kindscript">MakeCode Crowdin project</a> and work on the files for the editor they want to translate for.</p>
 <h2 id="want-to-help-">Want to help?</h2><p>Good! <strong>A description of the process and general guidance is found in the <a target="_blank" rel="nofollow noopener" href="https://makecode.com/translate">Microsoft MakeCode translation</a> page to help you get started.</strong></p>
 <h2 id="crowdin-files-for-micro-bit">Crowdin files for micro:bit</h2><p>The <strong>MakeCode for micro:bit</strong> editor uses some core translation files for it’s interface, basic blocks, and documents which are common to all of the editors (they are also described in the general translation <a target="_blank" rel="nofollow noopener" href="https://makecode.com/translate">page</a>). There are many more string files and documents that are specific to the micro:bit editor.</p>
-<h2 id="target-files"></h2>
+<h2 id="target-files"></h2><p>The following lists provide a guide to which translation files and folders relate to the <strong>MakeCode for micro:bit</strong> editor. The links here are to the <a target="_blank" rel="nofollow noopener" href="https://crowdin.com/project/kindscript/en#">English</a> source files just to show you the location of the files in the folder structure. Of course, you will translate in your selected language instead.</p>
+<h3 id="editor">Editor</h3><p>Files related to the editor:</p>
+<ul>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/32/en-en">strings.json</a> - Strings common and shared by all MakeCode editors</li>
+</ul>
+<p><img class="ui image" src="/static/mb/translate/stringsfile.png" alt="strings.json file in Crowdin UI" loading="lazy"></p>
+<ul>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/1922/en-en">target-strings.json</a> - Strings custom to the micro:bit editor interface</li>
+</ul>
+<p><img class="ui image" src="/static/mb/translate/targetstringsfile.png" alt="target-strings.json file in Crowdin UI" loading="lazy"></p>
+<p>This is an example of the editor with it’s interface elements localized:</p>
+<p><img class="ui image" src="/static/mb/translate/target-strings.jpg" alt="Translated editor elements" loading="lazy"></p>
+<h3 id="blocks">Blocks</h3><ul>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/66/en-en">core-jsdoc-strings.json</a> -  Description text for code elements of the <a  rel="nofollow noopener" href="/docs/reference/basic.html">basic</a> and core <a  rel="nofollow noopener" href="/docs/blocks.html">blocks</a></li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/65/en-en">core-strings.json</a> - Display text for the <a  rel="nofollow noopener" href="/docs/reference/basic.html">basic</a> and core <a  rel="nofollow noopener" href="/docs/reference/blocks.html">blocks</a></li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/64/en-en">radio-jsdoc-strings.json</a> - Description text for code elements of the <a  rel="nofollow noopener" href="/docs/reference/radio.html">radio</a> blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/63/en-en">radio-strings.json</a> - Display text for the <a  rel="nofollow noopener" href="/docs/reference/radio.html">radio</a> blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/5032/en-en">radio-broadcast-jsdoc-strings.json</a> -  Description text for code elements of the radio broadcast blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/5030/en-en">radio-broadcast-strings.json</a> - Display text for the radio broadcast blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/5036/en-en">servo-jsdoc-strings.json</a> - Description text for code elements of the <a  rel="nofollow noopener" href="/docs/reference/servos.html">servo</a> blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/5034/en-ens">servo-strings.json</a> - Display text for the <a  rel="nofollow noopener" href="/docs/reference/servos.html">servo</a> blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/60/en-en">bluetooth-jsdoc-strings.json</a> - Description text for code elements of the <a  rel="nofollow noopener" href="/docs/reference/bluetooth.html">bluetooth</a> blocks</li>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/59/en-en">bluetooth-strings.json</a> - Display text for the <a  rel="nofollow noopener" href="/docs/reference/bluetooth.html">bluetooth</a> blocks</li>
+</ul>
+<p><img class="ui image" src="/static/mb/translate/libsfiles.png" alt="screenshot of library file in Crowdin UI" loading="lazy"></p>
+<p>Here are some translated blocks:</p>
+<p><img class="ui image" src="/static/mb/translate/block-text.jpg" alt="Translated block text" loading="lazy"></p>
+<h3 id="document-pages">Document pages</h3><ul>
+<li><a target="_blank" rel="nofollow noopener" href="https://crowdin.com/translate/kindscript/en#/microbit/docs">docs</a> - Documentation pages for projects, courses, lessons, and code block reference</li>
+</ul>
+<p>Here’s an example of a translated document page for a course lesson:</p>
+<p><img class="ui image" src="/static/mb/translate/doc-page.jpg" alt="Translated document page" loading="lazy"></p>
+
     </div>
 
 					<div class="hideprint"></div>

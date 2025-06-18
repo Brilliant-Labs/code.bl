@@ -1680,38 +1680,27 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="on-pulsed-deprecated">on Pulsed <strong>deprecated</strong></h1>
+        <h1 id="on-pulsed">on Pulsed</h1><p>Set a pin to use as a digital input and then run some code when the pin pulses either <code>high</code> or <code>low</code>.</p>
+<pre><code class="lang-sig">pins.onPulsed(DigitalPin.P0, PulseValue.High, () =&gt; { });</code></pre>
+
     <div class="ui info message">
         <div class="content">
-            <p>Use <a  rel="nofollow noopener" href="/docs/reference/pins/on-event.html">pins.onEvent</a> instead.</p>
+            <p><strong>Simulator</strong>: This function needs real hardware to work with. It’s not supported in the simulator.</p>
 
         </div>
     </div>
-<p>Run some code when a pin is pulsed <code>high</code> (true) or <code>low</code> (false).</p>
-<pre><code class="lang-sig">pins.A0.onPulsed(PulseValue.High, () =&gt; {})</code></pre>
-<p>A pulse is a change of voltage at the input of a digital pin. This might happen if a switch connected
-to the pin is pressed or a sensor attached to the pin wants to give a signal. A pulse is an action of
-changing voltage from high to low, or from low to high. The input to a pin is normally made to stay
-at either a high or low voltage when it isn’t pulsed (its <em>unsignalled state</em>). You can decide what
-input value to keep the pin at is when it’s not pulsed. You do this by giving it a <em>pull</em> direction
-with <a  rel="nofollow noopener" href="/docs/reference/pins/set-pull.html"><code>||pins:set pull||</code></a>.</p>
-<p>Your code is inside an event block that starts when the input voltage at the pin changes. You give the
-pulse direction  you want the code to run for. Make the value for <strong>pulse</strong> be <code>high</code> if you want
-the code to start when the pin changes from a low voltage to a high voltage. Use <code>low</code> for <strong>pulse</strong> if
-you want your code to run when the voltage at the pin goes from high to low.</p>
 <h2 id="parameters">Parameters</h2><ul>
-<li><strong>pulse</strong>: the pulse value to run code for.</li>
-<li><strong>body</strong>: the code to run when the pin is pulsed.</li>
+<li><strong>name</strong>: the micro:bit hardware pin to set for digital input (<code>P0</code> through <code>P20</code>).</li>
+<li><strong>pulse</strong>: the state that will cause the code inside the block to run, either <code>high</code> or <code>low</code>.</li>
+<li><strong>body</strong>: the code to run when the pin in <strong>name</strong> is pulsed to the state set in <strong>pulse</strong>.</li>
 </ul>
-<h2 id="example">Example </h2><p>When pin <code>D4</code> is pulsed <code>low</code>, run code that flashes an LED connected to pin <code>D13</code> .</p>
-<pre><code class="lang-blocks">pins.D4.setPull(PinPullMode.PullUp)
-
-pins.D4.onPulsed(PulseValue.Low, () =&gt; {
-    pins.D13.digitalWrite(true)
-    pause(250)
-    pins.D13.digitalWrite(false)
-})</code></pre>
-<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/pulse-in.html">pulse in</a>, <a  rel="nofollow noopener" href="/docs/reference/pins/set-pull.html">set pull</a></p>
+<h2 id="example">Example</h2><p>Configure pin <code>P2</code> for digital input. Display the string <code>&quot;LOW&quot;</code> whenever <code>P2</code> pulses <code>low</code>.</p>
+<pre><code class="lang-blocks">pins.onPulsed(DigitalPin.P2, PulseValue.Low, () =&gt; {
+    basic.showString(&quot;LOW&quot;);
+});</code></pre>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/servo-set-pulse.html">servo set pulse</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/pulse-duration.html">pulse duration</a>,
+<a  rel="nofollow noopener" href="/docs/reference/pins/digital-read-pin.html">digital read pin</a></p>
 
     </div>
 

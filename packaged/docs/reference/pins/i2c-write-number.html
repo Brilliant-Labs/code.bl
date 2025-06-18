@@ -1680,56 +1680,38 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="i2c-write-number">i2c Write Number</h1><p>Write a number to an address on the I2C bus.</p>
-<pre><code class="lang-sig">pins.i2cWriteNumber(0, NumberFormat.Int8LE, false)</code></pre>
-<p>If your board has pins that say <strong>SDA</strong> and <strong>SCL</strong>, then you can write numbers to
-other chips that are not on your board. The <strong>SDA</strong> and <strong>SCL</strong> pins connect to other chips
-(<a target="_blank" rel="nofollow noopener" href="https://wikipedia.org/wiki/Integrated_circuit">ICs</a>) that also have these same pins. This connection
-is called <a target="_blank" rel="nofollow noopener" href="https://wikipedia.org/wiki/I2C"><strong>I2C</strong></a>. It only needs two wires to read or write
-a number. As you can guess, one wire is for <strong>SDA</strong> and the other is for <strong>SCL</strong>.</p>
-<p>The wires, and the signals that go through them, together are called a <em>bus</em>. An I2C connection is
-an <em>I2C bus</em>.</p>
-<p>You might know that storing a number in electronics takes several bits of digital information that exist
-all at one time (a combination of many high and low voltages inside a chip). Since the I2C
-bus has only two wires, a number moves through one of the wires just one bit at a time. The
-bits of the number are short pulses of high and low voltage on the <strong>SDA</strong> wire. The <strong>SCL</strong>
-wire lets one chip tell another chip when the next bit of the number is on the <strong>SDA</strong> wire.</p>
-<h3 id="addresses">Addresses</h3><p>To keep things simple, the I2C bus lets many chips connect to the same wires. Nice, because
-it could get messy if each chip couldn’t share the same wires. This is like pretending the
-chips are houses on a street. The street is the bus connected to the chips, the houses. We know that
-a house on a street usually has an address. Same thing with chips on a bus. Without an address,
-a number would move on the bus but the chips waiting for input wouldn’t know who’s
-supposed to receive it.</p>
-<p>The chips on your bus can have address numbers that are between <code>8</code> and <code>123</code>. Make
-sure that all of the chips are using a different number so they respond to their own address.</p>
+        <h1 id="i2c-write-number">i2c Write Number</h1><p>Write a number to a device at an I2C address using a specified number format.</p>
+<pre><code class="lang-sig">pins.i2cWriteNumber(0, 0, NumberFormat.Int8LE, true);</code></pre>
+
+    <div class="ui info message">
+        <div class="content">
+            <p><strong>Simulator</strong>: This function needs real hardware to work with. It’s not supported in the simulator.</p>
+
+        </div>
+    </div>
 <h2 id="parameters">Parameters</h2><ul>
-<li><strong>address</strong>: a <a target="_blank" rel="nofollow noopener" href="types/number">number</a> between <code>8</code> and <code>123</code> that is the address of a chip on the I2C bus.</li>
-<li><strong>value</strong>: a <a target="_blank" rel="nofollow noopener" href="types/number">number</a> a number to write to the I2C bus. It’s size (number of bytes) depends
-on what you say in <strong>format</strong>.</li>
-<li><strong>format</strong>: the type of number you will write to the bus, like: <code>Int8LE</code>.</li>
-<li><strong>repeated</strong>: a <a  rel="nofollow noopener" href="/docs/types/boolean.html">boolean</a> value, <code>true</code> or <code>false</code>, to say if you want to read
-again right away.<blockquote>
-<p>This is usually <code>false</code> if you wait for a while before reading from, or writing to, the bus again.</p>
-</blockquote>
-</li>
+<li><strong>address</strong>: the 7-bit I2C address of the device to send to send <strong>value</strong> to.</li>
+<li><strong>value</strong>: the number to send to <strong>address</strong>.</li>
+<li><strong>format</strong>: the <a  rel="nofollow noopener" href="/docs/types/buffer/number-format.html">NumberFormat</a> for <strong>value</strong>.</li>
+<li><strong>repeated</strong>: if <code>true</code>, don’t send a stop condition after the write. Otherwise, a stop condition is sent when <code>false</code> (the default).</li>
 </ul>
-<h2 id="example">Example </h2><p>Connect a 12-bit digital-to-analog converter (DAC) on a breadboard to the <strong>SDA</strong> and <strong>SCL</strong> pins on your
-board. Set your DAC to respond to address <code>99</code>. Write numbers to the DAC to have it make a sawtooth wave
-about every second.</p>
-<pre><code class="lang-blocks">let i = 0
-forever(() =&gt; {
-    i = 0
-    while (i &lt;= 4095) {
-        pins.i2cWriteNumber(98, i, NumberFormat.UInt16LE, false)
-        pause(6)
-        if (i &gt; 0) {
-            i += 256
-        } else {
-            i += 255
-        }
-    }
-})</code></pre>
-<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/i2c-read-number.html">i2c read number</a></p>
+
+    <div class="ui info message">
+        <div class="content">
+            <h4 id="repeated-start">Repeated start</h4><p>A <a target="_blank" rel="nofollow noopener" href="http://www.i2c-bus.org/repeated-start-condition/">repeated start condition</a> is set to help make sure that when you want to write multiple numbers from the device at one time, it can happen without interruption. A start conditon is sent (if <strong>repeated</strong> is <code>true</code>) each time a number is written without a matching stop condition. When the last number is written, the stop conditon can be sent by setting <strong>repeated</strong> to <code>false</code>. For single writes, don’t use <strong>repeated</strong> or set it to <code>false</code>.</p>
+<h4 id="reserved-addresses">Reserved addresses</h4><p>Some sensors on your micro:bit use the same I2C bus that is connected to the pins that you program. This means that you should be careful to <strong>NOT</strong> use an address for your device that is the same as the any of the ones used by the sensors on the board. Check the <a target="_blank" rel="nofollow noopener" href="https://tech.microbit.org/hardware/i2c/">I2C sensor addresses</a> list before you assign one to your device. This will help you keep the addresses separate.</p>
+<h4 id="bus-address-format">Bus address format</h4><p>The micro:bit uses 7-bit values to address the devices connected on the I2C bus. Before an address is transmitted, it is adjusted temporarily to an 8-bit value so that the valid address bits are sent properly. This means that the value of an 8-bit address present on the bus will appear as twice that of what you specified. This is fine though, since the device you are addressing will decode it to match the address you gave. If your device address is specified as an 8-bit address, you will need to use an address that is half that value when you read to or write from it.</p>
+
+        </div>
+    </div>
+<h2 id="examples">Examples</h2><h3 id="write-a-big-endian-number-to-a-device">Write a big endian number to a device</h3><p>Send the value <code>2055</code> to the 7-bit I2C address as a 32-bit number. The <code>32</code>, big-endian, and integer chosen for the format.</p>
+<pre><code class="lang-blocks">pins.i2cWriteNumber(32, 2055, NumberFormat.Int32BE, false);</code></pre>
+<h3 id="repeated-writes">Repeated writes</h3><p>Send three byte values to a device at address <code>33</code>.</p>
+<pre><code class="lang-blocks">pins.i2cWriteNumber(33, 19, NumberFormat.Int32BE, true);
+pins.i2cWriteNumber(33, 61, NumberFormat.Int32BE, true);
+pins.i2cWriteNumber(33, 87, NumberFormat.Int32BE, false);</code></pre>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/pins/i2c-read-number.html">i2c read number</a></p>
+<p><a target="_blank" rel="nofollow noopener" href="http://www.i2c-bus.org/">What’s I2C?</a>, <a  rel="nofollow noopener" href="/docs/types/buffer/number-format.html">number format</a></p>
 
     </div>
 

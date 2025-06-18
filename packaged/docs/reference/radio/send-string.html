@@ -1701,8 +1701,24 @@ maximum string length is 19 characters.</p>
 
         </div>
     </div>
-<h2 id="example"></h2><h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio.html">Bit Radio</a>
-<a  rel="nofollow noopener" href="/docs/reference/radio/on-received-string.html">on received string</a></p>
+<h2 id="example-two-way-radio">Example: Two-way radio</h2><p>If you load this program onto two or more micro:bits, you can send a
+code word from one of them to the others by pressing button <code>A</code>.  The
+other micro:bits will receive the code word and then show it.</p>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, () =&gt; {
+    radio.sendString(&quot;Codeword: TRIMARAN&quot;)
+    basic.showString(&quot;SENT&quot;);
+})
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString);
+})</code></pre>
+
+    <div class="ui info message">
+        <div class="content">
+            <p>A radio that can both transmit and receive is called a <em>transceiver</em>.</p>
+
+        </div>
+    </div>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/on-received-string.html">on received string</a></p>
 <pre><code class="lang-package">radio</code></pre>
 
     </div>

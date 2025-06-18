@@ -1680,27 +1680,19 @@
 					</button>
 					
     <div class="ui text">
-        <h1 id="variables">Variables</h1><p>A program is always working with information. The information, or data, that a program needs is kept somewhere in a computer’s memory. Memory in a computer is arranged so that the data stored there can be found using an address. An address is a number that tells where the data that program wants to use is located in memory.</p>
-<p>For a program, using an address number to get and store data is very inconvenient. So, programs use <em>variables</em> instead. A variable represents the place in memory for the data that’s kept there. It’s called a variable because the data it represents may change (vary) when the program stores something new there. When you create a new variable in your program, you’re reserving a place in memory for some data that your program might want to create, copy, or check on later.</p>
-<p>Variables have a name, a <a  rel="nofollow noopener" href="/docs/types.html">type</a>, and a value:</p>
+        <h1 id="local-variables">Local Variables</h1><p>How to define and use local variables.</p>
+<!-- parent language --><p>A variable is a place where you can store and retrieve data. Variables have a name, a <a  rel="nofollow noopener" href="/docs/types.html">type</a>, and value:</p>
 <ul>
-<li><em>name</em> - how you’ll refer to the variable</li>
-<li><em>type</em> - the kind of data a variable will store</li>
-<li><em>value</em> - what’s stored (the data) in the variable</li>
+<li><em>name</em> is how you’ll refer to the variable</li>
+<li><em>type</em> refers to the kind of data a variable can store</li>
+<li><em>value</em> refers to what’s stored in the variable</li>
 </ul>
-
-    <div class="ui info message">
-        <div class="content">
-            <p>You can use the default variable names given in the blocks if you’d like. However, it’s best to use descriptive variable names. To change a variable name in the editor, select the down arrow next to the variable and then click “Rename variable…”.</p>
-
-        </div>
-    </div>
-<h2 id="let-statement"><code>let</code> statement</h2><p>Use the Block Editor variable statement to create a variable 
+<h2 id="var-statement">Var statement</h2><p>Use the Block Editor variable statement to create a variable 
 and the <a  rel="nofollow noopener" href="/docs/blocks/variables/assign.html">assignment operator</a> 
-to store something in the variable. This is called <em>declaring</em> the variable.</p>
+to store something in the variable.</p>
 <p>For example, this code stores the number <code>2</code> in the <code>x</code> variable:</p>
-<pre><code class="lang-block">let x = 2;</code></pre>
-<p>Here’s how to make a variable in the Block Editor:</p>
+<pre><code class="lang-blocks">let x = 2;</code></pre>
+<p>Here’s how to define a variable in the Block Editor:</p>
 <ol>
 <li><p>Click <code>variables</code>.</p>
 </li>
@@ -1709,27 +1701,32 @@ to store something in the variable. This is called <em>declaring</em> the variab
 <li><p>Drag a block type on the right-side of the <a  rel="nofollow noopener" href="/docs/blocks/variables/assign.html">assignment operator</a> and click the down arrow to change the variable name.</p>
 </li>
 </ol>
-<p>When you make, or declare, a variable in code, you’ll use the <code>let</code> statement. It looks like this:</p>
-<pre><code class="lang-typescript">let percent = 50;</code></pre>
-<h3 id="letexample"></h3><h3 id="reading-variable-values">Reading variable values</h3><p>Once you’ve declared a variable, just use the variable’s name whenever you need what’s stored in the variable. </p>
-<h4 id="readvariableexample"></h4><pre><code class="lang-block">let count = 10
-let half = count / 2</code></pre>
-<h3 id="updating-variable-values">Updating variable values</h3><p>To change the contents of a variable use the assignment operator. </p>
-<h4 id="updatevariableexample"></h4><pre><code class="lang-block">let count = 10
-if (count &lt; 20) {
-    count = 20
+<p>A variable is created for the number returned by the <a  rel="nofollow noopener" href="/docs/reference/led/brightness.html">brightness</a> function.</p>
+<pre><code class="lang-blocks">let b = led.brightness();</code></pre>
+<h2 id="using-variables">Using variables</h2><p>Once you’ve defined a variable, just use the variable’s name whenever you need what’s stored in the variable. For example, the following code shows the value stored in <code>counter</code> on the LED screen:</p>
+<pre><code class="lang-blocks">let counter = 1;
+basic.showNumber(counter);</code></pre>
+<p>To change the contents of a variable use the assignment operator. The following code sets <code>counter</code> to 1 and then increments <code>counter</code> by 10:</p>
+<pre><code class="lang-blocks">let counter = 1;
+counter = counter + 10;
+basic.showNumber(counter);</code></pre>
+<h2 id="why-use-variables-">Why use variables?</h2><p>If you want to remember and modify data, you’ll need a variable. 
+A counter is a great example:</p>
+<pre><code class="lang-blocks">let counter = 0;
+input.onButtonPressed(Button.A, () =&gt; { 
+  counter = counter + 1;
+  basic.showNumber(counter);
+});</code></pre>
+<h2 id="local-variables">Local variables</h2><p>Local variables exist only within the function or block of code where they’re defined. For example:</p>
+<pre><code class="lang-blocks">// x does NOT exist here.
+if (led.brightness() &gt; 128) {
+  // x exists here
+  let x = 0;
 }</code></pre>
-<h3 id="why-use-variables-">Why use variables?</h3><p>If you want to remember and modify data somewhere in your program later, you’ll need a variable. </p>
-<h4 id="whyusevariablesexample"></h4><h3 id="local-variables">Local variables</h3><p>Local variables exist only within the function or block of code where they’re declared.</p>
-<p>Here, the variable <code>index</code> only exists inside the <strong>for</strong> block. The <code>looping</code> variable exists both
-outside and inside the <strong>for</strong> block.</p>
-<h4 id="localvariableexample"></h4><pre><code class="lang-block">let looping = true;
-for (let index = 0; index &lt;= 10; index++) {
-    if (index == 10) {
-        looping = false;
-    }
-}</code></pre>
-<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/blocks/variables/assign.html">Assignment operator</a>, <a  rel="nofollow noopener" href="/docs/blocks/variables/change.html">Change operator</a></p>
+<h3 id="notes">Notes</h3><ul>
+<li>You can use the default variable names if you’d like, however, it’s best to use descriptive variable names. To change a variable name in the editor, select the down arrow next to the variable and then click “new variable”.</li>
+</ul>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/types.html">types</a>, <a  rel="nofollow noopener" href="/docs/blocks/variables/assign.html">assignment operator</a></p>
 
     </div>
 

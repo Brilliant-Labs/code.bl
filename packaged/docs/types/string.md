@@ -2,12 +2,13 @@
 
 A *String* is a sequence of characters. 
 
-### #intro
+###  #intro
 
-A string type is more complex than a number or a boolean. Strings have a length and you can
-change the characters inside the string. You can also break strings apart and make new strings, or
-put strings together and make longer strings.
+## ~ hint
 
+For the @boardname@, ASCII character codes 32 to 126 are supported; letters, digits, punctuation marks, and a few symbols. All other character codes appear as a ? on the [LED screen](/device/screen).
+
+## ~
 ### Create a string variable
 
 ```block
@@ -35,3 +36,4 @@ let greeting = "Hello";
 ### See also #seealso
  
 [Number](/types/number)
+

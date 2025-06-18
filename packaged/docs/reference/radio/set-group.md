@@ -34,7 +34,6 @@ radio.setGroup(128)
 
 ## See also
 
-[Bit Radio](/reference/radio)
 [on received number](/reference/radio/on-received-number),
 [on received string](/reference/radio/on-received-string),
 [on received value](/reference/radio/on-received-value),

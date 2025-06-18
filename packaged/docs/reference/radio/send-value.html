@@ -1702,8 +1702,22 @@ The maximum <a target="_blank" rel="nofollow noopener" href="">string</a> length
 
         </div>
     </div>
-<h2 id="example"></h2><h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio.html">Bit Radio</a>
-<a  rel="nofollow noopener" href="/docs/reference/radio/on-received-value.html">on received value</a></p>
+<h2 id="example-broadcasting-acceleration">Example: Broadcasting acceleration</h2><p>This program sends your micro:bit’s <strong>acceleration</strong> (amount it is
+speeding up or slowing down) in the <code>x</code> direction (left and right) to
+other micro:bits. This kind of program might be useful in a model car
+or model rocket.</p>
+<pre><code class="lang-blocks">radio.setGroup(99)
+input.onButtonPressed(Button.A, () =&gt; {
+    radio.sendValue(&quot;acc&quot;, input.acceleration(Dimension.X))
+})</code></pre>
+<p>This program receives the string and number sent by the last program.
+Then it shows them on the LED screen.</p>
+<pre><code class="lang-blocks">radio.setGroup(99)
+radio.onReceivedValue(function (name, value) {
+    basic.showString(name);
+    basic.showNumber(value);
+});</code></pre>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/radio/on-received-value.html">on received value</a></p>
 <pre><code class="lang-package">radio</code></pre>
 
     </div>

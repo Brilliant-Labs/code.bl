@@ -8,32 +8,26 @@ input.soundLevel()
 
 ## Returns
 
-* a ``number`` between `0` (quiet) and `255` (loud) which tells how loud the sounds are that the microphone hears.
+* a ``number`` between `0` (low sound) and `255` (loud sound) which tells how loud the sounds are that the microphone hears.
 
-## Example #example
+## Example
 
-Use the pixels to make a sound meter. If loud sounds are detected, more pixels light up.
+Show a checkerboard icon while the sound level is greater than `100`.
 
 ```blocks
-let lastLevel = 0;
-let pixels = light.createStrip()
-
-forever(function () {
-    let level = input.soundLevel()
-    if (lastLevel != level) {
-        pixels.clear()
-        for (let i = 0; i < pixels.length() / 255 * level; i++) {
-            pixels.setPixelColor(i, 0x00ff00)
-        }
-        lastLevel = level
+basic.forever(function () {
+    if (input.soundLevel() > 100) {
+        basic.showIcon(IconNames.Chessboard)
+    } else {
+        basic.clearScreen()
     }
 })
 ```
-## See also #seealso
 
-[on loud sound](/reference/input/on-loud-sound)
+## See also
+
+[on sound](/reference/input/on-sound), [set sound threshold](/reference/input/sound-level)
 
 ```package
 microphone
-light
 ```

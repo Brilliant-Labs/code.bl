@@ -1,20 +1,38 @@
-# reset
+# Reset
 
-Reset the board and start the program from the beginning.
+Reset the @boardname@ and start the program again.
+
+This function is like pressing the reset button on the back of the @boardname@.
 
 ```sig
 control.reset()
 ```
+## ~hint
 
-Everything that the program did with the board is set back to the way it was before the
-program started. The program starts over again from the beginning.
+**Simulator**
 
-## Example #example
+The **reset** function works only on a real @boardname@ and not in the simulator.
 
-Reset the board and begin again.
+## ~
+
+## Example
+
+This program will count as high as you like when you press button `A`.
+When you get tired of counting, press button `B` to reset the
+@boardname@ and start the program over.
 
 ```blocks
-control.reset()
+let item = 0;
+basic.showNumber(item);
+input.onButtonPressed(Button.A, () => {
+    item = item + 1;
+    basic.showNumber(item);
+});
+input.onButtonPressed(Button.B, () => {
+    control.reset();
+});
 ```
 
-## #seealso
+## See also
+
+[clear screen](/reference/basic/clear-screen), [game over](/reference/game/game-over)

@@ -1682,23 +1682,29 @@
     <div class="ui text">
         <h1 id="panic">panic</h1><p>Display an error number and stop the program.</p>
 <pre><code class="lang-sig">control.panic(0)</code></pre>
-<p>If your board has some way to display error information, <code>||panic||</code> will work
+<p>If your board has some way to display error information, <code>||control:panic||</code> will work
 with it to show error numbers.</p>
-<p>Your program stops when you use <code>||panic||</code>. Use this when you think something bad enough has
+<p>Your program stops when you use <code>||control:panic||</code>. Use this when you think something bad enough has
 happened and your program can’t run properly anymore.</p>
 <h2 id="parameters">Parameters</h2><ul>
 <li><strong>code</strong>: an error <a  rel="nofollow noopener" href="/docs/types/number.html">number</a> you match to an error situation in your program.</li>
 </ul>
-<h2 id="example">Example </h2><p>Send a ‘code red’ error that you created to the error display if the input from pin <code>A0</code> is
-lower than <code>10</code>.</p>
-<pre><code class="lang-blocks">let codeRed = 1
-let codeBlue = 2
 
-if (pins.A0.analogRead() &lt; 10) {
+    <div class="ui info message">
+        <div class="content">
+            <p><strong>System error codes</strong></p>
+<p>The micro:bit has error codes reserved for use by the system software. The <code>panic()</code> function is for advanced usage only. You must carefully chose an error code that doesn’t match one currently used by the micro:bit system.</p>
+
+        </div>
+    </div>
+<h2 id="example">Example</h2><p>Send a ‘code red’ error that you created to the error display if the input from pin <code>P0</code> is lower than <code>10</code>.</p>
+<pre><code class="lang-blocks">let codeRed = 1110;
+let codeBlue = 1111;
+
+if (pins.analogReadPin(AnalogPin.P0) &lt; 10) {
     control.panic(codeRed)
 }</code></pre>
-<h2 id="seealso">See also </h2><p><a  rel="nofollow noopener" href="/docs/reference/control/assert.html">assert</a></p>
-<p><a  rel="nofollow noopener" href="/docs/device/error-codes.html">Error Codes</a></p>
+<h2 id="see-also">See also</h2><p><a  rel="nofollow noopener" href="/docs/reference/control/assert.html">assert</a>, <a  rel="nofollow noopener" href="/docs/device/error-codes.html">error codes</a></p>
 
     </div>
 

@@ -1,56 +1,53 @@
 # pulse In
 
-Wait for a pulse to happen on a digital pin and say how long the pulse lasted.
+Get the duration, in microseconds, of a pulse (high or low) from one of the pins.
 
 ```sig
-pins.A0.pulseIn(PulseValue.High)
+pins.pulseIn(DigitalPin.P0, PulseValue.High)
 ```
 
-A pulse is a change of voltage at the input of a digital pin. This might happen if a switch connected
-to the pin is pressed or a sensor attached to the pin wants to give a signal. A pulse is an action of
-changing voltage from high to low, or from low to high. The input to a pin is normally made to stay
-at either a high or low voltage when it isn't pulsed (its _unsignalled state_). You can decide what
-input value to keep the pin at is when it's not pulsed. You do this by giving it a _pull_ direction
-with [``||pins:set pull||``](/reference/pins/set-pull).
+## ~avatar
 
-You wait for a pulse on a pin, going from either `high` to `low`, or `low` to `high`. A pulse **value** of `high` is
-used when you are waiting for an input change from `low` to `high`. A pulse **value** of `low` is used to wait for
-a change of input going from `high` to `low`.
+Some pins are also used by the [LED screen](/device/screen).
+Please read the [page about pins](/device/pins) carefully.
 
-When it notices a pulse in the direction it's waiting for, ``||pins:pulse in||`` stops waiting and tells you
-how long the pulse lasted. It won't wait forever though. There is a time limit of 2 seconds to wait for
-the pulse to happen and 2 seconds for the pulse to finish. If the pulse takes too long to happen or lasts for
-too long, ``||pins:pulse in||`` will just say the pulse lasted for no time, 0 microseconds. If you don't want to wait for
-2 seconds, you can use a smaller amount of time in **maxDuration**. The amount of time
-is in microseconds (1 second = 1000000 microseconds).
+## ~
+
+### ~ hint
+
+**Simulator**: This function needs real hardware to work with. It's not supported in the simulator.
+
+### ~
 
 ## Parameters
 
-* **value**: a the pulse value to wait for, either `high` or `low`.
-* **maxDuration**: the longest amount of time to wait for the pulse to happen, in microseconds, like: 50000.
+* ``name`` the name of the pin (``P0``, ``P1``, or ``P2``, up through ``P20``).
+* ``value`` the value of the pulse, either ``high`` or ``low``.
+* ``maxDuration``, maximum duration to wait for the pulse in microseconds. If no pulse is received, the duration returned is `0`.
 
 ## Returns
 
-* a [number](/types/number) that is how long the pulse happened. The pulse time is a number of microseconds.
+* a [number](/types/number) that is the pulse duration in microseconds.
 
-## Example #example
+## Example: Measuring distance with a sonar
 
-Check for a `low` pulse on pin `D5` every one-half of a second. Write to the console if there was a pulse.
+Send a pulse on ``P0`` and read a pulse returned by a HC-SR04 sonar ultrasonic sensor. The sensor determines the distance of the object in front of it.
 
 ```blocks
-let pulseTime = 0;
-pins.D5.setPull(PinPullMode.PullUp)
+basic.forever(() => {
+    // send pulse
+    pins.digitalWritePin(DigitalPin.P0, 0)
+    control.waitMicros(2)
+    pins.digitalWritePin(DigitalPin.P0, 1)
+    control.waitMicros(10)
+    pins.digitalWritePin(DigitalPin.P0, 0)
 
-forever(function() {
-    pulseTime = pins.D5.pulseIn(PulseValue.Low)
-    if (pulseTime > 0) {
-        console.logValue("pulse-time", pulseTime)
-    }
-    pause(500)
+    // read pulse
+    led.plotBarGraph(pins.pulseIn(DigitalPin.P1, PulseValue.High) / 58, 0)
+    basic.pause(100)
 })
 ```
 
-## See also #seealso
+## See also
 
-[digital read](/reference/pins/digital-read), [set pull](/reference/pins/set-pull),
-[on pulsed](/reference/pins/on-pulsed)
+[digital write pin](/reference/pins/digital-write-pin)

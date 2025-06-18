@@ -17,7 +17,10 @@ The following built-in types are supported for the @boardname@:
 
 * **[Function](types/function)**: code you can reuse anywhere in a program 
 
-## #custom
+## Buffer #custom
+
+* **[Buffer](types/buffer)**: temporary part of memory used to transfer data between your program and devices
+
 
 ## User data
 

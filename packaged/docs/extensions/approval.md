@@ -18,4 +18,14 @@ Whenever you are submitting an extension for approval, please check that you hav
 
 ### #custom-checklist
 
-## #approval
+##  #approval
+
+## ~ hint
+
+All extensions need approval by the Micro:bit Foundation before being available in the web editor. See:
+
+https://support.microbit.org/solution/articles/19000054952-package-approval
+
+
+## ~
+

@@ -2,7 +2,8 @@
 
 * Try our [Frequently Asked Questions](/faq) page.
 
-## #support
+##  #support
+Use the Microbit Foundation [support web site](https://support.microbit.org)!
 
 ## Developers
 

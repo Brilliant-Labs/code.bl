@@ -58,6 +58,10 @@ control.waitForEvent(myTimer, timerTimeout)
 console.log("Timer timeout")
 ```
 
+**This is an advanced API.**  For more information, see the
+[@boardname@ runtime messageBus documentation](https://lancaster-university.github.io/microbit-docs/ubit/messageBus/).
+
+
 ## See also #seealso
 
 [raise event](/reference/control/raise-event), [on event](/reference/control/on-event)
