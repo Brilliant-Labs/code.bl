@@ -46,6 +46,16 @@ Welcome to CYBERVILLE!! @boardname@.
   "cardType": "side",
   "label": "",
   "labelClass": ""
+},
+{
+  "name": "Activity 11 - Firewalls",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Firewalls/README",
+  "description": "Cyber Break-In at the Bank. Bank Under Cyber Attack!",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/Firewalls/Bank.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Firewalls/Bank.gif",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
 }
 ]
 ```
