@@ -19,12 +19,12 @@
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-full/1_Connectivity/LogoCon.jpg"
     },
     {
-        "name": "CyberSecurity #1",
+        "name": "CyberSecurity Level 1: Introduction",
         "url": "/projects/bboard-cybersec",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/micro.png"
     },
     {
-        "name": "CyberSecurity #2, Cyberville and b.Board 1.4",
+        "name": "CyberSecurity Level 2: Intermediate, Cyberville and b.Board 1.4",
         "url": "/projects/bboard-cyberville-full",
         "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Cyberville-EN.png",
         "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/GifCyberville.gif"
@@ -117,8 +117,8 @@
 [Tutorials](/tutorials),
 [b.Board Tutorial Cards / Cartes de tutoriel b.Board](/projects/bboard-full-cards),
 [Click Boards](/projects/bboard-full),
-[CyberSecurity #1](/projects/bboard-cybersec),
-[CyberSecurity #2, Cyberville and b.Board 1.4](/projects/bboard-cyberville-full),
+[CyberSecurity Level 1: Introduction](/projects/bboard-cybersec),
+[CyberSecurity Level 2: Intermediate, Cyberville and b.Board 1.4](/projects/bboard-cyberville-full),
 [Live Coding](/live-coding),
 [Games](/projects/games),
 [Radio Games](/projects/radio-games),
