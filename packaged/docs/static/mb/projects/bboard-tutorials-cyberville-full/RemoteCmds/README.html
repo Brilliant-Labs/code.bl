@@ -1705,11 +1705,16 @@
 <br /></li>
 </ul>
 <h1 id="-let-s-get-started-">🚀 <strong><em>Let’s get started!</em></strong></h1><h2 id="task-1-confidentiality"><strong><code>Task #1: Confidentiality</code></strong></h2><ul>
-<li><p>1️⃣ Conect you to <strong>Cyberville</strong> wifi network.🧑‍🎓 Students do the steps in <strong>Activity 7 Task Connecting</strong>, but add the <strong>Password</strong> that 🧑‍🏫 teacher should share in a <strong>secure</strong> and <strong>confidential</strong> way. </p>
-</li>
+<li>1️⃣ Connect to the Cyberville Wi-Fi network. 🧑‍🎓 Students, follow the steps in <strong>Activity 7 – Task: Connecting</strong>, but be sure to add the Password, which the 🧑‍🏫 teacher should share in a <strong>secure</strong> and <strong>confidential</strong> way.</li>
+</ul>
+<p><br /></p>
+<ul>
 <li><p>2️⃣ Randomly draw a secret 🎟️ ID ticket from a bag and use their coding skills to find a classmate with the matching identification code and second authentication factor (MFA). Download the tickets for <strong>Confidentiality</strong> activity: <strong>EN</strong>: <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/12b9a48Wd3usLQetgtnWsPsuGEiasOYXX/view?usp=sharing">👉 Click here</a>, <strong>FR</strong>: <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/133DRmbyUF0PooIGfG8PkBfk3jbTgqkA0/view?usp=sharing">👉 Cliquez ici</a>.</p>
 <p>  <img class="ui image" src="https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Tickets.png?raw=true" alt="Tickets" title="Tickets" loading="lazy"></p>
 </li>
+</ul>
+<p><br /></p>
+<ul>
 <li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex">⬇️ Here</a>. 
 Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
 <p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
@@ -1798,21 +1803,24 @@ Cybersec.Rdy2listen()</code></pre>
 </tr>
 </tbody>
 </table>
-<p><br /></p>
 <ul>
 <li>5️⃣ Based on the Cybersecurity skills you’ve developed in class, and the 📘 Guide Document download your customized code onto the b.Board and complete the full activity.
 <br />
 <br /></li>
 </ul>
 <h2 id="task-2-integrity"><strong><code>Task #2: Integrity</code></strong></h2><p>This <strong>Integrity</strong> task is divided into two parts:</p>
-<ol>
-<li>Controlling a parking access barrier 🚥 Locally - For each b.Board team.</li>
-<li>Controlling a parking access barrier 🚥 Remotely - For matched pairs b.Boards.</li>
-</ol>
-<hr>
-<h4 id="part-one-"><strong>Part One:</strong></h4><h5 id="controlling-a-parking-access-barrier-locally-"><strong>Controlling a parking access barrier 🚥 Locally…</strong></h5><p>Each team will program a b.Board to control a servomotor locally to understand how it functions. 🧑‍🎓 Students can use the following code to operate a parking access barrier 🚥 (servomotor) in a 🏢 Government parking area:</p>
-<h3 id="-_-code-example-controling-access-barrier-"><code>|&gt;_|</code> Code Example Controling Access Barrier 🚥:</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Integrity-Local.hex">⬇️ Here</a>. Once downloaded, either drag and drop it into a new project. </p>
-<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
+<ul>
+<li><p>1️⃣ <strong>First part, controlling a parking access barrier 🚥 Locally:</strong>  (No matched pairs b.Boards is needed).</p>
+<p>  Based on the Cybersecurity skills you’ve developed in class, and the 📘 Guide Document download your customized code onto the b.Board and complete the full activity.
+  Program a b.Board to control a servomotor <strong>locally</strong> to understand how it functions.</p>
+<p>  <br />  </p>
+</li>
+<li><p>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Integrity-Local.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     Cybersec.increase()
 })
 input.onButtonPressed(Button.AB, function () {
@@ -1828,35 +1836,22 @@ Cybersec.Localparkbar()
 basic.forever(function () {
     servos.P00.setAngle(Cybersec.getValueDeg())
 })</code></pre>
-<hr>
-<h4 id="part-two-"><strong>Part Two:</strong></h4><p><strong>Controlling a parking access barrier 🚥 Remotely…</strong>
-In this part of the task, 🧑‍🎓 students are encouraged to control the barrier by sending commands remotely from the <em>Control</em> to the <em>Barrier</em>.</p>
-<h4 id="-teachers-"><strong>🧑‍🏫 Teachers:</strong></h4><p>For <strong>Integrity</strong> task in the frame from <strong>Mission Fake Parking ID</strong> please follow the same steps for <strong>Confidential</strong> task, in order to provide the 📳 access point name and password to the 🧑‍🎓 students.</p>
-<hr>
-<h4 id="-students-"><strong>🧑‍🎓 Students:</strong></h4><p><strong>1.</strong> Students should follow the steps in the <strong>Confidential</strong> task to obtain their own 📮 IP address as well as their matched partner’s 📮 IP address.</p>
-<p><strong>2.</strong> Once the matched teams are connected, they are ready to <strong>Send Commands Remotely</strong> and control the parking access barrier 🚥. One team with a b.Board should act as the <em>Control Remotely</em>, while the matched partner should act as the <em>Barrier Remotely</em>.</p>
-<h3 id="-_-code-example-"><code>|&gt;_|</code> Code Example:</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Integrity_Control_Remotely.hex"><strong>⬇️ Here <em>Control</em></strong></a>. Once downloaded, either drag and drop it into a new project. 
-You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.
-Agree with your match partner wich the side your are going to be part, <em>Control B.Board</em> or <em>Device b.Board</em></p>
-<h5 id="-_-control-remotely"><code>|&gt;_|</code> <em>Control Remotely</em></h5><pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
-    Cybersec.increase()
-})
-input.onButtonPressed(Button.AB, function () {
-    Cybersec.closebar()
-})
-input.onButtonPressed(Button.B, function () {
-    Cybersec.decrease()
-})
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    Cybersec.openbar()
-})
-Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
-Cybersec.Rdy2listen()
-Cybersec.Localparkbar()
-basic.forever(function () {
-    servos.P00.setAngle(Cybersec.getValueDeg())
-    Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), &quot;192.168.4.?&quot;)
-})</code></pre>
+<p><br /></p>
+<ul>
+<li><p>3️⃣ <strong>Second part, controlling a parking access barrier 🚥 Remotely</strong> (For matched pairs b.Boards.)</p>
+<p>  Based on the Cybersecurity skills you’ve developed in class, and the 📘 Guide Document download your customized code onto the b.Board and complete the full activity.
+  Control the barrier by sending commands remotely from the b.Board <em>Control</em> to the b.Board <em>Barrier</em>.</p>
+<ul>
+<li><p>Download the <code>Code Example Control Remotely</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Integrity_Control_Remotely.hex">⬇️ Here b.Board <em>Control</em></a>. </p>
+</li>
+<li><p>Download the <code>Code Example Barrier Remotely</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Integrity_Barrier_Remotely.hex">⬇️ Here b.Board <em>Barrier</em></a>.  </p>
+<p>Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><code>|&gt;_| Code Example Control Remotely</code></p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
     Cybersec.increase()
 })
@@ -1876,91 +1871,24 @@ basic.forever(function () {
     servos.P00.setAngle(Cybersec.getValueDeg())
     Cybersec.Num_UDP_Snd(Cybersec.getValueDeg(), &quot;192.168.4.?&quot;)
 })</code></pre>
-<h5 id="-_-barrier-remotely"><code>|&gt;_|</code> <em>Barrier Remotely</em></h5><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Integrity_Barrier_Remotely.hex"><strong>⬇️ Here <em>Barrier</em></strong></a>. Once downloaded, either drag and drop it into a new project.</p>
-<pre><code class="lang-javascript">Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
-Cybersec.Rdy2listen()</code></pre>
+<p><code>|&gt;_| Code Example Barrier Remotely</code></p>
 <pre><code class="lang-blocks">Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
 Cybersec.Rdy2listen()</code></pre>
-<p>
-</p>
-<hr>
-<ul>
-<li><em>Please do not forget to set up the correct name and password for the access point.</em></li>
-<li><em>Mute the PC sound to listen the b.Board sound.</em></li>
-</ul>
-<hr>
-
-    <div class='avatar '>
-        <div class='avatar-image'></div>
-        <div class='ui compact message'>
-            <ul>
-<li>Please do not forget to set up the correct name and password for the access point. </li>
-<li>Mute the PC sound to listen the <strong>b.Board</strong> sound.
-        </div>
-    </div>
-<h3 id="-back-tasks-back-remote-commands-">[<a  rel="nofollow noopener" href="#remote-commands-tasks">🔙 Back Tasks</a>] | [<a  rel="nofollow noopener" href="#remote-commands">⏮️ Back Remote Commands</a>]</h3></li>
-</ul>
-<hr>
-<hr>
-<h2 id="availability">AVAILABILITY</h2><p><img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability-EN.png?raw=true" alt="Availability-EN" title="Availability-EN" loading="lazy"> </p>
-
-    <div class='avatar '>
-        <div class='avatar-image'></div>
-        <div class='ui compact message'>
-            <p><em>Please read the activity carefully and follow the steps provided. In the Code Example section, you will be able to</em> 📝 <strong>Edit</strong> <em>the sample code or</em> ⬇️ <strong>download</strong> <em>it to your <strong>b.Board</strong>.</em></p>
-
-        </div>
-    </div>
 <p><br />
-Imagine you have a favorite online game that you love playing with your friends. One day, you try to log in, but the game won’t load! 😟 That’s because the game’s servers are down, or maybe too many people are trying to play at the same time. This is an example of a problem with Availability 🚧 in cybersecurity.</p>
-<p>What is Availability?
-🚧 Availability means that information and computer systems should always be ready and accessible whenever we need them. Just like a school needs to be open for students to learn, websites, apps, and online services need to be available for people to use.</p>
-<p>Why is Availability Important?
-Without Availability, we wouldn’t be able to:
- ✅ Send messages to friends 📩
- ✅ Watch videos online 🎥
- ✅ Use learning websites for homework 📚
- ✅ Play multiplayer games 🎮</p>
-<p>What Can Go Wrong?
-Sometimes, hackers or technical problems can stop a website or service from working. Here’s how:
-Too much traffic (like when too many people try to buy concert tickets at once, and the website crashes).
-Cyberattacks (like DDoS attacks, where bad people send too much fake traffic to a website, making it stop working).
-Power failures (if a server loses electricity, it can’t keep a website running).</p>
-<p>How Do We Protect Availability?
-To keep websites and services available, cybersecurity experts use:
- 🔹 Backup servers – extra computers that take over if one fails.
- 🔹 Load balancing – spreading out the work so no single computer gets overloaded.
- 🔹 Cyberattack defenses – firewalls and security systems to stop bad traffic.</p>
-<h3 id="task-3-availability">TASK 3: Availability</h3><p>This task is actually a fun game! In cybersecurity, Availability means making sure computers, websites, and data are always working and ready when people need them.</p>
-<p>In the Cyberville Mission: Fake Parking ID environment, Availability is like being able to enter a parking lot. When the barrier is open, you can get in—everything is available. But once the barrier closes, access is no longer available!</p>
-<p>The time the barrier stays open is set by the user. This can be done on the spot (locally) or by using Remote Commands.
-So, start the timer and run as fast as you can before the barrier closes and access is gone. 
-Have fun!</p>
-<p>Let’s get started!
-We’ve made it really easy for you to recreate the awesome environment from Mission Fake Parking ID while learning about cybersecurity. All you have to do is:</p>
-<ol>
-<li>Download <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/1lYtZyyQ5f7qhXzua5LGw7-LFFzpQwcW4/view?usp=sharing"><strong>👉 Here</strong></a> print and cover the b.Board for Mission Fake Parking ID.
-<img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability.png?raw=true" alt="Availability" title="Availability" loading="lazy"></li>
-<li>Connect the servomortor to P0, it will be your barrer control.</li>
-<li>Code or download the game.</li>
-<li>Play Locally or using Remote Commands</li>
-<li>Have Fun!</li>
-</ol>
-<h3 id="playing-locally-"><strong>Playing Locally:</strong></h3><p>To use the 🎮 game of Availiability basically you have to consider 4 things.
-1) Connect the servomotor (barrier control 🚥) in P0. (90º Open - 0º Close)
-2) Set the timer which the barrier control 🚥 will be open.
-3) Set a input block 🧩 to start the 🎮 game. For example on button A pressed
-4) Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed</p>
-<h3 id="-_-code-example-availability-game-locally-"><code>|&gt;_|</code> Code Example Availability Game! (Locally):</h3><p>You can download the .hex file for this task by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Availability_Local.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
-You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
-<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
- Cybersec.StartGame()
-})
-input.onButtonPressed(Button.B, function () {
- Cybersec.RunBC()
-})
-Cybersec.openbar()
-Cybersec.timeclose(1200)</code></pre>
+<br /></p>
+<h2 id="task-3-availability"><strong><code>Task #3: Availability</code></strong></h2><p>This game about <strong>Availability</strong> is divided into two parts: one is local, and the other is remote.</p>
+<ul>
+<li><p>1️⃣ Download the b.Board cover for the <strong>Availability</strong> activity: <strong>EN</strong>: <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/1lYtZyyQ5f7qhXzua5LGw7-LFFzpQwcW4/view?usp=sharing">👉 Click here</a>, <strong>FR</strong>: <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/1_HTOF8bkxYe9E68t4K5V7bJIeHRwRawb/view?usp=sharing">👉 Cliquez ici</a>.  </p>
+<p>  <img class="ui image" src="https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/3_Availability/Availability.png?raw=true" alt="Availability" title="Availability" loading="lazy"></p>
+</li>
+</ul>
+<ul>
+<li><p>2️⃣ <strong>_Playing Locally:</strong>
+  Download the <code>Code Example Playing Locally</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Availability_Local.hex">⬇️ Here</a>. 
+  Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
  Cybersec.StartGame()
 })
@@ -1969,51 +1897,31 @@ input.onButtonPressed(Button.B, function () {
 })
 Cybersec.openbar()
 Cybersec.timeclose(1200)</code></pre>
-<hr>
-<hr>
-<h3 id="_playing-using-remote-commands-"><strong>_Playing using Remote Commands:</strong></h3><p>To use the 🎮 game of Availiability using Remote Commands, basically you have to consider 6 things.
-1) A classmate will set the timer remotly, and you have to run before the 🚥 barrier close. so you need two bBoards.
-2) Both needs to know thier own 📮 IP Address and classmate 📮 IP Address, so you have to be connected to the Access point 📳 M5 module, and be ready to hear any message.
-3) Connect the servomotor (barrier control 🚥) in P0. (90º Open - 0º Close).
-4) For Sending Timer b.Board side 
- Set a input block 🧩 to Send Number: (—) To IP: (—.—.—.—). For example on button A pressed.
-Download the code.</p>
-<p>When your classamate is ready, send the timer number, remember it is in miliseconds. This start the timer before the barrier will close on the receiving b.Board side.
-5) For Receiving Runner b.Board side
-Set a input block 🧩 to receive the timer value (data) from your classmate, use the 🧩Block Number received from IP: (—.—.—.—).
-Set a input block 🧩 to start the 🎮 game Star Closing. For example on button A pressed
-Set a input block 🧩 to start to move the 🚗💨 car into the micro:bit screen. For example on button B pressed</p>
-<h3 id="-_-code-example-availability-game-sending-timer-remotely-"><code>|&gt;_|</code> Code Example Availability Game! (Sending Timer Remotely):</h3><p>You can download the .hex file by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability_Timer_Remotely.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
-You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
-<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
- Cybersec.Num_UDP_Snd(1200, &quot;192.168.4.?&quot;)
-})
-Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)</code></pre>
+<p><br /></p>
+<ul>
+<li>3️⃣ Based on the Cybersecurity skills you’ve developed in class, and the 📘 Guide Document download your customized code onto the b.Board and complete the full activity.
+  Program a b.Board to control a servomotor <strong>locally</strong> to understand how it functions.</li>
+</ul>
+<p><br /></p>
+<ul>
+<li><p>4️⃣ <strong>Playing using Remote Commands:</strong>
+  Play the game with a b.Board partner, one team should be the Timer and the other the Runner.</p>
+<ul>
+<li><p>Download the <code>Code Example Sending Timer Remotely</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability_Timer_Remotely.hex">⬇️ Here</a>. </p>
+</li>
+<li><p>Download the <code>Code Example Receiving Runner Remotely</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability_Runner_Remotely.hex">⬇️ Here</a>. </p>
+<p>Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><code>|&gt;_| Code Example Sending Timer Remotely</code></p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
  Cybersec.Num_UDP_Snd(1200, &quot;192.168.4.?&quot;)
 })
 Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)</code></pre>
-<h3 id="-_-code-example-availability-game-receiving-runner-remotely-"><code>|&gt;_|</code> Code Example Availability Game! (Receiving Runner Remotely):</h3><p>You can download the .hex file by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Availability_Runner_Remotely.hex"><strong>⬇️ Here</strong></a>, once downloaded, either drag and drop it into a new project. 
-You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so.</p>
-<pre><code class="lang-javascript">input.onButtonPressed(Button.A, function () {
- Cybersec.StartGame()
-})
-input.onButtonPressed(Button.B, function () {
- Cybersec.RunBC()
-})
-let Timer = 0
-let Temp = 0
-Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
-Cybersec.Rdy2listen()
-Cybersec.openbar()
-basic.forever(function () {
- Temp = Cybersec.ReceiveNumber(&quot;192.168.4.?&quot;)
- if (Temp &gt; 0) {
- Timer = Temp
- basic.showNumber(Timer)
- Cybersec.timeclose(Timer)
- }
-})</code></pre>
+<p><code>|&gt;_| Code Example Receiving Runner Remotely</code></p>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
  Cybersec.StartGame()
 })
@@ -2033,7 +1941,20 @@ basic.forever(function () {
  Cybersec.timeclose(Timer)
  }
 })</code></pre>
-<h3 id="-back-tasks-back-remote-commands-">[<a  rel="nofollow noopener" href="#remote-commands-tasks">🔙 Back Tasks</a>] | [<a  rel="nofollow noopener" href="#remote-commands">⏮️ Back Remote Commands</a>]</h3><hr>
+<ul>
+<li>4️⃣ Based on the Cybersecurity skills you’ve developed in class, and the 📘 Guide Document download your customized code onto the b.Board and enjoy the game.
+<br />
+<br />
+<br /></li>
+</ul>
+<hr>
+<h1 id="-notes-">📌 <strong><em>Notes:</em></strong></h1><p>☑️ Please do not forget to set up the correct name and password for the access point.<br>☑️ Mute the PC sound to listen the <strong>b.Board</strong> sound.<br>☑️ If you’d like, you can also view the data going in and out of the b.Board using the <strong><em>Show Console Device</em></strong> option.    </p>
+<pre><code>    Once you download your code...</code></pre><ul>
+<li>Click on the refresh button 🔄 (circular arrow icon) in the simulator window.</li>
+<li><strong>Wait</strong> until <em>Show console Device</em> button apears on console output window.</li>
+<li>Click on it.</li>
+</ul>
+<p><img class="ui image" src="https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Remote.png?raw=true" alt="Remote" title="Remote" loading="lazy"></p>
 
     </div>
 

@@ -29,11 +29,11 @@ Welcome to CYBERVILLE!! @boardname@.
 },
 {
   "name": "Activity 9 - Remote Commands",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README",
   "description": "Fake Parking Passes. Government Parking Lot Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Gov-EN.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/Government.gif",
-  "cardType": "large",
+  "cardType": "side",
   "label": "",
   "labelClass": ""
 },
