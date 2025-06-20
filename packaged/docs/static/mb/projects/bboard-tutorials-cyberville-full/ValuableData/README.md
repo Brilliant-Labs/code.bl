@@ -274,4 +274,4 @@ Cybersec.WifiConnect("Cyberville #?", "")
 - __Wait__ until *Show console Device* button apears on console output window.
 - Click on it.
 
-![Console](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Firewalls/Console.png?raw=true "Console")
+![Value](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Value.png?raw=true "Value")
