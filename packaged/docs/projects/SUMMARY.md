@@ -31,7 +31,7 @@
   * [Activity 6](/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_6/README.html)
 * [CyberSecurity Level 2: Intermediate, Cyberville and b.Board 1.4](/projects/bboard-cyberville-full)
   * [Activity 7 - Networking](/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/README)
-  * [Activity 8 - Valuable Data](/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README.html)
+  * [Activity 8 - Valuable Data](/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README)
   * [Activity 9 - Remote Commands](/docs/static/mb/projects/bboard-tutorials-cyberville-full/RemoteCmds/README)
   * [Activity 10 - Passwords](/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/README)
   * [Activity 11 - Firewalls](/docs/static/mb/projects/bboard-tutorials-cyberville-full/Firewalls/README)

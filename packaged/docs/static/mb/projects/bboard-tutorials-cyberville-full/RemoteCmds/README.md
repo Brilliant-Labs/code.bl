@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 # 🚀 __*Let's get started!*__
 ## __``Task #1: Confidentiality``__
 
-- 1️⃣ Connect to the Cyberville Wi-Fi network. 🧑‍🎓 Students, follow the steps in __Activity 7 – Task: Connecting__, but be sure to add the Password, which the 🧑‍🏫 teacher should share in a __secure__ and __confidential__ way.
+- 1️⃣ Connect to the Cyberville Wi-Fi network. follow the steps in __Activity 7 – Task: Connecting__, but be sure to add the Password, which the 🧑‍🏫 teacher should share in a __secure__ and __confidential__ way.
 
 </br>
 

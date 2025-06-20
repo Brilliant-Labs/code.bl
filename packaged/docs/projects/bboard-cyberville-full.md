@@ -19,11 +19,11 @@ Welcome to CYBERVILLE!! @boardname@.
 },
 {
   "name": "Activity 8 - Valuable Data",
-  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README.html",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/README",
   "description": "Polluted Water. Water Treatment Plant Under Cyber Attack!",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Water.png",
   "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/ValuableData/Water.gif",
-  "cardType": "large",
+  "cardType": "side",
   "label": "",
   "labelClass": ""
 },
