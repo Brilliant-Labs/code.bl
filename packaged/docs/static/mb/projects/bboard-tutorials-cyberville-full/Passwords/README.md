@@ -111,7 +111,7 @@ input.onButtonPressed(Button.A, function () {
 
 - 1️⃣ Download and fill the Penetration Test (intrusion test or ethical hacking), **EN**: [👉 Click here](https://drive.google.com/file/d/1UTy7VoSixF1OrZqtdcjwcC58aCJ1zYN0/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/1xxLFCxjS5lHUF7X4pSzwXIdLMn6rbxn-/view?usp=sharing).  
   
-    ![PenTest](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration.png?raw=true "PenTest")
+    ![Penetration](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration.png?raw=true "Penetration")
 </br>
 </br>
 ---
