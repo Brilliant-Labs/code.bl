@@ -240,8 +240,11 @@ FL_Strip = Full_Strip.range(0, 10)
 </br>
 
 ## __``Task #6: Signal Strength``__
-- 1️⃣ The __🧑‍🏫 Teacher__ shares information regarding __RSSI__ and signal strength. ![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true "RSSI")  
-To determine the strength of the signal in __Cyberville__, and olso walk out of the classroom or away from the __b.boards__ carring the M5 Module. Students 🧑‍🎓 will read the signal strength based on their code, and Teacher's location with the 📳 M5 module.
+- 1️⃣ The __🧑‍🏫 Teacher__ shares information regarding __RSSI__ and signal strength. 
+
+    ![RSSI](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/6_Signal_Strength/RSSI.png?raw=true "RSSI")  
+
+    To determine the strength of the signal in __Cyberville__, and olso walk out of the classroom or away from the __b.boards__ carring the M5 Module. Students 🧑‍🎓 will read the signal strength based on their code, and Teacher's location with the 📳 M5 module.
 </br>
 
 - 2️⃣ Connect your b.Board to the Cyberville Wi-Fi network. The 🧑‍🏫 teacher will provide the network name and password.
@@ -257,13 +260,13 @@ input.onButtonPressed(Button.A, function () {
 })
 Cybersec.WifiConnect("Cyberville #?", "")
 ```
-```
 
 - 4️⃣ Based on the Cybersecurity skills you’ve developed in class, and the 📘 Guide Document download your customized code onto the b.Board and complete the full activity.
+</br>
+</br>
 
-</br>
-</br>
 ---
+
 # 📌 __*Notes:*__
 ☑️ Please do not forget to set up the correct name and password for the access point.     
 ☑️ Mute the PC sound to listen the __b.Board__ sound.    
