@@ -27,15 +27,17 @@ Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGF
 ##### ~avatar
 Options to setup __Passwords__:
 
-🔹__No Password:__ Don't press any buttons on the initializing screen. [🎬 __*Video*__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+🔹__No Password:__ Don't press any buttons on the initializing screen. **EN** [🎬 __*Video*__](https://www.canva.com/design/DAGJhwOPNfA/C7i4j-8NuAyaVB4WW4ZQLg/watch?utm_content=DAGJhwOPNfA&utm_campaign=designshare&utm_medium=link&utm_source=editor), or **FR** [🎬 __*Vidéo*__](https://drive.google.com/file/d/1dzY-1W8rZzpLW2vLTb-iS_QnKro1_hiX/view). 
 
-🔹__Default Password:__ In this case the Default Password is __BL_Cybr1__. You must press the first button on the initializing screen to set the default password. [🎬 __*Video*__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+🔹__Default Password:__ In this case the Default Password is __BL_Cybr1__. You must press the first button on the initializing screen to set the default password. [🎬 __*Video*__](https://www.canva.com/design/DAGJh3x2cWc/WLy_dI8ckApegcX8nVluYw/watch?utm_content=DAGJh3x2cWc&utm_campaign=designshare&utm_medium=link&utm_source=editor), or **FR** [🎬 __*Vidéo*__](https://drive.google.com/file/d/124-78DBExp6-Ll4ctNL-rG3RhRmg8ELZ/view?pli=1).
 
-🔹__Custom Password:__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, enter the 8 character password agreed between the students and the teacher. For example: __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [🎬 __*Video*__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor). 
+🔹__Custom Password:__ We highly recommend this option to involve the students, just press middle button on M5Core2 on the initializing screen, enter the 8 character password agreed between the students and the teacher. For example: __BL_cyb24__, at the end please press the middle button again for three seconds to set it. [🎬 __*Video*__](https://www.canva.com/design/DAGJhzixXtc/zuFnnSe0t3ZZR298o1uEjg/watch?utm_content=DAGJhzixXtc&utm_campaign=designshare&utm_medium=link&utm_source=editor), or **FR** [🎬 __*Vidéo*__](https://drive.google.com/file/d/1KvEbYBf3fHZ4rfrL2FNW5u1tMCx3lggL/view). 
+
 ##### ~
 
 - 3️⃣ 🧑‍🎓 Students, connect to the Cyberville Wi-Fi network. follow the steps in __Activity 7 – Task: Connecting__ using the __password__ defined in class.
 
+    ![Conected](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/1_Connecting/Connected_gif.gif?raw=true "Conected.")
     🧠 Remember:</br>
     - If you get a ✅, you are connected to Access Point. </br>
     - If you got a small __x__ (❎ on screen __b.Board__), you are __*NOT*__ connected.   
@@ -111,7 +113,7 @@ input.onButtonPressed(Button.A, function () {
 
 - 1️⃣ Download and fill the Penetration Test (intrusion test or ethical hacking), **EN**: [👉 Click here](https://drive.google.com/file/d/1UTy7VoSixF1OrZqtdcjwcC58aCJ1zYN0/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/1xxLFCxjS5lHUF7X4pSzwXIdLMn6rbxn-/view?usp=sharing).  
   
-    ![Penetration](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration.png?raw=true "Penetration")
+    ![Penetration](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/3_Pen_Test/Penetration.png?raw=true "Penetration")
 </br>
 </br>
 ---
