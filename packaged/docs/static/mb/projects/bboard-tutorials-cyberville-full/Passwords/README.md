@@ -36,7 +36,6 @@ Options to setup __Passwords__:
 
 - 3️⃣ 🧑‍🎓 Students, connect to the Cyberville Wi-Fi network. follow the steps in __Activity 7 – Task: Connecting__ using the __password__ defined in class.
 
-</br>
     🧠 Remember:</br>
     - If you get a ✅, you are connected to Access Point. </br>
     - If you got a small __x__ (❎ on screen __b.Board__), you are __*NOT*__ connected.   
@@ -112,7 +111,7 @@ input.onButtonPressed(Button.A, function () {
 
 - 1️⃣ Download and fill the Penetration Test (intrusion test or ethical hacking), **EN**: [👉 Click here](https://drive.google.com/file/d/1UTy7VoSixF1OrZqtdcjwcC58aCJ1zYN0/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/1xxLFCxjS5lHUF7X4pSzwXIdLMn6rbxn-/view?usp=sharing).  
   
-    ![PenTest](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration_T.png?raw=true "PenTest")
+    ![PenTest](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Passwords/3_Pen_Test/Penetration.png?raw=true "PenTest")
 </br>
 </br>
 ---
