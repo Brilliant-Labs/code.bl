@@ -16,7 +16,19 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 </br>
 
 # 🚀 __*Let's get started!*__
+## ⬇️ Download Codes </br>
+- It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
+
+    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    + __``Task #1: Calibration``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/ValuableData-Calibration-Task-1.hex).</br>
+    + __``Task #2: 🔴🎩 Red Hat``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Red-Hat-Task-2.hex).</br>
+    + __``Task #3: ⚫🎩 Black Hat``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Black-Hat-Task-3.hex).</br>
+    + __``Task #4: ⚪🎩 White Hat``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/ValuableData-White-Hat-Task-4.hex).</br>
+    + __``Task #5: 🟣🎩 Blue Hat``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Blue-Hat-Task-5.hex).</br>
+    + __``Task #6: Signal Strength``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/ValuableData-RSSI-Task-6.hex).</br>
+
 ## __``Task #1: Water Plant Calibration``__
+
 - 1️⃣ Download the b.Board cover for the __Valuable Data__ activity: **EN**: [👉 Click here](https://drive.google.com/file/d/1CIb0Py6PW8po8vg_LG9Bqw2y229TC2ut/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/17spLZf_iIgcOw3t3dSWAFbFN8hODKeYu/view?usp=sharing).  
 
     ![Cover](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true "Cover")
@@ -58,10 +70,7 @@ __⚠️ Important: WiFi Connection Setup__
 ## ~
 
 - 2️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
-
+Once downloaded, you can either drag and drop it into a new project.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     for (let Count = 0; Count <= 9; Count++) {
@@ -95,9 +104,7 @@ __It's really important to understand the challenges related to the use of block
 </br>
 
 - 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -129,9 +136,7 @@ FL_Strip = Full_Strip.range(0, 10)
 </br>
 
 - 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Black-Hat.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -172,9 +177,7 @@ Once you have it, you can use the terminal **EN** at https://cyberville.brillian
 </br>
 
 - 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-White-Hat.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -205,10 +208,8 @@ FL_Strip = Full_Strip.range(0, 10)
 - 2️⃣ Get the clues to solve the __Encription 🗝️__ challenge related to 🟣 🎩 Blue Hat.
 </br>
 
-- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](hhttps://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex). 
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -249,7 +250,7 @@ FL_Strip = Full_Strip.range(0, 10)
 
 - 2️⃣ Connect your b.Board to the Cyberville Wi-Fi network. The 🧑‍🏫 teacher will provide the network name and password.
 
-- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](ttps://brilliantlabs.ca/documents/cybersec/RSSI.hex). 
+- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/RSSI.hex). 
 Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
 
     You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:

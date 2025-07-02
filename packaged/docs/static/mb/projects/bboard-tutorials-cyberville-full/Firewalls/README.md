@@ -15,6 +15,14 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 </br>
 
 # 🚀 __*Let's get started!*__
+
+## ⬇️ Download Codes </br>
+- It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
+
+    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    + __``Task #1: Build a Firewall``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-11.hex).</br>
+
+
 ## __``Task #1: Build a Firewall``__
 - 1️⃣ Download the b.Board cover for the __Firewalls__ activity: **EN**: [👉 Click here](https://drive.google.com/file/d/1iqAhenUqRMt-lD1YFZ4KcsKP85RTlDrv/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/1_pSc9wKexFAGv_ucgy_RlgKcaYAghxD7/view?usp=sharing).  
 

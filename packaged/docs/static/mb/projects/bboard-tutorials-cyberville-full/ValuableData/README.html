@@ -1705,7 +1705,20 @@
 <br />
 <br /></li>
 </ul>
-<h1 id="-let-s-get-started-">🚀 <strong><em>Let’s get started!</em></strong></h1><h2 id="task-1-water-plant-calibration"><strong><code>Task #1: Water Plant Calibration</code></strong></h2><ul>
+<h1 id="-let-s-get-started-">🚀 <strong><em>Let’s get started!</em></strong></h1><h2 id="-download-codes-br-">⬇️ Download Codes <br /></h2><ul>
+<li><p>It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.</p>
+<p>  👉 Download the next four .hex files, then for each file, create a <code>➕ New Project</code> and drag and drop the file for each task <br /></p>
+<ul>
+<li><strong><code>Task #1: Calibration</code></strong> <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/ValuableData-Calibration-Task-1.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #2: 🔴🎩 Red Hat</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Red-Hat-Task-2.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #3: ⚫🎩 Black Hat</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Black-Hat-Task-3.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #4: ⚪🎩 White Hat</code></strong> <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/ValuableData-White-Hat-Task-4.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #5: 🟣🎩 Blue Hat</code></strong> <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Blue-Hat-Task-5.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #6: Signal Strength</code></strong> <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/ValuableData-RSSI-Task-6.hex">⬇️ Here</a>.<br /></li>
+</ul>
+</li>
+</ul>
+<h2 id="task-1-water-plant-calibration"><strong><code>Task #1: Water Plant Calibration</code></strong></h2><ul>
 <li><p>1️⃣ Download the b.Board cover for the <strong>Valuable Data</strong> activity: <strong>EN</strong>: <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/1CIb0Py6PW8po8vg_LG9Bqw2y229TC2ut/view?usp=sharing">👉 Click here</a>, <strong>FR</strong>: <a target="_blank" rel="nofollow noopener" href="https://drive.google.com/file/d/17spLZf_iIgcOw3t3dSWAFbFN8hODKeYu/view?usp=sharing">👉 Cliquez ici</a>.  </p>
 <p>  <img class="ui image" src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/ValuableData/1_Water_Plant_Calibration/M2_Cover.png?raw=true" alt="Cover" title="Cover" loading="lazy"></p>
 </li>
@@ -1766,17 +1779,13 @@ This site is hosted on the 📳 M5 Module through the Cyberville Wi-Fi network.<
         </div>
     </div>
 <ul>
-<li><p>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex">⬇️ Here</a>. 
-Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
-<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
-</li>
-</ul>
-<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
-    for (let Count = 0; Count &lt;= 9; Count++) {
-        CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.five)), neopixel.colors(NeoPixelColors.Blue))
-        FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.five)), neopixel.colors(NeoPixelColors.Green))
-    }
-    Full_Strip.show()
+<li>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Calibration.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project.<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+  for (let Count = 0; Count &lt;= 9; Count++) {
+      CL_Strip.setPixelColor(Count + (10 - Cybersec.indexcl(Index_CL.five)), neopixel.colors(NeoPixelColors.Blue))
+      FL_Strip.setPixelColor(Count + (-10 + Cybersec.indexfl(Index_FL.five)), neopixel.colors(NeoPixelColors.Green))
+  }
+  Full_Strip.show()
 })
 let FL_Strip: neopixel.Strip = null
 let CL_Strip: neopixel.Strip = null
@@ -1784,6 +1793,8 @@ let Full_Strip: neopixel.Strip = null
 Full_Strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 CL_Strip = Full_Strip.range(20, 10)
 FL_Strip = Full_Strip.range(0, 10)</code></pre>
+</li>
+</ul>
 <p>Please pay attention that strip is connected to <strong>P2</strong>, and the levels are <strong>5 for 🧪Chlorine</strong> and <strong>5 for 🧪 Fluoride</strong>, also notice that we are using the 🧩 <code>||Level of Chlorine (#)||</code> block, and the 🧩 <code>||Level of Fluoride (#)||</code> block to set the levels of <code>Chorine</code> and <code>Fluoride</code>.
 You should change the values for <strong>🧪Chloride</strong> and <strong>🧪Flouride</strong> according to each activity, that means you need to modify this code using the <strong>Level of Choride</strong> and <strong>Level of Flouride</strong> Blocks in to section <code>... more</code> under CyberSecurity button from <strong>b.Board</strong>.</p>
 
@@ -1803,8 +1814,7 @@ You should change the values for <strong>🧪Chloride</strong> and <strong>🧪F
 <br /></p>
 </li>
 <li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Red-Hat.hex">⬇️ Here</a>. 
-Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
-<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+Once downloaded, you can either drag and drop it into a new project.</p>
 </li>
 </ul>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
@@ -1833,8 +1843,7 @@ FL_Strip = Full_Strip.range(0, 10)</code></pre>
 <br /></p>
 </li>
 <li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Black-Hat.hex">⬇️ Here</a>. 
-Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
-<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+Once downloaded, you can either drag and drop it into a new project.</p>
 </li>
 </ul>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
@@ -1875,8 +1884,7 @@ Once you have it, you can use the terminal <strong>EN</strong> at <a target="_bl
 <br /></p>
 </li>
 <li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-White-Hat.hex">⬇️ Here</a>. 
-Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
-<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+Once downloaded, you can either drag and drop it into a new project.</p>
 </li>
 </ul>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
@@ -1904,9 +1912,8 @@ FL_Strip = Full_Strip.range(0, 10)</code></pre>
 <li><p>2️⃣ Get the clues to solve the <strong>Encription 🗝️</strong> challenge related to 🟣 🎩 Blue Hat.
 <br /></p>
 </li>
-<li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="hhttps://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex">⬇️ Here</a>. 
-Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
-<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+<li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/M2-Water-Plant-Blue-Hat.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project.</p>
 </li>
 </ul>
 <pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
@@ -1941,7 +1948,7 @@ FL_Strip = Full_Strip.range(0, 10)
 </li>
 <li><p>2️⃣ Connect your b.Board to the Cyberville Wi-Fi network. The 🧑‍🏫 teacher will provide the network name and password.</p>
 </li>
-<li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="ttps://brilliantlabs.ca/documents/cybersec/RSSI.hex">⬇️ Here</a>. 
+<li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/RSSI.hex">⬇️ Here</a>. 
 Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
 <p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
 </li>

@@ -15,6 +15,19 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 </br>
 
 # 🚀 __*Let's get started!*__
+
+## ⬇️ Download Codes </br>
+- It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
+
+    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    + __``Task #1: Confidentiality``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex).</br>
+    + __``Task #2: Integrity``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity-Local.hex).</br>
+    + __``Task #2: Integrity - Control Remotely``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity_Control_Remotely.hex).</br>
+    + __``Task #2: Integrity - Barrier Remotely``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity_Barrier_Remotely.hex).</br>
+    + __``Task #3: Availability``__  [⬇️ Here](https://drive.google.com/file/d/1lYtZyyQ5f7qhXzua5LGw7-LFFzpQwcW4/view?usp=sharing).</br>
+    + __``Task #3: Availability - Sending Timer Remotely``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Availability_Timer_Remotely.hex).</br>
+    + __``Task #3: Availability - Receiving Runner Remotely``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Availability_Runner_Remotely.hex).</br>
+
 ## __``Task #1: Confidentiality``__
 
 - 1️⃣ Connect to the Cyberville Wi-Fi network. follow the steps in __Activity 7 – Task: Connecting__, but be sure to add the Password, which the 🧑‍🏫 teacher should share in a __secure__ and __confidential__ way.

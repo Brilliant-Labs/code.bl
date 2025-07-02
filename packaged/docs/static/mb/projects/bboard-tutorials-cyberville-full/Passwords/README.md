@@ -15,6 +15,13 @@ Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGF
 </br>
 
 # 🚀 __*Let's get started!*__
+
+## ⬇️ Download Codes </br>
+- It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
+
+    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    + __``Task #2: Sequence to access``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex).</br>
+    
 ## __``Task #1: Setting Passwords``__
 
 - 1️⃣ Download the b.Board cover for the __Passwords__ activity: **EN**: [👉 Click here](https://drive.google.com/file/d/1ZSzu_0UeyHQE4gBJYJ9oBOPWgcrouhkD/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/19tLlrZ9kiZ3XYtFyz_ftsjt05cG9qwLr/view?usp=sharing).  

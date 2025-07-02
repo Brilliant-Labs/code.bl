@@ -26,6 +26,17 @@ In the upcoming activities, you’ll become part of this digital community. Help
 </br>
 
 # 🚀 __*Let's get started!*__
+
+## ⬇️ Download Codes </br>
+- It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
+
+    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    + __``Task #1: Connecting``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-1.hex).</br>
+    + __``Task #2: MAC and IP address``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-2.hex).</br>
+    + __``Task #3: Roles``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-3.hex).</br>
+    + __``Task #4: Pinging``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-4.hex).</br>
+
+
 ## __``Task #1: Connecting``__
 
 - 1️⃣ 🧑‍🏫  __Teachers__    
@@ -53,10 +64,8 @@ You have received, for activities 7 to 12, an ESP32 touchscreen 📳 M5Stack Cor
 
 </br>
 
-- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+- 3️⃣ Download the ``Code Example`` .hex file (if you haven't already) for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_A.hex). 
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
@@ -75,10 +84,8 @@ if (Cybersec.WiFi_Connected()) {
 
 ## __``Task #2: MAC and IP address``__  
 
-- 1️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+- 1️⃣ Download the ``Code Example`` .hex file (if you haven't already)  for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_B.hex). 
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -113,9 +120,7 @@ basic.forever(function () {
 </br>
 
 - 2️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_C.hex). 
-Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -141,10 +146,8 @@ basic.forever(function () {
 
 ## __``Task #4: Pinging``__  
 
-- 1️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_D.hex). 
-    Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
-
-    You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
+- 1️⃣ Download the ``Code Example`` .hex file (if you haven't already) for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking_D.hex). 
+    Once downloaded, you can either drag and drop it into a new project.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -168,3 +171,85 @@ Cybersec.WifiConnect("Cyberville #?", "")
 - Click on it.
 
 ![Console](https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/2_MAC_IP/Console.png?raw=true "Console Device")
+
+
+
+
+</br>
+</br>
+
+---
+#  ⬇️ 📜 *Download JavaScript* </br>
+Want to keep this tutorial open while exploring the example code in parallel?
+Follow the steps!
+
+__``Task #1: Connecting. ``__</br>
+- Click __JavaScript__ in the top menu</br>
+- Delete any existing code.</br>
+- Paste this code:
+
+        input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+            bBoard_WiFi.Disconnect()
+            basic.showIcon(IconNames.Sad)
+        })
+        Cybersec.WifiConnect("Cyberville #?", "")
+        if (Cybersec.WiFi_Connected()) {
+            basic.showIcon(IconNames.Happy)
+        }
+ 
+- Switch back to __Blocks__ view if you prefer.
+
+__``Task #2: MAC and IP address. ``__</br>
+- Click __JavaScript__ in the top menu</br>
+- Delete any existing code.</br>
+- Paste this code:
+
+        input.onButtonPressed(Button.A, function () {
+            basic.showString(Cybersec.getMACaddressbBoard())
+        })
+        input.onButtonPressed(Button.B, function () {
+            basic.showString(Cybersec.getIPaddressbBoard())
+        })
+        Cybersec.WifiConnect("Cyberville #?", "")
+        basic.forever(function () {
+	
+        })
+- Switch back to __Blocks__ view if you prefer.
+
+- __``Task #3: Roles. ``__</br>
+- Click __JavaScript__ in the top menu</br>
+- Delete any existing code.</br>
+- Paste this code:
+
+        input.onButtonPressed(Button.A, function () {
+            basic.showString(Cybersec.getMACaddressbBoard())
+        })
+        input.onButtonPressed(Button.B, function () {
+            basic.showString(Cybersec.getIPaddressbBoard())
+        })
+        Cybersec.WifiConnect("Cyberville #?", "")
+        basic.forever(function () {
+            if (Cybersec.WiFi_Connected()) {
+                basic.showIcon(IconNames.Umbrella)
+            } else {
+                soundExpression.sad.play()
+                basic.showIcon(IconNames.Sad)
+            }
+        })
+- Switch back to __Blocks__ view if you prefer.
+
+
+- __``Task #4: Pinging. ``__</br>
+- Click __JavaScript__ in the top menu</br>
+- Delete any existing code.</br>
+- Paste this code:
+
+        input.onButtonPressed(Button.A, function () {
+            Cybersec.PingbBfrend("192.168.4.1")
+        })
+        Cybersec.WifiConnect("Cyberville #?", "")
+- Switch back to __Blocks__ view if you prefer.
+
+
+</br>   
+</br>
