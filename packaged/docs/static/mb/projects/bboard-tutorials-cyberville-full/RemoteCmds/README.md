@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 ## ⬇️ Download Codes </br>
 - It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
 
-    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    👉 Download the next seven .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
     + __``Task #1: Confidentiality``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex).</br>
     + __``Task #2: Integrity``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity-Local.hex).</br>
     + __``Task #2: Integrity - Control Remotely``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity_Control_Remotely.hex).</br>

@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 ## ⬇️ Download Codes </br>
 - It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
 
-    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    👉 Download the next six .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
     + __``Task #1: Calibration``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/ValuableData-Calibration-Task-1.hex).</br>
     + __``Task #2: 🔴🎩 Red Hat``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Red-Hat-Task-2.hex).</br>
     + __``Task #3: ⚫🎩 Black Hat``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/ValuableData-Black-Hat-Task-3.hex).</br>

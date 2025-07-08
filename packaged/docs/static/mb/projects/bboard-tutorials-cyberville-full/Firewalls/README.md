@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 ## ⬇️ Download Codes </br>
 - It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
 
-    👉 Download the next four .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
+    👉 Download the next .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
     + __``Task #1: Build a Firewall``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-11.hex).</br>
 
 
