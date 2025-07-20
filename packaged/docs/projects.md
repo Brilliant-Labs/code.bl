@@ -30,6 +30,11 @@
         "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/GifCyberville.gif"
     },
     {
+        "name": "CyberSecurity Level 3: Advanced, Cyberville and b.Board 1.4",
+        "url": "/projects/bboard-cyberville-advanced-full",
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-advanced-full/Cryptography/Cryptography_EN.png"
+    },
+    {
         "name": "Live Coding",
         "url": "/live-coding",
         "imageUrl": "/docs/static/live-coding/NvEOKZ8wh9s.jpg"
@@ -119,6 +124,7 @@
 [Click Boards](/projects/bboard-full),
 [CyberSecurity Level 1: Introduction](/projects/bboard-cybersec),
 [CyberSecurity Level 2: Intermediate, Cyberville and b.Board 1.4](/projects/bboard-cyberville-full),
+[CyberSecurity Level 3: Advanced, Cyberville and b.Board 1.4](/projects/bboard-cyberville-advanced-full),
 [Live Coding](/live-coding),
 [Games](/projects/games),
 [Radio Games](/projects/radio-games),

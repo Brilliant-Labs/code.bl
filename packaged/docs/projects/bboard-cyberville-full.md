@@ -56,6 +56,15 @@ Welcome to CYBERVILLE!! @boardname@.
   "cardType": "side",
   "label": "",
   "labelClass": ""
+},
+{
+  "name": "Activity 12 - An Intelligent Community",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/AnIntelligentCommunity/README",
+  "description": "An Intelligent Community 2.0",
+  "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/AnIntelligentCommunity/AnIntelligent_EN.png",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
 }
 ]
 ```

@@ -13,7 +13,7 @@ Learn to use Clickboards with your @boardname@.
   "description": "Activity 1",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cybersecurity/Activity_1/micro.png",
   "cardType": "large",
-  "label": "CyberSecurity",
+  "label": "CyberSecurity 1",
   "labelClass": "red ribbon med"
 },
 {
