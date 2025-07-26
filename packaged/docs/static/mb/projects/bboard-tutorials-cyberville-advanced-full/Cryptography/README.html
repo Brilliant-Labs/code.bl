@@ -1706,16 +1706,62 @@
 </ul>
 <h1 id="-let-s-get-started-">🚀 <strong><em>Let’s get started!</em></strong></h1><h2 id="-download-codes-br-">⬇️ Download Codes <br /></h2><ul>
 <li><p>It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.</p>
-<p>  👉 Download the next four .hex files, then for each file, create a <code>➕ New Project</code> and drag and drop the file for each task <br /></p>
+<p>  👉 Download the next two .hex files, then for each file, create a <code>➕ New Project</code> and drag and drop the file for each task <br /></p>
 <ul>
-<li><strong><code>Task #1: Connecting</code></strong> <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-1.hex">⬇️ Here</a>.<br /></li>
-<li><strong><code>Task #2: MAC and IP address</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-2.hex">⬇️ Here</a>.<br /></li>
-<li><strong><code>Task #3: Roles</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-3.hex">⬇️ Here</a>.<br /></li>
-<li><strong><code>Task #4: Pinging</code></strong> <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-4.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #1: QR hash</code></strong> <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-1.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #2: Hash Function</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-2.hex">⬇️ Here</a>.<br /></li>
 </ul>
 </li>
 </ul>
-<h2 id="task-1-connecting"><strong><code>Task #1: Connecting</code></strong></h2>
+<h2 id="task-1-qr-hash"><strong><code>Task #1: QR hash</code></strong></h2><ul>
+<li><p>1️⃣ Use the micro:bit’s LED display to represent a QR code. Personalize your code by selecting multiple LEDs on the screen to create a unique pattern. Then, convert this pattern into a numeric string (letters) to obtain your digital signature. The more LEDs you select, the longer the resulting code will be, you have to select at least 6 LEDs.</p>
+</li>
+<li><p>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+    CybersecAdvanced.Scan()
+})
+basic.showLeds(`
+    # . . . #
+    . . . # .
+    . # . . .
+    . . # . #
+    # . . . .
+    `)</code></pre>
+<h2 id="task-2-hash-function"><strong><code>Task #2: Hash Function</code></strong></h2><ul>
+<li>1️⃣ Create a hash funcion to obtein the DJ-B2 Hash from your code signature letters, use it as name to be hasehed. You can downlod the .hex file example from here.</li>
+<li><p>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">// Example usage
+input.onButtonPressed(Button.A, function () {
+    name = &quot;Cyberville123&quot;
+    hash2 = djb2Hash(name)
+    console.log(hash2)
+basic.showString(&quot;&quot; + (hash2.toString()))
+})
+// Calculation Hash
+function djb2Hash (input2: string) {
+    hash = 5381
+    for (let i = 0; i &lt;= input2.length - 1; i++) {
+        // Get the character at index i
+        char = input2.charAt(i)
+        let charCode = char.charCodeAt(0);
+hash = (hash &lt;&lt; 5) + hash + charCode
+    }
+    // Ensure a positive 31-bit result
+    return hash &amp; 0x7FFFFFFF
+}
+let name = &quot;&quot;
+let hash2 = 0
+let hash = 0
+let char = &quot;&quot;</code></pre>
+
     </div>
 
 					<div class="hideprint"></div>
