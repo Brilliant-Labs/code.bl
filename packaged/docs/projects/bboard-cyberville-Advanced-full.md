@@ -10,7 +10,7 @@ Welcome to CYBERVILLE!! @boardname@.
 [{
   "name": "Activity 13 - Cryptography",
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-advanced-full/Cryptography/README",
-  "description": "An intelligent community 2.0, the difference between an intelligent community and a cyber-safe community",
+  "description": "Cryptography & Digital Signatures",
   "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-advanced-full/Cryptography/Cryptography_EN.png",
   "cardType": "side",
   "label": "CyberSecurity 3",
