@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
     + __``Task #2: Integrity``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity-Local.hex).</br>
     + __``Task #2: Integrity - Control Remotely``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity_Control_Remotely.hex).</br>
     + __``Task #2: Integrity - Barrier Remotely``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Integrity_Barrier_Remotely.hex).</br>
-    + __``Task #3: Availability``__  [⬇️ Here](https://drive.google.com/file/d/1lYtZyyQ5f7qhXzua5LGw7-LFFzpQwcW4/view?usp=sharing).</br>
+    + __``Task #3: Availability 🎮 Game - Local``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Availability_Local.hex).</br>
     + __``Task #3: Availability - Sending Timer Remotely``__  [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Availability_Timer_Remotely.hex).</br>
     + __``Task #3: Availability - Receiving Runner Remotely``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/Availability_Runner_Remotely.hex).</br>
 
