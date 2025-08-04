@@ -20,8 +20,8 @@ https://youtu.be/HIquW6LqKH8
 - It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
 
     👉 Download the next two .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
-    + __``Task #1: QR hash``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-1.hex).</br>
-    + __``Task #2: Hash Function``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Networking-Task-2.hex).</br>
+    + __``Task #1: QR hash``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Cryptography-QR.hex).</br>
+    + __``Task #2: Hash Function``__  [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Cryptography-HashDJB2.hex).</br>
 
 ## __``Task #1: QR hash``__
 - 1️⃣ Use the micro:bit's LED display to represent a QR code. Personalize your code by selecting multiple LEDs on the screen to create a unique pattern. Then, convert this pattern into a numeric string (letters) to obtain your digital signature. The more LEDs you select, the longer the resulting code will be, you have to select at least 6 LEDs.
