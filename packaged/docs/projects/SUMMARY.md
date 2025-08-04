@@ -38,7 +38,6 @@
   * [Activity 12 - An Intelligent Community](/docs/static/mb/projects/bboard-tutorials-cyberville-full/AnIntelligentCommunity/README)
 * [CyberSecurity Level 3: Advanced, Cyberville and b.Board 1.4](/projects/bboard-cyberville-advanced-full)
   * [Activity 13 - Cryptography](/docs/static/mb/projects/bboard-tutorials-cyberville-advanced-full/Cryptography/README)
-  * [Activity 7 - Networking](/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/README)
 * [Live Coding](/live-coding)
   * [Flashing Heart](https://youtu.be/NvEOKZ8wh9s)
   * [Name Tag](https://youtu.be/xpRI5jjQ31E)
