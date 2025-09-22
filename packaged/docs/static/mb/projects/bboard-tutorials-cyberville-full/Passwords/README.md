@@ -20,11 +20,11 @@ Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGF
 - It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.
 
     👉 Download the next .hex files, then for each file, create a ``➕ New Project`` and drag and drop the file for each task </br>
-    + __``Task #2: Sequence to access``__ [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex).</br>
+    + __``Task #2: Sequence to access``__ [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-10.hex).</br>
     
 ## __``Task #1: Setting Passwords``__
 
-- 1️⃣ Download the b.Board cover for the __Passwords__ activity: **EN**: [👉 Click here](https://drive.google.com/file/d/1ZSzu_0UeyHQE4gBJYJ9oBOPWgcrouhkD/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/19tLlrZ9kiZ3XYtFyz_ftsjt05cG9qwLr/view?usp=sharing).  
+- 1️⃣ Download the b.Board cover for the __Passwords__ activity: **EN**: [👉 Click here](https://drive.google.com/file/d/1DP15Oj6N99tq-9-X9MQWLFjbFWxPWnhD/view?usp=sharing), **FR**: [👉 Cliquez ici](https://drive.google.com/file/d/1uk0-JtNyjxszTtoK-X4TX3--4jUN9qjj/view?usp=sharing).  
   
     ![Passwords](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Passwords/1_Setting_Pws/M1_Cover.png?raw=true "Passwords")
 
@@ -75,39 +75,32 @@ Options to setup __Passwords__:
 - 2️⃣ Code the __b.Board__ to complete the sequence to turn on the devices affected by the hack. Remember that this sequence is secret, and you have to figure out how to get it.
 
     Don't forget select a device to be protected:   
-        ✴️ 1 Heat Control ❄️  
-        ✴️ 2 Air Control  🌀  
-        ✴️ 3 Lamps Cafe 💡☕  
-        ✴️ 4 Lamps Gym  💡🏃    
+        ✴️ 1 Heating     🌡️  
+        ✴️ 2 Cooling     🌀  
+        ✴️ 3 Lights Cafe 💡☕  
+        ✴️ 4 Lights Gym  💡🏃‍➡️    
         ✴️ 5 Internet     🛜  
 
 <br>
 
-- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://brilliantlabs.ca/documents/cybersec/M1-School-Sequence-Access.hex). 
+- 3️⃣ Download the ``Code Example`` .hex file for this activity by clicking [⬇️ Here](https://www.brilliantlabs.ca/documents/cybersec/Cyber-Security-Activity-10.hex). 
 Once downloaded, you can either drag and drop it into a new project or click the **📝 Edit** icon in the programming view below to open and customize it using the 🧩 Blocks editor.
 
     You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    Cybersec.WifiConnect("Cyberville #?", "")
-    if (Cybersec.WiFi_Connected()) {
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.one))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.two))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.three))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.four))
-        Cybersec.MissionLights(Cybersec.blixel_indexR(BLiXelIndexR.one), Cybersec.appliance_index(ApplianceIndex.five))
-        Cybersec.sendprot()
-    } else {
-        basic.showLeds(`
-            # . . . #
-            . # . # .
-            . . # . .
-            . # . # .
-            # . . . #
-            `)
-    }
+    Cybersec.Mission2Lights(
+    BLiXelIndexR.one,
+    ApplianceIndex.one,
+    ApplianceIndex.one,
+    ApplianceIndex.one,
+    ApplianceIndex.one,
+    ApplianceIndex.one
+    )
 })
+Cybersec.WifiConnect("Cyberville #?", "")
+Cybersec.Rdy2listen()
 ``` 
 <br>
 
