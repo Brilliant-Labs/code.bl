@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=aapUlOM0EAo
 </br>
 
 # 📘 __*Guide Document:*__  
-- Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAGjA-4v45U/nwkQv_N8wEyc51at9ZnZTQ/edit)  
+- Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAGEGb4JsII/Njm5KqEXlguZVSVp6YcMwg/edit)  
 - Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGE9DpMoOo/1kgvrPWSxI5Ix_wXhTbzVQ/edit)
 </br>
 </br>
