@@ -15,6 +15,15 @@ Welcome to CYBERVILLE!! @boardname@.
   "cardType": "side",
   "label": "CyberSecurity 3",
   "labelClass": "teal ribbon small"
+},
+{
+  "name": "Activity 14 - International Rules",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/InternationalRules/README",
+  "description": "International Rules of Cybersecurity",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/InternationalRules/IntRules_EN.png",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
 }
 ]
 ```
