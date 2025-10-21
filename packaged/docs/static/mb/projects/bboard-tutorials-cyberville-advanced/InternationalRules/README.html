@@ -1704,7 +1704,90 @@
 <br />
 <br /></li>
 </ul>
-<h1 id="-comming-soon-">🚀 <strong><em>Comming soon!</em></strong></h1>
+<h1 id="-let-s-get-started-">🚀 <strong><em>Let’s get started!</em></strong></h1><h2 id="-download-codes-br-">⬇️ Download Codes <br /></h2><ul>
+<li><p>It’s a great idea to prepare four separate projects, each with the correct code for its task, before getting started. This will help you stay organized and feel ready when it’s time to work on them.</p>
+<p>  👉 Download the next three .hex files, then for each file, create a <code>➕ New Project</code> and drag and drop the file for each task <br /></p>
+<ul>
+<li><strong><code>Task #1: Conveyor Belt Model</code></strong> <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Cryptography-QR.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #2: Cookies Factory Model - Factory Local</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Cryptography-HashDJB2.hex">⬇️ Here</a>.<br /></li>
+<li><strong><code>Task #3: Cookies Factory Cyberville</code></strong>  <a target="_blank" rel="nofollow noopener" href="https://www.brilliantlabs.ca/documents/cybersec/Cryptography-HashDJB2.hex">⬇️ Here</a>.<br /></li>
+</ul>
+</li>
+</ul>
+<h2 id="task-1-conveyor-belt-model"><strong><code>Task #1: Conveyor Belt Model</code></strong></h2><ul>
+<li><p>1️⃣ The conveyor belt model is represented by the ‘NeoPixel’ strip. Each lit pixel (blixel) on the strip represents a cookie that has been made. When a blixel turns on, it means one cookie is ready.
+Once 10 cookies are ready, they are considered packaged and ready to sell.</p>
+</li>
+<li><p>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.AB, function () {
+    CybersecAdvanced.ResetBelt()
+    Cookies = 0
+    basic.clearScreen()
+})
+input.onPinReleased(TouchPin.P1, function () {
+    if (Cookies &lt; 30) {
+        CybersecAdvanced.Cookcookies()
+        Cookies += 1
+        basic.showNumber(Cookies)
+    }
+})
+let Cookies = 0
+CybersecAdvanced.createbelt(DigitalPin.P2)
+Cookies = 0</code></pre>
+<h2 id="task-2-cookies-factory-model"><strong><code>Task #2: Cookies Factory Model</code></strong></h2><ul>
+<li><p>1️⃣ Once you understand how the conveyor belt and the servomotor work, it’s time to bake cookies in your factory using the robot arm (based on the servomotor), the conveyor belt (using the NeoPixel strip), and the complete production machine.</p>
+</li>
+<li><p>2️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+    servos.P00.setAngle(180)
+    basic.pause(500)
+    servos.P00.setAngle(0)
+})
+input.onButtonPressed(Button.AB, function () {
+    CybersecAdvanced.ResetBelt()
+})
+input.onPinReleased(TouchPin.P1, function () {
+    CybersecAdvanced.Cookcookies()
+})
+CybersecAdvanced.createbelt(DigitalPin.P2)
+servos.P00.setAngle(0)</code></pre>
+<h2 id="task-3-run-your-cookie-factory-in-cyberville-"><strong><code>Task #3: Run Your Cookie Factory in Cyberville!</code></strong></h2><ul>
+<li><p>1️⃣ Once you are connected to the Cyberville Network, you can start baking 🍪 cookies — but only when you have enough power from Cyberville’s electric power system through the 📳 M5 access point!
+Remember, the power level is shown on the b.Board blixels. ⌛️ Don’t let the countdown reach zero!!!</p>
+</li>
+<li><p>2️⃣ 👨‍🏫 👨‍🏫 The teacher should start and pause the countdown timer on the 📳 M5 module by pressing Button A, allowing time for the team’s speech. When the team finishes their presentation, the teacher should resume the timer by pressing Button A again — this will restore power and allow the cookies to start baking again. Don’t forget to raise your hand 🙋🏼‍♂️ when your cookies are ready to sell and when you’re prepared to give your 🎤 speech about the International Rules of Cybersecurity. Remember, this is how you help counteract the malware system infrastructure installed by the bad guys!</p>
+</li>
+<li><p>3️⃣ Download the <code>Code Example</code> .hex file for this activity by clicking <a target="_blank" rel="nofollow noopener" href="https://brilliantlabs.ca/documents/cybersec/Confidentiality.hex">⬇️ Here</a>. 
+Once downloaded, you can either drag and drop it into a new project or click the <strong>📝 Edit</strong> icon in the programming view below to open and customize it using the 🧩 Blocks editor.</p>
+<p>  You can also cut and paste the following code into the 📜 JavaScript code area, and then back into the 🧩 blocks code if you prefer to do so:</p>
+</li>
+</ul>
+<pre><code class="lang-blocks">input.onButtonPressed(Button.A, function () {
+    servos.P00.setAngle(180)
+    basic.pause(500)
+    servos.P00.setAngle(0)
+})
+input.onButtonPressed(Button.AB, function () {
+    CybersecAdvanced.ResetBelt()
+})
+input.onPinReleased(TouchPin.P1, function () {
+    if (CybersecAdvanced.PowerIsAvailable()) {
+        CybersecAdvanced.Cookcookies()
+    }
+})
+Cybersec.WifiConnect(&quot;Cyberville #?&quot;, &quot;&quot;)
+Cybersec.Rdy2listen()
+CybersecAdvanced.createbelt(DigitalPin.P2)
+servos.P00.setAngle(0)</code></pre>
+
     </div>
 
 					<div class="hideprint"></div>
