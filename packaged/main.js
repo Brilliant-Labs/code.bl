@@ -20377,7 +20377,7 @@ function showCybervilleDialogAsync() {
 }
 exports.showCloudDialogAsync = showCloudDialogAsync;
 function showSupportDialogAsync() {
-    window.open("https://support.brilliantlabs.ca", "_blank");
+    window.open("https://brilliantlabs.typeform.com/to/mewPUPh5", "_blank");
 }
 exports.showSupportDialogAsync = showSupportDialogAsync;
 function showGithubTokenError(err) {
