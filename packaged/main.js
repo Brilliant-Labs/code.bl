@@ -20331,9 +20331,8 @@ function showFirmwareDialogAsync() {
 //React.createElement( "a",{ onClick:()=> window.open("bBoardFirmware2_17.hex", "_blank") }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2")),
 
                    React.createElement("div", null),                    
-                   React.createElement("a", { href: "https://drive.google.com/file/d/1Uu2xhzJHLYRqAuNNPI9gJdauytSMT_fx/view?usp=sharing" }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2"),
-
-
+//                   React.createElement("a", { href: "https://drive.google.com/file/d/1Uu2xhzJHLYRqAuNNPI9gJdauytSMT_fx/view?usp=sharing" }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2"),
+                   React.createElement("a", { href: "https://www.brilliantblue.org/hex-files/bBoardFirmware2_17.hex" }, "2️⃣ Click to Download b.Board ESP32 🛜 Firmware Version 3.2"),
 
                     React.createElement("div", null),
                     React.createElement("a", { href: "https://www.brilliantlabs.ca/documents/cybersec/Flash_Tool.zip" }, "3️⃣ Click to Download the Flash Tool software"),              
