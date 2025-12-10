@@ -9,8 +9,8 @@ https://youtu.be/HIquW6LqKH8
 </br>
 
 # 📘 __*Guide Document:*__  
-- Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAF-7f4_b20/UsBmppJ8Pcti1uN7xQaQLA/edit)
-- Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGE2NHE8Vs/2NNCaqrKK6dGwYJq4I7KKw/edit)
+- Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAGICy3MfKA/YIhqH8Rpvg1w_WFIQg0F_Q/view?utm_content=DAGICy3MfKA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dd22028ad)
+- Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGIaIMzciU/43hKFcn0OyW_Vhndyd1I6Q/view?utm_content=DAGIaIMzciU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd4ec95ab91)
 </br>
 </br>
 

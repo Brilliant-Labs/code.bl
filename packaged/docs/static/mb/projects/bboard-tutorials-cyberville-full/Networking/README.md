@@ -20,8 +20,8 @@ In the upcoming activities, you’ll become part of this digital community. Help
 </br>
 
 # 📘 __*Guide Document:*__  
-- Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAF-7f4_b20/UsBmppJ8Pcti1uN7xQaQLA/edit)
-- Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGE2NHE8Vs/2NNCaqrKK6dGwYJq4I7KKw/edit)
+- Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAF-7f4_b20/0SFvUdKbH6VVmrPRU3j28w/view?utm_content=DAF-7f4_b20&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8e9d724200)
+- Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGE2NHE8Vs/j7WelLKiHV_mHTBhTRYKaw/view?utm_content=DAGE2NHE8Vs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb4d97300ff)
 </br>
 </br>
 
@@ -51,7 +51,7 @@ You have received, for activities 7 to 12, an ESP32 touchscreen 📳 M5Stack Cor
     <img src="https://github.com/Brilliant-Labs/code.bl/blob/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville/Networking/M5core2.png?raw=true" alt="M5core2" title="Spec sheet M5Core2" width="400" />
 
 - 🧑‍🎓 __Students__  
-    Create a new project using the micro:bit V2, ensuring that you are working with a __b.Board Rev 1.4__ and naming it "Networking_A".      You can find instructions on how to identify the hardware and software version of your __b.Board__ **EN**: [__👉 Click here__](https://drive.google.com/file/d/1yllWJcc--RhKsAEizD8vK-3rGGuAAV-P/view?usp=sharing), or **FR**: [__👉 Click here__](https://drive.google.com/file/d/1yllWJcc--RhKsAEizD8vK-3rGGuAAV-P/view?usp=sharing).
+    Create a new project using the micro:bit V2, ensuring that you are working with a __b.Board Rev 1.4__ and naming it "Networking_A".      You can find instructions on how to identify the hardware and software version of your __b.Board__ **EN**: [__👉 Click here__](https://drive.google.com/file/d/1yllWJcc--RhKsAEizD8vK-3rGGuAAV-P/view?usp=sharing), or **FR**: [__👉 Click here__](https://drive.google.com/file/d/1CNfE8U6z9BpZur0wZq9BgEN3jootvnbB/view?usp=sharing).
     
     ![Version](https://raw.githubusercontent.com/Brilliant-Labs/code.bl/code_alpha/packaged/docs/static/mb/projects/bboard-tutorials-cyberville-full/Networking/Version.png?raw=true "Version")
 
@@ -216,7 +216,7 @@ __``Task #2: MAC and IP address. ``__</br>
         })
 - Switch back to __Blocks__ view if you prefer.
 
-- __``Task #3: Roles. ``__</br>
+__``Task #3: Roles. ``__</br>
 - Click __JavaScript__ in the top menu</br>
 - Delete any existing code.</br>
 - Paste this code:
@@ -239,7 +239,7 @@ __``Task #2: MAC and IP address. ``__</br>
 - Switch back to __Blocks__ view if you prefer.
 
 
-- __``Task #4: Pinging. ``__</br>
+__``Task #4: Pinging. ``__</br>
 - Click __JavaScript__ in the top menu</br>
 - Delete any existing code.</br>
 - Paste this code:
