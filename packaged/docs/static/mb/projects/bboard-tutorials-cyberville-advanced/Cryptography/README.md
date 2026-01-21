@@ -10,7 +10,7 @@ https://youtu.be/HIquW6LqKH8
 
 # 📘 __*Guide Document:*__  
 - Official Document in **English** [__👉 Here__](https://www.canva.com/design/DAGICy3MfKA/YIhqH8Rpvg1w_WFIQg0F_Q/view?utm_content=DAGICy3MfKA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dd22028ad)
-- Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAGIaIMzciU/43hKFcn0OyW_Vhndyd1I6Q/view?utm_content=DAGIaIMzciU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd4ec95ab91)
+- Document officiel en **French** [__👉 Ici__](https://www.canva.com/design/DAG7NkQBR5c/CkDC80xM7IhqWsm6LpdLMw/edit?utm_content=DAG7NkQBR5c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 </br>
 </br>
 

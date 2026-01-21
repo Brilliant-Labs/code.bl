@@ -52,7 +52,7 @@ Cybersec.setfirewall()
 </br>
 
 ## __``Task #2: Cards game``__  
-- 1️⃣ Download the printable card game in **English**: [👉 Click here](https://drive.google.com/file/d/1GMpfjcZno42_7VkLdOA70ZZM_1zCveUm/view?usp=sharing).
+- 1️⃣ Download the printable card game in **English**: [👉 Click here](https://drive.google.com/file/d/1WpfQyY9lIQa_4eBe098UW3Z_BW6OYAY5/view?usp=sharing).
 </br>
 
 - 2️⃣ Follow the 📘 Guide Document to complete the activity.
