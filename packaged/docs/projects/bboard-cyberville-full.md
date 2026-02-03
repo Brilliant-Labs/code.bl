@@ -62,6 +62,7 @@ Welcome to CYBERVILLE!! @boardname@.
   "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-full/AnIntelligentCommunity/README",
   "description": "An Intelligent Community 2.0",
   "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/AnIntelligentCommunity/AnIntelligent_EN.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-full/AnIntelligentCommunity/IntelligentGif_EN.gif",
   "cardType": "side",
   "label": "",
   "labelClass": ""

@@ -17,12 +17,12 @@ for building their smart community later in the other activities.
 
 1. In the ``||Basic:Basic||`` bar click and drag the **show icon** block and change it from **heart to happy** (1st row, last one)
 
-2. In the ``||Basic:Basic||`` tab click and drag the ``||Basic:show string "hello"||`` block into the forever block and change it to ``||basic:show string "hackerville"||``
+2. In the ``||Basic:Basic||`` tab click and drag the ``||Basic:show string "hello"||`` block into the forever block and change it to ``||basic:show string "Cyberville"||``
 
 
 ```blocks
 basic.forever(function () {
-    basic.showString("Hackerville")
+    basic.showString("Cyberville")
 })
 ```
 

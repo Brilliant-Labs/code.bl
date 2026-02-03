@@ -28,7 +28,7 @@ radio.onReceivedString(function (receivedString) {
 })
 radio.setGroup(1)
 basic.forever(function () {
-    basic.showString("Welcome")
+    radio.sendString("Welcome")
 })
 ```
 # Explanation

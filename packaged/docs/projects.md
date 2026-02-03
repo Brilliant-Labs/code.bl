@@ -32,7 +32,8 @@
     {
         "name": "CyberSecurity Level 3: Advanced, Cyberville and b.Board 1.4",
         "url": "/projects/bboard-cyberville-advanced",
-        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/Cryptography/Cryptography_EN.png"
+        "imageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/Cryptography/Cryptography_EN.png",
+        "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/Cryptography/CryptoGif_EN.gif"
     },
     {
         "name": "Live Coding",

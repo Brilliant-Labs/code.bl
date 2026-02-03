@@ -64,7 +64,7 @@ Options to setup __Passwords__:
 |    5️⃣ Government       |🏢| `Cyberville Gov.Services`   
 |    6️⃣ Brilliant Labs   |🏩| `Brilliant Labs`    
 |    7️⃣ Bank             |🏦| `Pacific Bank`    
-|    8️⃣ Factory          |🏭| `Volt Motors`  
+|    8️⃣ Factory          |🏭| `Seet Crumbs/Volt Motors`  
 |    9️⃣ Industry         |🏪| `Techmach Industries`  
 |    1️⃣0️⃣ Art Center     |🎨| `Harmony Art Center`   
 |    1️⃣1️⃣ Cyber Security |🕵️‍♂️| `(Not available as role)`    

@@ -52,7 +52,8 @@ Cybersec.setfirewall()
 </br>
 
 ## __``Task #2: Cards game``__  
-- 1️⃣ Download the printable card game in **English**: [👉 Click here](https://drive.google.com/file/d/1WpfQyY9lIQa_4eBe098UW3Z_BW6OYAY5/view?usp=sharing).
+- 1️⃣ Download the printable card game in **English**: [👉 Click here](https://www.canva.com/design/DAGk-w54KP4/izx48xdJomkTCfVxpNvGog/view?utm_content=DAGk-w54KP4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0d458327c5).**French**: [👉 Cliquez ici]
+https://www.canva.com/design/DAGsYoZ2Q5Q/ydNmpzJSN5oaLlihe6Nzuw/view?utm_content=DAGsYoZ2Q5Q&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he21328c65c
 </br>
 
 - 2️⃣ Follow the 📘 Guide Document to complete the activity.

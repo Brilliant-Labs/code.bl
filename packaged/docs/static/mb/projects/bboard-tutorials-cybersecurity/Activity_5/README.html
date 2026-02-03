@@ -1701,7 +1701,7 @@
 })
 radio.setGroup(1)
 basic.forever(function () {
-    basic.showString(&quot;Welcome&quot;)
+    radio.sendString(&quot;Welcome&quot;)
 })</code></pre>
 <h1 id="explanation">Explanation</h1><p>By telling the microbit to listen on channel 1, this will affect all the microbits that will be on the same channel. Subsequently, we transmit a message on channel 1. In this case : Welcome!
 The next block will receive the signal that has been sent and display it. This will affect all the
