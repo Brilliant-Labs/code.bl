@@ -20713,7 +20713,7 @@ exports.renderBrowserDownloadInstructions = renderBrowserDownloadInstructions;
 function renderIncompatibleHardwareDialog() {
     var _a, _b;
     const boardName = pxt.appTarget.appTheme.boardName || lf("device");
-    const bodyText = lf("Oops! Looks like your project has code that won't run on the hardware you have connected. Would you like to download anyway?");
+    const bodyText = lf("Oops! This project may not run on your connected device (micro:bit V1 ⚠️). Switch to 👉 micro:bit V2 ✅ and try again. Download anyway?");
     const helpText = lf("Learn more about what's supported by your hardware…");
     const helpURL = (_a = pxt.appTarget.appTheme.downloadDialogTheme) === null || _a === void 0 ? void 0 : _a.incompatibleHardwareHelpURL;
     const imageURL = (_b = pxt.appTarget.appTheme.downloadDialogTheme) === null || _b === void 0 ? void 0 : _b.incompatibleHardwareImage;
