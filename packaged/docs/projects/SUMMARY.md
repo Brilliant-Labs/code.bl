@@ -39,6 +39,7 @@
 * [CyberSecurity Level 3: Advanced, Cyberville and b.Board 1.4](/projects/bboard-cyberville-advanced)
   * [Activity 13 - Cryptography](/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/Cryptography/README)
   * [Activity 14 - International Rules](/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/InternationalRules/README)
+  * [Activity 15 - SmartCity 3.0](/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/SmartCommunity3.0/README)
 * [Live Coding](/live-coding)
   * [Flashing Heart](https://youtu.be/NvEOKZ8wh9s)
   * [Name Tag](https://youtu.be/xpRI5jjQ31E)

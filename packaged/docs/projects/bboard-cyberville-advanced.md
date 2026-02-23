@@ -26,6 +26,16 @@ Welcome to CYBERVILLE!! @boardname@.
   "cardType": "side",
   "label": "",
   "labelClass": ""
+},
+{
+  "name": "Activity 15 - SmartCity 3.0",
+  "url":"/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/SmartCommunity3.0/README",
+  "description": "SmartCity 3.0",
+  "imageUrl":"/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/SmartCommunity3.0/SmartCity3.0_EN.png",
+  "largeImageUrl": "/docs/static/mb/projects/bboard-tutorials-cyberville-advanced/SmartCommunity3.0/SmartGif.gif",
+  "cardType": "side",
+  "label": "",
+  "labelClass": ""
 }
 ]
 ```
