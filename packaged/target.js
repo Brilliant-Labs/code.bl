@@ -2734,7 +2734,7 @@ var pxtTargetBundle = {
             "Motion.ts": "//-------------------------Click Board Motion -----------------------------------\n//% weight=800 color=#33BEBB icon=\"\\u27A0\"\n//% advanced=true\n//% labelLineWidth=1002\nnamespace Motion {\n    enum motion {\n        detected = 1,\n        none = 0,\n    }\n    export enum motionState {\n        enabled = 1,\n        disabled = 0\n    }\n\n    /**\n     * Sets Motion Click object.\n     * @param boardID the boardID\n     * @param clickID the ClickID\n     * @param Motion the Motion Object\n    */\n    //% block=\"$boardID $clickID\"\n    //% advanced=false\n    //% $boardID.shadow=\"BoardID.zero\"\n    //% blockSetVariable=\"Motion\"\n    //% weight=110\n    export function createMotion(boardID: BoardID, clickID: ClickID): Motion {\n        return new Motion(boardID, clickID);\n    }\n    export class Motion {\n        private myBoardID: BoardID\n        private myClickID: ClickID\n\n        constructor(boardID: BoardID, clickID: ClickID) {\n            this.myBoardID = boardID;\n            this.myClickID = clickID;\n        }\n\n        //% blockId=Motion_Enabled\n        //% block=\"$this $enable motion\"\n        //% block.loc.fr=\"$this $enable mouvement\"\n        //% advanced=true\n        //% blockNamespace=Motion\n        //% this.shadow=variables_get\n        //% this.defl=\"Motion\"\n        motionEnable(enable: Motion.motionState) {\n            //TODO: just change detection timeout, is not properly disable/enable\n            bBoard_Control.writePin(enable, clickIOPin.RST, this.myBoardID, this.myClickID)\n        }\n\n        //% blockId=Motion_isDetected\n        //% block=\"$this Has motion been detected?\"\n        //% block.loc.fr=\"$this Est-ce que du mouvement a été détecté?\",\n        //% advanced=false\n        //% blockGap=7\n        //% advanced=true\n        //% blockNamespace=Motion\n        //% this.shadow=variables_get\n        //% this.defl=\"Motion\"\n        isDetected(): boolean {\n            if (bBoard_Control.digitalReadPin(clickIOPin.INT, this.myBoardID, this.myClickID) == motion.detected) {\n                return true\n            }\n            return false;\n        }\n\n        //% blockId=onMotionDetected \n        //% block=\"$this on motion detected\" \n        //% block.loc.fr=\"$this quand mouvement détecté\"\n        //% advanced=false\n        //% blockAllowMultiple=0\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% blockNamespace=Motion\n        //% this.shadow=variables_get\n        //% this.defl=\"Motion\"\n        onMotionDetected(a: () => void): void {\n            bBoard_Control.eventInit(bBoardEventsMask.CN_HIGH, this.myBoardID, this.myClickID); //Tell the BLiX to set the Change notification interrupts (High or Low)\n            bBoard_Control.pinEventSet(this.myBoardID, this.myClickID, clickIOPin.INT, bBoardEventsMask.CN_HIGH) //Tell the BLiX which pin you want to monitor for high or low\n            control.onEvent( bBoard_Control.getbBoardEventBusSource(this.myBoardID, this.myClickID, bBoardEvents.CN_HIGH),clickIOPin.INT, a); //Tell the DAL scheduler what function to call when the bBoard interrupt source is generated from this specific value\n        }\n    }\n}",
             "NO2.ts": "\n//-------------------------Click Board NO2 -----------------------------------\n//% weight=100 color=#33BEBB icon=\"\"\n//% labelLineWidth=1002\n//% advanced=true\nnamespace NO2 {\n    export enum I2C_RepeatStart {\n        True = 1,\n        False = 0\n    }\n\n    /**\n     * Sets NO2 Click object.\n     * @param boardID the boardID\n     * @param clickID the clickID\n     * @param NO2 the NO2 Object\n    */\n    //% block=\" $boardID $clickID with $sensitivity nA/ppm\"\n    //% block.loc.fr=\" $boardID $clickID avec $sensitivity nA/ppm\"\n    //% blockSetVariable=\"NO2\"\n    //% sensitivity.defl=\"-40\"\n    //% weight=110\n    export function createNO2Settings(boardID: BoardID, clickID: ClickID, sensitivity: number): NO2 {\n        return new NO2(boardID, clickID, sensitivity);\n    }\n\n    export class NO2 {\n        readonly STATUS = 0x00\n        readonly LOCK = 0x01\n        readonly TIACN = 0x10\n        readonly REFCN = 0x11\n        readonly MODECN = 0x12\n\n        private readonly DEFAULT_I2C_ADDRESS = 0x48\n        private readonly Vadc_3 = 3.3 / 4096\n        private myBoardID: number\n        private myClickID: number\n        private sensitivity: number\n\n        constructor(boardID: BoardID, clickID: ClickID, sensitivity: number) {\n            this.sensitivity = Math.abs(sensitivity / 1000000000)\n            this.myBoardID = boardID\n            this.myClickID = clickID;\n            this.NO2_Initialize()\n        }\n\n        NO2_Initialize() {\n            bBoard_Control.clearPin(clickIOPin.RST, this.myBoardID, this.myClickID) // enable device\n\n            //this.isInitialized[this.myBoardIDT] = 1;\n            this.Write_NO2_Register(this.LOCK, 0x00); //In write mode \n            this.Read_NO2_Register(this.LOCK); //FET Short Disabled, 3 lead amperometric\n            this.Write_NO2_Register(this.MODECN, 0x03); //FET Short Disabled, 3 lead amperometric\n\n            //this.isInitialized[this.myBoardIDT] = 1;\n            this.Read_NO2_Register(this.MODECN); //FET Short Disabled, 3 lead amperometric\n\n            this.Write_NO2_Register(this.TIACN, 0x1F); //350K RGain, 100 ohm load\n            this.Read_NO2_Register(this.TIACN); //FET Short Disabled, 3 lead amperometric\n\n            this.Write_NO2_Register(this.REFCN, 0xC6);  //External Ref 10% -200mV 67%Vref\n            this.Read_NO2_Register(this.REFCN); //FET Short Disabled, 3 lead amperometric\n        }\n\n        // Write byte 'byte' to register 'reg'\n        Write_NO2_Register(reg: number, byte: number) {\n            let i2cBuffer = pins.createBuffer(2)\n            i2cBuffer.setNumber(NumberFormat.UInt8LE, 0, reg)\n            i2cBuffer.setNumber(NumberFormat.UInt8LE, 1, byte)\n            bBoard_Control.BLiX(this.myBoardID, this.myClickID, 0, I2C_module_id, I2C_WRITE_id, null, i2cBuffer, 0)\n        }\n\n        //% blockId=NO2_ReadConcentration\n        //% block=\"Get $this NO2 concentration reading in ppm(parts per million)\"\n        //% block.loc.fr=\"Obtenir $this concentration NO2 en ppm (parties par million)\"\n        //% blockGap=7\n        //% advanced=false\n        //% blockNamespace=NO2\n        //% this.shadow=variables_get\n        //% this.defl=\"NO2\"\n        NO2_Read_Concentration(): number {\n            let Vref = 2.048 * .67 //Voltage Reference \n            let ADCMax = 4096   //Max ADC value \n            let ADCRef = 3.3000 //ADC reference voltage\n            let Vout = 0.0 //Output voltage\n            let Rgain = 350000.0 //350K ohms\n\n            //**************\n            //TODO:  change to event!!!!!\n            while (!this.Read_NO2_Register(this.STATUS)) {\n\n            }\n\n            //FET Short Disabled, 3 lead amperometric\n            //val=(ANObj.analogRead(clickADCPin.AN,this.myBoardID, this.myClickID))\n            let ADCVal = bBoard_Control.analogRead(clickADCPin.AN,this.myBoardID,this.myClickID)\n            //  sumval+=val;\n            //}\n            //sumval=sumval/20;\n\n            Vout = (ADCRef * ADCVal) / ADCMax\n            let numerator = Vref - Vout\n            let denominator = Rgain\n            let sensorCurrent = numerator / denominator\n            let N02ppm = sensorCurrent / this.sensitivity\n            //let NO2_voltage=sumval*this.Vadc_3; //Voltage for the force click board\n            return N02ppm\n        }\n\n        // Read a byte from register 'reg'\n        Read_NO2_Register(register: number): number {\n            let tempBuf = pins.createBuffer(2);\n            tempBuf.setNumber(NumberFormat.UInt8LE, 0, this.DEFAULT_I2C_ADDRESS)\n            tempBuf.setNumber(NumberFormat.UInt8LE, 1, I2C_RepeatStart.True)\n            tempBuf.setNumber(NumberFormat.UInt8LE, 2, register)\n            bBoard_Control.BLiX(this.myBoardID, this.myClickID, 0, I2C_module_id, I2C_WRITE_id, null, tempBuf, 0)\n\n            return bBoard_Control.BLiX(this.myBoardID, this.myClickID, 0, I2C_module_id, I2C_READ_NO_MEM_id, [this.DEFAULT_I2C_ADDRESS, 2], null, 2).getUint8(0)\n        }\n\n        no2_readADC(): number {\n            let i2cBuffer = pins.createBuffer(2);\n            i2cBuffer = bBoard_Control.BLiX(this.myBoardID, this.myClickID, 0, I2C_module_id, I2C_READ_NO_MEM_id, [0x4D, 2], null, 2)\n            let MSB = i2cBuffer.getUint8(0)\n            let LSB = i2cBuffer.getUint8(1)\n            let returnVal = MSB << 8 | LSB\n            return returnVal\n        }\n    }\n}",
             "OpenLog.ts": "\n/**\n* OpenLog SD Card reader\n*/\n//% weight=100 color=#0fbc11  icon=\"\"\n//% advanced=true\n//% labelLineWidth=1009\nnamespace openLogSD {\n\n\n    //% block=\"Variable names $variablesToSave $boardID $clickID\"\n    //%block.loc.fr=\"$this Noms de variables $variablesToSave $boardID $clickID\"\n    //% blockSetVariable=\"SDCard\"\n    //% clickID.min=1\n    //% weight=110\n    export function createDataLogger(variablesToSave: string[], boardID: BoardID, clickID: ClickID): SDdataLogger {\n        return new SDdataLogger(variablesToSave, boardID, clickID);\n    }\n\n    export class SDdataLogger {\n\n        private myBoardID: BoardID\n        private myClickID: ClickID\n\n\n        constructor(variablesToSave: string[], boardID: BoardID, clickID: ClickID) {\n            this.myBoardID = boardID\n            this.myClickID = clickID\n            bBoard_Control.UARTFrequency(9600, this.myBoardID, this.myClickID)\n            this.writeString(variablesToSave)\n        }\n        //%blockId=writeStringToSD\n        //%block=\"$this Send string to SD Card $variables\"\n        //%block.loc.fr=\"$this Envoyer string à la carte SD $variables\"\n        //% blockGap=7\n        //% advanced=false\n        //% blockNamespace=openLogSD\n        //% this.shadow=variables_get\n        //% this.defl=\"SDCard\"\n        writeString(variables: string[]): void {\n            let variablesString = \"\"\n            for (let i = 0; i < variables.length; i++) {\n                variablesString += variables[i] + \",\"\n            }\n            variablesString = variablesString.substr(0, variablesString.length - 1)//remove the comma\n            variablesString += \"\\r\\n\";\n            bBoard_Control.UARTSendString(variablesString, this.myBoardID, this.myClickID)\n        }\n\n        //%blockId=writeNumbertoSD\n        //%block=\"$this Send numbers to SD Card $numbers\"\n        //%block.loc.fr=\"$this Envoyer nombres à la carte SD $variables\"\n        //% blockGap=7\n        //% advanced=false\n        //% blockNamespace=openLogSD\n        //% this.shadow=variables_get\n        //% this.defl=\"SDCard\"\n        writeNumbers(numbers: number[]): void {\n            let variablesString = \"\"\n            for (let i = 0; i < numbers.length; i++) {\n                variablesString += numbers[i].toString() + \",\"\n            }\n            variablesString = variablesString.substr(0, variablesString.length - 1)//remove the comma\n            variablesString += \"\\r\\n\";\n            bBoard_Control.UARTSendString(variablesString, this.myBoardID, this.myClickID)\n        }\n    }\n}",
-            "Power_Clickboard.ts": "/**\n * This extension is designed to programme and drive the PowerBL Clickboard using clickboard ports into the b.Board base on sensor INA260\n */\n//-------------------------PowerBL Clickboard for b.Board -----------------------------------\n    //% color=#40E0D0 icon=\"\\uf1e6\"\n    //% advanced=true\n    //% labelLineWidth=1002\n    //% groups='Clickboards: Sensors'\n    //% block=\"PowerBL Clickboard\"\n\nnamespace Power_Clickboard {\n        const ADDRESS = 0x40        ///< INA260 default i2c address \n        const REG_CONFIG = 0x00     ///< Configuration register\n        const REG_CURRENT = 0x01    ///< Current measurement register (signed) in mA\n        const REG_BUS_VOLTAGE = 0x02///< Bus voltage measurement register in mV\n        const REG_POWER = 0x03      ///< Power calculation register in mW\n        const REG_MASK_ENABLE = 0x06///< Alert mask/enable register\n        const REG_ALERT = 0x07      ///< Alert limit register\n        const REG_MFG_ID = 0xFE     ///< Manufacturer ID Register\n        const REG_DIE_ID = 0xFF     ///< Die ID Register     \n        // ========== Code for click board support ==========  \n            function writeRegister_I2C(reg: number, value: number): void {\n                let buf = pins.createBuffer(3)\n                buf[0] = reg\n                buf[1] = (value >> 8) & 0xff\n                buf[2] = value & 0xff\n                pins.i2cWriteBuffer(ADDRESS, buf)\n            }\n            function readRegister_I2C(reg: number): number {\n                pins.i2cWriteNumber(ADDRESS, reg, NumberFormat.UInt8BE)\n                return pins.i2cReadNumber(ADDRESS, NumberFormat.UInt16BE)\n            }\n\n\n    /**\n     * @param boardID the boardID\n     * @param clickID the ClickID\n     */\n    //% block=\" $boardID $clickID to initialize the INA260\"\n    //% $boardID.shadow=\"BoardID.zero\"\n    //% blockSetVariable=\"Power_Clickboard\"\n    //% weight=110\n    //% color=#40E0D0\n  \n    export function createPower_Clickboard(boardID: BoardID, clickID: ClickID): Power_Clickboard {\n        return new Power_Clickboard(boardID, clickID);\n    }\n    export class Power_Clickboard {\n        private myBoardID: BoardID;\n        private myClickID: ClickID;\n\n        constructor(boardID: BoardID, clickID: ClickID) {\n            this.myBoardID = boardID;\n            this.myClickID = clickID;\n\n            this.initModule();\n        }\n\n    initModule(): void {\n                            // Animation using BLiXel\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.one)); basic.pause(20); \n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.one)); \n                            basic.pause(1000)\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.two)); basic.pause(20); \n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.two)); \n                            basic.pause(1000)\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.three)); basic.pause(20);\n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.three)); \n                            basic.pause(1000)\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.four)); basic.pause(20); \n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.four));\n                            basic.pause(1000)\n                            Cybersec.setPixelColourON(BLiXel.blixel_index(BLiXelIndex.five)); basic.pause(20);\n                            Cybersec.setPixelColourOFF(BLiXel.blixel_index(BLiXelIndex.five)); \n                            basic.pause(1000)\n    //    let timeout = input.runningTime()\n    //    while (!(this.i2cReadNumber(CameraAdd, NumberFormat.Int8LE))) {\n    //        if (input.runningTime() - timeout > 30000) {\n    //            while (true) {\n    //                basic.showString(\"Init AILens_Clickboard Error!\")\n    //            }\n    //        }\n    //    }     \n                writeRegister_I2C(REG_CONFIG, 0x05AF)\n                let id = readRegister_I2C(REG_MFG_ID)\n                if (id != 0x5449) \n                    serial.writeLine(\"INA260 NOT found, ID: \" + id) \n                else\n                    serial.writeLine(\"INA260 found, ID: \" + id)\n                    id == 0x5449\n                return;    \n    }\n\n    i2cReadNumber(address: number, format: NumberFormat, repeated?: boolean): number {\n        return bBoard_Control.I2CreadNoMem(address, 1, this.myBoardID, this.myClickID).getNumber(format, 0)\n    }\n    i2cReadBuffer(address: number, size: number, repeat?: boolean): Buffer {\n        return bBoard_Control.I2CreadNoMem(address, size, this.myBoardID, this.myClickID)\n    }\n    i2cWriteBuffer(address: number, buf: Buffer, repeat?: boolean): number {\n        bBoard_Control.i2cWriteBuffer(address, buf, this.myBoardID, this.myClickID)\n        return 1;\n    }\n    i2cWriteNumber(address: number, value: number, format: NumberFormat, repeated?: boolean): void {\n        bBoard_Control.i2cWriteNumber(address, value, format, false, this.myBoardID, this.myClickID)\n    }\n            /**\n             * Read current in milliamps (mA)\n             */\n            //% block=\"🔌 Current (mA)\"\n            //% weight=90\n            //% color=#00a2ff\n            //% group=\"Power_Monitor\"\n            //% group.loc.fr=\"Mesure_de_Puissance\"\n            //% advanced=true \n            readCurrent_I2C(): number {\n                let raw = readRegister_I2C(REG_CURRENT)\n                if (raw & 0x8000) raw -= 0x10000\n                serial.writeLine(\"Current: \" + raw * 1.25 + \" mA\")       \n                return raw * 1.25\n            }\n\n            /**\n             * Read bus voltage in millivolts (V)\n             */\n            //% block=\"⚡ Voltage (V)\"\n            //% weight=80\n            //% color=#00a2ff\n            //% group=\"Power_Monitor\"\n            //% group.loc.fr=\"Mesure_de_Puissance\"\n            //% advanced=true \n            readBusVoltage_I2C(): number {\n                serial.writeLine(\"Voltage: \" + readRegister_I2C(REG_BUS_VOLTAGE) * 1.25 / 1000 + \" V\")\n                return readRegister_I2C(REG_BUS_VOLTAGE) * 1.25 / 1000 // convert to V\n            }\n\n            /**\n             * Read power in milliwatts (mW)\n             */\n            //% block=\"🔋 Power (mW)\"\n            //% weight=70\n            //% color=#00a2ff \n            //% group=\"Power_Monitor\"\n            //% group.loc.fr=\"Mesure_de_Puissance\"\n            //% advanced=true \n            readPower_I2C(): number {\n                serial.writeLine(\"Power: \" + readRegister_I2C(REG_POWER) * 10 + \" mW\")\n                return readRegister_I2C(REG_POWER) * 10\n            }   \n    }\n}\n",
+            "Power_Clickboard.ts": "/**\n * This extension is designed to programme and drive the PowerBL Clickboard using clickboard ports into the b.Board base on sensor INA260\n */\n//-------------------------PowerBL Clickboard for b.Board -----------------------------------\n    //% color=#40E0D0 icon=\"\\uf1e6\"\n    //% advanced=true\n    //% labelLineWidth=1002\n    //% groups='Clickboards: Sensors'\n    //% block=\"PowerBL Clickboard\"\n\n\nnamespace Power_Clickboard {\n\n    const ADDRESS = 0x40\n    const REG_CONFIG = 0x00\n    const REG_CURRENT = 0x01\n    const REG_BUS_VOLTAGE = 0x02\n    const REG_POWER = 0x03\n    const REG_MFG_ID = 0xFE\n\n    //% block=\"Initialize INA260 on $boardID $clickID\"\n    //% blockSetVariable=PowerBL_Clickboard\n    //% weight=100\n    //% color=#40E0D0\n    export function createPower_Clickboard(boardID: BoardID, clickID: ClickID): Power_Clickboard {\n        return new Power_Clickboard(boardID, clickID);\n    }\n\n    export class Power_Clickboard {\n        private myBoardID: BoardID\n        private myClickID: ClickID\n\n        constructor(boardID: BoardID, clickID: ClickID) {\n            this.myBoardID = boardID\n            this.myClickID = clickID\n            this.initModule()\n        }\n\n        private initModule(): void {\n            // Configuration for INA260: 0x05AF\n            this.writeReg(REG_CONFIG, 0x05AF)\n            \n            let id = this.readReg(REG_MFG_ID)\n            if (id == 0x5449) {\n                serial.writeLine(\"INA260 found\")\n            }\n        }\n\n        // --- INTERNAL I2C HELPERS USING B.BOARD WRAPPERS ---\n        private writeReg(reg: number, value: number): void {\n            let buf = pins.createBuffer(3)\n            buf[0] = reg\n            buf[1] = (value >> 8) & 0xff\n            buf[2] = value & 0xff\n            bBoard_Control.i2cWriteBuffer(ADDRESS, buf, this.myBoardID, this.myClickID)\n        }\n\n        private readReg(reg: number): number {\n            bBoard_Control.i2cWriteNumber(ADDRESS, reg, NumberFormat.UInt8BE, true, this.myBoardID, this.myClickID)\n            let res = bBoard_Control.I2CreadNoMem(ADDRESS, 2, this.myBoardID, this.myClickID)\n            return res.getNumber(NumberFormat.UInt16BE, 0)\n        }\n\n        /**\n         * Read current in mA\n         */\n        //% block=\"$this 🔌 current (mA)\"\n        //% weight=90\n        //% color=#00a2ff\n        //% group=\"Power Monitor\"\n        //% this.shadow=variables_get\n        //% this.defl=PowerBL_Clickboard\n        public readCurrent(): number {\n            let raw = this.readReg(REG_CURRENT)\n            if (raw > 32767) raw -= 65536 // Handle 2's complement for negative current\n            return raw * 1.25\n        }\n\n        /**\n         * Read voltage in V\n         */\n        //% block=\"$this ⚡ voltage (V)\"\n        //% weight=80\n        //% color=#00a2ff\n        //% group=\"Power Monitor\"\n        //% this.shadow=variables_get\n        //% this.defl=PowerBL_Clickboard\n        public readBusVoltage(): number {\n            let raw = this.readReg(REG_BUS_VOLTAGE)\n            return (raw * 1.25) / 1000\n        }\n\n        /**\n         * Read power in mW\n         */\n        //% block=\"$this 🔋 power (mW)\"\n        //% weight=70\n        //% color=#00a2ff\n        //% group=\"Power Monitor\"\n        //% this.shadow=variables_get\n        //% this.defl=PowerBL_Clickboard\n        public readPower(): number {\n            let raw = this.readReg(REG_POWER)\n            return raw * 10\n        }\n    }\n}",
             "Proximity_2.ts": "//-------------------------Click Board Proximity_2 -----------------------------------\n//% weight=904 color=#33BEBB icon=\"↦\"\n//% advanced=true\n//% labelLineWidth=1002\nnamespace Proximity_2 {\n    enum proximity_2_Interrupts { ALS_INT, PROX_INT, NO_INT };\n​\n    /**\n     * Sets Proximity_2 Click object.\n     * @param boardID the boardID\n     * @param clickID the ClickID\n     * @param Proximity_2 the Proximity_2 Object\n    */\n    //% block=\" $boardID $clickID\"\n    //% blockSetVariable=\"Proximity_2\"\n    //% weight=110\n    export function createProximity_2(boardID: BoardID, clickID: ClickID): Proximity_2 {\n        return new Proximity_2(boardID, clickID);\n    }\n​\n    export class Proximity_2 {\n        private readonly DEFAULT_I2C_ADDRESS = 0x4A\n        private readonly INTERRUPT_STATUS = 0x00\n        private readonly MAIN_CONFIGURATION = 0x01\n        private readonly RECEIVE_CONFIGURATION = 0x02\n        private readonly TRANSMIT_CONFIGURATION = 0x03\n        private readonly ADC_HIGH_ALS = 0x04\n        private readonly ADC_LOW_ALS = 0x05\n        private readonly ADC_BYTE_PROX = 0x16\n        private readonly ALS_UPPER_THRESHOLD_HIGH = 0x06\n        private readonly ALS_UPPER_THRESHOLD_LOW = 0x07\n        private readonly ALS_LOWER_THRESHOLD_HIGH = 0x08\n        private readonly ALS_LOWER_THRESHOLD_LOW = 0x09\n        private readonly THRESHOLD_PERSIST_TIMER = 0x0A\n        private readonly PROX_THRESHOLD_INDICATOR = 0x0B\n        private readonly PROX_THRESHOLD = 0x0C\n        private readonly DIGITAL_GAIN_TRIM_GREEN = 0x0F\n        private readonly DIGITAL_GAIN_TRIM_INFRARED = 0x10\n​\n        private myBoardID: BoardID\n        private myClickID: ClickID\n        private myI2CAddress:number\n​\n        constructor(boardID: BoardID, clickID: ClickID) {\n            this.myBoardID = boardID;\n            this.myClickID = clickID;\n            this.proximity_2_Initialize()\n        }\n​\n        // Setup the chip for proximity sensing\n        proximity_2_Initialize() {\n            //this.isInitialized[this.myBoardID] = 1;\n            this.myI2CAddress = this.DEFAULT_I2C_ADDRESS\n            this.Write_proximity_2_Register(this.MAIN_CONFIGURATION, 0b110000);\n            this.Write_proximity_2_Register(this.PROX_THRESHOLD_INDICATOR, 0b01000000);\n            this.Write_proximity_2_Register(this.PROX_THRESHOLD_INDICATOR, 0b01000000);\n            this.Write_proximity_2_Register(this.TRANSMIT_CONFIGURATION, 0b00001111);\n        }\n​\n        // Write byte 'byte' to register 'reg'\n        Write_proximity_2_Register(register: number, value: number) {\n            let i2cBuffer = pins.createBuffer(2)\n            i2cBuffer.setNumber(NumberFormat.UInt8LE, 0, register)\n            i2cBuffer.setNumber(NumberFormat.UInt8LE, 1, value)\n            bBoard_Control.i2cWriteBuffer(this.myI2CAddress,i2cBuffer,this.myBoardID,this.myClickID)\n        }\n​\n        //% blockId=proximity_2_ReadProximity\n        //% block=\"$this proximity\"\n        //% block.loc.fr=\"$this Obtenir la valeur de la proximité\"\n        //% blockGap=7\n        //% weight=90   color=#9E4894 icon=\"\"\n        //% advanced=false\n        //% blockNamespace=Proximity_2\n        //% this.shadow=variables_get\n        //% this.defl=\"Proximity_2\"\n        proximity_2_Read_Proximity(): number {\n            //TODO: Scale 256 = 35mm | 0 120mm (white card)\n            let val = this.Read_proximity_2_Register(this.ADC_BYTE_PROX);\n            return val;\n        }\n​\n        //% blockId=proximity_2_ReadALS\n        //% block=\"$this illuminance(lux)\"\n        //% block.loc.fr=\"$this Obtenir niveau de lumière ambiante(lux)\"\n        //% blockGap=7\n        //% advanced=false\n        //% blockNamespace=Proximity_2\n        //% this.shadow=variables_get\n        //% this.defl=\"Proximity_2\"\n        proximity_2_Read_Als(): number {\n            let val = (this.Read_proximity_2_Register(this.ADC_HIGH_ALS) << 8) | this.Read_proximity_2_Register(this.ADC_LOW_ALS);\n            return val * 0x03125; //Assumption that ALSPGA == 0. 0.03125 Lux per LSB\n        }\n​\n        // Read a byte from register 'reg'\n        Read_proximity_2_Register(register: number): number {\n            let i2cBuffer = pins.createBuffer(2);\n            bBoard_Control.i2cWriteNumber(this.myI2CAddress,register,NumberFormat.Int8LE,true,this.myBoardID,this.myClickID)\n            i2cBuffer = bBoard_Control.I2CreadNoMem(this.myI2CAddress,1,this.myBoardID,this.myClickID);           \n            return i2cBuffer.getUint8(0)\n        }\n​\n        proximity_2_Read_Interrupt(): number {\n            let val = this.Read_proximity_2_Register(this.INTERRUPT_STATUS);\n            if (val & 0b1) {\n                return proximity_2_Interrupts.ALS_INT;\n            }\n            else if (val & 0b10) {\n                return proximity_2_Interrupts.PROX_INT;\n            }\n            else {\n                return proximity_2_Interrupts.NO_INT;\n            }\n        }\n​\n        proximity_2_Set_Threshold(thresh: number) {\n            this.Write_proximity_2_Register(this.PROX_THRESHOLD, thresh);\n        }\n​\n        proximity_2_Set_Als_Upper_Threshold(thresh: number) {\n            this.Write_proximity_2_Register(this.ALS_UPPER_THRESHOLD_HIGH, thresh >> 8);;\n            this.Write_proximity_2_Register(this.ALS_UPPER_THRESHOLD_LOW, thresh & 0xFF);\n        }\n​\n        proximity_2_Set_Als_Lower_Threshold(thresh: number) {\n            this.Write_proximity_2_Register(this.ALS_LOWER_THRESHOLD_HIGH, thresh >> 8);\n            this.Write_proximity_2_Register(this.ALS_LOWER_THRESHOLD_LOW, thresh & 0xFF);\n        }\n    }\n}",
             "README.md": "# core\n\nThe core library.\n\n",
             "Reed.ts": "//-------------------------Click Board Reed -----------------------------------\n//% weight=600 color=#33BEBB icon=\"\"\n//% advanced=true\n//% labelLineWidth=1002\nnamespace Reed {\n    enum reed {\n        Activated = 1,\n        Not_Activated = 0,\n    }\n\n    /**\n     * Sets Reed Click object.\n     * @param boardID the boardID\n     * @param clickID the ClickID\n     * @param Reed the Button_G Object\n     */\n    //% block=\" $boardID $clickID\"\n    //% advanced=false\n    //% $boardID.shadow=\"BoardID.zero\"\n    //% blockSetVariable=\"Reed\"\n    //% weight=110\n    export function createReed(boardID: BoardID, clickID: ClickID): Reed {\n        return new Reed(boardID, clickID);\n    }\n    export class Reed {\n        private myBoardID: BoardID\n        private myClickID: ClickID\n\n        constructor(boardID: BoardID, clickID: ClickID) {\n            this.myBoardID = boardID;\n            this.myClickID = clickID;\n            bBoard_Control.setPullDirection(clickIOPin.CS, IOPullDirection.two, this.myBoardID, this.myClickID)\n        }\n\n        //% blockId=Reed_getSwitch\n        //% block=\"$this is magnet detected\"\n        //% block.loc.fr=\"$this aimant détecté\"\n        //% advanced=true\n        //% blockNamespace=Reed\n        //% this.shadow=variables_get\n        //% this.defl=\"Reed\"\n        getSwitch(): number {\n            return bBoard_Control.digitalReadPin(clickIOPin.CS, this.myBoardID, this.myClickID);\n        }\n\n        //% blockId=onMagnetDetected \n        //% block=\"$this on magnet detected\" \n        //% block.loc.fr=\"$this quand aimant détecté\"\n        //% advanced=false\n        //% blockAllowMultiple=0\n        //% afterOnStart=true                               //This block will only execute after the onStart block is finished\n        //% blockNamespace=Reed\n        //% this.shadow=variables_get\n        //% this.defl=\"Reed\"\n        onMagnetDetected(a: () => void): void {\n            bBoard_Control.eventInit(bBoardEventsMask.CN_HIGH, this.myBoardID, this.myClickID); //Tell the BLiX to set the Change notification interrupts (High or Low)\n            bBoard_Control.pinEventSet(this.myBoardID, this.myClickID, clickIOPin.CS, bBoardEventsMask.CN_HIGH) //Tell the BLiX which pin you want to monitor for high or low\n            control.onEvent(bBoard_Control.getbBoardEventBusSource(this.myBoardID, this.myClickID, bBoardEvents.CN_HIGH), clickIOPin.CS, a); //Tell the DAL scheduler what function to call when the bBoard interrupt source is generated from this specific value\n        }\n    }\n}",
@@ -36030,19 +36030,15 @@ var pxtTargetBundle = {
                         "kind": -3,
                         "retType": "Power_Clickboard.Power_Clickboard",
                         "attributes": {
-                            "block": " $boardID $clickID to initialize the INA260",
-                            "blockSetVariable": "Power_Clickboard",
-                            "weight": 110,
+                            "block": "Initialize INA260 on $boardID $clickID",
+                            "blockSetVariable": "PowerBL_Clickboard",
+                            "weight": 100,
                             "color": "#40E0D0",
-                            "paramHelp": {
-                                "boardID": "the boardID",
-                                "clickID": "the ClickID"
-                            },
                             "_def": {
                                 "parts": [
                                     {
                                         "kind": "label",
-                                        "text": " ",
+                                        "text": "Initialize INA260 on ",
                                         "style": []
                                     },
                                     {
@@ -36059,11 +36055,6 @@ var pxtTargetBundle = {
                                         "kind": "param",
                                         "name": "clickID",
                                         "ref": true
-                                    },
-                                    {
-                                        "kind": "label",
-                                        "text": " to initialize the INA260",
-                                        "style": []
                                     }
                                 ],
                                 "parameters": [
@@ -36083,13 +36074,11 @@ var pxtTargetBundle = {
                         "parameters": [
                             {
                                 "name": "boardID",
-                                "description": "the boardID",
                                 "type": "BoardID",
                                 "isEnum": true
                             },
                             {
                                 "name": "clickID",
-                                "description": "the ClickID",
                                 "type": "ClickID",
                                 "isEnum": true
                             }
@@ -36116,175 +36105,143 @@ var pxtTargetBundle = {
                         ],
                         "isInstance": true
                     },
-                    "Power_Clickboard.Power_Clickboard.initModule": {
-                        "kind": -1,
-                        "parameters": [],
-                        "isInstance": true,
-                        "pyQName": "Power_Clickboard.Power_Clickboard.init_module"
-                    },
-                    "Power_Clickboard.Power_Clickboard.i2cReadNumber": {
-                        "kind": -1,
-                        "retType": "number",
-                        "parameters": [
-                            {
-                                "name": "address"
-                            },
-                            {
-                                "name": "format",
-                                "type": "NumberFormat",
-                                "isEnum": true
-                            },
-                            {
-                                "name": "repeated",
-                                "type": "boolean",
-                                "initializer": "undefined"
-                            }
-                        ],
-                        "isInstance": true,
-                        "pyQName": "Power_Clickboard.Power_Clickboard.i2c_read_number"
-                    },
-                    "Power_Clickboard.Power_Clickboard.i2cReadBuffer": {
-                        "kind": -1,
-                        "retType": "Buffer",
-                        "parameters": [
-                            {
-                                "name": "address"
-                            },
-                            {
-                                "name": "size"
-                            },
-                            {
-                                "name": "repeat",
-                                "type": "boolean",
-                                "initializer": "undefined"
-                            }
-                        ],
-                        "isInstance": true,
-                        "pyQName": "Power_Clickboard.Power_Clickboard.i2c_read_buffer"
-                    },
-                    "Power_Clickboard.Power_Clickboard.i2cWriteBuffer": {
-                        "kind": -1,
-                        "retType": "number",
-                        "parameters": [
-                            {
-                                "name": "address"
-                            },
-                            {
-                                "name": "buf",
-                                "type": "Buffer"
-                            },
-                            {
-                                "name": "repeat",
-                                "type": "boolean",
-                                "initializer": "undefined"
-                            }
-                        ],
-                        "isInstance": true,
-                        "pyQName": "Power_Clickboard.Power_Clickboard.i2c_write_buffer"
-                    },
-                    "Power_Clickboard.Power_Clickboard.i2cWriteNumber": {
-                        "kind": -1,
-                        "parameters": [
-                            {
-                                "name": "address"
-                            },
-                            {
-                                "name": "value"
-                            },
-                            {
-                                "name": "format",
-                                "type": "NumberFormat",
-                                "isEnum": true
-                            },
-                            {
-                                "name": "repeated",
-                                "type": "boolean",
-                                "initializer": "undefined"
-                            }
-                        ],
-                        "isInstance": true,
-                        "pyQName": "Power_Clickboard.Power_Clickboard.i2c_write_number"
-                    },
-                    "Power_Clickboard.Power_Clickboard.readCurrent_I2C": {
+                    "Power_Clickboard.Power_Clickboard.readCurrent": {
                         "kind": -1,
                         "retType": "number",
                         "attributes": {
-                            "block": "🔌 Current (mA)",
+                            "paramDefl": {
+                                "this": "PowerBL_Clickboard"
+                            },
+                            "block": "$this 🔌 current (mA)",
                             "weight": 90,
                             "color": "#00a2ff",
-                            "group": "Power_Monitor",
-                            "locs": {
-                                "fr|param|group": "Mesure_de_Puissance"
+                            "group": "Power Monitor",
+                            "_shadowOverrides": {
+                                "this": "variables_get"
                             },
-                            "advanced": true,
-                            "jsDoc": "Read current in milliamps (mA)",
+                            "explicitDefaults": [
+                                "this"
+                            ],
+                            "jsDoc": "Read current in mA",
                             "_def": {
                                 "parts": [
                                     {
+                                        "kind": "param",
+                                        "name": "this",
+                                        "shadowBlockId": "variables_get",
+                                        "ref": true
+                                    },
+                                    {
                                         "kind": "label",
-                                        "text": "🔌 Current (mA)",
+                                        "text": " 🔌 current (mA)",
                                         "style": []
                                     }
                                 ],
-                                "parameters": []
+                                "parameters": [
+                                    {
+                                        "kind": "param",
+                                        "name": "this",
+                                        "shadowBlockId": "variables_get",
+                                        "ref": true
+                                    }
+                                ]
                             }
                         },
                         "parameters": [],
-                        "isInstance": true
+                        "isInstance": true,
+                        "pyQName": "Power_Clickboard.Power_Clickboard.read_current"
                     },
-                    "Power_Clickboard.Power_Clickboard.readBusVoltage_I2C": {
+                    "Power_Clickboard.Power_Clickboard.readBusVoltage": {
                         "kind": -1,
                         "retType": "number",
                         "attributes": {
-                            "block": "⚡ Voltage (V)",
+                            "paramDefl": {
+                                "this": "PowerBL_Clickboard"
+                            },
+                            "block": "$this ⚡ voltage (V)",
                             "weight": 80,
                             "color": "#00a2ff",
-                            "group": "Power_Monitor",
-                            "locs": {
-                                "fr|param|group": "Mesure_de_Puissance"
+                            "group": "Power Monitor",
+                            "_shadowOverrides": {
+                                "this": "variables_get"
                             },
-                            "advanced": true,
-                            "jsDoc": "Read bus voltage in millivolts (V)",
+                            "explicitDefaults": [
+                                "this"
+                            ],
+                            "jsDoc": "Read voltage in V",
                             "_def": {
                                 "parts": [
                                     {
+                                        "kind": "param",
+                                        "name": "this",
+                                        "shadowBlockId": "variables_get",
+                                        "ref": true
+                                    },
+                                    {
                                         "kind": "label",
-                                        "text": "⚡ Voltage (V)",
+                                        "text": " ⚡ voltage (V)",
                                         "style": []
                                     }
                                 ],
-                                "parameters": []
+                                "parameters": [
+                                    {
+                                        "kind": "param",
+                                        "name": "this",
+                                        "shadowBlockId": "variables_get",
+                                        "ref": true
+                                    }
+                                ]
                             }
                         },
                         "parameters": [],
-                        "isInstance": true
+                        "isInstance": true,
+                        "pyQName": "Power_Clickboard.Power_Clickboard.read_bus_voltage"
                     },
-                    "Power_Clickboard.Power_Clickboard.readPower_I2C": {
+                    "Power_Clickboard.Power_Clickboard.readPower": {
                         "kind": -1,
                         "retType": "number",
                         "attributes": {
-                            "block": "🔋 Power (mW)",
+                            "paramDefl": {
+                                "this": "PowerBL_Clickboard"
+                            },
+                            "block": "$this 🔋 power (mW)",
                             "weight": 70,
                             "color": "#00a2ff",
-                            "group": "Power_Monitor",
-                            "locs": {
-                                "fr|param|group": "Mesure_de_Puissance"
+                            "group": "Power Monitor",
+                            "_shadowOverrides": {
+                                "this": "variables_get"
                             },
-                            "advanced": true,
-                            "jsDoc": "Read power in milliwatts (mW)",
+                            "explicitDefaults": [
+                                "this"
+                            ],
+                            "jsDoc": "Read power in mW",
                             "_def": {
                                 "parts": [
                                     {
+                                        "kind": "param",
+                                        "name": "this",
+                                        "shadowBlockId": "variables_get",
+                                        "ref": true
+                                    },
+                                    {
                                         "kind": "label",
-                                        "text": "🔋 Power (mW)",
+                                        "text": " 🔋 power (mW)",
                                         "style": []
                                     }
                                 ],
-                                "parameters": []
+                                "parameters": [
+                                    {
+                                        "kind": "param",
+                                        "name": "this",
+                                        "shadowBlockId": "variables_get",
+                                        "ref": true
+                                    }
+                                ]
                             }
                         },
                         "parameters": [],
-                        "isInstance": true
+                        "isInstance": true,
+                        "pyQName": "Power_Clickboard.Power_Clickboard.read_power"
                     },
                     "Heart_Rate_Click": {
                         "kind": 5,
@@ -67575,7 +67532,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "de152337995281fe1eed3bc1e0a9bf5a4276ec891d3ab637d3174b6d5378b40b"
+            "sha": "7e2dc09907e171175018ce5792d4c75583585818c49ada019ea605efc660b742"
         },
         "libs/radio": {
             "apis": {
@@ -68991,7 +68948,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "644144120d01edabf3ae4f75c19fd6df2a8f88206319c6c9d549b9f8640dbf72"
+            "sha": "0317d4eb4b3bb023ea07b29fbd6e6870116065740f82310464509946ecdd9acf"
         },
         "libs/devices": {
             "apis": {
@@ -71038,7 +70995,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "a95afbbf07a3c80d2823df04022cd333c4ee54519930edb79543b8096bed4ef8"
+            "sha": "78483a04aa03ae65629d69154d3d6e2320e4eba4b7ae6195c61e1d62ee48a77a"
         },
         "libs/bluetooth": {
             "apis": {
@@ -71999,7 +71956,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "0e5c9b690a48122a5ab9fd1f637d9cf18c8f46ae2e9704b2c1f0df4ddcfe178d"
+            "sha": "dc08305016d4172e29ad48a507c4703b652b67a462eea50422e57654f260e2cf"
         },
         "libs/servo": {
             "apis": {
@@ -72641,7 +72598,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "30039f765738fdd4f9a196d9831dec89e726a9771d8821aca7be68ad3a5ebe2d"
+            "sha": "60d5bee5c7cc1ba32eeb3960a0b26050af61ab85f314d21978580c0bd432f97b"
         },
         "libs/radio-broadcast": {
             "apis": {
@@ -74200,7 +74157,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "3ecdc6e927a5310b483b133b7b9412f3c0ecea80e6274e608dad89d2572ce590"
+            "sha": "7d7c2e78f29d26420d0d2fd2fb954f05302230d7a01bdbada585f35a51cc43f0"
         },
         "libs/microphone": {
             "apis": {
@@ -74478,7 +74435,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "82c1f5fe7f5e49ae9bfd8175beaeda2ccafb052bbd0f56d19c7804474b6268e1"
+            "sha": "be8297c200642cfedfd4be31e9ef02550240f653e768bfec33e06b869826a0e1"
         },
         "libs/settings": {
             "apis": {
@@ -74784,7 +74741,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "0499046978cd516e4e0c95c4bae2938b9e6a72f3d200b347aeba0b5cc134dace"
+            "sha": "043b2f9a178a41a5e5302bcab706f02337791be140e951a6a01ff0895afee472"
         },
         "libs/flashlog": {
             "apis": {
@@ -75049,7 +75006,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "8de2fede4bb026491a4515587a194a8d3aa9f98e39490f7d3b9e3bb465820f3d"
+            "sha": "cbab5c54099edb74ab05b8d0ca04fbdbf8ccb2452686280b49277db28330cf89"
         },
         "libs/datalogger": {
             "apis": {
@@ -75763,7 +75720,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "668b04a8664e4df18386c3cf679768cea2a5b8470f4ba6b72a02ac3455913338"
+            "sha": "067596d259050abede8fc2885d631e6d0fe059e4778cd139162cf7f3f102cbc3"
         },
         "libs/blocksprj": {
             "apis": {
@@ -77450,7 +77407,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "95af8bf5bfa22775ccd720c7477754888c22882aa171066f3d068a179b9330ea"
+            "sha": "a1bd7dac8d8438b3bb472bb7e960c928f5dba44a15f66ae380e8bf827ac50559"
         },
         "libs/bluetoothprj": {
             "apis": {
@@ -78682,7 +78639,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "b89997fa8aa31f2b34e1355a62f12f368819e60e8d5789fe4e8d8550e14f0497"
+            "sha": "c4f7d01db7174ba93922d55273034968c9c2c3508ddc335133a0757a4c764085"
         },
         "libs/tsprj": {
             "apis": {
@@ -80369,7 +80326,7 @@ var pxtTargetBundle = {
                     }
                 }
             },
-            "sha": "025b7b1e649df71236e93eedb77eb8d51995b19197be6617efd43bf150a79509"
+            "sha": "39ebf59e272b15456a1e2f4b1f87437e5ea214479ec886b4e97e686da3a158c5"
         }
     }
 }
